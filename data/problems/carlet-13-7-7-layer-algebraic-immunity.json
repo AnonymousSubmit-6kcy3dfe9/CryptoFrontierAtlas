@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.2.0",
+  "id": "carlet-13-7-7-layer-algebraic-immunity",
+  "group_id": "carlet-13-7-7",
+  "title": "Algebraic immunity on a fixed Hamming layer",
+  "summary": "Determine the least degree threshold at which a nonzero Boolean polynomial must vanish on a fixed Hamming layer of the Boolean cube.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $1\\le k\\le n$, let $\\Omega_{n,k}=\\{x\\in\\mathbb F_2^n:\\operatorname{wt}(x)=k\\}$. Define $e(n,k)$ as the least degree $d$ for which there is a nonzero Boolean polynomial $g$ of degree at most $d$ whose evaluation is zero on every point of $\\Omega_{n,k}$. Determine this sharp layer-restricted annihilator threshold, or equivalently the dimension threshold for restricted monomial evaluations."
+  },
+  "scope": {
+    "domain": "Layer-restricted annihilators and algebraic immunity",
+    "assumptions": ["Inputs are restricted to one Hamming layer", "Polynomials are over F2"],
+    "parameters": ["n: ambient dimension", "k: layer weight", "e(n,k): least threshold"],
+    "unresolved_remainder": "The current public record concerns first-order/asymptotic information and does not assert a sharp constant-order formula."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": ["algebraic-immunity", "hamming-layer", "asymptotics"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Carlet, Boolean Functions for Cryptography and Coding Theory", "locator": "Problem 13.7(7)", "doi": "10.1017/9781108606806"},
+      {"role": "prior_progress", "label": "Public work on layer-restricted algebraic immunity", "locator": "Cited literature in the problem manuscript"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2021-01-01", "kind": "source_statement", "summary": "Carlet formulates the layer-restricted threshold question as an algebraic-immunity open problem.", "citation_labels": ["Carlet, Boolean Functions for Cryptography and Coding Theory"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["tu-deng-conjecture"], "supersedes": [], "superseded_by": []}
+}

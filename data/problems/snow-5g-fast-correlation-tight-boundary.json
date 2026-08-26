@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.2.0",
+  "id": "snow-5g-fast-correlation-tight-boundary",
+  "group_id": "snow-5g-fast-correlation-security",
+  "title": "Tight fast-correlation security boundary for SNOW 5G",
+  "summary": "Determine the exact maximum absolute correlation of the relevant linear approximations of the original SNOW 5G stream cipher and the resulting tight fast-correlation attack bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the original SNOW 5G specification, including the two $16$-bit modular additions in its finite-state machine, let $\\rho_{\\max}$ be the maximum absolute correlation over all linear approximations admitted by the source's fast-correlation framework. Determine $\\rho_{\\max}$ exactly and derive the corresponding tight time, data, and memory complexity boundary for fast correlation attacks."
+  },
+  "scope": {
+    "domain": "Linear cryptanalysis and fast correlation attacks on SNOW 5G",
+    "assumptions": [
+      "The original SNOW 5G specification is used, rather than its XOR-only variant",
+      "The finite-state machine retains its two additions modulo $2^{16}$",
+      "The attack and linear-approximation model is the one used by the source"
+    ],
+    "parameters": [
+      "linear masks and intermediate masks",
+      "$\\rho_{\\max}$: maximum absolute correlation",
+      "time, data, and memory trade-off parameters"
+    ],
+    "unresolved_remainder": "A known approximation gives $\\rho_{\\max}\\ge 2^{-67.67}$, while later published work gives the untight theoretical bound $\\rho_{\\max}\\le 2^{-62}$ and a balanced-attack lower bound of about $2^{260}$. The exact maximum correlation and the resulting tight attack-complexity boundary remain unknown."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "design.stream-ciphers"
+    ],
+    "tags": [
+      "snow-5g",
+      "stream-ciphers",
+      "fast-correlation-attacks",
+      "linear-approximations",
+      "correlation-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ma et al., SNOW-family fast-correlation security question",
+        "locator": "Introduction, p. 4036",
+        "doi": "10.1109/TIT.2025.3565463",
+        "url": "https://doi.org/10.1109/TIT.2025.3565463"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Liu--Yang--Tian, SNOW 5G linear approximation",
+        "locator": "IACR Transactions on Symmetric Cryptology 2024(2), pp. 141--165",
+        "doi": "10.46586/tosc.v2024.i2.141-165",
+        "url": "https://doi.org/10.46586/tosc.v2024.i2.141-165"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Wang--Maximov--Ekdahl--Johansson, untight SNOW 5G correlation bound",
+        "locator": "Section 1, Table 2, pp. 3--4",
+        "doi": "10.62056/a6y7qj5vt",
+        "url": "https://doi.org/10.62056/a6y7qj5vt"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2024-06-18",
+      "kind": "prior_result",
+      "summary": "A concrete linear approximation with absolute correlation $2^{-67.67}$ supplies the current lower bound on the maximum correlation.",
+      "citation_labels": [
+        "Liu--Yang--Tian, SNOW 5G linear approximation"
+      ]
+    },
+    {
+      "date": "2025-04-29",
+      "kind": "source_statement",
+      "summary": "The source states that the theoretical fast-correlation resistance boundary of the original SNOW 5G has not been determined.",
+      "citation_labels": [
+        "Ma et al., SNOW-family fast-correlation security question"
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "kind": "public_result",
+      "summary": "Later published work derives an untight upper bound $2^{-62}$ for the maximum correlation of the $16$-bit-adder variant identified with SNOW 5G, implying a balanced-attack lower bound near $2^{260}$ without determining the exact boundary.",
+      "citation_labels": [
+        "Wang--Maximov--Ekdahl--Johansson, untight SNOW 5G correlation bound"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-dual-bent-attainable-sigma-classification",
+  "group_id": "alkan-bent-partition-construction-questions",
+  "title": "Attainable dual-index permutations in four vectorial dual-bent constructions",
+  "summary": "Classify every equation-(2) permutation realizable by the source's four construction principles for vectorial dual-bent functions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Fix the output basis and the choice of vectorial dual. For a vectorial dual-bent function $F:V_n^{(p)}\\to V_m^{(p)}$ produced by a construction in Sections III-VI, equation (2) defines a permutation $\\sigma$ of $V_m^{(p)}$ with $\\sigma(0)=0$ through $(F_a)^*=(F^*)_{\\sigma(a)}$. Determine exactly which permutations $\\sigma$ are realizable across all four construction principles, giving constructions for attainable maps and impossibility proofs for unattainable maps under the fixed convention."
+  },
+  "scope": {
+    "domain": "Dual-index permutations of source-constructed vectorial dual-bent functions",
+    "assumptions": [
+      "F is produced by one of the source's Sections III-VI construction principles",
+      "Vectorial dual-bent functions and equation (2) use the source definitions",
+      "The output basis and vectorial-dual choice are fixed so that sigma is represented unambiguously"
+    ],
+    "parameters": [
+      "p: field characteristic",
+      "n and m: input and output dimensions",
+      "source construction family",
+      "sigma: permutation of the output space fixing zero",
+      "fixed output-basis and vectorial-dual convention"
+    ],
+    "unresolved_remainder": "A 2026 result realizes inverse-power maps in a Section IV-type construction and proves that the Section V-type equation-(22) construction cannot have nonlinear sigma. Still unknown are the attainable maps for Sections III and VI, whether Section IV admits maps beyond the proved inverse-power family, the exact attainable linear maps for Section V under the fixed convention, and possible non-power permutations in the remaining families."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "bent-functions",
+      "vectorial-functions",
+      "dual-functions",
+      "permutations",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, attainable-sigma question",
+        "locator": "Section VII, fifth concrete question and Eq. (2), p. 767",
+        "doi": "10.1109/TIT.2024.3505600"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Anbar--Fu--Kalayci--Meidl--Wang--Wei, sigma constructions and restriction",
+        "locator": "Section 6.1, Theorem 5, article p. 25; Section 6.2, Corollary 20, article p. 29",
+        "doi": "10.1007/s10623-026-01835-9"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-24"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks which equation-(2) permutations can be achieved by its vectorial dual-bent construction principles.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, attainable-sigma question"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "kind": "prior_result",
+      "summary": "Theorem 5 realizes inverse-power permutations in a generalized-Maiorana--McFarland variant, while Corollary 20 forces sigma to be linear for the equation-(22) construction; neither result classifies all four source families.",
+      "citation_labels": [
+        "Anbar--Fu--Kalayci--Meidl--Wang--Wei, sigma constructions and restriction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-partition-alternative-representative-equivalence",
+      "bent-partition-amorphic-scheme-isomorphism",
+      "bent-partition-section-iv-generalized-mm-separation",
+      "bent-partition-sections-iii-vi-mm-separation"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

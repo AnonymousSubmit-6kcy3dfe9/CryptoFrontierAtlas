@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ternary-vectorial-dual-bent-epsilon-minus-one",
+  "group_id": "self-orthogonal-vectorial-dual-bent-codes",
+  "title": "Ternary vectorial dual-bent functions with negative sign",
+  "summary": "Decide whether the source's negative-sign Condition C branch exists for output dimension at least two.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $p=3$ and $m\\ge2$, does there exist an admissible $F:V_n(3)\\to\\mathbb F_{3^m}$ satisfying the source's Condition C with common sign $\\varepsilon=-1$ and $(3^m-1)\\mid d$? A single explicit witness settles the positive direction; a proof of nonexistence settles the negative direction."
+  },
+  "scope": {
+    "domain": "Ternary vectorial dual-bent functions and their Condition C sign/divisibility parameters",
+    "assumptions": [
+      "p=3 and m >= 2",
+      "F: V_n(3) -> F_{3^m} satisfies every requirement of Condition C",
+      "The common-sign case is (A.1) with epsilon=-1",
+      "(3^m-1) divides d"
+    ],
+    "parameters": [
+      "n",
+      "m",
+      "t",
+      "l",
+      "d",
+      "F"
+    ],
+    "unresolved_remainder": "No explicit witness or nonexistence theorem is known for any m >= 2 satisfying the full Condition C, epsilon=-1, and (3^m-1) | d requirements."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.coding-theory","foundations.algebraic-structures"],
+    "tags": [
+      "vectorial-dual-bent",
+      "ternary-functions",
+      "condition-c",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions",
+        "locator": "Remark 3(i), journal p. 130",
+        "doi": "10.1109/TIT.2025.3637038",
+        "url": "https://doi.org/10.1109/TIT.2025.3637038"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "Remark 3(i) explicitly leaves the m >= 2 negative-sign existence question open while noting a scalar ternary example.",
+      "citation_labels": [
+        "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "self-orthogonal-theorem2-residual-weight-distribution",
+      "wang-heng-hb-residual-weight-distribution"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

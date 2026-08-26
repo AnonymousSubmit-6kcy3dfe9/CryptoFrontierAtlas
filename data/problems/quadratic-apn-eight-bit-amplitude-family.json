@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-apn-eight-bit-amplitude-family",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "Twelve unresolved eight-bit quadratic APN amplitude distributions",
+  "summary": "Decide existence independently for twelve specified amplitude distributions of eight-bit quadratic APN functions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $i\\in\\{1,\\ldots,12\\}$, determine whether there exists a quadratic APN function $F:\\mathbb F_2^8\\to\\mathbb F_2^8$ with amplitude distribution $[0^{238-4i},2^{5i},4^{17-i}]$ in the notation of Definition I.3. The twelve targets are $[0^{234},2^5,4^{16}]$, $[0^{230},2^{10},4^{15}]$, $[0^{226},2^{15},4^{14}]$, $[0^{222},2^{20},4^{13}]$, $[0^{218},2^{25},4^{12}]$, $[0^{214},2^{30},4^{11}]$, $[0^{210},2^{35},4^{10}]$, $[0^{206},2^{40},4^9]$, $[0^{202},2^{45},4^8]$, $[0^{198},2^{50},4^7]$, $[0^{194},2^{55},4^6]$, and $[0^{190},2^{60},4^5]$."
+  },
+  "scope": {
+    "domain": "Eight-bit quadratic APN functions and amplitude distributions",
+    "assumptions": [
+      "F : F_2^8 -> F_2^8 is quadratic and APN",
+      "Amplitude notation uses Definition I.3 of the source",
+      "Theorem IV.5 supplies the admissible distribution list"
+    ],
+    "parameters": [
+      "integer i with 1 <= i <= 12"
+    ],
+    "unresolved_remainder": "All twelve instances remain unresolved: [0^234,2^5,4^16], [0^230,2^10,4^15], [0^226,2^15,4^14], [0^222,2^20,4^13], [0^218,2^25,4^12], [0^214,2^30,4^11], [0^210,2^35,4^10], [0^206,2^40,4^9], [0^202,2^45,4^8], [0^198,2^50,4^7], [0^194,2^55,4^6], and [0^190,2^60,4^5]. Each requires either a construction or a nonexistence proof."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["foundations.boolean-vectorial","cryptanalysis.differential","cryptanalysis.linear"],
+    "tags": [
+      "amplitude-distributions",
+      "apn-functions",
+      "eight-bit",
+      "quadratic-functions",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Theorem IV.5 and Open Problem VI.1, p. 5215",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "Open Problem VI.1 asks for an independent existence decision for each of twelve admissible eight-bit amplitude distributions.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-apn-permutation",
+      "nonquadratic-crooked-apn-existence",
+      "quadratic-apn-even-walsh-classification",
+      "quadratic-apn-nonclassical-walsh-family",
+      "quadratic-nonbent-component-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

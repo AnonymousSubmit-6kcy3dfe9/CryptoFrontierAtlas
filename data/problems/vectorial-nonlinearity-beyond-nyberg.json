@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-nonlinearity-beyond-nyberg",
+  "group_id": "vectorial-nonlinearity",
+  "title": "Vectorial Boolean nonlinearity beyond the Nyberg threshold",
+  "summary": "Prove a uniform upper bound on component nonlinearity for maps beyond the Nyberg threshold; tightness remains open in this record.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $k\\ge3$, $k<m<2k$, and $F:\\mathbb F_2^{2k}\\to\\mathbb F_2^m$, prove $\\operatorname{NL}(F)\\le 2^{2k-1}-2^{k-1}-2$, where $\\operatorname{NL}(F)$ is the minimum scalar nonlinearity over nonzero components (equivalently the joint Walsh definition). This record does not claim that the bound is tight for every $(k,m)$."
+  },
+  "scope": {
+    "domain": "Vectorial Boolean functions and component nonlinearity",
+    "assumptions": ["n = 2k >= 6", "k < m < 2k", "Nonlinearity is component nonlinearity"],
+    "parameters": ["n: input dimension", "m: output dimension"],
+    "unresolved_remainder": "Tightness of the general upper bound for all admissible (n,m) remains outside the public record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": ["foundations.boolean-vectorial"],
+    "tags": ["vectorial-functions", "nonlinearity", "bent-functions", "covering-radius"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Wadayama et al., vectorial Boolean nonlinearity", "locator": "Coding-theoretic formulation"},
+      {"role": "prior_progress", "label": "Nyberg, perfect nonlinear functions", "locator": "Bent-component threshold"},
+      {"role": "prior_progress", "label": "Xu--Carlet--Mesnager--Wu, upper bounds in the range m > n/2", "locator": "Selected parameter regimes"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "repository_checked",
+    "peer_review_status": "not_submitted",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-19"
+  },
+  "progress": [
+    {"date": "1991-01-01", "kind": "prior_result", "summary": "Nyberg's threshold rules out vectorial bentness once the output dimension exceeds the half-dimension threshold.", "citation_labels": ["Nyberg, perfect nonlinear functions"]},
+    {"date": "2001-01-01", "kind": "source_statement", "summary": "Coding-theoretic work formulates the optimization problem and records non-tight general bounds.", "citation_labels": ["Wadayama et al., vectorial Boolean nonlinearity"]},
+    {"date": "2026-08-19", "kind": "machine_checked_formalization", "summary": "Lean proves the displayed uniform upper bound for every k >= 3 and k < m < 2k, including Walsh inversion and Parseval, an internal proof of the Nyberg bound, the even-component hyperplane, simultaneous congruence normalization, and the odd-fibre contradiction; tightness is outside scope.", "citation_labels": []}
+  ],
+  "artifacts": [
+    {
+      "role": "source_code",
+      "visibility": "repository_file",
+      "url": "https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas/blob/e0ccf4c61ac83cea3771be16a6132fc730cbfc5f/data/lean/CryptoFrontierAtlas/VectorialNonlinearityComplete.lean",
+      "sha256": "d86ebf6190c3d12b67703edefd22f49f1ac7028e4bfc70379344379c980b0706",
+      "license": "Apache-2.0"
+    }
+  ],
+  "lean": {
+    "status": "complete",
+    "available_in_repo": true,
+    "path": "data/lean/CryptoFrontierAtlas/VectorialNonlinearityComplete.lean",
+    "commit": "e0ccf4c61ac83cea3771be16a6132fc730cbfc5f",
+    "lean_version": "4.29.1",
+    "mathlib_version": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+    "trusted_base": "Lean 4.29.1 and mathlib; the theorem uses ordinary kernel checking and no native evaluator",
+    "replay_command": "cd data/lean && lake env lean CryptoFrontierAtlas/VectorialNonlinearityComplete.lean",
+    "source_tree_sha256": "6fa133882ac427489eb5d6d8c873937096622edc902b4dff4ce07562920c77f9",
+    "source_tree_file_count": 61
+  },
+  "relations": {"related": ["balanced-eight-variable-nonlinearity"], "supersedes": [], "superseded_by": []}
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "eight-variable-quartic-normality",
+  "group_id": "gillot-normality-bent-functions",
+  "title": "Normality or weak normality of eight-variable quartics",
+  "summary": "Determine whether every quartic Boolean function on eight variables is normal or weakly normal.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a Boolean function $f:\\mathbb F_2^8\\to\\mathbb F_2$, let $\\deg_4(f)=\\min_{a,V:\\,\\dim V=4}\\deg(f|_{a+V})$. Prove or refute the conjecture that every function $f$ of algebraic degree exactly $4$ satisfies $\\deg_4(f)\\le 1$. Equivalently, every eight-variable quartic Boolean function is normal or weakly normal; bentness is not assumed."
+  },
+  "scope": {
+    "domain": "Quartic Boolean functions and affine-flat normality",
+    "assumptions": [
+      "f : F_2^8 -> F_2 has algebraic degree exactly 4",
+      "f is not required to be bent",
+      "Normality and weak normality use the source's affine-flat definitions"
+    ],
+    "parameters": [
+      "eight-variable quartic Boolean function f"
+    ],
+    "unresolved_remainder": "The conjecture remains open over all quartic Boolean functions on eight variables. A counterexample must have relative degree deg_4(f) >= 2."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "boolean-functions",
+      "normality",
+      "quartic-functions",
+      "relative-degree",
+      "weak-normality"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gillot--Langevin--Polujan, normality of 8-bit bent functions",
+        "locator": "Eq. (III.1) and Section VI, item 3, p. 4364",
+        "doi": "10.1109/TIT.2026.3685370",
+        "eprint": "arXiv:2504.21779",
+        "url": "https://arxiv.org/abs/2504.21779"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-06-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that every eight-variable quartic Boolean function is normal or weakly normal.",
+      "citation_labels": [
+        "Gillot--Langevin--Polujan, normality of 8-bit bent functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "cubic-bent-normal-or-weak-normal",
+      "non-normal-cubic-bent-existence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

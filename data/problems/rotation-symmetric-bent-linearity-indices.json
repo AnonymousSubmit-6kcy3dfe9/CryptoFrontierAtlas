@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rotation-symmetric-bent-linearity-indices",
+  "group_id": "rotation-symmetric-bent-msharp",
+  "title": "Linearity indices of two rotation-symmetric bent families",
+  "summary": "Determine the exact linearity indices of an explicit rotation-symmetric bent dual pair and decide whether both members are ell-optimal.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n=2m\\ge 8$, with subscripts modulo $n$, and define $f_m,\\widetilde f_m\\in\\mathcal B_n$ by $f_m(x)=\\sum_{i=0}^{m-1}x_ix_{m+i}+\\sum_{i=0}^{n-1}x_ix_{i+1}\\cdots x_{i+m-2}x_{i+m}$ and $\\widetilde f_m(x)=\\sum_{i=0}^{m-1}x_ix_{m+i}+\\sum_{i=0}^{n-1}x_ix_{i+1}\\cdots x_{i+m-2}x_{i+n-2}$. For $g\\in\\mathcal B_n$, set $\\operatorname{ind}(g)=\\max\\{\\dim U:U\\le\\mathbb F_2^n\\text{ and }D_aD_b g=0\\text{ for all }a,b\\in U\\}$. Determine $\\operatorname{ind}(f_m)$ and $\\operatorname{ind}(\\widetilde f_m)$ for every $m\\ge4$, and decide whether each equals $1$ (ell-optimality)."
+  },
+  "scope": {
+    "domain": "Rotation-symmetric Boolean bent functions and M-subspaces",
+    "assumptions": [
+      "n = 2m is even and n >= 8",
+      "The two families are exactly those in source Eqs. (IV.1) and (IV.2)",
+      "Linearity index is the maximum dimension of an M-subspace"
+    ],
+    "parameters": [
+      "m >= 4",
+      "n = 2m",
+      "The primal and dual source families"
+    ],
+    "unresolved_remainder": "The source proves both members of the dual pair lie outside the completed Maiorana--McFarland class, so their indices are below m, but their exact indices and ell-optimality remain unknown for the full parameter family."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "rotation-symmetric",
+      "linearity-index",
+      "m-subspaces",
+      "maiorana-mcfarland"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polujan--Kudin--Pasalic, Open Problem 3",
+        "locator": "Eqs. (IV.1)-(IV.2) and Open Problem 3, pp. 4346-4347",
+        "doi": "10.1109/TIT.2026.3685133"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-06-01",
+      "kind": "source_statement",
+      "summary": "The source proves exclusion from the completed Maiorana--McFarland class and poses the exact-index and ell-optimality questions as Open Problem 3.",
+      "citation_labels": [
+        "Polujan--Kudin--Pasalic, Open Problem 3"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "rotation-symmetric-bent-multiple-three-msharp"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

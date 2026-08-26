@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas/main/data/schema/problem.schema.json",
+  "title": "CryptoFrontierAtlas problem record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "group_id",
+    "title",
+    "summary",
+    "formal_statement",
+    "scope",
+    "classification",
+    "source",
+    "status",
+    "progress",
+    "artifacts",
+    "lean",
+    "relations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "group_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20
+    },
+    "formal_statement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "body"],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["markdown-latex"]
+        },
+        "body": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "assumptions", "parameters", "unresolved_remainder"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 3
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "parameters": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "unresolved_remainder": {
+          "type": "string"
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["taxonomy_version", "primary", "secondary", "tags"],
+      "properties": {
+        "taxonomy_version": {"type": "string"},
+        "primary": {"type": "string"},
+        "secondary": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "citations"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "explicit_open_problem",
+            "explicit_conjecture",
+            "open_challenge",
+            "public_thesis_conjecture"
+          ]
+        },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["role", "label"],
+            "properties": {
+              "role": {
+                "type": "string",
+                "enum": ["original_source", "prior_progress", "resolution", "independent_resolution"]
+              },
+              "label": {"type": "string"},
+              "locator": {"type": "string"},
+              "doi": {"type": "string"},
+              "eprint": {"type": "string"},
+              "url": {"type": "string", "format": "uri"}
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "public_mathematical_status",
+        "public_verification_status",
+        "peer_review_status",
+        "disclosure",
+        "last_reviewed"
+      ],
+      "properties": {
+        "public_mathematical_status": {
+          "type": "string",
+          "enum": ["open", "partial_progress", "resolved", "refuted", "corrected", "historically_settled"]
+        },
+        "public_verification_status": {
+          "type": "string",
+          "enum": ["none", "computer_checked", "externally_claimed", "externally_reproducible", "repository_checked"]
+        },
+        "peer_review_status": {
+          "type": "string",
+          "enum": ["not_submitted", "preprint", "under_review", "published", "independently_audited"]
+        },
+        "disclosure": {
+          "type": "string",
+          "enum": ["problem_only", "public_progress"]
+        },
+        "last_reviewed": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "progress": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "kind", "summary", "citation_labels"],
+        "properties": {
+          "date": {"type": "string", "format": "date"},
+          "kind": {
+            "type": "string",
+            "enum": ["source_statement", "prior_result", "public_result", "independent_result", "machine_checked_formalization", "audit"]
+          },
+          "summary": {"type": "string", "minLength": 10},
+          "citation_labels": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {"kind": {"const": "machine_checked_formalization"}},
+              "required": ["kind"]
+            },
+            "then": {
+              "properties": {"citation_labels": {"type": "array", "maxItems": 0}}
+            },
+            "else": {
+              "properties": {"citation_labels": {"type": "array", "minItems": 1}}
+            }
+          }
+        ]
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "visibility"],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": ["canonical_manuscript", "source_code", "verifier", "data", "superseded_draft"]
+          },
+          "visibility": {
+            "type": "string",
+            "enum": ["not_listed", "external_link", "repository_file"]
+          },
+          "url": {"type": "string", "format": "uri"},
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "license": {"type": "string"}
+        }
+      }
+    },
+    "lean": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "available_in_repo"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {"available_in_repo": {"const": true}},
+            "required": ["available_in_repo"]
+          },
+          "then": {
+            "required": [
+              "path",
+              "commit",
+              "lean_version",
+              "mathlib_version",
+              "trusted_base",
+              "replay_command",
+              "source_tree_sha256",
+              "source_tree_file_count"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["none", "statement_only", "partial", "complete", "externally_claimed", "externally_reproducible", "repository_checked"]
+        },
+        "available_in_repo": {"type": "boolean"},
+        "path": {"type": "string"},
+        "commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "lean_version": {"type": "string"},
+        "mathlib_version": {"type": "string"},
+        "trusted_base": {"type": "string"},
+        "replay_command": {"type": "string"},
+        "source_tree_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_tree_file_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["related", "supersedes", "superseded_by"],
+      "properties": {
+        "related": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "superseded_by": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

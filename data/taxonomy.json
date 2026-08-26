@@ -1,0 +1,69 @@
+{
+  "taxonomy_version": "0.2.0",
+  "title": "CryptoFrontierAtlas cryptography taxonomy",
+  "research_topic_category": {
+    "label": "Research topic category",
+    "description": "A three-level hierarchy for organizing symmetric-cryptography research questions.",
+    "group_ids": ["foundations", "design", "cryptanalysis"]
+  },
+  "areas": [
+    {"id": "symmetric", "label": "Symmetric cryptography"},
+    {"id": "asymmetric", "label": "Asymmetric cryptography"},
+    {"id": "other", "label": "Others"}
+  ],
+  "domains": [
+    {
+      "id": "foundations",
+      "area": "symmetric",
+      "label": "Mathematical foundations and structural questions",
+      "children": [
+        {"id": "foundations.algebraic-structures", "label": "Algebraic structures"},
+        {"id": "foundations.boolean-vectorial", "label": "Boolean and vectorial Boolean functions"},
+        {"id": "foundations.combinatorics-finite-geometry", "label": "Combinatorics and finite geometry"},
+        {"id": "foundations.probability-statistics", "label": "Probability and statistics"},
+        {"id": "foundations.coding-theory", "label": "Coding theory"},
+        {"id": "foundations.others", "label": "Other questions on mathematical foundations and structures"}
+      ]
+    },
+    {
+      "id": "design",
+      "area": "symmetric",
+      "label": "Design of cryptographic primitives",
+      "children": [
+        {"id": "design.block-ciphers", "label": "Block ciphers"},
+        {"id": "design.stream-ciphers", "label": "Stream ciphers"},
+        {"id": "design.hash-functions", "label": "Hash functions"},
+        {"id": "design.macs-authenticated-encryption", "label": "MACs and authenticated encryption"},
+        {"id": "design.sboxes-nonlinear-components", "label": "S-boxes and nonlinear components"},
+        {"id": "design.others", "label": "Other cryptographic primitive design problems"}
+      ]
+    },
+    {
+      "id": "cryptanalysis",
+      "area": "symmetric",
+      "label": "Cryptanalysis",
+      "children": [
+        {"id": "cryptanalysis.differential", "label": "Differential cryptanalysis"},
+        {"id": "cryptanalysis.linear", "label": "Linear cryptanalysis"},
+        {"id": "cryptanalysis.algebraic", "label": "Algebraic cryptanalysis"},
+        {"id": "cryptanalysis.integral-higher-order", "label": "Integral and higher order cryptanalysis"},
+        {"id": "cryptanalysis.meet-in-the-middle", "label": "Meet in the middle cryptanalysis"},
+        {"id": "cryptanalysis.cube", "label": "Cube attack"},
+        {"id": "cryptanalysis.side-channel", "label": "Side-Channel cryptanalysis"},
+        {"id": "cryptanalysis.rotational-arx", "label": "Rotational and ARX cryptanalysis"},
+        {"id": "cryptanalysis.automated", "label": "Automated cryptanalysis"},
+        {"id": "cryptanalysis.structural", "label": "Structural cryptanalysis"},
+        {"id": "cryptanalysis.others", "label": "Other cryptanalysis"}
+      ]
+    }
+  ],
+  "reserved_topic_tags": [
+    "algebraic-immunity",
+    "boomerang",
+    "gfn-diffusion",
+    "implementation",
+    "xor-complexity",
+    "finite-fields",
+    "formal-verification"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nfsr-cycle-structure-periods",
+  "group_id": "nfsr-decomposition-cascade-open-problems",
+  "title": "General cycle and period characterization for NFSRs",
+  "summary": "Characterize both the state cycles and output periods of every admissible nonlinear feedback shift register beyond known special families.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every nonsingular binary nonlinear feedback shift register (NFSR), characterize both its state-cycle structure and the periods of its generated output sequences. A complete theorem or effective algorithm must cover every admissible feedback function, beyond the special Galois, F-Ring, symmetric, and other restricted classes already studied."
+  },
+  "scope": {
+    "domain": "Binary nonsingular nonlinear feedback shift registers used in stream-cipher constructions",
+    "assumptions": [
+      "The register is an NFSR over F_2",
+      "The feedback function is nonsingular",
+      "The output sequence follows the source's NFSR convention"
+    ],
+    "parameters": [
+      "stage number",
+      "Boolean feedback function",
+      "initial state",
+      "state-cycle structure",
+      "output period"
+    ],
+    "unresolved_remainder": "Later inspected papers characterize only named special NFSR structures; no complete result covers both state cycles and output periods for every nonsingular NFSR."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "nfsr",
+      "stream-ciphers",
+      "cycle-structure",
+      "sequence-periods"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Decomposition of Cascade Connections of NFSRs: Old and New Results",
+        "locator": "Introduction, journal pp. 8029-8030",
+        "doi": "10.1109/tit.2025.3592293",
+        "url": "https://doi.org/10.1109/tit.2025.3592293"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-10-01",
+      "kind": "source_statement",
+      "summary": "The source identifies general NFSR cycle structure and period characterization as open, with only special cases known.",
+      "citation_labels": [
+        "The Decomposition of Cascade Connections of NFSRs: Old and New Results"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nfsr-degeneracy-subfamilies"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

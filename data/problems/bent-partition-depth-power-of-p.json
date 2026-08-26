@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-partition-depth-power-of-p",
+  "group_id": "bent-partition-structure",
+  "title": "Prime-power depth of arbitrary bent partitions",
+  "summary": "Determine whether the depth of every bent partition is a power of the underlying field characteristic.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ be prime and let $\\Gamma=\\{A_1,\\ldots,A_K\\}$ be a bent partition of $V_n^{(p)}$ in the source sense, with the source's admissible dimension convention. Must $K=p^r$ for some integer $r\\ge 1$? Equivalently, prove the prime-power property for every bent partition or construct one whose depth is not a power of $p$."
+  },
+  "scope": {
+    "domain": "Bent partitions and p-ary or vectorial bent functions",
+    "assumptions": [
+      "p is prime",
+      "n is even except for the source's p = K = 3 case",
+      "Bent partition and depth K use the source definitions"
+    ],
+    "parameters": [
+      "p: field characteristic",
+      "n: ambient dimension",
+      "K: partition depth"
+    ],
+    "unresolved_remainder": "The source proves the claim for weakly regular bent partitions. arXiv:2606.27776 proves it for the strict odd-prime symmetric subclass with K >= 5 and -A_i = A_i. Arbitrary bent partitions outside these subclasses remain unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "bent-partitions",
+      "vectorial-functions",
+      "prime-power",
+      "partition-depth"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Wei--Fu, further results on bent partitions",
+        "locator": "Abstract and Introduction, p. 3447; Theorem 3 and conclusion, pp. 3451-3459",
+        "doi": "10.1109/TIT.2026.3670189",
+        "eprint": "arXiv:2509.16911",
+        "url": "https://arxiv.org/abs/2509.16911"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Wang--Wei--Fu--Li--Li, s-plateaued partitions",
+        "locator": "Theorem 6 and Corollary 2",
+        "eprint": "arXiv:2606.27776",
+        "url": "https://arxiv.org/abs/2606.27776"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-05-01",
+      "kind": "source_statement",
+      "summary": "The source proves prime-power depth for its weakly regular subclass and explicitly leaves the all-partitions statement open.",
+      "citation_labels": [
+        "Wang--Wei--Fu, further results on bent partitions"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "kind": "prior_result",
+      "summary": "A later preprint proves prime-power depth for odd-prime bent partitions satisfying K >= 5 and -A_i = A_i, a strict subclass of the original question.",
+      "citation_labels": [
+        "Wang--Wei--Fu--Li--Li, s-plateaued partitions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-partition-wbp-theorem4-converse"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-full-round-fixed-target-key-collision",
+  "group_id": "aes-kiasu-key-collision-open-problem",
+  "title": "Full-round fixed-target key collisions for AES",
+  "summary": "Determine whether full-round AES-128, AES-192, or AES-256 admits a sub-birthday fixed-zero-plaintext key collision attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $\\ell\\in\\{128,192,256\\}$, decide whether there are distinct AES-$\\ell$ keys $k_1,k_2$ such that $\\operatorname{AES}_{k_1}(0)=\\operatorname{AES}_{k_2}(0)$ using fewer than approximately $2^{64}$ trials in the AES-GCM padding-fix key-commitment setting. A reduced-round or free-target collision does not settle the full-round fixed-zero-plaintext question."
+  },
+  "scope": {
+    "domain": "Full-round AES key collisions for fixed-target plaintext in authenticated-encryption key commitment",
+    "assumptions": [
+      "The plaintext is the fixed all-zero block",
+      "k1 and k2 are distinct",
+      "AES key length is 128, 192, or 256 bits",
+      "The target is full-round AES",
+      "The threshold is approximately 2^64 trials"
+    ],
+    "parameters": [
+      "AES key length in {128,192,256}",
+      "number of full AES rounds",
+      "trial complexity"
+    ],
+    "unresolved_remainder": "The source provides only reduced-round fixed-target attacks: 2-round AES-128, 5-round AES-192, and 6-round AES-256. No inspected later result gives a sub-2^64 full-round fixed-zero-plaintext collision or an impossibility proof."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "design.macs-authenticated-encryption",
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "aes",
+      "key-collision",
+      "target-plaintext",
+      "key-commitment",
+      "full-round"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ni--Li--Liu--Wang, Practical Key Collision on AES and Kiasu-BC",
+        "locator": "Introduction, quoted Albertini question, journal p. 9732",
+        "doi": "10.1109/tit.2025.3623726",
+        "url": "https://doi.org/10.1109/tit.2025.3623726"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-10-20",
+      "kind": "source_statement",
+      "summary": "The source quotes the fixed-zero-plaintext key-collision question and reports fixed-target attacks only for reduced AES rounds.",
+      "citation_labels": [
+        "Ni--Li--Liu--Wang, Practical Key Collision on AES and Kiasu-BC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

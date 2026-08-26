@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "completed-maiorana-mcfarland-extension-asymptotics",
+  "group_id": "maiorana-mcfarland-class-extensions",
+  "title": "Asymptotics of completed Maiorana--McFarland extensions",
+  "summary": "Determine tight asymptotic cardinalities for the closest bent functions to the completed Maiorana--McFarland class and its indicator-extension closure.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\mathcal M_{2n}$ be the strict Maiorana--McFarland class and let $\\mathcal M_{2n}^{\\#}$ be its extended-affine closure. Let $\\widehat{(\\mathcal M_{2n}^{\\#})}$ be the class obtained by adjoining every bent function $f\\oplus\\operatorname{Ind}_U$ generated from $f\\in\\mathcal M_{2n}^{\\#}$ and an $n$-dimensional affine subspace $U\\subseteq\\mathbb F_2^{2n}$ on which $f$ is affine. Define $N(\\mathcal M_{2n}^{\\#})=\\widehat{(\\mathcal M_{2n}^{\\#})}\\setminus\\mathcal M_{2n}^{\\#}$. Determine asymptotically tight formulas, as $n\\to\\infty$, for both $|N(\\mathcal M_{2n}^{\\#})|$ and $|\\widehat{(\\mathcal M_{2n}^{\\#})}|$."
+  },
+  "scope": {
+    "domain": "Cardinalities of completed Maiorana--McFarland bent-function classes",
+    "assumptions": [
+      "$\\mathcal M_{2n}^{\\#}$ is the extended-affine closure of the strict Maiorana--McFarland class",
+      "$\\widehat{(\\mathcal M_{2n}^{\\#})}$ uses the source indicator construction $f\\oplus\\operatorname{Ind}_U$",
+      "$N(\\mathcal M_{2n}^{\\#})$ contains the newly generated closest bent functions outside $\\mathcal M_{2n}^{\\#}$",
+      "The asymptotic parameter is $n\\to\\infty$"
+    ],
+    "parameters": [
+      "$n$: half the number of Boolean variables",
+      "$2n$: ambient dimension"
+    ],
+    "unresolved_remainder": "The source derives asymptotics for $|\\mathcal M_{2n}^{\\#}|$ and upper bounds for $|N(\\mathcal M_{2n}^{\\#})|$ and $|\\widehat{(\\mathcal M_{2n}^{\\#})}|$. Matching lower bounds, and hence asymptotically tight behavior for both requested cardinalities, remain unknown."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "maiorana-mcfarland",
+      "asymptotics",
+      "class-cardinality",
+      "affine-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kolomeec--Bykov, completed-class cardinality problem",
+        "locator": "Remark 8 and Open Problem 2, p. 2526",
+        "doi": "10.1109/TIT.2026.3661419",
+        "eprint": "arXiv:2503.21440",
+        "url": "https://arxiv.org/abs/2503.21440"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-04-01",
+      "kind": "source_statement",
+      "summary": "Open Problem 2 asks for the asymptotic behavior of both requested cardinalities, while Remark 8 identifies the missing lower-bound side.",
+      "citation_labels": [
+        "Kolomeec--Bykov, completed-class cardinality problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "exact-enumeration-bent-boolean-functions"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

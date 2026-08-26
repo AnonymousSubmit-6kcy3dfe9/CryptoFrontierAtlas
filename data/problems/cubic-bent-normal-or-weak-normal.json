@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cubic-bent-normal-or-weak-normal",
+  "group_id": "gillot-normality-bent-functions",
+  "title": "Normality or weak normality of cubic bent functions",
+  "summary": "Determine whether every cubic bent function in every even dimension at least ten is normal or weakly normal.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a Boolean function $f:\\mathbb F_2^m\\to\\mathbb F_2$, define its relative degree on affine $r$-flats by $\\deg_r(f)=\\min_{a,V:\\,\\dim V=r}\\deg(f|_{a+V})$. For every even $m\\ge 10$ and every bent $f$ of algebraic degree exactly $3$, is $\\deg_{m/2}(f)\\le 1$? Equivalently, prove that every such $f$ is normal or weakly normal, or construct one with $\\deg_{m/2}(f)\\ge 2$."
+  },
+  "scope": {
+    "domain": "Boolean bent functions and affine-flat normality",
+    "assumptions": [
+      "m is even and m >= 10",
+      "f : F_2^m -> F_2 is bent",
+      "f has algebraic degree exactly 3",
+      "Normality and weak normality use the source's affine-flat definitions"
+    ],
+    "parameters": [
+      "even dimension m >= 10",
+      "cubic bent function f"
+    ],
+    "unresolved_remainder": "The full range of even dimensions m >= 10 remains open. In particular, the source-emphasized m = 10 case is not settled by the few known normal examples."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "bent-functions",
+      "boolean-functions",
+      "cubic-functions",
+      "normality",
+      "relative-degree",
+      "weak-normality"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gillot--Langevin--Polujan, normality of 8-bit bent functions",
+        "locator": "Eq. (III.1) and Section VI, items 1-2, pp. 4363-4364",
+        "doi": "10.1109/TIT.2026.3685370",
+        "eprint": "arXiv:2504.21779",
+        "url": "https://arxiv.org/abs/2504.21779"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-06-01",
+      "kind": "source_statement",
+      "summary": "The source identifies dimension ten as the next open case and asks the same normal-or-weak-normal question for every even dimension at least ten.",
+      "citation_labels": [
+        "Gillot--Langevin--Polujan, normality of 8-bit bent functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "eight-variable-quartic-normality",
+      "non-normal-cubic-bent-existence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

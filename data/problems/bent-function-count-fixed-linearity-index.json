@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-function-count-fixed-linearity-index",
+  "group_id": "bent-concatenation-m-subspace-open-problems",
+  "title": "Bent-function counts at a fixed linearity index",
+  "summary": "Determine cardinality bounds for bent functions in n+2 variables after fixing the linearity index, with special attention to those outside the completed Maiorana--McFarland class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every even $n\\ge 6$ and every admissible $r$ with $1\\le r\\le (n+2)/2$, let $C_{n,r}=|\\{f\\in\\mathcal B_{n+2}:\\operatorname{ind}(f)=r\\}|$. Determine nontrivial valid upper and lower bounds, ideally exact formulas, for $C_{n,r}$; in particular resolve the contribution from $f\\notin\\mathcal M^{\\#}$ that Article 044 identifies as the desired refined count."
+  },
+  "scope": {
+    "domain": "Cardinality stratification of bent Boolean functions by linearity index",
+    "assumptions": [
+      "$n$ is even and at least 6, so the source bent-function dimensions are even",
+      "$\\operatorname{ind}(f)$ is the maximum dimension of an M-subspace of $f$",
+      "$\\mathcal B_{n+2}$ denotes all bent Boolean functions in $n+2$ variables",
+      "The source specifically motivates the outside-$\\mathcal M^{\\#}$ subcount as the refined target"
+    ],
+    "parameters": [
+      "$n$: even base dimension",
+      "$r$: fixed linearity index",
+      "$C_{n,r}$: cardinality at that index",
+      "the restriction $f\\notin\\mathcal M^{\\#}$"
+    ],
+    "unresolved_remainder": "No inspected later work supplies nontrivial bounds for every admissible $n$ and fixed $r$, either for the unrestricted count $C_{n,r}$ or for the source's outside-$\\mathcal M^{\\#}$ refinement. Existing results count construction classes or exhibit isolated indices, which do not determine this stratified cardinality."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "linearity-index",
+      "enumeration",
+      "maiorana-mcfarland",
+      "class-cardinality"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kudin--Pasalic--Polujan--Zhang, fixed-linearity-index counting question",
+        "locator": "Conclusion, item 4, p. 4011",
+        "doi": "10.1109/TIT.2025.3547533",
+        "url": "https://doi.org/10.1109/TIT.2025.3547533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-05-01",
+      "kind": "source_statement",
+      "summary": "The conclusion asks for bounds on the number of bent functions in n+2 variables with a fixed linearity index to refine the outside-class count.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang, fixed-linearity-index counting question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "remark-four-vectorial-bent-construction",
+      "ea-inequivalent-bent-four-concatenations"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tu-deng-conjecture",
+  "group_id": "tu-deng-conjecture",
+  "title": "The Tu--Deng circular-addition inequality",
+  "summary": "Prove the uniform half-cube bound for low-weight pairs representing every nonzero residue modulo 2^k - 1.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $M=2^k-1$ and $1\\le t<M$. Define $S(t,k)=\\{(a,b)\\in\\{0,\\ldots,M-1\\}^2:a+b\\equiv t\\pmod M,\\operatorname{wt}_k(a)+\\operatorname{wt}_k(b)<k\\}$. Prove $|S(t,k)|\\le2^{k-1}$ for every $k\\ge2$ and admissible $t$."
+  },
+  "scope": {
+    "domain": "Circular addition, Boolean weights, and algebraic immunity",
+    "assumptions": ["k >= 2", "1 <= t < 2^k - 1", "Hamming weights use k-bit representatives"],
+    "parameters": ["k: word length", "t: nonzero residue"],
+    "unresolved_remainder": "The Lean artifact completely proves the displayed inequality, but does not formalize the stronger equality characterization or the count of equality residues; priority and independence of competing proof claims also require a literature audit."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": ["foundations.boolean-vectorial"],
+    "tags": ["algebraic-immunity", "cyclic-addition", "hamming-weight"]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {"role": "original_source", "label": "Tu--Deng, On a conjecture about binary strings distribution", "doi": "10.1007/s10623-010-9413-9"},
+      {"role": "prior_progress", "label": "Spiegelhofer--Wallner, circular-addition formulation", "doi": "10.37236/7178"},
+      {"role": "independent_resolution", "label": "Liu--Luo--Xie, A complete proof for the Tu--Deng conjecture", "eprint": "arXiv:2608.05187", "url": "https://arxiv.org/abs/2608.05187"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "resolved",
+    "public_verification_status": "repository_checked",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-19"
+  },
+  "progress": [
+    {"date": "2011-01-01", "kind": "source_statement", "summary": "Tu and Deng introduced the uniform half-cube inequality.", "citation_labels": ["Tu--Deng, On a conjecture about binary strings distribution"]},
+    {"date": "2019-01-01", "kind": "prior_result", "summary": "An exact circular-addition formulation and almost-sure asymptotic results were published, without replacing the pointwise conjecture.", "citation_labels": ["Spiegelhofer--Wallner, circular-addition formulation"]},
+    {"date": "2026-08-01", "kind": "independent_result", "summary": "A public preprint claims a complete proof; priority and proof independence remain under review.", "citation_labels": ["Liu--Luo--Xie, A complete proof for the Tu--Deng conjecture"]},
+    {"date": "2026-08-19", "kind": "machine_checked_formalization", "summary": "Lean proves the displayed uniform Tu--Deng inequality for every admissible k and t using greatest cyclic carries, a pivotal-subcube partition, and Russo/profile comparison; equality characterizations remain outside scope.", "citation_labels": []}
+  ],
+  "artifacts": [
+    {
+      "role": "source_code",
+      "visibility": "repository_file",
+      "url": "https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas/blob/e0ccf4c61ac83cea3771be16a6132fc730cbfc5f/data/lean/CryptoFrontierAtlas/TuDengComplete.lean",
+      "sha256": "dc31148a0e9d9441d0ac4f7eae79d64fa7fb671125d6ef9e418a88fc6f313b0c",
+      "license": "Apache-2.0"
+    }
+  ],
+  "lean": {
+    "status": "complete",
+    "available_in_repo": true,
+    "path": "data/lean/CryptoFrontierAtlas/TuDengComplete.lean",
+    "commit": "e0ccf4c61ac83cea3771be16a6132fc730cbfc5f",
+    "lean_version": "4.29.1",
+    "mathlib_version": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+    "trusted_base": "Lean 4.29.1 and mathlib; the complete theorem uses ordinary kernel checking (the companion finite regression file uses native_decide)",
+    "replay_command": "cd data/lean && lake env lean CryptoFrontierAtlas/TuDengComplete.lean",
+    "source_tree_sha256": "6fa133882ac427489eb5d6d8c873937096622edc902b4dff4ce07562920c77f9",
+    "source_tree_file_count": 61
+  },
+  "relations": {"related": ["carlet-13-7-7-layer-algebraic-immunity"], "supersedes": [], "superseded_by": []}
+}

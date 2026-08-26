@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.2.0",
+  "id": "balanced-eight-variable-nonlinearity",
+  "group_id": "balanced-eight-variable-nonlinearity",
+  "title": "Maximum balanced nonlinearity in eight variables",
+  "summary": "The maximum nonlinearity of a balanced Boolean function on eight variables is 116; in particular, the spectral target 118 is impossible.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $f:\\mathbb F_2^8\\to\\mathbb F_2$ with $|f^{-1}(1)|=128$, prove $\\operatorname{NL}(f)\\le 116$, and construct a balanced function for which equality holds."
+  },
+  "scope": {
+    "domain": "Balanced Boolean functions and Walsh spectra",
+    "assumptions": ["The function is balanced", "Nonlinearity is distance from the first-order Reed--Muller code"],
+    "parameters": ["Input dimension n = 8", "Balanced support size 128"],
+    "unresolved_remainder": "Any claim beyond the eight-variable balanced case is outside this record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.coding-theory"],
+    "tags": ["boolean-functions", "nonlinearity", "walsh-spectrum", "computer-assisted"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Maity--Maitra balanced resilient-function bounds", "locator": "FSE 2004"},
+      {"role": "prior_progress", "label": "Picek et al. balanced Boolean-function search targets", "locator": "PPSN 2014"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "resolved",
+    "public_verification_status": "repository_checked",
+    "peer_review_status": "under_review",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-19"
+  },
+  "progress": [
+    {"date": "2004-01-01", "kind": "prior_result", "summary": "Earlier balanced-function constructions and bounds left the eight-variable target as a finite extremal question.", "citation_labels": ["Maity--Maitra balanced resilient-function bounds"]},
+    {"date": "2014-01-01", "kind": "source_statement", "summary": "A balanced eight-variable search target was recorded in the subsequent computational literature.", "citation_labels": ["Picek et al. balanced Boolean-function search targets"]},
+    {"date": "2026-08-19", "kind": "machine_checked_formalization", "summary": "Lean proves the sharp maximum 116 through complete local enumeration, 69 integer Farkas certificate replays, 13 terminal profile exclusions, and an explicit equality witness.", "citation_labels": []}
+  ],
+  "artifacts": [
+    {
+      "role": "source_code",
+      "visibility": "repository_file",
+      "url": "https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas/blob/e0ccf4c61ac83cea3771be16a6132fc730cbfc5f/data/lean/CryptoFrontierAtlas/BalancedEightNonlinearityComplete.lean",
+      "sha256": "2f60cd09e62e6bd75e2d454db2736e83411a1584f92f0a759bb147f0b36b80ad",
+      "license": "Apache-2.0"
+    }
+  ],
+  "lean": {
+    "status": "complete",
+    "available_in_repo": true,
+    "path": "data/lean/CryptoFrontierAtlas/BalancedEightNonlinearityComplete.lean",
+    "commit": "e0ccf4c61ac83cea3771be16a6132fc730cbfc5f",
+    "lean_version": "4.29.1",
+    "mathlib_version": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+    "trusted_base": "Lean 4.29.1, mathlib, and the native_decide compiled evaluator for fixed finite enumeration, certificate, parity, normalization, and witness checks; no user-declared axioms",
+    "replay_command": "cd data/lean && lake env lean CryptoFrontierAtlas/BalancedEightNonlinearityComplete.lean",
+    "source_tree_sha256": "6fa133882ac427489eb5d6d8c873937096622edc902b4dff4ce07562920c77f9",
+    "source_tree_file_count": 61
+  },
+  "relations": {"related": ["vectorial-nonlinearity-beyond-nyberg"], "supersedes": [], "superseded_by": []}
+}

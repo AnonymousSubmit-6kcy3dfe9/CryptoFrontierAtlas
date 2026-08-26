@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-permutation-minimum-carlitz-rank",
+  "group_id": "analysis-low-differential-uniformity-carlitz-rank",
+  "title": "Minimum Carlitz rank of an APN permutation",
+  "summary": "Determine the smallest field size and Carlitz rank for which an APN permutation polynomial exists over a binary finite field.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=2^n>5$. Determine the minimum feasible field size $q$ and the minimum feasible Carlitz rank $k$ among APN permutation polynomials $G:\\mathbb F_q\\to\\mathbb F_q$ with $\\operatorname{Crk}(G)=k$. The source does not impose a lexicographic order on the pair $(q,k)$; settle both minima by construction or impossibility results for smaller values."
+  },
+  "scope": {
+    "domain": "APN permutation polynomials over binary finite fields and their Carlitz rank",
+    "assumptions": [
+      "q=2^n",
+      "q>5",
+      "G is an APN permutation polynomial over F_q"
+    ],
+    "parameters": [
+      "field size q",
+      "dimension n",
+      "Carlitz rank k"
+    ],
+    "unresolved_remainder": "The source reports only lower bounds and sporadic constructions; the minimum feasible q and minimum feasible k are not jointly determined by later inspected literature."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "apn-permutations",
+      "carlitz-rank",
+      "finite-fields",
+      "sboxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Analysis of Functions of Low Differential Uniformity in Characteristic 2: A New Approach (I)",
+        "locator": "Remark 12, journal p. 8009",
+        "doi": "10.1109/tit.2025.3597162",
+        "url": "https://doi.org/10.1109/tit.2025.3597162"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-10-01",
+      "kind": "source_statement",
+      "summary": "The source quotes the open minimum problem for APN permutations and Carlitz rank after recording only partial prior results.",
+      "citation_labels": [
+        "Analysis of Functions of Low Differential Uniformity in Characteristic 2: A New Approach (I)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

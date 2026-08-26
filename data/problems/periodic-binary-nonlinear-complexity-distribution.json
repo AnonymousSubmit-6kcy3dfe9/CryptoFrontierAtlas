@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "periodic-binary-nonlinear-complexity-distribution",
+  "group_id": "periodic-binary-nonlinear-complexity",
+  "title": "Exact nonlinear-complexity distribution of periodic binary sequences",
+  "summary": "Determine the exact number of binary sequences of every period and every admissible nonlinear complexity, beyond the known high-complexity range.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a positive integer $n$ and an admissible complexity $c$, let $P(n,c)$ be the set of binary $n$-periodic sequences $s$ with $\\operatorname{nlc}(s)=c$, where $\\operatorname{nlc}$ is the minimum length of an NFSR generating $s$. Determine $|P(n,c)|$ exactly for every pair $(n,c)$, equivalently the complete nonlinear-complexity distribution of binary $n$-periodic sequences."
+  },
+  "scope": {
+    "domain": "Periodic binary sequences and nonlinear feedback shift registers",
+    "assumptions": [
+      "n is a positive integer",
+      "Periodicity and sequence equality use the source convention",
+      "Nonlinear complexity is the minimum NFSR length"
+    ],
+    "parameters": [
+      "n: sequence period",
+      "c: admissible nonlinear complexity"
+    ],
+    "unresolved_remainder": "The source gives exact structure and counts when c >= floor(3n/4). A complete exact distribution for lower complexity values, apart from previously settled isolated ranges, remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "binary-sequences",
+      "nonlinear-complexity",
+      "nfsr",
+      "enumeration",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Yuan--Li--Zeng, high nonlinear complexity of periodic binary sequences",
+        "locator": "Introduction, pp. 6189-6190; high-complexity results, pp. 6193-6201",
+        "doi": "10.1109/TIT.2026.3695307",
+        "eprint": "arXiv:2602.01134",
+        "url": "https://arxiv.org/abs/2602.01134"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-08-01",
+      "kind": "source_statement",
+      "summary": "The source derives exact structure and enumeration for nonlinear complexity at least floor(3n/4) and explicitly leaves the complete distribution open.",
+      "citation_labels": [
+        "Yuan--Li--Zeng, high nonlinear complexity of periodic binary sequences"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "irreducible-cyclic-authentication-substitution-probability",
+  "group_id": "vega-hernandez-irreducible-cyclic-authentication",
+  "title": "Substitution success probabilities for Theorem-4 cyclic-code authentication",
+  "summary": "Determine the exact substitution-attack success probabilities for authentication codes based on the remaining dimension-two irreducible cyclic codes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $C_N$ be any dimension-two irreducible cyclic code in Theorem 4 of Vega and Hernández, with length $n=q^{N-1}(q-1)/N$ and its source-defined complete weight distribution. For the systematic authentication code constructed from $C_N$, determine the exact maximum substitution-attack success probability $P_S=\\max_{u\\in\\mathbb F_q,\\,0\\ne c\\in C_N}N(u,c)/n$."
+  },
+  "scope": {
+    "domain": "Systematic authentication codes constructed from finite-field irreducible cyclic codes",
+    "assumptions": [
+      "C_N is a dimension-two irreducible cyclic code in the source's Theorem 4 family",
+      "The authentication code is the source's systematic code based on C_N",
+      "N divides q-1 and n=q^(N-1)(q-1)/N",
+      "P_S is the maximum substitution-attack success probability defined in the source"
+    ],
+    "parameters": [
+      "q",
+      "N",
+      "the defining irreducible factor and code C_N"
+    ],
+    "unresolved_remainder": "The exact P_S value for every Theorem-4 irreducible cyclic code remains unresolved; the source computes only the Theorem-3 family and one example."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": ["foundations.coding-theory","foundations.probability-statistics"],
+    "tags": [
+      "authentication-codes",
+      "substitution-attack",
+      "irreducible-cyclic-codes",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Vega--Hernández, The Complete Weight Distribution of a Family of Irreducible Cyclic Codes of Dimension Two",
+        "locator": "Section VII, journal p. 357, paragraph after Theorem 6",
+        "doi": "10.1109/TIT.2025.3639204",
+        "url": "https://doi.org/10.1109/TIT.2025.3639204"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source computes P_S for its Theorem-3 codes and one Theorem-4 example, then explicitly asks for the values for the remaining Theorem-4 family.",
+      "citation_labels": [
+        "Vega--Hernández, The Complete Weight Distribution of a Family of Irreducible Cyclic Codes of Dimension Two"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

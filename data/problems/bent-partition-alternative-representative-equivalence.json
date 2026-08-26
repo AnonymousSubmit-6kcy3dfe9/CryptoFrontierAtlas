@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-partition-alternative-representative-equivalence",
+  "group_id": "alkan-bent-partition-construction-questions",
+  "title": "Representative dependence of three bent-partition constructions",
+  "summary": "For each construction in Sections III-V, classify when alternative admissible vectorial representatives of the same fixed input partition data produce equivalent output bent partitions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each source construction $s\\in\\{\\mathrm{III},\\mathrm{IV},\\mathrm{V}\\}$, fix the input partition data and all non-representative parameters required by that construction. Compare two outputs obtained by choosing alternative admissible vectorial representatives of those fixed data. Give necessary and sufficient conditions for the two output bent partitions to be equivalent. In Section III this includes fixed $\\Gamma_1,\\Gamma_2$ and representatives $F,\\widetilde F$ of $\\Gamma_1$ and $G,\\widetilde G$ of $\\Gamma_2$, producing partitions from $F(x)+G(y)$ and $\\widetilde F(x)+\\widetilde G(y)$; Sections IV and V use their own construction-specific representative tuples."
+  },
+  "scope": {
+    "domain": "Equivalence of bent partitions produced by the source's Sections III-V constructions",
+    "assumptions": [
+      "Each comparison fixes the source-defined input partition data for the applicable construction",
+      "Alternative vectorial representatives satisfy that construction's admissibility conditions",
+      "Trace groupings and other non-representative construction parameters remain fixed when applicable"
+    ],
+    "parameters": [
+      "s: source section in {III, IV, V}",
+      "construction-specific input bent partitions",
+      "alternative vectorial representatives",
+      "fixed construction parameters"
+    ],
+    "unresolved_remainder": "Necessary-and-sufficient equivalence criteria remain unknown for all three instances: the Section III direct-sum construction, the Section IV generalized-Maiorana--McFarland construction, and the Section V generalized Wang--Fu--Wei construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": ["foundations.boolean-vectorial"],
+    "tags": [
+      "bent-functions",
+      "bent-partitions",
+      "equivalence",
+      "vectorial-functions",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, representative-equivalence question",
+        "locator": "Section VII, third concrete question, pp. 766-767",
+        "doi": "10.1109/TIT.2024.3505600"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-24"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source states the representative-equivalence problem for its Section III direct sum and explicitly asks the analogous questions for Sections IV and V.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, representative-equivalence question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-partition-amorphic-scheme-isomorphism",
+      "bent-partition-section-iv-generalized-mm-separation",
+      "bent-partition-sections-iii-vi-mm-separation",
+      "vectorial-dual-bent-attainable-sigma-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

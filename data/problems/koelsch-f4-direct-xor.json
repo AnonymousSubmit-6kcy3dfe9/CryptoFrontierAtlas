@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.2.0",
+  "id": "koelsch-f4-direct-xor",
+  "group_id": "koelsch-problem-6-5-4",
+  "title": "Direct-XOR optimality for primitive F4 subfield multiplication",
+  "summary": "Determine whether repeating an optimal proper-subfield multiplication matrix remains optimal in an extension field, beginning with the primitive F4 direct-XOR case.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\alpha\\in\\mathbb F_4\\setminus\\mathbb F_2$ and represent multiplication by $\\alpha$ on $\\mathbb F_{2^{2d}}$ by a binary matrix $A$. Determine the minimum direct-XOR cost among matrices satisfying $A^2+A+I=0$, and compare it with the block diagonal sum of $d$ copies of the optimal $2\\times2$ matrix."
+  },
+  "scope": {
+    "domain": "Finite-field multiplication and linear implementation cost",
+    "assumptions": ["Primitive quadratic subfield F4/F2", "Direct-XOR metric only"],
+    "parameters": ["d: extension multiplicity", "Binary matrix weight and direct-XOR count"],
+    "unresolved_remainder": "General proper subfields and the sequential-XOR metric are not covered."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": ["design.block-ciphers"],
+    "tags": ["finite-fields", "implementation", "xor-complexity", "linear-maps"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Kolsch, Problem 6.5.4", "doi": "10.18453/rosdok_id00002900"},
+      {"role": "prior_progress", "label": "Beierle--Kranz--Leander, lightweight finite-field multiplication", "locator": "FSE 2016", "doi": "10.1007/978-3-662-53018-4_23"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2016-01-01", "kind": "prior_result", "summary": "Basis-dependent multiplication cost was studied for subfield elements and extension-field implementations.", "citation_labels": ["Beierle--Kranz--Leander, lightweight finite-field multiplication"]},
+    {"date": "2020-01-01", "kind": "source_statement", "summary": "Kolsch restated the direct and sequential XOR variants as a dedicated open problem.", "citation_labels": ["Kolsch, Problem 6.5.4"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": [], "supersedes": [], "superseded_by": []}
+}

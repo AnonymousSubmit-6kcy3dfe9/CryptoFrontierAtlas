@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "five-valued-vectorial-aofvs-even",
+  "group_id": "five-valued-spectra-open-problems",
+  "title": "Vectorial AOFVS maps beyond the half-dimension range",
+  "summary": "Settle pointwise existence of even-dimensional vectorial maps whose every nonzero component has the required five-valued AOFVS spectrum.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every even $n\\ge4$ and every integer $m$ with $n/2+2\\le m\\le n$, determine whether there exists a map $F:\\mathbb F_2^n\\to\\mathbb F_2^m$ such that, for every $c\\in\\mathbb F_2^m\\setminus\\{0\\}$ and every $a\\in\\mathbb F_2^n$, the component Walsh value satisfies $W_{c\\cdot F}(a)\\in\\{0,\\pm2^{n/2},\\pm2^{n/2+1}\\}$."
+  },
+  "scope": {
+    "domain": "Vectorial Boolean functions with almost-optimal five-valued component spectra",
+    "assumptions": [
+      "n is even and n >= 4",
+      "n/2 + 2 <= m <= n",
+      "Every nonzero component must satisfy the source's AOFVS spectrum condition"
+    ],
+    "parameters": [
+      "n: even input dimension",
+      "m: output dimension",
+      "F: vectorial Boolean map"
+    ],
+    "unresolved_remainder": "Settle existence separately for every even n >= 4 and every m with n/2 + 2 <= m <= n. The source's unspecified odd-n range is excluded from this record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "aofvs",
+      "five-valued-spectra",
+      "vectorial-functions",
+      "walsh-spectrum",
+      "component-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang--Song--Pasalic, five-valued spectra constructions",
+        "locator": "Open Problem 2, pp. 5222-5223; even-n branch",
+        "doi": "10.1109/TIT.2026.3697107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-05-26",
+      "kind": "source_statement",
+      "summary": "The source asks for vectorial AOFVS maps throughout the stated even-dimensional output range beyond its existing construction.",
+      "citation_labels": [
+        "Zhang--Song--Pasalic, five-valued spectra constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "five-valued-construction1-ea-balanced",
+      "five-valued-construction3-d0-exclusion"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

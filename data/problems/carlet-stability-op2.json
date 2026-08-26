@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2.0",
+  "id": "carlet-stability-op2",
+  "group_id": "carlet-stability",
+  "title": "Dual lexicographic normal form for fast-point-free Boolean functions",
+  "summary": "Determine whether the absence of a fast point forces a dual lexicographic normal form for a Boolean function under affine equivalence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $f:\\mathbb F_2^n\\to\\mathbb F_2$ have degree $r$ with $n>r\\ge2$, and call $a\\ne0$ a fast point when $\\deg(\\Delta_a f)<r-1$. Assume no fast point exists. Does an affine change of variables, modulo terms of degree below $r$, produce a top support $A$ with every ambient coordinate active and $\\forall i\\in\\operatorname{Var}(A),\\exists T\\in A$ containing $i$ such that $T-i+t\\notin A$ for every $t\\notin T$?"
+  },
+  "scope": {
+    "domain": "Degree stability, duality, and algebraic normal forms",
+    "assumptions": ["Binary Boolean functions", "No-fast-point condition from the source paper", "n > r >= 2"],
+    "parameters": ["n: number of variables", "r: degree parameter"],
+    "unresolved_remainder": "This record covers source Open Problem 2 only; it does not classify all normal forms."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": ["algebraic-normal-form", "duality", "affine-equivalence"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Carlet--Feukoua--Salagean, degree-stable Boolean functions", "doi": "10.1007/s10623-025-01702-z"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2025-01-01", "kind": "source_statement", "summary": "The source paper states the fast-point normal-form question as Open Problem 2.", "citation_labels": ["Carlet--Feukoua--Salagean, degree-stable Boolean functions"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["carlet-stability-op1"], "supersedes": [], "superseded_by": []}
+}

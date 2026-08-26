@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: CryptoFrontierAtlas
+message: Please cite the release version of CryptoFrontierAtlas used in your work.
+type: dataset
+version: 0.2.0
+date-released: 2026-08-17
+repository-code: https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas
+license: CC-BY-4.0
+authors:
+  - name: Anonymous submission

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rotation-symmetric-bent-multiple-three-msharp",
+  "group_id": "rotation-symmetric-bent-msharp",
+  "title": "The multiple-of-three branch of an indirect-sum bent family",
+  "summary": "For odd multiples of three, decide whether a concrete rotation-symmetric indirect-sum bent family lies outside the completed Maiorana--McFarland class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $m>3$ be odd with $3\\mid m$, and take all subscripts modulo $m$. Define $f_1,f_2\\in\\mathcal B_m$ by $f_1(x)=\\sum_{i=0}^{m-1}(x_i+x_ix_{(m-1)/2+i})$ and $f_2(x)=\\sum_{i=0}^{m-1}x_ix_{i+1}$. For $x,y\\in\\mathbb F_2^m$, let $h_m(x,y)=f_1(x)+f_1(y)+(f_1+f_2)(x)(f_1+f_2)(y)$, with the source's coordinate interleaving from Eq. (V.2). Determine whether $h_m$ lies outside the completed Maiorana--McFarland class $\\mathcal M^{\\#}$ for every such $m$."
+  },
+  "scope": {
+    "domain": "Rotation-symmetric Boolean bent functions and completed Maiorana--McFarland membership",
+    "assumptions": [
+      "m > 3 is odd and divisible by 3",
+      "f1 and f2 are the complementary semi-bent functions in source Eq. (V.3)",
+      "h_m uses the indirect sum and coordinate convention in source Eq. (V.2)"
+    ],
+    "parameters": [
+      "odd m > 3 with 3 dividing m",
+      "n = 2m variables"
+    ],
+    "unresolved_remainder": "The source proves exclusion from M# when 3 does not divide m. The entire complementary branch with odd m > 3 and 3 dividing m remains open, beginning with m = 9."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "rotation-symmetric",
+      "indirect-sum",
+      "maiorana-mcfarland",
+      "class-membership"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polujan--Kudin--Pasalic, rotation-symmetric bent functions",
+        "locator": "Eqs. (V.2)-(V.3), Theorem 7, and Open Problem 4, pp. 4348-4350",
+        "doi": "10.1109/TIT.2026.3685133"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-06-01",
+      "kind": "source_statement",
+      "summary": "The source settles the branch where 3 does not divide m and states the remaining multiple-of-three branch as Open Problem 4.",
+      "citation_labels": [
+        "Polujan--Kudin--Pasalic, rotation-symmetric bent functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "rotation-symmetric-bent-linearity-indices"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ea-inequivalent-bent-four-concatenations",
+  "group_id": "bent-concatenation-m-subspace-open-problems",
+  "title": "EA-inequivalent bent four-concatenations outside the completed Maiorana--McFarland class",
+  "summary": "Construct theoretically proved EA-inequivalent pairs of the source's four-concatenation form outside the completed Maiorana--McFarland class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For even $n\\ge 6$, let $g\\in\\mathcal B_n$ be bent and let $A,A'$ be affine permutations of $\\mathbb F_2^n$. Set $h=g\\circ A$, $h'=g\\circ A'$, $f=g\\|h\\|g\\|(h+1)$, and $f'=g\\|h'\\|g\\|(h'+1)$ in $\\mathcal B_{n+2}$. Construct a theoretically specified pair for which $f$ and $f'$ are bent, both lie outside $\\mathcal M^{\\#}$, and $f$ and $f'$ are EA-inequivalent; alternatively prove nonexistence under this form."
+  },
+  "scope": {
+    "domain": "Bent four-concatenations, EA-equivalence, and the completed Maiorana--McFarland class",
+    "assumptions": [
+      "$n$ is even and at least 6",
+      "$g$ is bent and $A,A'$ are affine permutations of $\\mathbb F_2^n$",
+      "$h=g\\circ A$ and $h'=g\\circ A'$",
+      "$f=g||h||g||(h+1)$ and $f'=g||h'||g||(h'+1)$ use the source concatenation convention",
+      "$\\mathcal M^{\\#}$ is the completed Maiorana--McFarland class and EA-equivalence is the source relation"
+    ],
+    "parameters": [
+      "$n$: even base dimension",
+      "$g$: bent Boolean function",
+      "$A,A'$: affine permutations",
+      "$h,h'$ and the two four-concatenations"
+    ],
+    "unresolved_remainder": "Later Theorem 4.9 and Theorem 5.1-type results prove bentness and exclusion from $\\mathcal M^{\\#}$ for individual exact-form outputs, and report computationally inequivalent examples, but no inspected result proves a theoretically parameterized pair with a common $g$ and two affine permutations $A,A'$ together with the required EA-inequivalence argument."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "four-concatenation",
+      "ea-equivalence",
+      "maiorana-mcfarland",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kudin--Pasalic--Polujan--Zhang, Open Problem 2",
+        "locator": "Open Problem 2, pp. 4007-4008",
+        "doi": "10.1109/TIT.2025.3547533",
+        "url": "https://doi.org/10.1109/TIT.2025.3547533"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kolomeec--Bykov, one-output outside-class construction",
+        "locator": "Theorem 4.9 and Remark 4.11, arXiv version pp. 20-21",
+        "doi": "10.1109/TIT.2025.3614379",
+        "eprint": "arXiv:2508.14265",
+        "url": "https://arxiv.org/abs/2508.14265"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kudin--Pasalic--Polujan--Zhang, one-output permutation construction",
+        "locator": "Theorem 5.1 and Corollary 5.2, Journal of Cryptology version",
+        "doi": "10.1007/s00145-025-09562-5",
+        "eprint": "arXiv:2508.14277",
+        "url": "https://arxiv.org/abs/2508.14277"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Bent Functions and the Completed Maiorana--McFarland Class survey",
+        "locator": "Corollary 5.19 and Theorem 5.20, arXiv version",
+        "eprint": "arXiv:2608.21461",
+        "url": "https://arxiv.org/abs/2608.21461"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-05-01",
+      "kind": "source_statement",
+      "summary": "Article 044 asks for theoretical EA-inequivalent pairs of the two exact four-concatenation forms outside the completed Maiorana--McFarland class.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang, Open Problem 2"
+      ]
+    },
+    {
+      "date": "2025-08-19",
+      "kind": "prior_result",
+      "summary": "Almost Maiorana--McFarland bent functions proves a broad one-output construction of the exact four-concatenation shape and exclusion from the completed class, but does not prove the requested two-output EA-inequivalence theorem.",
+      "citation_labels": [
+        "Kolomeec--Bykov, one-output outside-class construction"
+      ]
+    },
+    {
+      "date": "2025-08-19",
+      "kind": "prior_result",
+      "summary": "The later permutation construction gives additional one-output bent four-concatenations outside the completed class, including an explicit finite instance, without proving the requested pairwise EA-inequivalence.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang, one-output permutation construction"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "kind": "prior_result",
+      "summary": "A later survey records the membership criterion and outside-class counting inequalities but does not establish the exact affine-permutation pair required by Open Problem 2.",
+      "citation_labels": [
+        "Bent Functions and the Completed Maiorana--McFarland Class survey"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "remark-four-vectorial-bent-construction",
+      "bent-function-count-fixed-linearity-index"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

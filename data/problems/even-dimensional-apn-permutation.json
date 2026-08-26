@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-dimensional-apn-permutation",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "APN permutations in even dimensions greater than six",
+  "summary": "Determine whether an almost perfect nonlinear permutation exists in any even dimension greater than six.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an integer $m>3$ and a permutation $F:\\mathbb F_2^{2m}\\to\\mathbb F_2^{2m}$ that is almost perfect nonlinear? Construct one such permutation, or prove that no APN permutation exists in any even dimension $2m>6$."
+  },
+  "scope": {
+    "domain": "Almost perfect nonlinear permutations in even dimensions",
+    "assumptions": [
+      "m is an integer greater than 3",
+      "F is a permutation of F_2^{2m}",
+      "F is APN"
+    ],
+    "parameters": [
+      "integer m > 3",
+      "even dimension 2m"
+    ],
+    "unresolved_remainder": "The scalar trace-product switching family of the Gold cube yields no APN map for even dimensions at least ten, and its marked dimension-eight maps are nonpermutations. APN-permutation existence outside this strict construction mechanism remains open in every even dimension greater than six."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["cryptanalysis.differential","foundations.boolean-vectorial"],
+    "tags": [
+      "apn-functions",
+      "permutations",
+      "sboxes",
+      "switching-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Section V-A before Theorem V.4, p. 5215",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kuznetsov, trace-product switchings of the Gold cube",
+        "locator": "Theorems 5.4 and 6.2",
+        "eprint": "arXiv:2608.04261",
+        "url": "https://arxiv.org/abs/2608.04261"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "The source restates the big APN question for permutations in even dimensions greater than six.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "kind": "prior_result",
+      "summary": "A later preprint proves that the scalar trace-product switching family of the Gold cube produces no APN map for any even dimension at least ten, excluding one strict construction mechanism.",
+      "citation_labels": [
+        "Kuznetsov, trace-product switchings of the Gold cube"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nonquadratic-crooked-apn-existence",
+      "quadratic-apn-eight-bit-amplitude-family",
+      "quadratic-apn-even-walsh-classification",
+      "quadratic-apn-nonclassical-walsh-family",
+      "quadratic-nonbent-component-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

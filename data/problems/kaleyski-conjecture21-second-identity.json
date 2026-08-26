@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.2.0",
+  "id": "kaleyski-conjecture21-second-identity",
+  "group_id": "kaleyski-conjecture21",
+  "title": "The second identity in Kaleyski's Conjecture 21",
+  "summary": "For even-dimensional APN monomials, determine whether the second distinguished DDT sum agrees with the cubic Gold-function benchmark.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $K=\\mathbb F_{2^n}$ with even $n\\ge4$, let $F_d(x)=x^d$ be APN, and write $\\operatorname{DDT}_F(a,b)=|\\{x\\in K:F(x+a)+F(x)=b\\}|$. Define $S_2(d)=\\sum_{y\\in K}\\operatorname{DDT}_{F_d}(y+1,F_d(y))$ and $B_n=\\sum_{y\\in K}\\operatorname{DDT}_{x^3}(y,y^3+1)$. Determine whether $S_2(d)=B_n$."
+  },
+  "scope": {
+    "domain": "APN power functions and difference distribution tables",
+    "assumptions": ["n is even and n >= 4", "F_d is an APN monomial", "No permutation assumption is imposed"],
+    "parameters": ["n: field dimension", "d: monomial exponent", "DDT convention"],
+    "unresolved_remainder": "The first identity in Conjecture 21 is a separate open statement and is not included in this record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["cryptanalysis.differential","foundations.algebraic-structures"],
+    "tags": ["apn", "difference-distribution-table", "finite-fields", "power-functions"]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {"role": "original_source", "label": "Kaleyski, Conjecture 21", "doi": "10.1007/s12095-019-00366-6"},
+      {"role": "prior_progress", "label": "Mihaila--Thornburgh, APN power-function identities", "doi": "10.1007/s12095-026-00908-9"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2019-01-01", "kind": "source_statement", "summary": "Kaleyski states two DDT-sum identities for APN power functions, including the second identity recorded here.", "citation_labels": ["Kaleyski, Conjecture 21"]},
+    {"date": "2026-01-01", "kind": "prior_result", "summary": "The odd-dimensional identities were treated in later work; the even-dimensional second identity remains separately tracked here.", "citation_labels": ["Mihaila--Thornburgh, APN power-function identities"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["tezcan-ozbudak-differential-factor"], "supersedes": [], "superseded_by": []}
+}

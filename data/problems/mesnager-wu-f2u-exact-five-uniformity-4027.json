@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mesnager-wu-f2u-exact-five-uniformity-4027",
+  "group_id": "mesnager-wu-f2u-threshold-conjectures",
+  "title": "Exact five-uniformity of F2,u from q = 4027",
+  "summary": "Prove or refute exact differential uniformity five for every admissible Mesnager--Wu binomial above the experimentally observed field-size threshold.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=p^n\\ge 4027$ be an odd prime power with $q\\equiv3\\pmod 4$, let $\\eta$ be the quadratic character of $\\mathbb F_q$, and define $F_{2,u}(x)=x^2(1+u\\eta(x))$. Set $U=\\{0,\\pm1\\}$ when $p=3$ and $U=\\{0,\\pm1,\\pm1/3\\}$ otherwise. For every $u\\in\\mathbb F_q\\setminus U$ satisfying $\\eta(1+u)=\\eta(u-1)$, must $\\delta(F_{2,u})=5$?"
+  },
+  "scope": {
+    "domain": "Differential uniformity of odd-characteristic finite-field binomials",
+    "assumptions": [
+      "$q=p^n\\ge 4027$ is an odd prime power with $q\\equiv3\\pmod 4$",
+      "$u\\notin U$, where $U=\\{0,\\pm1\\}$ in characteristic $3$ and $U=\\{0,\\pm1,\\pm1/3\\}$ otherwise",
+      "$\\eta(1+u)=\\eta(u-1)$"
+    ],
+    "parameters": [
+      "$p$: odd prime characteristic",
+      "$n$: extension degree",
+      "$q=p^n$: field order",
+      "$u$: binomial parameter"
+    ],
+    "unresolved_remainder": "The source proves exact differential uniformity five only for the much larger range $q\\ge 27535^2$ and reports numerical evidence beginning at $q=4027$. Exact equality remains unproved for every admissible $(q,u)$ throughout the full conjectured range $q\\ge 4027$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "differential-uniformity",
+      "finite-fields",
+      "binomial-functions",
+      "quadratic-character"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mesnager--Wu, exact five-uniformity threshold conjecture",
+        "locator": "Remark 2 following Theorem 3, p. 4861",
+        "doi": "10.1109/TIT.2025.3550851",
+        "url": "https://doi.org/10.1109/TIT.2025.3550851"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-03-12",
+      "kind": "source_statement",
+      "summary": "The source reports numerical evidence that its exact five-uniformity theorem should hold for every admissible field order from $q=4027$, far below the proved threshold.",
+      "citation_labels": [
+        "Mesnager--Wu, exact five-uniformity threshold conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "mesnager-wu-f2u-exact-four-uniformity-839",
+      "mesnager-wu-f21-boomerang-uniformity-307",
+      "koo-kwon-condition42-complement-exact-five-uniformity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

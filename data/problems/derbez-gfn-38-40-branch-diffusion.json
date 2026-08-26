@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2.0",
+  "id": "derbez-gfn-38-40-branch-diffusion",
+  "group_id": "derbez-gfn-diffusion",
+  "title": "Ten-round structural diffusion for 38- and 40-branch type-II GFNs",
+  "summary": "Determine whether even--odd branch permutations on 38 and 40 branches can reach full forward and inverse structural diffusion in ten rounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $k\\in\\{19,20\\}$, let $\\Omega_k=\\{0,\\ldots,2k-1\\}$ and initialize dependency sets by $D_j^{(0)}=\\{j\\}$. Update them by unioning the two branches of each type-II Feistel pair before applying an even--odd permutation $\\pi_k$. Define $\\operatorname{DR}(\\pi_k)$ as the maximum of the first round at which every dependency set equals $\\Omega_k$ for $\\pi_k$ and for $\\pi_k^{-1}$. Do permutations $\\pi_{19}$ and $\\pi_{20}$ exist with $\\operatorname{DR}(\\pi_{19})=\\operatorname{DR}(\\pi_{20})=10$?"
+  },
+  "scope": {
+    "domain": "Structural diffusion in type-II Generalised Feistel Networks",
+    "assumptions": ["Even--odd branch permutations", "Structural dependency diffusion", "Forward and inverse directions both count"],
+    "parameters": ["k in {19, 20}", "2k in {38, 40} branches", "Round count"],
+    "unresolved_remainder": "The record consolidates the 38- and 40-branch instances. The 42-branch case, active-S-box security, and classification of all optimal permutations remain outside this record's scope."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": ["design.block-ciphers"],
+    "tags": ["gfn-diffusion", "generalised-feistel", "computer-assisted"]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {"role": "original_source", "label": "Derbez--Fouque--Lambin--Mollimard, diffusion in type-II GFNs", "doi": "10.46586/tosc.v2019.i2.218-240"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-17"
+  },
+  "progress": [
+    {"date": "2019-01-01", "kind": "source_statement", "summary": "The source paper proved that nine rounds are impossible for the relevant sizes and posed the ten-round witness challenge for 38 and 40 branches.", "citation_labels": ["Derbez--Fouque--Lambin--Mollimard, diffusion in type-II GFNs"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["derbez-euler-expanded-equivalence"], "supersedes": [], "superseded_by": []}
+}

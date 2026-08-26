@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bogdanov-dcufn-dplus1-active-sboxes",
+  "group_id": "bogdanov-dcufn-active-sboxes",
+  "title": "The d+1-round dCUFN-SP active-S-box conjecture",
+  "summary": "Determine whether every d+1-round window of a d-branch contracting unbalanced Feistel network satisfies the conjectured lower bound on differentially active S-boxes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a d-branch dCUFN-SP with m cells per branch, determine whether every $d+1$ consecutive rounds contain at least $(d-1)(m+1)$ differentially active S-boxes under the source ODM restrictions."
+  },
+  "scope": {
+    "domain": "Active-S-box bounds in contracting unbalanced Feistel networks",
+    "assumptions": ["dCUFN-SP construction", "Contracting MDS diffusion and ODM restrictions", "Differential activity count"],
+    "parameters": ["d: number of branches", "m: cells per branch", "Cell field and round window"],
+    "unresolved_remainder": "This record is the thesis d+1-round statement and must not be conflated with the DCC 2(d+1)-round proposition or its separate d>4 extension."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": ["design.block-ciphers"],
+    "tags": ["active-sbox", "unbalanced-feistel", "diffusion"]
+  },
+  "source": {
+    "kind": "public_thesis_conjecture",
+    "citations": [
+      {"role": "original_source", "label": "Bogdanov, Analysis and Design of Block Cipher Constructions", "locator": "PhD thesis, Chapter 3, after Proposition 4", "url": "https://informatik.rub.de/wp-content/uploads/2021/11/thesis_andrey.pdf"},
+      {"role": "prior_progress", "label": "Bogdanov, On unbalanced Feistel networks with contracting MDS diffusion", "doi": "10.1007/s10623-010-9462-0"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2011-01-01", "kind": "source_statement", "summary": "The thesis states the stronger d+1-round lower-bound conjecture after the proved DCC proposition.", "citation_labels": ["Bogdanov, Analysis and Design of Block Cipher Constructions"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": [], "supersedes": [], "superseded_by": []}
+}

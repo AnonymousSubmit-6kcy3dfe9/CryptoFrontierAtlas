@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cyclotomic-cubic-bent-noncubic-characterization",
+  "group_id": "xie-cyclotomic-cubic-bent-functions",
+  "title": "Cyclotomic cubic bentness versus noncubic coefficients",
+  "summary": "Confirm that the source's piecewise cubic cyclotomic trace function is bent exactly for noncubic coefficients.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=2^m$, $n=2m$, and let $m$ be a positive even integer. Let $u$ generate the subgroup of order $q+1$ in $\\mathbb F_{q^2}^*$. For $\\alpha\\in\\mathbb F_q^*$, define $f(0)=0$ and, for $x\\in u^i\\mathbb F_q^*$ with $i\\in\\mathbb Z_{q+1}$, define $$f(x)=\\operatorname{Tr}_1^n\\left(\\frac{\\alpha u^{6i}x^3}{(1+u^{2i}+u^{-2i})^3}\\right).$$ Prove that $f$ is bent over $\\mathbb F_{q^2}$ if and only if $\\alpha$ is not a cube in $\\mathbb F_q^*$."
+  },
+  "scope": {
+    "domain": "Boolean bent functions constructed from multiplicative cyclotomic mappings",
+    "assumptions": [
+      "$q=2^m$ and $n=2m$ with $m$ a positive even integer",
+      "$u$ and the value at zero follow the source's cyclotomic conventions",
+      "$\\alpha\\in\\mathbb F_q^*$",
+      "Bentness is determined over $\\mathbb F_{q^2}$ by the complete Walsh spectrum"
+    ],
+    "parameters": [
+      "$m$: positive even extension parameter",
+      "$q=2^m$ and $n=2m$",
+      "$\\alpha\\in\\mathbb F_q^*$",
+      "$i\\in\\mathbb Z_{q+1}$ and $x\\in u^i\\mathbb F_q^*$"
+    ],
+    "unresolved_remainder": "arXiv:2603.28491v2 claims a proof of both directions for the full source family and explicitly derives the source's Conjecture 1 as Corollary 5.3. The complete claim remains without peer-reviewed confirmation or independent repository verification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "bent-functions",
+      "boolean-functions",
+      "cyclotomic-mappings",
+      "finite-fields",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Xie--Li--Wang--Zeng cyclotomic cubic bentness conjecture",
+        "locator": "Section V-C, Conjecture 1 and Remark 9, pp. 1397-1398",
+        "doi": "10.1109/TIT.2024.3521236",
+        "eprint": "arXiv:2310.01317",
+        "url": "https://arxiv.org/abs/2310.01317"
+      },
+      {
+        "role": "resolution",
+        "label": "Cheng permutation-inverse bent-function proof",
+        "locator": "Theorems 1.2-1.3, Corollary 1.5, Theorem 5.2, and Corollary 5.3",
+        "eprint": "arXiv:2603.28491",
+        "url": "https://arxiv.org/abs/2603.28491"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-24"
+  },
+  "progress": [
+    {
+      "date": "2025-02-01",
+      "kind": "source_statement",
+      "summary": "Conjecture 1 asks for the full if-and-only-if characterization and states that it remains open beyond the source's special-case analysis.",
+      "citation_labels": [
+        "Xie--Li--Wang--Zeng cyclotomic cubic bentness conjecture"
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "kind": "public_result",
+      "summary": "An accessible preprint proves the two Walsh-spectrum directions, identifies the cyclotomic family with its permutation-inverse model, and explicitly claims the complete conjecture as Corollary 5.3.",
+      "citation_labels": [
+        "Cheng permutation-inverse bent-function proof"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

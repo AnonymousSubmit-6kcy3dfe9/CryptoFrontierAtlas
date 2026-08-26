@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "wang-heng-hb-residual-weight-distribution",
+  "group_id": "self-orthogonal-vectorial-dual-bent-codes",
+  "title": "Weight distributions for the residual H_b self-orthogonal codes",
+  "summary": "Determine the exact weight distributions of the named Wang--Heng H_b code family in the cases left open by the source.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F$ be the quadratic vectorial dual-bent function in Eq. (10) of the TIT source, let $t=m$, and let $H_b=\\{x^b:x\\in\\mathbb F_{p^m}^{*}\\}$ for $1\\le b<p^m-1$ with $b\\mid(p^m-1)$. For every residual divisor $b$ not covered by Theorem 3, determine the complete weight distribution of the self-orthogonal code $C_{D_F,H_b}$ from Wang--Heng, Theorem 23."
+  },
+  "scope": {
+    "domain": "Self-orthogonal codes from the Wang--Heng vectorial dual-bent H_b defining sets",
+    "assumptions": [
+      "p is an odd prime",
+      "F is the quadratic function in Eq. (10) and t=m",
+      "1 <= b < p^m-1 and b divides p^m-1",
+      "C_{D_F,H_b} uses the source definition",
+      "b=1, b=2, and the special Theorem 3(iv) divisibility cases are excluded because the source computes them"
+    ],
+    "parameters": [
+      "p, m, n, b, j",
+      "the fixed quadratic F and the H_b defining set"
+    ],
+    "unresolved_remainder": "The exact weight distribution for every residual admissible divisor b in the named Wang--Heng Theorem 23 family remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": ["foundations.boolean-vectorial","foundations.algebraic-structures"],
+    "tags": [
+      "vectorial-dual-bent",
+      "self-orthogonal-codes",
+      "weight-distribution",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions",
+        "locator": "Remark 5, journal p. 141; Theorem 3 boundary cases",
+        "doi": "10.1109/TIT.2025.3637038",
+        "url": "https://doi.org/10.1109/TIT.2025.3637038"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2025-11-25",
+      "kind": "source_statement",
+      "summary": "Remark 5 reports that Wang--Heng's H_b code family is self-orthogonal but its weight distribution was not determined.",
+      "citation_labels": [
+        "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "self-orthogonal-theorem2-residual-weight-distribution",
+      "ternary-vectorial-dual-bent-epsilon-minus-one"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

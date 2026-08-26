@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2.0",
+  "id": "carlet-stability-op1",
+  "group_id": "carlet-stability",
+  "title": "Lexicographic normal form for degree-stable Boolean functions",
+  "summary": "Determine whether Boolean functions with no degree-drop hyperplane admit a canonical lexicographic normal form under affine changes of variables.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Write the degree-$r$ top support of $f:\\mathbb F_2^n\\to\\mathbb F_2$ as $A\\subseteq\\binom{[n]}r$. A hyperplane is degree-dropping when the restriction of $f$ to it has degree below $r$. Assume no hyperplane is degree-dropping. Does an affine change of variables, modulo terms of degree below $r$, produce a support satisfying $\\forall i\\in\\operatorname{Var}(A),\\exists S\\in A$ with $i\\notin S$ and $S-t+i\\notin A$ for every $t\\in S$?"
+  },
+  "scope": {
+    "domain": "Degree stability and algebraic normal forms",
+    "assumptions": ["Binary Boolean functions", "Degree-stability condition from the source paper"],
+    "parameters": ["n: number of variables", "r: algebraic degree"],
+    "unresolved_remainder": "This record covers source Open Problem 1 only; the fast-point question is a separate record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": ["algebraic-normal-form", "degree-stability", "affine-equivalence"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Carlet--Feukoua--Salagean, degree-stable Boolean functions", "doi": "10.1007/s10623-025-01702-z"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2025-01-01", "kind": "source_statement", "summary": "The source paper states the degree-stability normal-form question as Open Problem 1.", "citation_labels": ["Carlet--Feukoua--Salagean, degree-stable Boolean functions"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["carlet-stability-op2"], "supersedes": [], "superseded_by": []}
+}

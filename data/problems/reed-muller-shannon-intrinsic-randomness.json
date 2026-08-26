@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reed-muller-shannon-intrinsic-randomness",
+  "group_id": "pathegama-barg-linear-code-hashing-open-questions",
+  "title": "Shannon intrinsic randomness from Reed-Muller hashing",
+  "summary": "Prove that Reed-Muller parity-check hashing attains the Shannon intrinsic-randomness rate of every memoryless Bernoulli source.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $Z^n$ consist of independent $\\operatorname{Bernoulli}(\\delta)$ bits. For every $\\delta\\in(0,1)$ and every output rate $\\widehat R<h(\\delta)$, construct a sequence of binary Reed-Muller codes $C_n$ with parity-check matrices $H_n$ and $n^{-1}\\operatorname{rank}(H_n)\\to\\widehat R$ such that $D(P_{H_nZ^n}\\|P_{U_{\\operatorname{rank}(H_n)}})\\to0$. Equivalently, prove that the associated nested Reed-Muller construction achieves the strong-secrecy capacity of the binary wiretap channel."
+  },
+  "scope": {
+    "domain": "Deterministic randomness extraction and strong-secrecy wiretap coding with Reed-Muller codes",
+    "assumptions": [
+      "The source is memoryless Bernoulli with fixed bias delta",
+      "The extractor is a parity-check map from a nested sequence of binary Reed-Muller codes",
+      "Uniformity is measured by KL divergence, corresponding to Renyi order one"
+    ],
+    "parameters": [
+      "$\\delta$: Bernoulli bias",
+      "$n$: block length",
+      "Reed-Muller order and code rate",
+      "$\\widehat R$: extractor-output rate"
+    ],
+    "unresolved_remainder": "The source proves intrinsic-randomness achievability for integer Renyi orders $p\\ge2$ and a weaker $p=1$ rate condition $R>(1-2\\delta)^2$. Achievability of every output rate below the Shannon entropy $h(\\delta)$, equivalently strong-secrecy capacity for the nested Reed-Muller construction, remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "foundations.coding-theory",
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "reed-muller-codes",
+      "randomness-extraction",
+      "intrinsic-randomness",
+      "strong-secrecy",
+      "wiretap-channel"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes",
+        "locator": "Theorem 5 and concluding remarks, journal pp. 5816",
+        "doi": "10.1109/TIT.2025.3577765",
+        "eprint": "arXiv:2405.04406",
+        "url": "https://arxiv.org/abs/2405.04406"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2024-05-07",
+      "kind": "source_statement",
+      "summary": "The source asks whether Reed-Muller parity-check maps attain Bernoulli intrinsic randomness at Renyi order one, equivalently the associated strong-secrecy capacity.",
+      "citation_labels": [
+        "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "linear-hashing-maximum-bucket-one-plus-o",
+      "linear-hashing-sublinear-renyi-symbol-loss"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

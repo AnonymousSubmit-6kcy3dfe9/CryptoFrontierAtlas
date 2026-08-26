@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-partition-amorphic-scheme-isomorphism",
+  "group_id": "alkan-bent-partition-construction-questions",
+  "title": "Isomorphism of amorphic schemes from inequivalent bent partitions",
+  "summary": "Classify when two inequivalent bent partitions induce isomorphic amorphic association schemes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\Gamma_1$ and $\\Gamma_2$ be inequivalent bent partitions in the source sense, and assume that the association scheme induced by each partition is amorphic. Give necessary and sufficient conditions for the two induced association schemes to be isomorphic, or otherwise classify isomorphism versus non-isomorphism for every admissible pair $(\\Gamma_1,\\Gamma_2)$."
+  },
+  "scope": {
+    "domain": "Amorphic association schemes induced by bent partitions",
+    "assumptions": [
+      "The two input bent partitions are inequivalent",
+      "Both induced association schemes are amorphic",
+      "Bent-partition equivalence and scheme isomorphism use the source definitions"
+    ],
+    "parameters": [
+      "Gamma_1 and Gamma_2: inequivalent bent partitions",
+      "the two induced amorphic association schemes"
+    ],
+    "unresolved_remainder": "No necessary-and-sufficient isomorphism criterion is known over the full domain. Later rank and fusion examples do not supply a strict solution within the exact domain where the input partitions are inequivalent and both induced schemes are amorphic."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": ["foundations.boolean-vectorial"],
+    "tags": [
+      "bent-functions",
+      "bent-partitions",
+      "association-schemes",
+      "amorphic-schemes",
+      "isomorphism"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, amorphic-scheme isomorphism question",
+        "locator": "Section VII, fourth concrete question, p. 767",
+        "doi": "10.1109/TIT.2024.3505600"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-24"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source distinguishes partition equivalence from scheme isomorphism and asks for the isomorphism status of amorphic schemes arising from inequivalent partitions.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, amorphic-scheme isomorphism question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-partition-alternative-representative-equivalence",
+      "bent-partition-section-iv-generalized-mm-separation",
+      "bent-partition-sections-iii-vi-mm-separation",
+      "vectorial-dual-bent-attainable-sigma-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

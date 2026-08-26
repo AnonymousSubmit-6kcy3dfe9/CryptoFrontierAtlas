@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2.0",
+  "id": "carlet-13-3-14-affine-derivatives",
+  "group_id": "carlet-13-3-14",
+  "title": "Affine derivatives of nonquadratic bent Boolean functions",
+  "summary": "For even dimension, determine the largest number of distinct affine derivatives of a nonquadratic bent Boolean function.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For even $n$, let $f:\\mathbb F_2^n\\to\\mathbb F_2$ be bent and nonquadratic, and define $\\Delta_a f(x)=f(x+a)+f(x)$. Determine the maximum number of distinct affine functions among the derivatives $\\Delta_a f$, equivalently the maximum dimension of $A_f=\\{a\\in\\mathbb F_2^n:\\Delta_a f\\text{ is affine in }x\\}$."
+  },
+  "scope": {
+    "domain": "Bent functions and affine derivatives",
+    "assumptions": ["n is even", "f is bent", "f is not quadratic"],
+    "parameters": ["Even dimension n", "Affine-derivative direction space"],
+    "unresolved_remainder": "Classification of all extremal functions is outside this record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": ["bent-functions", "affine-derivatives", "algebraic-degree"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Carlet, Boolean Functions for Cryptography and Coding Theory", "locator": "Open Problem 13.3(14)", "doi": "10.1017/9781108606806"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2021-01-01", "kind": "source_statement", "summary": "Carlet records the extremal affine-derivative question for nonquadratic bent functions.", "citation_labels": ["Carlet, Boolean Functions for Cryptography and Coding Theory"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["carlet-stability-op1", "carlet-stability-op2"], "supersedes": [], "superseded_by": []}
+}

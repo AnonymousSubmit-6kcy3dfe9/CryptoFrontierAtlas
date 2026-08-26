@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-apn-even-walsh-classification",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "Walsh-spectrum classification of even-dimensional quadratic APN functions",
+  "summary": "Classify all amplitude distributions realizable by quadratic APN functions in every even dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every even $n$, classify the amplitude distributions, equivalently the extended Walsh spectra, realizable by quadratic APN functions $F:\\mathbb F_2^n\\to\\mathbb F_2^n$. Give necessary and sufficient conditions that decide whether any proposed amplitude distribution in the sense of Definition I.3 is realized by such a function."
+  },
+  "scope": {
+    "domain": "Quadratic APN functions and extended Walsh spectra",
+    "assumptions": [
+      "n is even",
+      "F : F_2^n -> F_2^n is quadratic and APN",
+      "Amplitude distributions use Definition I.3 of the source"
+    ],
+    "parameters": [
+      "even dimension n",
+      "candidate amplitude distribution"
+    ],
+    "unresolved_remainder": "A necessary-and-sufficient classification is still required for every realizable amplitude distribution in every even dimension; low-dimensional lists and necessary constraints do not settle the full classification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["foundations.boolean-vectorial","cryptanalysis.linear"],
+    "tags": [
+      "amplitude-distributions",
+      "apn-functions",
+      "quadratic-functions",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Definition I.3 and discussion after Example I.4, pp. 5207-5208",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "The source derives new necessary conditions but states that the even-dimensional amplitude-distribution problem remains wide open.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-apn-permutation",
+      "nonquadratic-crooked-apn-existence",
+      "quadratic-apn-eight-bit-amplitude-family",
+      "quadratic-apn-nonclassical-walsh-family",
+      "quadratic-nonbent-component-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

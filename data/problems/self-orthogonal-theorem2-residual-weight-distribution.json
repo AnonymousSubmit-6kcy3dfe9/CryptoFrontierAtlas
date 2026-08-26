@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "self-orthogonal-theorem2-residual-weight-distribution",
+  "group_id": "self-orthogonal-vectorial-dual-bent-codes",
+  "title": "Residual weight distributions of vectorial dual-bent self-orthogonal codes",
+  "summary": "Determine the complete weight distributions of the self-orthogonal codes from the source's Theorem 2 outside its explicitly solved cases.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F:V_n^{(p)}\\to\\mathbb F_{p^m}$ be a vectorial dual-bent function satisfying Condition C and all hypotheses of Theorem 2, and let $\\varnothing\\ne I\\subseteq\\mathbb F_{p^m}$. Determine the complete weight distribution of the code $C_{D_F,I}$ for every admissible Theorem-2 parameter tuple not covered by Theorem 3. The separately named Wang--Heng family $C_{D_F,H_b}$ is tracked by the related record."
+  },
+  "scope": {
+    "domain": "Self-orthogonal linear codes constructed from p-ary vectorial dual-bent functions",
+    "assumptions": [
+      "F: V_n^(p) -> F_{p^m} is vectorial dual-bent and satisfies Condition C",
+      "Theorem 2 assumptions hold, including (A.1), t | m, (l-1)(d-1) = 1 mod (p^m-1), m < n/2, and the source binary restriction when p=2",
+      "I is a nonempty subset of F_{p^m}",
+      "Theorem 3 cases are excluded from the unresolved remainder",
+      "The separately named H_b family from Wang--Heng Theorem 23 is excluded and tracked separately"
+    ],
+    "parameters": [
+      "p, n, m, t, l, d",
+      "the vectorial dual-bent function F",
+      "the nonempty defining-value set I"
+    ],
+    "unresolved_remainder": "Exact weight distributions for all residual Theorem-2 cases and all nonempty I outside Theorem 3 remain unresolved. The named H_b subfamily is excluded here and tracked by the related record."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": ["foundations.boolean-vectorial","foundations.algebraic-structures"],
+    "tags": [
+      "vectorial-dual-bent",
+      "self-orthogonal-codes",
+      "weight-distribution",
+      "linear-codes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions",
+        "locator": "Abstract, Introduction, and Conclusion bullet 1, journal pp. 127--128 and 143",
+        "doi": "10.1109/TIT.2025.3637038",
+        "url": "https://doi.org/10.1109/TIT.2025.3637038"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2025-11-25",
+      "kind": "source_statement",
+      "summary": "The TIT source asks for exact weight distributions in the residual Theorem-2 cases and states that it only partially answers the antecedent problem.",
+      "citation_labels": [
+        "Wang--Wei--Fu--Li, Self-Orthogonal Codes From Vectorial Dual-Bent Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "wang-heng-hb-residual-weight-distribution",
+      "ternary-vectorial-dual-bent-epsilon-minus-one"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

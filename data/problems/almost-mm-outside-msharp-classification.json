@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "almost-mm-outside-msharp-classification",
+  "group_id": "almost-maiorana-mcfarland-bent-functions",
+  "title": "Classification of almost Maiorana--McFarland functions outside M sharp",
+  "summary": "Characterize the admissible mapping and Boolean-function pairs that produce almost Maiorana--McFarland bent functions outside the completed class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $m\\ge 4$, characterize pairs $(\\phi,h)$ with $\\phi:\\mathbb F_2^{m+1}\\to\\mathbb F_2^{m-1}$ satisfying Theorem III.1 such that $f(x,y)=x\\cdot\\phi(y)+h(y)$ is bent and belongs to $GMM_{m+1}\\setminus\\mathcal M^{\\#}$. State the classification modulo the affine-equivalence convention used by the source."
+  },
+  "scope": {
+    "domain": "Almost Maiorana--McFarland bent functions and membership outside the completed Maiorana--McFarland class",
+    "assumptions": [
+      "m >= 4 and n=2m",
+      "Theorem III.1 applies to the pair (phi,h)",
+      "f is considered modulo the source equivalence convention",
+      "The target class is GMM_(m+1) outside M sharp"
+    ],
+    "parameters": [
+      "m",
+      "mapping phi",
+      "Boolean function h",
+      "affine-equivalence class"
+    ],
+    "unresolved_remainder": "The 2026 rotation-symmetric result constructs restricted outside-M-sharp families, but an exact necessary-and-sufficient classification of all admissible (phi,h) pairs remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-functions",
+      "almost-maiorana-mcfarland",
+      "completed-maiorana-mcfarland",
+      "class-membership"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kudin--Pasalic--Polujan--Zhang--Zhao, Almost Maiorana-McFarland Bent Functions",
+        "locator": "Open Problem 2, journal p. 9712",
+        "doi": "10.1109/tit.2025.3614379",
+        "url": "https://doi.org/10.1109/tit.2025.3614379"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Polujan--Kudin--Pasalic, Rotation-Symmetric Bent Functions Outside the Completed Maiorana-McFarland Class",
+        "locator": "Abstract and restricted rotation-symmetric constructions",
+        "doi": "10.1109/TIT.2026.3685133",
+        "url": "https://doi.org/10.1109/TIT.2026.3685133"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-12-01",
+      "kind": "source_statement",
+      "summary": "The source asks for a characterization of mappings yielding almost Maiorana--McFarland bent functions outside M sharp.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang--Zhao, Almost Maiorana-McFarland Bent Functions"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "kind": "public_result",
+      "summary": "A later TIT paper constructs infinite rotation-symmetric outside-M-sharp families, which are a strict restricted subfamily rather than a complete classification.",
+      "citation_labels": [
+        "Polujan--Kudin--Pasalic, Rotation-Symmetric Bent Functions Outside the Completed Maiorana-McFarland Class"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "almost-mm-four-to-one-mappings"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

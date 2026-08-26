@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "koo-kwon-condition42-exact-four-uniformity",
+  "group_id": "koo-kwon-binomial-differential-uniformity",
+  "title": "Exact four-uniformity under Koo--Kwon condition (42)",
+  "summary": "Determine whether the Koo--Kwon finite-field binomials have differential uniformity exactly four throughout every branch of condition (42).",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=p^n>523$ be an odd prime power with $q\\equiv3\\pmod 4$, let $r=(q+1)/4$, and let $\\chi$ be the quadratic character of $\\mathbb F_q$. For $u\\in\\mathbb F_q^*\\setminus\\{\\pm1\\}$, define $F_{r,u}(x)=x^r(1+u\\chi(x))$ and $\\delta(F_{r,u})=\\max_{a\\in\\mathbb F_q^*,\\,b\\in\\mathbb F_q}|\\{x\\in\\mathbb F_q:F_{r,u}(x+a)-F_{r,u}(x)=b\\}|$. Suppose either $\\chi(1+u)=(-1)^r\\chi(1-u)$, or $q\\equiv3\\pmod 8$, $p>3$, and $u\\in\\{\\pm(1-2^{r+1})/3\\}$. Must $\\delta(F_{r,u})=4$ for every such $(q,u)$?"
+  },
+  "scope": {
+    "domain": "Differential uniformity of odd-characteristic finite-field binomials",
+    "assumptions": [
+      "$q=p^n>523$ is an odd prime power with $q\\equiv3\\pmod 4$",
+      "$r=(q+1)/4$ and $\\chi$ is the quadratic character of $\\mathbb F_q$",
+      "$u\\in\\mathbb F_q^*\\setminus\\{\\pm1\\}$",
+      "The two exceptional-value branches additionally require $q\\equiv3\\pmod 8$ and $p>3$"
+    ],
+    "parameters": [
+      "$p$: odd prime characteristic",
+      "$n$: extension degree",
+      "$q=p^n$: field order",
+      "$u$: binomial parameter"
+    ],
+    "unresolved_remainder": "The source proves $\\delta(F_{r,u})\\le4$ on the character and exceptional-value branches and verifies equality computationally for $523<q<10000$. Exact equality remains unproved for every admissible $q>523$ and $u$ in the character, positive exceptional, and negative exceptional branches."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": ["design.sboxes-nonlinear-components","foundations.algebraic-structures"],
+    "tags": [
+      "differential-uniformity",
+      "finite-fields",
+      "binomial-functions",
+      "quadratic-character"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Koo--Kwon, condition-(42) exact four-uniformity conjecture",
+        "locator": "Section IV, experimental paragraph after Theorem 4.9 and condition (42), p. 26",
+        "doi": "10.1109/TIT.2026.3657603",
+        "eprint": "arXiv:2506.11486",
+        "url": "https://arxiv.org/abs/2506.11486"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-03-01",
+      "kind": "source_statement",
+      "summary": "The source extrapolates the observed equality to every admissible field order above 523 and explicitly notes that a rigorous proof is missing.",
+      "citation_labels": [
+        "Koo--Kwon, condition-(42) exact four-uniformity conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "koo-kwon-condition42-complement-exact-five-uniformity",
+      "mesnager-wu-f2u-exact-four-uniformity-839"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

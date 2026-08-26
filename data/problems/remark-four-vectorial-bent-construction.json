@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "remark-four-vectorial-bent-construction",
+  "group_id": "bent-concatenation-m-subspace-open-problems",
+  "title": "Vectorial bent functions of the Remark 4 form",
+  "summary": "Construct theoretical vectorial bent functions built from a bent function and an affine transform as in Article 044's Remark 4.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n$ be even, let $g:\\mathbb F_2^n\\to\\mathbb F_2$ be bent, and let $A$ be an affine permutation of $\\mathbb F_2^n$. Put $h=g\\circ A$ and $F=(g,h):\\mathbb F_2^n\\to\\mathbb F_2^2$. When $g+h$ is bent, $F$ is vectorial bent under the source convention. Construct explicit theoretical families of such $F$ (including the six-variable class exhibited in Remark 4), or prove that no admissible family exists under the stated form."
+  },
+  "scope": {
+    "domain": "Vectorial bent functions obtained from affine transforms of bent Boolean functions",
+    "assumptions": [
+      "$n$ is even and bent functions use the source Walsh-transform convention",
+      "$A$ is an affine permutation of $\\mathbb F_2^n$ and $h=g\\circ A$",
+      "$F=(g,h)$ is vectorial bent exactly when its nonzero components are bent, in particular $g+h$ is bent",
+      "The six-variable instance and equivalence class in Article 044 Remark 4 are included"
+    ],
+    "parameters": [
+      "$n$: even input dimension",
+      "$g$: bent Boolean function",
+      "$A$: affine permutation",
+      "$h=g\\circ A$ and the vectorial output $F$"
+    ],
+    "unresolved_remainder": "No later inspected result gives a mathematically specified family in the exact $F=(g,g\\circ A)$ shape of Remark 4 or a nonexistence proof. Generalized or extended Maiorana--McFarland vectorial constructions use a different parameterization and do not settle this question."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "bent-functions",
+      "vectorial-functions",
+      "affine-equivalence",
+      "maiorana-mcfarland",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kudin--Pasalic--Polujan--Zhang, Open Problem 1",
+        "locator": "Remark 4 and Open Problem 1, p. 4006",
+        "doi": "10.1109/TIT.2025.3547533",
+        "url": "https://doi.org/10.1109/TIT.2025.3547533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-05-01",
+      "kind": "source_statement",
+      "summary": "Article 044 asks for theoretical constructions of vectorial bent functions of the exact shape described in Remark 4.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang, Open Problem 1"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "ea-inequivalent-bent-four-concatenations",
+      "bent-function-count-fixed-linearity-index"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

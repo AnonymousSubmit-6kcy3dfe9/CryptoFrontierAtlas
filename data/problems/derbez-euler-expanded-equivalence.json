@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.2.0",
+  "id": "derbez-euler-expanded-equivalence",
+  "group_id": "derbez-euler-expanded-equivalence",
+  "title": "Expanded-equivalence classes of type-II Generalised Feistel Networks",
+  "summary": "Determine the number and sizes of expanded-equivalence classes when all branch permutations of a type-II GFN are allowed.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For branch permutations $P,Q\\in S_{2k}$, define expanded equivalence by the existence of a pair relabelling $A$ such that $Q^nAP^{-n}$ is a pair relabelling for every positive integer $n$. Determine the number and cardinality of equivalence classes when $P,Q$ range over all $S_{2k}$."
+  },
+  "scope": {
+    "domain": "Equivalence and relabelling of type-II Generalised Feistel Networks",
+    "assumptions": ["2k branch positions", "Pair relabellings use the source convention", "All branch permutations are allowed"],
+    "parameters": ["k: number of branch pairs", "P,Q in S_(2k)"],
+    "unresolved_remainder": "The record concerns expanded equivalence, not cryptanalytic security or implementation cost."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": ["generalised-feistel", "permutation-groups", "equivalence-classes"]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {"role": "original_source", "label": "Derbez--Euler, Equivalence of Generalised Feistel Networks", "doi": "10.46586/tosc.v2024.i1.412-440"}
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-16"
+  },
+  "progress": [
+    {"date": "2024-01-01", "kind": "source_statement", "summary": "The source paper proves a sharp result for the even--odd subfamily and asks for the all-permutation case.", "citation_labels": ["Derbez--Euler, Equivalence of Generalised Feistel Networks"]}
+  ],
+  "artifacts": [],
+  "lean": {"status": "none", "available_in_repo": false},
+  "relations": {"related": ["derbez-gfn-38-40-branch-diffusion"], "supersedes": [], "superseded_by": []}
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "plateaued-nonaffine-indicator-preservation",
+  "group_id": "secondary-plateaued-indicator",
+  "title": "Indicator preservation with non-affine Walsh support",
+  "summary": "Construct a nontrivial family of plateaued functions with non-affine Walsh support whose plateauedness survives the source-defined indicator modification.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $0<s<n$ with $n$ and $s$ of the source-required parity, and put $p=(n+s)/2$ and $q=(n-s)/2$. Construct an explicit nontrivial parameterized family of source-admissible tuples $(g,L)$ in which $g:\\mathbb F_2^p\\times\\mathbb F_2^q\\to\\mathbb F_2$ is an $s$-plateaued function of the form $g(x,y)=x\\cdot\\phi(y)$, its Walsh support $S_g$ is not an affine subspace, and $L\\le\\mathbb F_2^p$ satisfies $\\dim L\\le q$, such that for every tuple in the family the modified function $f(x,y)=g(x,y)+\\mathbf 1_{L^\\perp}(x)$ is also $s$-plateaued."
+  },
+  "scope": {
+    "domain": "Plateaued Boolean functions, Walsh support, and indicator modifications",
+    "assumptions": [
+      "0 < s < n and n,s have the parity required for p = (n+s)/2 and q = (n-s)/2",
+      "g(x,y) = x dot phi(y) is s-plateaued in the source setup",
+      "The Walsh support S_g is not an affine subspace",
+      "L is a linear subspace of F_2^p with dim(L) <= q",
+      "Each tuple (g,L) obeys the source conditions for the indicator modification"
+    ],
+    "parameters": [
+      "n: total input dimension",
+      "s: plateauedness order",
+      "phi: source-admissible mapping",
+      "L: indicator-defining linear subspace"
+    ],
+    "unresolved_remainder": "Construct at least one explicit nontrivial parameterized family of source-admissible tuples (g,L) with non-affine Walsh support and prove that every tuple yields an s-plateaued function after adding the indicator of L-perp."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "plateaued-functions",
+      "walsh-support",
+      "indicator-functions",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Kudin--Hodzic--Khan, plateaued indicator constructions",
+        "locator": "Open Problem 1, p. 4335",
+        "doi": "10.1109/TIT.2026.3685098"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-04-17",
+      "kind": "source_statement",
+      "summary": "The source asks for explicit non-affine-Walsh-support families whose plateauedness is preserved by its indicator construction.",
+      "citation_labels": [
+        "Pasalic--Kudin--Hodzic--Khan, plateaued indicator constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

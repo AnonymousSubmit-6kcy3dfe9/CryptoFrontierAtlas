@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+*.log
+*.tsbuildinfo
+vite.config.js
+/.agents/skills/ingest-tit-open-questions/
+/papers/
+/data/lean/.lake

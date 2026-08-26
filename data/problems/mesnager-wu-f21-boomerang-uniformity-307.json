@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mesnager-wu-f21-boomerang-uniformity-307",
+  "group_id": "mesnager-wu-f2u-threshold-conjectures",
+  "title": "Boomerang uniformity two for F2,1 from q = 307",
+  "summary": "Decide whether the Mesnager--Wu locally-APN binomial has boomerang uniformity two for every admissible field order from 307; a later preprint claims an infinite counterexample family in characteristic three.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=p^n\\ge 307$ be an odd prime power with $q\\equiv3\\pmod 4$, let $\\eta$ be the quadratic character of $\\mathbb F_q$, and define $F_{2,1}(x)=x^2(1+\\eta(x))$. Must the boomerang uniformity satisfy $\\beta(F_{2,1})=2$ for every such $q$? By affine equivalence, the corresponding statement for $F_{2,-1}$ has the same status."
+  },
+  "scope": {
+    "domain": "Boomerang uniformity of odd-characteristic locally-APN binomials",
+    "assumptions": [
+      "$q=p^n\\ge 307$ is an odd prime power with $q\\equiv3\\pmod 4$",
+      "$F_{2,1}(x)=x^2(1+\\eta(x))$ over $\\mathbb F_q$",
+      "Boomerang uniformity is defined using the generalized BCT for arbitrary finite-field functions"
+    ],
+    "parameters": [
+      "$p$: odd prime characteristic",
+      "$n$: extension degree",
+      "$q=p^n$: field order"
+    ],
+    "unresolved_remainder": "A later accessible preprint proves that $\\beta(F_{2,1})=1$, rather than $2$, whenever $p=3$ and $n\\ge3$ is odd, which would refute the universal conjecture on an infinite admissible subfamily. Independent reproduction or peer-reviewed confirmation of that negative resolution claim remains outstanding."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "boomerang",
+      "finite-fields",
+      "binomial-functions",
+      "quadratic-character",
+      "locally-apn"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mesnager--Wu, boomerang-uniformity threshold conjecture",
+        "locator": "Remark 7 following Theorem 8, p. 4870",
+        "doi": "10.1109/TIT.2025.3550851",
+        "url": "https://doi.org/10.1109/TIT.2025.3550851"
+      },
+      {
+        "role": "independent_resolution",
+        "label": "Koo--Kwon--Ko--Kim, characteristic-three counterexample family",
+        "locator": "Remark 4.7 and Theorem 4.9",
+        "eprint": "arXiv:2512.17603",
+        "url": "https://arxiv.org/abs/2512.17603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-03-12",
+      "kind": "source_statement",
+      "summary": "The source reports numerical evidence that its boomerang-uniformity-two theorem should hold for every admissible field order from $q=307$.",
+      "citation_labels": [
+        "Mesnager--Wu, boomerang-uniformity threshold conjecture"
+      ]
+    },
+    {
+      "date": "2025-12-19",
+      "kind": "independent_result",
+      "summary": "An accessible preprint identifies a characteristic-three incompatibility in the source's case analysis and proves $\\beta(F_{2,1})=1$ for every odd $n\\ge3$, claiming an infinite counterexample family to the universal statement.",
+      "citation_labels": [
+        "Koo--Kwon--Ko--Kim, characteristic-three counterexample family"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "mesnager-wu-f2u-exact-five-uniformity-4027",
+      "mesnager-wu-f2u-exact-four-uniformity-839"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

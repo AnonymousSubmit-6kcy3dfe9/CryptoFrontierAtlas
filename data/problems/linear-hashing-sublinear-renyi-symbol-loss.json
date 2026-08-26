@@ -1,0 +1,86 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-hashing-sublinear-renyi-symbol-loss",
+  "group_id": "pathegama-barg-linear-code-hashing-open-questions",
+  "title": "Sublinear Renyi-order symbol loss for linear hashing",
+  "summary": "Determine whether random linear-code hashing can extract a source's Renyi entropy with symbol loss sublinear in the Renyi order.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $Z$ be an arbitrary random vector in $\\mathbb F_q^n$, let $p\\ge 2$ be an integer, and choose uniformly an $[n,n-m]_q$ linear code $C$ with parity-check matrix $H$. Determine whether, for fixed $\\epsilon>0$, the source's $(\\epsilon,p)$-uniformity condition $\\mathbb E_C[\\Delta_p^{(m)}(P_{HZ})]\\le\\epsilon$ can always be attained whenever $m\\le H_p(Z)-s(p,\\epsilon,q)$ with $s(p,\\epsilon,q)=o(p)$ as $p\\to\\infty$, or prove that such sublinear symbol loss is impossible."
+  },
+  "scope": {
+    "domain": "Randomness extraction by random linear syndrome hashes under higher-order Renyi uniformity",
+    "assumptions": [
+      "The source is an arbitrary distribution on a finite-field vector space and only its order-p Renyi entropy is prescribed",
+      "The hash is the parity-check map of a uniformly random fixed-dimension linear code",
+      "Uniformity is measured by the source's expected order-p smoothness, equivalently its Renyi-divergence or scaled l_p formulation"
+    ],
+    "parameters": [
+      "$q$: field size",
+      "$n$: source block length",
+      "$p$: integer Renyi order",
+      "$\\epsilon$: target uniformity error",
+      "$m$: hash-output length",
+      "$H_p(Z)$: source Renyi entropy"
+    ],
+    "unresolved_remainder": "The source proves a loss of at most $p+\\log_q(1/\\epsilon)$ symbols and a sharper special result for $p=2$. Whether the loss can be made $o(p)$ for general integer Renyi order under random linear hashing remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "foundations.probability-statistics",
+      "foundations.coding-theory"
+    ],
+    "tags": [
+      "linear-hashing",
+      "randomness-extraction",
+      "renyi-divergence",
+      "symbol-loss",
+      "linear-codes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes",
+        "locator": "Remark 4 and concluding remarks, journal pp. 5815--5816",
+        "doi": "10.1109/TIT.2025.3577765",
+        "eprint": "arXiv:2405.04406",
+        "url": "https://arxiv.org/abs/2405.04406"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2024-05-07",
+      "kind": "source_statement",
+      "summary": "The source asks whether its linear-in-p symbol-loss bound for random linear hashing can be tightened to sublinear growth in p.",
+      "citation_labels": [
+        "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "linear-hashing-maximum-bucket-one-plus-o",
+      "reed-muller-shannon-intrinsic-randomness"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

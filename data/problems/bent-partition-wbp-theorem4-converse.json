@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-partition-wbp-theorem4-converse",
+  "group_id": "bent-partition-structure",
+  "title": "Necessity of the WBP common-dual condition",
+  "summary": "For odd-prime vectorial bent functions, decide whether WBP preimage partitions force the common-sign and common-dual-term condition of Theorem 4.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ be odd, $n$ be even, $2\\le m\\le n/2$, and $F:V_n^{(p)}\\to V_m^{(p)}$ be vectorial bent. For $c\\ne0$, write $F_c(x)=\\langle c,F(x)\\rangle$. Assume the nonzero components are all regular or all weakly regular but nonregular, and the preimage partition of $F$ belongs to WBP. Must there be one sign $\\varepsilon$ and functions $G:V_n^{(p)}\\to V_m^{(p)}$ and $h:V_n^{(p)}\\to\\mathbb F_p$ such that every $F_c$ has sign $\\varepsilon$ and $(F_c)^*(x)=\\langle c,G(x)\\rangle+h(x)$ for all $c\\ne0$ and all $x$?"
+  },
+  "scope": {
+    "domain": "Vectorial bent functions and weakly regular bent preimage partitions",
+    "assumptions": [
+      "p is an odd prime",
+      "n is even and 2 <= m <= n/2",
+      "The preimage partition belongs to WBP",
+      "All nonzero components are regular or all are weakly regular but nonregular"
+    ],
+    "parameters": [
+      "p: odd field characteristic",
+      "n: input dimension",
+      "m: vectorial output dimension",
+      "Theorem 4 common-sign and common-dual-term condition"
+    ],
+    "unresolved_remainder": "The binary case and odd-prime scalar case are already settled. arXiv:2606.27776 proves necessity for the strict symmetric subclass with K >= 5 and -A_i = A_i. The remaining odd-prime vectorial WBP partitions without that symmetry are unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-functions",
+      "bent-partitions",
+      "vectorial-functions",
+      "weak-regularity",
+      "dual-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Wei--Fu, further results on bent partitions",
+        "locator": "Theorem 4, Eq. (29), and Remark 2, pp. 3454-3456",
+        "doi": "10.1109/TIT.2026.3670189",
+        "eprint": "arXiv:2509.16911",
+        "url": "https://arxiv.org/abs/2509.16911"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Wang--Wei--Fu--Li--Li, s-plateaued partitions",
+        "locator": "Theorem 6 and Corollary 2",
+        "eprint": "arXiv:2606.27776",
+        "url": "https://arxiv.org/abs/2606.27776"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-05-01",
+      "kind": "source_statement",
+      "summary": "The source proves sufficiency, records necessity in the binary and odd-prime scalar cases, and asks for the remaining odd-prime vectorial converse.",
+      "citation_labels": [
+        "Wang--Wei--Fu, further results on bent partitions"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "kind": "prior_result",
+      "summary": "A later preprint proves the common-dual characterization with h = 0 for symmetric odd-prime bent partitions, leaving the general WBP converse open.",
+      "citation_labels": [
+        "Wang--Wei--Fu--Li--Li, s-plateaued partitions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-partition-depth-power-of-p"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

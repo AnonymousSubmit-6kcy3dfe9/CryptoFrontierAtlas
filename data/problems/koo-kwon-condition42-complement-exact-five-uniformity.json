@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "koo-kwon-condition42-complement-exact-five-uniformity",
+  "group_id": "koo-kwon-binomial-differential-uniformity",
+  "title": "Exact five-uniformity outside Koo--Kwon condition (42)",
+  "summary": "Determine whether the complementary Koo--Kwon binomial parameters always have differential uniformity exactly five above the experimental threshold.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q=p^n>4007$ with $p>3$ and $q\\equiv3\\pmod 4$, let $r=(q+1)/4$, and let $\\chi$ be the quadratic character of $\\mathbb F_q$. For $u\\in\\mathbb F_q^*\\setminus\\{\\pm1,\\,\\pm(1-2^{r+1})/3\\}$ satisfying $\\chi(1+u)=(-1)^{r+1}\\chi(1-u)$, define $F_{r,u}(x)=x^r(1+u\\chi(x))$ and $\\delta(F_{r,u})=\\max_{a\\in\\mathbb F_q^*,\\,b\\in\\mathbb F_q}|\\{x\\in\\mathbb F_q:F_{r,u}(x+a)-F_{r,u}(x)=b\\}|$. Must $\\delta(F_{r,u})=5$ for every such $(q,u)$?"
+  },
+  "scope": {
+    "domain": "Differential uniformity of odd-characteristic finite-field binomials",
+    "assumptions": [
+      "$q=p^n>4007$, $p>3$, and $q\\equiv3\\pmod 4$",
+      "$r=(q+1)/4$ and $\\chi$ is the quadratic character of $\\mathbb F_q$",
+      "$u$ excludes $\\pm1$ and both exceptional values $\\pm(1-2^{r+1})/3$",
+      "$\\chi(1+u)=(-1)^{r+1}\\chi(1-u)$"
+    ],
+    "parameters": [
+      "$p>3$: odd prime characteristic",
+      "$n$: extension degree",
+      "$q=p^n$: field order",
+      "$u$: binomial parameter"
+    ],
+    "unresolved_remainder": "The source proves $\\delta(F_{r,u})\\le5$ on the complement of condition (42) and verifies equality computationally for $4007<q<10000$. Exact equality remains unproved for every admissible field order $q>4007$ and every complementary parameter $u$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": ["design.sboxes-nonlinear-components","foundations.algebraic-structures"],
+    "tags": [
+      "differential-uniformity",
+      "finite-fields",
+      "binomial-functions",
+      "quadratic-character"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Koo--Kwon, complementary exact five-uniformity conjecture",
+        "locator": "Section IV, experimental paragraph after condition (42), p. 26",
+        "doi": "10.1109/TIT.2026.3657603",
+        "eprint": "arXiv:2506.11486",
+        "url": "https://arxiv.org/abs/2506.11486"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-03-01",
+      "kind": "source_statement",
+      "summary": "The source extrapolates exact five-uniformity to every admissible field order above 4007 and explicitly notes that a rigorous proof is missing.",
+      "citation_labels": [
+        "Koo--Kwon, complementary exact five-uniformity conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "koo-kwon-condition42-exact-four-uniformity",
+      "mesnager-wu-f2u-exact-five-uniformity-4027"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-hashing-maximum-bucket-one-plus-o",
+  "group_id": "pathegama-barg-linear-code-hashing-open-questions",
+  "title": "Asymptotically uniform expected maximum bucket for linear hashing",
+  "summary": "Prove that random linear hashing has expected normalized maximum bucket size tending to one below source min-entropy by a linear gap.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Fix a prime power $q$ and $\\epsilon>0$. Let $Z$ be an arbitrary distribution on $\\mathbb F_q^n$, choose $m\\le H_\\infty(Z)-n\\epsilon$, and let $H$ be a parity-check matrix of a uniformly random $[n,n-m]_q$ linear code $C$. Prove that $\\mathbb E_C[\\lVert q^m P_{HZ}\\rVert_\\infty]=1+o_n(1)$ uniformly over all admissible source sequences, or exhibit a source family that refutes this limit."
+  },
+  "scope": {
+    "domain": "Expected maximum-bucket uniformity of random linear syndrome hashing",
+    "assumptions": [
+      "The source is an arbitrary q-ary distribution with prescribed min-entropy",
+      "The hash is the parity-check map of a uniformly random fixed-dimension linear code",
+      "The output length satisfies a fixed positive linear gap below source min-entropy"
+    ],
+    "parameters": [
+      "$q$: field size",
+      "$n$: source block length",
+      "$m$: syndrome length",
+      "$\\epsilon$: entropy-gap constant",
+      "$H_\\infty(Z)$: source min-entropy"
+    ],
+    "unresolved_remainder": "For binary sources, Dhar--Dvir concentration combined with the later Jaber--Kumar--Zuckerman quadratic tail bound yields the normalized expected limit $1+o_n(1)$, first for flat sources and then for arbitrary sources by the source's flat-source decomposition. Proving or refuting the same limit for every fixed field size $q>2$ remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "foundations.probability-statistics",
+      "foundations.coding-theory"
+    ],
+    "tags": [
+      "linear-hashing",
+      "maximum-bucket",
+      "min-entropy",
+      "randomness-extraction",
+      "linear-codes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes",
+        "locator": "Proposition 3, equation (23), and Remark 6, journal pp. 5815--5816",
+        "doi": "10.1109/TIT.2025.3577765",
+        "eprint": "arXiv:2405.04406",
+        "url": "https://arxiv.org/abs/2405.04406"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Dhar--Dvir, Linear hashing with l-infinity guarantees and two-sided Kakeya bounds",
+        "locator": "Theorem 2.4",
+        "doi": "10.1109/FOCS54457.2022.00047",
+        "url": "https://doi.org/10.1109/FOCS54457.2022.00047"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Jaber--Kumar--Zuckerman, Linear Hashing Is Optimal",
+        "locator": "Theorems 3, 5, and 10",
+        "doi": "10.1145/3717823.3718208",
+        "eprint": "arXiv:2505.14061",
+        "url": "https://arxiv.org/abs/2505.14061"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2022-10-31",
+      "kind": "prior_result",
+      "summary": "Dhar and Dvir prove that, in the dense binary flat-source regime, every bucket has relative load $1+o(1)$ with high probability; by itself this does not control rare large buckets in expectation.",
+      "citation_labels": [
+        "Dhar--Dvir, Linear hashing with l-infinity guarantees and two-sided Kakeya bounds"
+      ]
+    },
+    {
+      "date": "2024-05-07",
+      "kind": "source_statement",
+      "summary": "The source asks whether its constant expected normalized maximum-bucket bound can be sharpened to $1+o_n(1)$.",
+      "citation_labels": [
+        "Pathegama--Barg, Renyi divergence guarantees for hashing with linear codes"
+      ]
+    },
+    {
+      "date": "2025-06-15",
+      "kind": "public_result",
+      "summary": "The later quadratic max-load tail bound makes the normalized binary loads uniformly integrable. Combined with Dhar--Dvir concentration, full-rank conditioning, and flat-source decomposition, it closes the binary branch in expectation; fixed fields $q>2$ remain unresolved.",
+      "citation_labels": [
+        "Jaber--Kumar--Zuckerman, Linear Hashing Is Optimal"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "linear-hashing-sublinear-renyi-symbol-loss",
+      "reed-muller-shannon-intrinsic-randomness"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

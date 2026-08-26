@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-nonbent-component-bound-equality",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "Equality in the quadratic non-bent-component bound",
+  "summary": "For every admissible dimension pair, decide whether a quadratic vectorial function attains the exact lower bound on nontrivial non-bent components.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n$ be even with $n\\le 2m-6$, and for a quadratic function $F:\\mathbb F_2^n\\to\\mathbb F_2^m$ let $N_F$ be the set of its nontrivial non-bent component functions. For every admissible pair $(n,m)$, determine whether there exists such an $F$ satisfying $|N_F|=2^{m-n/2}+2^{m-n/2-2}+2^{m-n/2-3}-1$. Construct an equality example or prove nonexistence for each pair."
+  },
+  "scope": {
+    "domain": "Quadratic vectorial Boolean functions and non-bent components",
+    "assumptions": [
+      "n is even",
+      "n <= 2m - 6",
+      "F : F_2^n -> F_2^m is quadratic",
+      "N_F is the set of nontrivial non-bent components"
+    ],
+    "parameters": [
+      "even input dimension n",
+      "output dimension m",
+      "admissible pair (n,m) with n <= 2m - 6"
+    ],
+    "unresolved_remainder": "For every even n <= 2m - 6, an equality construction or a nonexistence theorem is still required for the exact Theorem III.7 value of |N_F|."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.combinatorics-finite-geometry"],
+    "tags": [
+      "bent-components",
+      "blocking-sets",
+      "quadratic-functions",
+      "vectorial-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Theorem III.7 and Open Problem VI.4, p. 5216",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "Open Problem VI.4 asks whether the exact Theorem III.7 lower bound is attained for each admissible dimension pair.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-apn-permutation",
+      "nonquadratic-crooked-apn-existence",
+      "quadratic-apn-eight-bit-amplitude-family",
+      "quadratic-apn-even-walsh-classification",
+      "quadratic-apn-nonclassical-walsh-family"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

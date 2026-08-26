@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonquadratic-crooked-apn-existence",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "Existence of a non-quadratic crooked APN function",
+  "summary": "Determine whether any crooked APN function exists that is not quadratic.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a positive integer $n$ and a non-quadratic APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ that is crooked, meaning that for every $a\\ne 0$ the derivative image $\\{F(x+a)+F(x):x\\in\\mathbb F_2^n\\}$ is an affine hyperplane? Construct one such function or prove that every crooked function is quadratic."
+  },
+  "scope": {
+    "domain": "Crooked and almost perfect nonlinear vectorial Boolean functions",
+    "assumptions": [
+      "F : F_2^n -> F_2^n for some positive integer n",
+      "F is APN",
+      "Every nonzero derivative image of F is an affine hyperplane",
+      "F is not quadratic"
+    ],
+    "parameters": [
+      "dimension n",
+      "vectorial Boolean function F"
+    ],
+    "unresolved_remainder": "No non-quadratic crooked APN witness is known in the audited literature, and no theorem proves that all crooked functions are quadratic."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["foundations.boolean-vectorial","cryptanalysis.differential"],
+    "tags": [
+      "apn-functions",
+      "crooked-functions",
+      "derivatives",
+      "quadratic-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Remark III.11, p. 5215",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "The source records that no crooked non-quadratic function is known, leaving a precise existence question.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-apn-permutation",
+      "quadratic-apn-eight-bit-amplitude-family",
+      "quadratic-apn-even-walsh-classification",
+      "quadratic-apn-nonclassical-walsh-family",
+      "quadratic-nonbent-component-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "almost-mm-four-to-one-mappings",
+  "group_id": "almost-maiorana-mcfarland-bent-functions",
+  "title": "Four-to-one mappings for almost Maiorana--McFarland bent functions",
+  "summary": "For every admissible dimension, construct or rule out the four-to-one mappings required by the first Almost Maiorana--McFarland open problem.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $m\\ge 4$, specify a 4-to-1 mapping $\\phi:\\mathbb F_2^{m+1}\\to\\mathbb F_2^{m-1}$ satisfying the bentness condition of Theorem III.1 and the exclusion condition of Theorem V.3 or V.8, while its fibers induce a nontrivial proper partition. Alternatively, prove nonexistence for a parameter value."
+  },
+  "scope": {
+    "domain": "Four-to-one vectorial mappings and bent functions in the generalized Maiorana--McFarland class",
+    "assumptions": [
+      "m >= 4 and n=2m",
+      "phi is 4-to-1",
+      "Theorem III.1 applies",
+      "Theorem V.3 or V.8 exclusion applies",
+      "The fibers form a nontrivial proper partition"
+    ],
+    "parameters": [
+      "m",
+      "mapping phi",
+      "fiber partition",
+      "Boolean function h"
+    ],
+    "unresolved_remainder": "The source supplies sufficient conditions and examples but no explicit family covering every m>=4 that satisfies all bentness, exclusion, and proper-partition requirements."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-functions",
+      "almost-maiorana-mcfarland",
+      "four-to-one-mappings",
+      "fiber-partitions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kudin--Pasalic--Polujan--Zhang--Zhao, Almost Maiorana-McFarland Bent Functions",
+        "locator": "Open Problem 1, journal p. 9712",
+        "doi": "10.1109/tit.2025.3614379",
+        "url": "https://doi.org/10.1109/tit.2025.3614379"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-25"
+  },
+  "progress": [
+    {
+      "date": "2025-12-01",
+      "kind": "source_statement",
+      "summary": "The source states Open Problem 1 after proving bentness criteria and only sufficient exclusion conditions for the required mappings.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang--Zhao, Almost Maiorana-McFarland Bent Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "almost-mm-outside-msharp-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

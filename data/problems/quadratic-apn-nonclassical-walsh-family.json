@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-apn-nonclassical-walsh-family",
+  "group_id": "beneteau-quadratic-apn-walsh",
+  "title": "An infinite quadratic APN family with non-classical Walsh spectra",
+  "summary": "Construct an infinite family of quadratic APN functions in unbounded even dimensions whose Walsh spectra are non-classical.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct even dimensions $n_j\\to\\infty$ and quadratic APN functions $F_j:\\mathbb F_2^{n_j}\\to\\mathbb F_2^{n_j}$ such that every $F_j$ has a non-classical Walsh spectrum. Equivalently in the source's correspondence, the vector-space partition associated with every $F_j$ must not be a $2$-spread."
+  },
+  "scope": {
+    "domain": "Infinite families of quadratic APN functions and Walsh spectra",
+    "assumptions": [
+      "Every family member is quadratic and APN",
+      "Every family member has a non-classical Walsh spectrum",
+      "The dimensions are even and unbounded",
+      "Non-classical spectrum is equivalent here to an associated partition that is not a 2-spread"
+    ],
+    "parameters": [
+      "family index j",
+      "unbounded even dimension n_j"
+    ],
+    "unresolved_remainder": "The scalar trace-product switching mechanism of the Gold cube is excluded in every even dimension at least ten and does not yield a non-classical dimension-eight family. A qualifying infinite family outside that strict mechanism, or a global impossibility theorem, remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": ["foundations.boolean-vectorial","cryptanalysis.differential","cryptanalysis.linear"],
+    "tags": [
+      "apn-functions",
+      "infinite-families",
+      "quadratic-functions",
+      "switching-constructions",
+      "vector-space-partitions",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
+        "locator": "Introduction and final paragraph of Section VI, pp. 5208 and 5216",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://arxiv.org/abs/2510.12008"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kuznetsov, trace-product switchings of the Gold cube",
+        "locator": "Theorem 6.2 and the dimension-eight classification",
+        "eprint": "arXiv:2608.04261",
+        "url": "https://arxiv.org/abs/2608.04261"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-07-01",
+      "kind": "source_statement",
+      "summary": "The source asks for an infinite family of even-dimensional quadratic APN functions with non-classical Walsh spectra.",
+      "citation_labels": [
+        "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "kind": "prior_result",
+      "summary": "A later preprint proves that one natural scalar trace-product switching mechanism disappears for every even dimension at least ten, excluding that strict route to an infinite family.",
+      "citation_labels": [
+        "Kuznetsov, trace-product switchings of the Gold cube"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-apn-permutation",
+      "nonquadratic-crooked-apn-existence",
+      "quadratic-apn-eight-bit-amplitude-family",
+      "quadratic-apn-even-walsh-classification",
+      "quadratic-nonbent-component-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

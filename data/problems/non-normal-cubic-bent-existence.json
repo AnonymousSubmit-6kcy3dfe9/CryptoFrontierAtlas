@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-normal-cubic-bent-existence",
+  "group_id": "gillot-normality-bent-functions",
+  "title": "Existence of a non-normal cubic bent function",
+  "summary": "Determine whether a non-normal cubic bent function exists in any even dimension at least ten.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a Boolean function $f:\\mathbb F_2^m\\to\\mathbb F_2$, let $\\deg_r(f)=\\min_{a,V:\\,\\dim V=r}\\deg(f|_{a+V})$. Does there exist an even $m\\ge 10$ and a bent function $f$ of algebraic degree exactly $3$ such that $\\deg_{m/2}(f)\\ge 1$? Equivalently, construct a non-normal cubic bent function, or prove that every cubic bent function in every even dimension $m\\ge 10$ is normal."
+  },
+  "scope": {
+    "domain": "Boolean bent functions and affine-flat normality",
+    "assumptions": [
+      "m is even and m >= 10",
+      "f : F_2^m -> F_2 is bent",
+      "f has algebraic degree exactly 3",
+      "Non-normality is equivalent to relative degree deg_{m/2}(f) >= 1"
+    ],
+    "parameters": [
+      "even dimension m >= 10",
+      "cubic bent function f"
+    ],
+    "unresolved_remainder": "No cubic bent function with relative degree at least one is known in the audited literature, and no theorem proves that all cubic bent functions in the full even-dimensional range are normal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": ["foundations.algebraic-structures"],
+    "tags": [
+      "bent-functions",
+      "boolean-functions",
+      "cubic-functions",
+      "normality",
+      "relative-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gillot--Langevin--Polujan, normality of 8-bit bent functions",
+        "locator": "Eq. (III.1) and Section VI, item 2, pp. 4363-4364",
+        "doi": "10.1109/TIT.2026.3685370",
+        "eprint": "arXiv:2504.21779",
+        "url": "https://arxiv.org/abs/2504.21779"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-06-01",
+      "kind": "source_statement",
+      "summary": "The source asks for a cubic bent function whose relative degree on half-dimensional affine flats is at least one.",
+      "citation_labels": [
+        "Gillot--Langevin--Polujan, normality of 8-bit bent functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "cubic-bent-normal-or-weak-normal",
+      "eight-variable-quartic-normality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

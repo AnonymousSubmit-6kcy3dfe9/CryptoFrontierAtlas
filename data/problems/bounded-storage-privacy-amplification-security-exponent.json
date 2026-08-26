@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bounded-storage-privacy-amplification-security-exponent",
+  "group_id": "takeuchi-watanabe-bounded-storage-privacy-amplification",
+  "title": "Tight security exponent for bounded-storage privacy amplification",
+  "summary": "Determine the exact total-variation security exponent of randomized privacy amplification when an eavesdropper stores a rate-limited encoding of correlated side information.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $(X^n,Y^n)\\sim P_{XY}^{\\otimes n}$ over finite alphabets. A rate-$R_1$ randomized universal hash $F_n$ produces $K_n=F_n(X^n)\\in\\{0,1\\}^{nR_1}$, while Eve stores $S_n=g_n(Y^n)\\in\\{0,1\\}^{nR_2}$. With $\\Delta_n=d_{\\mathrm{var}}(P_{K_nS_nF_n},P_{\\mathrm{unif}}\\times P_{S_n}\\times P_{F_n})$, determine the exact optimal worst-case exponent $E_{\\mathrm{sec}}(R_1,R_2\\mid P_{XY})$ of $\\Delta_n$ under the source's admissible hashing model and all rate-$R_2$ storage maps $g_n$. Prove matching achievable and converse exponent bounds throughout the source-defined secure rate region; in particular, decide when the exponent implicit in Theorem 3 is tight."
+  },
+  "scope": {
+    "domain": "Information-theoretic privacy amplification against a bounded-storage eavesdropper with correlated side information",
+    "assumptions": [
+      "X^n and Y^n are finite-alphabet i.i.d. correlated sources with law P_XY",
+      "The distilled key has rate R1 and uses the source's randomized universal-hashing model",
+      "Eve stores an arbitrary rate-R2 encoding g_n(Y^n)",
+      "Security is measured by the total-variation criterion in equation (106)"
+    ],
+    "parameters": [
+      "P_XY: finite-alphabet source law",
+      "R1: distilled-key rate",
+      "R2: eavesdropper storage rate",
+      "n: block length"
+    ],
+    "unresolved_remainder": "A matching converse for the total-variation security exponent is not known over the full source-defined secure rate region. Theorem 3 supplies an exponential upper bound on the security criterion, but its exact optimal worst-case exponent and the conditions for tightness remain open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": ["foundations.others"],
+    "tags": [
+      "privacy-amplification",
+      "bounded-storage",
+      "security-exponent",
+      "total-variation",
+      "side-channel"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Takeuchi--Watanabe, Tight Exponential Strong Converse for Source Coding Problem With Encoded Side Information",
+        "locator": "Section VI and conclusion, journal pp. 1542-1544, Theorem 3 and equation (119)",
+        "doi": "10.1109/TIT.2025.3529612",
+        "eprint": "arXiv:2209.10275",
+        "url": "https://arxiv.org/abs/2209.10275"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-24"
+  },
+  "progress": [
+    {
+      "date": "2025-01-14",
+      "kind": "source_statement",
+      "summary": "The source derives an exponential total-variation security bound for the bounded-storage model and explicitly leaves derivation of the tight exponential security bound as a future agenda.",
+      "citation_labels": [
+        "Takeuchi--Watanabe, Tight Exponential Strong Converse for Source Coding Problem With Encoded Side Information"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

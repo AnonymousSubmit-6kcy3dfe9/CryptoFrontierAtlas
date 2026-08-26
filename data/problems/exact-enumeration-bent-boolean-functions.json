@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-enumeration-bent-boolean-functions",
+  "group_id": "maiorana-mcfarland-class-extensions",
+  "title": "Exact enumeration of bent Boolean functions",
+  "summary": "Determine the exact total number of bent Boolean functions in every even dimension at least ten, beyond counts for strict construction classes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $n\\ge5$, let $\\operatorname{Bent}(2n)=\\{f:\\mathbb F_2^{2n}\\to\\mathbb F_2:|W_f(a)|=2^n\\text{ for every }a\\in\\mathbb F_2^{2n}\\}$, where $W_f$ is the Walsh transform. Determine $|\\operatorname{Bent}(2n)|$ exactly for every $n\\ge5$."
+  },
+  "scope": {
+    "domain": "Enumeration of Boolean bent functions",
+    "assumptions": [
+      "The input dimension is even and equals $m=2n$",
+      "$m\\ge10$, equivalently $n\\ge5$",
+      "The count includes all bent Boolean functions, not only a construction class or equivalence quotient"
+    ],
+    "parameters": [
+      "$n\\ge5$: half-dimension",
+      "$m=2n$: number of variables"
+    ],
+    "unresolved_remainder": "Exact totals are known through eight variables, and exact formulas or asymptotically tight counts exist for important strict subclasses. The exact total number of all bent Boolean functions remains unknown for every even dimension $m\\ge10$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": ["foundations.boolean-vectorial"],
+    "tags": [
+      "bent-functions",
+      "boolean-functions",
+      "enumeration",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kolomeec--Bykov, all-bent-function enumeration challenge",
+        "locator": "Introduction, p. 2514",
+        "doi": "10.1109/TIT.2026.3661419",
+        "eprint": "arXiv:2503.21440",
+        "url": "https://arxiv.org/abs/2503.21440"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-23"
+  },
+  "progress": [
+    {
+      "date": "2026-04-01",
+      "kind": "source_statement",
+      "summary": "The source states that the exact number of all bent functions is unknown in every even dimension of at least ten variables.",
+      "citation_labels": [
+        "Kolomeec--Bykov, all-bent-function enumeration challenge"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "completed-maiorana-mcfarland-extension-asymptotics"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
