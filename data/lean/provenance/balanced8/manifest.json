@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "source_artifact": {
+    "filename": "balanced8_nl118_iacr_artifact.zip",
+    "sha256": "b2abc0ecccef88439c94468e80cbc1265c019718a003fe892dc0dab9a0798a3b",
+    "bytes": 388540
+  },
+  "inputs": [
+    {
+      "path": "provenance/balanced8/tables.json",
+      "source_member": "artifact/tables.json",
+      "sha256": "679dee6ab21c7081a49f72d7c5fab4f004e2124a99a14180514fc92f1fd20c8f",
+      "bytes": 87888
+    },
+    {
+      "path": "provenance/balanced8/global_farkas_69.json",
+      "source_member": "artifact/global_farkas_69.json",
+      "sha256": "0679f5116924aff7004bbe066ae02f0fb24e709826a7ec594809b58b13275d4f",
+      "bytes": 8902
+    }
+  ],
+  "generator": {
+    "path": "scripts/generate_balanced8_certificate_data.py",
+    "python": ">=3.10",
+    "command": "python3 scripts/generate_balanced8_certificate_data.py provenance/balanced8/tables.json provenance/balanced8/global_farkas_69.json LeanCipher/BalancedEightCertificateData.lean"
+  },
+  "output": {
+    "path": "LeanCipher/BalancedEightCertificateData.lean",
+    "sha256": "e261a731749e2f95301151d86a46a185eefe5a6e4e279bcbee38042fcb6f7973",
+    "bytes": 349627
+  }
+}
