@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "forward-security-logarithmic-storage",
+  "group_id": "forward-security-logarithmic-storage",
+  "title": "Forward Security with Logarithmic Storage",
+  "summary": "GGM1 supports secure deletion but incurs linear state growth under puncturing, while logarithmic worst-case storage with forward security remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can forward security for deleted epoch keys be achieved with $O(\\log N)$ worst-case storage?"
+  },
+  "scope": {
+    "domain": "Forward-secure interval schemes for managing epoch keys in shared persistent data.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N: scale parameter for worst-case storage complexity"
+    ],
+    "unresolved_remainder": "Whether forward security for deleted epoch keys can be achieved with logarithmic worst-case storage."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "forward-security",
+      "interval-schemes",
+      "storage-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Group Key Progression: Strong Security for Shared Persistent Data",
+        "locator": "EUROCRYPT 2026, page 28",
+        "url": "https://eprint.iacr.org/2025/1028",
+        "eprint": "2025/1028"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that logarithmic worst-case storage with forward security is not known and is therefore unsupported in GGM2. It contrasts this with GGM1, which supports secure deletion but incurs linear state growth under puncturing.",
+      "citation_labels": [
+        "Matilda Backendal et al., Group Key Progression: Strong Security for Shared Persistent Data"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

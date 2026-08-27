@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "logarithmic-independence-for-local-permutation-iterates",
+  "group_id": "logarithmic-independence-for-local-permutation-iterates",
+  "title": "Logarithmic Independence for Local Permutation Iterates",
+  "summary": "A stronger implication is refuted by a counterexample using constantly many invariants and wires; whether the weakened logarithmic-independence condition guarantees pseudorandomness remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a randomized permutation $P:\\{0,1\\}^n\\to\\{0,1\\}^n$ in which each output bit depends on only a constant number of input bits, determine whether the $T$-fold composition $P^T$ is a pseudorandom permutation whenever $P^T$ is negligibly far from $\\log(n)$-wise independence. This conjectured implication is a weakened form of a refuted stronger conjecture: the known counterexample distinguishes a constant number of invariants using only a constant number of wires, while that approach does not apply when $\\omega(1)$ invariants must be maintained. Thus, the unresolved task is to establish or refute the stated pseudorandomness implication under the constant-locality condition. [S1]"
+  },
+  "scope": {
+    "domain": "Pseudorandomness and limited independence for iterated constant-locality randomized permutations.",
+    "assumptions": [
+      "Each output bit of P depends on only a constant number of input bits.",
+      "The T-fold composition of P is negligibly far from log(n)-wise independence."
+    ],
+    "parameters": [
+      "P: randomized permutation from n-bit strings to n-bit strings",
+      "n: input and output bit length",
+      "T: number of times P is composed"
+    ],
+    "unresolved_remainder": "Establish or refute whether the T-fold composition being negligibly far from log(n)-wise independence implies that it is a pseudorandom permutation under constant locality."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "pseudorandom-permutations",
+      "limited-independence",
+      "local-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness",
+        "locator": "EUROCRYPT 2026, page 38",
+        "url": "https://eprint.iacr.org/2025/2282",
+        "eprint": "2025/2282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly states this as Conjecture 3, a weakened variant not refuted by its counterexample. That counterexample distinguishes a constant number of invariants using a constant number of wires, an approach that does not apply to omega(1) invariants.",
+      "citation_labels": [
+        "Jesko Dujmovic et al., When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

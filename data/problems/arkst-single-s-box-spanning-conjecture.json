@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "arkst-single-s-box-spanning-conjecture",
+  "group_id": "arkst-single-s-box-spanning-conjecture",
+  "title": "ARKST Single-S-Box Spanning Conjecture",
+  "summary": "ARKST builds a candidate space from differences activating one S-box at a time; whether their span contains every alpha-admissible key difference remains conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an SPN, ARKST restricts each round's key-difference component $W_i$ to a difference $a_i$ that activates at most one S-box, represented as $a_i=L(c_i)$ with $\\operatorname{wt}_b(c_i)\\le 1$, and forms a candidate $\\alpha$-admissible key-difference space from the linear combinations of the differences obtained in this way. The unresolved question is whether these single-S-box-activation differences span every $\\alpha$-admissible key difference, so that the restriction is complete after taking linear combinations, even though individual $\\alpha$-admissible differences may activate more than one S-box."
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis of SPNs via ARKST's alpha-admissible key-difference search.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Wᵢ and i: the key-difference component and its round index",
+      "aᵢ: a searched difference restricted to activate at most one S-box",
+      "cᵢ, L, and b: the representation vector, mapping, and word size used in the block-weight condition",
+      "alpha: the admissibility label for the target key-difference space"
+    ],
+    "unresolved_remainder": "Whether differences activating at most one S-box span every alpha-admissible key difference after taking linear combinations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "s-boxes",
+      "key-difference-spaces"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "When the Wrong Key Lives On: The Key-Recovery Procedure in Integral Attacks",
+        "locator": "EUROCRYPT 2026, page 21",
+        "url": "https://eprint.iacr.org/2025/2011",
+        "eprint": "2025/2011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures that differences found by activating one S-box at a time span all alpha-admissible key differences. It notes that individual admissible differences need not have this minimal form; the claim concerns their linear combinations.",
+      "citation_labels": [
+        "Christof Beierle et al., When the Wrong Key Lives On: The Key-Recovery Procedure in Integral Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

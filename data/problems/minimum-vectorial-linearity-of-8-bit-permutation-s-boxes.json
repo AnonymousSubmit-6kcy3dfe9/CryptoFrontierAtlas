@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-vectorial-linearity-of-8-bit-permutation-s-boxes",
+  "group_id": "minimum-vectorial-linearity-of-8-bit-permutation-s-boxes",
+  "title": "Minimum Vectorial Linearity of 8-Bit Permutation S-Boxes",
+  "summary": "The lowest known vectorial linearity for an 8-bit permutation S-box is 17; construct one below 17 or prove that 17 is minimal.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The lowest known vectorial linearity for an 8-bit permutation S-box is 17. The unresolved task is to construct an 8-bit permutation S-box with vectorial linearity less than 17, or to prove that 17 is the minimum possible value for 8-bit permutations."
+  },
+  "scope": {
+    "domain": "Design and cryptanalysis of 8-bit permutation S-boxes under vectorial linearity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "8-bit permutation S-box: target object class and size",
+      "Vectorial linearity: optimization measure",
+      "17: lowest known value and candidate minimum"
+    ],
+    "unresolved_remainder": "Construct an 8-bit permutation S-box with vectorial linearity less than 17, or prove that 17 is the minimum possible value for 8-bit permutations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "vectorial-linearity",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algorithmic Toolkit for Linearization of S-boxes",
+        "locator": "EUROCRYPT 2026, page 16",
+        "url": "https://eprint.iacr.org/2026/913",
+        "eprint": "2026/913"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports vectorial linearity 17 as the lowest known value for an 8-bit permutation. It explicitly presents finding a better S-box or proving minimality as a challenging open problem.",
+      "citation_labels": [
+        "Alex Biryukov et al., Algorithmic Toolkit for Linearization of S-boxes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

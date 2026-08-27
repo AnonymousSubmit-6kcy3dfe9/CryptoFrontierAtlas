@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "galois-ring-diffusion-for-integer-ring-ciphers-447276baa2",
+  "group_id": "galois-ring-diffusion-for-integer-ring-ciphers-447276baa2",
+  "title": "Galois-Ring Diffusion for Integer-Ring Ciphers",
+  "summary": "Galois-ring diffusion is proposed as an alternative to matrix multiplication in ciphers over integer rings, but constructing and studying this case remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Study the construction of ciphers over $\\mathbb{Z}_{p^n}^{\\,t}$ in which the matrix-multiplication component is replaced by a function over $\\operatorname{GR}(p^n,t)$ that provides diffusion."
+  },
+  "scope": {
+    "domain": "Symmetric-cipher construction over integer rings using Galois-ring diffusion functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p, n, and t: parameters defining the integer-ring cipher space and the Galois ring"
+    ],
+    "unresolved_remainder": "Construct and study ciphers in which matrix multiplication is replaced by a diffusion-providing function over the Galois ring."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-ciphers",
+      "integer-rings",
+      "galois-rings"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat",
+        "locator": "CRYPTO 2026, page 10",
+        "url": "https://eprint.iacr.org/2026/1104",
+        "eprint": "2026/1104"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this replacement as an alternative cipher-construction strategy and explicitly leaves studying the case open for future work.",
+      "citation_labels": [
+        "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

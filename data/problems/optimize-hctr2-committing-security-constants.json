@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimize-hctr2-committing-security-constants",
+  "group_id": "optimize-hctr2-committing-security-constants",
+  "title": "Optimize Committing-Security Constants for EtEP-HCTR2 and EtES-HCTR2",
+  "summary": "The committing-security bounds for EtEP-HCTR2 and EtES-HCTR2 are tight up to constants depending on n, whose further optimization remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The committing-security bounds for EtEP-HCTR2 and EtES-HCTR2 are tight up to constants depending on the parameter $n$. Further optimize these $n$-dependent constants."
+  },
+  "scope": {
+    "domain": "This problem concerns committing-security bounds for the EtEP-HCTR2 and EtES-HCTR2 symmetric-cryptographic constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: parameter governing the constants in the tight committing-security bounds"
+    ],
+    "unresolved_remainder": "Optimize the constants depending on n in the committing-security bounds for EtEP-HCTR2 and EtES-HCTR2."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "key-commitment",
+      "authenticated-encryption",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Committing Security of HCTR2, Revisited",
+        "locator": "CRYPTO 2026, page 39",
+        "url": "https://eprint.iacr.org/2026/254",
+        "eprint": "2026/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that the two variants have tight committing-security bounds up to constants depending on n and explicitly leaves further optimization open.",
+      "citation_labels": [
+        "Donghoon Chang et al., Key Committing Security of HCTR2, Revisited"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

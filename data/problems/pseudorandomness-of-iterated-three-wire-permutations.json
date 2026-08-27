@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "pseudorandomness-of-iterated-three-wire-permutations",
+  "group_id": "pseudorandomness-of-iterated-three-wire-permutations",
+  "title": "Pseudorandomness of Iterated Three-Wire Permutations",
+  "summary": "The broader, weaker three-wire reversible-circuit conjecture asks whether polynomially many random local-permutation steps yield a pseudorandom permutation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $P:\\{0,1\\}^n \\to \\{0,1\\}^n$ be the randomized permutation process that chooses three random wires and applies a uniformly random permutation to those wires. The unresolved conjecture asks whether there is a polynomial $p$ such that the iterated process $P^{p(n)}$ is a pseudorandom permutation. This is the broader random three-wire reversible-circuit question; it is weaker than the preceding restricted conjectures, so refuting it would also refute those conjectures."
+  },
+  "scope": {
+    "domain": "Pseudorandomness and probabilistic mixing of random three-wire reversible permutations on n-bit strings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: bit-string length",
+      "p: polynomial whose value at n determines the number of iterations"
+    ],
+    "unresolved_remainder": "Determine whether there exists a polynomial p such that iterating the randomized process p(n) times yields a pseudorandom permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "pseudorandom-permutations",
+      "reversible-circuits",
+      "random-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness",
+        "locator": "EUROCRYPT 2026, page 38",
+        "url": "https://eprint.iacr.org/2025/2282",
+        "eprint": "2025/2282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly states this as Conjecture 7 and presents it as broader and weaker than Conjectures 3–6. The conjecture remains unresolved, and refuting it would also refute those restricted conjectures.",
+      "citation_labels": [
+        "Jesko Dujmovic et al., When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

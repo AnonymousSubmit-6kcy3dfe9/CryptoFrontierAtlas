@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sharper-ete-hctr2-committing-security-bounds",
+  "group_id": "sharper-ete-hctr2-committing-security-bounds",
+  "title": "Sharper EtE-HCTR2 Committing-Security Bounds",
+  "summary": "The committing-security bounds for the P and S variants of EtE-HCTR2 are tight up to an n-dependent constant; sharpening the bounds and constant remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine sharper committing-security guarantees for $\\mathrm{EtE}^{P}\\text{-}\\mathrm{HCTR2}$ and $\\mathrm{EtE}^{S}\\text{-}\\mathrm{HCTR2}$, two variants of $\\mathrm{EtE\\text{-}HCTR2}$. The known committing-security bounds for both variants are tight up to a constant depending on $n$; the open task is to further optimize these bounds and their $n$-dependent constant."
+  },
+  "scope": {
+    "domain": "Committing security of the EtE-P-HCTR2 and EtE-S-HCTR2 authenticated-encryption variants.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: parameter on which the unresolved constant factor depends"
+    ],
+    "unresolved_remainder": "Derive sharper committing-security bounds for both variants and further optimize their n-dependent constant."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "committing-security",
+      "authenticated-encryption",
+      "hctr2"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Committing Security of HCTR2, Revisited",
+        "locator": "CRYPTO 2026, page 39",
+        "url": "https://eprint.iacr.org/2026/254",
+        "eprint": "2026/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents EtE-HCTR2 committing security as an open research area. It states that the bounds for the P and S variants are tight up to an n-dependent constant but leave room for further optimization.",
+      "citation_labels": [
+        "Donghoon Chang et al., Key Committing Security of HCTR2, Revisited"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

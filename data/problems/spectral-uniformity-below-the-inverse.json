@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "spectral-uniformity-below-the-inverse",
+  "group_id": "spectral-uniformity-below-the-inverse",
+  "title": "Spectral Uniformity Below the Inverse",
+  "summary": "The inverse function provides the comparison benchmark, but it remains open whether any function has smaller spectral uniformity or none exists, with power permutations as a special case.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\exists F\\colon\\mathbb F_{2^n}\\to\\mathbb F_{2^n}:\\sigma(F)<\\sigma(x\\mapsto x^{-1})$ or prove that no such $F$ exists; special case: power permutations."
+  },
+  "scope": {
+    "domain": "Spectral uniformity of vectorial Boolean functions over binary finite fields, including power permutations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: extension degree determining the binary finite field",
+      "F: candidate function from the field to itself"
+    ],
+    "unresolved_remainder": "Determine whether any function has spectral uniformity below that of the inverse or prove none exists, and resolve the special case of power permutations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "spectral-uniformity",
+      "vectorial-boolean-functions",
+      "power-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pairwise independence of AES-like block ciphers",
+        "locator": "EUROCRYPT 2026, page 28",
+        "url": "https://eprint.iacr.org/2025/1495",
+        "eprint": "2025/1495"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents an existence-versus-impossibility open problem. It identifies power permutations as a more approachable special case.",
+      "citation_labels": [
+        "Tim Beyne et al., Pairwise independence of AES-like block ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

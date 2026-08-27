@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "choosing-polynomial-perturbation-subsets",
+  "group_id": "choosing-polynomial-perturbation-subsets",
+  "title": "Choosing Polynomial Perturbation Subsets",
+  "summary": "Perturbing a polynomial function can yield a non-polynomial one, but choosing the modified subset to avoid polynomial closeness while retaining practicality remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given a polynomial function $P$ over $\\mathbb{Z}_{p^n}$, determine how to choose a subset of $\\mathbb{Z}_{p^n}$ on which to modify $P$ so that the resulting function $F$ is non-polynomial, is not too close to a polynomial function, and remains practical to implement. The unresolved tradeoff is that perturbing too small a subset leaves $F$ too close to being polynomial, whereas perturbing a large subset may make $F$ expensive to implement."
+  },
+  "scope": {
+    "domain": "Design of non-polynomial S-box components over integer rings by perturbing polynomial functions.",
+    "assumptions": [
+      "$P$ is a polynomial function over $\\mathbb{Z}_{p^n}$."
+    ],
+    "parameters": [
+      "$p$ and $n$: determine the ring $\\mathbb{Z}_{p^n}$",
+      "Perturbation subset: specifies where $P$ is modified, with its size affecting polynomial closeness and implementation cost"
+    ],
+    "unresolved_remainder": "Choose the perturbation subset so that the resulting function is non-polynomial, not too close to a polynomial function, and practical to implement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "integer-rings",
+      "polynomial-perturbation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat",
+        "locator": "CRYPTO 2026, page 28",
+        "url": "https://eprint.iacr.org/2026/1104",
+        "eprint": "2026/1104"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that perturbing a polynomial function on a subset can produce a non-polynomial function and explicitly poses subset selection as a problem. It identifies the tradeoff between small-subset polynomial closeness and large-subset implementation cost without resolving it.",
+      "citation_labels": [
+        "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

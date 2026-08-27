@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-censoring-conjecture",
+  "group_id": "aes-censoring-conjecture",
+  "title": "Censoring Conjecture for AES",
+  "summary": "Beyond an initial round threshold, prove or refute whether approximate t-wise independence of censored AES implies the same for ordinary AES.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Censoring conjecture for AES. Prove or refute the following statement: for every $t$, there exists a fixed constant $r_{\\mathrm{thresh}}>0$ such that, for every round count $r>r_{\\mathrm{thresh}}$, if $r$-round censored AES—AES with a large fraction of its mixing layers removed—is $\\varepsilon$-approximately $t$-wise independent, then ordinary $r$-round AES is $\\varepsilon$-approximately $t$-wise independent for the same $\\varepsilon$. The threshold permits exclusion of potentially non-typical behavior in the first few rounds."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography concerning approximate t-wise independence of AES and censored AES with a large fraction of its mixing layers removed.",
+    "assumptions": [
+      "The round count r exceeds the fixed positive threshold r_thresh.",
+      "The r-round censored AES is ε-approximately t-wise independent."
+    ],
+    "parameters": [
+      "t: order of approximate wise independence",
+      "r: number of AES rounds",
+      "r_thresh: fixed positive round threshold associated with t",
+      "ε: approximation level shared by censored and ordinary AES"
+    ],
+    "unresolved_remainder": "Determine whether, for every t, the implication from censored AES to ordinary AES holds with the same ε for all rounds beyond some fixed positive threshold."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "block-ciphers",
+      "t-wise-independence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How Fast Does the Inverse Walk Approximate a Random Permutation?",
+        "locator": "CRYPTO 2026, page 6",
+        "url": "https://eprint.iacr.org/2024/1795",
+        "eprint": "2024/1795"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as Conjecture 1.4, motivated by the expectation that removing a large fraction of AES mixing layers should not improve convergence to t-wise independence. The threshold excludes potentially non-typical behavior in the first few rounds.",
+      "citation_labels": [
+        "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

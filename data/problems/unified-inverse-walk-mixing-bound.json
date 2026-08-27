@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "unified-inverse-walk-mixing-bound",
+  "group_id": "unified-inverse-walk-mixing-bound",
+  "title": "Unified Inverse-Walk Upper Mixing Bound",
+  "summary": "The odd-characteristic proof uses three-term arithmetic progressions unavailable in characteristic two; a unified inverse-walk mixing upper-bound proof remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a unified proof of the inverse-walk upper mixing bound over finite fields that applies in both odd characteristic and characteristic $2$. The existing odd-characteristic strategy produces $3$-cycles by first constructing a three-term arithmetic progression, but that intermediate construction has no counterpart in characteristic $2$; the unresolved task is therefore to obtain one upper-bound argument that works in both regimes."
+  },
+  "scope": {
+    "domain": "Mixing bounds for inverse-generated random walks on permutations over finite fields.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Field characteristic — distinguishes the odd-characteristic and characteristic-2 regimes that a unified proof must cover"
+    ],
+    "unresolved_remainder": "Find a single proof of the inverse-walk upper mixing bound that applies in both characteristic regimes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "inverse-walk",
+      "mixing-bounds",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How Fast Does the Inverse Walk Approximate a Random Permutation?",
+        "locator": "CRYPTO 2026, page 7",
+        "url": "https://eprint.iacr.org/2024/1795",
+        "eprint": "2024/1795"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents characteristic-dependent upper-bound strategies and asks whether a common approach exists. It identifies the absence of a characteristic-two analogue of the three-term arithmetic-progression step as an obstacle.",
+      "citation_labels": [
+        "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

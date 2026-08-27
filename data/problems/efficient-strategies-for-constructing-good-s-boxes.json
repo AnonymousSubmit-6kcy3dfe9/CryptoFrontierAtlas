@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-strategies-for-constructing-good-s-boxes",
+  "group_id": "efficient-strategies-for-constructing-good-s-boxes",
+  "title": "Efficient Strategies for Constructing Good S-Boxes",
+  "summary": "Finding other efficient strategies for constructing the referenced good S-boxes remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The open problem to find other efficient strategies to construct such good S-boxes is left for future work."
+  },
+  "scope": {
+    "domain": "Design of S-boxes and nonlinear components for symmetric cryptographic primitives.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Find other efficient strategies to construct the referenced good S-boxes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "symmetric-cryptography",
+      "primitive-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat",
+        "locator": "CRYPTO 2026, page 29",
+        "url": "https://eprint.iacr.org/2026/1104",
+        "eprint": "2026/1104"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly calls this an open problem and leaves the development of other efficient S-box construction strategies for future work.",
+      "citation_labels": [
+        "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

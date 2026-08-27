@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "increased-pseudorandomness-threshold",
+  "group_id": "increased-pseudorandomness-threshold",
+  "title": "Increased Pseudorandomness Threshold",
+  "summary": "For randomized permutations with constant output-bit locality, it remains open whether negligible distance from four-wise independence at T rounds guarantees pseudorandomness after doubling the rounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $P$ be a randomized permutation $P:\\{0,1\\}^n \\to \\{0,1\\}^n$ such that each output bit depends on only a constant number of input bits. The unresolved question is whether, if the $T$-fold composition $P^T$ is negligibly far from $4$-wise independence, then increasing the number of composition rounds to $2T$ makes the result pseudorandom; specifically, whether there exists a polynomial $p$ such that $P^{2T}$ is a pseudorandom permutation under these conditions."
+  },
+  "scope": {
+    "domain": "Pseudorandomness thresholds for repeatedly composed randomized permutations with constant input dependence per output bit.",
+    "assumptions": [
+      "The T-fold composition is negligibly far from 4-wise independence."
+    ],
+    "parameters": [
+      "P: randomized permutation being repeatedly composed",
+      "n: input and output bit length",
+      "T: baseline number of composition rounds",
+      "p: polynomial introduced existentially in the conjectured conclusion"
+    ],
+    "unresolved_remainder": "Whether, under the stated premise, there exists a polynomial p such that the 2T-fold composition is a pseudorandom permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "pseudorandom-permutations",
+      "four-wise-independence",
+      "round-amplification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness",
+        "locator": "EUROCRYPT 2026, page 38",
+        "url": "https://eprint.iacr.org/2025/2282",
+        "eprint": "2025/2282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly labels the claim Conjecture 4, “Increased Pseudorandomness Threshold,” and motivates it by limitations of its counterexample when four-wise independence is required in intermediate rounds.",
+      "citation_labels": [
+        "Jesko Dujmovic et al., When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

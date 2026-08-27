@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "backward-direction-onion-encryption-security",
+  "group_id": "backward-direction-onion-encryption-security",
+  "title": "Backward-Direction Onion-Encryption Security",
+  "summary": "The security model and CGO proof cover only forward onion encryption; extending both to the backward direction remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the onion-encryption security model and CGO security proof from the forward direction to the backward direction."
+  },
+  "scope": {
+    "domain": "The problem concerns security models and proofs for onion encryption, including Counter Galois Onion (CGO).",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Direction: distinguishes the analyzed forward case from the unresolved backward case"
+    ],
+    "unresolved_remainder": "Extend the onion-encryption security model and the CGO security proof to the backward direction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "onion-encryption",
+      "security-models",
+      "security-proofs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Secure Onion Encryption and the Case of Counter Galois Onion",
+        "locator": "EUROCRYPT 2026, page 6",
+        "url": "https://eprint.iacr.org/2025/2017",
+        "eprint": "2025/2017"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper's formal treatment covers the forward direction. It explicitly leaves a similar treatment of the backward direction to future work.",
+      "citation_labels": [
+        "Jean Paul Degabriele et al., Secure Onion Encryption and the Case of Counter Galois Onion"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

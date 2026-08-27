@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-dimensional-inverse-spectral-uniformity",
+  "group_id": "even-dimensional-inverse-spectral-uniformity",
+  "title": "Spectral Uniformity of the Even-Dimensional Inverse",
+  "summary": "A bound is established in odd dimensions, but its proof does not reach the non-APN even-dimensional inverse; prove or refute the conjectured spectral-uniformity value.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For even $n$, prove or refute that the inverse permutation on $\\mathbb{F}_2^n$ has spectral uniformity $2^{n/2}+2$. A bound is established for the inverse function when $n$ is odd, but that proof does not cover even $n$, where the inverse function is not APN; thus the stated value remains a conjectured target for the even-dimensional case."
+  },
+  "scope": {
+    "domain": "Spectral uniformity of inverse permutations over binary finite fields.",
+    "assumptions": [
+      "The dimension n is even."
+    ],
+    "parameters": [
+      "n: dimension of the binary vector space"
+    ],
+    "unresolved_remainder": "Prove or refute that the inverse permutation has spectral uniformity $2^{n/2}+2$ for even $n$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "spectral-uniformity",
+      "inverse-permutation",
+      "vectorial-boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pairwise independence of AES-like block ciphers",
+        "locator": "EUROCRYPT 2026, page 28",
+        "url": "https://eprint.iacr.org/2025/1495",
+        "eprint": "2025/1495"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a bound for odd dimensions but says its proof does not cover even dimensions, where the inverse is not APN. Numerical experiments motivate the stated conjecture.",
+      "citation_labels": [
+        "Tim Beyne et al., Pairwise independence of AES-like block ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
