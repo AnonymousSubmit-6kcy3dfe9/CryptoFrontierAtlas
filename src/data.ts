@@ -82,6 +82,8 @@ import recordFixedDegreeBentMaximalMsubspaceCount from '../data/problems/fixed-d
 import recordP2InheritanceIv1Permutation from '../data/problems/p2-inheritance-iv1-permutation.json';
 import recordSimonIndirectContradictionBoundaryExtension from '../data/problems/simon-indirect-contradiction-boundary-extension.json';
 import recordSimonLargerSingleBitIdPriority from '../data/problems/simon-larger-single-bit-id-priority.json';
+import recordBinaryNihoS4EvenCrossCorrelationDistribution from '../data/problems/binary-niho-s4-even-cross-correlation-distribution.json';
+import recordHellesethMinusOneCrossCorrelationConjecture from '../data/problems/helleseth-minus-one-cross-correlation-conjecture.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -232,6 +234,8 @@ export const problems = [
   recordP2InheritanceIv1Permutation,
   recordSimonIndirectContradictionBoundaryExtension,
   recordSimonLargerSingleBitIdPriority,
+  recordBinaryNihoS4EvenCrossCorrelationDistribution,
+  recordHellesethMinusOneCrossCorrelationConjecture,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

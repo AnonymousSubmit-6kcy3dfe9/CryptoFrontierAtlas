@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "helleseth-minus-one-cross-correlation-conjecture",
+  "group_id": "xiong-yan-niho-cross-correlation-questions",
+  "title": "Helleseth's minus-one conjecture for m-sequence cross-correlation",
+  "summary": "Determine whether every admissible p-ary m-sequence decimation congruent to one modulo p minus one attains cross-correlation value minus one.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ be a prime, let $n\\ge 1$, and let $s_t=\\operatorname{Tr}_{\\mathbb F_{p^n}/\\mathbb F_p}(\\alpha^t)$ be a p-ary m-sequence of period $p^n-1$, where $\\alpha$ is primitive. For every integer $d$ such that $\\gcd(d,p^n-1)=1$ and $d\\equiv1\\pmod{p-1}$, define $C_d(\\tau)=\\sum_{t=0}^{p^n-2}\\zeta_p^{s_{t+\\tau}-s_{dt}}$. Must there exist a shift $\\tau\\in\\{0,\\ldots,p^n-2\\}$ for which $C_d(\\tau)=-1$?"
+  },
+  "scope": {
+    "domain": "Cross-correlation of maximum-length p-ary sequences and their decimations",
+    "assumptions": [
+      "$p$ is prime and $n$ is a positive integer",
+      "$\\alpha$ is primitive in $\\mathbb F_{p^n}$ and the two sequences have period $p^n-1$",
+      "$\\gcd(d,p^n-1)=1$",
+      "$d\\equiv1\\pmod{p-1}$"
+    ],
+    "parameters": [
+      "prime $p$",
+      "extension degree $n$",
+      "decimation $d$",
+      "shift $\\tau$"
+    ],
+    "unresolved_remainder": "The universal conjecture remains unresolved outside previously confirmed special families. arXiv:2605.19268 additionally determines the distribution for $d=(p^n-1)/3+p^i$ under its stated conditions; when $n\\equiv0\\pmod 3$, these exponents satisfy $d\\equiv1\\pmod{p-1}$. It neither proves the full statement nor supplies a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "m-sequences",
+      "cross-correlation",
+      "decimations",
+      "finite-fields",
+      "helleseth-conjecture"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Xiong--Yan, general minus-one conjecture status statement",
+        "locator": "Introduction, journal p. 8289",
+        "doi": "10.1109/TIT.2024.3444892",
+        "eprint": "arXiv:2309.06715",
+        "url": "https://arxiv.org/abs/2309.06715"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Cui--Luo, thirteen-valued cross-correlation family",
+        "locator": "Theorem 1, Tables 1--2, and Example 2",
+        "eprint": "arXiv:2605.19268",
+        "url": "https://arxiv.org/abs/2605.19268"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-09-13",
+      "kind": "source_statement",
+      "summary": "The source states that the general minus-one conjecture remains widely open after noting its confirmation for Niho decimations.",
+      "citation_labels": [
+        "Xiong--Yan, general minus-one conjecture status statement"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "kind": "public_result",
+      "summary": "A later preprint gives a complete thirteen-valued distribution for $d=(p^n-1)/3+p^i$ when $p\\equiv1\\pmod 3$; on the compatible subfamily $n\\equiv0\\pmod 3$, the tables include $-1$, with explicit frequency 501 at $p=13,n=3$.",
+      "citation_labels": [
+        "Cui--Luo, thirteen-valued cross-correlation family"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "binary-niho-s4-even-cross-correlation-distribution"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
