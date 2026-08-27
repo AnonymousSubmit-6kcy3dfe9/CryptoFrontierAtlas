@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "deterministic-nth-two-adic-half-profile",
+  "group_id": "chen-nth-two-adic-conjecture",
+  "title": "Half-length Nth 2-adic complexity for nine deterministic sequences",
+  "summary": "Prove the half-length asymptotic Nth 2-adic complexity profile for four Thue-Morse samples, four Rudin-Shapiro samples, and the Zeckendorf digit-sum sequence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each sequence $S$ in the following nine-instance set: Thue-Morse sampled along $X,X^2,X^3,X^4$; Rudin-Shapiro sampled along $X,X^2,X^3,X^4$; and the binary Zeckendorf digit-sum sequence, prove that there exist constants $C_S,N_S>0$ such that $|\\Phi_2(S,N)-N/2|\\le C_S\\log N$ for every $N\\ge N_S$, or refute this bound for that instance. Settle all nine instances."
+  },
+  "scope": {
+    "domain": "Nth 2-adic complexity of fixed aperiodic binary pseudorandom sequences",
+    "assumptions": [
+      "Phi_2(S,N) is the source-defined Nth 2-adic complexity",
+      "Polynomial sampling uses X, X^2, X^3, or X^4 on nonnegative integers",
+      "Each of the nine deterministic sequence instances is settled separately"
+    ],
+    "parameters": [
+      "prefix length N",
+      "base sequence",
+      "sampling polynomial",
+      "instance constants C_S and N_S"
+    ],
+    "unresolved_remainder": "All nine deterministic instances remain unresolved. Later expected-value and almost-sure half-length theorems quantify over random sequences, and later algebraic-sequence results do not apply to these fixed automatic and Zeckendorf sequences."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "binary-sequences",
+      "two-adic-complexity",
+      "thue-morse",
+      "rudin-shapiro",
+      "zeckendorf"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chen--Chen--Obrovsky--Winterhof, deterministic Nth 2-adic conjecture",
+        "locator": "Section II, empirical conjecture, journal p. 6062",
+        "doi": "10.1109/TIT.2024.3405946",
+        "eprint": "arXiv:2309.12769",
+        "url": "https://arxiv.org/abs/2309.12769"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2023-09-22",
+      "kind": "source_statement",
+      "summary": "After computation through N=1,000,000, the source conjectures the half-length logarithmic-error profile separately for all nine named deterministic sequences.",
+      "citation_labels": [
+        "Chen--Chen--Obrovsky--Winterhof, deterministic Nth 2-adic conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

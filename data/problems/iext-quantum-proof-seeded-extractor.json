@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iext-quantum-proof-seeded-extractor",
+  "group_id": "aggarwal-boddu-jain-quantum-split-state-open-questions",
+  "title": "Quantum-proof security of the seeded extractor IExt",
+  "summary": "Prove that the exact seeded extractor IExt is quantum-secure with parameters and reverse-sampling properties sufficient for the source's non-malleable-code construction.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\operatorname{IExt}:\\{0,1\\}^n\\times\\{0,1\\}^d\\to\\{0,1\\}^m$ be the exact bilinear seeded extractor used by Chattopadhyay, Goyal, and Li and identified in the source. For every cq state $\\rho_{XE}$ with $H_{\\min}(X\\mid E)\\ge k$ and an independent uniform seed $S$, prove the source's strong trace-distance bound $\\lVert\\rho_{\\operatorname{IExt}(X,S)SE}-U_m\\otimes U_d\\otimes\\rho_E\\rVert_1\\le\\varepsilon$ at the entropy, seed, output, and error parameters required by $\\mathrm{new\\text{-}2nmext\\text{-}q}$. Also show that substituting IExt preserves the efficient approximate reverse sampling and final non-malleable-code error bounds, or give a valid quantum-side-information counterexample."
+  },
+  "scope": {
+    "domain": "The explicit bilinear seeded extractor IExt inside the source-cited non-malleable extractor construction",
+    "assumptions": [
+      "The seed is uniform and independent of the cq source state",
+      "Conditional min-entropy is measured against arbitrary quantum side information",
+      "IExt is the exact construction used in the source's reference [6]",
+      "The enclosing construction retains the required approximate reverse-sampling procedure"
+    ],
+    "parameters": [
+      "source length $n$",
+      "conditional min-entropy $k$",
+      "seed length $d$",
+      "output length $m$",
+      "trace-distance error $\\varepsilon$"
+    ],
+    "unresolved_remainder": "No inspected work proves quantum security of exact IExt at the required parameters or verifies that its substitution preserves reverse sampling and the enclosing code bounds. Results using Trevisan, inner product, or other non-malleable extractors do not settle this statement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "seeded-extractor",
+      "quantum-side-information",
+      "non-malleable-code",
+      "reverse-sampling",
+      "trace-distance"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Aggarwal--Boddu--Jain, Quantum Secure Non-Malleable Codes in the Split-State Model",
+        "locator": "Proof overview after the Trevisan/IExt comparison, journal p. 353",
+        "doi": "10.1109/TIT.2023.3328839"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that quantum security of IExt is unknown and leaves it for future work before IExt can replace Trevisan's extractor in the construction.",
+      "citation_labels": [
+        "Aggarwal--Boddu--Jain, Quantum Secure Non-Malleable Codes in the Split-State Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

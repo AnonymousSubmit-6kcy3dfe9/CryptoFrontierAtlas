@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generalized-desarguesian-small-k-alternative-lifting",
+  "group_id": "alkan-bent-partitions-lp-packing-open-questions",
+  "title": "Alternative smaller-k lifting from generalized Desarguesian spreads",
+  "summary": "Find an alternative LP-partition lifting that works for a generalized Desarguesian spread at a parameter strictly below the source thresholds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ be prime and let a generalized Desarguesian spread have admissible parameters $(p,m,k)$ with $k<m/2$ when $p$ is odd or $k<m/3$ when $p=2$. Does there exist at least one such parameter choice and an alternative lifting method that produces a valid LP-partition? One verified construction at a genuinely smaller $k$, with its exact parameter domain stated, resolves the question positively. A complete negative resolution must rule out every admissible smaller-$k$ alternative lifting."
+  },
+  "scope": {
+    "domain": "Generalized Desarguesian spreads and LP-partition lifting",
+    "assumptions": [
+      "The spread is generalized Desarguesian in the source sense",
+      "$k<m/2$ for odd $p$ or $k<m/3$ for $p=2$",
+      "The output must satisfy the source definition of an LP-partition suitable for the lifting procedure"
+    ],
+    "parameters": [
+      "$p$: prime characteristic",
+      "$m$: ambient extension parameter",
+      "$k$: strict smaller-threshold parameter",
+      "alternative lifting map and construction data"
+    ],
+    "unresolved_remainder": "No verified construction was found at any genuinely smaller-k admissible point. Later liftings from ordinary spreads and direct generalized-semifield-spread constructions do not meet this predicate."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "bent-partitions",
+      "desarguesian-spreads",
+      "finite-geometry",
+      "lifting",
+      "lp-partitions",
+      "lp-packings"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings",
+        "locator": "Section V (Perspectives), third bullet, p. 5375",
+        "doi": "10.1109/TIT.2024.3359260"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-07-01",
+      "kind": "source_statement",
+      "summary": "The source asks for another way to use generalized Desarguesian spreads in its lifting procedure when k is below m/2 or m/3 in the stated characteristics.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "lifted-lp-packing-nonsemifield-spread-provenance",
+      "nonfield-semifield-lp-partition-lifting"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

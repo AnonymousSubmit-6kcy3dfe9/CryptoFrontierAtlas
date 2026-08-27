@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bourgain-two-source-extractor-qma-security",
+  "group_id": "aggarwal-boddu-jain-obremski-qma-open-questions",
+  "title": "Quantum security of Bourgain's two-source extractor against qma",
+  "summary": "Determine whether Bourgain's explicit two-source extractor remains secure against the quantum measurement adversary throughout its classical entropy regime.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\operatorname{Ext}_{\\mathrm{B}}$ be Bourgain's explicit two-source extractor cited by the source, with two $n$-bit sources of min-entropy at least $(1/2-\\delta)n$ for an admissible constant $\\delta>0$. Prove the source's Definition 5 trace-distance extraction guarantee for $\\operatorname{Ext}_{\\mathrm{B}}$ against every admissible $\\ell$-qma state, with explicit output length and error throughout the classical parameter regime, or exhibit a valid qma state that violates the guarantee."
+  },
+  "scope": {
+    "domain": "Bourgain's explicit two-source extractor under quantum measurement adversary side information",
+    "assumptions": [
+      "The two source registers and adversarial side information form an admissible l-qma state in the source's Definition 3",
+      "Each n-bit source has min-entropy at least (1/2-delta)n for a constant delta supported by Bourgain's construction",
+      "Security uses the source's trace-distance extractor definition"
+    ],
+    "parameters": [
+      "source length $n$",
+      "entropy-gap constant $\\delta$",
+      "qma postselection cost $\\ell$",
+      "output length",
+      "trace-distance error"
+    ],
+    "unresolved_remainder": "No inspected later theorem proves qma security for Bourgain's exact construction over this complete entropy and adversary regime; quantum-secure results for inner product or different extractor constructions do not settle it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "randomness-extraction",
+      "two-source-extractor",
+      "quantum-side-information",
+      "qma",
+      "bourgain-extractor"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Aggarwal--Boddu--Jain--Obremski, Quantum Measurement Adversary",
+        "locator": "Section VI-C, Open Questions 1 and 3, journal p. 334",
+        "doi": "10.1109/TIT.2023.3313149"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether Bourgain's two-source extractor is secure against qma at its classical min-entropy threshold.",
+      "citation_labels": [
+        "Aggarwal--Boddu--Jain--Obremski, Quantum Measurement Adversary"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "li-near-optimal-nmext-quantum-security"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

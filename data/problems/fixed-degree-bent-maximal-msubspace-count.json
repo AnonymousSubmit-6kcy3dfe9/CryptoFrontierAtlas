@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fixed-degree-bent-maximal-msubspace-count",
+  "group_id": "pasalic-msubspace-open-problems",
+  "title": "Maximum number of maximal M-subspaces at fixed bent degree",
+  "summary": "For each admissible fixed degree greater than two, determine the largest number of maximal M-subspaces a bent function can have and characterize all extremizers.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every even $n$ and every degree $d$ with $3\\le d\\le n/2$, determine $\\max\\{|\\mathcal{MS}_{n/2}(f)|:f\\in\\mathcal M,\\deg(f)=d\\}$ and characterize all degree-$d$ bent functions attaining this maximum."
+  },
+  "scope": {
+    "domain": "Fixed-degree bent functions and their maximal M-subspaces",
+    "assumptions": [
+      "n is even",
+      "3 <= d <= n/2",
+      "f is a degree-d bent function in the source class M",
+      "Only n/2-dimensional M-subspaces are counted"
+    ],
+    "parameters": [
+      "even dimension n",
+      "algebraic degree d",
+      "bent function f",
+      "maximal M-subspace count"
+    ],
+    "unresolved_remainder": "The global extremum is understood for quadratic bent functions, but no exact maximum is known for every fixed degree d greater than two, and the extremizing functions are unclassified."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "bent-functions",
+      "m-subspaces",
+      "algebraic-degree",
+      "extremal-problems",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Polujan--Kudin--Zhang, fixed-degree M-subspace maximum",
+        "locator": "Conclusion, first open question, journal p. 4477",
+        "doi": "10.1109/TIT.2024.3352824",
+        "url": "https://doi.org/10.1109/TIT.2024.3352824"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-11",
+      "kind": "source_statement",
+      "summary": "The source asks for the exact fixed-degree maximum number of maximal M-subspaces and a classification of every extremizer.",
+      "citation_labels": [
+        "Pasalic--Polujan--Kudin--Zhang, fixed-degree M-subspace maximum"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "p2-inheritance-iv1-permutation"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

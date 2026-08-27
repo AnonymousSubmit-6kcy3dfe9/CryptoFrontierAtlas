@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "li-kaleyski-theorem-1-singly-even-permutation",
+  "group_id": "li-kaleyski-trivariate-apn-open-questions",
+  "title": "Singly-even permutation equivalence in the Li-Kaleyski Theorem 1 family",
+  "summary": "Determine whether a member of the fixed Li-Kaleyski Theorem 1 APN family can be CCZ-equivalent to a permutation in a singly-even dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $q=2^i$, let $F^{(1)}_{i,m}:\\mathbb F_{2^m}^3\\to\\mathbb F_{2^m}^3$ be $F^{(1)}_{i,m}(x,y,z)=(x^{q+1}+x^qz+yz^q,\\ x^qz+y^{q+1},\\ xy^q+y^qz+z^{q+1})$, with the admissibility and APN hypotheses of source Theorem 1 and $\\gcd(i,m)=1$. Decide whether there exist admissible $i,m$ with $3m\\equiv2\\pmod4$ such that $F^{(1)}_{i,m}$ is CCZ-equivalent to a permutation. Exhibit an explicit equivalence and permutation, or prove that none exists."
+  },
+  "scope": {
+    "domain": "CCZ-equivalence to permutations within the fixed Theorem 1 trivariate APN family",
+    "assumptions": [
+      "The function and polynomial root conditions are exactly those of source Theorem 1",
+      "$\\gcd(i,m)=1$, so the admitted member is APN",
+      "The total binary dimension $3m$ is singly even"
+    ],
+    "parameters": [
+      "integers $i,m$",
+      "total dimension $n=3m$",
+      "Frobenius exponent $q=2^i$"
+    ],
+    "unresolved_remainder": "Doubly-even dimensions and the dimension-six case are excluded by source results. No inspected theorem decides CCZ-equivalence to a permutation for the fixed family in the remaining singly-even dimensions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-functions",
+      "ccz-equivalence",
+      "permutations",
+      "singly-even-dimensions",
+      "trivariate-functions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form",
+        "locator": "Remark 8, journal p. 1445",
+        "doi": "10.1109/TIT.2023.3313148"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-02-01",
+      "kind": "source_statement",
+      "summary": "The source leaves CCZ-equivalence of its Theorem 1 APN family to permutations in singly-even dimensions as a problem for future work.",
+      "citation_labels": [
+        "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "li-kaleyski-f1-f2-explicit-equivalence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

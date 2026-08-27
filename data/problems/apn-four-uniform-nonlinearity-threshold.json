@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-four-uniform-nonlinearity-threshold",
+  "group_id": "rodriguez-aldama-nonlinearity-threshold",
+  "title": "Nonlinearity above one third for APN and 4-uniform permutations",
+  "summary": "Determine whether every APN or differentially 4-uniform binary permutation without affine components has nonlinearity strictly greater than one third of the code-space size.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every integer $m\\ge 6$ and every permutation $F:\\mathbb F_{2^m}\\to\\mathbb F_{2^m}$ without affine components whose differential uniformity is in $\\{2,4\\}$, is $\\operatorname{NL}(F)>2^m/3$? Prove the universal inequality or give an admissible counterexample with $\\operatorname{NL}(F)\\le 2^m/3$."
+  },
+  "scope": {
+    "domain": "APN and differentially 4-uniform permutations over binary finite fields",
+    "assumptions": [
+      "m is an integer with m >= 6",
+      "F is a permutation of F_(2^m)",
+      "F has no affine components",
+      "The differential uniformity of F is 2 or 4"
+    ],
+    "parameters": [
+      "extension degree m",
+      "permutation F",
+      "differential uniformity",
+      "nonlinearity"
+    ],
+    "unresolved_remainder": "The threshold is proved for the later infinite Welch 4-uniform permutation family in odd dimensions at least seven. It remains open for every admissible APN permutation and for all other admissible 4-uniform permutations in the source range."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "differential-uniformity",
+      "nonlinearity",
+      "permutations",
+      "sboxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rodriguez-Aldama--Pasalic--Zhang--Wei, nonlinearity threshold question",
+        "locator": "Section IV, Conjecture 1 discussion, journal p. 4457",
+        "doi": "10.1109/TIT.2023.3338577",
+        "url": "https://doi.org/10.1109/TIT.2023.3338577"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Helleseth--Li--Xia, Welch permutation and associated codes",
+        "locator": "Theorem 2 and Corollary 1",
+        "doi": "10.1007/s10623-024-01461-3",
+        "url": "https://doi.org/10.1007/s10623-024-01461-3"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2023-11-30",
+      "kind": "source_statement",
+      "summary": "The source asks whether the one-third nonlinearity threshold holds universally over the stated APN and 4-uniform permutation classes for m at least six.",
+      "citation_labels": [
+        "Rodriguez-Aldama--Pasalic--Zhang--Wei, nonlinearity threshold question"
+      ]
+    },
+    {
+      "date": "2024-07-27",
+      "kind": "prior_result",
+      "summary": "A later paper proves the threshold for an infinite family of differentially 4-uniform Welch permutations in every odd dimension at least seven.",
+      "citation_labels": [
+        "Helleseth--Li--Xia, Welch permutation and associated codes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

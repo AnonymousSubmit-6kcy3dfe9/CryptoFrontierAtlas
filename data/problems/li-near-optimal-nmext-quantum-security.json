@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "li-near-optimal-nmext-quantum-security",
+  "group_id": "aggarwal-boddu-jain-obremski-qma-open-questions",
+  "title": "Quantum security of Li's 2012, 2017, and 2019 near-optimal non-malleable extractors",
+  "summary": "Determine whether the three near-optimal classical non-malleable extractors of Li cited by the source remain secure against quantum side information.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each of Li's exact near-optimal constructions cited by the source as [5] (the 2012 Appendix B construction), [39] (the 2019 partially optimal construction), and [60] (the 2017 improved construction), prove the required non-malleability and output-uniformity trace-distance guarantee against every admissible quantum side-information state and seed tampering throughout that construction's entropy, seed-length, output-length, and error regime, or give a valid counterexample. Theorem 3 of the source proves a different one-output inner-product construction from Li [5], not the near-optimal Appendix B construction included here."
+  },
+  "scope": {
+    "domain": "The exact near-optimal classical non-malleable extractor constructions cited as Li [5], Li [39], and Li [60]",
+    "assumptions": [
+      "The source, seed, tampering function, and quantum side information satisfy the source's quantum non-malleable-extractor model",
+      "The statement concerns the original Li 2012 Appendix B, Li 2019, and Li 2017 constructions, not replacement constructions with different parameters",
+      "Source Theorem 3 concerns the distinct Definition 9 construction from Li [5] and does not settle Appendix B, Theorem B.4"
+    ],
+    "parameters": [
+      "construction instance [5], [39], or [60]",
+      "source min-entropy",
+      "seed length",
+      "output length",
+      "trace-distance error"
+    ],
+    "unresolved_remainder": "All three exact instances [5], [39], and [60] remain unresolved. Inspected quantum-secure constructions use different extractor designs, and no theorem establishes the complete original security predicate for any instance."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "non-malleable-extractor",
+      "quantum-side-information",
+      "seed-tampering",
+      "randomness-extraction",
+      "trace-distance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Aggarwal--Boddu--Jain--Obremski, Quantum Measurement Adversary",
+        "locator": "Section VI-C, Open Questions 1 and 3, journal p. 334",
+        "doi": "10.1109/TIT.2023.3313149"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether the cited near-optimal classical non-malleable extractors [5], [39], and [60] are quantum-secure; its Theorem 3 treats a different construction from the Li [5] paper.",
+      "citation_labels": [
+        "Aggarwal--Boddu--Jain--Obremski, Quantum Measurement Adversary"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bourgain-two-source-extractor-qma-security"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

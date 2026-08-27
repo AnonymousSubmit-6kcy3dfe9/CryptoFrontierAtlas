@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-multiple-access-otp-one-shot-rate-region",
+  "group_id": "wakakuwa-quantum-multiple-access-otp-open-questions",
+  "title": "Optimal one-shot quantum multiple-access one-time-pad rate region",
+  "summary": "Determine the exact one-shot reliable-and-private rate region for the quantum multiple-access one-time pad.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For one copy of an admissible shared state in the source's quantum multiple-access one-time-pad task and fixed reliability and secrecy tolerances $(\\varepsilon_{\\mathrm{rel}},\\varepsilon_{\\mathrm{sec}})$, characterize exactly the achievable message-size region for all senders. Prove matching achievability and converse bounds that allow joint decoding and state the dependence on both error tolerances; successive decoding and time sharing alone need not attain the optimum."
+  },
+  "scope": {
+    "domain": "Finite-blocklength quantum multiple-access one-time-pad protocols",
+    "assumptions": [
+      "The senders, receiver, eavesdropper, and local-encoding task are those of the source",
+      "Reliability is bounded by a fixed decoding-error tolerance",
+      "Secrecy is bounded by a fixed trace-distance tolerance",
+      "The optimal region may require joint decoding rather than only successive decoding and time sharing"
+    ],
+    "parameters": [
+      "number of senders",
+      "one-shot shared state $\\rho$",
+      "message-size tuple",
+      "reliability tolerance $\\varepsilon_{\\mathrm{rel}}$",
+      "secrecy tolerance $\\varepsilon_{\\mathrm{sec}}$"
+    ],
+    "unresolved_remainder": "Cheng, Liu, and Xi give a published achievable inner bound using position-based coding, joint typicality, and convex split. No matching converse or proof that this inner bound is the exact optimal one-shot region was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "one-time-pad",
+      "quantum-cryptography",
+      "multiple-access",
+      "one-shot-information-theory",
+      "rate-region"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wakakuwa, Quantum Multiple-Access One-Time Pad",
+        "locator": "Conclusion, journal p. 347",
+        "doi": "10.1109/TIT.2023.3320678"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Cheng--Liu--Xi, One-shot inner bounds for quantum multiple-access one-time pad",
+        "locator": "Published title and public abstract: achievable inner bound",
+        "doi": "10.1360/sspma-2024-0595",
+        "url": "https://doi.org/10.1360/sspma-2024-0595"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies determination of the optimal one-shot QMA-OTP region as a future direction requiring more than successive decoding and time sharing.",
+      "citation_labels": [
+        "Wakakuwa, Quantum Multiple-Access One-Time Pad"
+      ]
+    },
+    {
+      "date": "2025-02-27",
+      "kind": "public_result",
+      "summary": "Cheng, Liu, and Xi publish a one-shot achievable inner bound, but do not provide the matching converse needed for the optimal region.",
+      "citation_labels": [
+        "Cheng--Liu--Xi, One-shot inner bounds for quantum multiple-access one-time pad"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-multiple-access-otp-general-eve-rate-region"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

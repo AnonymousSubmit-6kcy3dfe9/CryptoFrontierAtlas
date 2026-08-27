@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "p2-inheritance-iv1-permutation",
+  "group_id": "pasalic-msubspace-open-problems",
+  "title": "P2 inheritance for the extended permutation construction",
+  "summary": "Decide whether the source's one-bit extension of a permutation always preserves the P2 second-derivative property when the input permutation has P2.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\sigma:\\mathbb F_2^m\\to\\mathbb F_2^m$ be a permutation satisfying the source-defined property (P2), and define $\\pi(y,t)=(y+t(\\sigma(y)+y),t)$ on $\\mathbb F_2^m\\times\\mathbb F_2$. Must $\\pi$ satisfy the full (P2) property for every admissible $m$ and $\\sigma$? Prove the inheritance theorem or give a counterexample."
+  },
+  "scope": {
+    "domain": "Permutations used in bent-function constructions and their P2 derivative property",
+    "assumptions": [
+      "sigma is a permutation of F_2^m",
+      "sigma satisfies the source-defined P2 property",
+      "pi is the construction in Equation (IV.1)"
+    ],
+    "parameters": [
+      "dimension m",
+      "permutation sigma",
+      "extended permutation pi"
+    ],
+    "unresolved_remainder": "A later theorem proves P2 for this construction under the stronger premise that id+sigma has P2. Whether sigma having P2 alone suffices, or admits a counterexample, remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-functions",
+      "permutations",
+      "p2-property",
+      "derivatives",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Polujan--Kudin--Zhang, P2 inheritance question",
+        "locator": "Section IV-D, journal p. 4471",
+        "doi": "10.1109/TIT.2024.3352824",
+        "url": "https://doi.org/10.1109/TIT.2024.3352824"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kudin--Pasalic--Polujan--Zhang, P1/P2 permutations",
+        "locator": "Theorem 4.2 and Examples 4.3-4.4",
+        "doi": "10.1007/s00145-025-09562-5",
+        "url": "https://doi.org/10.1007/s00145-025-09562-5"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-11",
+      "kind": "source_statement",
+      "summary": "The source leaves universal P2 inheritance for its Equation (IV.1) construction open.",
+      "citation_labels": [
+        "Pasalic--Polujan--Kudin--Zhang, P2 inheritance question"
+      ]
+    },
+    {
+      "date": "2025-11-11",
+      "kind": "prior_result",
+      "summary": "A later theorem proves inheritance for the strict subfamily in which id+sigma, rather than sigma alone, satisfies P2.",
+      "citation_labels": [
+        "Kudin--Pasalic--Polujan--Zhang, P1/P2 permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "fixed-degree-bent-maximal-msubspace-count"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

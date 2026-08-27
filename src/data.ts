@@ -60,6 +60,28 @@ import recordAlmostMmOutsideMsharpClassification from '../data/problems/almost-m
 import recordApnPermutationMinimumCarlitzRank from '../data/problems/apn-permutation-minimum-carlitz-rank.json';
 import recordNfsrCycleStructurePeriods from '../data/problems/nfsr-cycle-structure-periods.json';
 import recordNfsrDegeneracySubfamilies from '../data/problems/nfsr-degeneracy-subfamilies.json';
+import recordBourgainTwoSourceExtractorQmaSecurity from '../data/problems/bourgain-two-source-extractor-qma-security.json';
+import recordIextQuantumProofSeededExtractor from '../data/problems/iext-quantum-proof-seeded-extractor.json';
+import recordLiKaleyskiConjecture11RootFreeness from '../data/problems/li-kaleyski-conjecture-11-root-freeness.json';
+import recordLiKaleyskiConjecture6RootFreeness from '../data/problems/li-kaleyski-conjecture-6-root-freeness.json';
+import recordLiKaleyskiF1F2ExplicitEquivalence from '../data/problems/li-kaleyski-f1-f2-explicit-equivalence.json';
+import recordLiKaleyskiTheorem1SinglyEvenPermutation from '../data/problems/li-kaleyski-theorem-1-singly-even-permutation.json';
+import recordLiKaleyskiTheorem9OddWalshSpectrum from '../data/problems/li-kaleyski-theorem-9-odd-walsh-spectrum.json';
+import recordLiNearOptimalNmextQuantumSecurity from '../data/problems/li-near-optimal-nmext-quantum-security.json';
+import recordQuantumMultipleAccessOtpGeneralEveRateRegion from '../data/problems/quantum-multiple-access-otp-general-eve-rate-region.json';
+import recordQuantumMultipleAccessOtpOneShotRateRegion from '../data/problems/quantum-multiple-access-otp-one-shot-rate-region.json';
+import recordSporadicApnRepresentative30InfiniteFamily from '../data/problems/sporadic-apn-representative-30-infinite-family.json';
+import recordCqHypothesisTestingPartialMinEntropyComparison from '../data/problems/cq-hypothesis-testing-partial-min-entropy-comparison.json';
+import recordGeneralizedDesarguesianSmallKAlternativeLifting from '../data/problems/generalized-desarguesian-small-k-alternative-lifting.json';
+import recordLiftedLpPackingNonsemifieldSpreadProvenance from '../data/problems/lifted-lp-packing-nonsemifield-spread-provenance.json';
+import recordNonfieldSemifieldLpPartitionLifting from '../data/problems/nonfield-semifield-lp-partition-lifting.json';
+import recordPeriodicNonlinearComplexityShiftMaxEquality from '../data/problems/periodic-nonlinear-complexity-shift-max-equality.json';
+import recordApnFourUniformNonlinearityThreshold from '../data/problems/apn-four-uniform-nonlinearity-threshold.json';
+import recordDeterministicNthTwoAdicHalfProfile from '../data/problems/deterministic-nth-two-adic-half-profile.json';
+import recordFixedDegreeBentMaximalMsubspaceCount from '../data/problems/fixed-degree-bent-maximal-msubspace-count.json';
+import recordP2InheritanceIv1Permutation from '../data/problems/p2-inheritance-iv1-permutation.json';
+import recordSimonIndirectContradictionBoundaryExtension from '../data/problems/simon-indirect-contradiction-boundary-extension.json';
+import recordSimonLargerSingleBitIdPriority from '../data/problems/simon-larger-single-bit-id-priority.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -188,6 +210,28 @@ export const problems = [
   recordApnPermutationMinimumCarlitzRank,
   recordNfsrCycleStructurePeriods,
   recordNfsrDegeneracySubfamilies,
+  recordBourgainTwoSourceExtractorQmaSecurity,
+  recordIextQuantumProofSeededExtractor,
+  recordLiKaleyskiConjecture11RootFreeness,
+  recordLiKaleyskiConjecture6RootFreeness,
+  recordLiKaleyskiF1F2ExplicitEquivalence,
+  recordLiKaleyskiTheorem1SinglyEvenPermutation,
+  recordLiKaleyskiTheorem9OddWalshSpectrum,
+  recordLiNearOptimalNmextQuantumSecurity,
+  recordQuantumMultipleAccessOtpGeneralEveRateRegion,
+  recordQuantumMultipleAccessOtpOneShotRateRegion,
+  recordSporadicApnRepresentative30InfiniteFamily,
+  recordCqHypothesisTestingPartialMinEntropyComparison,
+  recordGeneralizedDesarguesianSmallKAlternativeLifting,
+  recordLiftedLpPackingNonsemifieldSpreadProvenance,
+  recordNonfieldSemifieldLpPartitionLifting,
+  recordPeriodicNonlinearComplexityShiftMaxEquality,
+  recordApnFourUniformNonlinearityThreshold,
+  recordDeterministicNthTwoAdicHalfProfile,
+  recordFixedDegreeBentMaximalMsubspaceCount,
+  recordP2InheritanceIv1Permutation,
+  recordSimonIndirectContradictionBoundaryExtension,
+  recordSimonLargerSingleBitIdPriority,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cq-hypothesis-testing-partial-min-entropy-comparison",
+  "group_id": "shen-gao-cheng-privacy-amplification-entropy",
+  "title": "General cq-state comparison of hypothesis-testing and partially smoothed min-entropies",
+  "summary": "Compare conditional hypothesis-testing entropy with partially trace-distance-smoothed conditional min-entropy for general classical-quantum states.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\rho_{XE}=\\sum_x p_x |x\\rangle\\!\\langle x|\\otimes\\rho_E^x$ be a finite-dimensional cq state. Establish bounds or an equivalence between the source-defined conditional hypothesis-testing entropy $H_h^{\\varepsilon}(X|E)_\\rho$ and partially trace-distance-smoothed conditional min-entropy $H_{\\min}^{\\varepsilon,\\mathrm{part},T}(X|E)_\\rho$ beyond the classical or commuting cases. The comparison should hold for every admissible cq state and error parameters and be sharp enough to determine the associated asymptotic relation."
+  },
+  "scope": {
+    "domain": "Privacy amplification against quantum side information and one-shot entropy measures",
+    "assumptions": [
+      "$\\rho_{XE}$ is a finite-dimensional classical-quantum state",
+      "Trace-distance partial smoothing keeps the conditioning marginal fixed according to the source and its antecedent",
+      "Hypothesis-testing and smoothing error conventions are those of the source"
+    ],
+    "parameters": [
+      "$\\rho_{XE}$: cq state",
+      "$\\varepsilon$: smoothing and hypothesis-testing error parameters"
+    ],
+    "unresolved_remainder": "A general quantum cq-state comparison is unknown beyond the classical or commuting cases. Modified or measured smooth max-relative entropy results and classical or pure-state strong-converse exponents do not establish the requested fixed-marginal partially smoothed conditional-min-entropy comparison."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "cq-states",
+      "hypothesis-testing-entropy",
+      "partial-smoothing",
+      "privacy-amplification",
+      "quantum-side-information",
+      "smooth-entropies"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Shen--Gao--Cheng, quantum soft covering and privacy amplification",
+        "locator": "Section I-A, p. 5079; Section V, p. 5090",
+        "doi": "10.1109/TIT.2024.3351963"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-07-01",
+      "kind": "source_statement",
+      "summary": "The source identifies comparison of the two conditional entropy measures in the quantum case as an open question after citing the known classical relation.",
+      "citation_labels": [
+        "Shen--Gao--Cheng, quantum soft covering and privacy amplification"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

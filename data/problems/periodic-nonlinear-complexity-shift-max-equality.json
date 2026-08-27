@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "periodic-nonlinear-complexity-shift-max-equality",
+  "group_id": "yuan-li-zeng-periodic-nonlinear-complexity",
+  "title": "Shift-maximum equality for periodic nonlinear complexity",
+  "summary": "Determine whether the source's added-term threshold forces an exact maximum nonlinear complexity over all circular shifts of a representative sequence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $s_n\\in R(n,c,d)$ be an aperiodic representative binary sequence with $c\\ge\\lfloor n/2\\rfloor$ and $\\operatorname{add}(s_n)=t$. If $t>n-c-d$, must $$\\max_{0\\le i<n}\\operatorname{nlc}(R_i(s_n))=n-d?$$ Prove the implication for every admissible $(n,c,d,t,s_n)$, or give a fully specified counterexample satisfying all source definitions and parameter constraints."
+  },
+  "scope": {
+    "domain": "Periodic binary sequences and nonlinear feedback shift-register complexity",
+    "assumptions": [
+      "$s_n$ is aperiodic and belongs to the source-defined set $R(n,c,d)$",
+      "$c\\ge\\lfloor n/2\\rfloor$",
+      "$\\operatorname{add}(s_n)=t$ and $t>n-c-d$",
+      "$R_i$ is the right circular shift and $\\operatorname{nlc}$ is minimum NFSR length"
+    ],
+    "parameters": [
+      "$n$: period",
+      "$c$: finite-sequence nonlinear complexity parameter",
+      "$d$: spacing parameter",
+      "$t$: number of added terms",
+      "$i$: circular-shift index"
+    ],
+    "unresolved_remainder": "The source verifies the equality numerically only for n <= 30. Later structure and enumeration results for high nonlinear complexity do not prove the implication or provide a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "binary-sequences",
+      "circular-shifts",
+      "nfsr",
+      "nonlinear-complexity",
+      "periodic-sequences",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Yuan--Li--Zeng--Helleseth--He, nonlinear complexity Open Problem 1",
+        "locator": "Section IV, Open Problem 1, p. 5385",
+        "doi": "10.1109/TIT.2024.3394538"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-07-01",
+      "kind": "source_statement",
+      "summary": "The source states Open Problem 1 after numerical verification through n = 30 and explains that its existing technique cannot prove or disprove the equality.",
+      "citation_labels": [
+        "Yuan--Li--Zeng--Helleseth--He, nonlinear complexity Open Problem 1"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

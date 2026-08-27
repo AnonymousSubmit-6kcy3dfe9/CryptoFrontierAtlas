@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "li-kaleyski-conjecture-11-root-freeness",
+  "group_id": "li-kaleyski-trivariate-apn-open-questions",
+  "title": "Li-Kaleyski Conjecture 11 root-freeness criterion",
+  "summary": "Prove the exact root-freeness criterion conjectured for the second bivariate polynomial underlying the Li-Kaleyski trivariate APN family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $i>1$ and $m$ be positive integers with $\\gcd(i,m)=1$ and put $q=2^i$. Define $P_{11}(X,Y)=X^{q^2+q+1}+X^{q+1}Y^{q^2}+XY^q+X^qY^{q^2}+X^{q^2}Y+X^{q^2}+Y^{q^2+q+1}+Y^{q^2+1}+Y^{q^2+q}+Y^{q^2}+1$. Prove that $P_{11}$ has no zero in $\\mathbb F_{2^m}^2$ if and only if $\\gcd(m,7)=1$, or give a counterexample to either implication."
+  },
+  "scope": {
+    "domain": "Root-freeness of the Conjecture 11 polynomial controlling a trivariate APN construction",
+    "assumptions": [
+      "$i>1$ and $m$ are positive integers with $\\gcd(i,m)=1$",
+      "$q=2^i$",
+      "Roots are sought in the Cartesian square $\\mathbb F_{2^m}^2$"
+    ],
+    "parameters": [
+      "integers $i,m$",
+      "Frobenius exponent $q=2^i$"
+    ],
+    "unresolved_remainder": "The source proves the $i=1$ specialization in Proposition 12. The equivalence for every coprime pair with $i>1$ remains unproved, and the broader triprojective reformulation in later work does not prove this exact binary criterion."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "apn-functions",
+      "finite-fields",
+      "root-free-polynomials",
+      "trivariate-functions",
+      "conjecture-11"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form",
+        "locator": "Conjecture 11 and Proposition 12, journal p. 1448",
+        "doi": "10.1109/TIT.2023.3313148"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-02-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures a second if-and-only-if root-freeness criterion and proves only its i=1 specialization.",
+      "citation_labels": [
+        "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "li-kaleyski-conjecture-6-root-freeness"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

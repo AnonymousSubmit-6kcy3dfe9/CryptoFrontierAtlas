@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-multiple-access-otp-general-eve-rate-region",
+  "group_id": "wakakuwa-quantum-multiple-access-otp-open-questions",
+  "title": "Asymptotic QMA-OTP rate region with general Eve side information",
+  "summary": "Characterize the asymptotic quantum multiple-access one-time-pad rate region without requiring Eve's side information to be a subsystem of the receiver's.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source's quantum multiple-access one-time-pad task with senders $A_1,\\ldots,A_Z$, receiver side information $B$, and arbitrary correlated eavesdropper side information $E$, remove the assumption that $E$ is a subsystem of the receiver's side information. Characterize exactly the closure of rate tuples $(R_1,\\ldots,R_Z)$ achievable from independent copies of the shared state with vanishing decoding error and secrecy error, by proving matching direct and converse bounds for every sender subset."
+  },
+  "scope": {
+    "domain": "Asymptotic quantum multiple-access one-time-pad protocols with unrestricted correlated eavesdropper side information",
+    "assumptions": [
+      "Multiple senders apply local encoders and transmit their systems to the receiver",
+      "Reliability and secrecy are measured by the source's asymptotic vanishing-error criteria",
+      "Eve's initial side information may be arbitrary and need not be contained in the receiver system"
+    ],
+    "parameters": [
+      "number of senders $Z$",
+      "shared state $\\rho$",
+      "sender subset $\\Gamma$",
+      "block length",
+      "rate tuple $(R_1,\\ldots,R_Z)$"
+    ],
+    "unresolved_remainder": "No inspected forward citation provides matching asymptotic direct and converse bounds for the complete arbitrary-Eve QMA-OTP model. One-shot inner bounds and source-coding results solve different predicates."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "one-time-pad",
+      "quantum-cryptography",
+      "multiple-access",
+      "secrecy-capacity",
+      "side-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wakakuwa, Quantum Multiple-Access One-Time Pad",
+        "locator": "Conclusion, journal p. 347",
+        "doi": "10.1109/TIT.2023.3320678"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source leaves open an asymptotic rate-region characterization when Eve's side information is not necessarily contained in the receiver system.",
+      "citation_labels": [
+        "Wakakuwa, Quantum Multiple-Access One-Time Pad"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-multiple-access-otp-one-shot-rate-region"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sporadic-apn-representative-30-infinite-family",
+  "group_id": "li-kaleyski-trivariate-apn-open-questions",
+  "title": "An infinite APN family containing sporadic representative 30",
+  "summary": "Generalize sporadic APN representative number 30 over nine binary dimensions into an infinite trivariate APN family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Over $\\mathbb F_{2^3}^3\\cong\\mathbb F_2^9$, let $R_{30}(x,y,z)=(x^3+xz^2+yz^2+z^3,\\ x^2y+x^2z+z^3,\\ x^2z+y^3)$. Construct an explicit family $F_m:\\mathbb F_{2^m}^3\\to\\mathbb F_{2^m}^3$ for infinitely many extension degrees $m$, prove every $F_m$ is APN, and prove that the $m=3$ specialization is CCZ-equivalent to $R_{30}$."
+  },
+  "scope": {
+    "domain": "Infinite trivariate APN generalizations of a fixed sporadic nine-dimensional representative",
+    "assumptions": [
+      "The base function is the displayed non-permutation representative number 30 over $\\mathbb F_2^9$",
+      "The generalization retains a trivariate representation over $\\mathbb F_{2^m}^3$",
+      "Every member must be proved APN"
+    ],
+    "parameters": [
+      "extension degree $m$",
+      "family coefficients and exponents"
+    ],
+    "unresolved_remainder": "The source gives only the sporadic $m=3$ instance. No inspected later construction proves an infinite trivariate APN family specializing to representative number 30."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "apn-functions",
+      "infinite-families",
+      "sporadic-functions",
+      "representative-30",
+      "trivariate-functions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form",
+        "locator": "Section V-C, displayed representative 30 and following sentence, journal p. 1450",
+        "doi": "10.1109/TIT.2023.3313148"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-02-01",
+      "kind": "source_statement",
+      "summary": "The source identifies a trivariate representative in the sporadic number-30 class and leaves its extension to an infinite APN family open.",
+      "citation_labels": [
+        "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

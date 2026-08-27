@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.2.0",
+  "id": "li-kaleyski-theorem-9-odd-walsh-spectrum",
+  "group_id": "li-kaleyski-trivariate-apn-open-questions",
+  "title": "Odd-dimensional Walsh spectrum of the Li-Kaleyski Theorem 9 family",
+  "summary": "Determine the exact Walsh spectrum of every odd-dimensional APN member of the Li-Kaleyski Theorem 9 family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $q=2^i$, let $F^{(9)}_{i,m}:\\mathbb F_{2^m}^3\\to\\mathbb F_{2^m}^3$ be $F^{(9)}_{i,m}(x,y,z)=(x^{q+1}+xy^q+yz^q,\\ xy^q+z^{q+1},\\ x^qz+y^{q+1}+y^qz)$, under the admissibility and APN hypotheses of source Theorem 9 with $m$ odd. Determine and prove its complete extended Walsh spectrum for every admissible pair $(i,m)$. In particular, prove the computationally observed Gold-like spectrum throughout the family, or identify and prove every exceptional spectrum."
+  },
+  "scope": {
+    "domain": "Walsh spectra of the fixed odd-dimensional Theorem 9 trivariate APN family",
+    "assumptions": [
+      "The function and polynomial root conditions are exactly those of source Theorem 9",
+      "The admitted member is APN",
+      "$m$ and hence the total dimension $3m$ are odd"
+    ],
+    "parameters": [
+      "odd integer $m$",
+      "integer $i$",
+      "Frobenius exponent $q=2^i$"
+    ],
+    "unresolved_remainder": "A 2026 preprint identifies the source family inside a triprojective family and proves support and fixed nonzero Walsh magnitude in odd dimension. Walsh inversion then determines the signed multiplicities, so the preprint appears to cover the complete source scope; peer-reviewed confirmation of that claim remains absent."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.linear",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "apn-functions",
+      "walsh-spectrum",
+      "gold-like-spectrum",
+      "odd-dimensions",
+      "trivariate-functions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form",
+        "locator": "Remark 13, journal p. 1448",
+        "doi": "10.1109/TIT.2023.3313148"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Gologlu--Kolsch, Triprojective APN Permutations and Functions",
+        "locator": "Proposition 3.4, p. 9",
+        "eprint": "arXiv:2605.17545",
+        "url": "https://arxiv.org/abs/2605.17545"
+      },
+      {
+        "role": "resolution",
+        "label": "Ma--Liu--Huang, Rank-Two Frobenius-Linearized Normal Forms",
+        "locator": "Theorems 11 and 16, pp. 8 and 11",
+        "eprint": "arXiv:2608.11939",
+        "url": "https://arxiv.org/abs/2608.11939"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-02-01",
+      "kind": "source_statement",
+      "summary": "The source reports computationally Gold-like spectra in odd dimensions and leaves a complete spectrum determination for future work.",
+      "citation_labels": [
+        "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form"
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "kind": "public_result",
+      "summary": "The preprint identifies the source Theorem 9 family as a parameter slice of its triprojective APN family by linear equivalence.",
+      "citation_labels": [
+        "Gologlu--Kolsch, Triprojective APN Permutations and Functions"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "kind": "public_result",
+      "summary": "The preprint's support and magnitude theorems, together with Walsh inversion, determine the complete signed spectrum for the containing triprojective family; the apparent full resolution remains unreviewed.",
+      "citation_labels": [
+        "Ma--Liu--Huang, Rank-Two Frobenius-Linearized Normal Forms"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "li-kaleyski-f1-f2-explicit-equivalence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simon-indirect-contradiction-boundary-extension",
+  "group_id": "zhang-andrx-open-problems",
+  "title": "Indirect contradictions beyond the direct SIMON boundaries",
+  "summary": "Determine whether indirect contradictions extend the maximum impossible-differential length beyond the direct-contradiction boundary for each larger SIMON block size.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $v\\in\\{48,64,96,128\\}$, let $L_v^{\\mathrm{dir}}$ be the maximum round length of a SIMON-$v$ impossible differential under the source's direct-contradiction model, and let $L_v^{\\mathrm{all}}$ be the maximum when its indirect-contradiction model is also allowed. Is $L_v^{\\mathrm{all}}=L_v^{\\mathrm{dir}}$ for all four values of $v$? For each variant, prove equality by an exhaustive certificate or give a verified indirect-contradiction distinguisher showing a strict inequality."
+  },
+  "scope": {
+    "domain": "Direct and indirect impossible differential cryptanalysis of SIMON48, SIMON64, SIMON96, and SIMON128",
+    "assumptions": [
+      "Direct and indirect contradictions use the source definitions",
+      "The practical-boundary convention is the one defined by the source",
+      "Each comparison uses the same fixed-key SIMON variant and truncated-difference model"
+    ],
+    "parameters": [
+      "SIMON block size v in {48,64,96,128}",
+      "round count",
+      "endpoint differences",
+      "contradiction model"
+    ],
+    "unresolved_remainder": "Later restricted or incomplete models recover the known best round lengths and find no longer indirect distinguisher, but none gives either a beyond-boundary witness or an exhaustive absence certificate for SIMON48, SIMON64, SIMON96, or SIMON128."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated",
+      "cryptanalysis.structural",
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "simon",
+      "impossible-differentials",
+      "indirect-contradiction",
+      "practical-boundary",
+      "round-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang--Wang--Lai--Wang--Guan--Hu--Shi, indirect-contradiction problem",
+        "locator": "Section V-C, discussion item 2, journal p. 6038",
+        "doi": "10.1109/TIT.2023.3292241",
+        "url": "https://doi.org/10.1109/TIT.2023.3292241"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2023-07-04",
+      "kind": "source_statement",
+      "summary": "The source asks how to determine whether indirect contradictions invalidate the direct-model practical boundary in its larger-SIMON analysis.",
+      "citation_labels": [
+        "Zhang--Wang--Lai--Wang--Guan--Hu--Shi, indirect-contradiction problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "simon-larger-single-bit-id-priority"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

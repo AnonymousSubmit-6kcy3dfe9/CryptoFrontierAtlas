@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "li-kaleyski-f1-f2-explicit-equivalence",
+  "group_id": "li-kaleyski-trivariate-apn-open-questions",
+  "title": "Explicit F1-F2 equivalences for the Li-Kaleyski dimension-15 matches",
+  "summary": "Give explicit EA or CCZ maps realizing every computationally detected equivalence between the Li-Kaleyski families and F1-F2 in dimension 15.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $i\\in\\{1,2,3,4\\}$ at $m=5$ ($n=15$), pair the source Theorem 1 member at parameter $i$ with the Theorem 9 member at parameter $5-i$. For the corresponding member $G$ of family F1-F2, exhibit affine permutations $A,B$ and an affine map $L$ such that $G=A\\circ F\\circ B+L$, or give an equivalent explicit CCZ map on the graph. Verify all four paired instances."
+  },
+  "scope": {
+    "domain": "Explicit EA and CCZ equivalence witnesses for the source's dimension-15 APN matches",
+    "assumptions": [
+      "The source-reported matches and target F1-F2 members are those of Section V-B and Table V",
+      "The total binary dimension is $n=15$ ($m=5$)",
+      "For quadratic APN functions, the source uses the equivalence between CCZ- and EA-equivalence"
+    ],
+    "parameters": [
+      "Theorem 1 $i=1$ / Theorem 9 $i=4$",
+      "Theorem 1 $i=2$ / Theorem 9 $i=3$",
+      "Theorem 1 $i=3$ / Theorem 9 $i=2$",
+      "Theorem 1 $i=4$ / Theorem 9 $i=1$"
+    ],
+    "unresolved_remainder": "The source's code test establishes equivalence decisions but does not publish the affine maps. A later theorem proves equivalence between the source's two new families themselves, not explicit maps from the matched dimension-15 cases to F1-F2."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-functions",
+      "ccz-equivalence",
+      "ea-equivalence",
+      "f1-f2-family",
+      "dimension-15"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form",
+        "locator": "Section V-B and Table V, journal pp. 1449-1450",
+        "doi": "10.1109/TIT.2023.3313148"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-02-01",
+      "kind": "source_statement",
+      "summary": "The source computationally confirms the dimension-15 equivalences and leaves their exact affine form open.",
+      "citation_labels": [
+        "Li--Kaleyski, Two New Infinite Families of APN Functions in Trivariate Form"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "li-kaleyski-theorem-1-singly-even-permutation",
+      "li-kaleyski-theorem-9-odd-walsh-spectrum"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lifted-lp-packing-nonsemifield-spread-provenance",
+  "group_id": "alkan-bent-partitions-lp-packing-open-questions",
+  "title": "Lifted LP-packings outside generalized semifield spreads",
+  "summary": "Determine whether a source-lifted elementary-abelian LP-packing can have provenance outside every generalized-semifield-spread construction.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\mathcal P$ be an LP-packing in an elementary abelian group obtained by the lifting procedure of the source. Does there exist such a $\\mathcal P$ that cannot be obtained from any generalized semifield spread? A positive answer requires a constructed lifted packing together with a proof excluding every generalized-semifield-spread origin; a negative answer requires a proof that every source-lifted elementary-abelian LP-packing is obtainable from one."
+  },
+  "scope": {
+    "domain": "Bent partitions, LP-packings, and generalized semifield spreads in finite abelian groups",
+    "assumptions": [
+      "The ambient group is elementary abelian",
+      "The LP-packing is produced by the lifting procedure fixed in the source",
+      "Obtainability from a generalized semifield spread uses the source equivalence and construction conventions"
+    ],
+    "parameters": [
+      "$p$: prime characteristic",
+      "ambient dimension",
+      "LP-partition and lifting data",
+      "candidate generalized semifield spread"
+    ],
+    "unresolved_remainder": "No inspected construction supplies a lifted LP-packing with the required universal non-provenance certificate, and no theorem proves that every source-lifted packing comes from a generalized semifield spread."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "bent-partitions",
+      "finite-geometry",
+      "generalized-semifield-spreads",
+      "lifting",
+      "lp-packings",
+      "provenance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings",
+        "locator": "Section V (Perspectives), second bullet, p. 5375",
+        "doi": "10.1109/TIT.2024.3359260"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-07-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether some elementary-abelian LP-packings obtained by its lifting procedure lie outside all generalized-semifield-spread constructions.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "generalized-desarguesian-small-k-alternative-lifting",
+      "nonfield-semifield-lp-partition-lifting"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

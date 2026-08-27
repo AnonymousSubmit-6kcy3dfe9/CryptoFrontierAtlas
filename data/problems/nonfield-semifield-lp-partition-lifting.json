@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonfield-semifield-lp-partition-lifting",
+  "group_id": "alkan-bent-partitions-lp-packing-open-questions",
+  "title": "Non-field-semifield input for LP-partition lifting",
+  "summary": "Determine whether a non-field semifield can satisfy the source lifting conditions and produce valid LP-partitions and LP-packings.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a finite semifield that is not a field and can replace the finite-field multiplication input in the source's LP-partition lifting approach, while satisfying the required analogues of its structural lemmas and producing a valid LP-partition and resulting LP-packing? Resolve this by constructing and verifying one such non-field-semifield lifting, or by proving that no non-field semifield can satisfy the required lifting conditions."
+  },
+  "scope": {
+    "domain": "Finite semifields, LP-partitions, and LP-packing lifting",
+    "assumptions": [
+      "The algebraic input is a finite semifield that is not a field",
+      "The construction must satisfy the source LP-partition and lifting definitions",
+      "A direct generalized-semifield-spread construction is not by itself an instance of the required lifting"
+    ],
+    "parameters": [
+      "non-field semifield",
+      "ambient finite abelian group parameters",
+      "LP-partition and lifting data"
+    ],
+    "unresolved_remainder": "Known non-field presemifields directly generate generalized semifield spreads, but no inspected work verifies the LP-partition input and larger-group lifting required here, and no impossibility theorem is known."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "bent-partitions",
+      "finite-semifields",
+      "lifting",
+      "lp-packings",
+      "lp-partitions",
+      "nonassociative-algebra"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings",
+        "locator": "Section V (Perspectives), final sentence of the third bullet, p. 5375",
+        "doi": "10.1109/TIT.2024.3359260"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-26"
+  },
+  "progress": [
+    {
+      "date": "2024-07-01",
+      "kind": "source_statement",
+      "summary": "The source separately asks whether semifields other than finite fields can be employed in its LP-partition lifting approach.",
+      "citation_labels": [
+        "Alkan--Anbar--Kalayci--Meidl, bent partitions and LP-packings"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "generalized-desarguesian-small-k-alternative-lifting",
+      "lifted-lp-packing-nonsemifield-spread-provenance"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
