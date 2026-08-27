@@ -78,6 +78,8 @@ import recordRotationSymmetricBentMultipleThreeMsharp from '../data/problems/rot
 import recordSelfOrthogonalTheorem2ResidualWeightDistribution from '../data/problems/self-orthogonal-theorem2-residual-weight-distribution.json';
 import recordSimonIndirectContradictionBoundaryExtension from '../data/problems/simon-indirect-contradiction-boundary-extension.json';
 import recordSimonLargerSingleBitIdPriority from '../data/problems/simon-larger-single-bit-id-priority.json';
+import recordBinaryNihoS4EvenCrossCorrelationDistribution from '../data/problems/binary-niho-s4-even-cross-correlation-distribution.json';
+import recordHellesethMinusOneCrossCorrelationConjecture from '../data/problems/helleseth-minus-one-cross-correlation-conjecture.json';
 import recordSnow5gFastCorrelationTightBoundary from '../data/problems/snow-5g-fast-correlation-tight-boundary.json';
 import recordSporadicApnRepresentative30InfiniteFamily from '../data/problems/sporadic-apn-representative-30-infinite-family.json';
 import recordTernaryVectorialDualBentEpsilonMinusOne from '../data/problems/ternary-vectorial-dual-bent-epsilon-minus-one.json';
@@ -232,6 +234,8 @@ export const problems = [
   recordSelfOrthogonalTheorem2ResidualWeightDistribution,
   recordSimonIndirectContradictionBoundaryExtension,
   recordSimonLargerSingleBitIdPriority,
+  recordBinaryNihoS4EvenCrossCorrelationDistribution,
+  recordHellesethMinusOneCrossCorrelationConjecture,
   recordSnow5gFastCorrelationTightBoundary,
   recordSporadicApnRepresentative30InfiniteFamily,
   recordTernaryVectorialDualBentEpsilonMinusOne,
@@ -240,6 +244,7 @@ export const problems = [
   recordVectorialDualBentAttainableSigmaClassification,
   vectorial,
   recordWangHengHbResidualWeightDistribution,
+  
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;
