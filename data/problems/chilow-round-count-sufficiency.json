@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chilow-round-count-sufficiency",
+  "group_id": "chilow-round-count-sufficiency",
+  "title": "ChiLow Round Counts Against Meet-in-the-Middle Attacks",
+  "summary": "The presented attacks reach 9-round ChiLow-32 and 8-round ChiLow-40; whether 10-round ChiLow-32 and 9-round ChiLow-40 prevent them remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$R_{32}=10$ and $R_{40}=9$ should suffice to prevent the presented MitM attacks."
+  },
+  "scope": {
+    "domain": "Meet-in-the-middle cryptanalysis of the ChiLow-32 and ChiLow-40 block-cipher variants.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "R32: the round count for ChiLow-32, proposed as 10",
+      "R40: the round count for ChiLow-40, proposed as 9"
+    ],
+    "unresolved_remainder": "Whether the proposed round counts suffice to prevent the presented meet-in-the-middle attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [],
+    "tags": [
+      "meet-in-the-middle",
+      "symmetric-cryptanalysis",
+      "chilow"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Meet-in-the-Middle Attacks on Full ChiLow",
+        "locator": "CRYPTO 2026, page 19",
+        "url": "https://eprint.iacr.org/2025/1601",
+        "eprint": "2025/1601"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports attacks on 9-round ChiLow-32 and 8-round ChiLow-40, then conjectures that increasing them to 10 and 9 rounds, respectively, should prevent the presented attacks. Their sufficiency is not established.",
+      "citation_labels": [
+        "Eran Lambooij et al., Meet-in-the-Middle Attacks on Full ChiLow"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

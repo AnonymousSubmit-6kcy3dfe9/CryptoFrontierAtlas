@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exponential-quantum-speedup-for-ddt-attacks",
+  "group_id": "exponential-quantum-speedup-for-ddt-attacks",
+  "title": "Exponential Quantum Speedup for DDT-Based Attacks",
+  "summary": "DDTs can be sampled efficiently classically, obstructing a direct transfer of Simon's advantage; whether any DDT-based attack can achieve an exponential quantum speedup remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a function $F$, its DDT can be sampled efficiently by choosing random plaintexts $x_1$ and $x_2$ and obtaining $(\\Delta_I,\\Delta_O)=(x_1\\oplus x_2,F(x_1)\\oplus F(x_2))$. This efficient classical sampling is a fundamental obstacle to transferring Simon's exponential quantum speed-up, which does not automatically apply to DDT-based attacks. Determine whether a DDT-based cryptanalytic attack can nevertheless achieve an exponential quantum speed-up over its corresponding classical attack and, if so, how it overcomes this sampling barrier."
+  },
+  "scope": {
+    "domain": "Quantum differential cryptanalysis of difference distribution tables and quantum-versus-classical attack complexity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "F: the function defining the DDT"
+    ],
+    "unresolved_remainder": "Whether a DDT-based cryptanalytic attack can achieve an exponential quantum speedup over its classical counterpart and, if so, how it can overcome efficient classical DDT sampling."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "quantum-cryptanalysis",
+      "difference-distribution-tables"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Geometric Approach to Quantum Distinguishers",
+        "locator": "CRYPTO 2026, page 28",
+        "url": "https://eprint.iacr.org/2026/1158",
+        "eprint": "2026/1158"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The paper recovers a quadratic speedup for a DDT-supported quantum distinguisher and then poses exponential speedup as a natural question. It identifies efficient classical DDT sampling as the barrier and rules out a direct Simon/Bernstein–Vazirani-style sampling route without proving a general impossibility.",
+      "citation_labels": [
+        "Zhili Wu et al., A Geometric Approach to Quantum Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
