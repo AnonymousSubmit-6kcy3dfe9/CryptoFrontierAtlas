@@ -1,0 +1,2 @@
+# Keep byte-addressed Lean artifacts stable across operating systems.
+*.lean text eol=lf

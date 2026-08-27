@@ -73,6 +73,23 @@ function digestSourceTree(files) {
   return digest.digest('hex');
 }
 
+function normalizeLeanLineEndings(bytes) {
+  if (!bytes.includes(0x0d)) return bytes;
+  const normalized = Buffer.allocUnsafe(bytes.length);
+  let writeOffset = 0;
+  for (let readOffset = 0; readOffset < bytes.length; readOffset += 1) {
+    if (bytes[readOffset] === 0x0d && bytes[readOffset + 1] === 0x0a) {
+      normalized[writeOffset] = 0x0a;
+      writeOffset += 1;
+      readOffset += 1;
+    } else {
+      normalized[writeOffset] = bytes[readOffset];
+      writeOffset += 1;
+    }
+  }
+  return normalized.subarray(0, writeOffset);
+}
+
 function localLeanSourceFiles() {
   if (cachedLocalLeanSourceFiles) return cachedLocalLeanSourceFiles;
   const leanRoot = path.resolve(repositoryRoot, 'data/lean');
@@ -87,7 +104,7 @@ function localLeanSourceFiles() {
       } else if (entry.isFile() && entry.name.endsWith('.lean')) {
         found.push({
           relative: path.relative(leanRoot, absolute).split(path.sep).join('/'),
-          bytes: fs.readFileSync(absolute),
+          bytes: normalizeLeanLineEndings(fs.readFileSync(absolute)),
         });
       }
     }
@@ -133,7 +150,9 @@ function verifyLeanCommit(lean, sourceArtifact, absolutePath, file) {
   if (sourceArtifact.sha256 !== committedDigest) {
     throw new Error(`${file} source artifact SHA-256 does not match the immutable commit`);
   }
-  const localDigest = crypto.createHash('sha256').update(fs.readFileSync(absolutePath)).digest('hex');
+  const localDigest = crypto.createHash('sha256')
+    .update(normalizeLeanLineEndings(fs.readFileSync(absolutePath)))
+    .digest('hex');
   if (localDigest !== committedDigest) {
     throw new Error(`${file} working-tree Lean source differs from lean.commit`);
   }
@@ -206,7 +225,9 @@ for (const file of files) {
     if (sourceArtifact.url !== expectedUrl) {
       throw new Error(file + ' source artifact URL does not match lean.path and lean.commit');
     }
-    const digest = crypto.createHash('sha256').update(fs.readFileSync(absolutePath)).digest('hex');
+    const digest = crypto.createHash('sha256')
+      .update(normalizeLeanLineEndings(fs.readFileSync(absolutePath)))
+      .digest('hex');
     if (sourceArtifact.sha256 !== digest) {
       throw new Error(file + ' source artifact SHA-256 does not match ' + lean.path);
     }
