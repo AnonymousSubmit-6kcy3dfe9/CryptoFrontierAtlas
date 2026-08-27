@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-bent-above-half-planar-nonprojection",
+  "group_id": "cesmelioglu-meidl-high-output-vectorial-bent",
+  "title": "Vectorial bent functions above the half-dimension threshold outside planar projections",
+  "summary": "Determine whether a vectorial bent function with output dimension strictly above half its input dimension can lie outside all planar-function projections.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a prime $p$, dimensions $n$ and $m$ with $m>\\lceil n/2\\rceil$, and a vectorial bent function $F:V_n^{(p)}\\to V_m^{(p)}$ that is not a projection of any planar function? Equivalently, either exhibit and prove one such nonprojection witness or prove that every vectorial bent function in this dimension range is a planar-function projection."
+  },
+  "scope": {
+    "domain": "Vectorial bent functions between finite-dimensional vector spaces over prime fields",
+    "assumptions": [
+      "$p$ is prime",
+      "$V_n^{(p)}$ and $V_m^{(p)}$ are vector spaces over $\\mathbb F_p$",
+      "$F$ is vectorial bent in the source's nonzero-component sense",
+      "$m>\\lceil n/2\\rceil$",
+      "Nonprojection means that $F$ is not representable as a projection of any planar function"
+    ],
+    "parameters": [
+      "prime $p$",
+      "input dimension $n$",
+      "output dimension $m$",
+      "vectorial function $F$"
+    ],
+    "unresolved_remainder": "No inspected later public result exhibits a vectorial bent function satisfying both the strict dimension inequality and the planar-nonprojection condition, or proves the universal opposite statement. An inaccessible construction paper has no compatible public resolution signal outside its title."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "vectorial-bent-functions",
+      "planar-functions",
+      "finite-fields",
+      "dimension-bounds",
+      "projection"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cesmelioglu--Meidl, high-output vectorial bent nonprojection question",
+        "locator": "Section IV, journal p. 9221",
+        "doi": "10.1109/TIT.2024.3434481",
+        "url": "https://doi.org/10.1109/TIT.2024.3434481"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2024-07-29",
+      "kind": "source_statement",
+      "summary": "The TIT source asks whether the known planar and projected-planar examples exhaust vectorial bent functions above the half-dimension threshold.",
+      "citation_labels": [
+        "Cesmelioglu--Meidl, high-output vectorial bent nonprojection question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

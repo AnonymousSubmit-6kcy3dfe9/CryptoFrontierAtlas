@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "debruijn-partial-cycle-qmax-bound",
+  "group_id": "li-lin-partial-cycle-debruijn-search",
+  "title": "Constant bound for the maximum partial-cycle search factor",
+  "summary": "Decide whether the maximum repeat-until factor in the partial-cycle de Bruijn search algorithm has an absolute constant upper bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "With $q_d=|\\mathcal F(d-1)|2^{\\binom{n-1}{d}}/|\\mathcal F(d)|$ and $q_{\\max}(n)=\\max_{0\\le d\\le n-1}q_d$, decide whether there is an absolute constant $C$ such that $q_{\\max}(n)\\le C$ for every admissible order $n$. Prove such a bound or prove that $q_{\\max}(n)$ is unbounded."
+  },
+  "scope": {
+    "domain": "Average repeat-until factors in the partial-cycle de Bruijn search algorithm",
+    "assumptions": [
+      "$q_d$ and $\\mathcal F(d)$ use the source's definitions",
+      "$q_{\\max}(n)$ ranges over $0\\le d\\le n-1$",
+      "The bound $C$ must be independent of $n$"
+    ],
+    "parameters": [
+      "order $n$",
+      "degree $d$",
+      "candidate absolute constant $C$"
+    ],
+    "unresolved_remainder": "The source proves only the loose exponential bound $q_{\\max}(n)\\le2^{n-2}-4$ and records empirical motivation for a fixed bound; no inspected later result proves boundedness or unboundedness."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "de-bruijn-sequences",
+      "feedback-shift-registers",
+      "partial-cycle-structure",
+      "asymptotic-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Lin, fixed upper bound for q-max",
+        "locator": "Section VI, Algorithm 2 analysis, journal p. 606",
+        "doi": "10.1109/TIT.2022.3201519",
+        "url": "https://doi.org/10.1109/TIT.2022.3201519"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-08-25",
+      "kind": "source_statement",
+      "summary": "The source notes that the product identity for the $q_d$ may indicate a fixed upper bound for $q_{\\max}$ and leaves the quantified problem open.",
+      "citation_labels": [
+        "Li--Lin, fixed upper bound for q-max"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "debruijn-partial-cycle-exact-qd",
+      "debruijn-sparse-characteristic-density",
+      "debruijn-sparse-extension-failure"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

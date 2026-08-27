@@ -84,6 +84,29 @@ import recordSimonIndirectContradictionBoundaryExtension from '../data/problems/
 import recordSimonLargerSingleBitIdPriority from '../data/problems/simon-larger-single-bit-id-priority.json';
 import recordBinaryNihoS4EvenCrossCorrelationDistribution from '../data/problems/binary-niho-s4-even-cross-correlation-distribution.json';
 import recordHellesethMinusOneCrossCorrelationConjecture from '../data/problems/helleseth-minus-one-cross-correlation-conjecture.json';
+import recordBinaryEuclideanLcdCodimensionSeven from '../data/problems/binary-euclidean-lcd-codimension-seven.json';
+import recordQuaternaryHermitianLcdCodimensionFive from '../data/problems/quaternary-hermitian-lcd-codimension-five.json';
+import recordTernaryEuclideanLcdCodimensionSix from '../data/problems/ternary-euclidean-lcd-codimension-six.json';
+import recordVectorialBentAboveHalfPlanarNonprojection from '../data/problems/vectorial-bent-above-half-planar-nonprojection.json';
+import recordBinaryRunSequenceDihedralOrbitCount from '../data/problems/binary-run-sequence-dihedral-orbit-count.json';
+import recordDebruijnPartialCycleExactQd from '../data/problems/debruijn-partial-cycle-exact-qd.json';
+import recordDebruijnPartialCycleQmaxBound from '../data/problems/debruijn-partial-cycle-qmax-bound.json';
+import recordDebruijnSparseCharacteristicDensity from '../data/problems/debruijn-sparse-characteristic-density.json';
+import recordDebruijnSparseExtensionFailure from '../data/problems/debruijn-sparse-extension-failure.json';
+import recordDobbertinApnPowerClassification from '../data/problems/dobbertin-apn-power-classification.json';
+import recordGeneralizedButterflyApproxLOrbitCoverage from '../data/problems/generalized-butterfly-approx-l-orbit-coverage.json';
+import recordGeneralizedButterflyCczOrbitCoverage from '../data/problems/generalized-butterfly-ccz-orbit-coverage.json';
+import recordMaximalCompletePermutationSpaceNonlinearMember from '../data/problems/maximal-complete-permutation-space-nonlinear-member.json';
+import recordMesnagerQuadrinomialDerivedInvolutionNonlinearity from '../data/problems/mesnager-quadrinomial-derived-involution-nonlinearity.json';
+import recordMesnagerQuadrinomialTraceZeroInjectivity from '../data/problems/mesnager-quadrinomial-trace-zero-injectivity.json';
+import recordPermutationTranslatesLinearizedThreshold from '../data/problems/permutation-translates-linearized-threshold.json';
+import recordQaryRunSequenceCyclicOrbitCount from '../data/problems/qary-run-sequence-cyclic-orbit-count.json';
+import recordQuantumPaPurifiedDistanceLowRateExponent from '../data/problems/quantum-pa-purified-distance-low-rate-exponent.json';
+import recordQuantumPaRelativeEntropyLowRateExponent from '../data/problems/quantum-pa-relative-entropy-low-rate-exponent.json';
+import recordQuantumPaSandwichedRenyiLowRateExponent from '../data/problems/quantum-pa-sandwiched-renyi-low-rate-exponent.json';
+import recordQuantumPaTraceDistanceExponent from '../data/problems/quantum-pa-trace-distance-exponent.json';
+import recordRunSequenceTupleMultiplicityLimitLaw from '../data/problems/run-sequence-tuple-multiplicity-limit-law.json';
+import recordVectorialBentNegabentAllComponentsOutsideMmsharp from '../data/problems/vectorial-bent-negabent-all-components-outside-mmsharp.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -236,6 +259,29 @@ export const problems = [
   recordSimonLargerSingleBitIdPriority,
   recordBinaryNihoS4EvenCrossCorrelationDistribution,
   recordHellesethMinusOneCrossCorrelationConjecture,
+  recordBinaryEuclideanLcdCodimensionSeven,
+  recordQuaternaryHermitianLcdCodimensionFive,
+  recordTernaryEuclideanLcdCodimensionSix,
+  recordVectorialBentAboveHalfPlanarNonprojection,
+  recordBinaryRunSequenceDihedralOrbitCount,
+  recordDebruijnPartialCycleExactQd,
+  recordDebruijnPartialCycleQmaxBound,
+  recordDebruijnSparseCharacteristicDensity,
+  recordDebruijnSparseExtensionFailure,
+  recordDobbertinApnPowerClassification,
+  recordGeneralizedButterflyApproxLOrbitCoverage,
+  recordGeneralizedButterflyCczOrbitCoverage,
+  recordMaximalCompletePermutationSpaceNonlinearMember,
+  recordMesnagerQuadrinomialDerivedInvolutionNonlinearity,
+  recordMesnagerQuadrinomialTraceZeroInjectivity,
+  recordPermutationTranslatesLinearizedThreshold,
+  recordQaryRunSequenceCyclicOrbitCount,
+  recordQuantumPaPurifiedDistanceLowRateExponent,
+  recordQuantumPaRelativeEntropyLowRateExponent,
+  recordQuantumPaSandwichedRenyiLowRateExponent,
+  recordQuantumPaTraceDistanceExponent,
+  recordRunSequenceTupleMultiplicityLimitLaw,
+  recordVectorialBentNegabentAllComponentsOutsideMmsharp,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-pa-relative-entropy-low-rate-exponent",
+  "group_id": "li-yao-hayashi-quantum-pa-exponents",
+  "title": "Low-rate relative-entropy exponent for quantum privacy amplification",
+  "summary": "Determine the exact relative-entropy security exponent of quantum privacy amplification at extraction rates below the critical rate.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an admissible i.i.d. cq state $\\rho_{XE}^{\\otimes n}$ and a source-model hash $f_n:X^n\\to Z_n$ of rate $R<R_{\\mathrm{critical}}$, determine the exact optimal exponent of $$D\\!\\left(\\rho_{Z_nE^n}^{f_n}\\middle\\|\\tau_{Z_n}\\otimes\\rho_E^{\\otimes n}\\right).$$ Establish matching achievability and converse formulas for every admissible source throughout the low-rate regime."
+  },
+  "scope": {
+    "domain": "Quantum-proof privacy amplification measured by quantum relative entropy in the low-rate regime",
+    "assumptions": [
+      "$\\rho_{XE}$ and the hash model follow the source's privacy-amplification theorem",
+      "$R<R_{\\mathrm{critical}}$ for the given source",
+      "Security is measured by quantum relative entropy from the ideal key state"
+    ],
+    "parameters": [
+      "cq state $\\rho_{XE}$",
+      "rate $R$",
+      "critical rate $R_{\\mathrm{critical}}$",
+      "block length $n$"
+    ],
+    "unresolved_remainder": "The source's upper and lower bounds match only at and above the critical rate and are shown not to be tight in general below it. No inspected later result determines the exact low-rate relative-entropy exponent over the full source domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-privacy-amplification",
+      "security-exponents",
+      "relative-entropy",
+      "critical-rate",
+      "quantum-side-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Yao--Hayashi, quantum privacy-amplification exponent problems",
+        "locator": "Conclusion, journal p. 1694",
+        "doi": "10.1109/TIT.2022.3217671",
+        "url": "https://doi.org/10.1109/TIT.2022.3217671"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-28",
+      "kind": "source_statement",
+      "summary": "The source identifies the exact relative-entropy exponent above a critical rate and explicitly leaves the low-rate exponent open.",
+      "citation_labels": [
+        "Li--Yao--Hayashi, quantum privacy-amplification exponent problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-pa-trace-distance-exponent",
+      "quantum-pa-purified-distance-low-rate-exponent",
+      "quantum-pa-sandwiched-renyi-low-rate-exponent"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

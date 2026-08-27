@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ternary-euclidean-lcd-codimension-six",
+  "group_id": "araya-lcd-large-dimension-exceptions",
+  "title": "Ternary codimension-six LCD distance-four exceptions",
+  "summary": "Decide whether ternary Euclidean LCD codes of codimension six and minimum distance four exist at each of six residual lengths.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $n\\in\\{51,52,53,54,55,56\\}$, decide whether a ternary Euclidean LCD code with parameters $[n,n-6,4]$ exists. Equivalently, determine whether $d_3^E(n,n-6)=4$ or $d_3^E(n,n-6)=3$ for each of these six lengths."
+  },
+  "scope": {
+    "domain": "Ternary Euclidean linear complementary dual codes of codimension six",
+    "assumptions": [
+      "Codes are ternary and linear",
+      "The Euclidean hull is trivial",
+      "The dimension is $n-6$",
+      "The TIT source already bounds the optimum minimum distance to either 3 or 4 at every listed length"
+    ],
+    "parameters": [
+      "length $n\\in\\{51,52,53,54,55,56\\}$",
+      "dimension $k=n-6$",
+      "target minimum distance 4"
+    ],
+    "unresolved_remainder": "All six instances remain open. Later inspected ternary LCD tables stop at length 50 and do not construct or rule out any of $[51,45,4]$, $[52,46,4]$, $[53,47,4]$, $[54,48,4]$, $[55,49,4]$, or $[56,50,4]$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": [
+      "cryptanalysis.side-channel"
+    ],
+    "tags": [
+      "lcd-codes",
+      "ternary-codes",
+      "minimum-distance",
+      "euclidean-duality",
+      "side-channel-countermeasures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Araya--Harada--Ishizuka--Tanaka, ternary codimension-six LCD exceptions",
+        "locator": "Theorem 25 and Remark 26, journal p. 8766",
+        "doi": "10.1109/TIT.2024.3483218",
+        "url": "https://doi.org/10.1109/TIT.2024.3483218"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2024-10-18",
+      "kind": "source_statement",
+      "summary": "The TIT source isolates six ternary codimension-six lengths where the optimum minimum distance remains either 3 or 4.",
+      "citation_labels": [
+        "Araya--Harada--Ishizuka--Tanaka, ternary codimension-six LCD exceptions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "binary-euclidean-lcd-codimension-seven",
+      "quaternary-hermitian-lcd-codimension-five"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

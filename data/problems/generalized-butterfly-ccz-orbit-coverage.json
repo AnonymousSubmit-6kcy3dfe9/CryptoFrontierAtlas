@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generalized-butterfly-ccz-orbit-coverage",
+  "group_id": "gologlu-biprojective-butterfly-coverage",
+  "title": "CCZ-orbit coverage of generalized butterflies",
+  "summary": "Decide whether the full CCZ orbit of generalized butterflies covers every relevant biprojective function that is CCZ-equivalent to a permutation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Using the source conventions $q=2^k$, $L=\\mathbb F_{2^\\ell}$, let $\\mathcal B_{q,L}\\subseteq\\Pi_1\\times\\Pi_1$ be the generalized-butterfly family. Prove that every source-relevant $F\\in\\Pi_1\\times\\Pi_1$ that is CCZ-equivalent to a permutation is CCZ-equivalent to some $B\\in\\mathcal B_{q,L}$, or exhibit and verify a qualifying $F$ outside the full CCZ orbit of $\\mathcal B_{q,L}$."
+  },
+  "scope": {
+    "domain": "Generalized-butterfly and biprojective vectorial functions used as cryptographic nonlinear components",
+    "assumptions": [
+      "$q$, $L$, $\\Pi_1$, and $\\mathcal B_{q,L}$ use the definitions in Remark 20",
+      "The target belongs to the source-relevant subset of $\\Pi_1\\times\\Pi_1$",
+      "The target is CCZ-equivalent to a permutation",
+      "Coverage is by full CCZ equivalence, not merely the subgroup action already counted in the source"
+    ],
+    "parameters": [
+      "powers $q=2^k$",
+      "field $L=\\mathbb F_{2^\\ell}$",
+      "butterfly parameters",
+      "target $F\\in\\Pi_1\\times\\Pi_1$"
+    ],
+    "unresolved_remainder": "Later work classifies equivalences among specified closed-butterfly families but does not classify all qualifying functions in $\\Pi_1\\times\\Pi_1$ or prove that their CCZ classes meet the generalized-butterfly family. The full coverage predicate remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "generalized-butterflies",
+      "biprojective-functions",
+      "ccz-equivalence",
+      "orbit-classification",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gologlu, generalized-butterfly orbit-coverage questions",
+        "locator": "Remark 20, journal p. 1997",
+        "doi": "10.1109/TIT.2022.3220724",
+        "url": "https://doi.org/10.1109/TIT.2022.3220724"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-11-09",
+      "kind": "source_statement",
+      "summary": "Remark 20 asks whether the CCZ-equivalence class of the generalized-butterfly family covers all relevant permutation-equivalent members of $\\Pi_1\\times\\Pi_1$.",
+      "citation_labels": [
+        "Gologlu, generalized-butterfly orbit-coverage questions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "generalized-butterfly-approx-l-orbit-coverage"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

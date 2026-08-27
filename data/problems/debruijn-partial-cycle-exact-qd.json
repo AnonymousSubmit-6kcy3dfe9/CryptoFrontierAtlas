@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "debruijn-partial-cycle-exact-qd",
+  "group_id": "li-lin-partial-cycle-debruijn-search",
+  "title": "Exact partial-cycle search factors for de Bruijn sequences",
+  "summary": "Determine every unknown intermediate search factor $q_d$ in the partial-cycle algorithm for finding de Bruijn characteristic functions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source-defined acyclic partial-cycle families $\\mathcal F(d)$, let $$q_d=\\frac{|\\mathcal F(d-1)|2^{\\binom{n-1}{d}}}{|\\mathcal F(d)|}.$$ Determine $q_d$ exactly for every admissible order $n$ and every $2\\le d\\le n-2$. The endpoint values $q_0=2$, $q_1=2^{n-1}/(2^{n-1}-2)$, and $q_{n-1}=2$ do not settle the intermediate values."
+  },
+  "scope": {
+    "domain": "Partial-cycle extensions in a search algorithm for de Bruijn characteristic functions",
+    "assumptions": [
+      "$\\mathcal F(d)$ is the source's family of degree-at-most-$d$ characteristic functions whose partial cycle structure is acyclic",
+      "$\\alpha_d$ is chosen uniformly from binary degree-$d$ coefficient vectors",
+      "$q_d$ is the average repeat-until count at degree $d$"
+    ],
+    "parameters": [
+      "de Bruijn order $n$",
+      "degree $d$ with $2\\le d\\le n-2$",
+      "cardinalities $|\\mathcal F(d-1)|$ and $|\\mathcal F(d)|$"
+    ],
+    "unresolved_remainder": "Exact formulas remain unknown for all source-unspecified intermediate values $q_d$, namely $2\\le d\\le n-2$ over the full admissible order range."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "de-bruijn-sequences",
+      "feedback-shift-registers",
+      "partial-cycle-structure",
+      "search-algorithms"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Lin, partial-cycle Algorithm 2 search factors",
+        "locator": "Section VI, Algorithm 2 analysis, journal p. 606",
+        "doi": "10.1109/TIT.2022.3201519",
+        "url": "https://doi.org/10.1109/TIT.2022.3201519"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-08-25",
+      "kind": "source_statement",
+      "summary": "The source derives three endpoint factors and explicitly states that all other $q_d$ values are unknown.",
+      "citation_labels": [
+        "Li--Lin, partial-cycle Algorithm 2 search factors"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "debruijn-partial-cycle-qmax-bound",
+      "debruijn-sparse-characteristic-density",
+      "debruijn-sparse-extension-failure"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

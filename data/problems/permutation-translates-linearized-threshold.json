@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "permutation-translates-linearized-threshold",
+  "group_id": "pasalic-kudin-polujan-pott-vectorial-bent-negabent",
+  "title": "Linearity forced by many permutation translates",
+  "summary": "Decide whether a polynomial whose linear translates are permutations for at least half of a finite field must be linearized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $q$ be a prime power and let $F$ be a polynomial function on $\\mathbb F_q$. Suppose $$\\#\\{c\\in\\mathbb F_q:x\\mapsto F(x)+cx\\text{ is a permutation of }\\mathbb F_q\\}\\ge q/2.$$ Prove that $F$ must be represented by a linearized polynomial over $\\mathbb F_q$, or exhibit a non-linearized polynomial function satisfying the threshold."
+  },
+  "scope": {
+    "domain": "Finite-field polynomial functions with many permutation translates",
+    "assumptions": [
+      "$q$ is a prime power",
+      "$F$ is considered as a polynomial function on $\\mathbb F_q$",
+      "At least $q/2$ values $c$ make $F(x)+cx$ a permutation"
+    ],
+    "parameters": [
+      "prime power $q$",
+      "polynomial function $F$",
+      "translate parameter $c$"
+    ],
+    "unresolved_remainder": "No inspected later result proves the Evans--Greene--Niederreiter implication over all finite fields or supplies a non-linearized counterexample at the $q/2$ threshold."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "permutation-polynomials",
+      "linearized-polynomials",
+      "finite-fields",
+      "complete-mappings",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems",
+        "locator": "Open Problem IV.1, Remark IV.2, and conclusion, journal pp. 2710-2712",
+        "doi": "10.1109/TIT.2022.3226571",
+        "url": "https://doi.org/10.1109/TIT.2022.3226571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-12-02",
+      "kind": "source_statement",
+      "summary": "Remark IV.2 recalls the Evans--Greene--Niederreiter conjecture that at least $q/2$ permutation translates force a polynomial to be linearized.",
+      "citation_labels": [
+        "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "maximal-complete-permutation-space-nonlinear-member",
+      "vectorial-bent-negabent-all-components-outside-mmsharp"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mesnager-quadrinomial-trace-zero-injectivity",
+  "group_id": "mesnager-yuan-zheng-conjecture12",
+  "title": "Trace-zero injectivity of the Conjecture 12 quadrinomial",
+  "summary": "Decide whether the Mesnager--Yuan--Zheng quadrinomial is injective on the absolute-trace-zero subset in every odd extension degree of its family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each source-admissible positive integer $m$, put $n=2m+1$ and define $$F_m(x)=x+x^3+x^{2^{m+1}}+x^{2^{m+1}+2}$$ on $\\mathbb F_{2^n}$. Let $T_0=\\{x\\in\\mathbb F_{2^n}:\\operatorname{Tr}_{\\mathbb F_{2^n}/\\mathbb F_2}(x)=0\\}$. Prove that $F_m|_{T_0}$ is injective for every admissible $m$, or exhibit an admissible $m$ and distinct $x,y\\in T_0$ with $F_m(x)=F_m(y)$."
+  },
+  "scope": {
+    "domain": "Restrictions of finite-field vectorial functions used to construct cryptographic involutions and S-boxes",
+    "assumptions": [
+      "$n=2m+1$ with $m$ in the source-admissible positive-integer range",
+      "$F_m$ is the exact quadrinomial in Conjecture 12",
+      "$T_0$ is the absolute-trace-zero subset of $\\mathbb F_{2^n}$"
+    ],
+    "parameters": [
+      "integer $m$",
+      "odd extension degree $n=2m+1$",
+      "points $x,y\\in T_0$"
+    ],
+    "unresolved_remainder": "The full-field two-to-one branch of Conjecture 12 has been proved, but no inspected later result shows that each two-point fiber contains at most one trace-zero element. Injectivity on $T_0$ remains open over the complete source parameter range."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "finite-fields",
+      "two-to-one-mappings",
+      "trace-zero",
+      "injectivity",
+      "sboxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mesnager--Yuan--Zheng, Conjecture 12",
+        "locator": "Conjecture 12, journal p. 1325",
+        "doi": "10.1109/TIT.2022.3211329",
+        "url": "https://doi.org/10.1109/TIT.2022.3211329"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-03",
+      "kind": "source_statement",
+      "summary": "Conjecture 12 asserts that the displayed two-to-one quadrinomial is injective on the absolute-trace-zero set for every member of the family.",
+      "citation_labels": [
+        "Mesnager--Yuan--Zheng, Conjecture 12"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "mesnager-quadrinomial-derived-involution-nonlinearity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

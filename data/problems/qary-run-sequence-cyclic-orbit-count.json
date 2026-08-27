@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "qary-run-sequence-cyclic-orbit-count",
+  "group_id": "kim-song-run-sequences",
+  "title": "Cyclic orbit count for q-ary run sequences",
+  "summary": "Count cyclically distinct q-ary sequences whose run distribution matches that of a q-ary maximum-length linear sequence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every source-admissible prime power $q$ and order $n$, define q-ary run sequences of period $q^n-1$ by requiring the source-proposed run distribution of a q-ary $m$-sequence. Determine and prove an exact formula for the number of these sequences modulo cyclic rotation."
+  },
+  "scope": {
+    "domain": "q-ary pseudorandom run sequences used in shift-register and cryptographic sequence design",
+    "assumptions": [
+      "$q$ is a source-admissible prime power",
+      "Sequences have period $q^n-1$",
+      "The run types and distribution are the q-ary extension proposed by the source",
+      "Equivalence is cyclic rotation"
+    ],
+    "parameters": [
+      "alphabet size $q$",
+      "order $n$",
+      "cyclic orbit"
+    ],
+    "unresolved_remainder": "The binary cyclic count derived in the source does not determine the q-ary extension. No inspected later result gives the exact orbit count for all admissible $(q,n)$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "run-sequences",
+      "qary-sequences",
+      "m-sequences",
+      "orbit-counting",
+      "shift-registers"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kim--Song, run-sequence enumeration and distribution problems",
+        "locator": "Conclusion, journal p. 2720",
+        "doi": "10.1109/TIT.2022.3222527",
+        "url": "https://doi.org/10.1109/TIT.2022.3222527"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-11-16",
+      "kind": "source_statement",
+      "summary": "The source proposes the q-ary run-sequence extension and explicitly identifies its cyclic enumeration as a difficult research problem.",
+      "citation_labels": [
+        "Kim--Song, run-sequence enumeration and distribution problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "binary-run-sequence-dihedral-orbit-count",
+      "run-sequence-tuple-multiplicity-limit-law"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

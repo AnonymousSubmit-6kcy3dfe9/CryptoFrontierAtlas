@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dobbertin-apn-power-classification",
+  "group_id": "tu-li-wu-zeng-tang-jiang-apcn-power",
+  "title": "Completeness of the six APN power families",
+  "summary": "Determine whether the six known binary APN power-function families exhaust all APN power mappings up to CCZ equivalence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive integer $m$ and exponent $d$, suppose the power mapping $F_d(x)=x^d$ is almost perfect nonlinear on $\\mathbb F_{2^m}$. Prove that $F_d$ is CCZ-equivalent to a member of one of the six known APN power families (Gold, Kasami, Welch, Niho, inverse, or Dobbertin), or exhibit an APN power mapping outside all six CCZ-equivalence families."
+  },
+  "scope": {
+    "domain": "Almost perfect nonlinear power mappings over binary finite fields",
+    "assumptions": [
+      "$m$ is a positive integer",
+      "$F_d(x)=x^d$ is APN on $\\mathbb F_{2^m}$",
+      "Classification is taken up to CCZ equivalence"
+    ],
+    "parameters": [
+      "field degree $m$",
+      "power exponent $d$",
+      "CCZ-equivalence class"
+    ],
+    "unresolved_remainder": "No inspected later result proves the all-dimensions, all-exponents classification or gives an APN power mapping outside the six known CCZ families."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "power-functions",
+      "ccz-equivalence",
+      "finite-fields",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tu--Li--Wu--Zeng--Tang--Jiang, Dobbertin APN power-classification conjecture",
+        "locator": "Introduction, journal p. 582",
+        "doi": "10.1109/TIT.2022.3198133",
+        "url": "https://doi.org/10.1109/TIT.2022.3198133"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-08-11",
+      "kind": "source_statement",
+      "summary": "The source states Dobbertin's conjecture that the six known APN power families form a complete classification up to CCZ equivalence.",
+      "citation_labels": [
+        "Tu--Li--Wu--Zeng--Tang--Jiang, Dobbertin APN power-classification conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

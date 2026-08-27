@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maximal-complete-permutation-space-nonlinear-member",
+  "group_id": "pasalic-kudin-polujan-pott-vectorial-bent-negabent",
+  "title": "Maximal complete-permutation spaces with a nonlinear member",
+  "summary": "Determine whether a maximum-dimensional binary vector space of complete permutations can contain a nonlinear permutation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an admissible integer $m$ and an $(m-1)$-dimensional $\\mathbb F_2$-vector space $V$ of mappings on $\\mathbb F_2^m$ such that every nonzero $\\pi\\in V$ is a complete permutation and at least one $\\pi\\in V$ has algebraic degree greater than one? Construct such a space, equivalently a nonquadratic vectorial bent-negabent function $F:\\mathbb F_2^{2m}\\to\\mathbb F_2^{m-1}$ of maximum output dimension, or prove that no such space exists."
+  },
+  "scope": {
+    "domain": "Vector spaces of complete permutations and maximum-output vectorial bent-negabent functions",
+    "assumptions": [
+      "$V$ is an $\\mathbb F_2$-vector space of dimension $m-1$",
+      "Every nonzero member of $V$ is a complete permutation in the source sense",
+      "At least one member has algebraic degree greater than one"
+    ],
+    "parameters": [
+      "input dimension $m$",
+      "vector space $V$",
+      "nonlinear complete permutation $\\pi$"
+    ],
+    "unresolved_remainder": "Later work constructs individual nonlinear complete permutations and smaller vector spaces, but no inspected result constructs an $(m-1)$-dimensional all-complete space with a nonlinear member or proves universal nonexistence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "complete-permutations",
+      "vector-spaces",
+      "bent-negabent-functions",
+      "nonlinearity",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems",
+        "locator": "Open Problem IV.1, Remark IV.2, and conclusion, journal pp. 2710-2712",
+        "doi": "10.1109/TIT.2022.3226571",
+        "url": "https://doi.org/10.1109/TIT.2022.3226571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-12-02",
+      "kind": "source_statement",
+      "summary": "Open Problem IV.1 asks for an $(m-1)$-dimensional space of complete permutations containing a nonlinear member, equivalently a maximum-output nonquadratic vectorial bent-negabent construction.",
+      "citation_labels": [
+        "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "permutation-translates-linearized-threshold",
+      "vectorial-bent-negabent-all-components-outside-mmsharp"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

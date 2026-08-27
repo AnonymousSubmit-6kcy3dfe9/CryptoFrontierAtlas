@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "run-sequence-tuple-multiplicity-limit-law",
+  "group_id": "kim-song-run-sequences",
+  "title": "Limit law for tuple multiplicities in random run sequences",
+  "summary": "Determine the limiting normalized distribution of how often n-tuples occur in a uniformly random binary run sequence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Choose uniformly from the cyclically distinct binary run sequences of period $2^n-1$. For a chosen sequence, let $a_i$ be the number of nonzero $n$-tuples that occur exactly $i$ times, so that $\\sum_{i\\ge0}a_i=2^n-1$ and $\\sum_{i\\ge0}i a_i=2^n-1$. Determine the limiting law of the normalized multiplicities $a_i/(2^n-1)$ as $n\\to\\infty$: prove convergence for every fixed $i$ and characterize the complete limiting probability distribution."
+  },
+  "scope": {
+    "domain": "Probability distribution of tuple occurrences in binary pseudorandom run sequences",
+    "assumptions": [
+      "Sampling is uniform over cyclically distinct binary run sequences of period $2^n-1$",
+      "$a_i$ counts nonzero $n$-tuples occurring exactly $i$ times",
+      "Multiplicity counts are normalized by $2^n-1$"
+    ],
+    "parameters": [
+      "order $n$",
+      "multiplicity $i$",
+      "random run sequence",
+      "normalized count $a_i/(2^n-1)$"
+    ],
+    "unresolved_remainder": "The source proves that each fixed nonzero tuple has average occurrence tending to one, but that first-moment statement does not determine the multiplicity distribution. The normalized limit law remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.stream-ciphers",
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "run-sequences",
+      "tuple-occurrences",
+      "limit-laws",
+      "probability-distributions",
+      "binary-sequences"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Kim--Song, run-sequence enumeration and distribution problems",
+        "locator": "Conclusion, journal p. 2720",
+        "doi": "10.1109/TIT.2022.3222527",
+        "url": "https://doi.org/10.1109/TIT.2022.3222527"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-11-16",
+      "kind": "source_statement",
+      "summary": "The source asks for the average occurrence-multiplicity distribution of a random run sequence and states that its normalized large-order limit is wide open.",
+      "citation_labels": [
+        "Kim--Song, run-sequence enumeration and distribution problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "qary-run-sequence-cyclic-orbit-count",
+      "binary-run-sequence-dihedral-orbit-count"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

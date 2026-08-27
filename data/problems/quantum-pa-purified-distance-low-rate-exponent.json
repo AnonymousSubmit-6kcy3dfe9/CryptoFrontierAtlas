@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-pa-purified-distance-low-rate-exponent",
+  "group_id": "li-yao-hayashi-quantum-pa-exponents",
+  "title": "Low-rate purified-distance exponent for quantum privacy amplification",
+  "summary": "Determine the exact purified-distance security exponent of quantum privacy amplification at extraction rates below the source's critical rate.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an admissible i.i.d. cq state $\\rho_{XE}^{\\otimes n}$ and source-model hash $f_n:X^n\\to Z_n$ of rate $R<R_{\\mathrm{critical}}$, determine the exact optimal exponent of the purified distance $P(\\rho_{Z_nE^n}^{f_n},\\tau_{Z_n}\\otimes\\rho_E^{\\otimes n})$. Prove matching achievability and converse exponents for every admissible source and every rate below its critical rate."
+  },
+  "scope": {
+    "domain": "Quantum-proof privacy amplification measured by purified distance in the low-rate regime",
+    "assumptions": [
+      "$\\rho_{XE}$ and the hash model follow the source's privacy-amplification theorems",
+      "$R<R_{\\mathrm{critical}}$ for the given source",
+      "Security is measured by purified distance"
+    ],
+    "parameters": [
+      "cq state $\\rho_{XE}$",
+      "rate $R$",
+      "critical rate $R_{\\mathrm{critical}}$",
+      "block length $n$"
+    ],
+    "unresolved_remainder": "The source proves the exact high-rate exponent but demonstrates that its available bounds are not tight in general below $R_{\\mathrm{critical}}$. No inspected later public result supplies matching low-rate purified-distance bounds over the full domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-privacy-amplification",
+      "security-exponents",
+      "purified-distance",
+      "critical-rate",
+      "quantum-side-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Yao--Hayashi, quantum privacy-amplification exponent problems",
+        "locator": "Conclusion, journal p. 1694",
+        "doi": "10.1109/TIT.2022.3217671",
+        "url": "https://doi.org/10.1109/TIT.2022.3217671"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-28",
+      "kind": "source_statement",
+      "summary": "The source determines the purified-distance exponent above a critical rate and explicitly leaves the complementary low-rate exponent open.",
+      "citation_labels": [
+        "Li--Yao--Hayashi, quantum privacy-amplification exponent problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-pa-trace-distance-exponent",
+      "quantum-pa-relative-entropy-low-rate-exponent",
+      "quantum-pa-sandwiched-renyi-low-rate-exponent"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

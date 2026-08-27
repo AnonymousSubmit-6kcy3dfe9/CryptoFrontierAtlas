@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quaternary-hermitian-lcd-codimension-five",
+  "group_id": "araya-lcd-large-dimension-exceptions",
+  "title": "Quaternary Hermitian codimension-five LCD distance-four exceptions",
+  "summary": "Decide whether quaternary Hermitian LCD codes of codimension five and minimum distance four exist at five residual lengths.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $n\\in\\{37,38,39,40,41\\}$, decide whether a quaternary Hermitian LCD code with parameters $[n,n-5,4]$ exists. Equivalently, determine whether $d_4^H(n,n-5)=4$ or $d_4^H(n,n-5)=3$ for each of these five lengths."
+  },
+  "scope": {
+    "domain": "Quaternary Hermitian linear complementary dual codes of codimension five",
+    "assumptions": [
+      "Codes are linear over $\\mathbb F_4$",
+      "The Hermitian hull is trivial",
+      "The dimension is $n-5$",
+      "The TIT source already bounds the optimum minimum distance to either 3 or 4 at every listed length"
+    ],
+    "parameters": [
+      "length $n\\in\\{37,38,39,40,41\\}$",
+      "dimension $k=n-5$",
+      "target minimum distance 4"
+    ],
+    "unresolved_remainder": "All five instances remain open: $[37,32,4]$, $[38,33,4]$, $[39,34,4]$, $[40,35,4]$, and $[41,36,4]$. Later accessible classification results cover different dimensions, and the inaccessible genetic-algorithm paper has no public parameter-level resolution signal for these cases."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": [
+      "cryptanalysis.side-channel"
+    ],
+    "tags": [
+      "lcd-codes",
+      "quaternary-codes",
+      "minimum-distance",
+      "hermitian-duality",
+      "side-channel-countermeasures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Araya--Harada--Ishizuka--Tanaka, quaternary codimension-five LCD exceptions",
+        "locator": "Theorem 32 and Remark 33, journal p. 8768",
+        "doi": "10.1109/TIT.2024.3483218",
+        "url": "https://doi.org/10.1109/TIT.2024.3483218"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2024-10-18",
+      "kind": "source_statement",
+      "summary": "The TIT source isolates five quaternary Hermitian codimension-five lengths where the optimum minimum distance remains either 3 or 4.",
+      "citation_labels": [
+        "Araya--Harada--Ishizuka--Tanaka, quaternary codimension-five LCD exceptions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "binary-euclidean-lcd-codimension-seven",
+      "ternary-euclidean-lcd-codimension-six"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

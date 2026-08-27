@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.2.0",
+  "id": "debruijn-sparse-extension-failure",
+  "group_id": "li-lin-partial-cycle-debruijn-search",
+  "title": "Failure probability of sparse partial-cycle extensions",
+  "summary": "Determine the probability that the sparse partial-cycle algorithm cannot extend an acyclic degree-$(d-1)$ structure at degree $d$.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the source's sparse variant of Algorithm 2, restrict the algebraic normal form to at most $k$ terms of every degree. For each admissible order $n$, extension degree $d$, cap $k$, and attempt cutoff $b$ when imposed, determine exactly or asymptotically the probability that the algorithm fails to find a proper coefficient vector $\\alpha_d$ extending an acyclic partial cycle structure $C^{[\\le d-1]}$ to an acyclic $C^{[\\le d]}$."
+  },
+  "scope": {
+    "domain": "Randomized sparse partial-cycle extensions in de Bruijn sequence search",
+    "assumptions": [
+      "Algorithm 2 uses the source's random-choice model",
+      "The characteristic function has at most $k$ terms of each degree",
+      "A proper $\\alpha_d$ preserves acyclicity through degree $d$",
+      "The modified experiment may abandon a branch after $b$ unsuccessful attempts"
+    ],
+    "parameters": [
+      "order $n$",
+      "extension degree $d$",
+      "per-degree term cap $k$",
+      "attempt cutoff $b$",
+      "incoming partial cycle structure"
+    ],
+    "unresolved_remainder": "No inspected later result gives a general exact probability, a nontrivial uniform bound, or a complete asymptotic law for this conditional sparse-extension failure event."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.stream-ciphers",
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "de-bruijn-sequences",
+      "feedback-shift-registers",
+      "randomized-algorithms",
+      "failure-probability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Lin, sparse partial-cycle extension failure",
+        "locator": "Section VII, sparse search-space analysis, journal p. 607",
+        "doi": "10.1109/TIT.2022.3201519",
+        "url": "https://doi.org/10.1109/TIT.2022.3201519"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-08-25",
+      "kind": "source_statement",
+      "summary": "The source states that sparse term restrictions can make a degree extension fail and that the probability of this failure is unknown.",
+      "citation_labels": [
+        "Li--Lin, sparse partial-cycle extension failure"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "debruijn-partial-cycle-exact-qd",
+      "debruijn-partial-cycle-qmax-bound",
+      "debruijn-sparse-characteristic-density"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "debruijn-sparse-characteristic-density",
+  "group_id": "li-lin-partial-cycle-debruijn-search",
+  "title": "Density of sparse de Bruijn characteristic functions",
+  "summary": "Determine the density of de Bruijn generators among characteristic functions having a uniform per-degree cap on their algebraic-normal-form terms.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For admissible $n$ and $k$, let $\\mathcal S_{n,k}$ contain the Boolean functions $$f(x_0,\\ldots,x_n)=x_0+g(x_1,\\ldots,x_{n-1})+x_n$$ for which the algebraic normal form of $g$ has at most $k$ monomials of each degree. Determine, exactly or with a complete asymptotic characterization, the density $$\\frac{|\\{f\\in\\mathcal S_{n,k}:f\\text{ generates a de Bruijn sequence}\\}|}{|\\mathcal S_{n,k}|}.$$"
+  },
+  "scope": {
+    "domain": "Sparse Boolean characteristic functions of binary de Bruijn sequences",
+    "assumptions": [
+      "$f=x_0+g(x_1,\\ldots,x_{n-1})+x_n$ follows the source convention",
+      "For every degree, $g$ contains at most $k$ algebraic-normal-form monomials",
+      "The numerator counts functions that generate de Bruijn sequences"
+    ],
+    "parameters": [
+      "de Bruijn order $n$",
+      "per-degree term cap $k$",
+      "exact or asymptotic density"
+    ],
+    "unresolved_remainder": "For general admissible $(n,k)$, neither the exact density nor a complete asymptotic law is known. Later work on linear parts, second-highest degree, or total term count does not determine any instance of the simultaneous per-degree-cap density."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.stream-ciphers",
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "de-bruijn-sequences",
+      "feedback-shift-registers",
+      "sparse-boolean-functions",
+      "density"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Lin, sparse de Bruijn characteristic-function density",
+        "locator": "Section VII, sparse search-space analysis, journal p. 607",
+        "doi": "10.1109/TIT.2022.3201519",
+        "url": "https://doi.org/10.1109/TIT.2022.3201519"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-08-25",
+      "kind": "source_statement",
+      "summary": "The source explicitly states that the proportion of de Bruijn characteristic functions in the per-degree sparse search space is unknown.",
+      "citation_labels": [
+        "Li--Lin, sparse de Bruijn characteristic-function density"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "debruijn-partial-cycle-exact-qd",
+      "debruijn-partial-cycle-qmax-bound",
+      "debruijn-sparse-extension-failure"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

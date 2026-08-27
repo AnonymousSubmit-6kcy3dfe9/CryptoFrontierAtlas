@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mesnager-quadrinomial-derived-involution-nonlinearity",
+  "group_id": "mesnager-yuan-zheng-conjecture12",
+  "title": "Nonlinearity of the Conjecture 12 fiber involution",
+  "summary": "Determine whether the fixed-point-free involution pairing the two preimages of the Conjecture 12 quadrinomial is nonlinear for every family parameter.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each source-admissible positive integer $m$, put $n=2m+1$ and let $F_m(x)=x+x^3+x^{2^{m+1}}+x^{2^{m+1}+2}$ on $\\mathbb F_{2^n}$. For every $x$, let $I_m(x)\\ne x$ be the other element of the two-point fiber of $F_m$, so that $F_m(I_m(x))=F_m(x)$. Prove that the source-derived involution $I_m$ has algebraic degree greater than one for every admissible $m$, or exhibit an admissible member for which $I_m$ is affine."
+  },
+  "scope": {
+    "domain": "Fixed-point-free finite-field involutions derived from two-to-one mappings for cryptographic S-box design",
+    "assumptions": [
+      "$n=2m+1$ with $m$ in the source-admissible positive-integer range",
+      "$F_m$ is the exact Conjecture 12 quadrinomial",
+      "$I_m$ exchanges the two elements in each nonempty fiber of $F_m$",
+      "Nonlinear means non-affine, equivalently algebraic degree greater than one"
+    ],
+    "parameters": [
+      "integer $m$",
+      "odd extension degree $n=2m+1$",
+      "fiber involution $I_m$"
+    ],
+    "unresolved_remainder": "A later theorem proves that $F_m$ is two-to-one, but two-to-one fiber structure does not imply that the induced fixed-point-free involution is nonlinear. No inspected later result determines the algebraic degree of $I_m$ over the full family."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "finite-fields",
+      "two-to-one-mappings",
+      "involutions",
+      "nonlinearity",
+      "sboxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mesnager--Yuan--Zheng, Conjecture 12",
+        "locator": "Conjecture 12, journal p. 1325",
+        "doi": "10.1109/TIT.2022.3211329",
+        "url": "https://doi.org/10.1109/TIT.2022.3211329"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-03",
+      "kind": "source_statement",
+      "summary": "Conjecture 12 asserts that the involution obtained by exchanging the two preimages in each fiber of the displayed quadrinomial is nonlinear.",
+      "citation_labels": [
+        "Mesnager--Yuan--Zheng, Conjecture 12"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "mesnager-quadrinomial-trace-zero-injectivity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

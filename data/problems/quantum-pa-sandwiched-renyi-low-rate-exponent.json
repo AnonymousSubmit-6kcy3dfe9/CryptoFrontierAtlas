@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-pa-sandwiched-renyi-low-rate-exponent",
+  "group_id": "li-yao-hayashi-quantum-pa-exponents",
+  "title": "Low-rate sandwiched-Renyi exponent for quantum privacy amplification",
+  "summary": "Determine the exact low-rate privacy-amplification exponent for sandwiched-Renyi orders strictly between one and two.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $s\\in(0,1]$ and let $\\widetilde D_{1+s}$ denote the sandwiched-Renyi divergence used by the source. For an admissible cq source $\\rho_{XE}$ and hash rate $R<R_{\\mathrm{critical}}$, determine the exact optimal exponent of $$\\widetilde D_{1+s}\\!\\left(\\rho_{Z_nE^n}^{f_n}\\middle\\|\\tau_{Z_n}\\otimes\\rho_E^{\\otimes n}\\right)$$ under the source hashing model. Establish matching bounds for every $s\\in(0,1]$ and every source-admissible low rate."
+  },
+  "scope": {
+    "domain": "Quantum privacy amplification under sandwiched-Renyi divergence in the low-rate regime",
+    "assumptions": [
+      "$\\rho_{XE}$ and the hash model follow source Theorem 5",
+      "The sandwiched-Renyi order is $1+s$ with $s\\in(0,1]$",
+      "$R<R_{\\mathrm{critical}}$"
+    ],
+    "parameters": [
+      "cq state $\\rho_{XE}$",
+      "rate $R$",
+      "critical rate $R_{\\mathrm{critical}}$",
+      "order parameter $s\\in(0,1]$"
+    ],
+    "unresolved_remainder": "The 2026 preprint gives an exact reliability function for sandwiched-Renyi orders $\\alpha\\in[2,\\infty)$, settling the boundary $\\alpha=2$ of the source range. The source problem remains open for every $\\alpha=1+s\\in(1,2)$ in the low-rate regime."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-privacy-amplification",
+      "security-exponents",
+      "sandwiched-renyi",
+      "critical-rate",
+      "quantum-side-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Yao--Hayashi, quantum privacy-amplification exponent problems",
+        "locator": "Conclusion, journal p. 1694",
+        "doi": "10.1109/TIT.2022.3217671",
+        "url": "https://doi.org/10.1109/TIT.2022.3217671"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Li--Qiu--Zhang, sandwiched-Renyi reliability functions",
+        "locator": "Theorem 14 and Conclusion, preprint pp. 24-30",
+        "eprint": "arXiv:2607.27015",
+        "url": "https://arxiv.org/abs/2607.27015"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-28",
+      "kind": "source_statement",
+      "summary": "The source derives the exponent at and above the critical rate and explicitly leaves the complementary low-rate sandwiched-Renyi exponent open.",
+      "citation_labels": [
+        "Li--Yao--Hayashi, quantum privacy-amplification exponent problems"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "kind": "public_result",
+      "summary": "A later preprint proves exact quantum privacy-amplification reliability functions for sandwiched-Renyi orders at least two, including the source range's endpoint at order two.",
+      "citation_labels": [
+        "Li--Qiu--Zhang, sandwiched-Renyi reliability functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-pa-trace-distance-exponent",
+      "quantum-pa-purified-distance-low-rate-exponent",
+      "quantum-pa-relative-entropy-low-rate-exponent"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

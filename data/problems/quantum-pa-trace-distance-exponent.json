@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-pa-trace-distance-exponent",
+  "group_id": "li-yao-hayashi-quantum-pa-exponents",
+  "title": "Exact trace-distance exponent for quantum privacy amplification",
+  "summary": "Determine the exact asymptotic security exponent of privacy amplification against quantum side information under the operational trace-distance criterion.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\rho_{XE}$ be an admissible finite-dimensional classical-quantum state and let $f_n:X^n\\to Z_n$ be a hash with $n^{-1}\\log|Z_n|\\to R$. Writing $\\rho_{Z_nE^n}^{f_n}$ for the hashed state and $\\tau_{Z_n}$ for the uniform state, determine the exact optimal exponent of $$\\min_{f_n}\\left\\|\\rho_{Z_nE^n}^{f_n}-\\tau_{Z_n}\\otimes\\rho_E^{\\otimes n}\\right\\|_1$$ for every source-admissible $\\rho_{XE}$ and extraction rate $R$. Establish matching achievability and converse formulas under the source hashing model."
+  },
+  "scope": {
+    "domain": "Quantum-proof privacy amplification from i.i.d. classical-quantum sources",
+    "assumptions": [
+      "$\\rho_{XE}$ is a finite-dimensional classical-quantum state",
+      "The hash family and extraction-rate convention are those of the TIT source",
+      "Security is measured by trace distance from a uniform key independent of $E^n$"
+    ],
+    "parameters": [
+      "cq state $\\rho_{XE}$",
+      "block length $n$",
+      "extraction rate $R$",
+      "hash $f_n$"
+    ],
+    "unresolved_remainder": "The 2026 preprint improves one-shot achievability and converse bounds and obtains exact second-order asymptotics, but its error-exponent upper and lower bounds still need not match. The exact trace-distance exponent remains unknown for the full source and rate domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-privacy-amplification",
+      "security-exponents",
+      "trace-distance",
+      "quantum-side-information",
+      "hashing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Yao--Hayashi, quantum privacy-amplification exponent problems",
+        "locator": "Conclusion, journal p. 1694",
+        "doi": "10.1109/TIT.2022.3217671",
+        "url": "https://doi.org/10.1109/TIT.2022.3217671"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Regula--Tomamichel, tight one-shot quantum privacy amplification",
+        "locator": "Theorem 16, Corollary 25, and Discussion, preprint pp. 29, 38, and 42",
+        "eprint": "arXiv:2603.04493",
+        "url": "https://arxiv.org/abs/2603.04493"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-10-28",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks for the corresponding quantum privacy-amplification exponent when insecurity is measured by trace distance.",
+      "citation_labels": [
+        "Li--Yao--Hayashi, quantum privacy-amplification exponent problems"
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "kind": "public_result",
+      "summary": "A later preprint gives tighter one-shot bounds, an improved achievable exponent and a general converse, while explicitly retaining a gap between the exponent bounds.",
+      "citation_labels": [
+        "Regula--Tomamichel, tight one-shot quantum privacy amplification"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quantum-pa-purified-distance-low-rate-exponent",
+      "quantum-pa-relative-entropy-low-rate-exponent",
+      "quantum-pa-sandwiched-renyi-low-rate-exponent"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

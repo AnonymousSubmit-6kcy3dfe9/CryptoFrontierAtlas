@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-bent-negabent-all-components-outside-mmsharp",
+  "group_id": "pasalic-kudin-polujan-pott-vectorial-bent-negabent",
+  "title": "Vectorial bent-negabent functions entirely outside MM-sharp",
+  "summary": "Determine whether a vectorial bent-negabent function can have every nonzero component outside the completed Maiorana--McFarland class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an admissible pair $(m,k)$ and a vectorial bent-negabent function $F:\\mathbb F_2^{2m}\\to\\mathbb F_2^k$ such that, for every $0\\ne\\lambda\\in\\mathbb F_2^k$, the Boolean component $F_\\lambda(x)=\\lambda\\cdot F(x)$ lies outside the completed Maiorana--McFarland class $\\mathcal{MM}^{\\#}$? Construct and verify one such $F$, or prove nonexistence."
+  },
+  "scope": {
+    "domain": "Vectorial bent-negabent Boolean functions and completed-class exclusion",
+    "assumptions": [
+      "Every nonzero component $F_\\lambda$ is bent-negabent",
+      "Every nonzero component is outside $\\mathcal{MM}^{\\#}$",
+      "$m$ and $k$ satisfy the source's admissible vectorial bent-negabent dimension conditions"
+    ],
+    "parameters": [
+      "half input dimension $m$",
+      "output dimension $k$",
+      "vectorial function $F$",
+      "nonzero component mask $\\lambda$"
+    ],
+    "unresolved_remainder": "Later papers construct scalar bent functions outside $\\mathcal{MM}^{\\#}$ and vectorial examples with only some excluded components. No inspected result gives one vectorial bent-negabent function whose every nonzero component is outside the completed class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "vectorial-bent-negabent",
+      "maiorana-mcfarland",
+      "component-functions",
+      "class-exclusion",
+      "bent-functions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems",
+        "locator": "Open Problem IV.1, Remark IV.2, and conclusion, journal pp. 2710-2712",
+        "doi": "10.1109/TIT.2022.3226571",
+        "url": "https://doi.org/10.1109/TIT.2022.3226571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2022-12-02",
+      "kind": "source_statement",
+      "summary": "The conclusion identifies construction of a vectorial bent-negabent function with all nonzero components outside the completed Maiorana--McFarland class as the next difficult open problem.",
+      "citation_labels": [
+        "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "maximal-complete-permutation-space-nonlinear-member",
+      "permutation-translates-linearized-threshold"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
