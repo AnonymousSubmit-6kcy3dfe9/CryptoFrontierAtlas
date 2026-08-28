@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "helleseth-exceptional-cyclotomic-cardinality",
+  "group_id": "wu-feng-li-helleseth-exceptional-cyclotomic-conjecture",
+  "title": "Exceptional cyclotomic cardinality bound for complete permutation exponents",
+  "summary": "Determine whether the exceptional cyclotomic subset in the Wu--Feng--Li--Helleseth construction always has cardinality below $p^t-2$.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Under the source hypotheses, let $r+1$ be an odd prime with $p^{r/2}\\equiv-1\\pmod{r+1}$, let $p^r=k(r+1)+1$, let $t$ be an odd prime with $\\gcd(t,r)=1$, let $\\gcd(m,r+1)=1$, $1\\le l\\le r$, and assume $ktlm\\equiv-2\\pmod{r+1}$. For the source cyclotomic subset $C_{-(lm)^{-1}}\\subseteq\\mathbb F_{p^t}^{*}\\setminus\\{-1\\}$, prove $|C_{-(lm)^{-1}}|<p^t-2$ for every admissible tuple, equivalently prove the source irreducible-polynomial formulation, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Cyclotomic subsets and irreducible-polynomial criteria underlying m-sequence cross-correlation",
+    "assumptions": [
+      "All prime, congruence, coprimality, and range conditions stated in the source Conjectures 2 and 3 hold",
+      "The set $C_i$ uses the source definition"
+    ],
+    "parameters": [
+      "primes $p,r+1,t$",
+      "$k,m,l$",
+      "cyclotomic index $-(lm)^{-1}$"
+    ],
+    "unresolved_remainder": "No inspected later primary result settles the strict cardinality bound over the full exceptional-congruence parameter family or its equivalent irreducible-polynomial existence statement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "design.stream-ciphers"
+    ],
+    "tags": [
+      "finite-fields",
+      "cyclotomic-sets",
+      "irreducible-polynomials",
+      "m-sequences",
+      "cross-correlation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wu--Feng--Li--Helleseth, Conjecture 2/3 exceptional cyclotomic cardinality",
+        "locator": "Conjectures 2 and 3, journal pp. 4041-4042",
+        "doi": "10.1109/TIT.2023.3238994",
+        "url": "https://doi.org/10.1109/TIT.2023.3238994"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-06-01",
+      "kind": "source_statement",
+      "summary": "Computer experiments lead to Conjecture 2, and the source states an equivalent irreducible-polynomial Conjecture 3.",
+      "citation_labels": [
+        "Wu--Feng--Li--Helleseth, Conjecture 2/3 exceptional cyclotomic cardinality"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

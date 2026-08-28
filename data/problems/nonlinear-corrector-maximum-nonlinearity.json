@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-corrector-maximum-nonlinearity",
+  "group_id": "zhang-nonlinear-corrector-open-problems",
+  "title": "Maximum nonlinearity of nonlinear correctors",
+  "summary": "Determine the exact maximum nonlinearity of an $(n,m,t)$-corrector for every admissible parameter tuple.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every admissible $(n,m,t)$, let $N_{\\max}(n,m,t)$ be the largest nonlinearity of an $(n,m,t)$-corrector under the source bias-valuation definition. Determine $N_{\\max}(n,m,t)$ by proving a tight upper bound and constructing correctors attaining it for every admissible tuple."
+  },
+  "scope": {
+    "domain": "Nonlinear post-processing correctors for true random-number generators with cryptographic nonlinearity objectives",
+    "assumptions": [
+      "Correctors use the source bias-valuation definition",
+      "The input dimension, output dimension, and correction order are $(n,m,t)$",
+      "The optimization is over the source-admissible corrector family"
+    ],
+    "parameters": [
+      "input dimension $n$",
+      "output dimension $m$",
+      "correction order $t$",
+      "nonlinearity"
+    ],
+    "unresolved_remainder": "No inspected later result gives a tight maximum for the source corrector family over every admissible $(n,m,t)$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "correctors",
+      "nonlinearity",
+      "resilient-functions",
+      "true-random-generators"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang, nonlinear-corrector open problems",
+        "locator": "Open Problems 1 and 2, journal p. 6680",
+        "doi": "10.1109/TIT.2023.3241899",
+        "url": "https://doi.org/10.1109/TIT.2023.3241899"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-10-01",
+      "kind": "source_statement",
+      "summary": "The source's first open problem asks for the best nonlinearities of $(n,m,t)$-correctors.",
+      "citation_labels": [
+        "Zhang, nonlinear-corrector open problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nonlinear-corrector-correction-order-improvement"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

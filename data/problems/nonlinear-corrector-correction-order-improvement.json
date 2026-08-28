@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-corrector-correction-order-improvement",
+  "group_id": "zhang-nonlinear-corrector-open-problems",
+  "title": "Correction-order improvement for nonlinear correctors",
+  "summary": "Determine whether a nonlinear corrector can strictly exceed the source's best known correction-order constructions for fixed $(n,m)$.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Decide whether there exists an admissible pair $(n,m)$ and a nonlinear $(n,m)$-function that is an $(n,m,t)$-corrector with correction order $t$ strictly larger than every correction order achieved by the source's previously known nonlinear construction methods for that pair; if not, prove those benchmark bounds optimal for all admissible $(n,m)$."
+  },
+  "scope": {
+    "domain": "Nonlinear corrector construction for cryptographic post-processing of true random-number generators",
+    "assumptions": [
+      "The corrector and correction-order definitions are those of the TIT source",
+      "The witness must be nonlinear",
+      "The benchmark is the source's previously known construction families"
+    ],
+    "parameters": [
+      "input dimension $n$",
+      "output dimension $m$",
+      "correction order $t$"
+    ],
+    "unresolved_remainder": "No inspected later result exhibits a strict correction-order improvement over the source benchmark or proves the benchmark universally optimal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "correctors",
+      "correction-order",
+      "nonlinearity",
+      "true-random-generators"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang, nonlinear-corrector open problems",
+        "locator": "Open Problems 1 and 2, journal p. 6680",
+        "doi": "10.1109/TIT.2023.3241899",
+        "url": "https://doi.org/10.1109/TIT.2023.3241899"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-10-01",
+      "kind": "source_statement",
+      "summary": "The source's second open problem asks for a nonlinear $(n,m)$ function with correction order better than known constructions.",
+      "citation_labels": [
+        "Zhang, nonlinear-corrector open problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nonlinear-corrector-maximum-nonlinearity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "unknown-coefficient-icg-lattice-recovery",
+  "group_id": "li-zhang-liu-icg-future-directions",
+  "title": "Lattice recovery of an inversive congruential generator with an unknown coefficient",
+  "summary": "Determine whether the source MIHNP lattice technique recovers an inversive congruential generator when coefficient $a$ or $b$ is unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source leakage model and inversive congruential recurrence $v_{i+1}=a v_i^{-1}+b\\pmod p$, establish, separately for (i) unknown $a$ with known $b$ and (ii) unknown $b$ with known $a$, a polynomial-time lattice recovery attack with explicit leakage, sample, success-probability, and complexity bounds, or prove that the source technique cannot extend under those assumptions."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of inversive congruential generators with partial output leakage",
+    "assumptions": [
+      "The recurrence and leakage model are those of the TIT source",
+      "Exactly one of $a$ or $b$ is unknown",
+      "The goal is recovery of the hidden state or unknown generator parameter"
+    ],
+    "parameters": [
+      "prime modulus $p$",
+      "unknown coefficient choice",
+      "leakage width",
+      "sample count",
+      "lattice dimension"
+    ],
+    "unresolved_remainder": "Neither the unknown-$a nor unknown-$b instance has a source-compatible lattice recovery theorem or impossibility result after the 2023 statement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "inversive-congruential-generator",
+      "mihnp",
+      "lattice-attack",
+      "partial-leakage"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Zhang--Liu, unknown-coefficient ICG future direction",
+        "locator": "Future Direction 1, journal p. 5354",
+        "doi": "10.1109/TIT.2023.3263485",
+        "url": "https://doi.org/10.1109/TIT.2023.3263485"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-08-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks whether its technique can solve the two unknown-coefficient ICG cases.",
+      "citation_labels": [
+        "Li--Zhang--Liu, unknown-coefficient ICG future direction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-congruential-generator-lattice-recovery"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

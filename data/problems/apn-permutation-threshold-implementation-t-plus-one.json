@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-permutation-threshold-implementation-t-plus-one",
+  "group_id": "bilgin-nikova-turan-t-plus-one-threshold-conjectures",
+  "title": "Threshold implementations with $t+1$ shares for APN permutations",
+  "summary": "Determine whether any APN permutation of algebraic degree $t$ admits a $t+1$-share threshold implementation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F$ be an APN permutation of algebraic degree $t$ over a binary field. Decide whether there exists a threshold implementation of $F$ with exactly $t+1$ shares satisfying correctness, non-completeness, and uniformity in the source model. Prove nonexistence for every such APN permutation, or exhibit and verify a counterexample."
+  },
+  "scope": {
+    "domain": "APN permutation S-boxes and their side-channel threshold implementations",
+    "assumptions": [
+      "$F$ is an APN permutation",
+      "The algebraic degree is $t$",
+      "Threshold implementation uses the source correctness, non-completeness, and uniformity requirements"
+    ],
+    "parameters": [
+      "field dimension",
+      "APN permutation",
+      "algebraic degree $t$",
+      "share count"
+    ],
+    "unresolved_remainder": "No inspected later result proves or refutes the universal APN $t+1$-share threshold-implementation conjecture."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "cryptanalysis.side-channel",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn",
+      "threshold-implementation",
+      "masking",
+      "sboxes",
+      "differential-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Bilgin--Nikova--Turan, threshold-implementation conjectures",
+        "locator": "Conjectures 1 and 2, journal p. 6709",
+        "doi": "10.1109/TIT.2023.3287534",
+        "url": "https://doi.org/10.1109/TIT.2023.3287534"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-10-01",
+      "kind": "source_statement",
+      "summary": "The source states that no APN permutation of degree $t$ admits a threshold implementation with $t+1$ shares.",
+      "citation_labels": [
+        "Bilgin--Nikova--Turan, threshold-implementation conjectures"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "power-permutation-threshold-implementation-t-plus-one"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

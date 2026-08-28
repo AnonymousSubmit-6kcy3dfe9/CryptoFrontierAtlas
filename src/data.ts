@@ -107,6 +107,14 @@ import recordQuantumPaSandwichedRenyiLowRateExponent from '../data/problems/quan
 import recordQuantumPaTraceDistanceExponent from '../data/problems/quantum-pa-trace-distance-exponent.json';
 import recordRunSequenceTupleMultiplicityLimitLaw from '../data/problems/run-sequence-tuple-multiplicity-limit-law.json';
 import recordVectorialBentNegabentAllComponentsOutsideMmsharp from '../data/problems/vectorial-bent-negabent-all-components-outside-mmsharp.json';
+import recordApnPermutationThresholdImplementationTPlusOne from '../data/problems/apn-permutation-threshold-implementation-t-plus-one.json';
+import recordCrookedIndifferentiablePermutationSponge from '../data/problems/crooked-indifferentiable-permutation-sponge.json';
+import recordHellesethExceptionalCyclotomicCardinality from '../data/problems/helleseth-exceptional-cyclotomic-cardinality.json';
+import recordNonlinearCorrectorCorrectionOrderImprovement from '../data/problems/nonlinear-corrector-correction-order-improvement.json';
+import recordNonlinearCorrectorMaximumNonlinearity from '../data/problems/nonlinear-corrector-maximum-nonlinearity.json';
+import recordPowerPermutationThresholdImplementationTPlusOne from '../data/problems/power-permutation-threshold-implementation-t-plus-one.json';
+import recordQuadraticCongruentialGeneratorLatticeRecovery from '../data/problems/quadratic-congruential-generator-lattice-recovery.json';
+import recordUnknownCoefficientIcgLatticeRecovery from '../data/problems/unknown-coefficient-icg-lattice-recovery.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -282,6 +290,14 @@ export const problems = [
   recordQuantumPaTraceDistanceExponent,
   recordRunSequenceTupleMultiplicityLimitLaw,
   recordVectorialBentNegabentAllComponentsOutsideMmsharp,
+  recordApnPermutationThresholdImplementationTPlusOne,
+  recordCrookedIndifferentiablePermutationSponge,
+  recordHellesethExceptionalCyclotomicCardinality,
+  recordNonlinearCorrectorCorrectionOrderImprovement,
+  recordNonlinearCorrectorMaximumNonlinearity,
+  recordPowerPermutationThresholdImplementationTPlusOne,
+  recordQuadraticCongruentialGeneratorLatticeRecovery,
+  recordUnknownCoefficientIcgLatticeRecovery,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

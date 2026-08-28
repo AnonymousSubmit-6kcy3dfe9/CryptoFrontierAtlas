@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "crooked-indifferentiable-permutation-sponge",
+  "group_id": "bhattacharyya-nandi-raychaudhuri-permutation-sponge",
+  "title": "Crooked indifferentiability of a permutation-based sponge",
+  "summary": "Determine whether the source sponge remains crooked-indifferentiable when its random-permutation primitive and distinguisher support inverse queries.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $P$ be a random permutation and let $widetilde P$ be an admissible subverted implementation in the source crooked-indifferentiability game. For the source-compatible sponge construction using $widetilde P$, prove crooked indifferentiability from a random oracle for every efficient subversion and distinguisher with forward and inverse access under the source query, rate, capacity, and subversion bounds, or exhibit a compatible subversion and distinguisher that separates the construction."
+  },
+  "scope": {
+    "domain": "Permutation-based sponge hash constructions under adversarial primitive subversion",
+    "assumptions": [
+      "The construction is the source sponge mode",
+      "The ideal primitive is a random permutation",
+      "The subverted implementation and distinguisher may make forward and inverse primitive queries",
+      "Security is the source crooked-indifferentiability experiment"
+    ],
+    "parameters": [
+      "security parameter",
+      "sponge rate",
+      "sponge capacity",
+      "query bound",
+      "subversion fraction"
+    ],
+    "unresolved_remainder": "No inspected later result proves or refutes the complete permutation-sponge crooked-indifferentiability predicate. Ordinary indifferentiability results and crooked Feistel constructions use an honest permutation or a different construction/primitive role and do not cover this remainder."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "sponge",
+      "crooked-indifferentiability",
+      "subversion",
+      "random-permutation",
+      "inverse-queries"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Bhattacharyya--Nandi--Raychaudhuri, crooked-indifferentiability future problem",
+        "locator": "Section VI-B, journal p. 3314",
+        "doi": "10.1109/TIT.2023.3238115",
+        "url": "https://doi.org/10.1109/TIT.2023.3238115"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-01-19",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies crooked indifferentiability of a sponge in the random-permutation model as its first natural research problem after the inverse-query obstruction.",
+      "citation_labels": [
+        "Bhattacharyya--Nandi--Raychaudhuri, crooked-indifferentiability future problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-congruential-generator-lattice-recovery",
+  "group_id": "li-zhang-liu-icg-future-directions",
+  "title": "Lattice recovery for the Bauer-linked quadratic congruential generator",
+  "summary": "Determine whether the source MIHNP/ICG lattice method extends to state recovery for the geometrically linked quadratic congruential generator.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the quadratic congruential generator linked geometrically to the source inversive congruential generator in Bauer et al., under a compatible partial-output leakage model, give and prove a lattice-based state-recovery attack with explicit leakage, sample, success-probability, and complexity bounds, or prove that the source technique cannot apply."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of quadratic congruential generators",
+    "assumptions": [
+      "The generator and geometric link are those of Bauer et al., Section 3.4",
+      "The leakage model is compatible with the source ICG analysis"
+    ],
+    "parameters": [
+      "prime modulus",
+      "quadratic-generator parameters",
+      "leakage width",
+      "sample count",
+      "lattice dimension"
+    ],
+    "unresolved_remainder": "No inspected later result analyzes the Bauer-linked quadratic generator with the source leakage and recovery predicate."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quadratic-congruential-generator",
+      "mihnp",
+      "lattice-attack",
+      "state-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Zhang--Liu, quadratic-generator future direction",
+        "locator": "Future Direction 2, journal p. 5354",
+        "doi": "10.1109/TIT.2023.3263485",
+        "url": "https://doi.org/10.1109/TIT.2023.3263485"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-27"
+  },
+  "progress": [
+    {
+      "date": "2023-08-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether its ICG technique can analyze and recover the state of the geometrically linked quadratic generator.",
+      "citation_labels": [
+        "Li--Zhang--Liu, quadratic-generator future direction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "unknown-coefficient-icg-lattice-recovery"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
