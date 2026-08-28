@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "goldreich-gad-gadec-asymptotic-complexity",
+  "group_id": "yang-guo-johansson-lentmaier-goldreich-prg",
+  "title": "Asymptotic complexity of GAD and GADec on Goldreich PRGs",
+  "summary": "Derive tight asymptotic complexities for the source GAD and GADec attacks on its XOR-AND and XOR-MAJ predicate families.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every XOR-AND and XOR-MAJ predicate family considered by the source, derive and rigorously justify the asymptotic attack complexity of both the source guess-and-determine (GAD) and guess-and-decode (GADec) attacks. State the seed-length, stretch, locality, sample, guessing, and success regime needed to interpret each asymptotic bound."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of Goldreich local pseudorandom generators",
+    "assumptions": [
+      "The PRG and random-neighborhood model are those of the source",
+      "The attacked predicates are the source XOR-AND and XOR-MAJ families",
+      "The algorithms under analysis are the source GAD and GADec attacks"
+    ],
+    "parameters": [
+      "seed length n",
+      "stretch",
+      "predicate locality and nonlinear arity",
+      "number of guesses"
+    ],
+    "unresolved_remainder": "No rigorous asymptotic complexity analysis was found for the source GAD and GADec attacks across the considered XOR-AND and XOR-MAJ predicate families; later work analyzes a different attack and therefore does not settle this task."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "design.others",
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "goldreich-prg",
+      "guess-and-decode",
+      "guess-and-determine",
+      "local-functions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Yang--Guo--Johansson--Lentmaier, Goldreich PRG attack asymptotics",
+        "locator": "Section V, journal p. 1350",
+        "doi": "10.1109/TIT.2021.3128315",
+        "url": "https://doi.org/10.1109/TIT.2021.3128315"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-02-01",
+      "kind": "source_statement",
+      "summary": "The source leaves rigorous asymptotic analysis of its GAD and GADec attacks on the broader XOR-AND and XOR-MAJ families for future work.",
+      "citation_labels": [
+        "Yang--Guo--Johansson--Lentmaier, Goldreich PRG attack asymptotics"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "applebaum-universal-local-function-inversion"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

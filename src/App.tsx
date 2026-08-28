@@ -48,7 +48,8 @@ const statusTone: Record<Status, string> = {
 };
 
 const progressLabels: Record<string, string> = {
-  source_statement: 'Source statement',
+  source_statement: 'Original statement',
+  restatement: 'Restatement',
   prior_result: 'Prior result',
   public_result: 'Public result',
   independent_result: 'Independent result',
@@ -97,11 +98,11 @@ function classificationIds(problem: Problem) {
 }
 
 function matchesArea(problem: Problem, area: string) {
-  return area === 'all' || classificationIds(problem).some((id) => areaOf(id) === area);
+  return area === 'all' || areaOf(problem.classification.primary) === area;
 }
 
 function matchesDomain(problem: Problem, domain: string) {
-  return domain === 'all' || classificationIds(problem).some((id) => domainOf(id) === domain);
+  return domain === 'all' || domainOf(problem.classification.primary) === domain;
 }
 
 function ClassificationPath({ id }: { id: string }) {
@@ -254,7 +255,7 @@ function App() {
     return [...problems]
       .filter((problem) => matchesArea(problem, area))
       .filter((problem) => matchesDomain(problem, domain))
-      .filter((problem) => category === 'all' || classificationIds(problem).includes(category))
+      .filter((problem) => category === 'all' || problem.classification.primary === category)
       .filter((problem) => status === 'all' || problem.status.public_mathematical_status === status)
       .filter((problem) => {
         if (!normalized) return true;
@@ -413,7 +414,7 @@ function App() {
                     {isExpanded && (
                       <div className="topic-child-list" id={childListId} role="group" aria-label={`${item.label} subcategories`}>
                         {item.children.map((child) => {
-                          const childCount = problems.filter((problem) => classificationIds(problem).includes(child.id)).length;
+                          const childCount = problems.filter((problem) => problem.classification.primary === child.id).length;
                           const isSelected = category === child.id;
                           return (
                             <button
@@ -535,7 +536,9 @@ function EmptyDetail() {
 }
 
 function Detail({ problem, onClose }: { problem: Problem; onClose: () => void }) {
-  const sourceCitation = problem.source.citations[0];
+  const sourceCitation = problem.source.citations.find((citation) => citation.role === 'original_source')
+    ?? problem.source.citations.find((citation) => citation.role === 'restatement')
+    ?? problem.source.citations[0];
   const relationGroups = [
     { label: 'Related questions', ids: problem.relations.related },
     { label: 'Supersedes', ids: problem.relations.supersedes },
@@ -576,8 +579,9 @@ function Detail({ problem, onClose }: { problem: Problem; onClose: () => void })
           <div className="side-block source-block">
             <div className="section-kicker">Source</div>
             <div className="source-kind"><span>Source kind</span><strong>{sourceKindLabels[problem.source.kind] ?? readableEnum(problem.source.kind)}</strong></div>
+            <span className="metadata-label">{sourceCitation.role === 'original_source' ? 'Historical source' : 'Ingested restatement'}</span>
             <strong>{sourceCitation.label}</strong>
-            {sourceCitation.locator && <span>{sourceCitation.locator}</span>}
+            {sourceCitation.locator && <span className="source-citation-locator">{sourceCitation.locator}</span>}
             <CitationLinks citation={sourceCitation} iconSize={13} />
           </div>
           <div className="side-block evidence-block">
@@ -594,7 +598,7 @@ function Detail({ problem, onClose }: { problem: Problem; onClose: () => void })
             {problem.source.citations.map((citation) => (
               <div className="citation-entry" key={`${citation.role}-${citation.label}`}>
                 <strong>{citation.label}</strong>
-                <span>{citation.role.replaceAll('_', ' ')}{citation.locator ? ` · ${citation.locator}` : ''}</span>
+                <span>{citation.role === 'restatement' ? 'restatement' : citation.role.replaceAll('_', ' ')}{citation.locator ? ` · ${citation.locator}` : ''}</span>
                 <CitationLinks citation={citation} />
               </div>
             ))}
@@ -603,10 +607,10 @@ function Detail({ problem, onClose }: { problem: Problem; onClose: () => void })
             <div className="section-kicker"><Layers3 size={14} /> Classification</div>
             <span className="metadata-label">Primary category</span>
             <ClassificationPath id={problem.classification.primary} />
-            <span className="metadata-label">Secondary taxonomy</span>
+            <span className="metadata-label">Related research topics</span>
             {problem.classification.secondary.length > 0
               ? <div className="taxonomy-path-list">{problem.classification.secondary.map((id) => <ClassificationPath id={id} key={id} />)}</div>
-              : <span className="empty-metadata">No secondary assignment</span>}
+              : <span className="empty-metadata">No related research topics</span>}
             <span className="metadata-label metadata-label-spaced">Topics</span>
             <div className="tag-cloud">{problem.classification.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
           </div>

@@ -115,6 +115,16 @@ import recordNonlinearCorrectorMaximumNonlinearity from '../data/problems/nonlin
 import recordPowerPermutationThresholdImplementationTPlusOne from '../data/problems/power-permutation-threshold-implementation-t-plus-one.json';
 import recordQuadraticCongruentialGeneratorLatticeRecovery from '../data/problems/quadratic-congruential-generator-lattice-recovery.json';
 import recordUnknownCoefficientIcgLatticeRecovery from '../data/problems/unknown-coefficient-icg-lattice-recovery.json';
+import recordApplebaumUniversalLocalFunctionInversion from '../data/problems/applebaum-universal-local-function-inversion.json';
+import recordBooleanTwoBentSummandClassification from '../data/problems/boolean-two-bent-summand-classification.json';
+import recordDebruijnLinearComplexitySpectrum from '../data/problems/debruijn-linear-complexity-spectrum.json';
+import recordGoldreichGadGadecAsymptoticComplexity from '../data/problems/goldreich-gad-gadec-asymptotic-complexity.json';
+import recordIndicatorSumBentnessDualCharacterization from '../data/problems/indicator-sum-bentness-dual-characterization.json';
+import recordPerturbedInverseCDifferentialBoundAttainment from '../data/problems/perturbed-inverse-c-differential-bound-attainment.json';
+import recordQuadraticApnFixedSpaceExtensionDependence from '../data/problems/quadratic-apn-fixed-space-extension-dependence.json';
+import recordQuadraticApnMaximumLinearityBeyondEight from '../data/problems/quadratic-apn-maximum-linearity-beyond-eight.json';
+import recordRandomPermutationLinearCapacityChiSquare from '../data/problems/random-permutation-linear-capacity-chi-square.json';
+import recordTheorem8OutsideMsharpClassification from '../data/problems/theorem8-outside-msharp-classification.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -127,7 +137,7 @@ export type ArtifactRole = 'canonical_manuscript' | 'source_code' | 'verifier' |
 export type ArtifactVisibility = 'not_listed' | 'external_link' | 'repository_file';
 
 export interface Citation {
-  role: 'original_source' | 'prior_progress' | 'resolution' | 'independent_resolution';
+  role: 'original_source' | 'restatement' | 'prior_progress' | 'resolution' | 'independent_resolution';
   label: string;
   locator?: string;
   doi?: string;
@@ -154,6 +164,11 @@ export interface Problem {
   classification: { taxonomy_version: string; primary: string; secondary: string[]; tags: string[] };
   source: {
     kind: SourceKind;
+    provenance?: {
+      origin_status: 'confirmed' | 'unresolved';
+      method: 'explicit_cited_antecedent' | 'undetermined';
+      note?: string;
+    };
     citations: Citation[];
   };
   status: {
@@ -298,6 +313,16 @@ export const problems = [
   recordPowerPermutationThresholdImplementationTPlusOne,
   recordQuadraticCongruentialGeneratorLatticeRecovery,
   recordUnknownCoefficientIcgLatticeRecovery,
+  recordApplebaumUniversalLocalFunctionInversion,
+  recordBooleanTwoBentSummandClassification,
+  recordDebruijnLinearComplexitySpectrum,
+  recordGoldreichGadGadecAsymptoticComplexity,
+  recordIndicatorSumBentnessDualCharacterization,
+  recordPerturbedInverseCDifferentialBoundAttainment,
+  recordQuadraticApnFixedSpaceExtensionDependence,
+  recordQuadraticApnMaximumLinearityBeyondEight,
+  recordRandomPermutationLinearCapacityChiSquare,
+  recordTheorem8OutsideMsharpClassification,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

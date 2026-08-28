@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "debruijn-linear-complexity-spectrum",
+  "group_id": "li-lin-affine-fsr-adjacency",
+  "title": "Attainable linear complexities of de Bruijn sequences",
+  "summary": "Characterize exactly which values in the known interval occur as linear complexities of binary de Bruijn sequences.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every admissible order $n\\ge 3$, define $S_n=\\{LC(s):s\\text{ is a binary de Bruijn sequence of order }n\\}$. Determine $S_n$ exactly. In particular, decide for every integer $L$ satisfying $2^{n-1}+n\\le L\\le 2^n-1$ whether there is an order-$n$ de Bruijn sequence $s$ with $LC(s)=L$."
+  },
+  "scope": {
+    "domain": "Binary de Bruijn sequences and linear complexity",
+    "assumptions": [
+      "A sequence of order n is binary, periodic with period 2^n, and contains every n-bit word exactly once per period",
+      "LC(s) denotes the linear complexity of the periodic sequence s"
+    ],
+    "parameters": [
+      "order n >= 3",
+      "candidate linear complexity L"
+    ],
+    "unresolved_remainder": "No exact characterization of the attainable set is known over the full order range; search algorithms and partial-cycle constructions do not determine the linear-complexity spectrum."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "de-bruijn-sequences",
+      "feedback-shift-registers",
+      "linear-complexity",
+      "sequence-design"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The 2022 TIT paper cites Chan--Games--Key for the known interval, but the exact earliest statement of the attainability problem was not text-confirmed."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Li--Lin, adjacency graphs of affine FSRs",
+        "locator": "Introduction, journal p. 650",
+        "doi": "10.1109/TIT.2021.3120841",
+        "url": "https://doi.org/10.1109/TIT.2021.3120841"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "restatement",
+      "summary": "The source gives the known numerical interval and explicitly states that the attainable values within it remain unknown.",
+      "citation_labels": [
+        "Li--Lin, adjacency graphs of affine FSRs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

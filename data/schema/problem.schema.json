@@ -105,6 +105,16 @@
       "additionalProperties": false,
       "required": ["kind", "citations"],
       "properties": {
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["origin_status", "method"],
+          "properties": {
+            "origin_status": {"type": "string", "enum": ["confirmed", "unresolved"]},
+            "method": {"type": "string", "enum": ["explicit_cited_antecedent", "undetermined"]},
+            "note": {"type": "string"}
+          }
+        },
         "kind": {
           "type": "string",
           "enum": [
@@ -124,7 +134,7 @@
             "properties": {
               "role": {
                 "type": "string",
-                "enum": ["original_source", "prior_progress", "resolution", "independent_resolution"]
+                "enum": ["original_source", "restatement", "prior_progress", "resolution", "independent_resolution"]
               },
               "label": {"type": "string"},
               "locator": {"type": "string"},
@@ -179,7 +189,7 @@
           "date": {"type": "string", "format": "date"},
           "kind": {
             "type": "string",
-            "enum": ["source_statement", "prior_result", "public_result", "independent_result", "machine_checked_formalization", "audit"]
+            "enum": ["source_statement", "restatement", "prior_result", "public_result", "independent_result", "machine_checked_formalization", "audit"]
           },
           "summary": {"type": "string", "minLength": 10},
           "citation_labels": {

@@ -22,21 +22,26 @@
   },
   "source": {
     "kind": "explicit_open_problem",
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "Kölsch explicitly says Problem 6.5.4 repeats a problem mentioned in Beierle--Kranz--Leander [5]; the 2016 CRYPTO paper is therefore the earliest confirmed source and the thesis is a restatement."
+    },
     "citations": [
-      {"role": "original_source", "label": "Kolsch, Problem 6.5.4", "doi": "10.18453/rosdok_id00002900"},
-      {"role": "prior_progress", "label": "Beierle--Kranz--Leander, lightweight finite-field multiplication", "locator": "FSE 2016", "doi": "10.1007/978-3-662-53018-4_23"}
+      {"role": "original_source", "label": "Beierle--Kranz--Leander, lightweight finite-field multiplication", "locator": "Section 6, generalized proper-subfield multiplication problem, CRYPTO 2016, pp. 625-653", "doi": "10.1007/978-3-662-53018-4_23", "url": "https://doi.org/10.1007/978-3-662-53018-4_23"},
+      {"role": "restatement", "label": "Kolsch, Problem 6.5.4", "locator": "Problem 6.5.4, dissertation, 2020", "doi": "10.18453/rosdok_id00002900", "url": "https://doi.org/10.18453/rosdok_id00002900"}
     ]
   },
   "status": {
-    "public_mathematical_status": "partial_progress",
+    "public_mathematical_status": "open",
     "public_verification_status": "none",
-    "peer_review_status": "not_submitted",
-    "disclosure": "public_progress",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
     "last_reviewed": "2026-08-16"
   },
   "progress": [
-    {"date": "2016-01-01", "kind": "prior_result", "summary": "Basis-dependent multiplication cost was studied for subfield elements and extension-field implementations.", "citation_labels": ["Beierle--Kranz--Leander, lightweight finite-field multiplication"]},
-    {"date": "2020-01-01", "kind": "source_statement", "summary": "Kolsch restated the direct and sequential XOR variants as a dedicated open problem.", "citation_labels": ["Kolsch, Problem 6.5.4"]}
+    {"date": "2016-01-01", "kind": "source_statement", "summary": "Beierle, Kranz, and Leander pose the proper-subfield multiplication optimality question for direct and sequential XOR cost.", "citation_labels": ["Beierle--Kranz--Leander, lightweight finite-field multiplication"]},
+    {"date": "2020-01-01", "kind": "restatement", "summary": "Kölsch explicitly repeats the cited proper-subfield multiplication problem as Problem 6.5.4 and specializes it to the primitive F4 case.", "citation_labels": ["Kolsch, Problem 6.5.4"]}
   ],
   "artifacts": [],
   "lean": {"status": "none", "available_in_repo": false},

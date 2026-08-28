@@ -1,0 +1,117 @@
+{
+  "schema_version": "0.2.0",
+  "id": "applebaum-universal-local-function-inversion",
+  "group_id": "yang-guo-johansson-lentmaier-goldreich-prg",
+  "title": "Universal inversion below the local-function stretch exponent",
+  "summary": "Decide whether every fixed local predicate admits efficient inversion below Applebaum's stated output-length exponent.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every fixed $d$-local Boolean predicate $P$, does there exist a constant $\\varepsilon>0$ and an efficient algorithm that inverts a random member of the Goldreich collection $F_{P,n,m}$ with nonnegligible success when $$m=n^{\\lfloor 2d/3\\rfloor/2-\\varepsilon}?$$ Give such an inverter uniformly for every fixed $P$, or prove an admissible predicate family prevents efficient inversion in the stated model."
+  },
+  "scope": {
+    "domain": "Random local functions and Goldreich one-way-function candidates",
+    "assumptions": [
+      "P is a fixed d-local Boolean predicate",
+      "F_(P,n,m) is sampled from the Goldreich random-neighborhood collection",
+      "epsilon is a positive constant"
+    ],
+    "parameters": [
+      "locality d",
+      "predicate P",
+      "input size n",
+      "output size m",
+      "epsilon"
+    ],
+    "unresolved_remainder": "Known attacks, conditional search-to-decision reductions, and results for special predicates do not provide an efficient inverter for every fixed d-local predicate at the stated exponent and do not refute the universal statement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "goldreich-functions",
+      "inversion",
+      "local-functions",
+      "one-way-functions"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2022 TIT paper quotes the open question from Applebaum and preserves its predicate quantifier and output exponent."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Applebaum, cryptographic hardness of random local functions",
+        "locator": "Open Problem 1 in the survey discussion",
+        "doi": "10.1007/s00037-015-0121-8",
+        "url": "https://doi.org/10.1007/s00037-015-0121-8"
+      },
+      {
+        "role": "restatement",
+        "label": "Yang--Guo--Johansson--Lentmaier, universal local-function inversion question",
+        "locator": "Section V-A, journal p. 1350",
+        "doi": "10.1109/TIT.2021.3128315",
+        "url": "https://doi.org/10.1109/TIT.2021.3128315"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Tan--Vasudevan, improved search-to-decision reduction for random local functions",
+        "locator": "Theorem 1.1 and discussion of output blowup",
+        "doi": "10.1007/978-3-032-25330-9_8",
+        "url": "https://doi.org/10.1007/978-3-032-25330-9_8",
+        "eprint": "arXiv:2510.02944"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2015-12-22",
+      "kind": "source_statement",
+      "summary": "Applebaum asks whether every local predicate can be inverted efficiently below the displayed output-length exponent.",
+      "citation_labels": [
+        "Applebaum, cryptographic hardness of random local functions"
+      ]
+    },
+    {
+      "date": "2022-02-01",
+      "kind": "restatement",
+      "summary": "The TIT source restates the universal question while studying concrete XOR-AND predicates.",
+      "citation_labels": [
+        "Yang--Guo--Johansson--Lentmaier, universal local-function inversion question"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "kind": "public_result",
+      "summary": "A universal constant-arity search-to-decision reduction gives inversion conditional on an efficient distinguisher, but its output blowup does not reach Applebaum's target exponent.",
+      "citation_labels": [
+        "Tan--Vasudevan, improved search-to-decision reduction for random local functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "goldreich-gad-gadec-asymptotic-complexity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

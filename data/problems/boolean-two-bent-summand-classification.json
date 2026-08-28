@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.2.0",
+  "id": "boolean-two-bent-summand-classification",
+  "group_id": "li-kan-mesnager-generic-bent",
+  "title": "Classification and counting of two-bent decompositions",
+  "summary": "Characterize the Boolean functions that are sums of two bent functions and count every such decomposition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every Boolean function $p:\\mathbb F_2^n\\to\\mathbb F_2$ with even $n$, determine whether there exist bent functions $f,h$ such that $p=f+h$. Give necessary and sufficient conditions for existence and, whenever $p$ is representable, determine the exact number of such bent decompositions under an explicitly stated counting convention."
+  },
+  "scope": {
+    "domain": "Boolean functions and additive decompositions into bent functions",
+    "assumptions": [
+      "n is even",
+      "Addition of Boolean functions is over F_2",
+      "Both summands must be bent"
+    ],
+    "parameters": [
+      "even variable count n",
+      "Boolean function p"
+    ],
+    "unresolved_remainder": "Later work exactly counts a translation-constrained affine subproblem. A necessary-and-sufficient representability characterization and a source-neutral decomposition count for every representable Boolean function remain unknown."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-functions",
+      "boolean-functions",
+      "decomposition-counting",
+      "sum-decomposition"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2022 TIT paper quotes Tokareva's two-part question and identifies its own contribution as partial."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tokareva, two-bent-summand problem",
+        "locator": "Hypotheses and open questions, pp. 609-621",
+        "doi": "10.3934/amc.2011.5.609",
+        "url": "https://doi.org/10.3934/amc.2011.5.609"
+      },
+      {
+        "role": "restatement",
+        "label": "Li--Kan--Mesnager--Peng--Tan--Zheng, generic bent constructions",
+        "locator": "Remark 4, journal p. 2739",
+        "doi": "10.1109/TIT.2022.3140180",
+        "url": "https://doi.org/10.1109/TIT.2022.3140180"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Shaporenko, derivatives and bent-sum decomposition",
+        "locator": "Theorem 1 and Section 5, pp. 1609-1624",
+        "doi": "10.1007/s10623-022-01167-4",
+        "url": "https://doi.org/10.1007/s10623-022-01167-4"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "Tokareva asks for both an exact representability criterion and the number of two-bent decompositions.",
+      "citation_labels": [
+        "Tokareva, two-bent-summand problem"
+      ]
+    },
+    {
+      "date": "2022-04-01",
+      "kind": "restatement",
+      "summary": "The TIT source restates the full problem and obtains decompositions under a strict derivative condition.",
+      "citation_labels": [
+        "Li--Kan--Mesnager--Peng--Tan--Zheng, generic bent constructions"
+      ]
+    },
+    {
+      "date": "2022-12-29",
+      "kind": "public_result",
+      "summary": "A later paper exactly counts decompositions of a nonconstant affine function into two bent translates in a common direction, a strict structural subproblem of the general question.",
+      "citation_labels": [
+        "Shaporenko, derivatives and bent-sum decomposition"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "indicator-sum-bentness-dual-characterization",
+      "theorem8-outside-msharp-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

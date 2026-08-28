@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "perturbed-inverse-c-differential-bound-attainment",
+  "group_id": "hasan-pal-stanica-permutation-polynomials",
+  "title": "Attainment of perturbed-inverse c-differential bounds",
+  "summary": "Determine whether both source bounds, eight and nine, are exact for the perturbed inverse function under their respective trace conditions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $H(x)=x^{-1}+\\operatorname{Tr}(x^2/(x+1))$ on $\\mathbb F_{2^n}$ and let $c\\in\\mathbb F_{2^n}\\setminus\\{0,1\\}$. Determine whether the source bounds are attainable in both branches: $${}_c\\Delta_H\\le 8\\quad\\text{if }\\operatorname{Tr}(c)=\\operatorname{Tr}(1/c)=1,$$ and $${}_c\\Delta_H\\le 9$$ otherwise. Give parameters and differences attaining each exact maximum, or prove the corresponding sharp maximum is smaller."
+  },
+  "scope": {
+    "domain": "c-differential uniformity of a trace-perturbed inverse function",
+    "assumptions": [
+      "H(x) = x^(-1) + Tr(x^2/(x+1)) over F_(2^n)",
+      "c is nonzero and c is not 1",
+      "The c-differential convention is the one used in Theorem 9 of the source"
+    ],
+    "parameters": [
+      "field degree n",
+      "multiplier c",
+      "input difference a",
+      "output difference b"
+    ],
+    "unresolved_remainder": "For $n\\ge 11$, the double-trace-one branch is now known to have exact uniformity eight. In the complementary branch only $8\\le{}_c\\Delta_H\\le9$ is known, so attainment or exclusion of nine remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "c-differential-uniformity",
+      "finite-fields",
+      "inverse-function",
+      "trace-perturbation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Hasan--Pal--Stanica, perturbed-inverse bounds",
+        "locator": "Remark 10 following Theorem 9, journal p. 688",
+        "doi": "10.1109/TIT.2021.3123104",
+        "url": "https://doi.org/10.1109/TIT.2021.3123104"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kaytanci--Ozbudak, exact and near-exact c-differential uniformity",
+        "locator": "Theorem 3.1 and Conclusion, pp. 387-394",
+        "doi": "10.1007/s10998-023-00561-2",
+        "url": "https://doi.org/10.1007/s10998-023-00561-2"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves upper bounds eight and nine in two trace branches and asks whether they are attained.",
+      "citation_labels": [
+        "Hasan--Pal--Stanica, perturbed-inverse bounds"
+      ]
+    },
+    {
+      "date": "2023-12-09",
+      "kind": "public_result",
+      "summary": "A later paper proves exact uniformity eight in the double-trace-one branch for n at least 11, while leaving the other branch between eight and nine.",
+      "citation_labels": [
+        "Kaytanci--Ozbudak, exact and near-exact c-differential uniformity"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

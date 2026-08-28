@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "indicator-sum-bentness-dual-characterization",
+  "group_id": "li-kan-mesnager-generic-bent",
+  "title": "Bentness and duals of subspace-indicator sums",
+  "summary": "Give an exact bentness criterion and dual formula for arbitrary source-admissible sums of subspace indicators added to a bent function.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $f$ be bent on $\\mathbb F_2^n$, let $V_1,\\ldots,V_\\tau$ be binary linear subspaces, and let $a_i\\in\\mathbb F_2$. For the source function $$h(x)=f(x)+\\sum_{i=1}^{\\tau}a_i\\mathbf 1_{V_i}(x),$$ give necessary and sufficient conditions covering every source-admissible tuple $(f,(V_i),(a_i))$ for $h$ to be bent, and compute the dual $h^*$ whenever those conditions hold."
+  },
+  "scope": {
+    "domain": "Indicator perturbations of Boolean bent functions",
+    "assumptions": [
+      "f is a Boolean bent function",
+      "Each V_i is a binary linear subspace",
+      "Each coefficient a_i is binary",
+      "h is exactly Equation (16) of the source"
+    ],
+    "parameters": [
+      "even dimension n",
+      "bent function f",
+      "subspaces V_i",
+      "coefficients a_i"
+    ],
+    "unresolved_remainder": "The source proves sufficient conditions and the corresponding dual under second-derivative restrictions. No later result found in the audit supplies an if-and-only-if criterion and dual for every admissible indicator-sum tuple."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-functions",
+      "dual-functions",
+      "indicator-functions",
+      "secondary-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Kan--Mesnager--Peng--Tan--Zheng, Equation 16 bentness problem",
+        "locator": "Open Problem 1, journal p. 2742",
+        "doi": "10.1109/TIT.2022.3140180",
+        "url": "https://doi.org/10.1109/TIT.2022.3140180"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-04-01",
+      "kind": "source_statement",
+      "summary": "The source asks for a full necessary-and-sufficient condition and the dual after proving only a sufficient condition for the general indicator sum.",
+      "citation_labels": [
+        "Li--Kan--Mesnager--Peng--Tan--Zheng, Equation 16 bentness problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "boolean-two-bent-summand-classification",
+      "theorem8-outside-msharp-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

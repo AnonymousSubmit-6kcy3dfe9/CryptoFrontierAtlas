@@ -34,9 +34,28 @@
   },
   "source": {
     "kind": "explicit_open_problem",
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2022 and 2026 TIT papers restate the Big APN problem and point to earlier open-problem literature; Carlet's 2015 chapter is the earliest text-confirmed statement in this provenance trace."
+    },
     "citations": [
       {
         "role": "original_source",
+        "label": "Carlet, Open questions on nonlinearity and on APN functions",
+        "locator": "Section on APN functions; cited as an earlier statement in Göloğlu (2023)",
+        "doi": "10.1007/978-3-319-16277-5_5",
+        "url": "https://doi.org/10.1007/978-3-319-16277-5_5"
+      },
+      {
+        "role": "restatement",
+        "label": "Beierle--Leander, new quadratic APN instances",
+        "locator": "Introduction, journal p. 670",
+        "doi": "10.1109/TIT.2021.3120698",
+        "url": "https://doi.org/10.1109/TIT.2021.3120698"
+      },
+      {
+        "role": "restatement",
         "label": "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions",
         "locator": "Section V-A before Theorem V.4, p. 5215",
         "doi": "10.1109/TIT.2026.3695003",
@@ -61,8 +80,24 @@
   },
   "progress": [
     {
-      "date": "2026-07-01",
+      "date": "2015-01-01",
       "kind": "source_statement",
+      "summary": "Carlet's 2015 chapter records the existence of APN permutations in even dimensions greater than six as an open cryptographic problem.",
+      "citation_labels": [
+        "Carlet, Open questions on nonlinearity and on APN functions"
+      ]
+    },
+    {
+      "date": "2022-01-01",
+      "kind": "restatement",
+      "summary": "The TIT source calls existence of APN permutations in even dimensions greater than six a big open problem.",
+      "citation_labels": [
+        "Beierle--Leander, new quadratic APN instances"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "kind": "restatement",
       "summary": "The source restates the big APN question for permutations in even dimensions greater than six.",
       "citation_labels": [
         "Beneteau--Goluboff--Kolsch--Vaghasiya, Walsh spectra of quadratic APN functions"

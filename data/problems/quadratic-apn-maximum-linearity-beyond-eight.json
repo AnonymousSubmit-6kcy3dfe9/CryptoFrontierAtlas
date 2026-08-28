@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-apn-maximum-linearity-beyond-eight",
+  "group_id": "beierle-leander-quadratic-apn-instances",
+  "title": "Maximum-linearity quadratic APN functions beyond dimension eight",
+  "summary": "Decide whether a quadratic APN function can attain linearity $2^{n-1}$ in any even dimension greater than eight.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an even integer $n>8$ and a quadratic APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ such that $$\\operatorname{Lin}(F)=\\max_{a\\in\\mathbb F_2^n,\\ b\\in\\mathbb F_2^n\\setminus\\{0\\}}|W_F(a,b)|=2^{n-1}?$$ Construct one such pair $(n,F)$, or prove that no such function exists in any even dimension $n>8$."
+  },
+  "scope": {
+    "domain": "Quadratic APN vectorial Boolean functions in even dimensions",
+    "assumptions": [
+      "n is even and n > 8",
+      "F : F_2^n -> F_2^n is quadratic and almost perfect nonlinear",
+      "Linearity is the maximum absolute component Walsh coefficient"
+    ],
+    "parameters": [
+      "even dimension n > 8",
+      "quadratic APN function F"
+    ],
+    "unresolved_remainder": "The source constructs dimension-eight examples, but no quadratic APN function of linearity $2^{n-1}$ is known in any even dimension above eight and no global nonexistence theorem is known."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "apn-functions",
+      "quadratic-functions",
+      "linearity",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The source attributes the higher-dimensional question to Carlet, but the antecedent text available in this audit did not expose the complete residual quantifiers n > 8."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Beierle--Leander, new quadratic APN instances",
+        "locator": "Conclusion, journal p. 678",
+        "doi": "10.1109/TIT.2021.3120698",
+        "url": "https://doi.org/10.1109/TIT.2021.3120698"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "restatement",
+      "summary": "After constructing examples in dimension eight, the source states the exact residual existence question for even dimensions greater than eight.",
+      "citation_labels": [
+        "Beierle--Leander, new quadratic APN instances"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-apn-fixed-space-extension-dependence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

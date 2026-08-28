@@ -39,11 +39,23 @@
   },
   "source": {
     "kind": "explicit_conjecture",
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "Pasalic et al. explicitly recall the Evans--Greene--Niederreiter conjecture; the 1992 Michigan Mathematical Journal paper is the cited antecedent and the 2022 TIT paper is a restatement."
+    },
     "citations": [
       {
         "role": "original_source",
+        "label": "Evans--Greene--Niederreiter, linearized and permutation polynomials",
+        "locator": "Conjecture on permutation translates; Michigan Math. J. 39 (1992), pp. 405-413",
+        "doi": "10.1307/mmj/1029004595",
+        "url": "https://doi.org/10.1307/mmj/1029004595"
+      },
+      {
+        "role": "restatement",
         "label": "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems",
-        "locator": "Open Problem IV.1, Remark IV.2, and conclusion, journal pp. 2710-2712",
+        "locator": "Remark IV.2, journal p. 2710",
         "doi": "10.1109/TIT.2022.3226571",
         "url": "https://doi.org/10.1109/TIT.2022.3226571"
       }
@@ -58,8 +70,16 @@
   },
   "progress": [
     {
-      "date": "2022-12-02",
+      "date": "1992-01-01",
       "kind": "source_statement",
+      "summary": "Evans, Greene, and Niederreiter formulate the conjecture that at least $q/2$ permutation translates force a polynomial to be linearized.",
+      "citation_labels": [
+        "Evans--Greene--Niederreiter, linearized and permutation polynomials"
+      ]
+    },
+    {
+      "date": "2022-12-02",
+      "kind": "restatement",
       "summary": "Remark IV.2 recalls the Evans--Greene--Niederreiter conjecture that at least $q/2$ permutation translates force a polynomial to be linearized.",
       "citation_labels": [
         "Pasalic--Kudin--Polujan--Pott, vectorial bent-negabent open problems"

@@ -23,6 +23,119 @@ const forbidden = ['/data_600G/', 'solved_open_questions', 'LeanCipher', 'privat
 let cachedLocalLeanSourceFiles;
 const cachedCommittedLeanSourceFiles = new Map();
 
+const progressCitationRoles = {
+  source_statement: new Set(['original_source']),
+  restatement: new Set(['restatement']),
+  prior_result: new Set(['prior_progress']),
+  public_result: new Set(['prior_progress', 'resolution']),
+  independent_result: new Set(['independent_resolution']),
+};
+const historicalSourceCue = /\b(?:restates?|recalls?|previously posed|long-standing open problem|posed by|conjectured by|repeats?\s+(?:a|the|this|an existing)\s+(?:problem|question|conjecture))\b/i;
+
+function validateLineage(record, file) {
+  const source = record.source;
+  const citations = source.citations;
+  const citationByLabel = new Map();
+  for (const [index, citation] of citations.entries()) {
+    if (typeof citation.label !== 'string' || citation.label.trim().length === 0) {
+      throw new Error(`${file} source.citations[${index}] label must be non-empty`);
+    }
+    if (citationByLabel.has(citation.label)) {
+      throw new Error(`${file} citation label is duplicated: ${citation.label}`);
+    }
+    citationByLabel.set(citation.label, citation);
+  }
+
+  const provenance = source.provenance;
+  const originStatus = provenance?.origin_status ?? 'confirmed';
+  if (provenance) {
+    if (!['confirmed', 'unresolved'].includes(provenance.origin_status)) {
+      throw new Error(`${file} source.provenance.origin_status is invalid`);
+    }
+    if (!['explicit_cited_antecedent', 'undetermined'].includes(provenance.method)) {
+      throw new Error(`${file} source.provenance.method is invalid`);
+    }
+    const expectedMethod = originStatus === 'confirmed'
+      ? 'explicit_cited_antecedent'
+      : 'undetermined';
+    if (provenance.method !== expectedMethod) {
+      throw new Error(`${file} ${originStatus} provenance must use ${expectedMethod}`);
+    }
+  }
+
+  const roles = citations.map((citation) => citation.role);
+  const lineageAware = Boolean(provenance)
+    || roles.includes('restatement')
+    || record.progress.some((event) => event.kind === 'restatement');
+  if (lineageAware && !provenance) {
+    throw new Error(`${file} records with restatement lineage must declare source.provenance`);
+  }
+  if (originStatus === 'confirmed') {
+    if (roles.filter((role) => role === 'original_source').length !== 1) {
+      throw new Error(`${file} confirmed provenance requires exactly one original_source citation`);
+    }
+    if (citations[0]?.role !== 'original_source') {
+      throw new Error(`${file} confirmed provenance requires original_source as the first citation`);
+    }
+  } else {
+    if (roles.includes('original_source')) {
+      throw new Error(`${file} unresolved provenance must not claim an original_source citation`);
+    }
+    if (!roles.includes('restatement')) {
+      throw new Error(`${file} unresolved provenance requires a restatement citation`);
+    }
+    if (citations[0]?.role !== 'restatement') {
+      throw new Error(`${file} unresolved provenance requires restatement as the first citation`);
+    }
+  }
+
+  let previousDate = '';
+  for (const [index, event] of record.progress.entries()) {
+    if (event.date < previousDate) {
+      throw new Error(`${file} progress timeline is not in non-decreasing date order at index ${index}`);
+    }
+    previousDate = event.date;
+    const labels = event.citation_labels;
+    const eventRoles = new Set();
+    for (const label of labels) {
+      const citation = citationByLabel.get(label);
+      if (!citation) {
+        throw new Error(`${file} progress[${index}] references unknown citation label ${label}`);
+      }
+      eventRoles.add(citation.role);
+    }
+    const expectedRoles = lineageAware ? progressCitationRoles[event.kind] : undefined;
+    if (expectedRoles) {
+      if (![...eventRoles].some((role) => expectedRoles.has(role))) {
+        throw new Error(`${file} progress[${index}] ${event.kind} must cite ${[...expectedRoles].join(' or ')}`);
+      }
+      if ([...eventRoles].some((role) => !expectedRoles.has(role))) {
+        throw new Error(`${file} progress[${index}] ${event.kind} cites an inconsistent evidence role`);
+      }
+    }
+    if (event.kind === 'source_statement' && historicalSourceCue.test(event.summary)) {
+      throw new Error(`${file} progress[${index}] source_statement contains historical-source wording; use a restatement event and cite the antecedent as original_source`);
+    }
+  }
+
+  if (originStatus === 'confirmed') {
+    const sourceEvents = record.progress.filter((event) => event.kind === 'source_statement');
+    if (sourceEvents.length !== 1) {
+      throw new Error(`${file} confirmed provenance requires exactly one source_statement event`);
+    }
+  } else if (record.progress.some((event) => event.kind === 'source_statement')) {
+    throw new Error(`${file} unresolved provenance must not contain a source_statement event`);
+  }
+
+  for (const citation of citations) {
+    if (citation.role === 'restatement' && !record.progress.some((event) =>
+      event.kind === 'restatement' && event.citation_labels.includes(citation.label)
+    )) {
+      throw new Error(`${file} restatement citation is not represented by a restatement progress event: ${citation.label}`);
+    }
+  }
+}
+
 function resolveRepositoryFile(relativePath, file) {
   if (typeof relativePath !== 'string' || relativePath.length === 0) {
     throw new Error(file + ' has no Lean repository path');
@@ -178,6 +291,7 @@ for (const file of files) {
   if (!validateProblem(record)) {
     throw new Error(`${file} schema validation failed: ${ajv.errorsText(validateProblem.errors)}`);
   }
+  validateLineage(record, file);
   records.push({file, record});
   if (ids.has(record.id)) throw new Error(`duplicate id: ${record.id}`);
   ids.add(record.id);
@@ -195,6 +309,9 @@ for (const file of files) {
   if (!taxonomyIds.has(record.classification.primary)) throw new Error(`${file} has unknown primary taxonomy id`);
   for (const secondary of record.classification.secondary) {
     if (!taxonomyIds.has(secondary)) throw new Error(`${file} has unknown secondary taxonomy id ${secondary}`);
+    if (secondary === record.classification.primary) {
+      throw new Error(`${file} repeats primary taxonomy id ${secondary} in secondary taxonomy`);
+    }
   }
   if (record.lean.available_in_repo) {
     const lean = record.lean;

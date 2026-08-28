@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "random-permutation-linear-capacity-chi-square",
+  "group_id": "ashur-khan-nyberg-multidimensional-linear",
+  "title": "Chi-square law for multidimensional linear capacity",
+  "summary": "Prove the conjectured chi-square distribution and degree of freedom for multidimensional linear approximations of a random permutation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F$ be uniformly random among permutations of $\\mathbb F_2^n$. For every source-admissible $t$-dimensional linear approximation $\\Lambda$ whose trivial input- and output-mask subspaces have dimensions $u$ and $v$, respectively, prove or refute $$2^n\\operatorname{Cap}(\\Lambda)\\sim\\chi^2_{2^t-2^u-2^v+1}.$$ A refutation must give an admissible approximation family with a different distribution or degree of freedom."
+  },
+  "scope": {
+    "domain": "Multidimensional linear approximations of uniformly random binary permutations",
+    "assumptions": [
+      "F is uniformly random over all permutations of F_2^n",
+      "Lambda is a source-admissible t-dimensional linear approximation",
+      "The trivial input and output mask subspaces have dimensions u and v"
+    ],
+    "parameters": [
+      "n",
+      "approximation dimension t",
+      "trivial-mask dimensions u and v",
+      "mask subspaces"
+    ],
+    "unresolved_remainder": "The Davies--Meyer special case is proved in the source, but the exact distribution for general random permutations remains conjectural."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "foundations.probability-statistics",
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "chi-square-distribution",
+      "linear-cryptanalysis",
+      "multidimensional-approximations",
+      "random-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ashur--Khan--Nyberg, random-permutation capacity conjecture",
+        "locator": "Conjecture 1, journal p. 1302",
+        "doi": "10.1109/TIT.2021.3128618",
+        "url": "https://doi.org/10.1109/TIT.2021.3128618"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-02-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures the general random-permutation law after proving the Davies--Meyer special case.",
+      "citation_labels": [
+        "Ashur--Khan--Nyberg, random-permutation capacity conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-apn-fixed-space-extension-dependence",
+  "group_id": "beierle-leander-quadratic-apn-instances",
+  "title": "Restriction-choice dependence of quadratic APN extension",
+  "summary": "Decide whether fixed-subspace extendability can depend on the admissible quadratic APN restriction, including whether pruning EA-equivalent representatives is sound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the source search framework, fix an admissible canonical linear-equivalence automorphism pair $(A,B)$ and fixed-space identifications. Can there be two admissible quadratic APN restrictions $G,G' :\\operatorname{Fix}(A)\\to\\operatorname{Fix}(B)$ such that exactly one extends to a quadratic APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ satisfying $F\\circ A=B\\circ F$? Exhibit such a tuple, or prove that extension existence is invariant under every admissible choice of $G$. In particular, settle whether pruning $G$ up to EA-equivalence preserves extendability."
+  },
+  "scope": {
+    "domain": "Quadratic APN functions with prescribed linear self-equivalence",
+    "assumptions": [
+      "(A,B) is admissible under the source canonical LE-automorphism framework",
+      "G maps Fix(A) to Fix(B) and is quadratic and APN",
+      "An extension F must be quadratic, APN, and satisfy F composed with A = B composed with F"
+    ],
+    "parameters": [
+      "ambient dimension n",
+      "automorphisms A and B",
+      "fixed-space dimension",
+      "admissible restrictions G and G'"
+    ],
+    "unresolved_remainder": "No example with representative-dependent extension outcomes and no invariance theorem covering all admissible tuples was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "apn-functions",
+      "ea-equivalence",
+      "function-extension",
+      "linear-self-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beierle--Leander, fixed-space APN extension question",
+        "locator": "Section IV-B, journal p. 675",
+        "doi": "10.1109/TIT.2021.3120698",
+        "url": "https://doi.org/10.1109/TIT.2021.3120698"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-28"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that its search can fail for one restriction even if another restriction extends, and states that it is unknown whether this dependence can occur.",
+      "citation_labels": [
+        "Beierle--Leander, fixed-space APN extension question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-apn-maximum-linearity-beyond-eight"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
