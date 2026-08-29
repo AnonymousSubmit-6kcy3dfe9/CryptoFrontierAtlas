@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "beyond-birthday-bound-hash-ctr-hash-modes",
+  "group_id": "beyond-birthday-bound-hash-ctr-hash-modes",
+  "title": "Beyond-Birthday-Bound Hash-CTR-Hash Modes",
+  "summary": "HCTR2 is secure only to the birthday bound; the open task is to design an efficient Hash-CTR-Hash tweakable enciphering mode with provable beyond-birthday-bound security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "HCTR2 is a provably secure Hash--CTR--Hash tweakable enciphering mode and an alternative to XCB, but its security is limited to the birthday bound. The open problem is to design a more robust tweakable enciphering mode that retains the efficient Hash--CTR--Hash structure while achieving provable beyond-birthday-bound security."
+  },
+  "scope": {
+    "domain": "Design of tweakable enciphering modes based on the efficient Hash-CTR-Hash architecture.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Security threshold — the desired proof must extend beyond HCTR2's birthday-bound limitation"
+    ],
+    "unresolved_remainder": "Design a more robust tweakable enciphering mode that retains the efficient Hash-CTR-Hash structure and has provable beyond-birthday-bound security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "tweakable-enciphering",
+      "hash-ctr-hash",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries",
+        "locator": "CRYPTO 2025, page 24",
+        "doi": "10.1007/978-3-032-01901-1_6",
+        "url": "https://eprint.iacr.org/2024/1554",
+        "eprint": "2024/1554"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly poses this in its open-problems discussion, citing HCTR2's birthday-bound limitation and describing GEM as ongoing work toward the stronger guarantee.",
+      "citation_labels": [
+        "Amit Singh Bhati et al., Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

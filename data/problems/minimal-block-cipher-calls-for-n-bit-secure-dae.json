@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimal-block-cipher-calls-for-n-bit-secure-dae",
+  "group_id": "minimal-block-cipher-calls-for-n-bit-secure-dae",
+  "title": "Minimizing Block-Cipher Calls for n-Bit-Secure DAE",
+  "summary": "The target is n-bit security for block-cipher-based DAE, while finding a construction with the fewest possible block-cipher calls remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For deterministic authenticated encryption (DAE) schemes based on block ciphers, can one construct a scheme that achieves $n$-bit security while minimizing the number of block-cipher calls?"
+  },
+  "scope": {
+    "domain": "Design of block-cipher-based deterministic authenticated encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: target security level in bits",
+      "block-cipher call count: efficiency quantity to minimize"
+    ],
+    "unresolved_remainder": "Construct a block-cipher-based DAE scheme that achieves n-bit security while minimizing the number of block-cipher calls."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "deterministic-authenticated-encryption",
+      "block-ciphers",
+      "primitive-efficiency"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Optimally Secure Deterministic Authenticated Encryption Schemes",
+        "locator": "EUROCRYPT 2025, page 3",
+        "doi": "10.1007/978-3-031-91107-1_1",
+        "url": "https://eprint.iacr.org/2025/314",
+        "eprint": "2025/314"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents this construction goal as its primary research question.",
+      "citation_labels": [
+        "Yu Long Chen et al., Towards Optimally Secure Deterministic Authenticated Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

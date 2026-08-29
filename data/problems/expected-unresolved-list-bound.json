@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "expected-unresolved-list-bound",
+  "group_id": "expected-unresolved-list-bound",
+  "title": "Expected Unresolved-List Bound",
+  "summary": "The cross-check analysis conjectures an inverse-success-probability bound on the expected maximum unresolved-list count, but a general proof or refutation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\mathbb{E}[|L|] < \\bigl(1-\\Pr[\\mathrm{failure}]\\bigr)^{-1}$."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of candidate-list cross-checking in a pointwise-keyed weak-PRF key-recovery attack.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "L: the unresolved candidate-list collection whose size governs cross-check cost",
+      "Pr[failure]: the failure probability appearing in the conjectured upper bound"
+    ],
+    "unresolved_remainder": "Prove or refute the conjectured upper bound on the expected maximum number of unresolved lists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "attack-complexity",
+      "weak-prf"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "General Key Recovery Attack on Pointwise-Keyed Functions -- Application to Alternating Moduli Weak PRFs",
+        "locator": "ASIACRYPT 2025, page 17",
+        "doi": "10.1007/978-981-95-5018-0_5",
+        "url": "https://eprint.iacr.org/2025/1971",
+        "eprint": "2025/1971"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper calls estimating the unresolved-list count from the failure probability nontrivial and explicitly conjectures the displayed bound. It provides parameter-specific Monte Carlo evidence but no general proof or refutation.",
+      "citation_labels": [
+        "Antoine Sidem et al., General Key Recovery Attack on Pointwise-Keyed Functions -- Application to Alternating Moduli Weak PRFs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

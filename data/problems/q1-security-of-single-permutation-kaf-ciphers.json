@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "q1-security-of-single-permutation-kaf-ciphers",
+  "group_id": "q1-security-of-single-permutation-kaf-ciphers",
+  "title": "Q1 Security of Single-Permutation KAF Ciphers",
+  "summary": "Q1 security is known for KAFs with independent functions or permutations and with identical functions, but the single-public-permutation PRP/SPRP case remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the $\\mathrm{Q1}$ setting for Key-Alternating Feistel (KAF) ciphers, positive security results are known for independent round functions, independent round permutations, and identical round functions, while the case in which every round reuses the same public random permutation remains unresolved. Prove or refute that, under this reuse condition, a three-round KAF is a $\\mathrm{Q1\\ PRP}$ and a four-round KAF is a $\\mathrm{Q1\\ SPRP}$."
+  },
+  "scope": {
+    "domain": "Q1 security of Key-Alternating Feistel block ciphers.",
+    "assumptions": [
+      "Every round reuses the same public random permutation."
+    ],
+    "parameters": [
+      "Round count: three rounds for the PRP target and four rounds for the SPRP target"
+    ],
+    "unresolved_remainder": "Prove or refute Q1 PRP security for the three-round KAF and Q1 SPRP security for the four-round KAF under permutation reuse."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "feistel-networks",
+      "q1-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-quantum Security of Key-Alternating Feistel Ciphers",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5018-0_15",
+        "url": "https://eprint.iacr.org/2025/1603",
+        "eprint": "2025/1603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion reports positive Q1 results for independent round functions, independent round permutations, and identical round functions. It explicitly leaves the identical-round-permutation case open and conjectures the three- and four-round security targets.",
+      "citation_labels": [
+        "Jyotirmoy Basak et al., Post-quantum Security of Key-Alternating Feistel Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

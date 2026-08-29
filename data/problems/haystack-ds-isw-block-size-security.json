@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "haystack-ds-isw-block-size-security",
+  "group_id": "haystack-ds-isw-block-size-security",
+  "title": "Haystack-DS+ISW Security for Larger Plaintext Blocks",
+  "summary": "Existing cryptanalysis treats one-bit encoded plaintext blocks; determining how Haystack-DS+ISW security changes for larger blocks remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Haystack-DS+ISW, existing cryptanalysis sets the encoded plaintext-block size to $n=1$ for simplicity. Determine how the security of Haystack-DS+ISW changes when $n$ is increased beyond $1$."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of the Haystack-DS+ISW symmetric-encryption construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: encoded plaintext-block size, fixed at 1 in existing cryptanalysis and varied beyond 1 in the open question"
+    ],
+    "unresolved_remainder": "Determine the effect of increasing the encoded plaintext-block size beyond one on the security of Haystack-DS+ISW."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "cryptanalysis",
+      "white-box-cryptography",
+      "symmetric-encryption"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 38",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The appendix fixes the encoded plaintext-block size at one for simplicity and highlights the security effect of increasing it as a direction of interest.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

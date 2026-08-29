@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-three-part-differential-linear-distinguishers",
+  "group_id": "optimal-three-part-differential-linear-distinguishers",
+  "title": "Optimal Three-Part Differential–Linear Distinguishers",
+  "summary": "Biases of three-part differential–linear distinguishers can be evaluated effectively, but jointly choosing their three components for optimal bias remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In differential--linear cryptanalysis, consider distinguishers obtained by dividing a cipher into three parts and choosing a differential trail, a middle differential--linear pair, and a linear trail. Although the bias of a resulting distinguisher can be effectively evaluated, the unresolved task is to jointly select these three components so that the distinguisher's bias is optimal."
+  },
+  "scope": {
+    "domain": "Differential–linear cryptanalysis of ciphers using three-part distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Differential trail: component chosen for one part of the cipher",
+      "Middle differential–linear pair: component chosen for the middle part",
+      "Linear trail: component chosen for one part of the cipher",
+      "Distinguisher bias: optimization criterion"
+    ],
+    "unresolved_remainder": "Jointly select the differential trail, middle differential–linear pair, and linear trail to obtain a distinguisher with optimal bias."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "differential-linear-cryptanalysis",
+      "distinguisher-optimization",
+      "automated-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Enhancing the DATF Technique in Differential-Linear Cryptanalysis",
+        "locator": "ASIACRYPT 2025, page 28",
+        "doi": "10.1007/978-981-95-5018-0_12",
+        "url": "https://eprint.iacr.org/2025/1632",
+        "eprint": "2025/1632"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this question under “Open Problems and Future Works,” noting that biases can be evaluated effectively while finding an optimal distinguisher remains future research.",
+      "citation_labels": [
+        "Cheng Che et al., Enhancing the DATF Technique in Differential-Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

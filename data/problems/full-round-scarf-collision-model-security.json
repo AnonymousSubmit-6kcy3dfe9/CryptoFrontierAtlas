@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-round-scarf-collision-model-security",
+  "group_id": "full-round-scarf-collision-model-security",
+  "title": "Full-Round SCARF Security in the Collision Model",
+  "summary": "A key-recovery attack shows that full-round SCARF misses its intended security in the encryption-decryption model, while full security in the collision model remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A key-recovery attack on full-round SCARF in the encryption-decryption model shows that it does not achieve the designers' intended security level. It remains unresolved whether full-round SCARF is fully secure in the more conservative collision model."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of full-round SCARF across encryption-decryption and collision security models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Security model — the known attack applies in the encryption-decryption model, while the open question concerns the more conservative collision model"
+    ],
+    "unresolved_remainder": "Determine whether full-round SCARF is fully secure in the more conservative collision model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "scarf",
+      "collision-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Full SCARF",
+        "locator": "EUROCRYPT 2025, page 29",
+        "doi": "10.1007/978-3-031-91107-1_14",
+        "url": "https://eprint.iacr.org/2025/315",
+        "eprint": "2025/315"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports a key-recovery attack on full-round SCARF showing that its intended security is not achieved in the encryption-decryption model. It explicitly leaves full security in the collision model as an open problem.",
+      "citation_labels": [
+        "Michiel Verbauwhede et al., Cryptanalysis of Full SCARF"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

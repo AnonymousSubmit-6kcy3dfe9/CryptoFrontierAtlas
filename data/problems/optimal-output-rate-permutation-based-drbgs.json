@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-output-rate-permutation-based-drbgs",
+  "group_id": "optimal-output-rate-permutation-based-drbgs",
+  "title": "Optimal Output Rate for Permutation-Based DRBGs",
+  "summary": "A permutation-based DRBG attains output rate 1 asymptotically, but whether any secure such generator can exceed 1 in the seedless robustness model remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a deterministic random bit generator (DRBG), define its output rate as $\\rho=\\frac{\\text{number of bits returned by the next operation}}{\\text{total output length of the underlying primitive queries consumed by that operation}}$; thus, $\\rho=1$ fully uses the primitive outputs. Sponge-DRBG extracts only $r$ bits from the $n$-bit output of one primitive query, whereas the hash-function-based MD-DRBG and block-cipher-based MD-DM-DRBG attain $\\rho=1$. Resolve the conjecture that $1$ is the maximum output rate compatible with security for a permutation-based DRBG in the seedless robustness model: prove that every such secure DRBG satisfies $\\rho\\leq 1$, or refute the conjecture by constructing one with $\\rho>1$."
+  },
+  "scope": {
+    "domain": "Design and efficiency of permutation-based deterministic random bit generators.",
+    "assumptions": [
+      "Security is required in the seedless robustness model."
+    ],
+    "parameters": [
+      "ρ: output rate of a DRBG's next operation",
+      "r: number of bits extracted by Sponge-DRBG from one primitive output",
+      "n: bit length of that primitive output"
+    ],
+    "unresolved_remainder": "Prove that every secure permutation-based DRBG has output rate at most 1, or construct a secure one with output rate greater than 1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "drbg",
+      "permutation-based-design",
+      "output-rate"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Enhancing Provable Security and Efficiency of Permutation-based DRBGs",
+        "locator": "CRYPTO 2025, page 3",
+        "doi": "10.1007/978-3-032-01901-1_15",
+        "url": "https://eprint.iacr.org/2025/951",
+        "eprint": "2025/951"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly conjectures that output rate 1 is optimal and presents POSDRBG as attaining that rate asymptotically, without proving that larger rates are impossible.",
+      "citation_labels": [
+        "Woohyuk Chung et al., Enhancing Provable Security and Efficiency of Permutation-based DRBGs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

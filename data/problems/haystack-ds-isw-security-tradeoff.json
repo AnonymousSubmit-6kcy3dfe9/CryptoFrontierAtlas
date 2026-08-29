@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "haystack-ds-isw-security-tradeoff",
+  "group_id": "haystack-ds-isw-security-tradeoff",
+  "title": "Haystack-DS+ISW Parameter Trade-Off Security",
+  "summary": "Known attacks impose parameter constraints on Haystack-DS+ISW, but its security across the full ciphertext-size, share, and slot trade-off remains to be characterized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Haystack-DS+ISW, known $\\mathrm{HDDA}$, $\\mathrm{HODCA}$, $\\mathrm{LSPN}$, and generic birthday attacks yield parameter constraints involving the ciphertext size $m$, which is also the sliding-window size in trace-based attacks, the number of shares $\\ell$, and the number of slots $d$. These constraints leave a trade-off among $m$, $\\ell$, and $d$. Characterize the security of Haystack-DS+ISW at every point in this parameter trade-off space."
+  },
+  "scope": {
+    "domain": "Cryptanalysis and parameter security of the Haystack-DS+ISW symmetric cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m: ciphertext size and sliding-window size in trace-based attacks",
+      "ℓ: number of shares",
+      "d: number of slots"
+    ],
+    "unresolved_remainder": "Characterize the security of Haystack-DS+ISW at every point in the trade-off among m, ℓ, and d."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "parameter-tradeoff",
+      "white-box-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 21",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source derives parameter constraints from known HDDA, HODCA, LSPN, and generic birthday attacks, then presents security across the resulting parameter trade-off as an interesting question.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

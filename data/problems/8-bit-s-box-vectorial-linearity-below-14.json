@@ -3,21 +3,23 @@
   "id": "8-bit-s-box-vectorial-linearity-below-14",
   "group_id": "8-bit-s-box-vectorial-linearity-below-14",
   "title": "8-Bit S-Boxes with Vectorial Linearity Below 14",
-  "summary": "For 8-bit S-boxes, the proven lower bound is 10 and a function with exact vectorial linearity 15 is reported; finding one below 14 or proving none exists remains open.",
+  "summary": "For 8-bit S-boxes, the proven lower bound is 10 and a reported example has exact vectorial linearity 15; it remains open whether a value below 14 exists.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For an 8-bit S-box, determine whether there exists a function whose vectorial linearity is lower than 14; the required resolution is either an explicit construction of such an S-box or a proof that no such 8-bit S-box exists. The available evidence reports a proven lower bound of 10 for $n=8$ and an 8-bit function $S=S^{15}$ with exact vectorial linearity 15; the existence or nonexistence of an 8-bit S-box with vectorial linearity lower than 14 remains unresolved."
   },
   "scope": {
-    "domain": "Vectorial Boolean functions and structural analysis of 8-bit S-boxes.",
+    "domain": "Structural and existence questions for vectorial Boolean functions used as S-boxes in symmetric cryptography.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "n = 8: dimension of the target S-box",
-      "14: strict target threshold for vectorial linearity"
+      "8-bit S-box dimension: fixes the function size",
+      "14: target vectorial-linearity threshold",
+      "10: reported proven lower bound for n = 8",
+      "15: exact vectorial linearity of the reported function S = S^15"
     ],
-    "unresolved_remainder": "Construct an 8-bit S-box with vectorial linearity below 14, or prove that no such S-box exists."
+    "unresolved_remainder": "Determine whether an 8-bit S-box with vectorial linearity below 14 exists, by constructing one or proving that none exists."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -27,8 +29,8 @@
     ],
     "tags": [
       "s-boxes",
-      "vectorial-linearity",
-      "vectorial-boolean-functions"
+      "vectorial-boolean-functions",
+      "open-problem"
     ]
   },
   "source": {
@@ -48,13 +50,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source reports a proven lower bound of 10 for n = 8 and an 8-bit function S = S^15 with exact vectorial linearity 15. It explicitly poses finding an 8-bit S-box below 14, or proving nonexistence, as a challenging open problem.",
+      "summary": "The source reports exact vectorial linearity 15 for the function S = S^15 and recalls a proven lower bound of 10 for n = 8. It explicitly presents finding an 8-bit S-box below 14, or proving none exists, as a challenging open problem.",
       "citation_labels": [
         "Alex Biryukov et al., Algorithmic Toolkit for Linearization of S-boxes"
       ]

@@ -3,20 +3,20 @@
   "id": "active-attack-detection-for-group-key-progression",
   "group_id": "active-attack-detection-for-group-key-progression",
   "title": "Active-Attack Detection for Group Key Progression",
-  "summary": "Preventing active attacks in Group Key Progression is challenging; whether two-party detection mechanisms extend to group protocols remains open.",
+  "summary": "The GKP security model is passive and excludes forged or injected messages; it remains open whether active-attack detection from two-party messaging extends to groups.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Determine whether active-attack detection mechanisms for two-party messaging can be extended to Group Key Progression (GKP) protocols for groups, given that preventing active attacks is challenging and detecting them may instead be an acceptable goal."
   },
   "scope": {
-    "domain": "Active-attack detection for Group Key Progression protocols in group messaging.",
+    "domain": "Security of Group Key Progression protocols and active-attack detection in group messaging.",
     "assumptions": [
       "None"
     ],
     "parameters": [
       "None"
     ],
-    "unresolved_remainder": "Determine whether active-attack detection mechanisms developed for two-party messaging can be extended to Group Key Progression protocols for groups."
+    "unresolved_remainder": "Determine whether active-attack detection mechanisms for two-party messaging can be extended to group Group Key Progression protocols."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source describes preventing active attacks as challenging and suggests detection as an acceptable practical goal. It presents extending two-party detection mechanisms to groups as a promising direction.",
+      "summary": "The source presents extending active-attack detection mechanisms from two-party messaging to groups as a promising direction. It notes that preventing active attacks is challenging and that detection may be an acceptable practical goal.",
       "citation_labels": [
         "Matilda Backendal et al., Group Key Progression: Strong Security for Shared Persistent Data"
       ]

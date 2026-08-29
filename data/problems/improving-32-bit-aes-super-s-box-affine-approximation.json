@@ -2,23 +2,23 @@
   "schema_version": "0.2.0",
   "id": "improving-32-bit-aes-super-s-box-affine-approximation",
   "group_id": "improving-32-bit-aes-super-s-box-affine-approximation",
-  "title": "Improving the 32-Bit AES Super-S-box Affine Approximation",
-  "summary": "A simplified Greedy-Reduction variant found a size-60 affine approximation for the zero-key 32-bit AES Super-S-box; improving it or finding a stronger result remains open.",
+  "title": "Improving the 32-bit AES Super-S-box affine approximation",
+  "summary": "A size-60 affine approximation is known for the zero-key 32-bit AES Super-S-box, while improving it or obtaining a stronger result remains open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For the 32-bit AES Super-S-box with the zero key, a simplified variant of the Greedy-Reduction algorithm produced an affine approximation of size 60; the unresolved task is to improve the size of this approximation or otherwise obtain a stronger result for this same instance."
   },
   "scope": {
-    "domain": "Automated linear cryptanalysis of affine approximations for the 32-bit AES Super-S-box.",
+    "domain": "Symmetric cryptanalysis of S-boxes using automated affine linearization.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "32-bit width: identifies the target AES Super-S-box",
-      "Zero key: fixes the target instance",
-      "Affine-approximation size: reported quantity with baseline 60"
+      "32-bit AES Super-S-box with the zero key (target instance)",
+      "Size 60 (reported affine-approximation baseline)",
+      "Simplified variant of the Greedy-Reduction algorithm (method used for the baseline)"
     ],
-    "unresolved_remainder": "Improve the size-60 affine approximation, or otherwise obtain a stronger result, for the same zero-key 32-bit AES Super-S-box instance."
+    "unresolved_remainder": "Improve the size-60 affine approximation or otherwise obtain a stronger result for the same 32-bit AES Super-S-box instance."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -27,9 +27,9 @@
       "cryptanalysis.linear"
     ],
     "tags": [
-      "s-box-linearization",
-      "automated-cryptanalysis",
-      "linear-cryptanalysis"
+      "cryptanalysis",
+      "linear-cryptanalysis",
+      "s-boxes"
     ]
   },
   "source": {
@@ -49,13 +49,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source reports a size-60 affine approximation obtained by a simplified Greedy-Reduction variant for the zero-key 32-bit AES Super-S-box. It explicitly leaves improving this difficult case as a challenge.",
+      "summary": "The source reports that a simplified variant of Greedy-Reduction obtained an affine approximation of size 60 for this zero-key instance. It explicitly leaves improving this difficult case as a challenge.",
       "citation_labels": [
         "Alex Biryukov et al., Algorithmic Toolkit for Linearization of S-boxes"
       ]

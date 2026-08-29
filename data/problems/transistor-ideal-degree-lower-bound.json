@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "transistor-ideal-degree-lower-bound",
+  "group_id": "transistor-ideal-degree-lower-bound",
+  "title": "Transistor Ideal-Degree Lower-Bound Conjecture",
+  "summary": "The Transistor analysis conjectures a lower bound on the ideal degree of its Gröbner-basis polynomial system; proving or refuting that bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\deg(I)\\ge 15^{16}\\approx 2^{62.5}$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Transistor through a Gröbner-basis attack on a zero-dimensional polynomial ideal.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "I: the zero-dimensional ideal of the polynomial system modeling Transistor's first clocks",
+      "15: degree of each independent equation and base of the conjectured lower bound",
+      "16: number of independent degree-15 equations and exponent of the conjectured lower bound"
+    ],
+    "unresolved_remainder": "Prove or refute that the ideal degree is at least 15^16, approximately 2^62.5."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "groebner-basis",
+      "ideal-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Transistor: a TFHE-friendly Stream Cipher",
+        "locator": "CRYPTO 2025, page 51",
+        "doi": "10.1007/978-3-032-01901-1_17",
+        "url": "https://eprint.iacr.org/2025/282",
+        "eprint": "2025/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the ideal-degree lower bound as a conjecture attributed to [69]. It treats the bound as underlying the asserted cost of change-of-order algorithms.",
+      "citation_labels": [
+        "Jules Baudrin et al., Transistor: a TFHE-friendly Stream Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

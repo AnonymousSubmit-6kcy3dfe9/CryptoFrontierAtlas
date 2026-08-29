@@ -3,21 +3,23 @@
   "id": "spectral-uniformity-below-the-inverse",
   "group_id": "spectral-uniformity-below-the-inverse",
   "title": "Spectral Uniformity Below the Inverse",
-  "summary": "The inverse function provides the comparison benchmark, but it remains open whether any function has smaller spectral uniformity or none exists, with power permutations as a special case.",
+  "summary": "The inverse is the comparison point; it remains open whether any function can improve its spectral uniformity, with power permutations as a more approachable special case.",
   "formal_statement": {
     "format": "markdown-latex",
-    "body": "$\\exists F\\colon\\mathbb F_{2^n}\\to\\mathbb F_{2^n}:\\sigma(F)<\\sigma(x\\mapsto x^{-1})$ or prove that no such $F$ exists; special case: power permutations."
+    "body": "$\\exists F\\colon\\mathbb F_{2^n}\\to\\mathbb F_{2^n}$: $\\sigma(F)<\\sigma(x\\mapsto x^{-1})$, or prove that no such $F$ exists; special case: power permutations."
   },
   "scope": {
-    "domain": "Spectral uniformity of vectorial Boolean functions over binary finite fields, including power permutations.",
+    "domain": "Structural questions about spectral uniformity of finite-field functions, with power permutations as a special family.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "n: extension degree determining the binary finite field",
-      "F: candidate function from the field to itself"
+      "n: determines the finite-field domain and codomain size",
+      "spectral uniformity: comparison measure for the functions",
+      "inverse function: reference function",
+      "power permutations: restricted special-case family"
     ],
-    "unresolved_remainder": "Determine whether any function has spectral uniformity below that of the inverse or prove none exists, and resolve the special case of power permutations."
+    "unresolved_remainder": "Determine whether any such function exists or prove that none exists; the more approachable special case is to resolve the same question for power permutations."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -25,7 +27,7 @@
     "secondary": [],
     "tags": [
       "spectral-uniformity",
-      "vectorial-boolean-functions",
+      "finite-field-functions",
       "power-permutations"
     ]
   },
@@ -46,13 +48,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly presents an existence-versus-impossibility open problem. It identifies power permutations as a more approachable special case.",
+      "summary": "The source presents this as an interesting open problem involving either a function with lower spectral uniformity than the inverse or a proof of nonexistence. It describes the power-permutation version as a more approachable special case and notes that the general nonexistence problem appears difficult.",
       "citation_labels": [
         "Tim Beyne et al., Pairwise independence of AES-like block ciphers"
       ]

@@ -2,21 +2,21 @@
   "schema_version": "0.2.0",
   "id": "forward-security-logarithmic-storage",
   "group_id": "forward-security-logarithmic-storage",
-  "title": "Forward Security with Logarithmic Storage",
-  "summary": "GGM1 supports secure deletion but incurs linear state growth under puncturing, while logarithmic worst-case storage with forward security remains unknown.",
+  "title": "Forward Security for Deleted Epoch Keys with Logarithmic Storage",
+  "summary": "GGM1 supports secure deletion but has linear state growth under puncturing; logarithmic worst-case storage with forward security remains unresolved.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Can forward security for deleted epoch keys be achieved with $O(\\log N)$ worst-case storage?"
   },
   "scope": {
-    "domain": "Forward-secure interval schemes for managing epoch keys in shared persistent data.",
+    "domain": "Symmetric cryptography concerning forward-secure interval schemes and their storage complexity.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "N: scale parameter for worst-case storage complexity"
+      "N, the parameter in the worst-case storage bound"
     ],
-    "unresolved_remainder": "Whether forward security for deleted epoch keys can be achieved with logarithmic worst-case storage."
+    "unresolved_remainder": "Whether a forward-secure interval scheme for deleted epoch keys can achieve logarithmic worst-case storage."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The paper states that logarithmic worst-case storage with forward security is not known and is therefore unsupported in GGM2. It contrasts this with GGM1, which supports secure deletion but incurs linear state growth under puncturing.",
+      "summary": "The source explicitly states that achieving forward security with logarithmic worst-case storage is not known and consequently is not supported in GGM2.",
       "citation_labels": [
         "Matilda Backendal et al., Group Key Progression: Strong Security for Shared Persistent Data"
       ]

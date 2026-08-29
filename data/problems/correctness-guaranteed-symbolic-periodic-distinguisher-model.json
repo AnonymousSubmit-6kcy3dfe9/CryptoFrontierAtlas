@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "correctness-guaranteed-symbolic-periodic-distinguisher-model",
+  "group_id": "correctness-guaranteed-symbolic-periodic-distinguisher-model",
+  "title": "Correctness-Guaranteed Symbolic Periodic-Distinguisher Model",
+  "summary": "Current symbolic construction needs a separate correctness test as initial x symbols increase; the open task is a model that guarantees correct periodic distinguishers directly.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a more precise symbolic model for automated periodic-distinguisher construction when the number of initial symbols denoted $x$ increases. The current symbolic model requires an additional testing phase to ensure the correctness of an output distinguisher; the new model must guarantee correctness directly and eliminate that testing phase."
+  },
+  "scope": {
+    "domain": "Automated symmetric cryptanalysis through symbolic construction of periodic distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of initial symbols denoted x — the varying quantity under which a more precise model is sought"
+    ],
+    "unresolved_remainder": "Develop a more precise symbolic model that guarantees correctness of its output periodic distinguishers without an additional testing phase as the number of initial x symbols increases."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "automated-cryptanalysis",
+      "periodic-distinguishers",
+      "symbolic-modeling"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Periodic Distinguisher Construction: Symbolization Method and Automated Tool",
+        "locator": "ASIACRYPT 2025, page 46",
+        "doi": "10.1007/978-981-95-5125-5_8",
+        "url": "https://eprint.iacr.org/2025/681",
+        "eprint": "2025/681"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as one of two open problems and a direction for future work. Its first symbolic model still requires separate correctness testing when the number of initial x symbols increases.",
+      "citation_labels": [
+        "Qun Liu et al., Quantum Periodic Distinguisher Construction: Symbolization Method and Automated Tool"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

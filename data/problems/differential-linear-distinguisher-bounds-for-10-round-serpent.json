@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "differential-linear-distinguisher-bounds-for-10-round-serpent",
+  "group_id": "differential-linear-distinguisher-bounds-for-10-round-serpent",
+  "title": "Differential-Linear Distinguisher Bounds for 10-Round Serpent",
+  "summary": "Extensive searches found no qualifying distinguisher for 10-round Serpent above two to the minus sixty-four bias; establishing lower bounds and deciding existence remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish lower bounds for differential--linear distinguishers to support evaluation of cipher security against differential--linear cryptanalysis, and resolve the concrete case of 10-round Serpent by determining whether any differential--linear distinguisher has bias greater than $2^{-64}$. Extensive search efforts have not found such a distinguisher, but its existence remains uncertain."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis of block ciphers, centered on the concrete target of 10-round Serpent.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: 10, fixing the concrete Serpent target",
+      "Bias threshold: $2^{-64}$, setting the cutoff in the existence question"
+    ],
+    "unresolved_remainder": "Establish lower bounds for differential-linear distinguishers and determine whether any distinguisher against 10-round Serpent has bias greater than $2^{-64}$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "differential-linear-cryptanalysis",
+      "serpent",
+      "distinguisher-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Enhancing the DATF Technique in Differential-Linear Cryptanalysis",
+        "locator": "ASIACRYPT 2025, page 28",
+        "doi": "10.1007/978-981-95-5018-0_12",
+        "url": "https://eprint.iacr.org/2025/1632",
+        "eprint": "2025/1632"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents lower-bound computation as important for security evaluation and isolates the 10-round Serpent existence question at the stated bias threshold. It reports extensive unsuccessful searches, not a proof of nonexistence.",
+      "citation_labels": [
+        "Cheng Che et al., Enhancing the DATF Technique in Differential-Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

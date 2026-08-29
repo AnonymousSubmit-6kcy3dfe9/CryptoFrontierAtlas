@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "haystack-pubds-isw-comparative-security",
+  "group_id": "haystack-pubds-isw-comparative-security",
+  "title": "Comparative Security of Haystack-PubDS+ISW",
+  "summary": "No attacks specific to public dummy shuffling are known; determine whether Haystack-PubDS+ISW has security comparable to Haystack-DS+ISW.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine through cryptanalysis whether Haystack-PubDS+ISW has security comparable to Haystack-DS+ISW. No attacks specific to public dummy shuffling are known, but public dummy shuffling has reduced combinatorial complexity because each slot is shuffled separately by the same permutation. Analyze Haystack-PubDS+ISW using the parameters suggested for Haystack-DS+ISW, with a suitable adaptation to account for this loss of combinatorial complexity."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of Haystack-PubDS+ISW, whose public dummy shuffling separately shuffles each slot using the same permutation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Haystack-DS+ISW parameter set: baseline parameters to adapt when analyzing Haystack-PubDS+ISW"
+    ],
+    "unresolved_remainder": "Determine whether Haystack-PubDS+ISW has security comparable to Haystack-DS+ISW after accounting for its reduced combinatorial complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "white-box-cryptography",
+      "dummy-shuffling"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 23",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures comparable security because no attacks specific to public dummy shuffling are known. It calls for further cryptanalysis using suitably adapted Haystack-DS+ISW parameters.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

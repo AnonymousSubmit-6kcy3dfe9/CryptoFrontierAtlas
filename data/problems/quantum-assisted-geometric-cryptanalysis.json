@@ -2,21 +2,21 @@
   "schema_version": "0.2.0",
   "id": "quantum-assisted-geometric-cryptanalysis",
   "group_id": "quantum-assisted-geometric-cryptanalysis",
-  "title": "Quantum-Assisted Geometric Analysis of Classical Attacks",
-  "summary": "It remains unknown whether quantum computers can aid geometric analysis of classical cryptanalytic attacks and reveal new cryptanalytic techniques.",
+  "title": "Quantum-Assisted Geometric Attack Analysis",
+  "summary": "Whether quantum computation can strengthen geometric analysis of classical cryptanalytic attacks and expose new attack techniques remains open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Determine whether quantum computers can aid the theoretical analysis of classical cryptanalytic attacks using the geometric approach and, in particular, whether such quantum-assisted analysis can reveal new cryptanalytic techniques."
   },
   "scope": {
-    "domain": "Quantum-assisted geometric analysis of classical cryptanalytic attacks.",
+    "domain": "Quantum-assisted cryptanalysis using a geometric approach to analyze classical attacks.",
     "assumptions": [
       "None"
     ],
     "parameters": [
       "None"
     ],
-    "unresolved_remainder": "Whether quantum assistance can improve the theoretical analysis of classical attacks using the geometric approach and reveal new cryptanalytic techniques."
+    "unresolved_remainder": "Whether quantum computers can aid geometric theoretical analysis of classical cryptanalytic attacks and reveal new cryptanalytic techniques."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly presents this as an intriguing open question and identifies the discovery of new cryptanalytic techniques as a possible outcome.",
+      "summary": "The paper explicitly presents this as an intriguing open question and suggests that revealing new cryptanalytic techniques could be an outcome of quantum-assisted geometric analysis.",
       "citation_labels": [
         "Zhili Wu et al., A Geometric Approach to Quantum Distinguishers"
       ]

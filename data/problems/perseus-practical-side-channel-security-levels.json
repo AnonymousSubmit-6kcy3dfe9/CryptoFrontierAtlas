@@ -2,24 +2,24 @@
   "schema_version": "0.2.0",
   "id": "perseus-practical-side-channel-security-levels",
   "group_id": "perseus-practical-side-channel-security-levels",
-  "title": "Practical Side-Channel Security Levels for PERSEUS",
-  "summary": "PERSEUS yields random-probing security bounds, but its Monte Carlo refinement can saturate at high security levels; determine practical targets accounting for real-attack measurement costs.",
+  "title": "Practical Security Levels for Side-Channel Resistance",
+  "summary": "PERSEUS gives tight security bounds in some settings, but its Monte Carlo refinement becomes looser and can saturate; the open task is to set practical levels using real-attack measurement costs.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For PERSEUS, determine which practical security levels should be targeted for side-channel resistance when the measurement cost of real attacks is taken into account. The relevant gap arises because PERSEUS can produce a tight security bound, such as $\\varepsilon_U \\approx 2^{-40}$ for $n=6$ shares and leakage rate $p=2^{-12}$, but its Monte Carlo refinement becomes less tight at higher leakage rates and saturates for high-security circuits, such as RPMult with $n=7$ and $p=2^{-10}$, where it yields the looser interval $2^{-40} \\leq \\varepsilon \\leq 2^{-34}$. The unresolved task is to establish practical target security levels that relate the security parameter $\\varepsilon$ to the measurement cost required for a real side-channel attack."
   },
   "scope": {
-    "domain": "Random-probing security analysis for practical side-channel resistance using PERSEUS.",
+    "domain": "Random-probing side-channel security analysis and calibration of security bounds to real attack costs.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "ε: security parameter whose practical target is to be calibrated",
-      "n: number of shares",
-      "p: leakage rate",
-      "measurement cost: operational cost required for a real side-channel attack"
+      "epsilon, the security parameter",
+      "n, the number of shares",
+      "p, the leakage rate",
+      "measurement cost, the cost of a real side-channel attack"
     ],
-    "unresolved_remainder": "Establish practical target security levels that relate ε to the measurement cost required for a real side-channel attack."
+    "unresolved_remainder": "Determine practical target security levels that relate the security parameter epsilon to the measurement cost required for a real side-channel attack."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -28,8 +28,8 @@
       "foundations.others"
     ],
     "tags": [
+      "random-probing",
       "side-channel-security",
-      "random-probing-security",
       "attack-complexity"
     ]
   },
@@ -50,13 +50,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source reports a tight PERSEUS bound for one parameter setting, then notes that its Monte Carlo refinement becomes less tight and saturates for a high-security RPMult setting. It explicitly presents practical target selection under real-attack measurement costs as a broader open question.",
+      "summary": "The source explicitly presents this as a broader open question arising from PERSEUS's tight bounds in some settings and looser, saturating Monte Carlo refinements in others. It asks how practical side-channel security levels should account for the measurement cost of real attacks.",
       "citation_labels": [
         "Sonia Belaïd et al., PERSEUS – Probabilistic Evaluation of Random probing SEcurity Using efficient Sampling"
       ]

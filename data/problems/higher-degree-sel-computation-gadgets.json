@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-degree-sel-computation-gadgets",
+  "group_id": "higher-degree-sel-computation-gadgets",
+  "title": "Higher-Degree SEL Computation Gadgets",
+  "summary": "SEL computation gadgets are known only for nonlinear monomial degrees two and three; constructing higher-degree instantiations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct computation gadgets for the SEL nonlinear masking scheme when its decoding function is the sum of one nonlinear monomial of degree $d$ and $\\ell$ linear shares, where $\\ell\\in\\mathbb{Z}_{>0}$ and $d>3$. Existing SEL gadgets cover only $d=2$ and $d=3$, leaving higher-degree instantiations unresolved."
+  },
+  "scope": {
+    "domain": "Computation-gadget design for the SEL nonlinear masking scheme in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "d: degree of the nonlinear monomial, with the unresolved range greater than three",
+      "ℓ: positive number of linear shares"
+    ],
+    "unresolved_remainder": "Construct SEL computation gadgets for nonlinear monomial degrees greater than three."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "nonlinear-masking",
+      "computation-gadgets",
+      "cryptographic-primitives"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 35",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that existing SEL work provides gadgets only for degrees two and three and explicitly calls higher-degree instantiation an open problem. Its general analysis does not involve gadgets.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

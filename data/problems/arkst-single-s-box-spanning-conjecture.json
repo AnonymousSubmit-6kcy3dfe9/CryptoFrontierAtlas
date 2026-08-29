@@ -2,24 +2,24 @@
   "schema_version": "0.2.0",
   "id": "arkst-single-s-box-spanning-conjecture",
   "group_id": "arkst-single-s-box-spanning-conjecture",
-  "title": "ARKST Single-S-Box Spanning Conjecture",
-  "summary": "ARKST builds a candidate space from differences activating one S-box at a time; whether their span contains every alpha-admissible key difference remains conjectural.",
+  "title": "ARKST Single-S-Box Key-Difference Completeness",
+  "summary": "For SPNs, ARKST forms a candidate key-difference space, but it remains unresolved whether the single-S-box restriction captures every alpha-admissible difference.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For an SPN, ARKST restricts each round's key-difference component $W_i$ to a difference $a_i$ that activates at most one S-box, represented as $a_i=L(c_i)$ with $\\operatorname{wt}_b(c_i)\\le 1$, and forms a candidate $\\alpha$-admissible key-difference space from the linear combinations of the differences obtained in this way. The unresolved question is whether these single-S-box-activation differences span every $\\alpha$-admissible key difference, so that the restriction is complete after taking linear combinations, even though individual $\\alpha$-admissible differences may activate more than one S-box."
   },
   "scope": {
-    "domain": "Integral cryptanalysis of SPNs via ARKST's alpha-admissible key-difference search.",
+    "domain": "Cryptanalysis of SPN integral attacks, focusing on ARKST key-difference spaces.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "Wᵢ and i: the key-difference component and its round index",
-      "aᵢ: a searched difference restricted to activate at most one S-box",
-      "cᵢ, L, and b: the representation vector, mapping, and word size used in the block-weight condition",
-      "alpha: the admissibility label for the target key-difference space"
+      "W_i: each round's key-difference component",
+      "a_i: a difference activating at most one S-box",
+      "c_i: the vector representing a_i under the weight-at-most-one condition",
+      "alpha-admissible key-difference space: the target space for the span claim"
     ],
-    "unresolved_remainder": "Whether differences activating at most one S-box span every alpha-admissible key difference after taking linear combinations."
+    "unresolved_remainder": "Whether the single-S-box-activation differences span every alpha-admissible key difference, making the restriction complete after taking linear combinations, even though individual alpha-admissible differences may activate more than one S-box."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -29,8 +29,8 @@
     ],
     "tags": [
       "integral-cryptanalysis",
-      "s-boxes",
-      "key-difference-spaces"
+      "s-box",
+      "key-differences"
     ]
   },
   "source": {
@@ -50,13 +50,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly conjectures that differences found by activating one S-box at a time span all alpha-admissible key differences. It notes that individual admissible differences need not have this minimal form; the claim concerns their linear combinations.",
+      "summary": "The source presents this as an explicit conjecture that activating one S-box at a time captures all existing alpha-admissible key differences. It clarifies that individual admissible differences may activate multiple S-boxes but are expected to be linear combinations of the minimal ones.",
       "citation_labels": [
         "Christof Beierle et al., When the Wrong Key Lives On: The Key-Recovery Procedure in Integral Attacks"
       ]

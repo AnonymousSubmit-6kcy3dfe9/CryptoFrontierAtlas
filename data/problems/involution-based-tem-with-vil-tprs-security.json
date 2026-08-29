@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "involution-based-tem-with-vil-tprs-security",
+  "group_id": "involution-based-tem-with-vil-tprs-security",
+  "title": "Involution-Based TEM with vil-tprs Security",
+  "summary": "HCI, one of the very few TEMs with the involution property, has been broken; whether such a mode can also achieve vil-tprs security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a tweakable enciphering mode (TEM) with the involution property that achieves vil-tprs security. HCI, one of the very few TEMs with the involution property, has been broken; the unresolved task is to determine whether the involution property and vil-tprs security guarantees can be achieved simultaneously."
+  },
+  "scope": {
+    "domain": "Symmetric-cryptographic design of involution-based tweakable enciphering modes with vil-tprs security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether an involution-based tweakable enciphering mode can be designed while preserving vil-tprs security guarantees."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-enciphering-modes",
+      "involution",
+      "vil-tprs-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries",
+        "locator": "CRYPTO 2025, page 24",
+        "doi": "10.1007/978-3-032-01901-1_6",
+        "url": "https://eprint.iacr.org/2024/1554",
+        "eprint": "2024/1554"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this among its open problems after reporting that its results break HCI, one of the very few TEMs with the involution property. It asks whether an involution-based TEM can preserve vil-tprs security.",
+      "citation_labels": [
+        "Amit Singh Bhati et al., Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

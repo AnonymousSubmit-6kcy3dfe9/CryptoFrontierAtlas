@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "memory-access-costs-in-practical-aes-attacks",
+  "group_id": "memory-access-costs-in-practical-aes-attacks",
+  "title": "Memory-Access Costs in Practical AES Attacks",
+  "summary": "AES attack implementations using larger and smaller memory show about 16-fold and 168-fold speedups, respectively; whether access overhead causes the gap and how to model it remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "An implementation of the 4-round AES-128 attack, with a reported memory-complexity figure of $2^{24}$, achieved about a $16$-fold speedup over brute force, whereas the preimage attack on 10-round AES-256-DM, with a reported memory-complexity figure of $2^8$, achieved about a $168$-fold speedup. Determine whether the former attack's lower practical speedup is caused by the time required to access its larger memory, and develop a validated method for incorporating memory-access overhead into practical attack-cost estimates."
+  },
+  "scope": {
+    "domain": "Practical meet-in-the-middle cryptanalysis of AES-128 and AES-256-DM with memory-aware attack-cost estimation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "4-round AES-128 and 10-round AES-256-DM — compared attack targets",
+      "2^24 and 2^8 — reported memory-complexity figures",
+      "16-fold and 168-fold — reported practical speedups over brute force"
+    ],
+    "unresolved_remainder": "Determine whether larger-memory access causes the 4-round AES-128 attack's lower speedup and validate a method that incorporates memory-access overhead into practical attack-cost estimates."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [],
+    "tags": [
+      "meet-in-the-middle",
+      "symmetric-cryptanalysis",
+      "memory-cost-modeling"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Triangulating Meet-in-the-Middle Attack",
+        "locator": "CRYPTO 2025, page 27",
+        "doi": "10.1007/978-3-032-01901-1_9",
+        "url": "https://eprint.iacr.org/2026/598",
+        "eprint": "2026/598"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports markedly different speedups for the two implementations and tentatively attributes the gap to the cost of accessing larger memory. It provides no controlled validation or hardware-aware cost model.",
+      "citation_labels": [
+        "Boxin Zhao et al., Triangulating Meet-in-the-Middle Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

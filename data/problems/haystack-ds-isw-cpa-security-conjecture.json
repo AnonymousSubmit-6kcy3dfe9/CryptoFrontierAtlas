@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "haystack-ds-isw-cpa-security-conjecture",
+  "group_id": "haystack-ds-isw-cpa-security-conjecture",
+  "title": "Haystack-DS+ISW CPA-Security Conjecture",
+  "summary": "The paper conjectures that polynomial parameter choices let Haystack-DS+ISW reach the target CPA-security level; proving or disproving this remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or disprove the conjecture that there exist polynomial functions $\\ell(\\lambda)$, $d(\\lambda)$, $r(\\lambda)$ such that the Haystack-DS+ISW cipher instantiated with these parameters achieves $\\lambda$ bits of CPA security."
+  },
+  "scope": {
+    "domain": "White-box symmetric-cipher design and CPA-security analysis for Haystack-DS+ISW.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "λ: argument of the polynomial functions and target number of CPA-security bits",
+      "ℓ(λ), d(λ), and r(λ): polynomial functions used to instantiate Haystack-DS+ISW"
+    ],
+    "unresolved_remainder": "Prove or disprove the existence of polynomial parameter functions that yield λ bits of CPA security for Haystack-DS+ISW."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "cpa-security",
+      "white-box-cryptography",
+      "symmetric-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source states this explicitly as Conjecture 1 and presents it as essential and necessary for the countermeasure's security in the white-box setting. It leaves the polynomial-parameter CPA-security claim unresolved.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

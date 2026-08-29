@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tightness-post-quantum-bounds-ascon-keyed-sponges",
+  "group_id": "tightness-post-quantum-bounds-ascon-keyed-sponges",
+  "title": "Tightness of Post-Quantum Bounds for Ascon and Keyed Sponges",
+  "summary": "The current post-quantum analysis of Ascon, IKS, FKS, OKS, and KMAC is capped by (tweakable) Even–Mansour bounds; find matching attacks or establish stronger bounds by another technique.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Ascon and the keyed sponge functions $\\mathrm{IKS}$, $\\mathrm{FKS}$, $\\mathrm{OKS}$, and $\\mathrm{KMAC}$ in the post-quantum setting, determine whether attacks can match their existing security bounds or, alternatively, establish stronger bounds using a different technique. The current approach is capped by the security bounds for (tweakable) Even--Mansour; no matching attacks are known, and the existing bounds are expected not to be tight."
+  },
+  "scope": {
+    "domain": "Post-quantum cryptanalysis of Ascon and the keyed sponge functions IKS, FKS, OKS, and KMAC.",
+    "assumptions": [
+      "Post-quantum setting"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Find attacks matching the existing security bounds or establish stronger bounds using a different technique."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "post-quantum-cryptanalysis",
+      "keyed-sponge",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach",
+        "locator": "ASIACRYPT 2025, page 30",
+        "doi": "10.1007/978-981-95-5018-0_14",
+        "url": "https://eprint.iacr.org/2025/1059",
+        "eprint": "2025/1059"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "In its limitations and future-work discussion, the source says the current approach inherits a cap from (tweakable) Even–Mansour security bounds. It reports no matching attacks and expects the resulting bounds not to be tight.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

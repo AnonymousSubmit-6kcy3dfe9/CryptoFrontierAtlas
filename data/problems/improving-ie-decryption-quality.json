@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improving-ie-decryption-quality",
+  "group_id": "improving-ie-decryption-quality",
+  "title": "Improving Decryption Quality of IE",
+  "summary": "IE provides compression-tolerant image encryption, but whether its decryption quality can be improved beyond the current level remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the compression-tolerant image-encryption construction abbreviated IE, further improvement of decryption quality remains unresolved: determine whether its decryption quality can be improved beyond the currently achieved level."
+  },
+  "scope": {
+    "domain": "Compression-tolerant image encryption, focusing on the IE construction and its decryption quality.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether IE's decryption quality can be improved beyond the currently achieved level."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "image-encryption",
+      "compression-tolerance",
+      "decryption-quality"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Format-Preserving Compression-Tolerating Authenticated Encryption for Images",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5119-4_4",
+        "url": "https://eprint.iacr.org/2026/585",
+        "eprint": "2026/585"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as one of several research problems opened by the construction and directly asks whether IE's decryption quality can be further improved.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Format-Preserving Compression-Tolerating Authenticated Encryption for Images"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -2,22 +2,23 @@
   "schema_version": "0.2.0",
   "id": "polynomial-correlation-congruence-preservation-relation",
   "group_id": "polynomial-correlation-congruence-preservation-relation",
-  "title": "Relating Polynomial Correlation and Congruence-Preservation Probability",
-  "summary": "Examples show either measure can be larger, while maximum polynomial correlation equal to one implies congruence-preservation probability equal to one; any general relation remains open.",
+  "title": "Relation Between Polynomial Correlation and Congruence-Preservation Probability",
+  "summary": "The quantities can each exceed the other, while perfect polynomial correlation implies perfect congruence preservation; a general relation remains open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For a function over an integer ring and a level $\\ell$, maximum $\\ell$-polynomial correlation $\\mathrm{PC}_{\\max}^{(\\ell)}$ measures its best agreement modulo $p^\\ell$ with a polyfunction, while congruence-preservation probability $\\mathrm{CPP}(\\ell)$ measures the probability of preserving congruence modulo $p^\\ell$. Examples show that either $\\mathrm{PC}_{\\max}^{(\\ell)}<\\mathrm{CPP}(\\ell)$ or $\\mathrm{PC}_{\\max}^{(\\ell)}>\\mathrm{CPP}(\\ell)$ can occur, although $\\mathrm{PC}_{\\max}^{(\\ell)}=1$ implies $\\mathrm{CPP}(\\ell)=1$. Determine whether any general relation between these two quantities exists and, if so, characterize and prove it."
   },
   "scope": {
-    "domain": "Structural analysis of functions over integer rings using polynomial correlation and congruence-preservation probability.",
+    "domain": "This is a mathematical-foundations question about functions over integer rings, polynomial correlation, and congruence preservation.",
     "assumptions": [
-      "None"
+      "the function is over an integer ring"
     ],
     "parameters": [
-      "ℓ: level at which both quantities and congruence modulo p^ℓ are evaluated",
-      "p: base appearing in the modulus p^ℓ"
+      "ell, the level associated with the two quantities",
+      "PC_max^(ell), the maximum ell-polynomial correlation",
+      "CPP(ell), the congruence-preservation probability"
     ],
-    "unresolved_remainder": "Determine whether a general relation between maximum ℓ-polynomial correlation and congruence-preservation probability exists and, if so, characterize and prove it."
+    "unresolved_remainder": "Determine whether any general relation between maximum ell-polynomial correlation and congruence-preservation probability exists, and if so characterize and prove it."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -48,13 +49,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly leaves the relation as an open problem. It gives examples in both ordering directions and records only the implication at maximum polynomial correlation equal to one.",
+      "summary": "The source explicitly presents this as an open problem for future work. It gives examples in which either quantity exceeds the other and records only that perfect maximum polynomial correlation implies perfect congruence-preservation probability.",
       "citation_labels": [
         "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
       ]

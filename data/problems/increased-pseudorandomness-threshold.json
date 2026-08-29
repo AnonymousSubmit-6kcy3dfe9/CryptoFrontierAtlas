@@ -3,23 +3,26 @@
   "id": "increased-pseudorandomness-threshold",
   "group_id": "increased-pseudorandomness-threshold",
   "title": "Increased Pseudorandomness Threshold",
-  "summary": "For randomized permutations with constant output-bit locality, it remains open whether negligible distance from four-wise independence at T rounds guarantees pseudorandomness after doubling the rounds.",
+  "summary": "For the stated local permutation model, logarithmic-wise independence is sufficient for pseudorandomness; the conjecture asks whether 4-wise independence suffices after doubling the composition rounds.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Let $P$ be a randomized permutation $P:\\{0,1\\}^n \\to \\{0,1\\}^n$ such that each output bit depends on only a constant number of input bits. The unresolved question is whether, if the $T$-fold composition $P^T$ is negligibly far from $4$-wise independence, then increasing the number of composition rounds to $2T$ makes the result pseudorandom; specifically, whether there exists a polynomial $p$ such that $P^{2T}$ is a pseudorandom permutation under these conditions."
   },
   "scope": {
-    "domain": "Pseudorandomness thresholds for repeatedly composed randomized permutations with constant input dependence per output bit.",
+    "domain": "Cryptographic pseudorandomness and limited independence of randomized permutations with constant local dependence.",
     "assumptions": [
-      "The T-fold composition is negligibly far from 4-wise independence."
+      "P is a randomized permutation from {0,1}^n to {0,1}^n.",
+      "Each output bit of P depends on only a constant number of input bits.",
+      "The T-fold composition of P is negligibly far from 4-wise independence."
     ],
     "parameters": [
-      "P: randomized permutation being repeatedly composed",
-      "n: input and output bit length",
+      "n: bit length of the permutation domain and range",
       "T: baseline number of composition rounds",
-      "p: polynomial introduced existentially in the conjectured conclusion"
+      "4: independence threshold in the premise",
+      "2T: doubled number of composition rounds in the target",
+      "p: polynomial whose existence is asserted in the target"
     ],
-    "unresolved_remainder": "Whether, under the stated premise, there exists a polynomial p such that the 2T-fold composition is a pseudorandom permutation."
+    "unresolved_remainder": "Whether the stated 4-wise-independence condition guarantees that doubling the composition rounds yields a pseudorandom permutation for some polynomial p."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -28,9 +31,9 @@
       "foundations.others"
     ],
     "tags": [
-      "pseudorandom-permutations",
-      "four-wise-independence",
-      "round-amplification"
+      "pseudorandomness",
+      "limited-independence",
+      "randomized-permutations"
     ]
   },
   "source": {
@@ -50,13 +53,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly labels the claim Conjecture 4, “Increased Pseudorandomness Threshold,” and motivates it by limitations of its counterexample when four-wise independence is required in intermediate rounds.",
+      "summary": "The source states this as Conjecture 4, titled \"Increased Pseudorandomness Threshold.\" It presents the unresolved implication from the T-fold composition being negligibly far from 4-wise independence to the doubled composition being a pseudorandom permutation.",
       "citation_labels": [
         "Jesko Dujmovic et al., When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness"
       ]

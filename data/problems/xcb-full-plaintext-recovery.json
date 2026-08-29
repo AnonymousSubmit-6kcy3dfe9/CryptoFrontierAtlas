@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xcb-full-plaintext-recovery",
+  "group_id": "xcb-full-plaintext-recovery",
+  "title": "Full Plaintext Recovery for XCB",
+  "summary": "Separate attacks recover A in three queries and B in four; the recorded unresolved task is to recover their full concatenation with one attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In attacks on XCB, one attack uses three queries to recover plaintext component $A$, while another uses four queries to recover component $B$. Determine whether an attack can recover the full concatenated plaintext $A\\mathbin{\\|}B$."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of XCB plaintext-recovery attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "A and B: plaintext components whose concatenation forms the full plaintext",
+      "Three queries: stated cost of the attack recovering A",
+      "Four queries: stated cost of the attack recovering B"
+    ],
+    "unresolved_remainder": "Whether an attack can recover the complete plaintext formed by concatenating A and B."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "xcb",
+      "plaintext-recovery",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Recover the Full Plaintext of XCB",
+        "locator": "CRYPTO 2025, page 17",
+        "doi": "10.1007/978-3-032-01901-1_8",
+        "url": "https://eprint.iacr.org/2024/1527",
+        "eprint": "2024/1527"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source poses full plaintext recovery as the next target after separate attacks recover A and B. The supplied surrounding text then answers the question affirmatively.",
+      "citation_labels": [
+        "Peng Wang et al., How to Recover the Full Plaintext of XCB"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

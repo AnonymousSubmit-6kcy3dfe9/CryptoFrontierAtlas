@@ -2,21 +2,21 @@
   "schema_version": "0.2.0",
   "id": "unified-inverse-walk-mixing-bound",
   "group_id": "unified-inverse-walk-mixing-bound",
-  "title": "Unified Inverse-Walk Upper Mixing Bound",
-  "summary": "The odd-characteristic proof uses three-term arithmetic progressions unavailable in characteristic two; a unified inverse-walk mixing upper-bound proof remains open.",
+  "title": "Unified Inverse-Walk Mixing Bound",
+  "summary": "Characteristic-specific comparison methods are available, but a common upper-bound proof for the inverse walk across both regimes remains unresolved.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Develop a unified proof of the inverse-walk upper mixing bound over finite fields that applies in both odd characteristic and characteristic $2$. The existing odd-characteristic strategy produces $3$-cycles by first constructing a three-term arithmetic progression, but that intermediate construction has no counterpart in characteristic $2$; the unresolved task is therefore to obtain one upper-bound argument that works in both regimes."
   },
   "scope": {
-    "domain": "Mixing bounds for inverse-generated random walks on permutations over finite fields.",
+    "domain": "Probability and algebraic structures of inverse walks over finite fields.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "Field characteristic — distinguishes the odd-characteristic and characteristic-2 regimes that a unified proof must cover"
+      "Finite fields with characteristic either odd or 2, defining the two regimes the unified bound must cover"
     ],
-    "unresolved_remainder": "Find a single proof of the inverse-walk upper mixing bound that applies in both characteristic regimes."
+    "unresolved_remainder": "Determine whether a common upper-bound approach exists and, if so, develop a proof that applies in both odd characteristic and characteristic 2."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -25,9 +25,9 @@
       "foundations.algebraic-structures"
     ],
     "tags": [
-      "inverse-walk",
-      "mixing-bounds",
-      "finite-fields"
+      "finite-fields",
+      "inverse-walks",
+      "mixing-bounds"
     ]
   },
   "source": {
@@ -47,13 +47,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The paper presents characteristic-dependent upper-bound strategies and asks whether a common approach exists. It identifies the absence of a characteristic-two analogue of the three-term arithmetic-progression step as an obstacle.",
+      "summary": "The source presents the issue as a common upper-bound question, noting that the odd-characteristic 3-cycle construction does not immediately transfer to characteristic 2.",
       "citation_labels": [
         "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
       ]

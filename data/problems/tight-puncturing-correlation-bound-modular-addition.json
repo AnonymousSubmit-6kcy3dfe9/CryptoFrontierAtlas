@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-puncturing-correlation-bound-modular-addition",
+  "group_id": "tight-puncturing-correlation-bound-modular-addition",
+  "title": "Tight Puncturing-Correlation Bound for Modular Addition",
+  "summary": "A general puncturing-correlation lower bound for modular addition can be loose; derive an always-tight bound that exploits the output mask’s form.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For bit puncturing applied to modular addition, a general lower bound on the retained Walsh-spectrum mass, equivalently the puncturing correlation, is not always tight because it does not fully account for the form of the output mask $w$. The unresolved task is to derive a lower bound on this puncturing correlation that uses the form of $w$ in more detail and is always tight. The existing bound is tight when the case $\\sigma_{l-1}=0$ never occurs, a condition that holds for some $w$; the desired result should therefore also handle the dependence on this condition and on $w$."
+  },
+  "scope": {
+    "domain": "Walsh-spectrum and linear-correlation analysis of bit-punctured modular addition.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Output mask w, whose form affects the tightness of the lower bound"
+    ],
+    "unresolved_remainder": "Derive an always-tight lower bound that uses the form of the output mask and accounts for the condition involving sigma at index l minus 1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "bit-puncturing",
+      "modular-addition",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing",
+        "locator": "EUROCRYPT 2025, page 33",
+        "doi": "10.1007/978-3-031-91107-1_15",
+        "url": "https://eprint.iacr.org/2025/437",
+        "eprint": "2025/437"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a general lower bound and notes that it is tight for some output masks when the stated sigma-zero case never occurs. It explicitly leaves an always-tight, mask-sensitive bound as an open problem.",
+      "citation_labels": [
+        "Antonio Florez-Gutierrez et al., Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

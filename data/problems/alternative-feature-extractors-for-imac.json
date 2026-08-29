@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alternative-feature-extractors-for-imac",
+  "group_id": "alternative-feature-extractors-for-imac",
+  "title": "Alternative Feature Extractors for IMAC",
+  "summary": "CLIP similarity distributions overlap for honest decryptions and some visually distinct images; whether alternative extractors can improve IMAC's visual-correctness/security tradeoff remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find a feature extractor $\\Phi$ whose similarity threshold yields a better IMAC visual-correctness/security tradeoff than CLIP."
+  },
+  "scope": {
+    "domain": "Feature-extractor design for IMAC image authentication.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Φ: candidate feature extractor for IMAC",
+      "Similarity threshold: parameter governing the visual-correctness/security tradeoff"
+    ],
+    "unresolved_remainder": "Whether a feature extractor and similarity threshold can yield a better IMAC visual-correctness/security tradeoff than CLIP."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "message-authentication",
+      "image-authentication",
+      "perceptual-hashing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Format-Preserving Compression-Tolerating Authenticated Encryption for Images",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5119-4_4",
+        "url": "https://eprint.iacr.org/2026/585",
+        "eprint": "2026/585"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies overlap in CLIP similarity distributions and explicitly asks whether alternatives, including PhotoDNA-style perceptual hashing, can provide a better tradeoff for IMAC.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Format-Preserving Compression-Tolerating Authenticated Encryption for Images"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

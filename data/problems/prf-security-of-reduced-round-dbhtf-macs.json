@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "prf-security-of-reduced-round-dbhtf-macs",
+  "group_id": "prf-security-of-reduced-round-dbhtf-macs",
+  "title": "PRF Security of Reduced-Round DbHtF MACs",
+  "summary": "Four-round DbHtF-style MACs with truncated permutation-based Luby–Rackoff output achieve PRF security; whether variants with fewer rounds do so remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The four-round $\\mathrm{DbHtF}$-style message-authentication-code construction truncates the output of a permutation-based Luby--Rackoff construction and achieves $\\mathrm{PRF}$ security. Determine whether $\\mathrm{DbHtF}$-style message-authentication-code constructions using fewer than four permutation-based Luby--Rackoff rounds also achieve $\\mathrm{PRF}$ security."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, specifically PRF security of DbHtF-style message-authentication codes built from permutation-based Luby–Rackoff constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: four rounds in the established construction and fewer than four in the unresolved variants"
+    ],
+    "unresolved_remainder": "Whether DbHtF-style message-authentication-code constructions using fewer than four permutation-based Luby–Rackoff rounds achieve PRF security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "message-authentication-codes",
+      "luby-rackoff",
+      "prf-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Permutation-based Luby-Rackoff Constructions",
+        "locator": "CRYPTO 2025, page 7",
+        "doi": "10.1007/978-3-032-01901-1_14",
+        "url": "https://eprint.iacr.org/2025/914",
+        "eprint": "2025/914"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the four-round construction as PRF-secure and explicitly leaves the security of analogous constructions with fewer than four Luby–Rackoff rounds open.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Tweakable Permutation-based Luby-Rackoff Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

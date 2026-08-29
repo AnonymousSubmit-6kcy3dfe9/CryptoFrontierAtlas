@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-layer-invariance-without-property-p",
+  "group_id": "linear-layer-invariance-without-property-p",
+  "title": "Linear-Layer Invariance Without Property (P)",
+  "summary": "The analysis assumes Property (P), although preserving two specified sets would suffice; it remains open to characterize linear layers that preserve both while failing Property (P).",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize $L$ such that $L(E^m)=E^m$ and $L(\\{\\alpha,\\beta\\}^m)=\\{\\alpha,\\beta\\}^m$ while $L$ does not satisfy (P)."
+  },
+  "scope": {
+    "domain": "Structural symmetric cryptanalysis of cipher linear layers preserving specified subspaces and difference sets.",
+    "assumptions": [
+      "$L(E^m)=E^m$",
+      "$L(\\{\\alpha,\\beta\\}^m)=\\{\\alpha,\\beta\\}^m$",
+      "$L$ does not satisfy Property (P)"
+    ],
+    "parameters": [
+      "L: cipher linear layer to be characterized",
+      "m: exponent in both invariant-set conditions",
+      "E: base set in the first invariance condition",
+      "α and β: elements defining the base set in the second invariance condition"
+    ],
+    "unresolved_remainder": "Whether any linear layers failing Property (P) can preserve both specified sets and, if so, how to characterize them."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "linear-layers",
+      "invariant-sets"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs",
+        "locator": "ASIACRYPT 2025, page 18",
+        "doi": "10.1007/978-981-95-5018-0_4",
+        "url": "https://eprint.iacr.org/2025/1553",
+        "eprint": "2025/1553"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that its results assume Property (P), although invariance of the two stated sets would suffice. It expresses the belief that both invariances are unlikely when Property (P) fails, leaving the characterization unresolved.",
+      "citation_labels": [
+        "Anne Canteaut et al., Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

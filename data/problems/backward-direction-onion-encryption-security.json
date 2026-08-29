@@ -3,20 +3,20 @@
   "id": "backward-direction-onion-encryption-security",
   "group_id": "backward-direction-onion-encryption-security",
   "title": "Backward-Direction Onion-Encryption Security",
-  "summary": "The security model and CGO proof cover only forward onion encryption; extending both to the backward direction remains open.",
+  "summary": "The forward direction has a security model and proof, while the corresponding backward-direction treatment remains unresolved.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Extend the onion-encryption security model and CGO security proof from the forward direction to the backward direction."
   },
   "scope": {
-    "domain": "The problem concerns security models and proofs for onion encryption, including Counter Galois Onion (CGO).",
+    "domain": "Structural security analysis of onion encryption and the Counter Galois Onion (CGO) construction.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "Direction: distinguishes the analyzed forward case from the unresolved backward case"
+      "the forward and backward directions of onion encryption, distinguishing the existing and unresolved security cases"
     ],
-    "unresolved_remainder": "Extend the onion-encryption security model and the CGO security proof to the backward direction."
+    "unresolved_remainder": "Extend the onion-encryption security model and CGO security proof from the forward direction to the backward direction."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -24,8 +24,8 @@
     "secondary": [],
     "tags": [
       "onion-encryption",
-      "security-models",
-      "security-proofs"
+      "security-model",
+      "security-proof"
     ]
   },
   "source": {
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The paper's formal treatment covers the forward direction. It explicitly leaves a similar treatment of the backward direction to future work.",
+      "summary": "The source presents this as future work: it models and proves security for the forward direction, while leaving a similar treatment of the backward direction unresolved.",
       "citation_labels": [
         "Jean Paul Degabriele et al., Secure Onion Encryption and the Case of Counter Galois Onion"
       ]

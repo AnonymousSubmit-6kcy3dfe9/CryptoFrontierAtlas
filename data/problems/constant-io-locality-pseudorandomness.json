@@ -2,22 +2,23 @@
   "schema_version": "0.2.0",
   "id": "constant-io-locality-pseudorandomness",
   "group_id": "constant-io-locality-pseudorandomness",
-  "title": "Pseudorandomness from 4-Wise Independence under Constant IO Locality",
-  "summary": "The broad counterexample does not cover constant-IO-locality rounds; whether negligible distance from 4-wise independence after iteration guarantees pseudorandomness remains open.",
+  "title": "Constant IO Locality and Pseudorandomness",
+  "summary": "A broad counterexample does not settle the constant-locality setting; it remains open whether the resulting permutation is pseudorandom.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "A main counterexample to the broadest version of the proposed implication does not refute the restricted setting in which each round permutation has constant input locality and constant output locality; in this setting, each input wire influences only a constant number of output wires, and each output wire is influenced by only a constant number of input wires. The open question is whether, for a randomized permutation $P$ satisfying these locality restrictions, negligible distance of its $T$-fold composition $P^T$ from 4-wise independence implies that $P^T$ is a pseudorandom permutation."
   },
   "scope": {
-    "domain": "Iterated randomized permutations with constant input and output locality, studied for limited independence and pseudorandomness.",
+    "domain": "Mathematical foundations of mixing and pseudorandomness for randomized permutations with constant input and output locality.",
     "assumptions": [
-      "The distance of the T-fold composition of P from 4-wise independence is negligible."
+      "The round function P is a randomized permutation.",
+      "Each round has constant input locality and constant output locality."
     ],
     "parameters": [
-      "P: randomized permutation used in the composition",
-      "T: number of times P is composed"
+      "n: input and output bit-length",
+      "T: number of composition rounds"
     ],
-    "unresolved_remainder": "Whether the T-fold composition of P must then be a pseudorandom permutation."
+    "unresolved_remainder": "Whether, under the constant input and output locality restrictions, negligible distance of P^T from 4-wise independence implies that P^T is a pseudorandom permutation."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -26,8 +27,8 @@
       "foundations.others"
     ],
     "tags": [
-      "pseudorandom-permutations",
-      "four-wise-independence",
+      "pseudorandom-permutation",
+      "limited-independence",
       "constant-io-locality"
     ]
   },
@@ -48,13 +49,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly labels this statement Conjecture 5, Constant IO Locality, and presents it as a weakened variant not refuted by the paper's main counterexample.",
+      "summary": "The source explicitly labels this statement Conjecture 5, a weakened variant not refuted by the paper's broad counterexample. It presents the implication from negligible distance of the composition from 4-wise independence to pseudorandomness as unresolved.",
       "citation_labels": [
         "Jesko Dujmovic et al., When Simple Permutations Mix Poorly: Limited Independence Does Not Imply Pseudorandomness"
       ]

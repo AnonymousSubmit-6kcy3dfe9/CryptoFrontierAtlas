@@ -2,37 +2,37 @@
   "schema_version": "0.2.0",
   "id": "direct-tbc-use-as-collision-resistant-tcc",
   "group_id": "direct-tbc-use-as-collision-resistant-tcc",
-  "title": "Direct TBC Use as a Collision-Resistant TCC",
-  "summary": "A tweakable blockcipher admits an inverse-based collision in the TCC role; determining whether direct TBC use can satisfy collision resistance remains the stated task.",
+  "title": "Direct Use of a Tweakable Blockcipher as a TCC",
+  "summary": "A TBC has TCC syntax, but an inverse-based attack shows it is not collision resistant; the unresolved task concerns whether it can be used directly in the TCC role.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Determine whether a tweakable blockcipher (TBC), which has the syntax of the target TCC primitive, can be used directly in the TCC role while satisfying collision resistance. The central limitation is a collision attack on a TBC $F$: choose arbitrary $CK$ and $D_1$, choose distinct tweaks $T_1$ and $T_2$, and set $D_2 \\leftarrow F.\\operatorname{Inv}(CK,T_2,F.\\operatorname{Ev}(CK,T_1,D_1))$; then $(CK,T_1,D_1)$ and $(CK,T_2,D_2)$ form a collision, so $F$ is not collision resistant."
   },
   "scope": {
-    "domain": "Collision resistance of tweakable blockciphers used directly as TCC primitives.",
+    "domain": "Tweakable blockciphers and TCCs, focusing on collision resistance.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "F: the tweakable blockcipher considered in the TCC role",
-      "CK: an arbitrary key input",
-      "T₁ and T₂: distinct tweaks",
-      "D₁ and D₂: data values related by evaluation and inverse evaluation"
+      "TBC F as the candidate TCC primitive",
+      "CK and D1 as arbitrary inputs in the attack",
+      "T1 and T2 as distinct tweaks",
+      "D2 as the inverse-defined input"
     ],
-    "unresolved_remainder": "Whether a tweakable blockcipher can be used directly in the TCC role while satisfying collision resistance."
+    "unresolved_remainder": "Determine whether a tweakable blockcipher can be used directly in the TCC role while satisfying collision resistance."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
     "primary": "design.block-ciphers",
     "secondary": [],
     "tags": [
-      "tweakable-blockciphers",
+      "tweakable-blockcipher",
       "collision-resistance",
-      "tcc-primitives"
+      "committing-primitive"
     ]
   },
   "source": {
-    "kind": "open_challenge",
+    "kind": "explicit_open_problem",
     "citations": [
       {
         "role": "original_source",
@@ -48,13 +48,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source asks why a syntactically compatible TBC cannot serve directly as the TCC. It then gives an inverse-based collision showing that the TBC is not collision resistant.",
+      "summary": "The source explicitly asks why a syntactically compatible TBC cannot simply be used as a TCC. It presents an inverse-based collision attack showing that a TBC is not collision resistant.",
       "citation_labels": [
         "Mihir Bellare et al., A Universal Transform for Committing Authenticated Encryption"
       ]

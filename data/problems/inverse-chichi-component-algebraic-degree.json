@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "inverse-chichi-component-algebraic-degree",
+  "group_id": "inverse-chichi-component-algebraic-degree",
+  "title": "Algebraic Degree of Inverse ChiChi Components",
+  "summary": "For even integers m, each nontrivial inverse ChiChi component has algebraic degree at least m; whether every such component always has degree exactly m remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the inverse of $\\chi\\chi_{2m}$, where $m$ is an even integer, determine whether every non-trivial component has algebraic degree exactly $m$. The established baseline is that the algebraic degree of each such component is at least $m$; the unresolved issue is whether this lower bound is always tight for every non-trivial component and every even $m$. The equality has been verified computationally for dimensions $n \\le 32$ when $n$ is a multiple of $4$, but a proof or counterexample for the universal claim remains open."
+  },
+  "scope": {
+    "domain": "Boolean and vectorial Boolean functions, focused on algebraic degrees of inverse ChiChi components.",
+    "assumptions": [
+      "m is an even integer"
+    ],
+    "parameters": [
+      "m: indexes the inverse ChiChi family and is the conjectured component degree",
+      "n: dimension used in computational verification, restricted there to multiples of 4 up to 32"
+    ],
+    "unresolved_remainder": "Prove that every non-trivial inverse ChiChi component has algebraic degree exactly m for every even m, or find a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "vectorial-boolean-functions",
+      "algebraic-degree",
+      "s-boxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "ChiLow and ChiChi: New Constructions for Code Encryption",
+        "locator": "EUROCRYPT 2025, page 20",
+        "doi": "10.1007/978-3-031-91107-1_8",
+        "url": "https://eprint.iacr.org/2025/308",
+        "eprint": "2025/308"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper establishes the degree lower bound m and reports computational equality for dimensions at most 32 that are multiples of 4. It presents the universal equality as Conjecture 1.",
+      "citation_labels": [
+        "Yanis Belkheyar et al., ChiLow and ChiChi: New Constructions for Code Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -2,14 +2,14 @@
   "schema_version": "0.2.0",
   "id": "adaptive-security-of-grappa",
   "group_id": "adaptive-security-of-grappa",
-  "title": "Adaptive Security of Grappa",
-  "summary": "Grappa currently has proofs only for selective security; proving its adaptive security remains open.",
+  "title": "Adaptive Security for Grappa",
+  "summary": "Available proofs for Grappa establish only selective security; adaptive security remains an open proof task.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "The unresolved task is to prove adaptive security for Grappa; the available proofs establish only selective security."
   },
   "scope": {
-    "domain": "Security proofs for the Grappa construction in group key progression.",
+    "domain": "Security analysis of the Grappa group-key progression construction for shared persistent data.",
     "assumptions": [
       "None"
     ],
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source explicitly presents adaptive security of Grappa as an open question and states that the available proofs establish only selective security.",
+      "summary": "The source explicitly labels this as an open question and identifies the gap between the available selective-security proofs and the desired adaptive-security proof.",
       "citation_labels": [
         "Matilda Backendal et al., Group Key Progression: Strong Security for Shared Persistent Data"
       ]

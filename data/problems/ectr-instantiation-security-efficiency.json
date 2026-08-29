@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ectr-instantiation-security-efficiency",
+  "group_id": "ectr-instantiation-security-efficiency",
+  "title": "Security and Efficiency of eCTR Instantiations",
+  "summary": "The two proposed eCTR permutation instantiations are expected to provide beyond-birthday-bound security, but formal proofs and efficiency analyses remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved problem is to prove the formal security of the proposed eCTR-based tweakable enciphering scheme when its permutation $P$ is instantiated either with the 5-round Feistel candidate based on a block cipher or with CTET+ at $w=2$. These candidate constructions are described as expected to provide beyond-birthday-bound security, but formal security proofs and efficiency analyses are explicitly left open. The task is therefore to establish a formal security proof for each instantiation and to analyze the efficiency of both the 5-round Feistel and CTET+ with $w=2$ constructions."
+  },
+  "scope": {
+    "domain": "Block-cipher-based tweakable enciphering schemes using eCTR with either a 5-round Feistel or CTET+ permutation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "P: permutation used by the eCTR-based tweakable enciphering scheme",
+      "5 rounds: fixed round count of the Feistel candidate",
+      "w: CTET+ construction parameter fixed at 2"
+    ],
+    "unresolved_remainder": "Prove formal security for both permutation instantiations and analyze the efficiency of the 5-round Feistel and CTET+ with w=2 constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "tweakable-enciphering",
+      "block-ciphers",
+      "security-proofs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Making GCM Great Again: Toward Full Security and Longer Nonces",
+        "locator": "EUROCRYPT 2025, page 8",
+        "doi": "10.1007/978-3-031-91107-1_2",
+        "url": "https://eprint.iacr.org/2025/577",
+        "eprint": "2025/577"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents two candidate instantiations of P as expected to provide beyond-birthday-bound security. It explicitly leaves their formal security proofs and efficiency analyses for further research.",
+      "citation_labels": [
+        "Woohyuk Chung et al., Making GCM Great Again: Toward Full Security and Longer Nonces"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

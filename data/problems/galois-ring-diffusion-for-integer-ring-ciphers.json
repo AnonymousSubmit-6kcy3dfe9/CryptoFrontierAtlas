@@ -3,20 +3,22 @@
   "id": "galois-ring-diffusion-for-integer-ring-ciphers",
   "group_id": "galois-ring-diffusion-for-integer-ring-ciphers",
   "title": "Galois-Ring Diffusion for Integer-Ring Ciphers",
-  "summary": "The paper analyzes matrix-based diffusion for integer-ring ciphers, while constructing and analyzing a Galois-ring diffusion alternative remains open.",
+  "summary": "The paper analyzes ciphers with matrix-multiplication diffusion, while construction and analysis with a Galois-ring diffusion function remain open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Study how to construct and analyze a cipher over $\\mathbb{Z}_{p^n}^{\\,t}$ in which the matrix multiplication $M$ is replaced by a function over $\\operatorname{GR}(p^n,t)$ that provides diffusion."
   },
   "scope": {
-    "domain": "Design and analysis of integer-ring ciphers with Galois-ring diffusion.",
+    "domain": "Design and analysis of symmetric ciphers over integer-ring modules using diffusion functions over Galois rings.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "$p,n,t$: parameters defining $\\mathbb{Z}_{p^n}^{\\,t}$ and $\\operatorname{GR}(p^n,t)$"
+      "p, n, and t: parameters defining the cipher domain and the Galois ring",
+      "M: the matrix-multiplication component to be replaced",
+      "a function over GR(p^n,t): the replacement component that provides diffusion"
     ],
-    "unresolved_remainder": "Construct and analyze the cipher obtained by replacing matrix multiplication M with a diffusion-providing function over the Galois ring."
+    "unresolved_remainder": "Construct and analyze a cipher over the stated domain after replacing M with a diffusion-providing function over GR(p^n,t)."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -27,7 +29,7 @@
     "tags": [
       "block-ciphers",
       "galois-rings",
-      "diffusion-layers"
+      "diffusion-functions"
     ]
   },
   "source": {
@@ -47,13 +49,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source analyzes SPNs with matrix-multiplication diffusion and explicitly leaves the Galois-ring function alternative open for future work.",
+      "summary": "A remark presents replacing matrix multiplication with a function over a Galois ring that provides diffusion as an alternative construction strategy and leaves studying this case open for future work.",
       "citation_labels": [
         "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
       ]

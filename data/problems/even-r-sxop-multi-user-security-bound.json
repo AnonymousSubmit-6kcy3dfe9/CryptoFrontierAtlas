@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-r-sxop-multi-user-security-bound",
+  "group_id": "even-r-sxop-multi-user-security-bound",
+  "title": "Even-r Multi-User Security Bound for SXoP",
+  "summary": "For even r at least four, the multi-user SXoP bound combines two different bounds and is conjectured not to be tight; improve it or find a matching attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Improve the multi-user security bound for $\\mathrm{SXoP}[r,n]$ when $r$ is even and $r\\ge 4$, or devise a matching attack."
+  },
+  "scope": {
+    "domain": "Multi-user symmetric-cryptographic security analysis of SXoP.",
+    "assumptions": [
+      "The setting is multi-user.",
+      "r is even and at least 4."
+    ],
+    "parameters": [
+      "r: SXoP parameter restricted here to even values at least 4",
+      "n: SXoP parameter"
+    ],
+    "unresolved_remainder": "Improve the current multi-user security bound for SXoP[r,n] in this regime, or devise a matching attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "sxop",
+      "multi-user-security",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Combining Outputs of a Random Permutation: New Constructions and Tight Security Bounds by Fourier Analysis",
+        "locator": "EUROCRYPT 2025, page 4",
+        "doi": "10.1007/978-3-031-91107-1_9",
+        "url": "https://eprint.iacr.org/2024/929",
+        "eprint": "2024/929"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source says the even-r multi-user bound is obtained by combining two different bounds and conjectures that it is not tight in all settings. It leaves improving the bound or devising a matching attack to future work.",
+      "citation_labels": [
+        "Itai Dinur et al., Combining Outputs of a Random Permutation: New Constructions and Tight Security Bounds by Fourier Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

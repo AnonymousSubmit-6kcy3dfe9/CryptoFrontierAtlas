@@ -2,19 +2,19 @@
   "schema_version": "0.2.0",
   "id": "feistel-full-plaintext-recovery-round-thresholds",
   "group_id": "feistel-full-plaintext-recovery-round-thresholds",
-  "title": "Realistic Feistel Plaintext-Recovery Thresholds",
-  "summary": "Plaintext-recovery attacks cover idealized low-round Feistel-type designs, but exact feasible-versus-provably-impossible round thresholds for realistic instantiations remain open.",
+  "title": "Round Thresholds for Full Plaintext Recovery in Realistic Feistel Designs",
+  "summary": "The source's attacks concern idealized low-round Feistel-type designs, while exact full-plaintext-recovery thresholds for realistic instantiations remain open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Realistic instantiations of Feistel-type block-cipher designs may differ from idealized low-round settings: practical deployments typically use significantly more rounds, and their round functions need not be ideal random functions. Characterize the exact round thresholds under such realistic instantiations at which full plaintext recovery becomes feasible or, conversely, can be provably ruled out."
   },
   "scope": {
-    "domain": "Structural cryptanalysis of realistic Feistel-type block-cipher designs with more rounds and potentially nonideal round functions.",
+    "domain": "Structural cryptanalysis of realistic Feistel-type block-cipher designs with higher round counts and potentially nonideal round functions.",
     "assumptions": [
       "None"
     ],
     "parameters": [
-      "Number of rounds — determines the sought thresholds for feasible or provably excluded full plaintext recovery"
+      "Round count: the threshold variable separating feasible full plaintext recovery from provable exclusion"
     ],
     "unresolved_remainder": "Determine the exact round thresholds at which full plaintext recovery becomes feasible or can be provably ruled out for realistic instantiations."
   },
@@ -24,7 +24,7 @@
     "secondary": [],
     "tags": [
       "feistel-networks",
-      "plaintext-recovery",
+      "full-plaintext-recovery",
       "structural-cryptanalysis"
     ]
   },
@@ -45,13 +45,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The paper contrasts its attacks on idealized low-round structures with practical deployments using more rounds and potentially nonideal round functions. It explicitly presents determination of the exact recovery thresholds for realistic instantiations as open.",
+      "summary": "The paper contrasts attacks on idealized low-round Feistel-type structures with practical deployments using more rounds and potentially nonideal round functions. It explicitly leaves the exact recovery and impossibility thresholds open.",
       "citation_labels": [
         "Tingting Guo et al., Classical and Quantum Full Plaintext Recovery for Low-Round Feistel-Type Designs"
       ]

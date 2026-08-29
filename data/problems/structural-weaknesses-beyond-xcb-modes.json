@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "structural-weaknesses-beyond-xcb-modes",
+  "group_id": "structural-weaknesses-beyond-xcb-modes",
+  "title": "Structural Weaknesses Beyond XCB-Style Modes",
+  "summary": "A known attack is specific to XCB-style modes with polynomial hashing; whether analogous weaknesses affect other TEM classes or symmetric designs remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "An attack specifically targets XCB-style modes with polynomial hashing. Determine whether other classes of TEMs or symmetric designs are vulnerable to structural weaknesses analogous to those exploited by the attack on XCB-style modes with polynomial hashing."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of XCB-style modes, TEMs, and symmetric designs.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether other classes of TEMs or symmetric designs are vulnerable to analogous structural weaknesses."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "xcb-modes",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries",
+        "locator": "CRYPTO 2025, page 24",
+        "doi": "10.1007/978-3-032-01901-1_6",
+        "url": "https://eprint.iacr.org/2024/1554",
+        "eprint": "2024/1554"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an attack tailored to XCB-style modes with polynomial hashing, then asks whether similar structural exploits extend to other TEMs or symmetric designs.",
+      "citation_labels": [
+        "Amit Singh Bhati et al., Breaking the IEEE Encryption Standard -- XCB-AES in Two Queries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

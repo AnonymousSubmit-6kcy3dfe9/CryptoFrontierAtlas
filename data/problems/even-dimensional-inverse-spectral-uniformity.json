@@ -2,21 +2,22 @@
   "schema_version": "0.2.0",
   "id": "even-dimensional-inverse-spectral-uniformity",
   "group_id": "even-dimensional-inverse-spectral-uniformity",
-  "title": "Spectral Uniformity of the Even-Dimensional Inverse",
-  "summary": "A bound is established in odd dimensions, but its proof does not reach the non-APN even-dimensional inverse; prove or refute the conjectured spectral-uniformity value.",
+  "title": "Even-Dimensional Spectral Uniformity of the Inverse Permutation",
+  "summary": "An odd-dimensional bound is known, but its proof does not extend to even dimensions; prove or refute the conjectured spectral-uniformity value for the inverse permutation.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "For even $n$, prove or refute that the inverse permutation on $\\mathbb{F}_2^n$ has spectral uniformity $2^{n/2}+2$. A bound is established for the inverse function when $n$ is odd, but that proof does not cover even $n$, where the inverse function is not APN; thus the stated value remains a conjectured target for the even-dimensional case."
   },
   "scope": {
-    "domain": "Spectral uniformity of inverse permutations over binary finite fields.",
+    "domain": "This is a structural question in symmetric cryptography and vectorial Boolean-function theory about the spectral uniformity of an inverse permutation over a binary vector space.",
     "assumptions": [
-      "The dimension n is even."
+      "n is even"
     ],
     "parameters": [
-      "n: dimension of the binary vector space"
+      "n, the dimension of the binary vector space",
+      "spectral uniformity, the quantity being evaluated"
     ],
-    "unresolved_remainder": "Prove or refute that the inverse permutation has spectral uniformity $2^{n/2}+2$ for even $n$."
+    "unresolved_remainder": "Prove or refute the stated spectral-uniformity value for the inverse permutation when n is even; the available odd-dimensional bound does not settle this case."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
@@ -24,8 +25,8 @@
     "secondary": [],
     "tags": [
       "spectral-uniformity",
-      "inverse-permutation",
-      "vectorial-boolean-functions"
+      "vectorial-boolean-functions",
+      "inverse-permutation"
     ]
   },
   "source": {
@@ -45,13 +46,13 @@
     "public_verification_status": "none",
     "peer_review_status": "not_submitted",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
       "date": "2026-01-01",
       "kind": "source_statement",
-      "summary": "The source reports a bound for odd dimensions but says its proof does not cover even dimensions, where the inverse is not APN. Numerical experiments motivate the stated conjecture.",
+      "summary": "The source reports a bound for the inverse function when n is odd, but says the proof does not cover even n, where the inverse is not APN. It presents the even-dimensional spectral-uniformity value as a conjecture based on numerical experiments.",
       "citation_labels": [
         "Tim Beyne et al., Pairwise independence of AES-like block ciphers"
       ]
