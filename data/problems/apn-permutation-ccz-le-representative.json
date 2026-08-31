@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-permutation-ccz-le-representative",
+  "group_id": "beierle-brinkmann-leander-apn-automorphisms",
+  "title": "Self-equivalent permutation representatives of APN CCZ classes",
+  "summary": "Determine whether every APN permutation is CCZ-equivalent to a permutation with a nontrivial linear-equivalence automorphism.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every APN permutation $F:\\mathbb F_2^n\\to\\mathbb F_2^n$, does there exist a permutation $G$ CCZ-equivalent to $F$ such that $$|\\operatorname{Aut}_{\\mathrm{LE}}(G)|>1?$$ Prove existence for every APN permutation, or find a CCZ class in which every permutation representative has trivial linear-equivalence automorphism group."
+  },
+  "scope": {
+    "domain": "Permutation representatives and linear-equivalence automorphisms in APN CCZ classes",
+    "assumptions": [
+      "$F:\\mathbb F_2^n\\to\\mathbb F_2^n$ is an APN permutation",
+      "$G$ must be both a permutation and CCZ-equivalent to $F$"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN permutation $F$",
+      "permutation representative $G$"
+    ],
+    "unresolved_remainder": "Prove the representative exists in every APN-permutation CCZ class, or exhibit a class whose permutation representatives all have trivial Aut_LE."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-permutations",
+      "ccz-equivalence",
+      "linear-equivalence",
+      "automorphism-groups"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beierle--Brinkmann--Leander, APN-permutation representative conjecture",
+        "locator": "Conjecture 1 and Conclusion, journal pp. 4868 and 4874",
+        "doi": "10.1109/TIT.2021.3071533",
+        "url": "https://doi.org/10.1109/TIT.2021.3071533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-04-07",
+      "kind": "source_statement",
+      "summary": "The second clause of Conjecture 1 asks for a permutation representative with nontrivial linear-equivalence automorphism in every APN-permutation CCZ class.",
+      "citation_labels": [
+        "Beierle--Brinkmann--Leander, APN-permutation representative conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-function-ccz-le-automorphism-representative",
+      "apn-full-automorphism-nontriviality",
+      "apn-permutation-five-le-classes-nonexistence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

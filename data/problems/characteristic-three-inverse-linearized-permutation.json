@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "characteristic-three-inverse-linearized-permutation",
+  "group_id": "koelsch-inverse-function-open-problems",
+  "title": "Inverse-plus-linearized permutations in characteristic three",
+  "summary": "Determine whether two nonzero linearized polynomials can combine with inversion to form a permutation over a finite field of characteristic three.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an integer $n\\ge1$ and nonzero $\\mathbb F_3$-linearized polynomials $L_1,L_2$ over $\\mathbb F_{3^n}$ such that $$x\\longmapsto L_1(x^{-1})+L_2(x),\\qquad 0^{-1}:=0,$$ is a permutation of $\\mathbb F_{3^n}$? Construct one such permutation, or prove that none exists for any $n$ and any nonzero pair $(L_1,L_2)$."
+  },
+  "scope": {
+    "domain": "Permutation polynomials formed from inversion and linearized polynomials in characteristic three",
+    "assumptions": [
+      "The field is $\\mathbb F_{3^n}$",
+      "$0^{-1}=0$",
+      "$L_1$ and $L_2$ are nonzero linearized polynomials"
+    ],
+    "parameters": [
+      "extension degree $n$",
+      "linearized polynomials $L_1$ and $L_2$"
+    ],
+    "unresolved_remainder": "Find one admissible characteristic-three permutation or prove universal nonexistence over all finite extensions and all nonzero linearized pairs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "permutation-polynomials",
+      "inverse-functions",
+      "linearized-polynomials",
+      "characteristic-three",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Koelsch, characteristic-three inverse-plus-linear permutation problem",
+        "locator": "Conclusion, journal p. 4862",
+        "doi": "10.1109/TIT.2021.3065068",
+        "url": "https://doi.org/10.1109/TIT.2021.3065068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-03-10",
+      "kind": "source_statement",
+      "summary": "After proving nonexistence in odd characteristic at least five, the source isolates characteristic three as the unresolved case.",
+      "citation_labels": [
+        "Koelsch, characteristic-three inverse-plus-linear permutation problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-full-automorphism-nontriviality",
+  "group_id": "beierle-brinkmann-leander-apn-automorphisms",
+  "title": "Nontrivial automorphisms of every APN function",
+  "summary": "Determine whether every APN function has a nontrivial full graph automorphism group.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $n$ and every APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$, is $$|\\operatorname{Aut}(F)|>1?$$ Prove universal nontriviality of the source-defined full graph automorphism group, or construct an APN function with a trivial automorphism group."
+  },
+  "scope": {
+    "domain": "Full graph automorphism groups of APN vectorial Boolean functions",
+    "assumptions": [
+      "$F:\\mathbb F_2^n\\to\\mathbb F_2^n$ is APN",
+      "$\\operatorname{Aut}(F)$ is the source-defined full automorphism group"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN function $F$"
+    ],
+    "unresolved_remainder": "Prove nontriviality for every APN function in every dimension, or give an APN function whose full automorphism group is trivial."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-functions",
+      "automorphism-groups",
+      "graph-automorphisms",
+      "conjecture"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beierle--Brinkmann--Leander, APN automorphism conjecture",
+        "locator": "Conjecture 1 and Conclusion, journal pp. 4868 and 4874",
+        "doi": "10.1109/TIT.2021.3071533",
+        "url": "https://doi.org/10.1109/TIT.2021.3071533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-04-07",
+      "kind": "source_statement",
+      "summary": "The first clause of Conjecture 1 asserts that every APN function has a nontrivial full automorphism group.",
+      "citation_labels": [
+        "Beierle--Brinkmann--Leander, APN automorphism conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-function-ccz-le-automorphism-representative",
+      "apn-permutation-ccz-le-representative",
+      "apn-permutation-five-le-classes-nonexistence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

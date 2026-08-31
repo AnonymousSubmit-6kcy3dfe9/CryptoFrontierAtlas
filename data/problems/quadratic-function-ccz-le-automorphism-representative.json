@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-function-ccz-le-automorphism-representative",
+  "group_id": "beierle-brinkmann-leander-apn-automorphisms",
+  "title": "CCZ representatives with linear-equivalence automorphisms",
+  "summary": "Determine whether every quadratic vectorial Boolean function with a nontrivial graph automorphism has a CCZ representative with a nontrivial linear-equivalence automorphism.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ be quadratic and suppose its full graph automorphism group $\\operatorname{Aut}(F)$ is nontrivial. Must the CCZ class of $F$ contain a representative $G$ with a nontrivial linear-equivalence automorphism, that is, $$|\\operatorname{Aut}_{\\mathrm{LE}}(G)|>1?$$ Prove this for every such $F$, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Quadratic vectorial Boolean functions and automorphisms of their CCZ classes",
+    "assumptions": [
+      "$F:\\mathbb F_2^n\\to\\mathbb F_2^n$ is quadratic",
+      "$|\\operatorname{Aut}(F)|>1$",
+      "Automorphism groups use the source definitions"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "quadratic function $F$",
+      "representative $G$ in the CCZ class of $F$"
+    ],
+    "unresolved_remainder": "Prove that the required representative exists for every quadratic F with a nontrivial full automorphism, or exhibit a counterexample CCZ class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "quadratic-functions",
+      "ccz-equivalence",
+      "automorphism-groups",
+      "linear-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beierle--Brinkmann--Leander, quadratic CCZ-representative question",
+        "locator": "Section III-A, journal p. 4865",
+        "doi": "10.1109/TIT.2021.3071533",
+        "url": "https://doi.org/10.1109/TIT.2021.3071533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-04-07",
+      "kind": "source_statement",
+      "summary": "The source asks whether nontrivial full automorphisms of quadratic functions can always be represented by nontrivial linear-equivalence automorphisms inside the CCZ class.",
+      "citation_labels": [
+        "Beierle--Brinkmann--Leander, quadratic CCZ-representative question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-full-automorphism-nontriviality",
+      "apn-permutation-ccz-le-representative",
+      "apn-permutation-five-le-classes-nonexistence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

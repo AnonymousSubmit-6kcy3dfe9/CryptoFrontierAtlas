@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-permutation-five-le-classes-nonexistence",
+  "group_id": "beierle-brinkmann-leander-apn-automorphisms",
+  "title": "APN-permutation nonexistence in five small-dimensional LE classes",
+  "summary": "Decide whether the five unexhausted linear-self-equivalence classes in dimensions seven and eight contain no APN permutations.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source-listed linear-self-equivalence cases, decide whether any associated permutation $F$ satisfying $F\\circ A=B\\circ F$ can be APN. The five cases are Classes $16,22,23$ in dimension $7$ and Classes $22,30$ in dimension $8$. Prove nonexistence of APN permutations in all five cases, or exhibit an APN permutation in at least one case."
+  },
+  "scope": {
+    "domain": "The five finite linear-self-equivalence cases left unexhausted by the source classification",
+    "assumptions": [
+      "$n=7$ for Classes 16, 22, and 23",
+      "$n=8$ for Classes 22 and 30",
+      "Each class uses the source-listed canonical pair $(B,A)$",
+      "$F$ is a permutation satisfying $F\\circ A=B\\circ F$"
+    ],
+    "parameters": [
+      "the five source-listed classes",
+      "permutation $F$ in the corresponding self-equivalence subspace"
+    ],
+    "unresolved_remainder": "Settle all five finite cases by proving that each contains no APN permutation, or provide a verified APN-permutation witness in any one case."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential",
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "apn-permutations",
+      "finite-search",
+      "linear-self-equivalence",
+      "dimension-seven",
+      "dimension-eight"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beierle--Brinkmann--Leander, five remaining APN-permutation cases",
+        "locator": "Conclusion and Theorems 3--4, journal p. 4874",
+        "doi": "10.1109/TIT.2021.3071533",
+        "url": "https://doi.org/10.1109/TIT.2021.3071533"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Kuznetsov, partial Groebner search in dimension-eight Class 22",
+        "locator": "arXiv v2, 428 of 65,536 slices (0.65%); all 566 found APN functions are non-permutations",
+        "eprint": "arXiv:2606.11967",
+        "url": "https://arxiv.org/abs/2606.11967"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-04-07",
+      "kind": "source_statement",
+      "summary": "The source isolates three seven-dimensional and two eight-dimensional linear-self-equivalence classes whose APN-permutation status remains unexhausted.",
+      "citation_labels": [
+        "Beierle--Brinkmann--Leander, five remaining APN-permutation cases"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "kind": "public_result",
+      "summary": "Kuznetsov searches 428 of 65,536 slices in the dimension-eight Class-22 subspace and finds only APN non-permutations; the remaining 99.35% and the other four classes remain unsettled.",
+      "citation_labels": [
+        "Kuznetsov, partial Groebner search in dimension-eight Class 22"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-function-ccz-le-automorphism-representative",
+      "apn-full-automorphism-nontriviality",
+      "apn-permutation-ccz-le-representative"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

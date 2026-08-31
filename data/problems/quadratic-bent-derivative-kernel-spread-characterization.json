@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-bent-derivative-kernel-spread-characterization",
+  "group_id": "anbar-kalayci-meidl-derivative-spreads",
+  "title": "Quadratic bent functions with derivative-kernel spreads",
+  "summary": "Characterize the quadratic bent functions whose derivative kernels over all nonzero directions form a spread.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F:\\mathbb F_2^{2m}\\to\\mathbb F_2^m$ be a quadratic bent function in the source setting. Characterize exactly those $F$ for which the family $$\\{\\ker(D_aF):a\\in\\mathbb F_2^{2m}\\setminus\\{0\\}\\},\\qquad D_aF(x)=F(x+a)+F(x),$$ forms a spread of $\\mathbb F_2^{2m}$. Give proved necessary and sufficient conditions valid for every such $F$."
+  },
+  "scope": {
+    "domain": "Quadratic bent functions and the kernels of all their nonzero derivatives",
+    "assumptions": [
+      "$F$ is quadratic and bent in the source vectorial setting",
+      "$D_aF(x)=F(x+a)+F(x)$",
+      "The collection ranges over every nonzero direction $a$"
+    ],
+    "parameters": [
+      "integer $m$",
+      "quadratic bent function $F$",
+      "nonzero derivative direction $a$"
+    ],
+    "unresolved_remainder": "Provide a necessary-and-sufficient characterization that decides the spread property for every quadratic bent function in the source domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "quadratic-bent-functions",
+      "derivatives",
+      "kernel-spreads",
+      "finite-geometry",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anbar--Kalayci--Meidl, derivative-kernel spread characterization",
+        "locator": "Section IV, journal p. 4900",
+        "doi": "10.1109/TIT.2021.3079223",
+        "url": "https://doi.org/10.1109/TIT.2021.3079223"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-05-11",
+      "kind": "source_statement",
+      "summary": "The source asks for a general characterization of quadratic bent functions whose nonzero derivative kernels form a spread.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl, derivative-kernel spread characterization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "maiorana-mcfarland-derivative-spread-desarguesianity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

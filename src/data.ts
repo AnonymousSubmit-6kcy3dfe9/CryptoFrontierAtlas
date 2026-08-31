@@ -154,6 +154,16 @@ import recordRelativeTraceApnEulerTotientCczCount from '../data/problems/relativ
 import recordRelativeTraceApnWithinCaseCczClassification from '../data/problems/relative-trace-apn-within-case-ccz-classification.json';
 import recordBentTranslationDesignTwoTransitivity from '../data/problems/bent-translation-design-two-transitivity.json';
 import recordVectorialBentTranslationDesignIsomorphism from '../data/problems/vectorial-bent-translation-design-isomorphism.json';
+import recordApnFullAutomorphismNontriviality from '../data/problems/apn-full-automorphism-nontriviality.json';
+import recordApnPermutationCczLeRepresentative from '../data/problems/apn-permutation-ccz-le-representative.json';
+import recordApnPermutationFiveLeClassesNonexistence from '../data/problems/apn-permutation-five-le-classes-nonexistence.json';
+import recordCharacteristicThreeInverseLinearizedPermutation from '../data/problems/characteristic-three-inverse-linearized-permutation.json';
+import recordGamma0QuadrinomialGoldAffineEquivalence from '../data/problems/gamma0-quadrinomial-gold-affine-equivalence.json';
+import recordGamma0QuadrinomialInverseDegree from '../data/problems/gamma0-quadrinomial-inverse-degree.json';
+import recordMaioranaMcfarlandDerivativeSpreadDesarguesianity from '../data/problems/maiorana-mcfarland-derivative-spread-desarguesianity.json';
+import recordNonGoldApnMonomialCczEaClassification from '../data/problems/non-gold-apn-monomial-ccz-ea-classification.json';
+import recordQuadraticBentDerivativeKernelSpreadCharacterization from '../data/problems/quadratic-bent-derivative-kernel-spread-characterization.json';
+import recordQuadraticFunctionCczLeAutomorphismRepresentative from '../data/problems/quadratic-function-ccz-le-automorphism-representative.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -381,6 +391,16 @@ export const problems = [
   recordRelativeTraceApnWithinCaseCczClassification,
   recordBentTranslationDesignTwoTransitivity,
   recordVectorialBentTranslationDesignIsomorphism,
+  recordApnFullAutomorphismNontriviality,
+  recordApnPermutationCczLeRepresentative,
+  recordApnPermutationFiveLeClassesNonexistence,
+  recordCharacteristicThreeInverseLinearizedPermutation,
+  recordGamma0QuadrinomialGoldAffineEquivalence,
+  recordGamma0QuadrinomialInverseDegree,
+  recordMaioranaMcfarlandDerivativeSpreadDesarguesianity,
+  recordNonGoldApnMonomialCczEaClassification,
+  recordQuadraticBentDerivativeKernelSpreadCharacterization,
+  recordQuadraticFunctionCczLeAutomorphismRepresentative,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gamma0-quadrinomial-gold-affine-equivalence",
+  "group_id": "li-xiong-zeng-permutation-quadrinomials",
+  "title": "Gold affine equivalence of the Gamma-zero quadrinomials",
+  "summary": "Determine whether every admissible Gamma-zero permutation quadrinomial is affine equivalent to the corresponding Gold permutation; this is known for the closed-butterfly subfamily only.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $m$ and $k$ be odd with $\\gcd(m,k)=1$, and let $f_{\\mathbf c}$ be the source-defined permutation quadrinomial over $\\mathbb F_{2^{2m}}$ for an admissible coefficient tuple $\\mathbf c\\in\\Gamma_0$. Is every such $f_{\\mathbf c}$ affine equivalent to the Gold permutation $$x\\longmapsto x^{2^k+1}?$$ Prove the equivalence for all of $\\Gamma_0$, or exhibit an admissible counterexample. The closed-butterfly parameterized subfamily is already known to be linearly equivalent to Gold."
+  },
+  "scope": {
+    "domain": "The full source-defined Gamma-zero family of permutation quadrinomials over $\\mathbb F_{2^{2m}}$",
+    "assumptions": [
+      "$m$ and $k$ are odd",
+      "$\\gcd(m,k)=1$",
+      "$\\mathbf c\\in\\Gamma_0$",
+      "$f_{\\mathbf c}$ is the source-defined permutation quadrinomial"
+    ],
+    "parameters": [
+      "odd integer $m$",
+      "odd integer $k$ coprime to $m$",
+      "admissible coefficient tuple $\\mathbf c$"
+    ],
+    "unresolved_remainder": "Prove Gold affine equivalence for every admissible Gamma-zero coefficient tuple not covered by the closed-butterfly parameterization, or exhibit and classify a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "permutation-polynomials",
+      "quadrinomials",
+      "gold-functions",
+      "affine-equivalence",
+      "closed-butterfly"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Xiong--Zeng, Gamma-zero Gold-equivalence question",
+        "locator": "Question (2), journal p. 4854",
+        "doi": "10.1109/TIT.2021.3062681",
+        "url": "https://doi.org/10.1109/TIT.2021.3062681"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Li--Hu--Xiong--Zeng, closed-butterfly Gold equivalence",
+        "locator": "Theorem 2, closed-butterfly parameterized subfamily",
+        "doi": "10.1007/s10623-021-00974-5",
+        "url": "https://doi.org/10.1007/s10623-021-00974-5"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-02-26",
+      "kind": "source_statement",
+      "summary": "The source asks whether every member of the full four-coefficient Gamma-zero family is affine equivalent to the corresponding Gold permutation.",
+      "citation_labels": [
+        "Li--Xiong--Zeng, Gamma-zero Gold-equivalence question"
+      ]
+    },
+    {
+      "date": "2022-01-15",
+      "kind": "public_result",
+      "summary": "Li, Hu, Xiong, and Zeng prove linear equivalence to Gold for the strict closed-butterfly parameterized subfamily, leaving general Gamma-zero coefficients open.",
+      "citation_labels": [
+        "Li--Hu--Xiong--Zeng, closed-butterfly Gold equivalence"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "gamma0-quadrinomial-inverse-degree"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

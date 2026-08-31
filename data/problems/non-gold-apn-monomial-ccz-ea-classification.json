@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-gold-apn-monomial-ccz-ea-classification",
+  "group_id": "budaghyan-calderini-villa-ccz-ea-conjecture",
+  "title": "CCZ classes of non-Gold APN monomials",
+  "summary": "Classify every function CCZ-equivalent to a non-Gold APN monomial by the EA classes of the monomial and, when defined, its inverse.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F(x)=x^d$ be a non-Gold APN monomial on $\\mathbb F_{2^n}$. Is every function $G$ that is CCZ-equivalent to $F$ EA-equivalent either to $F$ or, when $F$ is a permutation, to $F^{-1}$? Equivalently, prove the proposed equality of classes throughout the stated scope, or exhibit a CCZ-equivalent $G$ outside both EA classes."
+  },
+  "scope": {
+    "domain": "CCZ and EA equivalence classes of non-Gold APN monomials over binary finite fields",
+    "assumptions": [
+      "$F(x)=x^d$ is APN over $\\mathbb F_{2^n}$",
+      "$F$ is not a Gold monomial",
+      "The inverse branch applies only when $F$ is a permutation"
+    ],
+    "parameters": [
+      "extension degree $n$",
+      "non-Gold APN exponent $d$",
+      "function $G$ in the CCZ class of $F$"
+    ],
+    "unresolved_remainder": "Prove the classification for every non-Gold APN monomial, or produce a function in one of their CCZ classes that belongs to neither proposed EA class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "apn-functions",
+      "power-functions",
+      "ccz-equivalence",
+      "ea-equivalence",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Budaghyan--Calderini--Villa, CCZ-versus-EA Conjecture 4.14",
+        "locator": "Conjecture 4.14",
+        "doi": "10.1007/s12095-019-00367-5",
+        "url": "https://doi.org/10.1007/s12095-019-00367-5"
+      },
+      {
+        "role": "restatement",
+        "label": "Koelsch, residual non-Gold APN-monomial conjecture",
+        "locator": "Conjecture 1 and Conclusion, journal pp. 4857 and 4861--4862",
+        "doi": "10.1109/TIT.2021.3065068",
+        "url": "https://doi.org/10.1109/TIT.2021.3065068"
+      }
+    ],
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2021 TIT paper explicitly identifies the statement as Conjecture 4.14 of the 2019 source and resolves only its inverse-function branch."
+    }
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2019-05-15",
+      "kind": "source_statement",
+      "summary": "Budaghyan, Calderini, and Villa state the CCZ-versus-EA classification conjecture for inverse functions and non-Gold APN monomials.",
+      "citation_labels": [
+        "Budaghyan--Calderini--Villa, CCZ-versus-EA Conjecture 4.14"
+      ]
+    },
+    {
+      "date": "2021-03-10",
+      "kind": "restatement",
+      "summary": "Koelsch proves the inverse-function branch and explicitly leaves the non-Gold APN-monomial branches unanswered.",
+      "citation_labels": [
+        "Koelsch, residual non-Gold APN-monomial conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

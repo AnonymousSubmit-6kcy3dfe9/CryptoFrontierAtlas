@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gamma0-quadrinomial-inverse-degree",
+  "group_id": "li-xiong-zeng-permutation-quadrinomials",
+  "title": "Inverse degree of the Gamma-zero permutation quadrinomials",
+  "summary": "Determine the exact algebraic degree of the inverse throughout the admissible Gamma-zero permutation-quadrinomial family, including whether it always equals half the extension degree.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $m$ and $k$ be odd with $\\gcd(m,k)=1$, and let $f_{\\mathbf c}$ be an admissible permutation quadrinomial over $\\mathbb F_{2^{2m}}$ with $\\mathbf c\\in\\Gamma_0$ as defined by the source. Determine $\\deg(f_{\\mathbf c}^{-1})$ for every admissible parameter tuple. In particular, prove or refute $$\\deg(f_{\\mathbf c}^{-1})=m.$$"
+  },
+  "scope": {
+    "domain": "Inverses of the source-defined Gamma-zero permutation quadrinomials over $\\mathbb F_{2^{2m}}$",
+    "assumptions": [
+      "$m$ and $k$ are odd",
+      "$\\gcd(m,k)=1$",
+      "$\\mathbf c\\in\\Gamma_0$",
+      "$f_{\\mathbf c}$ is the source-defined permutation quadrinomial"
+    ],
+    "parameters": [
+      "odd integer $m$",
+      "odd integer $k$ coprime to $m$",
+      "admissible coefficient tuple $\\mathbf c$"
+    ],
+    "unresolved_remainder": "Give and prove the exact inverse degree for every admissible member, or exhibit and classify every exception to degree m."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "permutation-polynomials",
+      "quadrinomials",
+      "inverse-functions",
+      "algebraic-degree",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Xiong--Zeng, inverse-degree question for permutation quadrinomials",
+        "locator": "Question (4), journal p. 4854",
+        "doi": "10.1109/TIT.2021.3062681",
+        "url": "https://doi.org/10.1109/TIT.2021.3062681"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Li--Hu--Xiong--Zeng, inverse degree on the closed-butterfly subfamily",
+        "locator": "Theorem 2 and the inverse of the Gold-equivalent closed-butterfly subfamily",
+        "doi": "10.1007/s10623-021-00974-5",
+        "url": "https://doi.org/10.1007/s10623-021-00974-5"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-02-26",
+      "kind": "source_statement",
+      "summary": "The source asks for the algebraic degree of every inverse in the Gamma-zero family and reports experiments suggesting degree m.",
+      "citation_labels": [
+        "Li--Xiong--Zeng, inverse-degree question for permutation quadrinomials"
+      ]
+    },
+    {
+      "date": "2022-01-15",
+      "kind": "public_result",
+      "summary": "Gold linear equivalence of the strict closed-butterfly subfamily implies inverse degree m there, leaving arbitrary Gamma-zero coefficients untreated.",
+      "citation_labels": [
+        "Li--Hu--Xiong--Zeng, inverse degree on the closed-butterfly subfamily"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "gamma0-quadrinomial-gold-affine-equivalence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

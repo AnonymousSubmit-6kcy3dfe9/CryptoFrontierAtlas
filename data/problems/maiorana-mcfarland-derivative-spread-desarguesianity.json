@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maiorana-mcfarland-derivative-spread-desarguesianity",
+  "group_id": "anbar-kalayci-meidl-derivative-spreads",
+  "title": "Desarguesianity of Maiorana-McFarland derivative spreads",
+  "summary": "Decide whether every derivative-kernel spread arising from the source Maiorana-McFarland family is Desarguesian.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every admissible member of the source family $$F_{r,\\Lambda,\\gamma}(x)=\\operatorname{Tr}_m^{2m}\\!\\left(\\gamma x^{2^r}\\operatorname{Tr}_m^{2m}(\\Lambda(x))\\right),$$ is the spread formed by the kernels of $D_aF_{r,\\Lambda,\\gamma}$ for nonzero $a$ Desarguesian? Prove this for the full family, or construct and verify one non-Desarguesian member."
+  },
+  "scope": {
+    "domain": "Derivative-kernel spreads of the source Maiorana-McFarland vectorial bent family",
+    "assumptions": [
+      "$n=2m$",
+      "$\\Lambda$ is an admissible source-defined linearized permutation",
+      "$\\gamma\\notin\\mathbb F_{2^m}$",
+      "$r$ satisfies the source admissibility conditions"
+    ],
+    "parameters": [
+      "integer $m$",
+      "exponent parameter $r$",
+      "linearized permutation $\\Lambda$",
+      "coefficient $\\gamma$"
+    ],
+    "unresolved_remainder": "Prove that every admissible source-family spread is Desarguesian, or give one rigorously verified non-Desarguesian counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "maiorana-mcfarland",
+      "vectorial-bent-functions",
+      "derivative-spreads",
+      "desarguesian-spreads",
+      "finite-geometry"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anbar--Kalayci--Meidl, Desarguesianity question for derivative spreads",
+        "locator": "Section IV, journal p. 4900",
+        "doi": "10.1109/TIT.2021.3079223",
+        "url": "https://doi.org/10.1109/TIT.2021.3079223"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-05-11",
+      "kind": "source_statement",
+      "summary": "The source asks whether all derivative-kernel spreads produced by its exact Maiorana-McFarland family are Desarguesian.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl, Desarguesianity question for derivative spreads"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "quadratic-bent-derivative-kernel-spread-characterization"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
