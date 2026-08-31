@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-davies-meyer-group-1-pgv-collision-bound",
+  "group_id": "tight-davies-meyer-group-1-pgv-collision-bound",
+  "title": "Tight Collision Bounds for Davies–Meyer and Group-1 PGV Functions",
+  "summary": "In the quantum ideal-cipher model, the known collision bound for Davies–Meyer and group-1 PGV functions is non-tight; determining a tight bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Improve the $O(q^4/2^n)$ collision bound for Davies--Meyer and group-1 PGV functions to a tight bound."
+  },
+  "scope": {
+    "domain": "Quantum collision resistance of Davies–Meyer and group-1 PGV compression functions.",
+    "assumptions": [
+      "Quantum ideal-cipher model"
+    ],
+    "parameters": [
+      "q: quantum-query count in the collision bound",
+      "n: block-length parameter in the collision bound"
+    ],
+    "unresolved_remainder": "Determine a tight collision bound for Davies–Meyer and group-1 PGV functions in the quantum ideal-cipher model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "collision-resistance",
+      "quantum-ideal-cipher-model",
+      "pgv-compression-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 38",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves a quantitative collision-resistance bound for group-1 PGV compression functions in the quantum ideal-cipher model, then states that it is non-tight relative to BHT quantum collision finding.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

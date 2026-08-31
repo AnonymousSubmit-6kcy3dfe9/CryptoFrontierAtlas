@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "post-quantum-bounds-ascon-keyed-sponges",
+  "group_id": "post-quantum-bounds-ascon-keyed-sponges",
+  "title": "Post-Quantum Bounds for Ascon and Keyed Sponges",
+  "summary": "The current tweakable Even–Mansour reduction does not cover independent Ascon permutations; improved, ideally tight post-quantum bounds for Ascon and keyed sponges remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine improved, ideally tight, post-quantum security bounds for Ascon and keyed sponge functions analyzed through a reduction to tweakable Even--Mansour. For Ascon, the existing reduction requires its two permutations, $p_a$ and $p_b$, to be modeled as a single random permutation and does not work when they are modeled as independent permutations. The new bounds should explicitly identify which permutation model they cover."
+  },
+  "scope": {
+    "domain": "Post-quantum security analysis of Ascon and keyed sponge functions through reductions to tweakable Even–Mansour.",
+    "assumptions": [
+      "The existing Ascon reduction models p_a and p_b as a single random permutation."
+    ],
+    "parameters": [
+      "p_a and p_b: the two Ascon permutations whose shared or independent modeling determines whether the reduction applies"
+    ],
+    "unresolved_remainder": "Obtain improved, ideally tight, post-quantum security bounds for Ascon and keyed sponge functions and identify the permutation model covered by each bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "post-quantum-security",
+      "ascon",
+      "keyed-sponges"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach",
+        "locator": "ASIACRYPT 2025, page 31",
+        "doi": "10.1007/978-981-95-5018-0_14",
+        "url": "https://eprint.iacr.org/2025/1059",
+        "eprint": "2025/1059"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a better, especially tight, security bound as important future work and identifies the inability of the current Ascon reduction to handle independently modeled permutations as a limitation.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

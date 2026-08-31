@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-schedules-avoiding-weak-expanded-keys",
+  "group_id": "key-schedules-avoiding-weak-expanded-keys",
+  "title": "Key Schedules Avoiding Weak Expanded Keys",
+  "summary": "Expanded-key analysis exposes potentially weak keys, but constructing a concrete schedule that excludes all resulting weak sets remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a key schedule whose reachable expanded keys avoid every identified weak expanded-key set."
+  },
+  "scope": {
+    "domain": "Block-cipher key-schedule design informed by fixed-key differential analysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a key schedule whose reachable expanded keys avoid every identified weak expanded-key set."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "key-schedules",
+      "block-ciphers",
+      "differential-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs",
+        "locator": "ASIACRYPT 2025, page 31",
+        "doi": "10.1007/978-981-95-5018-0_4",
+        "url": "https://eprint.iacr.org/2025/1553",
+        "eprint": "2025/1553"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a two-step design approach: identify potential weaknesses in the expanded-key model, then develop a key schedule that mitigates them. It advocates the absence of weak expanded keys as a design principle.",
+      "citation_labels": [
+        "Anne Canteaut et al., Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

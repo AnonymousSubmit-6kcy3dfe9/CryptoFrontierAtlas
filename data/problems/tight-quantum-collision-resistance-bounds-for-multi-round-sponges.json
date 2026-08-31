@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-quantum-collision-resistance-bounds-for-multi-round-sponges",
+  "group_id": "tight-quantum-collision-resistance-bounds-for-multi-round-sponges",
+  "title": "Tight Quantum Collision-Resistance Bounds for Multi-Round Sponges",
+  "summary": "The first nontrivial collision-resistance bound for multi-round sponges is non-tight; determining a tight quantum-query bound with optimal parameter dependence remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine tight collision-resistance bounds for sponge constructions with more than one round against quantum algorithms that make $q$ quantum queries to a uniformly random permutation $\\pi$ on $\\{0,1\\}^{r+c}$ and its inverse. The first nontrivial collision-resistance bound for this multi-round setting is known, but it is non-tight. The unresolved task is to obtain a tight bound, including tight dependence on the quantum-query budget and the sponge and round parameters."
+  },
+  "scope": {
+    "domain": "Quantum collision resistance of multi-round sponge constructions in the random-permutation model.",
+    "assumptions": [
+      "The permutation is uniformly random, with quantum query access to it and its inverse."
+    ],
+    "parameters": [
+      "q: the quantum-query budget",
+      "r and c: sponge parameters whose sum determines the permutation input length",
+      "Number of rounds: the sponge round parameter, restricted to more than one round"
+    ],
+    "unresolved_remainder": "Obtain a tight collision-resistance bound with tight dependence on the quantum-query budget and the sponge and round parameters."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "sponge-constructions",
+      "collision-resistance",
+      "quantum-queries"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 35",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the first nontrivial collision-resistance bound for sponges with more than one round and explicitly states that it is non-tight. A tight multi-round bound remains open.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

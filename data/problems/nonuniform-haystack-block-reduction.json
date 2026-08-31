@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonuniform-haystack-block-reduction",
+  "group_id": "nonuniform-haystack-block-reduction",
+  "title": "Haystack Block Reduction with Nonuniform Randomness",
+  "summary": "The converse block-size reduction holds for uniform encoding output; it remains open for nonuniform randomness and requires identifying when padding noise has a suitable distribution.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether an attack on a one-block Haystack cipher can be reduced to an attack on a parallel $b$-block Haystack cipher when the randomness $r$ is nonuniformly distributed, and characterize the distributional conditions under which the reduction succeeds. The candidate approach pads each one-block query arbitrarily to $b$ blocks and treats the irrelevant ciphertext blocks as noise. The unresolved obstacle is that this noise may not match the distribution of the bits of $r$ expected by the one-block adversary, potentially preventing its attack."
+  },
+  "scope": {
+    "domain": "Security reductions between one-block and parallel multi-block Haystack ciphers.",
+    "assumptions": [
+      "The randomness r is nonuniformly distributed."
+    ],
+    "parameters": [
+      "b: the number of blocks in the parallel Haystack cipher",
+      "r: the randomness whose bit distribution may differ from the padding noise"
+    ],
+    "unresolved_remainder": "Whether a one-block attack reduces to the parallel b-block setting under nonuniform randomness, and which distributional conditions make the reduction succeed."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "haystack-ciphers",
+      "security-reductions",
+      "nonuniform-randomness"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 18",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source proposes padding each one-block query to b blocks and treating the irrelevant ciphertext blocks as noise. It leaves open whether this works when that noise differs from the distribution expected by the one-block adversary.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "degree-bounds-linearized-permutation-decomposition",
+  "group_id": "degree-bounds-linearized-permutation-decomposition",
+  "title": "Degree Bounds for Linearized Permutation Decompositions",
+  "summary": "Degree-16 factors are not universally sufficient over the 256-element binary field; determine relaxed degree conditions that guarantee low-degree linearized permutation decompositions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine conditions on the allowed factor degrees under which a linearized permutation polynomial over $\\mathbb{F}_{2^8}$ admits a composition decomposition $L=L_1\\circ L_2$ into two low-degree linearized permutation polynomials, and prove existence whenever those conditions hold. Requiring both factors to have degree $2^4$ is not universally sufficient, since some linearized polynomials over $\\mathbb{F}_{2^8}$ cannot be decomposed in this way. Relaxing the degree restriction can increase the possibility that suitable permutation-polynomial factors exist, but a theoretical existence proof under relaxed bounds remains to be established."
+  },
+  "scope": {
+    "domain": "Finite-field algebra of composition decompositions for linearized permutation polynomials.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The base field with 2^8 elements, which fixes the finite-field setting",
+      "The allowed degrees of the two factors, which govern the sought decomposition"
+    ],
+    "unresolved_remainder": "Identify relaxed factor-degree conditions that ensure the decomposition exists and prove existence whenever those conditions hold."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "linearized-polynomials",
+      "permutation-polynomials",
+      "polynomial-decomposition"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Cryptanalysis of AO Primitives Based on Polynomial Decomposition Applications to \\textsc{Rain} and Full AIM-I/III/V",
+        "locator": "ASIACRYPT 2025, page 12",
+        "doi": "10.1007/978-981-95-5018-0_13",
+        "url": "https://eprint.iacr.org/2025/981",
+        "eprint": "2025/981"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that degree-16 factors fail for some linearized polynomials and that relaxing the degree restriction can improve the possibility of suitable factors. A general theoretical existence proof remains open.",
+      "citation_labels": [
+        "Hong-Sen Yang et al., Algebraic Cryptanalysis of AO Primitives Based on Polynomial Decomposition Applications to \\textsc{Rain} and Full AIM-I/III/V"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

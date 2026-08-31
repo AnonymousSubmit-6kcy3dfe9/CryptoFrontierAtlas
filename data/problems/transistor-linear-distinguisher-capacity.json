@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "transistor-linear-distinguisher-capacity",
+  "group_id": "transistor-linear-distinguisher-capacity",
+  "title": "Capacity of the Transistor Linear Distinguisher",
+  "summary": "Security against the Transistor linear distinguisher relies on an assumed small capacity; rigorously bound it and verify that the attack costs more than exhaustive key search.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Transistor linear keystream distinguisher formed by using a parity-check equation to combine at least nine linear approximations, with the whitening LFSR omitted, rigorously estimate or bound the capacity of the resulting biased relation. The existing security argument assumes that this capacity is much smaller than $\\max_{\\alpha,\\beta}\\bigl(\\Delta(F_{\\alpha,\\beta})\\bigr)^4\\simeq 2^{-128}$ and consequently that the attack is more expensive than exhaustive key search; determine whether a rigorous capacity bound supports this complexity conclusion."
+  },
+  "scope": {
+    "domain": "Linear cryptanalysis of Transistor using a parity-check-based keystream distinguisher.",
+    "assumptions": [
+      "The whitening LFSR is omitted from the analyzed distinguisher.",
+      "The existing security argument assumes that the capacity is much smaller than $\\max_{\\alpha,\\beta}\\bigl(\\Delta(F_{\\alpha,\\beta})\\bigr)^4\\simeq 2^{-128}$."
+    ],
+    "parameters": [
+      "Number of linear approximations: at least nine are combined by the parity-check equation",
+      "$\\alpha,\\beta$: indices in the maximization used as the capacity benchmark",
+      "Capacity of the resulting biased relation: the quantity to be estimated or bounded"
+    ],
+    "unresolved_remainder": "Derive a rigorous capacity estimate or bound and determine whether it supports the conclusion that the attack is more expensive than exhaustive key search."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "stream-cipher",
+      "distinguisher-capacity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Transistor: a TFHE-friendly Stream Cipher",
+        "locator": "CRYPTO 2025, page 27",
+        "doi": "10.1007/978-3-032-01901-1_17",
+        "url": "https://eprint.iacr.org/2025/282",
+        "eprint": "2025/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source says that estimating the capacity of the relation combining at least nine approximations is difficult and substitutes an assumed upper scale. The exhaustive-search comparison remains conditional on that assumption, and the analysis omits the whitening LFSR.",
+      "citation_labels": [
+        "Jules Baudrin et al., Transistor: a TFHE-friendly Stream Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "adaptive-q2-security-of-four-round-luby-rackoff",
+  "group_id": "adaptive-q2-security-of-four-round-luby-rackoff",
+  "title": "Adaptive Q2 Security of 4-Round Luby–Rackoff",
+  "summary": "Security is proved only for upfront, non-adaptive quantum queries; whether the 4-round Luby–Rackoff construction is secure against fully adaptive Q2 adversaries remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A claim that the 4-round Luby--Rackoff construction is a quantum pseudorandom permutation has a technical issue in its proof. Security has been proved only against non-adaptive quantum adversaries that must choose all queries before receiving any query response. Prove or disprove that the construction is a quantum pseudorandom permutation in the $\\mathrm{Q2}$ setting against fully adaptive quantum adversaries."
+  },
+  "scope": {
+    "domain": "Quantum pseudorandom-permutation security of the 4-round Luby–Rackoff Feistel construction.",
+    "assumptions": [
+      "Q2 quantum-query setting",
+      "Fully adaptive quantum adversaries"
+    ],
+    "parameters": [
+      "Four rounds: fixes the depth of the Luby–Rackoff construction"
+    ],
+    "unresolved_remainder": "Prove or disprove quantum pseudorandom-permutation security in the Q2 setting against fully adaptive quantum adversaries."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "luby-rackoff",
+      "quantum-prp",
+      "adaptive-queries"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-quantum Security of Key-Alternating Feistel Ciphers",
+        "locator": "ASIACRYPT 2025, page 2",
+        "doi": "10.1007/978-981-95-5018-0_15",
+        "url": "https://eprint.iacr.org/2025/1603",
+        "eprint": "2025/1603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a technical issue in a claimed security proof and states that security is proved only for non-adaptive quantum adversaries whose queries are fixed upfront. The fully adaptive Q2 case remains unresolved.",
+      "citation_labels": [
+        "Jyotirmoy Basak et al., Post-quantum Security of Key-Alternating Feistel Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

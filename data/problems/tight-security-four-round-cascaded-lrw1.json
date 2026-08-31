@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-four-round-cascaded-lrw1",
+  "group_id": "tight-security-four-round-cascaded-lrw1",
+  "title": "Tight Security of Four-Round Cascaded LRW1",
+  "summary": "Four-round cascaded LRW1 has a security proof at three quarters of n bits, but its tight security bound remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight security of four-round cascaded LRW1 beyond the proved $3n/4$-bit bound."
+  },
+  "scope": {
+    "domain": "Security bounds for cascaded LRW1 block-cipher constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Four rounds, the fixed round count of the cascaded LRW1 construction",
+      "n, the variable governing the proved 3n/4-bit bound"
+    ],
+    "unresolved_remainder": "Determine the tight security bound beyond the proved 3n/4-bit bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "luby-rackoff",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Permutation-based Luby-Rackoff Constructions",
+        "locator": "CRYPTO 2025, page 3",
+        "doi": "10.1007/978-3-032-01901-1_14",
+        "url": "https://eprint.iacr.org/2025/914",
+        "eprint": "2025/914"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents four as the minimal round count for beyond-birthday-bound security and describes the known 3n/4-bit security proof for four-round LRW1 as non-tight.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Tweakable Permutation-based Luby-Rackoff Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

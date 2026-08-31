@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-quantum-k-collision-bounds-for-constant-round-sponge",
+  "group_id": "tight-quantum-k-collision-bounds-for-constant-round-sponge",
+  "title": "Tight Quantum k-Collision Bounds for Constant-Round Sponge",
+  "summary": "Nontrivial quantum multicollision-resistance bounds are known for constant-round sponge, but determining tight bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine tight quantum $k$-collision bounds for constant-round sponge."
+  },
+  "scope": {
+    "domain": "Quantum security analysis of multicollision resistance for constant-round sponge constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "k: collision multiplicity"
+    ],
+    "unresolved_remainder": "Determine tight quantum k-collision bounds for constant-round sponge."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "quantum-security",
+      "sponge-constructions",
+      "multicollision-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 5",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports nontrivial bounds for multicollision resistance of constant-round sponge and states that these bounds are not tight. The remaining problem is to establish tight quantum bounds.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

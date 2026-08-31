@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "formal-random-probing-bound-original-multiplication-gadget",
+  "group_id": "formal-random-probing-bound-original-multiplication-gadget",
+  "title": "Random-Probing Security of the Original Multiplication Gadget",
+  "summary": "The original multiplication gadget of [4] is heuristically secure against horizontal attacks, but a formal random-probing security bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove a formal random-probing security bound for the original multiplication gadget of [4]."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of the original multiplication gadget of [4] in the random-probing model.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove a formal random-probing security bound for the original multiplication gadget."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "random-probing",
+      "masked-multiplication"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Masked Circuit Compiler in the Cardinal Random Probing Composability Framework",
+        "locator": "ASIACRYPT 2025, page 16",
+        "doi": "10.1007/978-981-95-5096-8_12",
+        "url": "https://eprint.iacr.org/2025/1747",
+        "eprint": "2025/1747"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source describes the original proposal as heuristically secure against horizontal attacks and presumed strong in the random-probing model, while emphasizing that it lacks a formal analysis in that model. The paper analyzes modified gadgets without settling the original construction.",
+      "citation_labels": [
+        "Sonia Belaïd et al., Masked Circuit Compiler in the Cardinal Random Probing Composability Framework"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

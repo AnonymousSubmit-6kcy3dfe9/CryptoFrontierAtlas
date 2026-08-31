@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "transistor-linear-trail-bound-tightness",
+  "group_id": "transistor-linear-trail-bound-tightness",
+  "title": "Tightness of Transistor Linear-Trail Bounds",
+  "summary": "MILP gives active-S-box lower bounds for Transistor linear trails; it remains to instantiate the truncated paths, test tightness, and, if possible, obtain exact optimal-trail correlations.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For linear trails of Transistor, let $w_n$ denote the minimum number of active S-boxes over $n$ rounds. MILP analysis gives the lower bounds $w_4\\ge 13$, $w_5\\ge 20$, $w_6\\ge 25$, and $w_n\\ge 26$ for $n\\ge 7$. Because the associated truncated activity paths have not been instantiated as concrete trails, these bounds may not be tight. Determine which bounds are attainable through valid trail instantiations, thereby establishing exact values of $w_n$ where possible, and, if possible, determine the exact correlations of the resulting optimal trails."
+  },
+  "scope": {
+    "domain": "Linear and automated cryptanalysis of the Transistor stream cipher through active-S-box trail analysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: number of rounds",
+      "w_n: minimum number of active S-boxes over n rounds"
+    ],
+    "unresolved_remainder": "Instantiate the truncated activity paths as valid linear trails, determine which lower bounds are tight and the resulting exact w_n values, and, if possible, find the exact correlations of optimal trails."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "milp",
+      "active-s-boxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Transistor: a TFHE-friendly Stream Cipher",
+        "locator": "CRYPTO 2025, page 23",
+        "doi": "10.1007/978-3-032-01901-1_17",
+        "url": "https://eprint.iacr.org/2025/282",
+        "eprint": "2025/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper derives lower bounds via MILP, then cautions that they may not be tight because the truncated paths were not instantiated. Their attainability and, if possible, exact correlations remain unresolved.",
+      "citation_labels": [
+        "Jules Baudrin et al., Transistor: a TFHE-friendly Stream Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

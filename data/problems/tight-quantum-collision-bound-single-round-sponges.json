@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-quantum-collision-bound-single-round-sponges",
+  "group_id": "tight-quantum-collision-bound-single-round-sponges",
+  "title": "Tight Quantum Collision Bound for Single-Round Sponges",
+  "summary": "For single-round sponges, a tight quantum collision bound is known when rate is at most capacity, but the optimal bound above capacity remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight quantum collision-resistance bound for a single-round sponge with $n$-bit outputs, rate $r$, and capacity $c$, especially in the regime $r>c$. The available bound has fourth-power dependence on the number $q$ of quantum queries and is unlikely to be tight because the BHT algorithm finds a collision using $O(2^{n/3})$ queries. Quantum indifferentiability yields a tight collision-resistance bound when $r\\le c$, whereas only a first nontrivial bound is known when $r>c$; the unresolved task is to characterize the optimal collision success bound or query complexity in that regime."
+  },
+  "scope": {
+    "domain": "Quantum collision resistance and attack complexity for single-round sponge hash constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: output length in bits",
+      "r: sponge rate, with the unresolved regime defined by r exceeding c",
+      "c: sponge capacity",
+      "q: number of quantum queries"
+    ],
+    "unresolved_remainder": "Determine the optimal collision-success bound or quantum query complexity when the sponge rate exceeds its capacity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "sponge",
+      "quantum-collision-resistance",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 35",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a bound with fourth-power query dependence as the first nontrivial result when rate exceeds capacity, while the BHT attack indicates that it is unlikely to be tight. It contrasts this with a tight bound when rate is at most capacity.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

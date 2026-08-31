@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "secure-haystack-ciphers",
+  "group_id": "secure-haystack-ciphers",
+  "title": "Secure Haystack Cipher Construction",
+  "summary": "No Haystack cipher is clearly known to achieve both IND-CPA and IND-CCA security; constructing one remains an open milestone that appears plausible with available tools.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a secure Haystack cipher, modeled as a symmetric-encryption formulation of a white-box countermeasure, that achieves both chosen-plaintext ($\\mathrm{IND\\text{-}CPA}$) and chosen-ciphertext ($\\mathrm{IND\\text{-}CCA}$) security. These notions correspond closely to resistance against computational trace-based attacks and fault-injection attacks in the white-box model, respectively. No construction is currently clearly known to meet this minimum requirement, although achieving it appears plausible with available tools."
+  },
+  "scope": {
+    "domain": "Haystack ciphers modeling white-box countermeasures as symmetric-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a secure Haystack cipher that achieves both IND-CPA and IND-CCA security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "haystack-ciphers",
+      "white-box-cryptography",
+      "symmetric-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 1",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents secure Haystack ciphers as the next formal milestone for white-box designs and countermeasures. It states that the minimum security requirement is not clearly achieved but appears feasible with available tools.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

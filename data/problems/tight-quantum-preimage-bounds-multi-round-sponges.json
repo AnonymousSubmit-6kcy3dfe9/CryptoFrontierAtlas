@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-quantum-preimage-bounds-multi-round-sponges",
+  "group_id": "tight-quantum-preimage-bounds-multi-round-sponges",
+  "title": "Tight Quantum Preimage Bounds for Multi-Round Sponges",
+  "summary": "The first nontrivial quantum preimage-resistance bound for multi-round sponges is non-tight; determining its tight parameter dependence remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For sponge constructions using more than one round, determine tight bounds on the preimage-finding success probability of a quantum adversary as a function of the quantum-query count $q$, output length $n$, capacity $c$, and round count $\\ell$, in the model where the target output $y$ is fixed independently of the permutation $\\pi$. The first nontrivial bound for this multi-round setting is non-tight, leaving its tight parameter dependence unresolved."
+  },
+  "scope": {
+    "domain": "Quantum preimage resistance of multi-round sponge hash constructions.",
+    "assumptions": [
+      "The target output is fixed independently of the permutation."
+    ],
+    "parameters": [
+      "q: quantum-query count",
+      "n: output length",
+      "c: sponge capacity",
+      "ℓ: round count"
+    ],
+    "unresolved_remainder": "Determine the tight dependence of quantum preimage-finding success probability on the query count, output length, capacity, and round count."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "sponge",
+      "preimage-resistance",
+      "quantum-query-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 35",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the first nontrivial quantum preimage-resistance bound for sponges with more than one round and identifies it as non-tight. The stated result concerns a target fixed independently of the permutation.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

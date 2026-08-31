@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "interpolation-attack-round-bounds",
+  "group_id": "interpolation-attack-round-bounds",
+  "title": "Maximum Rounds for Interpolation Attacks",
+  "summary": "Existing interpolation-security arguments for five symmetric primitives are non-tight; determine the actual maximum rounds reachable by interpolation attacks for each.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For AES-prime, small-$p$Square, mid-$p$Square, HadesMiMC, and Feistel-GMiMC, existing security arguments against interpolation attacks are not tight and therefore do not determine matching attack bounds. Determine, for each primitive, the actual maximum number of rounds for which an interpolation attack can be constructed, rather than only a round count suggested by those non-tight security arguments."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of AES-prime, small-pSquare, mid-pSquare, HadesMiMC, and Feistel-GMiMC using interpolation attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of rounds: the attack-reach quantity to maximize for each primitive"
+    ],
+    "unresolved_remainder": "Determine the actual maximum number of rounds for which an interpolation attack can be constructed against each listed primitive."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "interpolation-attacks",
+      "round-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Integral cryptanalysis in characteristic $p$",
+        "locator": "ASIACRYPT 2025, page 4",
+        "doi": "10.1007/978-981-95-5018-0_3",
+        "url": "https://eprint.iacr.org/2025/932",
+        "eprint": "2025/932"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that existing security arguments are not tight and leaves estimating the actual number of rounds breakable by interpolation attacks as future work.",
+      "citation_labels": [
+        "Tim Beyne et al., Integral cryptanalysis in characteristic $p$"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

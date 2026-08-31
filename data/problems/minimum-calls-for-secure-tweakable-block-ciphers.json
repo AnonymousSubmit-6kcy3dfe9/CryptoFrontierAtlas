@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-calls-for-secure-tweakable-block-ciphers",
+  "group_id": "minimum-calls-for-secure-tweakable-block-ciphers",
+  "title": "Minimum Calls for Secure Tweakable Block Ciphers",
+  "summary": "The paper gives five-to-eight-permutation-call constructions, while the minimum block-cipher call count for optimal or beyond-birthday-bound security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For constructions of tweakable block ciphers from block ciphers, the minimum number of block-cipher calls required to achieve optimal security, or at least security beyond the birthday bound, remains unspecified. Determine this minimum call count for either security target."
+  },
+  "scope": {
+    "domain": "Call complexity of tweakable block-cipher constructions from block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of block-cipher calls as the construction cost to minimize",
+      "Security target: optimal security or security beyond the birthday bound"
+    ],
+    "unresolved_remainder": "Determine the minimum number of block-cipher calls needed to achieve either optimal security or security beyond the birthday bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "call-complexity",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Permutation-based Luby-Rackoff Constructions",
+        "locator": "CRYPTO 2025, page 50",
+        "doi": "10.1007/978-3-032-01901-1_14",
+        "url": "https://eprint.iacr.org/2025/914",
+        "eprint": "2025/914"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a general challenge after giving constructions using five to eight permutation calls. It leaves the minimum block-cipher call count undetermined.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Tweakable Permutation-based Luby-Rackoff Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

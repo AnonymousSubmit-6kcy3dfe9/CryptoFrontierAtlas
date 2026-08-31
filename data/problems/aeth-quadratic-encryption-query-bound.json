@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aeth-quadratic-encryption-query-bound",
+  "group_id": "aeth-quadratic-encryption-query-bound",
+  "title": "Improving AEtH's Quadratic Encryption-Query Bound",
+  "summary": "A quadratic encryption-query term makes the MRAE-preserving AEtH bound suboptimal; improving or removing it while retaining short-message and black-box support remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the MRAE-preserving AEtH transform, the MR-IND$\\$$-CPA security bound contains a quadratic encryption-query term that is suboptimal in the allowed number of encryption queries; for expansion size $\\tau=128$, this term limits the number of encryption queries to $q_e\\le 2^{48.5}$ when the advantage is $2^{-32}$. Can this quadratic term be improved or removed while retaining support for short messages, the original message space, and the black-box AEtH design?"
+  },
+  "scope": {
+    "domain": "Concrete security bounds for the hash-based, MRAE-preserving AEtH authenticated-encryption transform.",
+    "assumptions": [
+      "The underlying AEtH hash function is modeled as a random oracle."
+    ],
+    "parameters": [
+      "q_e: number of encryption queries constrained by the security bound",
+      "τ: expansion size, set to 128 in the stated example",
+      "Security advantage: target distinguishing advantage used to evaluate the query limit"
+    ],
+    "unresolved_remainder": "Improve or eliminate the quadratic encryption-query term while retaining short-message support, the original message space, and the black-box AEtH design."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "hash-functions",
+      "concrete-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Committing Authenticated Encryption: Generic Transforms with Hash Functions",
+        "locator": "EUROCRYPT 2025, page 16",
+        "doi": "10.1007/978-3-031-91107-1_4",
+        "url": "https://eprint.iacr.org/2025/320",
+        "eprint": "2025/320"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the quadratic term as suboptimal and illustrates its effect at expansion size 128. Padding or excluding short messages are offered as circumventions, but an improved bound preserving the original message space and black-box design remains unresolved.",
+      "citation_labels": [
+        "Shan Chen et al., Committing Authenticated Encryption: Generic Transforms with Hash Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

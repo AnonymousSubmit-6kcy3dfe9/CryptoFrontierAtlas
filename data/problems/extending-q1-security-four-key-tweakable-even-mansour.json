@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extending-q1-security-four-key-tweakable-even-mansour",
+  "group_id": "extending-q1-security-four-key-tweakable-even-mansour",
+  "title": "Extending Q1 Security to Four-Key Tweakable Even-Mansour",
+  "summary": "The available Q1 result assumes at most n key bits for an n-bit state; extending it to the identical-permutation Feistel setting with four independent keys and 4n aggregate bits remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend or adapt the available Q1 security result for Tweakable Even--Mansour, which assumes at most $n$ bits of key for an $n$-bit state, to the instance modeling identical-permutation key-alternating Feistel ciphers: for tweak $i$, the map is $(i,x)\\mapsto K_i\\oplus P(x\\oplus K_i)$, where $K_i$ is selected from four mutually independent $n$-bit round keys $K_1,K_2,K_3,K_4$. The goal is a theorem that applies when the aggregate independent key material is $4n$ bits rather than at most $n$ bits, possibly through a multi-user interpretation of the four independent-key instances."
+  },
+  "scope": {
+    "domain": "Post-quantum security of identical-permutation key-alternating Feistel block ciphers and their Tweakable Even-Mansour representation.",
+    "assumptions": [
+      "The available Q1 security result assumes at most n bits of key for an n-bit state.",
+      "The four round keys are mutually independent."
+    ],
+    "parameters": [
+      "n: state size and width of each round key",
+      "i: tweak selecting the corresponding round key",
+      "P: permutation used in the map",
+      "K1, K2, K3, K4: four mutually independent n-bit round keys",
+      "4n: aggregate independent key material"
+    ],
+    "unresolved_remainder": "Obtain an applicable Q1 security theorem for the four-independent-key instance with 4n bits of aggregate key material, possibly via a multi-user interpretation of the four independent-key instances."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "key-alternating-feistel",
+      "tweakable-even-mansour",
+      "post-quantum-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-quantum Security of Key-Alternating Feistel Ciphers",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5018-0_15",
+        "url": "https://eprint.iacr.org/2025/1603",
+        "eprint": "2025/1603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the identical-permutation key-alternating Feistel setting as a Tweakable Even-Mansour instance. It identifies the mismatch between the available Q1 result's at-most-n-bit key assumption and the four-key, 4n-bit representation, and mentions a multi-user interpretation as a possible approach.",
+      "citation_labels": [
+        "Jyotirmoy Basak et al., Post-quantum Security of Key-Alternating Feistel Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

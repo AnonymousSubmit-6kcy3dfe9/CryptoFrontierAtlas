@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ascon-post-quantum-multi-user-security",
+  "group_id": "ascon-post-quantum-multi-user-security",
+  "title": "Multi-User Post-Quantum Security of Ascon",
+  "summary": "Existing results are single-user; proving post-quantum security of Ascon in the multi-user setting remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove post-quantum security of Ascon in the multi-user setting."
+  },
+  "scope": {
+    "domain": "Post-quantum security analysis of Ascon across single-user and multi-user settings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove post-quantum security of Ascon in the multi-user setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ascon",
+      "post-quantum-security",
+      "multi-user-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach",
+        "locator": "ASIACRYPT 2025, page 31",
+        "doi": "10.1007/978-981-95-5018-0_14",
+        "url": "https://eprint.iacr.org/2025/1059",
+        "eprint": "2025/1059"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents only single-user results and identifies extending the post-quantum security analysis of Ascon to the multi-user setting as future research.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

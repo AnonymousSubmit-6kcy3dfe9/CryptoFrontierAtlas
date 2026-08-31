@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cpa-security-isw-then-dummy-shuffling",
+  "group_id": "cpa-security-isw-then-dummy-shuffling",
+  "title": "CPA Security of ISW-Then-Dummy-Shuffling",
+  "summary": "The variant can expose pre-shuffled zero encodings as ciphertext data when no data dependencies leak, but its CPA security remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the $\\mathrm{CPA}$ security of the ISW-then-dummy-shuffling Haystack-cipher variant, in which refreshing is performed after ISW. Dummy shuffling refreshes each AND gate by XORing fresh randomness into a dummy slot and $0$ into the main slot, creating a pre-shuffled encoding of zero. For AND gates inside the ISW multiplication gadget, these refreshing bits are not protected by ISW, so the resulting pre-shuffled encodings of zero are included in the ciphertext as intermediate gadget data. The analysis must assume that including this data leaks no data dependencies."
+  },
+  "scope": {
+    "domain": "CPA security analysis of an ISW-then-dummy-shuffling Haystack cipher containing intermediate multiplication-gadget data.",
+    "assumptions": [
+      "Including the intermediate gadget data leaks no data dependencies."
+    ],
+    "parameters": [
+      "Refreshing order: refreshing is performed after ISW",
+      "Dummy-shuffling refresh values: fresh randomness enters a dummy slot and zero enters the main slot",
+      "Ciphertext exposure: pre-shuffled zero encodings from AND gates inside the ISW multiplication gadget are included as intermediate data"
+    ],
+    "unresolved_remainder": "Determine the variant's CPA security under the no-data-dependency-leakage assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "cpa-security",
+      "haystack-ciphers",
+      "dummy-shuffling"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Haystack ciphers : White-box countermeasures as Symmetric encryption",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5096-8_11",
+        "url": "https://eprint.iacr.org/2025/1635",
+        "eprint": "2025/1635"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains how to model the ISW-then-dummy-shuffling variation by including exposed intermediate zero encodings in the Haystack ciphertext. It calls for analyzing the variation but provides no CPA-security resolution.",
+      "citation_labels": [
+        "Alex Charlès et al., Haystack ciphers : White-box countermeasures as Symmetric encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

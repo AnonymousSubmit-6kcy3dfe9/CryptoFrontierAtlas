@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-quantum-indifferentiability-bounds-for-multi-round-sponge",
+  "group_id": "tight-quantum-indifferentiability-bounds-for-multi-round-sponge",
+  "title": "Tight Quantum Indifferentiability Bounds for Multi-Round Sponge",
+  "summary": "Existing quantum-indifferentiability bounds for the multi-round sponge construction are non-tight; determining tight bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Quantum indifferentiability has been established for the multi-round sponge construction, but the resulting bounds are not tight. Determine tight quantum-indifferentiability bounds for the multi-round sponge construction."
+  },
+  "scope": {
+    "domain": "Quantum indifferentiability analysis of the multi-round sponge construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine tight quantum-indifferentiability bounds for the multi-round sponge construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "quantum-indifferentiability",
+      "sponge-construction",
+      "tight-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Lifting for Invertible Permutations and Ideal Ciphers",
+        "locator": "CRYPTO 2025, page 12",
+        "doi": "10.1007/978-3-032-01878-6_16",
+        "url": "https://eprint.iacr.org/2025/738",
+        "eprint": "2025/738"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports concurrent work establishing quantum indifferentiability for the multi-round sponge construction while explicitly noting that its bounds remain non-tight.",
+      "citation_labels": [
+        "Alexandru Cojocaru et al., Quantum Lifting for Invertible Permutations and Ideal Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

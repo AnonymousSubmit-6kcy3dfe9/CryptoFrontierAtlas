@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iv1-strong-bound-beyond-gwc",
+  "group_id": "iv1-strong-bound-beyond-gwc",
+  "title": "IV1 Strong Security Bounds Beyond gwc",
+  "summary": "The stronger IV1 security bound is proved with gwc, while the proof is weaker for general 2-wise independent hashes; whether other instantiations can match it remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The strong IV1 security bound uses a hash function $H$ instantiated with $\\mathsf{gwc}$ and yields $O(r^2\\lVert\\ell\\rVert(\\lVert\\sigma\\rVert + q + r)^2/2^{2n})$. The unresolved task is to determine whether other hash-function instantiations, especially general 2-wise independent ones, can achieve a comparable bound; for a general 2-wise independent hash function, the stated proof approach guarantees only $O(\\lVert\\ell\\rVert(\\lVert\\sigma\\rVert + q)/2^n)$, which imposes a stricter limit on $\\lVert\\ell\\rVert$ under the same query limit."
+  },
+  "scope": {
+    "domain": "Security analysis of IV1 deterministic authenticated encryption under gwc and alternative hash-function instantiations.",
+    "assumptions": [
+      "For the highlighted general case, the alternative hash function is 2-wise independent.",
+      "The limitations are compared under the same query limit."
+    ],
+    "parameters": [
+      "H: hash function fixed to gwc in the known stronger bound and varied in the open task",
+      "r: parameter appearing in the gwc-instantiated bound",
+      "ℓ: parameter whose allowable limit becomes stricter under the general proof bound",
+      "σ and q: parameters shared by both compared bounds",
+      "n: exponent parameter governing the powers-of-two denominators"
+    ],
+    "unresolved_remainder": "Whether other hash-function instantiations, especially general 2-wise independent ones, can attain a security bound comparable to the gwc-instantiated IV1 bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "hash-functions",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Optimally Secure Deterministic Authenticated Encryption Schemes",
+        "locator": "EUROCRYPT 2025, page 16",
+        "doi": "10.1007/978-3-031-91107-1_1",
+        "url": "https://eprint.iacr.org/2025/314",
+        "eprint": "2025/314"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves the stronger IV1 bound using gwc and observes that its approach gives only a weaker guarantee for a general 2-wise independent hash function. Comparable bounds from other hash instantiations remain unresolved.",
+      "citation_labels": [
+        "Yu Long Chen et al., Towards Optimally Secure Deterministic Authenticated Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

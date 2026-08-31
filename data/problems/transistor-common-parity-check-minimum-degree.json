@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "transistor-common-parity-check-minimum-degree",
+  "group_id": "transistor-common-parity-check-minimum-degree",
+  "title": "Expected Minimum Degree of Common Transistor Parity Checks",
+  "summary": "The prior degree estimate does not extend naively to full Transistor because of a subfield relation; the expected minimum degree of a common parity check at each weight remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine, for each prescribed polynomial weight, the expected minimum degree of a parity-check polynomial for full Transistor that is valid simultaneously for the key LFSR and the whitening LFSR, equivalently a multiple of $\\operatorname{lcm}(P_{\\mathcal K},P_{\\mathcal W})$, where $P_{\\mathcal K}$ and $P_{\\mathcal W}$ are their feedback polynomials. The estimate must account for $P_{\\mathcal W}$ defining a subfield of the field defined by $P_{\\mathcal K}$ and therefore cannot be obtained merely by replacing $|\\mathcal K|$ with $|\\mathcal K|+|\\mathcal W|$ in the prior degree estimate."
+  },
+  "scope": {
+    "domain": "Linear cryptanalysis of full Transistor using parity-check polynomials common to its key and whitening LFSRs.",
+    "assumptions": [
+      "The whitening feedback polynomial defines a subfield of the field defined by the key feedback polynomial."
+    ],
+    "parameters": [
+      "Prescribed polynomial weight: fixes the target weight of the parity-check polynomial",
+      "Polynomial degree: the quantity whose expected minimum is sought",
+      "Key and whitening feedback polynomials P_K and P_W: their least common multiple determines the required common-multiple condition"
+    ],
+    "unresolved_remainder": "Determine the expected minimum degree at each prescribed weight while accounting for the subfield relation instead of applying the prior estimate with the key and whitening sizes added."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "lfsr",
+      "parity-check-polynomials"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Transistor: a TFHE-friendly Stream Cipher",
+        "locator": "CRYPTO 2025, page 27",
+        "doi": "10.1007/978-3-032-01901-1_17",
+        "url": "https://eprint.iacr.org/2025/282",
+        "eprint": "2025/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper notes that an attack on full Transistor requires a parity-check polynomial valid for both LFSRs and that their subfield relation prevents extending the earlier estimate by simply adding the register sizes. It leaves the corresponding expected minimum-degree estimate open.",
+      "citation_labels": [
+        "Jules Baudrin et al., Transistor: a TFHE-friendly Stream Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "matching-q1-distinguisher-for-four-round-kaf",
+  "group_id": "matching-q1-distinguisher-for-four-round-kaf",
+  "title": "Matching Q1 Distinguisher for Four-Round KAF",
+  "summary": "A tight matching quantum attack is known for three rounds, but finding a corresponding Q1 distinguisher for four-round Key-Alternating Feistel remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a matching Q1 distinguisher for the 4-round KAF, possibly via collision or period finding."
+  },
+  "scope": {
+    "domain": "Post-quantum structural cryptanalysis of four-round Key-Alternating Feistel ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: fixed at four for the target KAF construction",
+      "Attack setting: Q1, specifying the distinguisher model"
+    ],
+    "unresolved_remainder": "Construct a matching Q1 distinguisher for the four-round KAF, potentially through collision or period finding."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "key-alternating-feistel",
+      "quantum-cryptanalysis",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-quantum Security of Key-Alternating Feistel Ciphers",
+        "locator": "ASIACRYPT 2025, page 3",
+        "doi": "10.1007/978-981-95-5018-0_15",
+        "url": "https://eprint.iacr.org/2025/1603",
+        "eprint": "2025/1603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts the matching attack known for three rounds with the absence of one for four rounds. It identifies collision or period finding as a possible route and notes the difficulty of separating the construction and round function into an asymmetric problem.",
+      "citation_labels": [
+        "Jyotirmoy Basak et al., Post-quantum Security of Key-Alternating Feistel Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rain-linearized-polynomial-decompositions",
+  "group_id": "rain-linearized-polynomial-decompositions",
+  "title": "Bounded Linearized Polynomial Decompositions for Rain",
+  "summary": "Experiments found bounded decompositions for guessed theta values and small fields, but their existence for every relevant theta remains unproved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish whether, for every relevant $\\theta$, $\\exists L_a,L_\\alpha,L_b,L_\\beta$ linearized permutation polynomials such that $L_1=L_\\alpha\\circ L_a^{-1}$, $L_2=L_\\beta\\circ L_b^{-1}$, with $l,\\gamma,\\lambda\\leq\\lceil 2n/3\\rceil$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Rain using bounded decompositions of linearized permutation polynomials.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "theta: value considered by the 3-round Rain attack",
+      "l, gamma, and lambda: decomposition parameters bounded by the ceiling of two-thirds of n",
+      "n: size parameter in the reported bound"
+    ],
+    "unresolved_remainder": "Prove or refute the existence of compatible decompositions for every relevant theta within the stated bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "rain",
+      "algebraic-cryptanalysis",
+      "linearized-polynomials"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Cryptanalysis of AO Primitives Based on Polynomial Decomposition Applications to \\textsc{Rain} and Full AIM-I/III/V",
+        "locator": "ASIACRYPT 2025, page 18",
+        "doi": "10.1007/978-981-95-5018-0_13",
+        "url": "https://eprint.iacr.org/2025/981",
+        "eprint": "2025/981"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports experimental verification for guessed theta values and small fields because the full theta space could not be traversed. It uses the observed bound in its attack estimate, leaving the universal existence claim unresolved.",
+      "citation_labels": [
+        "Hong-Sen Yang et al., Algebraic Cryptanalysis of AO Primitives Based on Polynomial Decomposition Applications to \\textsc{Rain} and Full AIM-I/III/V"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

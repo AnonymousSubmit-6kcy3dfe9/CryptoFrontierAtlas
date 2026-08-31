@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "all-key-validity-of-speedy-differentials",
+  "group_id": "all-key-validity-of-speedy-differentials",
+  "title": "All-Key Validity of SPEEDY Differentials",
+  "summary": "Experiments strongly support the SPEEDY attack differentials, but their all-key validity and only marginal key dependence remain unproved, with lower-correlation clustering not excluded.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the differentials underlying the SPEEDY differential attacks, determine definitively, over the entire key space, whether the differentials are valid and whether their probabilities depend only marginally on the choice of key. Computational experiments strongly indicate these conclusions, but computational limitations prevent a definitive result, and lower-correlation clustering effects are not entirely excluded."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of SPEEDY, focusing on attack differentials and fixed-key probability variation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Choice of key: indexes differential probabilities across the entire key space"
+    ],
+    "unresolved_remainder": "Establish definitively that the attack differentials are valid for every key and that their probabilities depend only marginally on the key, while excluding relevant lower-correlation clustering effects."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "speedy",
+      "key-dependence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "SPEEDY: Caught at Last",
+        "locator": "ASIACRYPT 2025, page 21",
+        "doi": "10.1007/978-981-95-5018-0_7",
+        "url": "https://eprint.iacr.org/2025/890",
+        "eprint": "2025/890"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports computational experiments strongly indicating validity and only marginal key dependence, but states that computational limitations prevent a definitive conclusion. Lower-correlation clustering effects remain unexcluded.",
+      "citation_labels": [
+        "Christina Boura et al., SPEEDY: Caught at Last"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

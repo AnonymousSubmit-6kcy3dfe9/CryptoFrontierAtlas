@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "compression-tolerant-macs-for-ciphertexts",
+  "group_id": "compression-tolerant-macs-for-ciphertexts",
+  "title": "Compression-Tolerant MACs for Ciphertexts",
+  "summary": "No MAC is known that meaningfully verifies a ciphertext after compression, even with an unchanged tag; constructing one remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a MAC for ciphertexts that can meaningfully verify after compression changes the ciphertext, even if the MAC tag is transmitted so that compression does not alter it. No such MAC construction is known for this setting, and the problem is related to the lack of a practical $\\operatorname{Similar}$ function for ciphertexts."
+  },
+  "scope": {
+    "domain": "Message authentication and authenticated encryption for compression-modified ciphertexts.",
+    "assumptions": [
+      "The MAC tag is transmitted so that compression does not alter it."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a MAC that meaningfully verifies after compression changes the ciphertext."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "message-authentication-codes",
+      "authenticated-encryption",
+      "compression-tolerance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Format-Preserving Compression-Tolerating Authenticated Encryption for Images",
+        "locator": "ASIACRYPT 2025, page 13",
+        "doi": "10.1007/978-981-95-5119-4_4",
+        "url": "https://eprint.iacr.org/2026/585",
+        "eprint": "2026/585"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as an unresolved limitation: no suitable MAC is known even when the tag remains uncompressed, and the difficulty is linked to finding a practical Similar function for ciphertexts.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Format-Preserving Compression-Tolerating Authenticated Encryption for Images"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "formal-correctness-jpeg-tolerant-image-encryption",
+  "group_id": "formal-correctness-jpeg-tolerant-image-encryption",
+  "title": "Formal Correctness Bound for JPEG-Tolerant Image Encryption",
+  "summary": "The paper reports empirical correctness tests for particular similarity and JPEG-tolerance choices, but a formal correctness bound for the pipeline remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Fix an image-similarity predicate $\\mathsf{Similar}$, JPEG-tolerance parameters $r_l$ and $r_r$, and the preprocessing and correction/filtering postprocessing of the JPEG-tolerant stream-cipher image-encryption pipeline. Prove an explicit $\\varepsilon$-correctness bound showing that, after an image $I$ is encrypted, its ciphertext is JPEG-compressed, and the result is decrypted and postprocessed to produce $\\widehat I$, one has $\\mathsf{Similar}(I,\\widehat I)$ with probability at least $1-\\varepsilon$. Correctness for particular choices of $\\mathsf{Similar}$, $r_l$, and $r_r$ has been tested empirically but lacks a formal argument. A proof should account for the intended preservation of closeness through JPEG compression and stream-cipher decryption, possible bit-flipping noise, and the noise reduction supplied by preprocessing and correction."
+  },
+  "scope": {
+    "domain": "The problem concerns a JPEG-tolerant stream-cipher image-encryption pipeline with preprocessing and correction/filtering postprocessing.",
+    "assumptions": [
+      "an image-similarity predicate Similar is fixed",
+      "the preprocessing and correction/filtering postprocessing are fixed"
+    ],
+    "parameters": [
+      "r_l and r_r: JPEG-tolerance parameters"
+    ],
+    "unresolved_remainder": "Provide a formal argument for the explicit epsilon-correctness bound after JPEG compression, decryption, and postprocessing, accounting for closeness preservation, bit-flipping noise, and noise reduction from preprocessing and correction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [],
+    "tags": [
+      "stream-ciphers",
+      "image-encryption",
+      "jpeg-tolerance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Format-Preserving Compression-Tolerating Authenticated Encryption for Images",
+        "locator": "ASIACRYPT 2025, page 16",
+        "doi": "10.1007/978-981-95-5119-4_4",
+        "url": "https://eprint.iacr.org/2026/585",
+        "eprint": "2026/585"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly states that it cannot formally argue correctness and instead empirically tests particular choices of Similar, r_l, and r_r, deferring the discussion to Section 10. It motivates the gap through intended closeness preservation under compression and decryption, possible bit-flipping noise, and mitigation through preprocessing and correction.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Format-Preserving Compression-Tolerating Authenticated Encryption for Images"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

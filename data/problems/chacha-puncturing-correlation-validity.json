@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chacha-puncturing-correlation-validity",
+  "group_id": "chacha-puncturing-correlation-validity",
+  "title": "Validity of Puncturing Correlation in ChaCha Key Recovery",
+  "summary": "With random ciphertexts, XOR keying preserves input randomization; determine when the puncturing-correlation formula remains valid for same-key ChaCha maps using modular addition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For differential-linear key recovery in the ChaCha application considered here, the relevant recovery expression is the product $f(t_1,k)f(t_2,k)$ of two identical key-recovery maps evaluated at partially different inputs and under the same key $k$. The puncturing-correlation complexity formula is justified by assumptions that the recovery maps behave on attack data as on randomly sampled inputs; in the XOR-keyed setting discussed for the prior result, direct key addition to plaintext and ciphertext preserves input randomization when ciphertexts are random. In the present setting, however, the key is combined with ciphertext by modular addition, so that randomization intuition may fail. The unresolved task is to characterize, or prove, the necessary and sufficient conditions under which the puncturing-correlation formula remains valid for this same-key, modular-addition setting, including the required moment and independence conditions for the two evaluations."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis of ChaCha key recovery using puncturing correlation under modular key addition.",
+    "assumptions": [
+      "The recovery maps behave on attack data as they do on randomly sampled inputs.",
+      "Ciphertexts are random in the prior XOR-keyed randomization argument.",
+      "The puncturing-correlation argument relies on equal-moment and statistical-independence conditions for the two ciphertext-side evaluations."
+    ],
+    "parameters": [
+      "f: the key-recovery map used in both product factors",
+      "t₁ and t₂: partially different inputs to the two evaluations",
+      "k: the shared key supplied to both evaluations"
+    ],
+    "unresolved_remainder": "Determine the necessary and sufficient moment and independence conditions under which the puncturing-correlation formula remains valid when both evaluations share a key combined with ciphertext by modular addition."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "differential-linear",
+      "chacha",
+      "modular-addition"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing",
+        "locator": "EUROCRYPT 2025, page 9",
+        "doi": "10.1007/978-3-031-91107-1_15",
+        "url": "https://eprint.iacr.org/2025/437",
+        "eprint": "2025/437"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies a potential gap in transferring the puncturing-correlation complexity argument from XOR-keyed data to ChaCha's modular-addition setting. It leaves the necessary moment and independence conditions for the shared-key evaluations to be established.",
+      "citation_labels": [
+        "Antonio Florez-Gutierrez et al., Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

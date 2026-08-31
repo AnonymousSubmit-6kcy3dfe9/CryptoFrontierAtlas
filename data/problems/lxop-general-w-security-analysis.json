@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lxop-general-w-security-analysis",
+  "group_id": "lxop-general-w-security-analysis",
+  "title": "Security Analysis of LXoP for General Width",
+  "summary": "The width-two LXoP security analysis is technically extendable to very small larger widths, but deriving an analysis for general width remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the construction $\\mathrm{LXoP}[L,w,n]$, with an invertible linear function $L$ on $\\{0,1\\}^n$ satisfying $x \\oplus L^j(x) \\ne 0$ for every nonzero $x \\in \\{0,1\\}^n$ and $1 \\le j \\le w$, extend the existing security analysis of $\\mathrm{LXoP}[L,2,n]$ to general $w > 2$. The extension is known to be technically feasible for very small values of $w > 2$, but deriving the security analysis for general $w$ remains unresolved."
+  },
+  "scope": {
+    "domain": "Security analysis of the LXoP construction in symmetric cryptography.",
+    "assumptions": [
+      "L is an invertible linear function on binary vectors of dimension n, and every nonzero x satisfies x XOR L iterated j times on x is nonzero for indices from 1 through w."
+    ],
+    "parameters": [
+      "L: the linear-function parameter of LXoP",
+      "w: the parameter governing the target generalization and the range of iterate indices",
+      "n: the dimension of the binary-vector domain"
+    ],
+    "unresolved_remainder": "Derive the security analysis of LXoP[L,w,n] for general w greater than two."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "security-analysis",
+      "lxop"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Combining Outputs of a Random Permutation: New Constructions and Tight Security Bounds by Fourier Analysis",
+        "locator": "EUROCRYPT 2025, page 5",
+        "doi": "10.1007/978-3-031-91107-1_9",
+        "url": "https://eprint.iacr.org/2024/929",
+        "eprint": "2024/929"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source says extending the width-two analysis to very small widths above two is feasible but technical. It leaves the more involved analysis for general width to future work.",
+      "citation_labels": [
+        "Itai Dinur et al., Combining Outputs of a Random Permutation: New Constructions and Tight Security Bounds by Fourier Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-plateau-fixed-key-differential-probabilities",
+  "group_id": "non-plateau-fixed-key-differential-probabilities",
+  "title": "Fixed-Key Probabilities for Non-Plateau Characteristics",
+  "summary": "Existing fixed-key analysis covers only plateau characteristics; the open task is to derive meaningful fixed-key probability expressions for a large family of non-plateau characteristics.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Generalize fixed-key differential analysis from plateau characteristics, currently covered only when every internal S-box differential is super-planar, to non-plateau characteristics without that strong structure. For S-boxes with differential uniformity at most $4$, this super-planarity condition is equivalent to requiring every internal S-box to be active. Derive meaningful expressions for the fixed-key probabilities of a large family of non-plateau characteristics while jointly incorporating the S-boxes' differential properties and Walsh spectra; the quasi-differential framework is a promising avenue."
+  },
+  "scope": {
+    "domain": "Fixed-key differential cryptanalysis of lightweight symmetric designs, focusing on S-box characteristics beyond the plateau case.",
+    "assumptions": [
+      "S-boxes have differential uniformity at most 4."
+    ],
+    "parameters": [
+      "Non-plateau characteristics: the target family for generalized fixed-key analysis",
+      "S-box differential properties: information to be incorporated into the probability expressions",
+      "Walsh spectra: additional spectral information required for the non-plateau case"
+    ],
+    "unresolved_remainder": "Derive meaningful expressions for the fixed-key probabilities of a large family of non-plateau characteristics, jointly incorporating the S-boxes' differential properties and Walsh spectra."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "fixed-key-analysis",
+      "walsh-spectra"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs",
+        "locator": "ASIACRYPT 2025, page 31",
+        "doi": "10.1007/978-981-95-5018-0_4",
+        "url": "https://eprint.iacr.org/2025/1553",
+        "eprint": "2025/1553"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a major limitation of the current analysis, which is restricted to super-planar internal S-box differentials and hence plateau characteristics. It identifies the quasi-differential framework as a promising route, while noting that useful expressions remain challenging because both differential properties and Walsh spectra are involved.",
+      "citation_labels": [
+        "Anne Canteaut et al., Understanding Unexpected Fixed-Key Differential Behaviours: How to Avoid Major Weaknesses in Lightweight Designs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

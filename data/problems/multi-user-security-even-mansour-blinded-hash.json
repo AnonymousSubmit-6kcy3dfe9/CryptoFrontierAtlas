@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-user-security-even-mansour-blinded-hash",
+  "group_id": "multi-user-security-even-mansour-blinded-hash",
+  "title": "Multi-User Security of Even–Mansour and Blinded Hash",
+  "summary": "The source identifies ARP/ARS as a route to multi-user security analysis, while controlling cross-collisions among independent keys remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a multi-user security analysis of the Even--Mansour construction and, for the function setting, an analogous analysis of blinded hash, viewing mutually independent round keys as distinct user keys. The analysis should apply the ARP/ARS machinery while carefully controlling cross-collision events arising from the use of multiple keys; handling these events is the unresolved technical obstacle."
+  },
+  "scope": {
+    "domain": "Multi-user security analysis of the Even–Mansour block-cipher construction and blinded hash in the function setting.",
+    "assumptions": [
+      "Round keys are mutually independent and are viewed as distinct user keys."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Establish the multi-user analyses using ARP/ARS while controlling cross-collision events caused by multiple independent keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "even-mansour",
+      "blinded-hash",
+      "multi-user-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-quantum Security of Key-Alternating Feistel Ciphers",
+        "locator": "ASIACRYPT 2025, page 22",
+        "doi": "10.1007/978-981-95-5018-0_15",
+        "url": "https://eprint.iacr.org/2025/1603",
+        "eprint": "2025/1603"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source proposes ARP/ARS as the machinery for a multi-user analysis of Even–Mansour or blinded hash. It identifies cross-collision events under multiple keys as the unresolved technical obstacle.",
+      "citation_labels": [
+        "Jyotirmoy Basak et al., Post-quantum Security of Key-Alternating Feistel Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

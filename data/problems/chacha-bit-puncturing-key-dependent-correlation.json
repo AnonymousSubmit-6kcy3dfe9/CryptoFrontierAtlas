@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chacha-bit-puncturing-key-dependent-correlation",
+  "group_id": "chacha-bit-puncturing-key-dependent-correlation",
+  "title": "Key-Dependent Correlation in ChaCha Bit Puncturing",
+  "summary": "Existing ChaCha bit-puncturing analysis estimates only average correlation; determine its variation across keys and derive reliable key-dependent attack success probabilities.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For ChaCha bit-puncturing attacks, determine how the correlation induced by the punctured key bits varies with the secret key and derive a key-dependent success-probability analysis. The available analysis estimates only the average correlation over punctured key bits, while experiments show that the right-key distribution has higher variance than expected; this discrepancy is believed to result from absorbing the secret key with modular addition rather than XOR. The unresolved task is to establish reliable variance bounds or key-distribution quantiles and use them to quantify attack success probability across keys, rather than relying on the average correlation."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of ChaCha bit-puncturing attacks, focusing on correlation statistics and attack success across keys.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Secret key — conditions the correlation and attack success probability",
+      "Punctured key bits — induce the correlation for which the current analysis estimates only an average"
+    ],
+    "unresolved_remainder": "Characterize correlation across secret keys, establish reliable variance bounds or key-distribution quantiles, and use them to quantify attack success probability across keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "chacha",
+      "bit-puncturing",
+      "key-dependent-correlation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing",
+        "locator": "EUROCRYPT 2025, page 38",
+        "doi": "10.1007/978-3-031-91107-1_15",
+        "url": "https://eprint.iacr.org/2025/437",
+        "eprint": "2025/437"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports greater-than-expected experimental variance in the right-key distribution and suggests modular key addition as the cause. Its calculations estimate only average correlation, leaving key-dependent success analysis unresolved.",
+      "citation_labels": [
+        "Antonio Florez-Gutierrez et al., Improved Cryptanalysis of ChaCha: Beating PNBs with Bit Puncturing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

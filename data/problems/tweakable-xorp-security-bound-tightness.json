@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweakable-xorp-security-bound-tightness",
+  "group_id": "tweakable-xorp-security-bound-tightness",
+  "title": "Tightness of the Tweakable XORP Security Bound",
+  "summary": "No attack matching the tweakable XORP security bound is known; find such an attack or improve the bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the security bound of the tweakable XORP construction is tight, or improve the bound."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of security bounds for the tweakable XORP construction.",
+    "assumptions": [
+      "Limited tweak reuse"
+    ],
+    "parameters": [
+      "n — parameter used to express the claimed security level of approximately two-thirds of n bits"
+    ],
+    "unresolved_remainder": "Whether an attack matching the security bound exists or the bound can instead be improved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "tweakable-xorp",
+      "attack-complexity",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Efficient Instances of Docked Double Decker With AES, and Application to Authenticated Encryption",
+        "locator": "EUROCRYPT 2025, page 41",
+        "doi": "10.1007/978-3-031-91107-1_3",
+        "url": "https://eprint.iacr.org/2024/084",
+        "eprint": "2024/084"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion states that no attack matching the tweakable XORP bound is known and leaves finding one or improving the bound as future work.",
+      "citation_labels": [
+        "Christoph Dobraunig et al., Efficient Instances of Docked Double Decker With AES, and Application to Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

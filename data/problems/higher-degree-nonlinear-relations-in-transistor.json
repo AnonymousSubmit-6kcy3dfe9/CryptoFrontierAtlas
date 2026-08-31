@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-degree-nonlinear-relations-in-transistor",
+  "group_id": "higher-degree-nonlinear-relations-in-transistor",
+  "title": "Higher-Degree Nonlinear Relations in Transistor",
+  "summary": "For Transistor, three consecutive FSM outputs are independent of the key sequence and linear relations over at least four outputs are studied; more biased nonlinear relations and stronger attacks remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether Transistor has higher-degree nonlinear relations between its key-LFSR sequence and consecutive FSM outputs whose probability distributions deviate farther from uniformity than those of the analyzed linear relations, and, if so, whether exploiting them yields stronger attacks. The analysis must account for whitening: an attacker observes the sum of the FSM-output sequence and the whitening-LFSR output, so a relation nonlinear in the FSM-output digits also involves whitening-LFSR outputs nonlinearly and may require exhaustive search over the whitening LFSR's initial state."
+  },
+  "scope": {
+    "domain": "Statistical cryptanalysis of the Transistor stream cipher using relations between its key-LFSR sequence and consecutive FSM outputs.",
+    "assumptions": [
+      "An attacker observes the sum of the FSM-output sequence and the whitening-LFSR output."
+    ],
+    "parameters": [
+      "Relation degree — distinguishes the sought nonlinear relations from the analyzed linear relations",
+      "Whitening-LFSR initial state — may require exhaustive search when exploiting a nonlinear relation"
+    ],
+    "unresolved_remainder": "Whether higher-degree relations with greater deviation from uniformity exist and can yield stronger attacks once whitening is accounted for."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "stream-cipher",
+      "correlation-attack",
+      "lfsr"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Transistor: a TFHE-friendly Stream Cipher",
+        "locator": "CRYPTO 2025, page 22",
+        "doi": "10.1007/978-3-032-01901-1_17",
+        "url": "https://eprint.iacr.org/2025/282",
+        "eprint": "2025/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source follows its analysis of linear relations by identifying higher-degree relations as a possible source of greater statistical bias. Their discovery and exploitation remain unresolved because whitening complicates nonlinear attacks and may require exhaustive search over the whitening-LFSR initial state.",
+      "citation_labels": [
+        "Jules Baudrin et al., Transistor: a TFHE-friendly Stream Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

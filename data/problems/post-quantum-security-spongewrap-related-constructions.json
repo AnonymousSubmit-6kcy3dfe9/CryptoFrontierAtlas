@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "post-quantum-security-spongewrap-related-constructions",
+  "group_id": "post-quantum-security-spongewrap-related-constructions",
+  "title": "Post-Quantum Security of SpongeWrap and Related Constructions",
+  "summary": "The paper's modular approach suggests analogous proofs, but single-user post-quantum security remains to be proved for SpongeWrap, the cited duplex modes, MonkeySpongeWrap, and Ascon-PRF.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove single-user post-quantum security of SpongeWrap, the cited duplex modes, MonkeySpongeWrap, and Ascon-PRF."
+  },
+  "scope": {
+    "domain": "The problem concerns post-quantum security proofs for SpongeWrap, the cited duplex modes, MonkeySpongeWrap, and Ascon-PRF.",
+    "assumptions": [
+      "Single-user security setting"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Establish single-user post-quantum security for each of the named constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "post-quantum-security",
+      "sponge-constructions",
+      "security-proofs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach",
+        "locator": "ASIACRYPT 2025, page 30",
+        "doi": "10.1007/978-981-95-5018-0_14",
+        "url": "https://eprint.iacr.org/2025/1059",
+        "eprint": "2025/1059"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2025-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents these security proofs as concrete extensions that could be obtained analogously using the paper's modular approach.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Post-Quantum Security of Keyed Sponge-Based Constructions through a Modular Approach"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
