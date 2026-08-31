@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "general-characterization-support-based-hypothesis-testing",
+  "group_id": "general-characterization-support-based-hypothesis-testing",
+  "title": "General Characterization of Support-Based Hypothesis Testing",
+  "summary": "The source contrasts a one-query Deutsch-Jozsa case with a structured Simon case requiring order-n queries and leaves a general characterization of the pattern unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a general characterization of hypothesis-testing problems in which each hypothesis restricts the support of a correlation state to a prescribed subset of $\\mathbb{F}_2^n \\times \\mathbb{F}_2^m$. The characterization should account for the contrast between Deutsch--Jozsa, whose subsets are disjoint and permit a decision after one query, and Simon's algorithm, whose structured family of subsets requires $O(n)$ queries. Multi-hypothesis sequential probability ratio tests (MSPRT) are a potential tool for this characterization."
+  },
+  "scope": {
+    "domain": "Quantum hypothesis testing and query complexity for correlation-state support families.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n and m: dimensions of the two binary vector spaces in the prescribed support subset",
+      "number of queries: resource used to distinguish the hypothesis families"
+    ],
+    "unresolved_remainder": "Develop a general characterization of these support-based hypothesis-testing problems, potentially using multi-hypothesis sequential probability ratio tests (MSPRT)."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "quantum-hypothesis-testing",
+      "query-complexity",
+      "probability-statistics"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Geometric Approach to Quantum Distinguishers",
+        "locator": "CRYPTO 2026, page 25",
+        "url": "https://eprint.iacr.org/2026/1158",
+        "eprint": "2026/1158"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents Deutsch-Jozsa and Simon's algorithm as instances of a common support-based hypothesis-testing pattern with different query requirements. It leaves a general characterization for future work and suggests MSPRT as a potential tool.",
+      "citation_labels": [
+        "Zhili Wu et al., A Geometric Approach to Quantum Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

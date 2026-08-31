@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extending-2r-is-beyond-two-rounds",
+  "group_id": "extending-2r-is-beyond-two-rounds",
+  "title": "Extending 2R-IS Beyond Two Rounds",
+  "summary": "The two-round initial-state attack supplies too few states in the stated regime; determine whether it can extend further or prove such an extension infeasible.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether 2R-IS extends beyond two rounds when $\\mu 2^{r_G}\\le 2^{\\nu/2+l}$, or prove such an extension infeasible."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the 2R-IS attack in a duplex-sponge AEAD setting.",
+    "assumptions": [
+      "The parameters satisfy $\\mu 2^{r_G}\\le 2^{\\nu/2+l}$."
+    ],
+    "parameters": [
+      "$\\mu$: multicollision-size parameter whose smallness obstructs a larger next-round multicollision",
+      "$r_G$: paper-specific parameter on the left side of the stated regime bound",
+      "$\\nu$: paper-specific parameter in the right-side exponent of the stated regime bound",
+      "$l$: paper-specific parameter in the right-side exponent of the stated regime bound"
+    ],
+    "unresolved_remainder": "Whether 2R-IS extends beyond two rounds in this regime, or whether such an extension is infeasible."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "sponge-cryptanalysis",
+      "attack-extension"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Committing Attacks: Zero-Padded Ascon is Less Secure than Expected",
+        "locator": "CRYPTO 2026, page 28",
+        "url": "https://eprint.iacr.org/2026/1160",
+        "eprint": "2026/1160"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source says another-round extension is unlikely because μ is too small to guarantee a larger next-round multicollision. It provides neither a successful extension nor an infeasibility proof.",
+      "citation_labels": [
+        "Nilanjan Datta et al., Generic Committing Attacks: Zero-Padded Ascon is Less Secure than Expected"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

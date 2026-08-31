@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "inv-kac-mixing-time-constants",
+  "group_id": "inv-kac-mixing-time-constants",
+  "title": "Sharper Constants for INV-KAC Mixing Time",
+  "summary": "An asymptotic total-variation mixing guarantee is known for INV-KAC, but its explicit round-complexity constants remain unoptimized and their sharp, ideally optimal values are unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider the INV-KAC random walk over a field of size $n$: starting from the identity permutation, each round applies a randomly chosen permutation $\\Pi_K(x)=\\operatorname{INV}(x+K)$, corresponding to field inversion after addition by a field element $K$. An upper bound of $r=O\\!\\left(n\\log n+n\\log(1/\\varepsilon)\\right)$ rounds ensures that the resulting permutation is $\\varepsilon$-close in total variation distance to a uniformly random permutation from the appropriate coset of the alternating group $A_n$, and thus to an $(n-2)$-wise independent permutation. Explicit constants for this guarantee are known but were not optimized. Determine sharper, ideally optimal, explicit constants in this mixing-time and round-complexity bound as functions of $n$ and $\\varepsilon$."
+  },
+  "scope": {
+    "domain": "Probabilistic and cryptographic analysis of mixing times for the INV-KAC permutation walk over a finite field.",
+    "assumptions": [
+      "The underlying algebraic domain is a field of size n.",
+      "The walk starts from the identity permutation.",
+      "Each round applies a randomly chosen permutation indexed by a field element K."
+    ],
+    "parameters": [
+      "n: field size",
+      "r: number of walk rounds",
+      "epsilon: target total-variation error"
+    ],
+    "unresolved_remainder": "Determine sharper, ideally optimal, explicit constants in the mixing-time and round-complexity upper bound as functions of n and epsilon."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "inv-kac",
+      "mixing-time",
+      "random-walk"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How Fast Does the Inverse Walk Approximate a Random Permutation?",
+        "locator": "CRYPTO 2026, page 5",
+        "url": "https://eprint.iacr.org/2024/1795",
+        "eprint": "2024/1795"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives an asymptotic upper bound and reports that its explicit constants are available in the formal result but were not optimized. It leaves sharpening, ideally optimizing, those constants as the open task.",
+      "citation_labels": [
+        "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

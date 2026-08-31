@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-tag-based-committing-ae-ciphertext-shortening",
+  "group_id": "non-tag-based-committing-ae-ciphertext-shortening",
+  "title": "Ciphertext Shortening for Non-Tag-Based Committing AE",
+  "summary": "The target commitment overhead is at most the parameter s, and SC reduces it further for tag-based schemes; for non-tag-based schemes, impossibility or an SC analogue remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a committing transform applied to a non-tag-based authenticated-encryption scheme, let $\\operatorname{co}(s)$ denote the transformed ciphertext length minus the base-scheme ciphertext length; this overhead is a constant depending only on $s$, with target $\\operatorname{co}(s)\\le s$. For tag-based schemes, the ciphertext-shortening SC transform can reduce this overhead further, but no analogous method or impossibility proof is known for non-tag-based schemes. Determine whether reducing $\\operatorname{co}(s)$ further than the $\\operatorname{co}(s)\\le s$ target is impossible in the non-tag-based setting, or construct an analogue of SC that achieves such a reduction."
+  },
+  "scope": {
+    "domain": "Ciphertext-overhead reduction for committing transforms of non-tag-based authenticated-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "s: parameter on which the constant ciphertext overhead depends and that determines the target upper bound",
+      "co(s): transformed ciphertext length minus the base-scheme ciphertext length"
+    ],
+    "unresolved_remainder": "Prove that reducing the overhead further than the co(s) at most s target is impossible for non-tag-based schemes, or construct an SC analogue that achieves such a reduction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "committing-transform",
+      "ciphertext-shortening"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Universal Transform for Committing Authenticated Encryption",
+        "locator": "CRYPTO 2026, page 5",
+        "url": "https://eprint.iacr.org/2026/1222",
+        "eprint": "2026/1222"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source sets co(s) at most s as the target and notes that SC can lower the overhead further for tag-based schemes. It says no analogous non-tag-based method or impossibility proof is known.",
+      "citation_labels": [
+        "Mihir Bellare et al., A Universal Transform for Committing Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

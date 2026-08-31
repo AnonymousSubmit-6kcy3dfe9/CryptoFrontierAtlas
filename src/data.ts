@@ -3,6 +3,8 @@ import problem_17a245a9ef94 from '../data/problems/active-attack-detection-for-g
 import problem_9917d4dc38b8 from '../data/problems/adaptive-security-of-grappa.json';
 import problem_d62e985bf09f from '../data/problems/aes-censoring-conjecture.json';
 import recordAesFullRoundFixedTargetKeyCollision from '../data/problems/aes-full-round-fixed-target-key-collision.json';
+import problem_c15b1aba9b5f from '../data/problems/aes-provable-security-assumption.json';
+import problem_34befab6b4f0 from '../data/problems/algebraic-attacks-on-non-polynomial-ciphers-over-integer-rings.json';
 import recordAlmostMmFourToOneMappings from '../data/problems/almost-mm-four-to-one-mappings.json';
 import recordAlmostMmOutsideMsharpClassification from '../data/problems/almost-mm-outside-msharp-classification.json';
 import problem_ddc7d28ad96c from '../data/problems/alternative-feature-extractors-for-imac.json';
@@ -27,6 +29,7 @@ import carlet13314 from '../data/problems/carlet-13-3-14-affine-derivatives.json
 import carlet1377 from '../data/problems/carlet-13-7-7-layer-algebraic-immunity.json';
 import stabilityOp1 from '../data/problems/carlet-stability-op1.json';
 import stabilityOp2 from '../data/problems/carlet-stability-op2.json';
+import problem_43b45b481f4a from '../data/problems/chacha20-poly1305-psiv-cmt-4-security.json';
 import problem_fe8257aa8696 from '../data/problems/chilow-round-count-sufficiency.json';
 import problem_669707f270e0 from '../data/problems/choosing-polynomial-perturbation-subsets.json';
 import problem_3fc34e12d4be from '../data/problems/compact-secure-image-macs.json';
@@ -51,16 +54,19 @@ import problem_739c830973c7 from '../data/problems/even-r-sxop-multi-user-securi
 import recordExactEnumerationBentBooleanFunctions from '../data/problems/exact-enumeration-bent-boolean-functions.json';
 import problem_5f375cf07b58 from '../data/problems/expected-unresolved-list-bound.json';
 import problem_5c26285316d9 from '../data/problems/exponential-quantum-speedup-for-ddt-attacks.json';
+import problem_3dd2d0c405a7 from '../data/problems/extending-2r-is-beyond-two-rounds.json';
 import problem_ca5b5f155a52 from '../data/problems/feistel-full-plaintext-recovery-round-thresholds.json';
 import recordFiveValuedConstruction1EaBalanced from '../data/problems/five-valued-construction1-ea-balanced.json';
 import recordFiveValuedConstruction3D0Exclusion from '../data/problems/five-valued-construction3-d0-exclusion.json';
 import recordFiveValuedVectorialAofvsEven from '../data/problems/five-valued-vectorial-aofvs-even.json';
 import recordFixedDegreeBentMaximalMsubspaceCount from '../data/problems/fixed-degree-bent-maximal-msubspace-count.json';
+import problem_00c79b20fbae from '../data/problems/formal-authenticated-encryption-security-proof-for-aocb-with-leakage-oracles.json';
 import problem_f5f3750c1a22 from '../data/problems/format-preserving-authenticated-encryption-for-compressed-video.json';
 import problem_9e610e0c5f4b from '../data/problems/forward-security-logarithmic-storage.json';
 import problem_b43411184bfc from '../data/problems/full-round-scarf-collision-model-security.json';
 import problem_39bef821f287 from '../data/problems/galois-ring-diffusion-for-integer-ring-ciphers.json';
 import problem_b24515e08b4d from '../data/problems/galois-ring-diffusion-for-integer-ring-ciphers-447276baa2.json';
+import problem_e568ffd89d51 from '../data/problems/general-characterization-support-based-hypothesis-testing.json';
 import recordGeneralizedDesarguesianSmallKAlternativeLifting from '../data/problems/generalized-desarguesian-small-k-alternative-lifting.json';
 import problem_1ca2c7fa088f from '../data/problems/haystack-ds-isw-block-size-security.json';
 import problem_5fd9d39c778d from '../data/problems/haystack-ds-isw-cpa-security-conjecture.json';
@@ -72,7 +78,9 @@ import recordIextQuantumProofSeededExtractor from '../data/problems/iext-quantum
 import problem_ad475c8b19bb from '../data/problems/improving-32-bit-aes-super-s-box-affine-approximation.json';
 import problem_87cbd7734350 from '../data/problems/improving-ie-decryption-quality.json';
 import problem_e6fb0e0efac5 from '../data/problems/increased-pseudorandomness-threshold.json';
+import problem_2b412fedd669 from '../data/problems/inv-kac-mixing-time-constants.json';
 import problem_e1c6170b6057 from '../data/problems/inverse-chichi-component-algebraic-degree.json';
+import problem_22b0d66c7b6f from '../data/problems/inverse-kac-comparison-flow.json';
 import problem_2fd74237ee09 from '../data/problems/involution-based-tem-with-vil-tprs-security.json';
 import recordIrreducibleCyclicAuthenticationSubstitutionProbability from '../data/problems/irreducible-cyclic-authentication-substitution-probability.json';
 import kaleyski from '../data/problems/kaleyski-conjecture21-second-identity.json';
@@ -99,6 +107,7 @@ import problem_f5d3ae33a856 from '../data/problems/minimum-vectorial-linearity-o
 import recordNfsrCycleStructurePeriods from '../data/problems/nfsr-cycle-structure-periods.json';
 import recordNfsrDegeneracySubfamilies from '../data/problems/nfsr-degeneracy-subfamilies.json';
 import recordNonNormalCubicBentExistence from '../data/problems/non-normal-cubic-bent-existence.json';
+import problem_b8d93865911a from '../data/problems/non-tag-based-committing-ae-ciphertext-shortening.json';
 import recordNonfieldSemifieldLpPartitionLifting from '../data/problems/nonfield-semifield-lp-partition-lifting.json';
 import recordNonquadraticCrookedApnExistence from '../data/problems/nonquadratic-crooked-apn-existence.json';
 import problem_ca8c5a4f4fda from '../data/problems/optimal-output-rate-permutation-based-drbgs.json';
@@ -134,6 +143,7 @@ import recordSporadicApnRepresentative30InfiniteFamily from '../data/problems/sp
 import problem_28e1cd285076 from '../data/problems/structural-weaknesses-beyond-xcb-modes.json';
 import recordTernaryVectorialDualBentEpsilonMinusOne from '../data/problems/ternary-vectorial-dual-bent-epsilon-minus-one.json';
 import tezcan from '../data/problems/tezcan-ozbudak-differential-factor.json';
+import problem_1aaf022c573a from '../data/problems/tight-cmt-4-bound-zero-padded-ascon.json';
 import problem_04f4ea2b31a5 from '../data/problems/tight-puncturing-correlation-bound-modular-addition.json';
 import problem_31a58b3e580f from '../data/problems/tightness-post-quantum-bounds-ascon-keyed-sponges.json';
 import problem_7afce4c43e38 from '../data/problems/transistor-ideal-degree-lower-bound.json';
@@ -214,6 +224,8 @@ export const problems = [
   problem_9917d4dc38b8,
   problem_d62e985bf09f,
   recordAesFullRoundFixedTargetKeyCollision,
+  problem_c15b1aba9b5f,
+  problem_34befab6b4f0,
   recordAlmostMmFourToOneMappings,
   recordAlmostMmOutsideMsharpClassification,
   problem_ddc7d28ad96c,
@@ -238,6 +250,7 @@ export const problems = [
   carlet1377,
   stabilityOp1,
   stabilityOp2,
+  problem_43b45b481f4a,
   problem_fe8257aa8696,
   problem_669707f270e0,
   problem_3fc34e12d4be,
@@ -262,16 +275,19 @@ export const problems = [
   recordExactEnumerationBentBooleanFunctions,
   problem_5f375cf07b58,
   problem_5c26285316d9,
+  problem_3dd2d0c405a7,
   problem_ca5b5f155a52,
   recordFiveValuedConstruction1EaBalanced,
   recordFiveValuedConstruction3D0Exclusion,
   recordFiveValuedVectorialAofvsEven,
   recordFixedDegreeBentMaximalMsubspaceCount,
+  problem_00c79b20fbae,
   problem_f5f3750c1a22,
   problem_9e610e0c5f4b,
   problem_b43411184bfc,
   problem_39bef821f287,
   problem_b24515e08b4d,
+  problem_e568ffd89d51,
   recordGeneralizedDesarguesianSmallKAlternativeLifting,
   problem_1ca2c7fa088f,
   problem_5fd9d39c778d,
@@ -283,7 +299,9 @@ export const problems = [
   problem_ad475c8b19bb,
   problem_87cbd7734350,
   problem_e6fb0e0efac5,
+  problem_2b412fedd669,
   problem_e1c6170b6057,
+  problem_22b0d66c7b6f,
   problem_2fd74237ee09,
   recordIrreducibleCyclicAuthenticationSubstitutionProbability,
   kaleyski,
@@ -310,6 +328,7 @@ export const problems = [
   recordNfsrCycleStructurePeriods,
   recordNfsrDegeneracySubfamilies,
   recordNonNormalCubicBentExistence,
+  problem_b8d93865911a,
   recordNonfieldSemifieldLpPartitionLifting,
   recordNonquadraticCrookedApnExistence,
   problem_ca8c5a4f4fda,
@@ -345,6 +364,7 @@ export const problems = [
   problem_28e1cd285076,
   recordTernaryVectorialDualBentEpsilonMinusOne,
   tezcan,
+  problem_1aaf022c573a,
   problem_04f4ea2b31a5,
   problem_31a58b3e580f,
   problem_7afce4c43e38,

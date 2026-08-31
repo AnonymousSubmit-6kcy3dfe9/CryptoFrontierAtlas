@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-provable-security-assumption",
+  "group_id": "aes-provable-security-assumption",
+  "title": "Provable Security Foundation for AES",
+  "summary": "AES has faced no devastating attack, but finding a meaningful, non-tautological hardness assumption that provably implies its security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Although no single devastating attack has so far undermined confidence in AES, it remains unclear whether AES security can be grounded in the classical framework of provable security. The open problem is to formulate a computational hardness assumption that is both meaningful and non-tautological and to prove that it implies the security of AES within this framework."
+  },
+  "scope": {
+    "domain": "Classical provable-security foundations for the concrete block cipher AES.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Formulate a meaningful, non-tautological computational hardness assumption and prove that it implies the security of AES in the classical provable-security framework."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "provable-security",
+      "hardness-assumptions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How Fast Does the Inverse Walk Approximate a Random Permutation?",
+        "locator": "CRYPTO 2026, page 3",
+        "url": "https://eprint.iacr.org/2024/1795",
+        "eprint": "2024/1795"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts AES's resistance to known cryptanalysis with the absence of a classical provable-security foundation, presenting the required hardness assumption and security implication as unresolved.",
+      "citation_labels": [
+        "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

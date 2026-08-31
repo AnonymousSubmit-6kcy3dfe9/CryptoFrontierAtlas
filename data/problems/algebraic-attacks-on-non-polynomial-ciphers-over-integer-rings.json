@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "algebraic-attacks-on-non-polynomial-ciphers-over-integer-rings",
+  "group_id": "algebraic-attacks-on-non-polynomial-ciphers-over-integer-rings",
+  "title": "Algebraic Attacks on Non-Polynomial Ciphers over Integer Rings",
+  "summary": "Algebraic attacks require polynomial representations, but their threat to integer-ring ciphers lacking one remains uncharacterized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Algebraic attacks, including interpolation, higher-order differential, and Gr?bner-basis attacks, require a polynomial representation to work. Characterize whether and to what extent this class of attacks can threaten ciphers over the integer ring $\\mathbb{Z}_{p^n}$ when those ciphers do not admit a polynomial representation."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of symmetric ciphers over integer rings without polynomial representations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p^n, the modulus defining the integer ring"
+    ],
+    "unresolved_remainder": "Characterize whether and to what extent algebraic attacks can threaten ciphers over the integer ring with modulus p^n that do not admit a polynomial representation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "integer-rings",
+      "symmetric-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat",
+        "locator": "CRYPTO 2026, page 3",
+        "url": "https://eprint.iacr.org/2026/1104",
+        "eprint": "2026/1104"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents polynomial representation as a requirement for the named algebraic attacks, then identifies the threat to integer-ring ciphers without such a representation as unclear at the current state of the art.",
+      "citation_labels": [
+        "Tim Beyne et al., The ABC of Symmetric Primitives over Integer Rings: Milk Before Meat"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "inverse-kac-comparison-flow",
+  "group_id": "inverse-kac-comparison-flow",
+  "title": "Comparison Flow for the Inverse-KAC Walk",
+  "summary": "A general modified log-Sobolev comparison theorem is available and is expected to give the correct mixing-time order, but a suitable flow enabling that bound remains to be constructed.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the inverse-KAC random walk, the modified log-Sobolev inequality is expected to capture the correct order of the mixing time, and a general comparison theorem for the modified log-Sobolev constant is available. Construct a comparison flow for this walk that satisfies the theorem's requirements and makes the resulting comparison yield the desired correct-order mixing bound."
+  },
+  "scope": {
+    "domain": "This concerns mixing-time analysis for the inverse-KAC random walk using modified log-Sobolev comparison.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "inverse-KAC random walk, the walk being compared",
+      "modified log-Sobolev constant, the comparison quantity"
+    ],
+    "unresolved_remainder": "Construct a comparison flow for the inverse-KAC walk that meets the general comparison theorem's requirements and makes the comparison yield the desired correct-order mixing bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "mixing-times",
+      "log-sobolev",
+      "random-walks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How Fast Does the Inverse Walk Approximate a Random Permutation?",
+        "locator": "CRYPTO 2026, page 7",
+        "url": "https://eprint.iacr.org/2024/1795",
+        "eprint": "2024/1795"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the modified log-Sobolev inequality as the expected tool for the correct mixing-time order and notes that a general comparison theorem is available. It presents construction of a suitable flow as the unresolved obstacle to obtaining the desired bound.",
+      "citation_labels": [
+        "Vishesh Jain et al., How Fast Does the Inverse Walk Approximate a Random Permutation?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

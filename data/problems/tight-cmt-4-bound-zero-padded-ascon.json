@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-cmt-4-bound-zero-padded-ascon",
+  "group_id": "tight-cmt-4-bound-zero-padded-ascon",
+  "title": "Tight CMT-4 Bound for Zero-Padded Ascon-Like Duplexes",
+  "summary": "A counterexample invalidates the claimed CMT-4 bound for some zero-padded Ascon-like duplex parameters; deriving a valid tight bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Ascon-like duplex constructions using a zero-padding scheme that expands an input message $M$ by adding $z$ zero bits, under the assumption $c_F=c_G=c$, determine a tight CMT-4 security bound. The existing claimed bound has unknown tightness because its initial-state (IS) attack term contains a gap between $l$ and $2l$, and a counterexample attack invalidates that bound for some parameter choices. The task is to close the $l$-versus-$2l$ gap and obtain a valid tight characterization for the affected constructions and parameters."
+  },
+  "scope": {
+    "domain": "CMT-4 security of zero-padded Ascon-like duplex constructions.",
+    "assumptions": [
+      "c_F and c_G are equal, with common value c."
+    ],
+    "parameters": [
+      "M: input message",
+      "z: number of zero bits added by the padding scheme",
+      "c: common value of c_F and c_G",
+      "l: parameter appearing in the unresolved initial-state attack gap between l and 2l"
+    ],
+    "unresolved_remainder": "Close the l-versus-2l gap and derive a valid tight CMT-4 security characterization for the affected constructions and parameter choices."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "cmt-4",
+      "ascon-like-duplex",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Committing Attacks: Zero-Padded Ascon is Less Secure than Expected",
+        "locator": "CRYPTO 2026, page 26",
+        "url": "https://eprint.iacr.org/2026/1160",
+        "eprint": "2026/1160"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that the claimed bound has unknown tightness because of an l-versus-2l gap in the initial-state attack term and gives a counterexample for certain parameter choices.",
+      "citation_labels": [
+        "Nilanjan Datta et al., Generic Committing Attacks: Zero-Padded Ascon is Less Secure than Expected"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

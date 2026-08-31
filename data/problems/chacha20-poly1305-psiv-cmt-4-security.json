@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chacha20-poly1305-psiv-cmt-4-security",
+  "group_id": "chacha20-poly1305-psiv-cmt-4-security",
+  "title": "CMT-4 Security for ChaCha20-Poly1305-PSIV",
+  "summary": "The HtE transform converts CMT-1 to CMT-4 but requires a suitable hash function; whether ChaCha20-Poly1305-PSIV can achieve CMT-4 security using only additional ChaCha20 permutation calls remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\mathrm{CMT\\text{-}4}$ is a stronger security notion than $\\mathrm{CMT\\text{-}1}$: it replaces the requirement $K \\neq K'$ with the weaker requirement $(K,N,A,M) \\neq (K',N',A',M')$. Although the $\\mathrm{HtE}$ transform converts a $\\mathrm{CMT\\text{-}1}$ scheme into a $\\mathrm{CMT\\text{-}4}$ scheme, it requires a suitable hash function. Determine whether ChaCha20-Poly1305-PSIV can achieve $\\mathrm{CMT\\text{-}4}$ security using only additional calls to the ChaCha20 permutation."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption and key-commitment security in ChaCha20-based symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "ChaCha20-Poly1305-PSIV: target authenticated-encryption construction",
+      "CMT-4: target security notion",
+      "Additional ChaCha20 permutation calls: permitted construction resource"
+    ],
+    "unresolved_remainder": "Whether ChaCha20-Poly1305-PSIV can achieve CMT-4 security using only additional calls to the ChaCha20 permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "key-commitment",
+      "chacha20"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Robust Variant of ChaCha20-Poly1305",
+        "locator": "CRYPTO 2026, page 26",
+        "url": "https://eprint.iacr.org/2025/222",
+        "eprint": "2025/222"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts CMT-4 with CMT-1 and notes that the HtE transform converts the latter to the former only with a suitable hash function. It explicitly leaves the ChaCha20-only construction question as future work.",
+      "citation_labels": [
+        "Tim Beyne et al., A Robust Variant of ChaCha20-Poly1305"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "formal-authenticated-encryption-security-proof-for-aocb-with-leakage-oracles",
+  "group_id": "formal-authenticated-encryption-security-proof-for-aocb-with-leakage-oracles",
+  "title": "Formal Authenticated-Encryption Security Proof for AOCB with Leakage Oracles",
+  "summary": "The source gives black-box Priv/Auth bounds and a leakage-resilience analysis for AOCB, but leaves a full authenticated-encryption proof with leakage oracles unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A formal proof of authenticated-encryption security for AOCB in a model with leakage oracles remains to be established; the open task is to construct such a proof while explicitly accounting for leakage-oracle access."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security analysis for the AOCB construction in a leakage-oracle model.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AOCB, the authenticated-encryption construction under study",
+      "Leakage oracles, the model access interface that the proof must explicitly account for"
+    ],
+    "unresolved_remainder": "Construct a formal proof of authenticated-encryption security for AOCB that explicitly accounts for leakage-oracle access."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "leakage-oracles",
+      "security-proof"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Formal Security Proof of Masking: Reduction from Strong Noisy Leakage to Probing Model without Random Probing and Application to LR Primitive",
+        "locator": "CRYPTO 2026, page 27",
+        "url": "https://eprint.iacr.org/2025/2199",
+        "eprint": "2025/2199"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2026-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents black-box Priv/Auth bounds for AOCB and a leakage-resilience analysis, then identifies a formal authenticated-encryption security proof with leakage oracles as future work.",
+      "citation_labels": [
+        "Rei Ueno et al., A Formal Security Proof of Masking: Reduction from Strong Noisy Leakage to Probing Model without Random Probing and Application to LR Primitive"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
