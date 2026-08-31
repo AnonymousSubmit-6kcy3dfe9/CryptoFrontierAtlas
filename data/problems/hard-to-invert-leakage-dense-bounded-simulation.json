@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hard-to-invert-leakage-dense-bounded-simulation",
+  "group_id": "brian-noisy-leakage-simulation-open-questions",
+  "title": "Dense or bounded simulation of hard-to-invert leakage",
+  "summary": "Determine whether Dodis--Kalai--Lovett hard-to-invert leakage is dense leakage or can otherwise be simulated from bounded leakage with good parameters.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\mathcal F_{\\mathrm{HTI}}$ be the hard-to-invert auxiliary-input leakage family of Dodis, Kalai, and Lovett cited by the source. Prove either that $\\mathcal F_{\\mathrm{HTI}}$ is contained in the source's dense-leakage class, or that every leakage in $\\mathcal F_{\\mathrm{HTI}}$ admits the source's bounded-leakage simulation with quantitatively good leakage length and statistical error. Otherwise, establish an obstruction to both alternatives."
+  },
+  "scope": {
+    "domain": "Simulation of hard-to-invert auxiliary-input leakage in dense and bounded leakage models",
+    "assumptions": [
+      "Hard-to-invert leakage is the Dodis--Kalai--Lovett family cited as reference [62] in the TIT restatement",
+      "Dense leakage and bounded-leakage simulation use the source's definitions and quantitative guarantees"
+    ],
+    "parameters": [
+      "hard-to-invert leakage parameters",
+      "bounded leakage length",
+      "simulation error"
+    ],
+    "unresolved_remainder": "No inspected later primary text proves dense-family containment, supplies the requested bounded-leakage simulation theorem, or rules out both alternatives for the Dodis--Kalai--Lovett family."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "leakage-resilience",
+      "hard-to-invert-leakage",
+      "dense-leakage",
+      "bounded-leakage",
+      "simulation"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The TIT article identifies the EUROCRYPT 2021 preliminary version; the same exact open questions are text-confirmed in IACR ePrint 2020/1246, submitted on 2020-10-09."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Brian et al., The Mother of All Leakages, IACR ePrint 2020/1246",
+        "locator": "Section 7, first bullet",
+        "doi": "10.1007/978-3-030-77886-6_14",
+        "eprint": "IACR ePrint 2020/1246",
+        "url": "https://eprint.iacr.org/2020/1246"
+      },
+      {
+        "role": "restatement",
+        "label": "Brian et al., The Mother of All Leakages, TIT version",
+        "locator": "Section VII, Conclusion and Open Problems, journal p. 8217",
+        "doi": "10.1109/TIT.2022.3193848",
+        "url": "https://doi.org/10.1109/TIT.2022.3193848"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2020-10-09",
+      "kind": "source_statement",
+      "summary": "The original ePrint asks whether hard-to-invert leakage falls within dense leakage or directly admits good-parameter simulation from bounded leakage.",
+      "citation_labels": [
+        "Brian et al., The Mother of All Leakages, IACR ePrint 2020/1246"
+      ]
+    },
+    {
+      "date": "2022-07-26",
+      "kind": "restatement",
+      "summary": "The TIT version repeats the hard-to-invert dense-or-bounded simulation question in its open-problems section.",
+      "citation_labels": [
+        "Brian et al., The Mother of All Leakages, TIT version"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "ncbcp-final-transcript-min-entropy-simulation"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dm-aic-symbol-wise-interloping-capacity-region",
+  "group_id": "graves-secret-key-typical-authentication",
+  "title": "Symbol-wise interloping in secret-key typical authentication",
+  "summary": "Determine whether allowing an adversary to interlope one channel symbol at a time changes the typical authenticated-capacity region of a secret-key DM-AIC.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every discrete memoryless adversarial interlope channel in the source model, compare two adversaries: one that either replaces the decoder's entire length-$n$ observation or leaves it unchanged, and one that may replace symbols individually. Prove that the closures of their achievable message-rate, typical-authentication-rate, and key-consumption-rate triples are equal, or exhibit a DM-AIC for which the two regions differ."
+  },
+  "scope": {
+    "domain": "Secret-key information-theoretic authentication over discrete memoryless adversarial interlope channels",
+    "assumptions": [
+      "The encoder and decoder share the source model's secret key",
+      "The adversary observes the source-defined noisy channel output before choosing an interlope action",
+      "Authentication is measured by the source's typical-authentication criterion"
+    ],
+    "parameters": [
+      "main DM-AIC channel",
+      "adversary-observation channel",
+      "message, authentication, and key-consumption rates"
+    ],
+    "unresolved_remainder": "No inspected forward citation proves region equality for every source-defined DM-AIC or gives a channel separating block-wise and symbol-wise interloping."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "information-theoretic-authentication",
+      "authenticated-capacity",
+      "adversarial-channels",
+      "secret-key"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Graves--Perazzone--Yu--Blum, Secret Key-Enabled Authenticated-Capacity Region, Part II",
+        "locator": "Remark 1, journal p. 6984",
+        "doi": "10.1109/TIT.2022.3186443",
+        "url": "https://doi.org/10.1109/TIT.2022.3186443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-06-27",
+      "kind": "source_statement",
+      "summary": "Remark 1 states that symbol-by-symbol adversarial operation is likely immaterial to the authenticated-capacity region but remains an open question.",
+      "citation_labels": [
+        "Graves--Perazzone--Yu--Blum, Secret Key-Enabled Authenticated-Capacity Region, Part II"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

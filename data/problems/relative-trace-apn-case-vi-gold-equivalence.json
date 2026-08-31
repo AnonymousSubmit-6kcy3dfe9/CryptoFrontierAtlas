@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.2.0",
+  "id": "relative-trace-apn-case-vi-gold-equivalence",
+  "group_id": "zheng-relative-trace-apn-ccz-conjectures",
+  "title": "Case-(vi) relative-trace APN equivalence to Gold functions",
+  "summary": "Determine whether every case-(vi) relative-trace APN function is CCZ-equivalent to a Gold APN function.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every source-admissible APN function $f$ in case (vi) of Theorem 2, prove that there exists a Gold APN power function $G(x)=x^{2^j+1}$ with $f\\sim_{\\mathrm{CCZ}}G$, or exhibit an admissible $f$ outside all Gold CCZ classes."
+  },
+  "scope": {
+    "domain": "CCZ-equivalence classes of the source's relative-trace quadratic APN functions",
+    "assumptions": [
+      "$n=2m$ with $m$ odd and $q=2^m$",
+      "$\\gcd(n,i)=1$",
+      "$f_{i,s,a,b,c}(x)=a\\operatorname{Tr}_m^n(bx^{2^i+1})+a^q\\operatorname{Tr}_m^n(cx^{2^s+1})$ is an APN instance in the indicated case of source Theorem 2"
+    ],
+    "parameters": [
+      "odd integer $m$",
+      "admissible index $i$",
+      "source-admissible coefficients $a,b,c$",
+      "case of Theorem 2"
+    ],
+    "unresolved_remainder": "The claimed containment of the complete case-(vi) family in the Gold CCZ classes remains unproved in the inspected literature."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-functions",
+      "ccz-equivalence",
+      "relative-trace",
+      "gold-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zheng--Kan--Li--Peng--Tang, relative-trace APN conjectures",
+        "locator": "Remark 2, assertions 1--5, journal p. 7535",
+        "doi": "10.1109/TIT.2022.3186899",
+        "url": "https://doi.org/10.1109/TIT.2022.3186899"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-06-28",
+      "kind": "source_statement",
+      "summary": "The case-(vi) branch of assertion 5 conjectures CCZ equivalence to Gold APN functions.",
+      "citation_labels": [
+        "Zheng--Kan--Li--Peng--Tang, relative-trace APN conjectures"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "relative-trace-apn-within-case-ccz-classification",
+      "relative-trace-apn-case-i-cross-case-inequivalence",
+      "relative-trace-apn-case-ii-gm2-equivalence",
+      "relative-trace-apn-case-iii-gm2-equivalence",
+      "relative-trace-apn-case-iv-ginverse-equivalence",
+      "relative-trace-apn-case-v-budaghyan-carlet-equivalence",
+      "relative-trace-apn-euler-totient-ccz-count"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

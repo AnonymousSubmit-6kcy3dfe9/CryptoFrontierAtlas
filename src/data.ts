@@ -141,6 +141,17 @@ import recordGeneralHighDegreeEaRecovery from '../data/problems/general-high-deg
 import recordGorodilovaOrthoDerivativeDegree from '../data/problems/gorodilova-ortho-derivative-degree.json';
 import recordMaximalBentComponentComplementHalfVariable from '../data/problems/maximal-bent-component-complement-half-variable.json';
 import recordVectorialBentMaximalComponentExtensionClassification from '../data/problems/vectorial-bent-maximal-component-extension-classification.json';
+import recordDmAicSymbolWiseInterlopingCapacityRegion from '../data/problems/dm-aic-symbol-wise-interloping-capacity-region.json';
+import recordHardToInvertLeakageDenseBoundedSimulation from '../data/problems/hard-to-invert-leakage-dense-bounded-simulation.json';
+import recordNcbcpFinalTranscriptMinEntropySimulation from '../data/problems/ncbcp-final-transcript-min-entropy-simulation.json';
+import recordRelativeTraceApnCaseICrossCaseInequivalence from '../data/problems/relative-trace-apn-case-i-cross-case-inequivalence.json';
+import recordRelativeTraceApnCaseIiGm2Equivalence from '../data/problems/relative-trace-apn-case-ii-gm2-equivalence.json';
+import recordRelativeTraceApnCaseIiiGm2Equivalence from '../data/problems/relative-trace-apn-case-iii-gm2-equivalence.json';
+import recordRelativeTraceApnCaseIvGinverseEquivalence from '../data/problems/relative-trace-apn-case-iv-ginverse-equivalence.json';
+import recordRelativeTraceApnCaseVBudaghyanCarletEquivalence from '../data/problems/relative-trace-apn-case-v-budaghyan-carlet-equivalence.json';
+import recordRelativeTraceApnCaseViGoldEquivalence from '../data/problems/relative-trace-apn-case-vi-gold-equivalence.json';
+import recordRelativeTraceApnEulerTotientCczCount from '../data/problems/relative-trace-apn-euler-totient-ccz-count.json';
+import recordRelativeTraceApnWithinCaseCczClassification from '../data/problems/relative-trace-apn-within-case-ccz-classification.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -355,6 +366,17 @@ export const problems = [
   recordGorodilovaOrthoDerivativeDegree,
   recordMaximalBentComponentComplementHalfVariable,
   recordVectorialBentMaximalComponentExtensionClassification,
+  recordDmAicSymbolWiseInterlopingCapacityRegion,
+  recordHardToInvertLeakageDenseBoundedSimulation,
+  recordNcbcpFinalTranscriptMinEntropySimulation,
+  recordRelativeTraceApnCaseICrossCaseInequivalence,
+  recordRelativeTraceApnCaseIiGm2Equivalence,
+  recordRelativeTraceApnCaseIiiGm2Equivalence,
+  recordRelativeTraceApnCaseIvGinverseEquivalence,
+  recordRelativeTraceApnCaseVBudaghyanCarletEquivalence,
+  recordRelativeTraceApnCaseViGoldEquivalence,
+  recordRelativeTraceApnEulerTotientCczCount,
+  recordRelativeTraceApnWithinCaseCczClassification,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

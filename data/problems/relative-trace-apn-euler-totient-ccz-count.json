@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.2.0",
+  "id": "relative-trace-apn-euler-totient-ccz-count",
+  "group_id": "zheng-relative-trace-apn-ccz-conjectures",
+  "title": "Euler-totient count of relative-trace APN CCZ classes",
+  "summary": "Prove that cases (i) and (iii) of the relative-trace construction yield exactly $\\varphi(m)$ pairwise CCZ-inequivalent APN classes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every admissible odd $m$, let $\\mathcal F_m$ be the union of the source-admissible APN functions in cases (i) and (iii) of Theorem 2 over $\\mathbb F_{2^{2m}}$. Prove that the quotient of $\\mathcal F_m$ by CCZ equivalence has cardinality exactly $\\varphi(m)$, or determine a counterexample and the resulting class count."
+  },
+  "scope": {
+    "domain": "CCZ-equivalence classes of the source's relative-trace quadratic APN functions",
+    "assumptions": [
+      "$n=2m$ with $m$ odd and $q=2^m$",
+      "$\\gcd(n,i)=1$",
+      "$f_{i,s,a,b,c}(x)=a\\operatorname{Tr}_m^n(bx^{2^i+1})+a^q\\operatorname{Tr}_m^n(cx^{2^s+1})$ is an APN instance in the indicated case of source Theorem 2"
+    ],
+    "parameters": [
+      "odd integer $m$",
+      "admissible index $i$",
+      "source-admissible coefficients $a,b,c$",
+      "case of Theorem 2"
+    ],
+    "unresolved_remainder": "The exact $\\varphi(m)$ class count for every admissible odd $m$ remains unproved; the later case-(i), $i=1$ coefficient-equivalence result does not establish the required full within- and cross-case classification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "apn-functions",
+      "ccz-equivalence",
+      "relative-trace",
+      "euler-totient"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zheng--Kan--Li--Peng--Tang, relative-trace APN conjectures",
+        "locator": "Introduction, Remark 2, and conclusion, journal pp. 7529, 7535--7536",
+        "doi": "10.1109/TIT.2022.3186899",
+        "url": "https://doi.org/10.1109/TIT.2022.3186899"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-06-28",
+      "kind": "source_statement",
+      "summary": "The introduction, Remark 2, and conclusion conjecture that cases (i) and (iii) yield $\\varphi(m)$ CCZ-inequivalent APN classes.",
+      "citation_labels": [
+        "Zheng--Kan--Li--Peng--Tang, relative-trace APN conjectures"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "relative-trace-apn-within-case-ccz-classification",
+      "relative-trace-apn-case-i-cross-case-inequivalence",
+      "relative-trace-apn-case-ii-gm2-equivalence",
+      "relative-trace-apn-case-iii-gm2-equivalence",
+      "relative-trace-apn-case-iv-ginverse-equivalence",
+      "relative-trace-apn-case-v-budaghyan-carlet-equivalence",
+      "relative-trace-apn-case-vi-gold-equivalence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
