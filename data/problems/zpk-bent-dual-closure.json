@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zpk-bent-dual-closure",
+  "group_id": "wang-fu-generalized-bent-duals",
+  "title": "Dual closure of Zpk-bent functions",
+  "summary": "Determine whether the dual of every Zpk-bent function remains Zpk-bent once the exponent k is at least two.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ be an odd prime and $k\\ge2$. For every $\\mathbb Z_{p^k}$-bent function $f$ in the source domain, must its dual $f^*$ also be $\\mathbb Z_{p^k}$-bent? Prove closure under the dual operation, or construct a $\\mathbb Z_{p^k}$-bent function whose dual is not $\\mathbb Z_{p^k}$-bent."
+  },
+  "scope": {
+    "domain": "Duals of $\\mathbb Z_{p^k}$-bent functions",
+    "assumptions": [
+      "$p$ is an odd prime",
+      "$k\\ge2$",
+      "$f$ is $\\mathbb Z_{p^k}$-bent under the source definition",
+      "$f^*$ is the source-defined dual"
+    ],
+    "parameters": [
+      "odd prime $p$",
+      "integer $k\\ge2$",
+      "input dimension $n$",
+      "$\\mathbb Z_{p^k}$-bent function $f$"
+    ],
+    "unresolved_remainder": "No inspected later work proves that every such dual remains $\\mathbb Z_{p^k}$-bent or supplies a counterexample to closure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "generalized-bent-functions",
+      "dual-functions",
+      "closure-property",
+      "finite-rings",
+      "zpk-bent"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Fu, further problems on generalized-bent duals",
+        "locator": "Conclusion, journal p. 4781, second further problem",
+        "doi": "10.1109/TIT.2022.3162402",
+        "url": "https://doi.org/10.1109/TIT.2022.3162402"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-03-25",
+      "kind": "source_statement",
+      "summary": "The source asks whether $\\mathbb Z_{p^k}$-bentness is preserved by duality for every $k\\ge2$, explicitly allowing a counterexample.",
+      "citation_labels": [
+        "Wang--Fu, further problems on generalized-bent duals"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nonweakly-regular-selfdual-gbent-existence"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

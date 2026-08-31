@@ -125,6 +125,22 @@ import recordQuadraticApnFixedSpaceExtensionDependence from '../data/problems/qu
 import recordQuadraticApnMaximumLinearityBeyondEight from '../data/problems/quadratic-apn-maximum-linearity-beyond-eight.json';
 import recordRandomPermutationLinearCapacityChiSquare from '../data/problems/random-permutation-linear-capacity-chi-square.json';
 import recordTheorem8OutsideMsharpClassification from '../data/problems/theorem8-outside-msharp-classification.json';
+import recordDirectSumAlgebraicImmunityCharacterization from '../data/problems/direct-sum-algebraic-immunity-characterization.json';
+import recordDobbertinWalshSpectrumConjecture29 from '../data/problems/dobbertin-walsh-spectrum-conjecture-29.json';
+import recordEvenDimensionalVectorialMaximumNonlinearity from '../data/problems/even-dimensional-vectorial-maximum-nonlinearity.json';
+import recordFixedTernaryGmmfMembership from '../data/problems/fixed-ternary-gmmf-membership.json';
+import recordGeneralFq2ApnPolynomialTemplate from '../data/problems/general-fq2-apn-polynomial-template.json';
+import recordNoBentComponentApnConstruction from '../data/problems/no-bent-component-apn-construction.json';
+import recordNonweaklyRegularSelfdualGbentExistence from '../data/problems/nonweakly-regular-selfdual-gbent-existence.json';
+import recordZpkBentDualClosure from '../data/problems/zpk-bent-dual-closure.json';
+import recordAsymmetricAontArbitraryPriorEntropy from '../data/problems/asymmetric-aont-arbitrary-prior-entropy.json';
+import recordCombinatorialAontArbitraryPriorEntropy from '../data/problems/combinatorial-aont-arbitrary-prior-entropy.json';
+import recordDoMatrixSpaceSemifieldClassification from '../data/problems/do-matrix-space-semifield-classification.json';
+import recordExplicitLowErrorPolylogTwoSourceExtractor from '../data/problems/explicit-low-error-polylog-two-source-extractor.json';
+import recordGeneralHighDegreeEaRecovery from '../data/problems/general-high-degree-ea-recovery.json';
+import recordGorodilovaOrthoDerivativeDegree from '../data/problems/gorodilova-ortho-derivative-degree.json';
+import recordMaximalBentComponentComplementHalfVariable from '../data/problems/maximal-bent-component-complement-half-variable.json';
+import recordVectorialBentMaximalComponentExtensionClassification from '../data/problems/vectorial-bent-maximal-component-extension-classification.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -323,6 +339,22 @@ export const problems = [
   recordQuadraticApnMaximumLinearityBeyondEight,
   recordRandomPermutationLinearCapacityChiSquare,
   recordTheorem8OutsideMsharpClassification,
+  recordDirectSumAlgebraicImmunityCharacterization,
+  recordDobbertinWalshSpectrumConjecture29,
+  recordEvenDimensionalVectorialMaximumNonlinearity,
+  recordFixedTernaryGmmfMembership,
+  recordGeneralFq2ApnPolynomialTemplate,
+  recordNoBentComponentApnConstruction,
+  recordNonweaklyRegularSelfdualGbentExistence,
+  recordZpkBentDualClosure,
+  recordAsymmetricAontArbitraryPriorEntropy,
+  recordCombinatorialAontArbitraryPriorEntropy,
+  recordDoMatrixSpaceSemifieldClassification,
+  recordExplicitLowErrorPolylogTwoSourceExtractor,
+  recordGeneralHighDegreeEaRecovery,
+  recordGorodilovaOrthoDerivativeDegree,
+  recordMaximalBentComponentComplementHalfVariable,
+  recordVectorialBentMaximalComponentExtensionClassification,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

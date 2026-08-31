@@ -39,15 +39,27 @@
     ]
   },
   "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "Xiong--Yan cite Helleseth's 1978 binary paper, while Wu--Feng--Li--Helleseth attribute the same p-ary quantified conjecture to Helleseth's 1976 paper. The earliest identical primary statement has not been text-confirmed."
+    },
     "kind": "explicit_conjecture",
     "citations": [
       {
-        "role": "original_source",
+        "role": "restatement",
         "label": "Xiong--Yan, general minus-one conjecture status statement",
         "locator": "Introduction, journal p. 8289",
         "doi": "10.1109/TIT.2024.3444892",
         "eprint": "arXiv:2309.06715",
         "url": "https://arxiv.org/abs/2309.06715"
+      },
+      {
+        "role": "restatement",
+        "label": "Wu--Feng--Li--Helleseth, p-ary minus-one conjecture restatement",
+        "locator": "Conjecture 1, journal p. 4035",
+        "doi": "10.1109/TIT.2023.3238994",
+        "url": "https://doi.org/10.1109/TIT.2023.3238994"
       },
       {
         "role": "prior_progress",
@@ -63,12 +75,20 @@
     "public_verification_status": "externally_claimed",
     "peer_review_status": "preprint",
     "disclosure": "public_progress",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-31"
   },
   "progress": [
     {
+      "date": "2023-01-23",
+      "kind": "restatement",
+      "summary": "Wu, Feng, Li, and Helleseth state the same p-ary quantified conjecture and attribute it to Helleseth's earlier work.",
+      "citation_labels": [
+        "Wu--Feng--Li--Helleseth, p-ary minus-one conjecture restatement"
+      ]
+    },
+    {
       "date": "2023-09-13",
-      "kind": "source_statement",
+      "kind": "restatement",
       "summary": "The source states that the general minus-one conjecture remains widely open after noting its confirmation for Niho decimations.",
       "citation_labels": [
         "Xiong--Yan, general minus-one conjecture status statement"

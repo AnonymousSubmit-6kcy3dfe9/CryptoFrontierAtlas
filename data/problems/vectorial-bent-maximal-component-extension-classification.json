@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-bent-maximal-component-extension-classification",
+  "group_id": "maximal-bent-component-structural-questions",
+  "title": "Vectorial bent functions admitting maximal-component extensions",
+  "summary": "Classify which vectorial bent functions admit nontrivial square extensions with the maximum possible number of bent components.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n=2m$ and let $B:\\mathbb F_2^n\\to\\mathbb F_2^m$ be vectorial bent. Give necessary and sufficient conditions for $B$ to admit a nontrivial extension $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ having exactly $2^n-2^m$ bent components, and construct such an $F$ for every positive case. Nontriviality and extension are understood in the source sense."
+  },
+  "scope": {
+    "domain": "Vectorial bent functions and square functions with the maximum number of bent components",
+    "assumptions": [
+      "$n=2m$",
+      "$B:\\mathbb F_2^n\\to\\mathbb F_2^m$ is vectorial bent",
+      "The extension is nontrivial in the source sense",
+      "The extension has exactly $2^n-2^m$ bent components"
+    ],
+    "parameters": [
+      "half-dimension $m$",
+      "vectorial bent function $B$",
+      "candidate extension $F$"
+    ],
+    "unresolved_remainder": "Published later work supplies generic constructions and several positive extension families, including functions beyond the Nyberg bound and families derived from Niho and Maiorana--McFarland classes, but does not give necessary and sufficient conditions for every vectorial bent $B$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "vectorial-bent-functions",
+      "bent-components",
+      "extension-classification",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anbar--Kalayci--Meidl--Merai, maximal-bent-component extension question",
+        "locator": "Question 1, journal p. 6185",
+        "doi": "10.1109/TIT.2022.3174672",
+        "url": "https://doi.org/10.1109/TIT.2022.3174672"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Bapic--Pasalic--Polujan--Pott, maximal bent components beyond Nyberg bound",
+        "locator": "Abstract and construction sections",
+        "doi": "10.1007/s10623-022-01180-7",
+        "url": "https://doi.org/10.1007/s10623-022-01180-7"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Xie--Ouyang--Hu, vectorial functions with maximal bent components",
+        "locator": "Abstract, Section 4, and Conclusion",
+        "doi": "10.1007/s10623-025-01569-0",
+        "eprint": "arXiv:2301.02843",
+        "url": "https://arxiv.org/abs/2301.02843"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-05-12",
+      "kind": "source_statement",
+      "summary": "Question 1 asks which vectorial bent functions admit a nontrivial square extension with $2^n-2^m$ bent components.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl--Merai, maximal-bent-component extension question"
+      ]
+    },
+    {
+      "date": "2023-02-15",
+      "kind": "public_result",
+      "summary": "A published construction gives vectorial Boolean functions with the maximum number of bent components beyond the Nyberg bound, covering a strict positive family rather than classifying all extendable vectorial bent functions.",
+      "citation_labels": [
+        "Bapic--Pasalic--Polujan--Pott, maximal bent components beyond Nyberg bound"
+      ]
+    },
+    {
+      "date": "2025-01-31",
+      "kind": "public_result",
+      "summary": "Later published work gives generic constructions and new positive families, explicitly describing them as partial answers rather than a complete classification.",
+      "citation_labels": [
+        "Xie--Ouyang--Hu, vectorial functions with maximal bent components"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "maximal-bent-component-complement-half-variable",
+      "do-matrix-space-semifield-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

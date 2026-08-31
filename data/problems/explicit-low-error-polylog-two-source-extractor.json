@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "explicit-low-error-polylog-two-source-extractor",
+  "group_id": "low-error-two-source-extraction",
+  "title": "Low-error two-source extraction at polylogarithmic min-entropy",
+  "summary": "Construct an explicit low-error extractor for two independent sources that each have only polylogarithmic min-entropy.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an explicit family $\\operatorname{Ext}_n:\\{0,1\\}^n\\times\\{0,1\\}^n\\to\\{0,1\\}^{m(n)}$ such that, for every pair of independent $(n,k)$-sources $X,Y$ with $k=\\operatorname{polylog}(n)$, the distribution $\\operatorname{Ext}_n(X,Y)$ is within the source's low-error regime of $U_{m(n)}$. The construction must achieve the low-error guarantee in the standard model, not only polynomially small error or a model with a common reference string."
+  },
+  "scope": {
+    "domain": "Explicit two-source randomness extractors for independent weak sources",
+    "assumptions": [
+      "$X$ and $Y$ are independent $n$-bit sources",
+      "Both sources have min-entropy $k=\\operatorname{polylog}(n)$",
+      "Explicitness and low error use the source conventions",
+      "No common reference string or computational assumption is available"
+    ],
+    "parameters": [
+      "source length $n$",
+      "min-entropy $k$",
+      "output length $m(n)$",
+      "statistical error"
+    ],
+    "unresolved_remainder": "Published later work gives a randomized construction in the common-reference-string model and requires linear min-entropy (with an additional $O(n/\\log n)$ randomized guarantee). It does not provide the requested standard-model explicit construction for two polylogarithmic-min-entropy sources."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "two-source-extractors",
+      "min-entropy",
+      "low-error",
+      "pseudorandomness"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The TIT paper calls the low-error/polylogarithmic-min-entropy target long-standing but does not identify one primary paper containing the complete formulation."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Aggarwal--Obremski--Ribeiro--Simkin--Siniscalchi, low-error two-source extractor restatement",
+        "locator": "Abstract and Introduction, journal pp. 5475--5476",
+        "doi": "10.1109/TIT.2022.3167404",
+        "url": "https://doi.org/10.1109/TIT.2022.3167404"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Aggarwal--Dutta--Mukherjee--Nagargoje--Obremski, randomized CRS extractor",
+        "locator": "Theorem 9",
+        "doi": "10.1007/978-3-032-01855-7_22",
+        "eprint": "IACR ePrint 2025/1421",
+        "url": "https://eprint.iacr.org/2025/1421"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-04-14",
+      "kind": "restatement",
+      "summary": "The TIT source states that an explicit low-error two-source extractor for polylogarithmic min-entropy remains a long-standing open question.",
+      "citation_labels": [
+        "Aggarwal--Obremski--Ribeiro--Simkin--Siniscalchi, low-error two-source extractor restatement"
+      ]
+    },
+    {
+      "date": "2025-08-04",
+      "kind": "public_result",
+      "summary": "Later work constructs an efficient randomized strong two-source non-malleable extractor in a common-reference-string model, but its extra setup and higher entropy requirement leave the standard-model polylogarithmic target open.",
+      "citation_labels": [
+        "Aggarwal--Dutta--Mukherjee--Nagargoje--Obremski, randomized CRS extractor"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

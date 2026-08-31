@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fixed-ternary-gmmf-membership",
+  "group_id": "ozbudak-pelen-ternary-bent",
+  "title": "GMMF membership of a fixed ternary bent function",
+  "summary": "Determine whether a specific six-variable ternary non-weakly regular bent function belongs to the generalized Maiorana--McFarland class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\lambda$ denote the primitive element of $\\mathbb F_{3^6}$ selected in source Example 4, and let $$f(x)=\\operatorname{Tr}_1^6(\\lambda x^{20}+\\lambda^{41}x^{92}).$$ Does this fixed function $f$ belong to the generalized Maiorana--McFarland (GMMF) class under the source definition? Give an explicit GMMF representation of $f$, or prove that no such representation exists."
+  },
+  "scope": {
+    "domain": "Ternary bent functions and generalized Maiorana--McFarland constructions",
+    "assumptions": [
+      "$\\lambda$ is the primitive element selected in source Example 4",
+      "$f(x)=\\operatorname{Tr}_1^6(\\lambda x^{20}+\\lambda^{41}x^{92})$",
+      "GMMF membership uses the definition fixed by the source"
+    ],
+    "parameters": [
+      "the source-selected primitive element $\\lambda$",
+      "the displayed function $f$"
+    ],
+    "unresolved_remainder": "No inspected later work gives a GMMF representation for the displayed function or proves that it lies outside GMMF."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "bent-functions",
+      "ternary-functions",
+      "maiorana-mcfarland",
+      "class-membership",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ozbudak--Pelen, fixed ternary GMMF membership question",
+        "locator": "Remark 7, journal p. 3021",
+        "doi": "10.1109/TIT.2022.3145337",
+        "url": "https://doi.org/10.1109/TIT.2022.3145337"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-01-20",
+      "kind": "source_statement",
+      "summary": "Remark 7 states that membership of the displayed ternary bent function in GMMF is unknown.",
+      "citation_labels": [
+        "Ozbudak--Pelen, fixed ternary GMMF membership question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

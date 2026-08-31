@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gorodilova-ortho-derivative-degree",
+  "group_id": "quadratic-apn-ortho-derivative-degree",
+  "title": "Degree of quadratic-APN ortho-derivatives",
+  "summary": "Prove that the ortho-derivative of every quadratic APN function has algebraic degree exactly two below the dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n\\ge4$, let $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ be quadratic and APN, and let $\\pi_F$ be its unique ortho-derivative normalized by $\\pi_F(0)=0$. Prove that $$\\deg(\\pi_F)=n-2$$ for every such $F$, or exhibit a valid counterexample. Under Gorodilova's componentwise formulation, this asks that every nonzero component $v\\cdot\\pi_F$ have degree $n-2$."
+  },
+  "scope": {
+    "domain": "Quadratic APN functions and their ortho-derivatives",
+    "assumptions": [
+      "$n\\ge4$",
+      "$F:\\mathbb F_2^n\\to\\mathbb F_2^n$ is quadratic and APN",
+      "$\\pi_F$ is the unique ortho-derivative with $\\pi_F(0)=0$"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "quadratic APN function $F$",
+      "ortho-derivative $\\pi_F$"
+    ],
+    "unresolved_remainder": "The 2024 public workshop paper proves the general upper bound $\\deg(\\pi_F)\\le n-2$. A 2026 preprint claims the full componentwise equality conjecture, but peer-reviewed confirmation of that complete solution is not yet available."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.algebraic",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "apn-functions",
+      "ortho-derivatives",
+      "algebraic-degree",
+      "quadratic-functions"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The TIT paper explicitly attributes the conjecture to Gorodilova, and the public author manuscript arXiv:2005.10788 states the same componentwise claim as Conjecture 2."
+    },
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gorodilova, associated Boolean functions of quadratic APN functions",
+        "locator": "Conjecture 2",
+        "doi": "10.17223/20710410/47/2",
+        "eprint": "arXiv:2005.10788",
+        "url": "https://doi.org/10.17223/20710410/47/2"
+      },
+      {
+        "role": "restatement",
+        "label": "Canteaut--Couvreur--Perrin, ortho-derivative degree restatement",
+        "locator": "Section IV-A, journal p. 6200",
+        "doi": "10.1109/TIT.2022.3166692",
+        "url": "https://doi.org/10.1109/TIT.2022.3166692"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Couvreur--Canteaut--Perrin, properties of ortho-derivatives",
+        "locator": "Section 3, Theorem 1",
+        "url": "https://inria.hal.science/hal-04648515"
+      },
+      {
+        "role": "resolution",
+        "label": "Carlet--Thornburgh, claimed resolution of Gorodilova's conjecture",
+        "locator": "Abstract, Theorem 4.8, and its corollary proving Conjecture 1.1",
+        "eprint": "arXiv:2608.23888",
+        "url": "https://arxiv.org/abs/2608.23888"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2020-03-01",
+      "kind": "source_statement",
+      "summary": "Gorodilova conjectures the exact $n-2$ algebraic degree for the nonzero components of quadratic-APN ortho-derivatives.",
+      "citation_labels": [
+        "Gorodilova, associated Boolean functions of quadratic APN functions"
+      ]
+    },
+    {
+      "date": "2022-04-18",
+      "kind": "restatement",
+      "summary": "The TIT source reports the experimentally observed degree $n-2$ and explicitly attributes the conjecture to Gorodilova.",
+      "citation_labels": [
+        "Canteaut--Couvreur--Perrin, ortho-derivative degree restatement"
+      ]
+    },
+    {
+      "date": "2024-07-15",
+      "kind": "prior_result",
+      "summary": "A public workshop paper proves that every quadratic-APN ortho-derivative has algebraic degree at most $n-2$, without proving the required equality.",
+      "citation_labels": [
+        "Couvreur--Canteaut--Perrin, properties of ortho-derivatives"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "kind": "public_result",
+      "summary": "A preprint claims a proof that every nonzero component has degree $n-2$, which would resolve the conjecture, but the claim is not yet peer reviewed.",
+      "citation_labels": [
+        "Carlet--Thornburgh, claimed resolution of Gorodilova's conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonweakly-regular-selfdual-gbent-existence",
+  "group_id": "wang-fu-generalized-bent-duals",
+  "title": "Non-weakly regular self-dual generalized bent functions",
+  "summary": "Determine the existence of non-weakly regular self-dual generalized bent functions in even dimension for primes congruent to three modulo four.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist any odd prime $p\\equiv3\\pmod4$, even positive integer $n$, positive integer $k$, and non-weakly regular self-dual generalized bent function $$f:V_n\\longrightarrow\\mathbb Z_{p^k}?$$ Give one witness anywhere in this admissible parameter domain, or prove global nonexistence over the domain."
+  },
+  "scope": {
+    "domain": "Self-dual generalized bent functions over $\\mathbb Z_{p^k}$",
+    "assumptions": [
+      "$p$ is an odd prime with $p\\equiv3\\pmod4$",
+      "$n$ is even",
+      "$k\\ge1$",
+      "$f$ is required to be generalized bent, self-dual, and non-weakly regular"
+    ],
+    "parameters": [
+      "odd prime $p$",
+      "even input dimension $n$",
+      "integer $k\\ge1$"
+    ],
+    "unresolved_remainder": "No inspected later work gives even one compatible non-weakly regular self-dual generalized bent function in the admissible parameter domain or proves global nonexistence over that domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "generalized-bent-functions",
+      "self-duality",
+      "non-weak-regularity",
+      "finite-rings",
+      "existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Fu, further problems on generalized-bent duals",
+        "locator": "Conclusion, journal p. 4781, first further problem",
+        "doi": "10.1109/TIT.2022.3162402",
+        "url": "https://doi.org/10.1109/TIT.2022.3162402"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-03-25",
+      "kind": "source_statement",
+      "summary": "The source asks whether non-weakly regular self-dual generalized bent functions exist for even n when p is congruent to three modulo four.",
+      "citation_labels": [
+        "Wang--Fu, further problems on generalized-bent duals"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "zpk-bent-dual-closure"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

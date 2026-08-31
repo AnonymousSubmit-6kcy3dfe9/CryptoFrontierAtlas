@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "combinatorial-aont-arbitrary-prior-entropy",
+  "group_id": "combinatorial-aont-arbitrary-prior-security",
+  "title": "Conditional-entropy security of combinatorial AONTs under arbitrary priors",
+  "summary": "Characterize the information-theoretic security of every combinatorial all-or-nothing transform under an arbitrary prior input distribution.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every combinatorial $(t,s,v)$-AONT $A$, every prior distribution on its input $s$-tuples, every set $X$ of $t$ input coordinates, and every set $Y$ of $s-t$ output coordinates, characterize $H(X\\mid Y)$ exactly. The characterization must determine the perfect-security case $H(X\\mid Y)=H(X)$ and the weak-security case $0<H(X\\mid Y)\\le H(X)$ for all admissible priors."
+  },
+  "scope": {
+    "domain": "Combinatorial all-or-nothing transforms under arbitrary prior input distributions",
+    "assumptions": [
+      "$A$ is a combinatorial $(t,s,v)$-AONT in the source sense",
+      "The prior is an arbitrary distribution on input $s$-tuples",
+      "Security is measured by the source's conditional entropy $H(X\\mid Y)$"
+    ],
+    "parameters": [
+      "$t,s,v$",
+      "AONT array $A$",
+      "input prior",
+      "input coordinate set $X$",
+      "output coordinate set $Y$"
+    ],
+    "unresolved_remainder": "The source proves bounds and exact cases when the input coordinates are independent, including non-identically distributed inputs, and recalls the equiprobable and positive-support cases. Arbitrary dependent and non-identical prior distributions remain without a complete characterization."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics",
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "all-or-nothing-transforms",
+      "conditional-entropy",
+      "information-theoretic-security",
+      "prior-distributions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gu--Akao--Esfahani--Miao--Sakurai, combinatorial AONT security problem",
+        "locator": "Problem 3, journal p. 6905; Conclusion, journal p. 6913",
+        "doi": "10.1109/TIT.2022.3174008",
+        "eprint": "arXiv:2202.10280",
+        "url": "https://doi.org/10.1109/TIT.2022.3174008"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-05-10",
+      "kind": "source_statement",
+      "summary": "Problem 3 asks for the security properties of combinatorial AONTs for general prior input distributions; the source resolves only restricted prior classes.",
+      "citation_labels": [
+        "Gu--Akao--Esfahani--Miao--Sakurai, combinatorial AONT security problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "asymmetric-aont-arbitrary-prior-entropy"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

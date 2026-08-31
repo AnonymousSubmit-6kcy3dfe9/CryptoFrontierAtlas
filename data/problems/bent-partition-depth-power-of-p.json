@@ -35,10 +35,29 @@
     ]
   },
   "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2022 TIT restatement cites Anbar--Meidl's Bent partitions, whose Remark 2 and Perspectives section explicitly ask whether the depth is always a power of p."
+    },
     "kind": "explicit_open_problem",
     "citations": [
       {
         "role": "original_source",
+        "label": "Anbar--Meidl, Bent partitions",
+        "locator": "Remark 2 and Section 7 (Perspectives)",
+        "doi": "10.1007/s10623-022-01029-z",
+        "url": "https://doi.org/10.1007/s10623-022-01029-z"
+      },
+      {
+        "role": "restatement",
+        "label": "Anbar--Kalayci--Meidl, bent partitions and partial difference sets",
+        "locator": "Introduction, journal p. 6895",
+        "doi": "10.1109/TIT.2022.3177003",
+        "url": "https://doi.org/10.1109/TIT.2022.3177003"
+      },
+      {
+        "role": "prior_progress",
         "label": "Wang--Wei--Fu, further results on bent partitions",
         "locator": "Abstract and Introduction, p. 3447; Theorem 3 and conclusion, pp. 3451-3459",
         "doi": "10.1109/TIT.2026.3670189",
@@ -63,9 +82,25 @@
   },
   "progress": [
     {
-      "date": "2026-05-01",
+      "date": "2022-03-15",
       "kind": "source_statement",
-      "summary": "The source proves prime-power depth for its weakly regular subclass and explicitly leaves the all-partitions statement open.",
+      "summary": "The original source observes that every known bent partition has prime-power depth and explicitly asks whether $K$ is always a power of $p$.",
+      "citation_labels": [
+        "Anbar--Meidl, Bent partitions"
+      ]
+    },
+    {
+      "date": "2022-05-23",
+      "kind": "restatement",
+      "summary": "The TIT paper restates that existence of a bent partition whose depth is not a power of $p$ remains open.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl, bent partitions and partial difference sets"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "kind": "public_result",
+      "summary": "Later work proves prime-power depth for its weakly regular subclass and explicitly leaves the all-partitions statement open.",
       "citation_labels": [
         "Wang--Wei--Fu, further results on bent partitions"
       ]

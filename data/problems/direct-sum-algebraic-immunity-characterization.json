@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "direct-sum-algebraic-immunity-characterization",
+  "group_id": "carlet-meaux-direct-sum-boolean-functions",
+  "title": "Algebraic immunity of arbitrary Boolean direct sums",
+  "summary": "Characterize exactly the algebraic immunity of a Boolean direct sum and when it attains the optimum for its total dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $f:\\mathbb F_2^n\\to\\mathbb F_2$ and $g:\\mathbb F_2^m\\to\\mathbb F_2$, and define their direct sum by $h(x,y)=f(x)+g(y)$. Determine $\\operatorname{AI}(h)$ from the component data and give necessary and sufficient conditions for $$\\operatorname{AI}(h)=\\left\\lceil\\frac{n+m}{2}\\right\\rceil.$$ The characterization must cover every admissible pair $(f,g)$, rather than only sufficient conditions or selected constructions."
+  },
+  "scope": {
+    "domain": "Algebraic immunity of direct sums of Boolean functions",
+    "assumptions": [
+      "$f$ and $g$ are Boolean functions on disjoint variable sets",
+      "$h(x,y)=f(x)+g(y)$ is their direct sum",
+      "Optimal algebraic immunity is $\\lceil(n+m)/2\\rceil$"
+    ],
+    "parameters": [
+      "component dimensions $n$ and $m$",
+      "Boolean functions $f$ and $g$",
+      "component annihilator data"
+    ],
+    "unresolved_remainder": "Published later work gives sufficient lower-bound criteria and exact values for selected constructions, but no exact formula and necessary-and-sufficient optimality conditions for every admissible direct sum."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "design.stream-ciphers"
+    ],
+    "tags": [
+      "algebraic-immunity",
+      "boolean-functions",
+      "direct-sums",
+      "annihilators",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet--Meaux, algebraic immunity of general direct sums",
+        "locator": "Section V-E, journal p. 3423",
+        "doi": "10.1109/TIT.2021.3139804",
+        "url": "https://doi.org/10.1109/TIT.2021.3139804"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Meaux, algebraic immunity of direct-sum constructions",
+        "locator": "Sections 3--5 and Conclusion",
+        "doi": "10.1016/j.dam.2022.05.021",
+        "url": "https://doi.org/10.1016/j.dam.2022.05.021"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2021-12-30",
+      "kind": "source_statement",
+      "summary": "The source states that component parameters do not yet determine direct-sum algebraic immunity and that all optimal cases are not characterized.",
+      "citation_labels": [
+        "Carlet--Meaux, algebraic immunity of general direct sums"
+      ]
+    },
+    {
+      "date": "2022-10-01",
+      "kind": "public_result",
+      "summary": "Later published work proves sufficient criteria and exact algebraic-immunity values for selected direct-sum constructions, while leaving a full characterization open.",
+      "citation_labels": [
+        "Meaux, algebraic immunity of direct-sum constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

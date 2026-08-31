@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-dimensional-vectorial-maximum-nonlinearity",
+  "group_id": "budaghyan-calderini-carlet-davidova-kaleyski-apn-power",
+  "title": "Maximum nonlinearity of even-dimensional vectorial functions",
+  "summary": "Determine whether the conjectured value is the maximum nonlinearity of every square vectorial Boolean function in even dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive even integer $n$, is $$\\max_{F:\\mathbb F_2^n\\to\\mathbb F_2^n}\\operatorname{NL}(F)=2^{n-1}-2^{n/2},$$ where $\\operatorname{NL}(F)$ is the minimum nonlinearity among the nonzero scalar components of $F$? Prove that no $(n,n)$-function exceeds the known attainable value, or exhibit an $(n,n)$-function with larger nonlinearity."
+  },
+  "scope": {
+    "domain": "Nonlinearity of square vectorial Boolean functions in even dimensions",
+    "assumptions": [
+      "$n$ is a positive even integer",
+      "$F$ maps $\\mathbb F_2^n$ to $\\mathbb F_2^n$",
+      "Vectorial nonlinearity is measured over all nonzero scalar components"
+    ],
+    "parameters": [
+      "even input/output dimension $n$",
+      "vectorial Boolean function $F$"
+    ],
+    "unresolved_remainder": "No inspected result proves the maximum $2^{n-1}-2^{n/2}$ for all even-dimensional (n,n)-functions or constructs a function exceeding it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "vectorial-functions",
+      "nonlinearity",
+      "even-dimensions",
+      "walsh-spectrum",
+      "extremal-problem"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-function problems",
+        "locator": "Introduction, journal p. 3390",
+        "doi": "10.1109/TIT.2022.3147060",
+        "url": "https://doi.org/10.1109/TIT.2022.3147060"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-02-07",
+      "kind": "source_statement",
+      "summary": "The source records the displayed value as the conjectured highest possible nonlinearity in even dimension.",
+      "citation_labels": [
+        "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-function problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "dobbertin-walsh-spectrum-conjecture-29"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

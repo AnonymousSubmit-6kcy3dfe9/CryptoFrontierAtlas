@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.2.0",
+  "id": "do-matrix-space-semifield-classification",
+  "group_id": "maximal-bent-component-structural-questions",
+  "title": "Semifields represented by a Dembowski--Ostrom matrix-space family",
+  "summary": "Determine which invertible-matrix spaces and non-isotopic semifields arise from the specified Dembowski--Ostrom polynomial family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n=2m$ and consider the admissible Dembowski--Ostrom polynomials $$F_{r,\\Lambda}(x)=x^{2^r}\\operatorname{Tr}_m^n(\\Lambda(x))$$ from the source, where $\\Lambda$ is a linearized permutation satisfying its maximal-bent-component hypotheses. Determine whether this family represents more than one vector space of invertible symmetric matrices. If it does, classify all non-isotopic semifields represented by the resulting matrix spaces; otherwise prove uniqueness of the matrix-space type."
+  },
+  "scope": {
+    "domain": "Dembowski--Ostrom polynomials, invertible symmetric-matrix spaces, and finite semifields",
+    "assumptions": [
+      "$n=2m$",
+      "$r$ and $\\Lambda$ satisfy the source hypotheses",
+      "$\\Lambda$ is a linearized permutation",
+      "Matrix-space and semifield equivalence use the source conventions"
+    ],
+    "parameters": [
+      "half-dimension $m$",
+      "exponent parameter $r$",
+      "linearized permutation $\\Lambda$",
+      "associated matrix space and semifield"
+    ],
+    "unresolved_remainder": "No inspected later work gives a complete matrix-space multiplicity result or classifies all non-isotopic semifields arising from the full source polynomial family."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "dembowski-ostrom-polynomials",
+      "finite-semifields",
+      "matrix-spaces",
+      "isotopy",
+      "bent-components"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anbar--Kalayci--Meidl--Merai, Dembowski--Ostrom semifield question",
+        "locator": "Question 4, journal p. 6185",
+        "doi": "10.1109/TIT.2022.3174672",
+        "url": "https://doi.org/10.1109/TIT.2022.3174672"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-05-12",
+      "kind": "source_statement",
+      "summary": "Question 4 asks whether the polynomial family yields multiple invertible-matrix spaces and, if so, which non-isotopic semifields it specifies.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl--Merai, Dembowski--Ostrom semifield question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "vectorial-bent-maximal-component-extension-classification",
+      "maximal-bent-component-complement-half-variable"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

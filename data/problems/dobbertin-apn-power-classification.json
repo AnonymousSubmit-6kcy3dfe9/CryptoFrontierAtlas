@@ -38,11 +38,37 @@
     ]
   },
   "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "Dobbertin's 2001 primary text explicitly asks the table-completeness question, but a 2022 TIT restatement attributes the conjecture to his 1999 Niho-case paper. That 1999 primary text could not be inspected, so the earliest source remains unconfirmed."
+    },
     "kind": "explicit_conjecture",
     "citations": [
       {
-        "role": "original_source",
-        "label": "Tu--Li--Wu--Zeng--Tang--Jiang, Dobbertin APN power-classification conjecture",
+        "role": "restatement",
+        "label": "Dobbertin, APN power-family completeness question",
+        "locator": "Introduction, p. 113",
+        "doi": "10.1007/978-3-642-56755-1_11",
+        "url": "https://doi.org/10.1007/978-3-642-56755-1_11"
+      },
+      {
+        "role": "restatement",
+        "label": "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-family completeness restatement",
+        "locator": "Introduction, journal p. 3391",
+        "doi": "10.1109/TIT.2022.3147060",
+        "url": "https://doi.org/10.1109/TIT.2022.3147060"
+      },
+      {
+        "role": "restatement",
+        "label": "Li--Zhou--Li--Qu, APN monomial completeness restatement",
+        "locator": "Introduction, journal p. 4761",
+        "doi": "10.1109/TIT.2022.3157810",
+        "url": "https://doi.org/10.1109/TIT.2022.3157810"
+      },
+      {
+        "role": "restatement",
+        "label": "Tu--Li--Wu--Zeng--Tang--Jiang, APN power-family completeness restatement",
         "locator": "Introduction, journal p. 582",
         "doi": "10.1109/TIT.2022.3198133",
         "url": "https://doi.org/10.1109/TIT.2022.3198133"
@@ -54,15 +80,39 @@
     "public_verification_status": "none",
     "peer_review_status": "published",
     "disclosure": "problem_only",
-    "last_reviewed": "2026-08-27"
+    "last_reviewed": "2026-08-29"
   },
   "progress": [
     {
-      "date": "2022-08-11",
-      "kind": "source_statement",
-      "summary": "The source states Dobbertin's conjecture that the six known APN power families form a complete classification up to CCZ equivalence.",
+      "date": "2001-01-01",
+      "kind": "restatement",
+      "summary": "Dobbertin's 2001 primary text explicitly asks whether the table of known APN power families is complete up to power-function equivalence.",
       "citation_labels": [
-        "Tu--Li--Wu--Zeng--Tang--Jiang, Dobbertin APN power-classification conjecture"
+        "Dobbertin, APN power-family completeness question"
+      ]
+    },
+    {
+      "date": "2022-02-07",
+      "kind": "restatement",
+      "summary": "The TIT paper restates Dobbertin's classification question and explains the matching CCZ-equivalence formulation for APN power functions.",
+      "citation_labels": [
+        "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-family completeness restatement"
+      ]
+    },
+    {
+      "date": "2022-03-08",
+      "kind": "restatement",
+      "summary": "The TIT paper states that the table of all known APN monomials is conjectured to be complete up to equivalence.",
+      "citation_labels": [
+        "Li--Zhou--Li--Qu, APN monomial completeness restatement"
+      ]
+    },
+    {
+      "date": "2022-08-11",
+      "kind": "restatement",
+      "summary": "The TIT paper again records Dobbertin's conjecture that the known APN power families form a complete classification.",
+      "citation_labels": [
+        "Tu--Li--Wu--Zeng--Tang--Jiang, APN power-family completeness restatement"
       ]
     }
   ],

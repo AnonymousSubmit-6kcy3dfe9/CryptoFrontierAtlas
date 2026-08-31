@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "id": "no-bent-component-apn-construction",
+  "group_id": "gologlu-biprojective-apn",
+  "title": "APN construction from two bent-component-free parts",
+  "summary": "Construct a quadratic APN function with at least two source-defined bent-component-free subspaces by combining parts that individually have no bent component.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a quadratic APN function $F$, not required to be biprojective, obtained by combining two parts that each have no bent Boolean component and satisfying $$\\eta_m(\\operatorname{NBF})\\ge 2?$$ Construct such a function or infinite family, or prove that no such construction exists."
+  },
+  "scope": {
+    "domain": "Quadratic APN functions and bent-component-free vectorial subspaces",
+    "assumptions": [
+      "The ambient dimension is $n=2m$ as in the source definition of $\\eta_m$",
+      "$F$ is quadratic and APN but need not be biprojective",
+      "The two constituent parts contain no bent component"
+    ],
+    "parameters": [
+      "half-dimension parameter $m$",
+      "quadratic APN function $F$",
+      "the invariant $\\eta_m(\\operatorname{NBF})$"
+    ],
+    "unresolved_remainder": "A later theorem classifies the strict $(q,q)$-biprojective/subfield-property branch. Outside that branch, no inspected result constructs the required two-part APN function with $\\eta_m(\\operatorname{NBF})\\ge2$ or proves nonexistence over the remaining general $(q,r)$ and non-biprojective domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "bent-components",
+      "quadratic-functions",
+      "construction",
+      "partial-classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gologlu, two bent-component-free parts problem",
+        "locator": "Problem III.5 and preceding paragraph, journal p. 4753",
+        "doi": "10.1109/TIT.2022.3157798",
+        "url": "https://doi.org/10.1109/TIT.2022.3157798"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Gologlu, classification of (q,q)-biprojective APN functions",
+        "locator": "Theorem 1.1 and introductory scope",
+        "doi": "10.1109/TIT.2022.3220724",
+        "url": "https://doi.org/10.1109/TIT.2022.3220724"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-03-08",
+      "kind": "source_statement",
+      "summary": "Problem III.5 and the preceding paragraph ask for the stated construction, explicitly allowing non-biprojective parts.",
+      "citation_labels": [
+        "Gologlu, two bent-component-free parts problem"
+      ]
+    },
+    {
+      "date": "2022-11-09",
+      "kind": "public_result",
+      "summary": "A later theorem exhausts the strict $(q,q)$-biprojective/subfield-property branch but leaves general $(q,r)$ and non-biprojective combinations unresolved.",
+      "citation_labels": [
+        "Gologlu, classification of (q,q)-biprojective APN functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

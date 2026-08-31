@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dobbertin-walsh-spectrum-conjecture-29",
+  "group_id": "budaghyan-calderini-carlet-davidova-kaleyski-apn-power",
+  "title": "Walsh spectrum of the Dobbertin APN power function",
+  "summary": "Prove the parity-dependent Walsh spectrum and nonlinearity formula conjectured for every Dobbertin APN power function.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive integer $m$, put $n=5m$ and $$d=2^{4m}+2^{3m}+2^{2m}+2^m-1.$$ Determine whether the extended Walsh spectrum of $F(x)=x^d$ on $\\mathbb F_{2^{5m}}$ is exactly the parity-dependent spectrum stated in source Conjecture 29, with maximum absolute Walsh coefficient $2^{2m}(2^m+1)$ and hence $$\\operatorname{NL}(F)=2^{5m-1}-2^{2m-1}(2^m+1).$$ Prove the complete conjectured spectra for both parities of $m$, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Walsh spectra of Dobbertin APN power functions over binary finite fields",
+    "assumptions": [
+      "$m$ is a positive integer and $n=5m$",
+      "$F(x)=x^d$ with $d=2^{4m}+2^{3m}+2^{2m}+2^m-1$",
+      "The spectrum is the source-defined extended Walsh spectrum"
+    ],
+    "parameters": [
+      "positive integer $m$",
+      "parity of $m$",
+      "Walsh coefficients of $F$"
+    ],
+    "unresolved_remainder": "The complete parity-dependent Walsh spectra and maximum-coefficient formula in Conjecture 29 remain unproved for arbitrary positive integer m."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "apn-functions",
+      "dobbertin-functions",
+      "walsh-spectrum",
+      "nonlinearity",
+      "power-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-function problems",
+        "locator": "Conjecture 29, journal p. 3402",
+        "doi": "10.1109/TIT.2022.3147060",
+        "url": "https://doi.org/10.1109/TIT.2022.3147060"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-02-07",
+      "kind": "source_statement",
+      "summary": "Conjecture 29 gives exact parity-dependent spectra and the resulting nonlinearity formula for the Dobbertin family.",
+      "citation_labels": [
+        "Budaghyan--Calderini--Carlet--Davidova--Kaleyski, APN power-function problems"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "even-dimensional-vectorial-maximum-nonlinearity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

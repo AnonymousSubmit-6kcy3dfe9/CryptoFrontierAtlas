@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.2.0",
+  "id": "general-fq2-apn-polynomial-template",
+  "group_id": "li-zhou-li-qu-quadratic-apn",
+  "title": "Infinite APN families from the general quadratic Fq2 template",
+  "summary": "Determine whether the source-defined quadratic polynomial forms over a quadratic field extension yield a new infinite APN family.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $q=2^m$, consider over $\\mathbb F_{q^2}$ the narrower source form $$z^3+Az^{3q}+Bz^{2q+1}+Cz^{q+2}+Dz^5+Ez^{5q}+Fz^{4q+1}+Gz^{q+4}+Hz^{q+1}+Iz^{2(q+1)}$$ and the more general template $$\\begin{aligned}f(z)={}&z(Az^2+Bz^4+Cz^q+Dz^{2q}+Ez^{4q})\\\\&+z^2(Gz^4+Hz^q+Iz^{2q}+Jz^{4q})\\\\&+z^4(Kz^q+Lz^{2q}+Mz^{4q})\\\\&+z^q(Nz^{2q}+Pz^{4q})+Qz^{6q}.\\end{aligned}$$ Does either form produce a new infinite family of APN functions beyond the known families? Exhibit one coefficient choice valid for infinitely many admissible $m$ and prove its APN property and newness, or prove that no new infinite family occurs anywhere in the displayed forms."
+  },
+  "scope": {
+    "domain": "Quadratic APN polynomial templates over $\\mathbb F_{q^2}$",
+    "assumptions": [
+      "$q=2^m$",
+      "The coefficients and exponents range over the complete template displayed in the source conclusion",
+      "Newness is assessed against the known APN families under the source equivalence conventions"
+    ],
+    "parameters": [
+      "extension parameter $m$",
+      "field size $q=2^m$",
+      "coefficients in the two displayed source forms"
+    ],
+    "unresolved_remainder": "Later work gives a conditional template extension and verifies finite instances, but its all-parameter construction depends on an unproved no-root conjecture. No unconditional new infinite family from the displayed source forms, and no global nonexistence theorem, was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "bivariate-functions",
+      "polynomial-templates",
+      "infinite-families",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Zhou--Li--Qu, general bivariate APN-template question",
+        "locator": "Conclusion and Further Work, journal pp. 4768--4769",
+        "doi": "10.1109/TIT.2022.3157810",
+        "url": "https://doi.org/10.1109/TIT.2022.3157810"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Gologlu, classification of (q,q)-biprojective APN functions",
+        "locator": "Theorem 1.1",
+        "doi": "10.1109/TIT.2022.3220724",
+        "url": "https://doi.org/10.1109/TIT.2022.3220724"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Shi--Peng--Zheng, new bivariate APN multinomials",
+        "locator": "Theorem 1, Conjecture 1, and comparison tables",
+        "doi": "10.1587/transfun.2025EAL2001",
+        "url": "https://doi.org/10.1587/transfun.2025EAL2001"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-29"
+  },
+  "progress": [
+    {
+      "date": "2022-03-08",
+      "kind": "source_statement",
+      "summary": "The source asks whether its displayed general quadratic template over $\\mathbb F_{q^2}$ yields new infinite APN families.",
+      "citation_labels": [
+        "Li--Zhou--Li--Qu, general bivariate APN-template question"
+      ]
+    },
+    {
+      "date": "2022-11-09",
+      "kind": "public_result",
+      "summary": "A later classification settles the strict $(q,q)$-biprojective subclass but does not give a new infinite-family witness for the broader source forms.",
+      "citation_labels": [
+        "Gologlu, classification of (q,q)-biprojective APN functions"
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "kind": "public_result",
+      "summary": "Later published work extends one source family and gives new finite instances, but its infinite construction depends on an unproved no-root conjecture.",
+      "citation_labels": [
+        "Shi--Peng--Zheng, new bivariate APN multinomials"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

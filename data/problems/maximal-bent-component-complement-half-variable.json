@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maximal-bent-component-complement-half-variable",
+  "group_id": "maximal-bent-component-structural-questions",
+  "title": "Bent complements beyond common half-variable dependence",
+  "summary": "Determine whether a square function with the maximum number of bent components can have a bent complement that does not depend on one common half of the variables.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n=2m$. Does there exist a function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ with exactly $2^n-2^m$ bent components whose bent complement cannot, after ignoring affine terms as in the source, be represented by functions depending only on one common set of $m$ variables? Construct and verify one such $F$, or prove that every admissible bent complement has the common-half-variable form."
+  },
+  "scope": {
+    "domain": "Bent complements of square vectorial functions with the maximum number of bent components",
+    "assumptions": [
+      "$n=2m$",
+      "$F$ has exactly $2^n-2^m$ bent components",
+      "Affine terms are ignored under the source convention",
+      "The excluded form uses the same half of the variables for the entire bent complement"
+    ],
+    "parameters": [
+      "half-dimension $m$",
+      "square vectorial function $F$",
+      "bent complement of $F$"
+    ],
+    "unresolved_remainder": "No inspected later construction was verified to have a bent complement outside the source's common-half-variable form, and no theorem proves that every maximal-bent-component function has that form."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "bent-components",
+      "bent-complements",
+      "variable-dependence",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anbar--Kalayci--Meidl--Merai, bent-complement dependence question",
+        "locator": "Question 2, journal p. 6185",
+        "doi": "10.1109/TIT.2022.3174672",
+        "url": "https://doi.org/10.1109/TIT.2022.3174672"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-05-12",
+      "kind": "source_statement",
+      "summary": "Question 2 asks for an example whose bent complement is not confined, modulo affine terms, to one common half of the variables.",
+      "citation_labels": [
+        "Anbar--Kalayci--Meidl--Merai, bent-complement dependence question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "vectorial-bent-maximal-component-extension-classification",
+      "do-matrix-space-semifield-classification"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

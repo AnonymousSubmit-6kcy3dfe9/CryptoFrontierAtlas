@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "general-high-degree-ea-recovery",
+  "group_id": "general-ea-equivalence-recovery",
+  "title": "Fast EA-recovery beyond quadratic vectorial functions",
+  "summary": "Find a general EA-equivalence recovery algorithm for degree-greater-than-two vectorial functions that improves asymptotically on generic code-equivalence recovery.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For arbitrary dimensions $n,m$ and vectorial Boolean functions $F,G:\\mathbb F_2^n\\to\\mathbb F_2^m$ of algebraic degree greater than two, give an algorithm that, whenever they exist, recovers affine permutations $A,B$ and an affine function $C$ satisfying $$G=A\\circ F\\circ B+C.$$ Prove correctness for every admissible pair and an asymptotic complexity strictly below applying the generic code-equivalence recovery method to the associated codes."
+  },
+  "scope": {
+    "domain": "Extended-affine equivalence recovery for vectorial Boolean functions",
+    "assumptions": [
+      "$F$ and $G$ have algebraic degree strictly greater than two",
+      "The algorithm applies in arbitrary input and output dimensions",
+      "Recovery returns the affine maps when an EA equivalence exists",
+      "The comparison baseline is the source's generic code-equivalence method"
+    ],
+    "parameters": [
+      "input dimension $n$",
+      "output dimension $m$",
+      "functions $F$ and $G$",
+      "generic code-equivalence complexity"
+    ],
+    "unresolved_remainder": "The later ePrint gives faster recovery for uniformly distributed $k$-to-one functions with a specific preimage structure and extensions to selected EA cases. It does not cover arbitrary degree-greater-than-two vectorial functions or prove the required general asymptotic improvement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "ea-equivalence",
+      "equivalence-recovery",
+      "vectorial-functions",
+      "algorithmic-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Canteaut--Couvreur--Perrin, general EA-recovery problem",
+        "locator": "Introduction, journal p. 6189; Conclusion, journal p. 6205",
+        "doi": "10.1109/TIT.2022.3166692",
+        "url": "https://doi.org/10.1109/TIT.2022.3166692"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Ivkovic--Kaleyski, linear equivalence of uniformly distributed functions",
+        "locator": "Abstract and Sections III--IV",
+        "eprint": "IACR ePrint 2022/666",
+        "url": "https://eprint.iacr.org/2022/666"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2022-04-18",
+      "kind": "source_statement",
+      "summary": "The source asks for a general EA-recovery algorithm beyond quadratic functions that beats generic code-equivalence recovery in every dimension.",
+      "citation_labels": [
+        "Canteaut--Couvreur--Perrin, general EA-recovery problem"
+      ]
+    },
+    {
+      "date": "2022-05-28",
+      "kind": "public_result",
+      "summary": "A later ePrint gives substantially faster equivalence recovery for structured uniformly distributed $k$-to-one functions and selected EA extensions, a strict subclass of the requested domain.",
+      "citation_labels": [
+        "Ivkovic--Kaleyski, linear equivalence of uniformly distributed functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
