@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vectorial-bent-translation-design-isomorphism",
+  "group_id": "polujan-pott-bent-translation-designs",
+  "title": "EA-inequivalent vectorial bent functions with isomorphic translation designs",
+  "summary": "Determine whether two EA-inequivalent vectorial bent functions can induce isomorphic translation designs.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exist an even integer $n\\ge 8$, an integer $m$ with $2\\le m\\le n/2$, and vectorial bent functions $F,F':\\mathbb F_2^n\\to\\mathbb F_2^m$ such that $F$ and $F'$ are not EA-equivalent but their translation designs are isomorphic: $\\operatorname{dev}(G_F)\\cong\\operatorname{dev}(G_{F'})$. A positive answer requires one verified pair; a negative answer must prove nonexistence throughout the stated parameter range."
+  },
+  "scope": {
+    "domain": "Translation designs of vectorial bent functions",
+    "assumptions": [
+      "$n$ is even and $n\\ge 8$",
+      "$2\\le m\\le n/2$, excluding the Boolean case $m=1$",
+      "$F$ and $F'$ are vectorial $(n,m)$-bent functions",
+      "EA-equivalence and translation-design isomorphism use the source definitions"
+    ],
+    "parameters": [
+      "$n$: even input dimension",
+      "$m$: output dimension",
+      "$F,F':\\mathbb F_2^n\\to\\mathbb F_2^m$"
+    ],
+    "unresolved_remainder": "The source rules out the relevant collision in four and six variables. Find one pair for some even n >= 8 and 2 <= m <= n/2, or prove that no such pair exists for every admissible n and m."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "vectorial-bent-functions",
+      "translation-designs",
+      "ea-equivalence",
+      "design-isomorphism"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polujan--Pott, vectorial translation-design isomorphism problem",
+        "locator": "Open Problem V.1, journal p. 1035",
+        "doi": "10.1109/TIT.2020.3040754",
+        "url": "https://doi.org/10.1109/TIT.2020.3040754"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-02-01",
+      "kind": "source_statement",
+      "summary": "After excluding dimensions four and six, the source asks whether the Boolean translation-design collision phenomenon can occur for vectorial bent functions.",
+      "citation_labels": [
+        "Polujan--Pott, vectorial translation-design isomorphism problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "bent-translation-design-two-transitivity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

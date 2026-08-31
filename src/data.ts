@@ -152,6 +152,8 @@ import recordRelativeTraceApnCaseVBudaghyanCarletEquivalence from '../data/probl
 import recordRelativeTraceApnCaseViGoldEquivalence from '../data/problems/relative-trace-apn-case-vi-gold-equivalence.json';
 import recordRelativeTraceApnEulerTotientCczCount from '../data/problems/relative-trace-apn-euler-totient-ccz-count.json';
 import recordRelativeTraceApnWithinCaseCczClassification from '../data/problems/relative-trace-apn-within-case-ccz-classification.json';
+import recordBentTranslationDesignTwoTransitivity from '../data/problems/bent-translation-design-two-transitivity.json';
+import recordVectorialBentTranslationDesignIsomorphism from '../data/problems/vectorial-bent-translation-design-isomorphism.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -377,6 +379,8 @@ export const problems = [
   recordRelativeTraceApnCaseViGoldEquivalence,
   recordRelativeTraceApnEulerTotientCczCount,
   recordRelativeTraceApnWithinCaseCczClassification,
+  recordBentTranslationDesignTwoTransitivity,
+  recordVectorialBentTranslationDesignIsomorphism,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

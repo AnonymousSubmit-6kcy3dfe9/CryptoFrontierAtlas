@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bent-translation-design-two-transitivity",
+  "group_id": "polujan-pott-bent-translation-designs",
+  "title": "Two-transitive translation designs of Boolean bent functions",
+  "summary": "Classify Boolean bent functions whose translation designs have 2-transitive automorphism groups by the proposed degree-three Maiorana-McFarland EA class.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n$ be even and let $f:\\mathbb F_2^n\\to\\mathbb F_2$ be bent. Prove or refute that $\\operatorname{Aut}(\\operatorname{dev}(D_f))$ is 2-transitive if and only if $f$ is EA-equivalent to a Maiorana--McFarland function $$f_0(x,y)=x\\cdot y+g(y),\\qquad x,y\\in\\mathbb F_2^{n/2},\\quad \\deg(g)\\le 3.$$"
+  },
+  "scope": {
+    "domain": "Automorphism groups of translation designs derived from Boolean bent functions",
+    "assumptions": [
+      "$n$ is even",
+      "$f$ is a Boolean bent function on $\\mathbb F_2^n$",
+      "$D_f$ is the source-defined difference set and $\\operatorname{dev}(D_f)$ its translation design",
+      "EA-equivalence and the Maiorana--McFarland form use the source conventions"
+    ],
+    "parameters": [
+      "$n$: even dimension",
+      "$f$: Boolean bent function",
+      "$g:\\mathbb F_2^{n/2}\\to\\mathbb F_2$ with degree at most three"
+    ],
+    "unresolved_remainder": "Establish both implications for every even n and every Boolean bent function, or give a counterexample to either implication."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "bent-functions",
+      "translation-designs",
+      "two-transitivity",
+      "automorphism-groups",
+      "maiorana-mcfarland",
+      "ea-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polujan--Pott, two-transitive translation-design conjecture",
+        "locator": "Open Problem V.2, journal p. 1035",
+        "doi": "10.1109/TIT.2020.3040754",
+        "url": "https://doi.org/10.1109/TIT.2020.3040754"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-08-31"
+  },
+  "progress": [
+    {
+      "date": "2021-02-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures an exact EA-classification of Boolean bent functions whose translation designs have 2-transitive automorphism groups.",
+      "citation_labels": [
+        "Polujan--Pott, two-transitive translation-design conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "vectorial-bent-translation-design-isomorphism"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
