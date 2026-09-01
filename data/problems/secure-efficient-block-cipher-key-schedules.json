@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "secure-efficient-block-cipher-key-schedules",
+  "group_id": "secure-efficient-block-cipher-key-schedules",
+  "title": "Secure and Efficient Block-Cipher Key Schedules",
+  "summary": "Numerous block-cipher key-schedule candidates have been broken in related-key or hash-function settings; a secure, efficient design resistant in both remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For block ciphers, determine how to construct a key schedule that is both secure and efficient and resists attacks in the related-key model and attacks arising in a hash-function setting. This question remains open despite the symmetric-key cryptography community's good experience constructing secure and efficient fixed permutations, and numerous block-cipher key-schedule candidates have been broken in the related-key model or in a hash-function setting."
+  },
+  "scope": {
+    "domain": "Design and cryptanalysis of block-cipher key schedules.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a secure and efficient block-cipher key schedule that resists related-key attacks and attacks arising in a hash-function setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedules",
+      "related-key-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128",
+        "locator": "CRYPTO 2013, page 1",
+        "doi": "10.1007/978-3-642-40041-4_11",
+        "url": "https://eprint.iacr.org/2013/366",
+        "eprint": "2013/366"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly identifies block-cipher key-schedule design as an open problem. It contrasts this with experience building secure, efficient fixed permutations and notes numerous candidates broken in related-key or hash-function settings.",
+      "citation_labels": [
+        "Pierre-Alain Fouque et al., Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

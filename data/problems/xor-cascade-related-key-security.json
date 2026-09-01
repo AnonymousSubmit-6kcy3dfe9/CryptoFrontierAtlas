@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor-cascade-related-key-security",
+  "group_id": "xor-cascade-related-key-security",
+  "title": "Related-Key Security for Derived-Key XOR-Cascades",
+  "summary": "Ideal-cipher security for the derived-key XOR-cascade relies on independent per-key permutations; whether a practical instantiation has the needed related-key security remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider an XOR-cascade whose distinct encryption keys are derived deterministically from a single key. Its ideal-cipher security relies on the modeled independence of the permutations associated with different keys, an assumption that does not by itself justify a practical block-cipher instantiation. Determine whether such an instantiation provides the required form of security under related-key attack; alternatively, use independent keys for the encryption steps to retain the same security statement at the cost of additional key material."
+  },
+  "scope": {
+    "domain": "Related-key security of block-cipher key-length extension using XOR-cascades.",
+    "assumptions": [
+      "Ideal-cipher model — permutations associated with different keys are modeled as independent."
+    ],
+    "parameters": [
+      "Key-scheduling choice — derive distinct encryption-step keys deterministically from one key, or use independent keys at greater key-material cost"
+    ],
+    "unresolved_remainder": "Determine whether a practical block-cipher instantiation of the derived-key XOR-cascade provides the required related-key security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "related-key-security",
+      "xor-cascades"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Plain versus Randomized Cascading-Based Key-Length Extension for Block Ciphers",
+        "locator": "CRYPTO 2013, page 12",
+        "doi": "10.1007/978-3-642-40041-4_30",
+        "url": "https://eprint.iacr.org/2013/019",
+        "eprint": "2013/019"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the derived-key cascade as safe in the ideal-cipher model while identifying related-key security as necessary for a practical instantiation. It notes that independent encryption-step keys retain the security statement but require more key material.",
+      "citation_labels": [
+        "Peter Gazi et al., Plain versus Randomized Cascading-Based Key-Length Extension for Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-bounds-cascade-xor-cascade-encryption",
+  "group_id": "tight-security-bounds-cascade-xor-cascade-encryption",
+  "title": "Tight Security Bounds for Cascade and Xor-Cascade Encryption",
+  "summary": "Provable security bounds for cascade and xor-cascade encryption are weaker than known distinguishing-attack lower bounds; tightening them to match remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the random-system framework, cascade encryption and xor-cascade encryption have provable security bounds that are weaker than known distinguishing-attack lower bounds. For xor-cascade encryption, the relevant comparison distinguishes odd and even cascade lengths $l$, with a particularly stated case for $l\\in\\{3,4\\}$. The open task is to determine whether the provable security bounds for both constructions can be tightened to match those stronger lower bounds, including the odd/even length cases and the $l\\in\\{3,4\\}$ cases."
+  },
+  "scope": {
+    "domain": "Security bounds for cascade and xor-cascade block-cipher constructions.",
+    "assumptions": [
+      "The bounds are considered in the random-system framework."
+    ],
+    "parameters": [
+      "l: xor-cascade length, with separate odd and even cases and a highlighted case of l in {3, 4}"
+    ],
+    "unresolved_remainder": "Determine whether the provable security bounds for both constructions can be tightened to match the stronger lower bounds, including the stated xor-cascade length cases."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "cascade-encryption",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Key-Length Extension with Optimal Security: Cascade Encryption and Xor-cascade Encryption",
+        "locator": "EUROCRYPT 2013, page 4",
+        "doi": "10.1007/978-3-642-38348-9_25"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that known distinguishing-attack lower bounds are tighter than the bounds proved for the two cascade constructions. Closing this gap, including the odd and even xor-cascade length cases, remains unresolved.",
+      "citation_labels": [
+        "Jooyoung Lee et al., Towards Key-Length Extension with Optimal Security: Cascade Encryption and Xor-cascade Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

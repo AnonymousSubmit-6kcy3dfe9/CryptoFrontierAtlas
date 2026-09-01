@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "almost-perfect-s-box-permutation-construction",
+  "group_id": "almost-perfect-s-box-permutation-construction",
+  "title": "Almost-Perfect S-Box Permutation Construction",
+  "summary": "For almost-perfect n-bit S-box permutations, the target maximal differential probability is two to the minus (n minus one), but no construction is known.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved construction problem is to construct, for an $n$-bit S-box, an almost-perfect permutation whose maximal differential probability is $p_{\\max}=2^{-(n-1)}$; the supplied source states that such a construction is not known."
+  },
+  "scope": {
+    "domain": "Design of almost-perfect permutation S-boxes under differential-probability criteria.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: bit width of the S-box",
+      "p_max: maximal differential probability, targeted at two to the minus (n minus one)"
+    ],
+    "unresolved_remainder": "Construct an almost-perfect n-bit S-box permutation attaining the target maximal differential probability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "differential-probability",
+      "permutation-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128",
+        "locator": "CRYPTO 2013, page 13",
+        "doi": "10.1007/978-3-642-40041-4_11",
+        "url": "https://eprint.iacr.org/2013/366",
+        "eprint": "2013/366"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a concrete unresolved construction limitation, stating that the authors do not know how to build an almost-perfect n-bit S-box permutation attaining the target.",
+      "citation_labels": [
+        "Pierre-Alain Fouque et al., Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

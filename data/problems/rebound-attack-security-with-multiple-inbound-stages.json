@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rebound-attack-security-with-multiple-inbound-stages",
+  "group_id": "rebound-attack-security-with-multiple-inbound-stages",
+  "title": "Rebound-Attack Security with Multiple Inbound Stages",
+  "summary": "Strong partial-round differential bounds would leave few characteristic-satisfying pairs, but proving security against rebound attacks with multiple inbound stages remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For rebound attacks on a permutation, determine whether differential-characteristic bounds over a smaller portion of the permutation can yield a provable security argument when the attack uses multiple inbound stages. Although a sufficiently strong bound over a fraction of the rounds would imply that only a small number of pairs satisfy a differential characteristic, it remains unresolved whether interactions among multiple inbound stages invalidate this pair-scarcity reasoning. The required result is a rigorous proof of security against rebound attacks that accounts for these multiple inbound stages and their effect on the differential-characteristic bounds."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of rebound attacks on permutations using partial-round differential-characteristic bounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Partial permutation portion: the fraction of rounds over which differential-characteristic bounds are considered",
+      "Multiple inbound stages: the attack components whose interactions may affect pair-scarcity reasoning"
+    ],
+    "unresolved_remainder": "Establish a rigorous security proof against rebound attacks that accounts for multiple inbound-stage interactions and their effect on differential-characteristic bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "rebound-attacks",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Bounds in Shallows and in Miseries",
+        "locator": "CRYPTO 2013, page 15",
+        "doi": "10.1007/978-3-642-40041-4_12",
+        "url": "https://eprint.iacr.org/2013/482",
+        "eprint": "2013/482"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that sufficiently strong bounds on a fraction of the rounds would imply that few pairs satisfy a characteristic, but identifies multiple inbound stages as a possible failure point. It explicitly leaves a provable security argument against rebound attacks open.",
+      "citation_labels": [
+        "Céline Blondeau et al., Bounds in Shallows and in Miseries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-secure-round-count-for-feistel-ciphers",
+  "group_id": "minimum-secure-round-count-for-feistel-ciphers",
+  "title": "Minimum Secure Round Count for Feistel Ciphers",
+  "summary": "Generic key-recovery attacks give lower bounds on secure rounds for several Feistel variants, but the minimum sufficient round count remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Feistel ciphers, it remains unknown how many rounds are sufficient for security. Under a model in which the key-scheduling function is ideal and attacks seek key recovery in the single-secret-key setting, determine the smallest sufficient round count---or, equivalently, how many rounds can be removed---without losing the required security, with the aim of reducing data-processing latency."
+  },
+  "scope": {
+    "domain": "Security analysis of Feistel ciphers against generic key-recovery attacks.",
+    "assumptions": [
+      "The key-scheduling function is ideal.",
+      "Key-recovery attacks operate in the single-secret-key setting."
+    ],
+    "parameters": [
+      "Round count: the number of Feistel data-processing rounds retained while meeting security requirements"
+    ],
+    "unresolved_remainder": "Determine the smallest sufficient round count, equivalently the maximum number of rounds removable without losing the required security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "feistel-ciphers",
+      "key-recovery",
+      "round-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Key Recovery Attack on Feistel Scheme",
+        "locator": "ASIACRYPT 2013, page 2",
+        "doi": "10.1007/978-3-642-42033-7_24"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks how many Feistel rounds can be removed without losing security. It presents lower bounds from generic key-recovery attacks on several variants but no general sufficient threshold.",
+      "citation_labels": [
+        "Takanori Isobe et al., Generic Key Recovery Attack on Feistel Scheme"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

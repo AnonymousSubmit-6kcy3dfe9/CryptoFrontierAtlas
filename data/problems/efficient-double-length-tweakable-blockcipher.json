@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-double-length-tweakable-blockcipher",
+  "group_id": "efficient-double-length-tweakable-blockcipher",
+  "title": "Efficient Double-Length Tweakable Blockcipher Beating the Strong-PRP Bound",
+  "summary": "One double-length construction merely meets the strong-PRP bound, while a bound-beating result has substantial performance cost; an efficient improvement remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an efficient $n$-bit-blockcipher-based tweakable blockcipher with $N=2n$ whose strong-PRP advantage beats $O(q^3/2^{2n})$."
+  },
+  "scope": {
+    "domain": "Design of efficient expanding tweakable blockciphers from fixed-block-length blockciphers under strong-PRP security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: block length in bits of the underlying blockcipher",
+      "N: block length in bits of the tweakable blockcipher, constrained to twice n",
+      "q: variable governing the stated strong-PRP advantage bound"
+    ],
+    "unresolved_remainder": "Construct an efficient double-length tweakable blockcipher from an n-bit blockcipher whose strong-PRP advantage is asymptotically below order q cubed divided by 2 to the power 2n."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-blockciphers",
+      "strong-prp",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Framework for Building Variable-Input-Length Tweakable Ciphers",
+        "locator": "ASIACRYPT 2013, page 10",
+        "doi": "10.1007/978-3-642-42033-7_21",
+        "url": "https://eprint.iacr.org/2013/835",
+        "eprint": "2013/835"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports no known efficient construction from an n-bit blockcipher that improves the stated strong-PRP bound. It contrasts a bound-beating result with substantial performance cost against a double-length construction that only meets the bound.",
+      "citation_labels": [
+        "Thomas Shrimpton et al., A Modular Framework for Building Variable-Input-Length Tweakable Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

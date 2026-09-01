@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "randomized-message-locked-encryption-beyond-xtespke",
+  "group_id": "randomized-message-locked-encryption-beyond-xtespke",
+  "title": "Randomized Message-Locked Encryption Beyond XtESPKE",
+  "summary": "A reported black-box barrier covers deterministic MLE but apparently not randomized MLE; build randomized MLE beyond XtESPKE or delimit what randomization can evade.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A black-box barrier to obtaining secure deterministic message-locked encryption (D-MLE) is reported to apply to D-MLE but, as far as the available evidence indicates, not to randomized message-locked encryption (R-MLE). The route noted for R-MLE under standard assumptions is XtESPKE, obtained by extending XtDPKE from an efficiently searchable public-key encryption (ES-PKE) scheme, which is weaker than deterministic searchable public-key encryption (D-PKE). The unresolved task is to construct an R-MLE scheme under standard assumptions that goes beyond this XtESPKE/ES-PKE approach, or to characterize the limits of using randomization to avoid the D-MLE barrier."
+  },
+  "scope": {
+    "domain": "Design of deterministic and randomized message-locked encryption in the presence of black-box barriers.",
+    "assumptions": [
+      "Standard cryptographic assumptions."
+    ],
+    "parameters": [
+      "XtESPKE from ES-PKE: the noted randomized MLE construction route"
+    ],
+    "unresolved_remainder": "Construct an R-MLE scheme under standard assumptions beyond the XtESPKE/ES-PKE route, or characterize how far randomization can avoid the D-MLE black-box barrier."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "message-locked-encryption",
+      "black-box-barriers",
+      "secure-deduplication"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Message-Locked Encryption and Secure Deduplication",
+        "locator": "EUROCRYPT 2013, page 6",
+        "doi": "10.1007/978-3-642-38348-9_18",
+        "url": "https://eprint.iacr.org/2012/631",
+        "eprint": "2012/631"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents randomization as a potential way around the D-MLE black-box barrier under standard assumptions. It identifies XtESPKE from ES-PKE as the noted route and states that no approach beyond it is known.",
+      "citation_labels": [
+        "Mihir Bellare et al., Message-Locked Encryption and Secure Deduplication"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

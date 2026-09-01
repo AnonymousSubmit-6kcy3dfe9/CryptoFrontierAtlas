@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-related-key-differential-linear-security",
+  "group_id": "aes-related-key-differential-linear-security",
+  "title": "Formal Related-Key Security of AES",
+  "summary": "A formal AES security proof against differential and linear cryptanalysis in the related-key model remains to be established.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A stated future task for AES is to establish a formal security proof against both differential and linear cryptanalysis in the related-key model, thereby resolving the lack of such a proof identified for this setting."
+  },
+  "scope": {
+    "domain": "Formal security analysis of AES against differential and linear cryptanalysis.",
+    "assumptions": [
+      "Security is considered in the related-key model."
+    ],
+    "parameters": [
+      "AES — target block cipher",
+      "Differential and linear cryptanalysis — attack classes covered by the sought proof"
+    ],
+    "unresolved_remainder": "Establish the requested formal security proof for AES against both attack classes in the related-key model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "related-key-security",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128",
+        "locator": "CRYPTO 2013, page 17",
+        "doi": "10.1007/978-3-642-40041-4_11",
+        "url": "https://eprint.iacr.org/2013/366",
+        "eprint": "2013/366"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The paper's conclusion explicitly lists obtaining this formal related-key security proof as a future task and presents it as unresolved.",
+      "citation_labels": [
+        "Pierre-Alain Fouque et al., Structural Evaluation of AES and Chosen-Key Distinguisher of 9-Round AES-128"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

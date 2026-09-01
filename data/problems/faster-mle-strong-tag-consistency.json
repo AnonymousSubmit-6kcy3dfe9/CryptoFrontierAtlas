@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "faster-mle-strong-tag-consistency",
+  "group_id": "faster-mle-strong-tag-consistency",
+  "title": "Faster MLE with Strong Tag Consistency",
+  "summary": "CE provides strong tag consistency, while faster known MLE schemes do not; it remains open whether faster MLE can retain that security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Message-Locked Encryption (MLE), CE achieves strong tag consistency (STC) security, whereas the faster HCE1, HCE2, and RCE schemes lose STC security; determine whether this performance-versus-STC-security tradeoff is fundamental, so that no faster MLE schemes can retain STC security, or whether faster MLE schemes retaining STC security exist."
+  },
+  "scope": {
+    "domain": "Design of message-locked encryption schemes balancing performance and strong tag consistency.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "CE: MLE construction achieving STC security",
+      "HCE1, HCE2, and RCE: faster MLE constructions that lose STC security"
+    ],
+    "unresolved_remainder": "Whether the performance-versus-STC-security tradeoff is fundamental or faster STC-secure MLE schemes exist."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "message-locked-encryption",
+      "strong-tag-consistency",
+      "secure-deduplication"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Message-Locked Encryption and Secure Deduplication",
+        "locator": "EUROCRYPT 2013, page 5",
+        "doi": "10.1007/978-3-642-38348-9_18",
+        "url": "https://eprint.iacr.org/2012/631",
+        "eprint": "2012/631"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts STC-secure CE with the faster HCE1, HCE2, and RCE schemes, which lose STC security. It explicitly leaves open whether this tradeoff is fundamental or can be overcome.",
+      "citation_labels": [
+        "Mihir Bellare et al., Message-Locked Encryption and Secure Deduplication"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

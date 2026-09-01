@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "concurrent-mitm-authentication-from-weak-prfs",
+  "group_id": "concurrent-mitm-authentication-from-weak-prfs",
+  "title": "Concurrent Man-in-the-Middle Authentication from Weak PRFs",
+  "summary": "The paper achieves sequential man-in-the-middle security, but efficient authentication from generic weak PRFs with concurrent man-in-the-middle security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved task is to construct an efficient authentication scheme from generic weak-PRFs that is secure in the concurrent man-in-the-middle model."
+  },
+  "scope": {
+    "domain": "Authentication schemes from generic weak PRFs under man-in-the-middle security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct an efficient authentication scheme from generic weak PRFs that is secure in the concurrent man-in-the-middle model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "authentication",
+      "weak-prf",
+      "man-in-the-middle"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Man-in-the-Middle Secure Authentication Schemes from LPN and Weak PRFs",
+        "locator": "CRYPTO 2013, page 4",
+        "doi": "10.1007/978-3-642-40084-1_18",
+        "url": "https://eprint.iacr.org/2013/092",
+        "eprint": "2013/092"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2013-01-01",
+      "kind": "source_statement",
+      "summary": "The paper proves only sequential man-in-the-middle security and explicitly presents efficient concurrent security from generic weak PRFs as an interesting open problem.",
+      "citation_labels": [
+        "Vadim Lyubashevsky et al., Man-in-the-Middle Secure Authentication Schemes from LPN and Weak PRFs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
