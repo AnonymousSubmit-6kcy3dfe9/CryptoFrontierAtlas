@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iterated-even-mansour-xrka-round-bounds",
+  "group_id": "iterated-even-mansour-xrka-round-bounds",
+  "title": "Beyond-Birthday XRKA Round Bounds for Iterated Even-Mansour",
+  "summary": "A generic attack requires a master key longer than n bits for beyond-birthday related-key security; the schedule-dependent minimum round count for Iterated Even-Mansour remains conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a $2n$-bit master key, determine whether XRKA security beyond the birthday bound requires at least 6 rounds with a linear key schedule and at least 2 rounds with a nonlinear key schedule."
+  },
+  "scope": {
+    "domain": "XRKA security of iterated Even-Mansour block ciphers with linear or nonlinear key schedules.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: bit-length variable used to define the 2n-bit master-key size",
+      "key-schedule type: linear or nonlinear, determining which conjectured round threshold applies",
+      "round count: proposed minimum needed for security beyond the birthday bound"
+    ],
+    "unresolved_remainder": "Prove or refute the necessity of at least six linear-schedule rounds and at least two nonlinear-schedule rounds for beyond-birthday XRKA security with a 2n-bit master key."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "even-mansour",
+      "related-key-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks",
+        "locator": "EUROCRYPT 2015, page 6",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "url": "https://eprint.iacr.org/2015/069",
+        "eprint": "2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source first notes that a generic attack makes a master key longer than n necessary for beyond-birthday related-key security. It then explicitly conjectures six-round and two-round minima for linear and nonlinear key schedules, respectively, with a 2n-bit master key.",
+      "citation_labels": [
+        "Benoît Cogliati et al., On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

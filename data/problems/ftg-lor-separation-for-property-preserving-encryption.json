@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ftg-lor-separation-for-property-preserving-encryption",
+  "group_id": "ftg-lor-separation-for-property-preserving-encryption",
+  "title": "FtG–LoR Separation for Property-Preserving Encryption",
+  "summary": "A prior FtG–LoR separation used a particular property; it remains open whether the gap persists for natural concrete properties or is merely an artifact of that property.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For property-preserving symmetric encryption, determine whether the separation between the FtG and LoR security notions represents a genuine gap that persists for natural concrete properties, or whether it is an artifact of the particular property used in the prior separation result. In other words, establish whether this separation reflects any real-world difference between the two notions. The unresolved task is to determine whether this separation generalizes to any concrete property of interest; this question is motivated by the absence of a concrete FtG-secure scheme for the property used in that result, leaving open whether the observed separation reflects a genuine distinction between the two notions or merely peculiarities of that specific property."
+  },
+  "scope": {
+    "domain": "Property-preserving symmetric encryption and the relationship between FtG and LoR security notions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Preserved property: the concrete property over which the FtG–LoR separation is assessed"
+    ],
+    "unresolved_remainder": "Determine whether the FtG–LoR separation generalizes to natural concrete properties and reflects a genuine difference rather than an artifact of the property used previously."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "property-preserving-encryption",
+      "security-notions",
+      "separation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Property Preserving Symmetric Encryption Revisited",
+        "locator": "ASIACRYPT 2015, page 3",
+        "doi": "10.1007/978-3-662-48800-3_27",
+        "url": "https://eprint.iacr.org/2013/830",
+        "eprint": "2013/830"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper frames this as an explicit question after noting that the prior separation lacked a concrete FtG-secure scheme for its property. It leaves open whether the separation generalizes to concrete properties of interest.",
+      "citation_labels": [
+        "Sanjit Chatterjee et al., Property Preserving Symmetric Encryption Revisited"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

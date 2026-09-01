@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-state-keyed-sponge-duplex-related-key-security",
+  "group_id": "full-state-keyed-sponge-duplex-related-key-security",
+  "title": "Related-Key Security of Full-State Keyed Sponge and Duplex",
+  "summary": "A known XOR-related-key query pair gives a trivial collision for FKS; a thorough related-key security analysis of full-state keyed Sponge and Duplex remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can full-state keyed Sponge and Duplex constructions, including the full-state keyed Sponge construction $\\text{FKS}$, be given a thorough related-key security analysis when an adversary has access to instances keyed with related keys and knows the XOR relation $\\Delta = K_1 \\oplus K_2$ between two keys? The unresolved task is to characterize security in that model and account for the concrete trivial collision attack in which the adversary queries $\\text{FKS}$ under $K_1$ on $M$ and $\\text{FKS}$ under $K_2$ on $M \\oplus \\Delta$, producing colliding outputs; only informal countermeasures against such trivial attacks are proposed, rather than a thorough related-key treatment."
+  },
+  "scope": {
+    "domain": "Related-key security of full-state keyed Sponge and Duplex constructions, including FKS, in symmetric cryptography.",
+    "assumptions": [
+      "The adversary can access instances keyed by related keys and knows their XOR relation."
+    ],
+    "parameters": [
+      "K₁ and K₂ are the two related keys, and Δ denotes their known XOR relation",
+      "M is the first query input, while M ⊕ Δ is the paired input used in the collision attack"
+    ],
+    "unresolved_remainder": "Develop a thorough security characterization in the related-key model that accounts for the trivial XOR-based collision attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "related-key-security",
+      "sponge-constructions",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security of Full-State Keyed Sponge and Duplex: Applications to Authenticated Encryption",
+        "locator": "ASIACRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-48800-3_19",
+        "url": "https://eprint.iacr.org/2015/541",
+        "eprint": "2015/541"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a concrete trivial collision attack under related keys and proposes only informal countermeasures. It leaves a thorough related-key security treatment outside its scope.",
+      "citation_labels": [
+        "Bart Mennink et al., Security of Full-State Keyed Sponge and Duplex: Applications to Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

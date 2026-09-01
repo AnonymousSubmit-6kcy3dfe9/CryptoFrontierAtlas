@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-round-involutional-sbox-weakness",
+  "group_id": "higher-round-involutional-sbox-weakness",
+  "title": "Higher-Round Weakness of Involutional Sboxes",
+  "summary": "A two-round weakness and a derivable four-round MEDP/MELP bound are known, but whether involutional, especially naive, Sboxes cause a comparable weakness at higher rounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether an involutional, especially naive, Sbox causes a comparable MEDP/MELP weakness for a higher number of rounds."
+  },
+  "scope": {
+    "domain": "Differential and linear cryptanalysis of involutional Sboxes, especially the naive Sbox.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of rounds — distinguishes the two-round behavior and four-round bound from the unresolved higher-round case"
+    ],
+    "unresolved_remainder": "Whether an involutional, especially naive, Sbox causes a comparable MEDP/MELP weakness for a higher number of rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "sboxes",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Behaviors of Affine Equivalent Sboxes Regarding Differential and Linear Attacks",
+        "locator": "EUROCRYPT 2015, page 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "url": "https://eprint.iacr.org/2015/085",
+        "eprint": "2015/085"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents this as another open question, asking whether the two-round weakness of involutional, especially naive, Sboxes persists for more rounds. It notes that the current bound can be combined with (1) to obtain a four-round MEDP and MELP bound.",
+      "citation_labels": [
+        "Anne Canteaut et al., On the Behaviors of Affine Equivalent Sboxes Regarding Differential and Linear Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

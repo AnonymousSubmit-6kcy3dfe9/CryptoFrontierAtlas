@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-cca-security-for-tem-beyond-two-rounds",
+  "group_id": "tight-cca-security-for-tem-beyond-two-rounds",
+  "title": "Tight CCA Security for TEM Beyond Two Rounds",
+  "summary": "Adaptive CCA analysis falls short of the conjectured query threshold; proving tight TEM CCA security for every round count above two remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every $r>2$, establish tight CCA security of $\\operatorname{TEM}[n,r,H]$ up to $q\\approx 2^{rn/(r+1)}$ queries."
+  },
+  "scope": {
+    "domain": "Security bounds for the tweakable Even–Mansour block-cipher construction.",
+    "assumptions": [
+      "The round count r is greater than two."
+    ],
+    "parameters": [
+      "r: round count",
+      "n: size parameter of TEM",
+      "H: parameter of the TEM construction",
+      "q: adversarial query count"
+    ],
+    "unresolved_remainder": "Establish tight CCA security of TEM for every round count above two up to the stated conjectured query level."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "even-mansour",
+      "cca-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweaking Even-Mansour Ciphers",
+        "locator": "CRYPTO 2015, page 7",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "url": "https://eprint.iacr.org/2015/539",
+        "eprint": "2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents tight analysis of TEM for more than two rounds as an open problem and suggests a tight CLRW analysis for the same round range as a simpler first step. The supplied context reports an adaptive CCA bound below the conjectured threshold, which is established only for NCPA.",
+      "citation_labels": [
+        "Benoît Cogliati et al., Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

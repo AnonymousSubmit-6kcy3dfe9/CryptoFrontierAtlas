@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "four-round-aes-integral-to-zero-correlation-hull",
+  "group_id": "four-round-aes-integral-to-zero-correlation-hull",
+  "title": "Converting the 4-Round AES Integral Distinguisher",
+  "summary": "The integral-to-zero-correlation implication holds only for balanced vectorial Boolean functions, while constructing such a hull for four-round AES with extra MixColumns remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the 4-round AES integral distinguisher with an extra MixColumns operation, determine whether it can be converted into a zero-correlation linear hull and, if so, characterize the conditions under which this conversion is valid; otherwise, characterize why the conversion fails for general integral properties. The implication that an integral property unconditionally yields a zero-correlation linear hull is valid only when the integral property is defined as a balanced vectorial Boolean function, and does not hold in the general case. Constructing such a hull from this AES distinguisher is unresolved."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis linking AES integral distinguishers and zero-correlation linear hulls.",
+    "assumptions": [
+      "For the known unconditional implication, the integral property is defined as a balanced vectorial Boolean function."
+    ],
+    "parameters": [
+      "4 rounds — the round count of the target AES integral distinguisher",
+      "Extra MixColumns operation — the additional operation in the target distinguisher"
+    ],
+    "unresolved_remainder": "Determine whether the specified AES integral distinguisher can yield a zero-correlation linear hull and characterize either the conditions enabling the conversion or why it fails for general integral properties."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "zero-correlation",
+      "aes"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Links Among Impossible Differential, Integral and Zero Correlation Linear Cryptanalysis",
+        "locator": "CRYPTO 2015, page 3",
+        "doi": "10.1007/978-3-662-47989-6_5",
+        "url": "https://eprint.iacr.org/2015/181",
+        "eprint": "2015/181"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source restricts the unconditional integral-to-zero-correlation implication to balanced vectorial Boolean functions and states that it fails for general integral properties. It presents the four-round AES distinguisher with extra MixColumns as a case from which no zero-correlation linear hull had been constructed.",
+      "citation_labels": [
+        "Bing Sun et al., Links Among Impossible Differential, Integral and Zero Correlation Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

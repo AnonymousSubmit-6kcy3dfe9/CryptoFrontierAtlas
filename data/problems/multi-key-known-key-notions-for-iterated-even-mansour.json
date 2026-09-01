@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-key-known-key-notions-for-iterated-even-mansour",
+  "group_id": "multi-key-known-key-notions-for-iterated-even-mansour",
+  "title": "Multi-Key Known-Key Notions for Iterated Even–Mansour",
+  "summary": "Single-key known-key indifferentiability is too restrictive; defining and analyzing multi-key indifferentiability and correlation intractability for IEM and ideal-cipher constructions remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the iterated Even--Mansour (IEM) cipher and ideal-cipher constructions, study multi-key known-key indifferentiability by extending the known-key setting to $m_0$ independently random challenge keys $k_1,\\ldots,k_{m_0}$ supplied as input to the construction or distinguisher, and determine the corresponding security notion. Also formulate and analyze the matching challenge-key correlation-intractability notion, requiring that a relation or machine $M$ produce outputs $(\\alpha_1,\\ldots,\\alpha_m)$ involving only the challenge keys $k_1,\\ldots,k_{m_0}$. The unresolved task is to establish these multi-key notions and their consequences for the IEM and ideal-cipher constructions, since the single-key known-key formulation is too restrictive and the study of these proposed notions remains open."
+  },
+  "scope": {
+    "domain": "Multi-key known-key security notions for iterated Even–Mansour and ideal-cipher block-cipher constructions.",
+    "assumptions": [
+      "The challenge keys are independently random."
+    ],
+    "parameters": [
+      "m_0: number of challenge keys supplied as input to the construction or distinguisher",
+      "k_1 through k_{m_0}: independently random challenge keys",
+      "M: relation or machine producing the challenge-key-constrained outputs",
+      "m: number of output components produced by M"
+    ],
+    "unresolved_remainder": "Define and analyze multi-key known-key indifferentiability and matching challenge-key correlation intractability, and determine their consequences for IEM and ideal-cipher constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "known-key-indifferentiability",
+      "correlation-intractability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks",
+        "locator": "EUROCRYPT 2015, page 31",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "url": "https://eprint.iacr.org/2015/069",
+        "eprint": "2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the single-key known-key formulation as too restrictive and sketches multi-key indifferentiability and correlation-intractability variants. It explicitly leaves the study of these notions to future work.",
+      "citation_labels": [
+        "Benoît Cogliati et al., On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

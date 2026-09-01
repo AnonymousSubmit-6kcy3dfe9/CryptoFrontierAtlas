@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-differential-linear-hulls",
+  "group_id": "lowmc-differential-linear-hulls",
+  "title": "Aggregate Differential and Linear Hulls in LowMC",
+  "summary": "No good individual characteristic covers enough LowMC rounds for an attack; whether many can combine into a usable differential or linear hull remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{LowMC}$, it is proved that no good individual differential or linear characteristic covers sufficiently many rounds to be usable as an attack vector. This leaves unresolved whether many characteristics can combine into a good differential or linear hull. Determine whether such an aggregate can cover sufficiently many $\\mathrm{LowMC}$ rounds to be usable as an attack vector."
+  },
+  "scope": {
+    "domain": "Differential and linear cryptanalysis of the LowMC block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of covered LowMC rounds — determines whether an aggregate can be used as an attack vector"
+    ],
+    "unresolved_remainder": "Whether many characteristics can combine into a good differential or linear hull that covers sufficiently many LowMC rounds to be usable as an attack vector."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "lowmc",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 16",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves that no good individual differential or linear characteristic covers enough LowMC rounds to be usable as an attack vector. It leaves aggregation into good differentials or linear hulls unresolved and considers it unlikely given the highly diffusive, random linear layers.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-round-iem-related-key-security-gap",
+  "group_id": "three-round-iem-related-key-security-gap",
+  "title": "Related-Key Security Gap for Three-Round IEM",
+  "summary": "For three-round IEM with a trivial key schedule, proofs and attacks delimit secure and insecure query regions, but related-key security between them remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the three-round Iterated Even-Mansour (IEM) cipher with a trivial key schedule, characterize the security against related-key attacks (XRKA) for query-parameter settings in the region between the boundary covered by the proven-secure results and the boundary for which known attacks establish insecurity. The security of this intermediate region is unresolved, so the task is to determine whether the construction is secure or insecure throughout that region and, if possible, to establish the corresponding security or attack bounds. [S1]"
+  },
+  "scope": {
+    "domain": "Related-key security of the three-round Iterated Even-Mansour block cipher with a trivial key schedule.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Query-parameter settings: locate the unresolved region between the proven-secure and known-insecure boundaries"
+    ],
+    "unresolved_remainder": "Determine whether the construction is secure or insecure throughout the intermediate query-parameter region and, if possible, establish the corresponding security or attack bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key-security",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks",
+        "locator": "EUROCRYPT 2015, page 12",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "url": "https://eprint.iacr.org/2015/069",
+        "eprint": "2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts query parameters covered by security theorems with those ruled out by known attacks, then explicitly states that security between these boundaries remains unknown.",
+      "citation_labels": [
+        "Benoît Cogliati et al., On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "worst-case-involutions-in-affine-equivalent-s-boxes",
+  "group_id": "worst-case-involutions-in-affine-equivalent-s-boxes",
+  "title": "Worst-Case Involutions Among Affine-Equivalent S-Boxes",
+  "summary": "Involutional power permutations are weakest in their affine-equivalence class for every MDS layer; whether every involution is worst for all MDS layers under two-round differential and linear measures remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an affine-equivalence class of S-boxes, determine whether an involution is always the worst choice with respect to the relevant two-round differential and linear security measures, for every MDS linear layer. The established limitation is that involutional power permutations are weakest in their equivalence class for any chosen MDS linear layer, whereas the corresponding result for involutions without a multiplicative-invariant property is known only for some MDS layers. The unresolved task is therefore to determine whether this weakness is more general and whether every involution is always the worst choice in its affine-equivalence class for all MDS linear layers and the stated security measures."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of affine-equivalent involutional S-boxes combined with MDS linear layers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Affine-equivalence class — the class within which S-box choices are compared",
+      "MDS linear layer — the diffusion layer quantified over",
+      "Two-round differential and linear security measures — the criteria defining the worst choice"
+    ],
+    "unresolved_remainder": "Whether every involution is always the worst member of its affine-equivalence class for all MDS linear layers under the stated two-round differential and linear security measures."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "s-boxes",
+      "affine-equivalence",
+      "mds-linear-layers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Behaviors of Affine Equivalent Sboxes Regarding Differential and Linear Attacks",
+        "locator": "EUROCRYPT 2015, page 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "url": "https://eprint.iacr.org/2015/085",
+        "eprint": "2015/085"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes the weakest-in-class property for involutional power permutations with any MDS linear layer and reports it for involutions without a multiplicative-invariant property only for some MDS layers. It asks whether this weakness holds universally.",
+      "citation_labels": [
+        "Anne Canteaut et al., On the Behaviors of Affine Equivalent Sboxes Regarding Differential and Linear Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

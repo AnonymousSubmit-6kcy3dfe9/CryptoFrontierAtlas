@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chi-asasa-dependent-product-distribution",
+  "group_id": "chi-asasa-dependent-product-distribution",
+  "title": "Dependent Products in the χ-Based ASASA Second Differential",
+  "summary": "For χ-based ASASA’s second differential, independence predicts bias one sixteenth but disagrees with experiments; determine the products’ joint distribution under the constant-sum constraint.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the $\\chi$-based ASASA scheme, the second differential contains four bit-product terms whose four inputs sum to a constant. Modeling the four products as independent random binary variables, each zero with probability $3/4$, yields a simplified sum distribution with bias $2^{-4}$; experiments show that this independence model is inaccurate and introduces a significant discrepancy. The unresolved task is to characterize accurately the joint distribution of the four dependent products under the constant-sum constraint, so that the distributional analysis of the second differential is rigorously grounded."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the χ-based ASASA construction.",
+    "assumptions": [
+      "The four inputs to the bit-product terms sum to a constant."
+    ],
+    "parameters": [
+      "Four bit-product terms — dependent binary variables in the second differential",
+      "Probability 3/4 — modeled chance that each product is zero under independence",
+      "Bias one sixteenth — simplified prediction for the sum under independence"
+    ],
+    "unresolved_remainder": "Accurately characterize the joint distribution of the four dependent products under the constant-sum constraint and thereby rigorously ground the second-differential analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "differential-cryptanalysis",
+      "asasa"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Recovery Attacks on ASASA",
+        "locator": "ASIACRYPT 2015, page 13",
+        "doi": "10.1007/978-3-662-48800-3_1",
+        "url": "https://eprint.iacr.org/2015/516",
+        "eprint": "2015/516"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that experiments expose a significant discrepancy in the independent-product approximation because the four inputs sum to a constant. It temporarily disregards this dependence and says it will return to the issue.",
+      "citation_labels": [
+        "Brice Minaud et al., Key-Recovery Attacks on ASASA"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

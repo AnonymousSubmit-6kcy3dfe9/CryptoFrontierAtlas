@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sprout-sat-solver-attack-feasibility",
+  "group_id": "sprout-sat-solver-attack-feasibility",
+  "title": "Practical Feasibility of the SAT-Solver Attack on Sprout",
+  "summary": "The stated estimate exceeds a work factor of two to the eightieth when e is above 23, but the SAT-solver attack's feasibility against full Sprout remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the SAT-solver attack previously given for Sprout constitutes a feasible practical attack on full Sprout under its stated complexity assumptions. The attack is described as requiring $2^{54}$ attempts, with each attempt costing approximately $6.6 \\cdot 2^{54} \\cdot 2^e$ Sprout encryptions; this exceeds $2^{80}$ work when $e>23$. The unresolved task is to establish, either analytically or through practical experimentation, whether the attack can be carried out feasibly against full Sprout under those parameters and assumptions."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis and practical SAT-solver attack evaluation for the Sprout stream cipher.",
+    "assumptions": [
+      "The prior attack's reported complexity model is used to assess practical feasibility."
+    ],
+    "parameters": [
+      "$2^{54}$ attempts — stated number of SAT-solver attack attempts",
+      "$6.6 \\cdot 2^{54} \\cdot 2^e$ Sprout encryptions — approximate cost per attempt",
+      "$e$ — exponent governing the per-attempt cost, with the stated work exceeding $2^{80}$ when $e>23$"
+    ],
+    "unresolved_remainder": "Establish analytically or experimentally whether the attack can be carried out feasibly against full Sprout under the stated parameters and assumptions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "sat-solver-cryptanalysis",
+      "stream-ciphers",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Another Tradeoff Attack on Sprout-Like Stream Ciphers",
+        "locator": "ASIACRYPT 2015, page 2",
+        "doi": "10.1007/978-3-662-48800-3_23"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source summarizes the prior SAT-solver attack's complexity and explicitly questions whether it translates into a feasible attack on Sprout. It leaves that feasibility question unresolved.",
+      "citation_labels": [
+        "Bin Zhang et al., Another Tradeoff Attack on Sprout-Like Stream Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

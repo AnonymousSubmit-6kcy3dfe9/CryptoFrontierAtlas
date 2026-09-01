@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-algebraic-degree-bound-tightness",
+  "group_id": "lowmc-algebraic-degree-bound-tightness",
+  "title": "Tightness of LowMC’s Algebraic-Degree Bound",
+  "summary": "A recursive upper bound limits LowMC’s algebraic-degree growth, but whether every output bit reaches the predicted degree remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "If the recursive bound gives $\\deg(F_r)\\le d$, does every output coordinate of LowMC contain a degree-$d$ monomial?"
+  },
+  "scope": {
+    "domain": "Algebraic and higher-order cryptanalysis of the LowMC block cipher.",
+    "assumptions": [
+      "The recursive bound yields algebraic degree at most d after r rounds."
+    ],
+    "parameters": [
+      "r: the number of LowMC rounds analyzed",
+      "d: the algebraic-degree upper bound produced by the recursion"
+    ],
+    "unresolved_remainder": "Whether every LowMC output coordinate contains a monomial of degree d whenever the recursive bound gives that upper bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "lowmc",
+      "algebraic-cryptanalysis",
+      "higher-order-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 14",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a recursive upper bound and explicitly states the belief that it is tight, or at least close to tight, for LowMC. It expresses this as the conjecture that every output bit contains a term at the predicted degree.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "structured-lowmc-linear-layers",
+  "group_id": "structured-lowmc-linear-layers",
+  "title": "Structured Linear Layers for LowMC",
+  "summary": "Reducing matrix density by several factors of two does not change performance; the open task is to build structured LowMC linear layers and compare them with asymptotically faster methods.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For LowMC-like ciphers, construct linear layers with additional structure that reduce the computational effort of applying the layers when the number of AND gates is no longer the bottleneck, given that merely lowering the matrices' density by several factors of two is insufficient to change performance; then determine whether the structured approach outperforms asymptotically faster linear-algebra techniques for applying linear layers."
+  },
+  "scope": {
+    "domain": "Block-cipher design focused on efficient affine linear layers for LowMC-like ciphers.",
+    "assumptions": [
+      "The number of AND gates is no longer the computational bottleneck."
+    ],
+    "parameters": [
+      "Matrix density — controls the sparsity of the linear-layer matrices",
+      "Linear-layer structure — a design choice intended to reduce the cost of applying the layers"
+    ],
+    "unresolved_remainder": "Construct suitably structured linear layers that reduce computational effort and determine whether they outperform asymptotically faster linear-algebra techniques."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "lowmc",
+      "linear-layers",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this among its open questions for LowMC-like cipher design, noting that reducing matrix density by several factors of two is insufficient and posing both construction and performance-comparison tasks.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

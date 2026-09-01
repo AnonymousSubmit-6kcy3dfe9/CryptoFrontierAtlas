@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "global-optimality-of-midori-cell-permutations",
+  "group_id": "global-optimality-of-midori-cell-permutations",
+  "title": "Global Optimality of Midori Cell Permutations",
+  "summary": "Restricted searches find optimal Midori cell permutations only within row-based and row/column-based classes; global optimality over all 16!",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Midori block cipher's almost-MDS diffusion layer, determine whether a globally optimal permutation of the 16 cells in its $4\\times 4$ state exists or can be characterized among all $16!$ cell permutations, where optimality means maximizing the minimum number of active S-boxes and minimizing the number of diffusion rounds. The available search restricts permutations to reduced row-based and row/column-based classes, identifying optima only within those classes and not establishing global optimality over all $16!$ permutations. The unresolved task is therefore to construct or characterize a globally optimal cell permutation under these criteria."
+  },
+  "scope": {
+    "domain": "Lightweight block-cipher design, specifically cell permutations for Midori's almost-MDS diffusion layer.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "16 cells in a 4-by-4 state—the permutation domain",
+      "16! cell permutations—the global search space",
+      "Minimum number of active S-boxes—the quantity to maximize",
+      "Number of diffusion rounds—the quantity to minimize"
+    ],
+    "unresolved_remainder": "Construct or characterize a globally optimal cell permutation among all 16! possibilities under the active-S-box and diffusion-round criteria."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "diffusion-layers",
+      "permutation-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Midori: A Block Cipher for Low Energy",
+        "locator": "ASIACRYPT 2015, page 14",
+        "doi": "10.1007/978-3-662-48800-3_17"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that exhaustively evaluating all 16! permutations is computationally hard, so it searches reduced row-based and row/column-based classes. It identifies optima within those classes but does not establish global optimality.",
+      "citation_labels": [
+        "Subhadeep Banik et al., Midori: A Block Cipher for Low Energy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aez-kdf-security-properties-and-interface",
+  "group_id": "aez-kdf-security-properties-and-interface",
+  "title": "AEZ KDF Security Properties and Interface",
+  "summary": "AEZ currently derives subkeys from arbitrary-length keys via Extract, but the KDF's required security properties and proper interface remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For AEZ, an arbitrary-length byte-string key $K \\in \\mathrm{Byte}^{*}$ is processed by a key-derivation function named Extract to produce three 16-byte subkeys $(I,J,L)$, with the current interface $\\text{Extract}: \\mathrm{Byte}^{*} \\to \\mathrm{Byte}^{48}$; the definition of Extract is omitted from the AEZ figures and treated as orthogonal to the rest of AEZ. It remains unresolved which security properties a suitable KDF for this arbitrary-length key processing should provide and what interface or signature that KDF should have."
+  },
+  "scope": {
+    "domain": "Key-derivation design for the AEZ authenticated-encryption construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K: arbitrary-length byte-string input key",
+      "Extract: key-derivation function producing the subkeys",
+      "I, J, and L: three 16-byte derived subkeys"
+    ],
+    "unresolved_remainder": "Determine the security properties a suitable KDF should provide and its appropriate interface or signature."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "key-derivation",
+      "authenticated-encryption",
+      "aez"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Robust Authenticated-Encryption AEZ and the Problem That It Solves",
+        "locator": "EUROCRYPT 2015, page 17",
+        "doi": "10.1007/978-3-662-46800-5_2",
+        "url": "https://eprint.iacr.org/2014/793",
+        "eprint": "2014/793"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper omits Extract's definition from the AEZ figures as orthogonal to the rest of the construction and records its current arbitrary-length-input, 48-byte-output interface. It explicitly states that a good KDF's security properties and even its signature are unresolved.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Robust Authenticated-Encryption AEZ and the Problem That It Solves"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

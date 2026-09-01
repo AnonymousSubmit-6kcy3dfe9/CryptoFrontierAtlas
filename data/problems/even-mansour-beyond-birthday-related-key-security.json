@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-mansour-beyond-birthday-related-key-security",
+  "group_id": "even-mansour-beyond-birthday-related-key-security",
+  "title": "Beyond-Birthday Related-Key Security for Even–Mansour",
+  "summary": "A two-round Even–Mansour construction is secure against a restricted XOR-related-key family, but beyond-birthday security against the full family remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an Even--Mansour cipher and prove security beyond the birthday bound against the full $\\Phi_{\\oplus}$ class of related-key attacks. A known partial result proves security for a two-round Even--Mansour construction against $\\Phi_{2-\\oplus}$-related-key attacks, but does not establish beyond-birthday security against full-fledged $\\Phi_{\\oplus}$-related-key attacks."
+  },
+  "scope": {
+    "domain": "Block-cipher design and related-key security for Even–Mansour constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count — two rounds characterize the known partial construction",
+      "Related-key family — a restricted XOR-offset family is covered by the partial result, while the full XOR-offset class is the target"
+    ],
+    "unresolved_remainder": "Construct an Even–Mansour cipher and prove security beyond the birthday bound against the full Φ⊕ class of related-key attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key-attacks",
+      "beyond-birthday"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweaking Even-Mansour Ciphers",
+        "locator": "CRYPTO 2015, page 6",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "url": "https://eprint.iacr.org/2015/539",
+        "eprint": "2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents its restricted two-round security result as a partial solution to an open problem and says it falls short of beyond-birthday security against the full Φ⊕ related-key class.",
+      "citation_labels": [
+        "Benoît Cogliati et al., Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-mixing-even-mansour-beyond-birthday",
+  "group_id": "linear-mixing-even-mansour-beyond-birthday",
+  "title": "Beyond-Birthday Security with Linear Even–Mansour Mixing",
+  "summary": "TEM uses AXU masking for tweakable security; whether linear key-and-tweak mixing can instead achieve beyond-birthday security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Because implementing an AXU hash-function family may be costly, determine whether there exists an Even--Mansour-like tweakable construction that mixes the key and tweak into its state using only linear operations and achieves provable security beyond the birthday bound, or whether such linear mixing is insufficient."
+  },
+  "scope": {
+    "domain": "Design and provable security of tweakable Even–Mansour-like block ciphers using linear state mixing.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "key and tweak — inputs mixed into the construction state",
+      "birthday bound — security threshold to be exceeded"
+    ],
+    "unresolved_remainder": "Whether linear key-and-tweak state mixing suffices for provable security beyond the birthday bound or is insufficient."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "tweakable-block-ciphers",
+      "beyond-birthday-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweaking Even-Mansour Ciphers",
+        "locator": "CRYPTO 2015, page 7",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "url": "https://eprint.iacr.org/2015/539",
+        "eprint": "2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents linear state mixing as an implementation-motivated alternative to an AXU hash-function family. It leaves open whether that alternative suffices for security beyond the birthday bound.",
+      "citation_labels": [
+        "Benoît Cogliati et al., Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

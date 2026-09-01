@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-transformed-variable-bound",
+  "group_id": "lowmc-transformed-variable-bound",
+  "title": "Tighter Variable-Set Bound for the LowMC Interpolation Attack",
+  "summary": "The analysis bounds the transformed-variable set by the original set and approximates the parameter e by the size of W; a tighter bound is needed to sharpen attack complexity.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the optimized interpolation attack on LowMC, derive a tighter general upper bound for the size of the transformed-variable set $U^{\\prime\\prime}$ than the currently used bound $|U^{\\prime\\prime}| \\leq |U|$, and use that bound to sharpen the attack's data, time, and memory complexity. The existing analysis lacks a good bound for $|U^{\\prime\\prime}|$, replaces it by $|U|$, and assumes $e \\approx |W|$; the refined bound should therefore state the necessary conditions on $U^{\\prime\\prime}$, $e$, $W$, and the other attack parameters under which the resulting complexity expressions improve."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis and resource analysis of the optimized interpolation attack on LowMC.",
+    "assumptions": [
+      "The existing analysis assumes that e is approximately the cardinality of W."
+    ],
+    "parameters": [
+      "U'': the transformed-variable set whose size is to be bounded",
+      "U: the original variable set furnishing the current upper bound",
+      "e and W: attack quantities related by the existing approximation and used in the complexity expressions"
+    ],
+    "unresolved_remainder": "Derive a tighter general upper bound for the size of U'' and state the parameter conditions under which it improves the attack's data, time, and memory complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "lowmc",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Optimized Interpolation Attacks on LowMC",
+        "locator": "ASIACRYPT 2015, page 18",
+        "doi": "10.1007/978-3-662-48800-3_22",
+        "url": "https://eprint.iacr.org/2015/418",
+        "eprint": "2015/418"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that no good general bound for the transformed-variable set is available, so its size is replaced by that of U and e is approximated by the size of W. Refining the bound and the resulting complexity analysis remains unresolved.",
+      "citation_labels": [
+        "Itai Dinur et al., Optimized Interpolation Attacks on LowMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

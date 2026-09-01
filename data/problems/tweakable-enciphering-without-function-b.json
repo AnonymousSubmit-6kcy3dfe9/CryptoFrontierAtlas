@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweakable-enciphering-without-function-b",
+  "group_id": "tweakable-enciphering-without-function-b",
+  "title": "Security Proof for the Variant Without Function b",
+  "summary": "Function b simplifies the existing proof, and no attack is known without it beyond necessary bottom-layer tweak handling; whether the proof extends to this variant remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the inverse-free single-keyed tweakable enciphering scheme, determine whether the security proof can be extended to a variant that omits the function $b$ wherever possible while retaining $b$ for the necessary handling of the tweak in the bottom layer. The function $b$ simplifies the security proof, and no attack is known for the variant without $b$ apart from the necessary bottom-layer tweak handling; establishing such an extension remains unresolved."
+  },
+  "scope": {
+    "domain": "Security proofs for inverse-free single-keyed tweakable enciphering schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Function b: a proof-simplifying scheme component required for tweak handling in the bottom layer"
+    ],
+    "unresolved_remainder": "Whether the existing security proof extends when function b is omitted everywhere except in bottom-layer tweak handling."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "tweakable-enciphering",
+      "block-ciphers",
+      "security-proofs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Inverse-Free Single-Keyed Tweakable Enciphering Scheme",
+        "locator": "ASIACRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-48800-3_7",
+        "url": "https://eprint.iacr.org/2015/1148",
+        "eprint": "2015/1148"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks whether its proof extends to the variant without function b. It notes that b simplifies the proof and that no attack is known when b is otherwise omitted, while its bottom-layer use remains necessary.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., An Inverse-Free Single-Keyed Tweakable Enciphering Scheme"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

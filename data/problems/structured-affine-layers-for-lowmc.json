@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "structured-affine-layers-for-lowmc",
+  "group_id": "structured-affine-layers-for-lowmc",
+  "title": "Structured Affine Layers for LowMC",
+  "summary": "Random LowMC linear layers have good expected properties but retain an unlucky-instance risk; it remains open whether structured layers can remove it while nearing random-layer characteristic bounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "LowMC uses random linear layers with good expected properties, but random selection leaves a small probability of an unlucky instance; an analysis quantifies this risk, with a threshold of $2^{-100}$ for concrete instantiations. Determine what can be achieved by imposing structure on LowMC's affine layers, for example through constructions based on linear codes. In particular, investigate whether concrete structured layers can eliminate the chance of unlucky choices while approaching the random-layer bounds on the probabilities of linear or differential characteristics, a simultaneous outcome conjectured to be unlikely."
+  },
+  "scope": {
+    "domain": "Block-cipher design, specifically structured affine layers for LowMC and their linear and differential characteristic behavior.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "2⁻¹⁰⁰: threshold for the quantified unlucky-choice risk in concrete instantiations"
+    ],
+    "unresolved_remainder": "Determine whether concrete structured affine layers, potentially based on linear codes, can eliminate unlucky choices while approaching random-layer bounds on linear or differential characteristic probabilities."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "lowmc",
+      "block-ciphers",
+      "linear-layers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source poses an explicit question about adding structure to LowMC's affine layers and suggests linear-code constructions. It conjectures that removing unlucky choices while approaching the random-layer characteristic bounds is unlikely.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

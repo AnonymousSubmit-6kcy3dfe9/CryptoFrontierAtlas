@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extending-gsd-reductions-to-directed-acyclic-graphs",
+  "group_id": "extending-gsd-reductions-to-directed-acyclic-graphs",
+  "title": "Extending GSD Reductions to Directed Acyclic Graphs",
+  "summary": "A quasipolynomial GSD security reduction is known for trees; whether it extends to arbitrary directed acyclic graphs, or why it cannot, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the generalized selective decryption (GSD) setting, a quasipolynomial reduction is known from the GSD game on trees to the security of the underlying symmetric encryption scheme. The unresolved task is to determine whether this reduction extends from trees to arbitrary directed acyclic graphs, or to explain why such an extension is impossible."
+  },
+  "scope": {
+    "domain": "Security reductions for generalized selective decryption on trees and directed acyclic graphs.",
+    "assumptions": [
+      "Security of the underlying symmetric encryption scheme"
+    ],
+    "parameters": [
+      "Graph class — trees define the established case, while arbitrary directed acyclic graphs define the target extension"
+    ],
+    "unresolved_remainder": "Determine whether the quasipolynomial reduction extends to arbitrary directed acyclic graphs, or explain why such an extension is impossible."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "generalized-selective-decryption",
+      "security-reductions",
+      "directed-acyclic-graphs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Quasipolynomial Reduction for Generalized Selective Decryption on Trees",
+        "locator": "CRYPTO 2015, page 20",
+        "doi": "10.1007/978-3-662-47989-6_29",
+        "url": "https://eprint.iacr.org/2016/389",
+        "eprint": "2016/389"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a quasipolynomial reduction for trees and explicitly asks whether it can be extended to general directed acyclic graphs or whether such an extension is impossible.",
+      "citation_labels": [
+        "Georg Fuchsbauer et al., A Quasipolynomial Reduction for Generalized Selective Decryption on Trees"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

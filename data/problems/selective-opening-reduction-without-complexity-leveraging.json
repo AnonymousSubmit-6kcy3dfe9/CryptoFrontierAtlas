@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "selective-opening-reduction-without-complexity-leveraging",
+  "group_id": "selective-opening-reduction-without-complexity-leveraging",
+  "title": "Selective-Opening Reduction Without Complexity Leveraging",
+  "summary": "No reduction from selective-opening security for correlated messages to IND-CPA security is known without complexity leveraging; finding one remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can selective-opening security for correlated messages be reduced to IND-CPA security without complexity leveraging?"
+  },
+  "scope": {
+    "domain": "Security reductions for correlated messages encrypted under different keys with adaptive key corruption.",
+    "assumptions": [
+      "The underlying encryption scheme satisfies IND-CPA security."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove a reduction from selective-opening security to IND-CPA security that avoids complexity leveraging."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "selective-opening",
+      "ind-cpa",
+      "security-reductions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Quasipolynomial Reduction for Generalized Selective Decryption on Trees",
+        "locator": "CRYPTO 2015, page 20",
+        "doi": "10.1007/978-3-662-47989-6_29",
+        "url": "https://eprint.iacr.org/2016/389",
+        "eprint": "2016/389"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a notoriously hard problem and states that no reduction to IND-CPA security avoiding complexity leveraging is known.",
+      "citation_labels": [
+        "Georg Fuchsbauer et al., A Quasipolynomial Reduction for Generalized Selective Decryption on Trees"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

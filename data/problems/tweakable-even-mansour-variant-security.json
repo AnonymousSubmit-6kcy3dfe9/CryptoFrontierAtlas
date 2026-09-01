@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweakable-even-mansour-variant-security",
+  "group_id": "tweakable-even-mansour-variant-security",
+  "title": "Security of Tweakable Even–Mansour Variants",
+  "summary": "Traditional two-round variants have been studied; determine the security of tweakable Even–Mansour constructions with permutation reuse, non-independent round keys, or both.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Variants with permutation reuse or non-independent round keys have been studied for the traditional two-round iterated Even--Mansour cipher, but their security remains to be determined for tweakable Even--Mansour constructions. Determine the security of tweakable variants that reuse the same permutation across rounds, use non-independent round keys, or impose both conditions."
+  },
+  "scope": {
+    "domain": "Security analysis of tweakable Even–Mansour block-cipher constructions with permutation reuse and non-independent round keys.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Permutation usage across rounds: whether the same permutation is reused",
+      "Round-key dependence: whether round keys are non-independent"
+    ],
+    "unresolved_remainder": "Determine the security of tweakable variants with permutation reuse, non-independent round keys, or both conditions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "tweakable-block-ciphers",
+      "security-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweaking Even-Mansour Ciphers",
+        "locator": "CRYPTO 2015, page 7",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "url": "https://eprint.iacr.org/2015/539",
+        "eprint": "2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists these variants among its open problems and points to their prior study for the traditional two-round iterated Even–Mansour cipher, leaving their security in the tweakable setting unresolved.",
+      "citation_labels": [
+        "Benoît Cogliati et al., Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

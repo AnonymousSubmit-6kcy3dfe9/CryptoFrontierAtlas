@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweakable-even-mansour-h-coefficients-beyond-two-rounds",
+  "group_id": "tweakable-even-mansour-h-coefficients-beyond-two-rounds",
+  "title": "H-Coefficients Analysis for Tweakable Even–Mansour Beyond Two Rounds",
+  "summary": "An H-coefficients analysis is known for the two-round tweakable Even–Mansour construction, but extending it to every larger round count remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish an H-coefficients security analysis for the tweakable Even--Mansour construction with every number of rounds $r>2$, extending the two-round analysis."
+  },
+  "scope": {
+    "domain": "Block-cipher security analysis for the tweakable Even–Mansour construction using the H-coefficients technique.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count r, determining the number of construction rounds"
+    ],
+    "unresolved_remainder": "Establish an H-coefficients security analysis for every round count greater than two."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "even-mansour",
+      "h-coefficients"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweaking Even-Mansour Ciphers",
+        "locator": "CRYPTO 2015, page 5",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "url": "https://eprint.iacr.org/2015/539",
+        "eprint": "2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a two-round H-coefficients analysis and explicitly reports that the proof could not be extended beyond two rounds. It uses an asymptotic coupling-based analysis instead.",
+      "citation_labels": [
+        "Benoît Cogliati et al., Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

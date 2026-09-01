@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-security-in-related-key-and-keyless-settings",
+  "group_id": "lowmc-security-in-related-key-and-keyless-settings",
+  "title": "LowMC Security in Related-Key and Keyless Settings",
+  "summary": "Security is not claimed for LowMC or its variants under related-key attacks or in the listed keyless hash constructions; determine their security in these settings.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of $\\mathrm{LowMC}$ and its variants in use cases for which security is not claimed: against related-key attacks and in keyless constructions, including block-cipher-based compression functions or hash functions and sponge-based hash functions."
+  },
+  "scope": {
+    "domain": "Security analysis of the LowMC block cipher and its variants in related-key and keyless construction settings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine their security against related-key attacks and in block-cipher-based compression or hash functions and sponge-based hash functions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "lowmc",
+      "related-key-attacks",
+      "keyless-hashing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly lists these uses among its open questions and states that it makes no security claim for them. Security in the related-key and keyless-construction settings remains to be determined.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

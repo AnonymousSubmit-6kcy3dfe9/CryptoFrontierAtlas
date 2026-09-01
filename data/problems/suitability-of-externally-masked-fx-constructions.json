@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "suitability-of-externally-masked-fx-constructions",
+  "group_id": "suitability-of-externally-masked-fx-constructions",
+  "title": "Suitability of Externally Masked FX Constructions",
+  "summary": "Generic tradeoffs weaken externally masked FX designs, while key-schedule integration improves resistance; whether FX remains suitable for new block ciphers is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the FX-construction remains an appropriate basis for new block-cipher designs when its masking keys are external to the core cipher's key schedule, given that generic time-memory-data tradeoffs can reduce the effective key size and enable online key-recovery attacks on designs such as PRINCE and PRIDE with semi-practical complexities. The unresolved task is to establish whether these vulnerabilities make externally masked FX-constructions unsuitable for new designs, or whether integrating the masking keys into the core cipher's key schedules provides a generally adequate security improvement with little overhead against such generic attacks."
+  },
+  "scope": {
+    "domain": "Block-cipher design and generic cryptanalysis of FX-constructions with external or key-schedule-integrated masking keys.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Masking-key placement: external to or integrated into the core cipher's key schedule",
+      "Time, memory, and data: attack resources involved in the generic tradeoffs"
+    ],
+    "unresolved_remainder": "Whether generic vulnerabilities rule out externally masked FX-constructions for new designs, or whether integrating masking keys into core key schedules is a generally adequate low-overhead defense."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "fx-construction",
+      "block-cipher-design",
+      "time-memory-data-tradeoffs"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalytic Time-Memory-Data Tradeoffs for FX-Constructions with Applications to PRINCE and PRIDE",
+        "locator": "EUROCRYPT 2015, page 5",
+        "doi": "10.1007/978-3-662-46800-5_10",
+        "url": "https://eprint.iacr.org/2014/656",
+        "eprint": "2014/656"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents generic time-memory-data tradeoffs that reduce effective key size and enable semi-practical online key recovery against PRINCE and PRIDE. It then gives a key-schedule integration tweak and uses these findings to question FX in new designs.",
+      "citation_labels": [
+        "Itai Dinur et al., Cryptanalytic Time-Memory-Data Tradeoffs for FX-Constructions with Applications to PRINCE and PRIDE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

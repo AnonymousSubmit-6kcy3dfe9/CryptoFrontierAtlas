@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-bounds-full-aes-six-round-feistel-networks",
+  "group_id": "tighter-bounds-full-aes-six-round-feistel-networks",
+  "title": "Tighter Bounds for Full-AES Six-Round Feistel Networks",
+  "summary": "For block parameters of at least 64, exhaustive AES key search remains the fastest known attack, but security bounds beyond current small-query restrictions remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For six-round Feistel networks $\\operatorname{Feistel}[6,n]$ whose round functions are instantiated from full AES, and for block parameter $n \\ge 64$, determine tighter provable security bounds that remove or substantially relax the small-query restrictions imposed by the existing analysis. The unresolved bounds should better reflect the observation that the fastest known attack in this setting remains exhaustive key search on AES, rather than the restrictive limitations of that analysis."
+  },
+  "scope": {
+    "domain": "Provable security of six-round Feistel networks with round functions instantiated from full AES.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: block parameter, considered for values at least 64"
+    ],
+    "unresolved_remainder": "Prove tighter security bounds that remove or substantially relax the existing small-query restrictions and better reflect the fastest known attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "feistel-networks",
+      "aes",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Robust Authenticated-Encryption AEZ and the Problem That It Solves",
+        "locator": "EUROCRYPT 2015, page 19",
+        "doi": "10.1007/978-3-662-46800-5_2",
+        "url": "https://eprint.iacr.org/2014/793",
+        "eprint": "2014/793"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper portrays the existing small-query restrictions as artifacts of the analysis rather than the network's actual security. For full-AES round functions and block parameter at least 64, it contrasts those restrictions with exhaustive AES key search as the fastest known attack.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Robust Authenticated-Encryption AEZ and the Problem That It Solves"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

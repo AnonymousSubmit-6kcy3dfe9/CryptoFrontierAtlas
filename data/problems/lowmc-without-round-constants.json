@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-without-round-constants",
+  "group_id": "lowmc-without-round-constants",
+  "title": "Security of LowMC Without Round Constants",
+  "summary": "Distinct random linear layers appear sufficient to break LowMC’s symmetries, and no attack motivating round constants is known; whether omitting them preserves security without loss remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "LowMC uses a distinct random linear-layer matrix $L_{\\mathrm{matrix}}[i]$ in each round and also applies a distinct round constant through $\\operatorname{ConstantAddition}(i)$. The distinct linear layers appear sufficient to break symmetries, and no attack motivating the round constants is known. Determine whether omitting $\\operatorname{ConstantAddition}(i)$ preserves LowMC's security, potentially with no security loss relative to LowMC with round constants."
+  },
+  "scope": {
+    "domain": "Security of the LowMC block cipher when distinct random linear layers are retained but round-constant addition is omitted.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "i: round index selecting the round-specific linear layer and constant-addition step",
+      "L_matrix[i]: distinct random linear-layer matrix used in round i",
+      "ConstantAddition(i): round-constant addition step considered for omission"
+    ],
+    "unresolved_remainder": "Whether LowMC without ConstantAddition(i) remains secure, potentially with no security loss relative to LowMC with round constants."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "lowmc",
+      "round-constants"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source says distinct random linear layers seem sufficient to break symmetries and reports no known attack motivating round constants. It explicitly asks whether LowMC remains secure, perhaps equally so, when ConstantAddition is removed.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

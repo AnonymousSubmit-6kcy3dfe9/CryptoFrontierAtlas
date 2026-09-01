@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sequentially-indifferentiable-block-cipher-linear-simulator",
+  "group_id": "sequentially-indifferentiable-block-cipher-linear-simulator",
+  "title": "Sequentially Indifferentiable Block Cipher with Linear Simulation",
+  "summary": "The four-round IEM construction is sequentially indifferentiable but uses a quadratic-query simulator; finding a linear-query construction with optimal chosen-key resistance remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a block cipher from an underlying primitive such as a random oracle or a small set of random permutations, with the construction being sequentially indifferentiable from an ideal cipher and having a simulator whose query complexity is linear. The unresolved goal is additionally required to yield optimal resistance to chosen-key attacks, which the stated composition result says would follow from the requested sequential indifferentiability and linear simulator complexity."
+  },
+  "scope": {
+    "domain": "Block-cipher design from idealized primitives, with security measured by sequential indifferentiability and chosen-key resistance.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Underlying primitive: a random oracle or a small set of random permutations used to construct the block cipher",
+      "Simulator query complexity: the resource measure required to be linear"
+    ],
+    "unresolved_remainder": "Construct a block cipher that is sequentially indifferentiable from an ideal cipher with linear simulator query complexity, so that the composition result yields optimal chosen-key resistance."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "sequential-indifferentiability",
+      "chosen-key-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks",
+        "locator": "EUROCRYPT 2015, page 6",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "url": "https://eprint.iacr.org/2015/069",
+        "eprint": "2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents its sequentially indifferentiable four-round IEM construction, whose simulator has quadratic query complexity, as falling short of the desired chosen-key guarantee. It explicitly asks for linear simulator complexity and states that its composition theorem would then imply optimal chosen-key resistance.",
+      "citation_labels": [
+        "Benoît Cogliati et al., On the Provable Security of the Iterated Even-Mansour Cipher Against Related-Key and Chosen-Key Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

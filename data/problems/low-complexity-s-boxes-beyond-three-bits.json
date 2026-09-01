@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "low-complexity-s-boxes-beyond-three-bits",
+  "group_id": "low-complexity-s-boxes-beyond-three-bits",
+  "title": "Low-Depth, Low-Complexity S-Boxes Beyond Three Bits",
+  "summary": "The AND depth and multiplicative complexity of cipher constructions remain poorly understood; construct and characterize larger-than-three-bit S-boxes with low values for either or both.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For S-boxes larger than three bits, construct and characterize designs with low $\\operatorname{AND}$ depth, low multiplicative complexity, or both. The broader gap is that the $\\operatorname{AND}$ depth and multiplicative complexity of cipher constructions are currently poorly understood."
+  },
+  "scope": {
+    "domain": "Design and analysis of nonlinear S-box components for cipher constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "S-box size: restricted to more than three bits",
+      "AND depth: circuit-depth efficiency measure to keep low",
+      "Multiplicative complexity: circuit-complexity measure to keep low"
+    ],
+    "unresolved_remainder": "Construct and characterize S-boxes larger than three bits with low AND depth, low multiplicative complexity, or both, and improve the broader understanding of these measures for cipher constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "and-depth",
+      "multiplicative-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents larger-than-three-bit S-boxes with low AND depth or low multiplicative complexity as an interesting research direction. It notes that both measures are poorly understood for cipher constructions.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "posterior-key-distributions-and-enumeration-complexity",
+  "group_id": "posterior-key-distributions-and-enumeration-complexity",
+  "title": "Posterior-Key Distributions and Side-Channel Enumeration Complexity",
+  "summary": "Mutual information does not determine how leakage aids key enumeration; the open task is to characterize joint complexity from the full posterior-key distribution.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For divide-and-conquer side-channel attacks that combine leakage measurements with brute-force key enumeration, characterize how the full posterior distribution over candidate keys determines the adversary's combined measurement and enumeration complexity, since mutual information alone does not capture how measurements and computation combine or determine enumeration usefulness. The characterization should explain the joint complexity of exploiting both resources, including cases where attacks have equal success probability but different posterior-key distributions."
+  },
+  "scope": {
+    "domain": "Complexity analysis of divide-and-conquer side-channel attacks combining leakage measurements with brute-force key enumeration.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Posterior distribution over candidate keys — governs the usefulness of enumeration",
+      "Leakage measurements — measurement resource used by the adversary",
+      "Brute-force key enumeration — computational resource used by the adversary"
+    ],
+    "unresolved_remainder": "A general characterization of how the full posterior-key distribution determines joint measurement and enumeration complexity beyond what mutual information captures."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "key-enumeration",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Making Masking Security Proofs Concrete - Or How to Evaluate the Security of Any Leaking Device",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_16",
+        "url": "https://eprint.iacr.org/2015/119",
+        "eprint": "2015/119"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source illustrates the issue with attacks having equal success probability but different posterior-key distributions, showing that mutual information does not determine enumeration usefulness. It provides heuristic or pessimistic MIM- and NAMI-based bounds but leaves the general joint-complexity characterization unresolved.",
+      "citation_labels": [
+        "Alexandre Duc et al., Making Masking Security Proofs Concrete - Or How to Evaluate the Security of Any Leaking Device"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

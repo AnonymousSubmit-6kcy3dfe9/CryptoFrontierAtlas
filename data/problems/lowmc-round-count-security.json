@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-round-count-security",
+  "group_id": "lowmc-round-count-security",
+  "title": "Security of the LowMC Round Count",
+  "summary": "LowMC's selected round count is supported by available analysis but has no added security margin; determine whether it is insufficient or can be reduced while preserving target security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{LowMC}$, a round-selection approach assigns a round count $r$ for any specified number of S-boxes per round, block size, and security level; the available analysis suggests that this count is secure, but it includes no additional security margin. Determine whether any attack vector shows that $r$ rounds are insufficient for the targeted security level or, conversely, whether $\\mathrm{LowMC}$ can use fewer rounds while retaining that level, thereby further reducing $\\mathrm{MC}$ and $\\mathrm{ANDdepth}$."
+  },
+  "scope": {
+    "domain": "Cryptanalysis and round-count optimization for the LowMC block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: selected number of LowMC rounds",
+      "number of S-boxes per round: round-selection input",
+      "block size: round-selection input",
+      "security level: target round-selection input",
+      "MC and ANDdepth: costs reduced by using fewer rounds"
+    ],
+    "unresolved_remainder": "Whether an attack makes the selected round count insufficient for the targeted security level, or fewer rounds retain that level while further reducing MC and ANDdepth."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "lowmc",
+      "block-cipher",
+      "cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 21",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source says its analysis supports the selected round count and deliberately adds no security margin. It then explicitly asks whether an attack invalidates that count or secure round reduction is possible.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

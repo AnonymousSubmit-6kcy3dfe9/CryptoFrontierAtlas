@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-multiplications-for-secure-block-ciphers",
+  "group_id": "minimum-multiplications-for-secure-block-ciphers",
+  "title": "Minimum Multiplicative Complexity of a Secure Block Cipher",
+  "summary": "Prior efficiency-focused designs did not minimize multiplicative complexity; the minimum multiplication count for a secure block cipher remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Earlier efforts toward low-multiplicative-complexity symmetric primitives focused on cost and performance under side-channel-attack countermeasures and did not minimize the multiplication count to the desired extent. In the Boolean-circuit model, with multiplicative complexity measured by the number of multiplications in $\\mathrm{GF}(2)$, determine the minimum such number required to build a secure block cipher."
+  },
+  "scope": {
+    "domain": "Design of secure block ciphers with low multiplicative complexity in Boolean circuits.",
+    "assumptions": [
+      "The block cipher is represented in the Boolean-circuit model."
+    ],
+    "parameters": [
+      "Number of multiplications in GF(2): the multiplicative-complexity measure to minimize"
+    ],
+    "unresolved_remainder": "Determine the minimum number of GF(2) multiplications required to build a secure block cipher."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "multiplicative-complexity",
+      "boolean-circuits"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciphers for MPC and FHE",
+        "locator": "EUROCRYPT 2015, page 2",
+        "doi": "10.1007/978-3-662-46800-5_17",
+        "url": "https://eprint.iacr.org/2016/687",
+        "eprint": "2016/687"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly frames this as a motivating question after noting that prior side-channel-oriented work did not reduce multiplicative complexity far enough. It establishes neither a global minimum nor a matching lower bound.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Ciphers for MPC and FHE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

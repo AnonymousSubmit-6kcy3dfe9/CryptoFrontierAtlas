@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "average-capacity-key-fraction-conjecture",
+  "group_id": "average-capacity-key-fraction-conjecture",
+  "title": "Average-Capacity Key Fraction Conjecture",
+  "summary": "In the Gamma-modeled setting, illustrative ratios are below one half, but it remains open whether fewer than half of the keys have at least average capacity.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the Gamma-modeled multidimensional linear-attack setting, let $K$ be the whole key space, let $C(k)$ denote the capacity associated with key $k$, and let $E_k[C(k)]$ denote the average capacity. The unresolved conjecture is whether fewer than half of the keys have capacity at least the average, namely whether $\\left|\\{k^* \\in K : C(k^*) \\ge E_k[C(k)]\\}\\right| < \\frac{1}{2}|K|$; the task is to prove or refute this claim."
+  },
+  "scope": {
+    "domain": "The problem concerns Gamma-modeled multidimensional linear cryptanalysis with key-dependent attack capacity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K: the whole key space",
+      "k: a key",
+      "C(k): the capacity associated with key k",
+      "E_k[C(k)]: the average capacity"
+    ],
+    "unresolved_remainder": "Prove or refute that the number of keys whose capacity is at least the average is less than half the size of the whole key space."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "multidimensional-linear-attack",
+      "key-capacity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Capacity and Data Complexity in Multidimensional Linear Attack",
+        "locator": "CRYPTO 2015, page 12",
+        "doi": "10.1007/978-3-662-47989-6_7",
+        "url": "https://eprint.iacr.org/2016/051",
+        "eprint": "2016/051"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the statement explicitly as Conjecture 1 and gives numerical ratios as illustrations. It provides no proof or refutation.",
+      "citation_labels": [
+        "Jialin Huang et al., Capacity and Data Complexity in Multidimensional Linear Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
