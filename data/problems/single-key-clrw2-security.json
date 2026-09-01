@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-key-clrw2-security",
+  "group_id": "single-key-clrw2-security",
+  "title": "Security of Single-Key CLRW2",
+  "summary": "No attack is known on CLRW2 when its two underlying blockcipher keys are equal; prove the variant secure or find an attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the CLRW2 construction, investigate the single-key variant in which its two underlying blockcipher keys are identified, $K_2=K_1$: either establish the security of this variant or find an attack against it. No attack is known for this variant, but adapting the existing proof is non-trivial because the bound on $\\beta_1$ requires tracing the game execution history to determine when $\\pi_1$ becomes defined, and this becomes more difficult to verify when $\\pi_2=\\pi_1$."
+  },
+  "scope": {
+    "domain": "Security analysis of the single-key CLRW2 tweakable-blockcipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K1 and K2: the two underlying blockcipher keys, constrained to be equal"
+    ],
+    "unresolved_remainder": "Establish the security of the equal-key CLRW2 variant or find an attack against it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "block-cipher-security",
+      "cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Blockciphers with Beyond Birthday-Bound Security",
+        "locator": "CRYPTO 2012, page 12",
+        "doi": "10.1007/978-3-642-32009-5_2",
+        "url": "https://eprint.iacr.org/2012/450",
+        "eprint": "2012/450"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the equal-key CLRW2 variant as future work, reports no known attack, and says adapting the proof is non-trivial because tracking when π1 becomes defined is harder when π2 equals π1.",
+      "citation_labels": [
+        "Will Landecker et al., Tweakable Blockciphers with Beyond Birthday-Bound Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

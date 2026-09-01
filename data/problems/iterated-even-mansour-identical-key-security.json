@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iterated-even-mansour-identical-key-security",
+  "group_id": "iterated-even-mansour-identical-key-security",
+  "title": "Security of Iterated Even-Mansour with Identical Keys",
+  "summary": "The all-identical-key iterated Even-Mansour variant is practically appealing, but its security remains to be determined.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of the iterated Even-Mansour cipher in the practically appealing variant where all whitening and round keys are identical, $k_0=\\cdots=k_t$. The supplied evidence identifies this all-identical-key variant as an unresolved direction of research."
+  },
+  "scope": {
+    "domain": "Security analysis of the all-identical-key iterated Even-Mansour block-cipher variant.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "k_0 through k_t: the whitening and round keys, all required to be identical"
+    ],
+    "unresolved_remainder": "Determine the security of the all-identical-key iterated Even-Mansour variant."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "block-ciphers",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Asymptotically Tight Security Analysis of the Iterated Even-Mansour Cipher",
+        "locator": "ASIACRYPT 2012, page 5",
+        "doi": "10.1007/978-3-642-34961-4_18"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper singles out the all-identical-key variant as practically appealing and says that it remains an interesting direction of research.",
+      "citation_labels": [
+        "Rodolphe Lampe et al., An Asymptotically Tight Security Analysis of the Iterated Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-security-identical-key-construction",
+  "group_id": "related-key-security-identical-key-construction",
+  "title": "Related-Key Security of the Identical-Key Construction",
+  "summary": "The paper suggests possible resistance to some related-key attacks, but characterizing the attacks and identifying security-preserving relations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize related-key attacks against $E_{k,k,k}$ and determine which relations preserve security."
+  },
+  "scope": {
+    "domain": "Related-key cryptanalysis of an identical-key key-alternating block-cipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "k: the key reused in all three positions of the construction",
+      "related-key relation: the class to be assessed for whether security is preserved"
+    ],
+    "unresolved_remainder": "Characterize related-key attacks against the identical-key construction and determine which related-key relations preserve security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "related-key-attacks",
+      "key-alternating-cipher",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)",
+        "locator": "EUROCRYPT 2012, page 16",
+        "doi": "10.1007/978-3-642-29011-4_5",
+        "url": "https://eprint.iacr.org/2012/035",
+        "eprint": "2012/035"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents resistance to certain related-key attacks as a reasonable expectation for the identical-key variant, but gives no proof or complete classification.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

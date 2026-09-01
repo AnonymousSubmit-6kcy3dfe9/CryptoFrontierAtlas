@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "princecore-cycle-profile-attacks-beyond-six-layers",
+  "group_id": "princecore-cycle-profile-attacks-beyond-six-layers",
+  "title": "Cycle-Profile Attacks on PRINCEcore Beyond Six S-Box Layers",
+  "summary": "An added round makes the cycle structure depend on G's values rather than its profile alone; whether this blocks the attack beyond six S-box layers or can be bypassed remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{PRINCEcore}$ with more than six S-box layers, determine whether the cycle-profile distinguishing attack is genuinely inapplicable. Adding a round causes the next key addition to modify the cycle structure of $G$ in a manner that depends on the values of $G$ rather than only on its cycle profile; the unresolved task is either to prove rigorously that this prevents the attack for more than six S-box layers or to exhibit a distinguishing attack that overcomes this limitation."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of PRINCEcore through cycle-profile distinguishing attacks.",
+    "assumptions": [
+      "PRINCEcore has more than six S-box layers."
+    ],
+    "parameters": [
+      "S-box layer count: marks the regime in which the attack's applicability is questioned"
+    ],
+    "unresolved_remainder": "Prove that the value-dependent cycle change prevents the cycle-profile attack beyond six S-box layers, or exhibit a distinguishing attack that bypasses it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "block-cipher",
+      "distinguishing-attack"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "PRINCE - A Low-Latency Block Cipher for Pervasive Computing Applications - Extended Abstract",
+        "locator": "ASIACRYPT 2012, page 14",
+        "doi": "10.1007/978-3-642-34961-4_14",
+        "url": "https://eprint.iacr.org/2012/529",
+        "eprint": "2012/529"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source traces the limitation to the next key addition, which makes G's cycle structure depend on G's values rather than only its profile. It says the earlier strategy appears not to apply beyond six S-box layers but does not establish that conclusion.",
+      "citation_labels": [
+        "Julia Borghoff et al., PRINCE - A Low-Latency Block Cipher for Pervasive Computing Applications - Extended Abstract"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

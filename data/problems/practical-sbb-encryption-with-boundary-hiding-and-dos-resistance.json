@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "practical-sbb-encryption-with-boundary-hiding-and-dos-resistance",
+  "group_id": "practical-sbb-encryption-with-boundary-hiding-and-dos-resistance",
+  "title": "Practical SBB Encryption with Boundary Hiding and DoS Resistance",
+  "summary": "Because never returning failure is impractical and DoS-prone, it remains open to construct a practical sbb encryption scheme achieving both BH-sbbCFA and DOS-sbbCFA security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the stateless-beyond-buffering (sbb) setting for symmetric encryption under ciphertext fragmentation, construct a practical encryption scheme that simultaneously achieves active ciphertext boundary hiding, denoted $\\mathrm{BH\\text{-}sbbCFA}$, and denial-of-service resistance, denoted $\\mathrm{DOS\\text{-}sbbCFA}$. This task addresses the impracticality and denial-of-service exposure of prohibiting the decryption algorithm from ever returning $\\bot$."
+  },
+  "scope": {
+    "domain": "Symmetric encryption under ciphertext fragmentation in the stateless-beyond-buffering model.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a practical encryption scheme that simultaneously satisfies active boundary-hiding security (BH-sbbCFA) and denial-of-service resistance (DOS-sbbCFA)."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ciphertext-fragmentation",
+      "boundary-hiding",
+      "denial-of-service"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security of Symmetric Encryption in the Presence of Ciphertext Fragmentation",
+        "locator": "EUROCRYPT 2012, page 16",
+        "doi": "10.1007/978-3-642-29011-4_40"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that forbidding decryption from returning failure is impractical and vulnerable to denial-of-service attacks, then explicitly poses a practical scheme satisfying both security notions as an open question.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Security of Symmetric Encryption in the Presence of Ciphertext Fragmentation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "symmetry-and-round-independent-trail-clustering",
+  "group_id": "symmetry-and-round-independent-trail-clustering",
+  "title": "Symmetry and Round-Independent Trail Clustering",
+  "summary": "A symmetry-based equivalence remains limited; tightening it or finding round-independent trail clustering not caused by symmetries is open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Either strengthen the symmetry/eigenvector equivalence, or construct round-independent trail clustering not caused by symmetries."
+  },
+  "scope": {
+    "domain": "Linear and structural cryptanalysis of block ciphers, focusing on trail clustering and symmetry.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Strengthen the symmetry/eigenvector equivalence or find round-independent trail clustering that does not originate from symmetries."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "trail-clustering",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Distribution of Linear Biases: Three Instructive Examples",
+        "locator": "CRYPTO 2012, page 16",
+        "doi": "10.1007/978-3-642-32009-5_4",
+        "url": "https://eprint.iacr.org/2012/303",
+        "eprint": "2012/303"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents two directions for future work: tighten the existing equivalence or find round-independent trail clustering that does not originate from symmetries.",
+      "citation_labels": [
+        "Mohamed Ahmed Abdelraheem et al., On the Distribution of Linear Biases: Three Instructive Examples"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

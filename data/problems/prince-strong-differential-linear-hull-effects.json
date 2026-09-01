@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "prince-strong-differential-linear-hull-effects",
+  "group_id": "prince-strong-differential-linear-hull-effects",
+  "title": "Absence of Strong Differential and Linear-Hull Effects in PRINCE",
+  "summary": "The active-S-box argument yields only an average-probability result because PRINCE lacks independent round keys; it remains to prove or refute the absence of strong differential and linear-hull effects.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For full $12$-round $\\mathrm{PRINCE}$, the active-S-box argument gives at least $48$ active S-boxes, with the differential probability and linear bias of each active S-box bounded by $2^{-2}$, but $\\mathrm{PRINCE}$ lacks independent round keys and the resulting statement covers only average probability. Prove or refute the conjecture that, despite this round-key dependence, $\\mathrm{PRINCE}$ has no strong differential effects or linear-hull effects."
+  },
+  "scope": {
+    "domain": "Differential and linear cryptanalysis of the full 12-round PRINCE block cipher with its dependent round-key structure.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "12 rounds — the full PRINCE configuration",
+      "48 active S-boxes — lower bound from the active-S-box argument",
+      "2^-2 — upper bound on each active S-box's differential probability and linear bias"
+    ],
+    "unresolved_remainder": "Prove or refute that full PRINCE has no strong differential effects or linear-hull effects despite its round-key dependence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "prince",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "PRINCE - A Low-Latency Block Cipher for Pervasive Computing Applications - Extended Abstract",
+        "locator": "ASIACRYPT 2012, page 21",
+        "doi": "10.1007/978-3-642-34961-4_14",
+        "url": "https://eprint.iacr.org/2012/529",
+        "eprint": "2012/529"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives the 48-active-S-box argument and per-active-S-box bounds, then notes that non-independent round keys restrict the conclusion to average probability. It explicitly conjectures the absence of strong differential and linear-hull effects.",
+      "citation_labels": [
+        "Julia Borghoff et al., PRINCE - A Low-Latency Block Cipher for Pervasive Computing Applications - Extended Abstract"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

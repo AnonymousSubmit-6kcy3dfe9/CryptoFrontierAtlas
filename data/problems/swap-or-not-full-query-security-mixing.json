@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "swap-or-not-full-query-security-mixing",
+  "group_id": "swap-or-not-full-query-security-mixing",
+  "title": "Full-Query Security and Mixing of Swap-or-Not",
+  "summary": "Security is proved only short of the full N-query regime; whether swap-or-not mixes quickly and remains secure for all N queries with a reasonable round count is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the swap-or-not shuffle, security has been proven only when the number of queries is less than $(1-\\epsilon)N$, while it is conjectured that the construction works well for all $N$ queries with a reasonable number $r$ of rounds, meaning that its mixing time is fast. The unresolved task is to determine whether swap-or-not in fact has fast mixing and adequate security when $q=N$ queries are allowed and $r$ is reasonable."
+  },
+  "scope": {
+    "domain": "Symmetric-key security and mixing-time analysis of the swap-or-not shuffle.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N: full query count corresponding to all available points",
+      "q: number of queries",
+      "r: number of swap-or-not rounds",
+      "epsilon: gap parameter in the proven query threshold"
+    ],
+    "unresolved_remainder": "Determine whether swap-or-not has fast mixing and adequate security for q equal to N queries with a reasonable number of rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "swap-or-not",
+      "mixing-time",
+      "block-cipher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Enciphering Scheme Based on a Card Shuffle",
+        "locator": "CRYPTO 2012, page 11",
+        "doi": "10.1007/978-3-642-32009-5_1"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper contrasts its security proof for fewer than (1−epsilon)N queries with an explicit conjecture that swap-or-not works well for N queries and reasonable r. It states that no such full-query result is proved.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., An Enciphering Scheme Based on a Card Shuffle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

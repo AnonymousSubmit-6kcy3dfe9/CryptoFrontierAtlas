@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-prf-security-bound-for-tbc-mac",
+  "group_id": "tighter-prf-security-bound-for-tbc-mac",
+  "title": "Tighter PRF-Security Bound for TBC-MAC",
+  "summary": "A PRF-security bound is established for TBC-MAC, while obtaining a tighter bound, potentially using techniques attributed to Bellare et al., remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "TBC-MAC has an established PRF-security bound for an adversary making $q$ queries, with each query containing at most $\\ell$ blocks of $n$ bits. The unresolved task is to derive a tighter PRF-security bound for TBC-MAC under these parameters, potentially by applying the techniques attributed to Bellare et al. in the discussion of the existing bound."
+  },
+  "scope": {
+    "domain": "PRF-security bounds for the TBC-MAC construction.",
+    "assumptions": [
+      "The adversary makes q queries, each containing at most ell blocks of n bits."
+    ],
+    "parameters": [
+      "q: number of adversary queries",
+      "ell: maximum number of blocks in each query",
+      "n: block size in bits"
+    ],
+    "unresolved_remainder": "Derive a tighter PRF-security bound for TBC-MAC under these parameters, potentially using the techniques attributed to Bellare et al."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "tbc-mac",
+      "prf-security",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Blockciphers with Beyond Birthday-Bound Security",
+        "locator": "CRYPTO 2012, page 12",
+        "doi": "10.1007/978-3-642-32009-5_2",
+        "url": "https://eprint.iacr.org/2012/450",
+        "eprint": "2012/450"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "After stating a PRF-security theorem for TBC-MAC, the source notes that a tighter bound could be achieved with more work by following techniques attributed to Bellare et al.",
+      "citation_labels": [
+        "Will Landecker et al., Tweakable Blockciphers with Beyond Birthday-Bound Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

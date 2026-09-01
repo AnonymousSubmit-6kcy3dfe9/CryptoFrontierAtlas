@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "joint-execution-order-resource-randomization",
+  "group_id": "joint-execution-order-resource-randomization",
+  "title": "Joint Execution-Order and Resource Randomization",
+  "summary": "Execution-order shuffling alone may leave indirect leakage because physical resources can leak differently; the open task is to efficiently randomize both order and resource use.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Shuffled cryptographic implementations that randomize instruction execution order can still exhibit indirect leakage because different physical resources may have different leakage models, so order randomization alone is not always sufficient. Construct an efficient cryptographic implementation that jointly randomizes instruction execution order and the physical resources used."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis and implementation-level shuffling countermeasures for cryptographic implementations.",
+    "assumptions": [
+      "Different physical resources may have different leakage models."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct an efficient cryptographic implementation that jointly randomizes instruction execution order and physical-resource use."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "implementation-shuffling",
+      "resource-randomization"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Shuffling against Side-Channel Attacks: A Comprehensive Study with Cautionary Note",
+        "locator": "ASIACRYPT 2012, page 16",
+        "doi": "10.1007/978-3-642-34961-4_44"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper shows that randomizing instruction order is not always sufficient, attributing indirect leakage to differing resource leakage models. It closes by asking for efficient joint randomization of execution order and physical resources.",
+      "citation_labels": [
+        "Nicolas Veyrat-Charvillon et al., Shuffling against Side-Channel Attacks: A Comprehensive Study with Cautionary Note"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

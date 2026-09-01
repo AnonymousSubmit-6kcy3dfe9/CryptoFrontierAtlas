@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-alternating-ciphers-identical-round-keys",
+  "group_id": "key-alternating-ciphers-identical-round-keys",
+  "title": "Security Bounds for Identical Round Keys",
+  "summary": "Information-theoretic security bounds are known for independent round keys; proving corresponding bounds when all round keys are identical remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $t$-round key-alternating construction, information-theoretic security bounds are known under the assumption that the round keys are independent; the unresolved task is to establish corresponding bounds when every round key is identical."
+  },
+  "scope": {
+    "domain": "Information-theoretic security analysis of key-alternating ciphers.",
+    "assumptions": [
+      "The known security bounds assume independent round keys."
+    ],
+    "parameters": [
+      "t: number of rounds in the key-alternating construction"
+    ],
+    "unresolved_remainder": "Establish corresponding information-theoretic security bounds when every round key is identical."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "key-alternating-ciphers",
+      "information-theoretic-security",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)",
+        "locator": "EUROCRYPT 2012, page 16",
+        "doi": "10.1007/978-3-642-29011-4_5",
+        "url": "https://eprint.iacr.org/2012/035",
+        "eprint": "2012/035"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper gives security bounds under independent round keys and explicitly presents the identical-round-key case as a desirable extension for aesthetic and practical reasons.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

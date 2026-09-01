@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "inner-product-swap-or-not-round-count",
+  "group_id": "inner-product-swap-or-not-round-count",
+  "title": "Practical Round Count for Inner-Product Swap-or-Not",
+  "summary": "The random-round-function analysis does not determine a practical round count for inner-product swap-or-not; the count needed for a good blockcipher remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a sufficient practical number of rounds $r$ for the inner-product realization of swap-or-not to behave as a good secure blockcipher: the theoretical analysis does not directly determine this value because its suggested random round functions differ substantially in computational cost from the inner-product round functions used in this realization; the unresolved task is to establish how large $r$ must be for this realization to provide a good blockcipher."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of the inner-product realization of the swap-or-not blockcipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: number of rounds in the inner-product realization of swap-or-not"
+    ],
+    "unresolved_remainder": "Determine a sufficient practical value of r for the inner-product realization to provide a good secure blockcipher."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "swap-or-not",
+      "block-cipher",
+      "round-count"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Enciphering Scheme Based on a Card Shuffle",
+        "locator": "CRYPTO 2012, page 12",
+        "doi": "10.1007/978-3-642-32009-5_1"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that it does not know how many rounds make the Figure 5 construction a good blockcipher and leaves the round count for cryptanalysts to investigate. It cautions that its theoretical random-round-function analysis does not directly prescribe this value.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., An Enciphering Scheme Based on a Card Shuffle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

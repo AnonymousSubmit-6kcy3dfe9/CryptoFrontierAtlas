@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-hull-correlation-distributions",
+  "group_id": "linear-hull-correlation-distributions",
+  "title": "Distributions and Bounds for Linear-Hull Correlations",
+  "summary": "Single linear-trail correlations can generally be bounded, but key-space distributions and general bounds for full linear-approximation or linear-hull correlations remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a keyed block cipher, single linear-trail correlations can generally be bounded, but no general convincing method is available for bounding the correlation of a full linear approximation or a linear hull, which reflects many linear trails. The unresolved task is to characterize, over the cipher's key space, the distribution of these linear correlations and to derive general convincing bounds for them, without restricting the analysis to a single trail; existing approaches typically require round keys to be independently and uniformly chosen or assume that distinct linear trails are independent."
+  },
+  "scope": {
+    "domain": "Block-cipher analysis of linear-correlation distributions and bounds for linear approximations and linear hulls.",
+    "assumptions": [
+      "Typical existing approaches require round keys to be independently and uniformly chosen.",
+      "An alternative existing approach assumes that distinct linear trails are independent."
+    ],
+    "parameters": [
+      "Cipher key — indexes the linear correlations whose distribution over the key space is studied"
+    ],
+    "unresolved_remainder": "Characterize the distribution of full linear-approximation and linear-hull correlations over the key space and derive general convincing bounds without reducing the analysis to a single trail."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "block-ciphers",
+      "linear-correlation",
+      "linear-hulls"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Distribution of Linear Biases: Three Instructive Examples",
+        "locator": "CRYPTO 2012, page 2",
+        "doi": "10.1007/978-3-642-32009-5_4",
+        "url": "https://eprint.iacr.org/2012/303",
+        "eprint": "2012/303"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts available single-trail correlation bounds with the absence of general convincing bounds for full linear approximations or linear hulls. It explicitly identifies their correlation distribution over keys as unsolved and notes the independence assumptions used by existing approaches.",
+      "citation_labels": [
+        "Mohamed Ahmed Abdelraheem et al., On the Distribution of Linear Biases: Three Instructive Examples"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

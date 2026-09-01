@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "integrity-for-fragmented-symmetric-encryption",
+  "group_id": "integrity-for-fragmented-symmetric-encryption",
+  "title": "Integrity Notions for Fragmented Symmetric Encryption",
+  "summary": "Fragmented symmetric encryption has been treated under confidentiality notions; developing integrity notions and combining both into authenticated-encryption-like security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Fragmented symmetric encryption is considered here under confidentiality notions, while suitable integrity notions remain undeveloped. The unresolved task is to develop integrity security notions for fragmented symmetric encryption and determine whether they can be combined with its confidentiality notions to yield more general security notions analogous to those used for authenticated encryption."
+  },
+  "scope": {
+    "domain": "Security notions for fragmented symmetric encryption and authenticated encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Develop integrity security notions for fragmented symmetric encryption and determine whether they can be combined with confidentiality notions into authenticated-encryption-like security notions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "fragmented-encryption",
+      "integrity",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security of Symmetric Encryption in the Presence of Ciphertext Fragmentation",
+        "locator": "EUROCRYPT 2012, page 17",
+        "doi": "10.1007/978-3-642-29011-4_40"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source says its treatment focuses on confidentiality and identifies suitable integrity notions as undeveloped. It asks whether integrity and confidentiality can be combined into broader notions like those for authenticated encryption.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Security of Symmetric Encryption in the Presence of Ciphertext Fragmentation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "equal-key-two-permutation-cipher-security",
+  "group_id": "equal-key-two-permutation-cipher-security",
+  "title": "Security of the Equal-Key Two-Permutation Cipher",
+  "summary": "No attack below two-to-the-n computational complexity was known for the equal-key construction with distinct permutations; whether it achieves that target security remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Assess $E_{k,k,k}(x)=Q(P(x\\oplus k)\\oplus k)\\oplus k$ for $P\\ne Q$ and target security $2^n$."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of an equal-key, two-permutation key-alternating block cipher.",
+    "assumptions": [
+      "P and Q are distinct."
+    ],
+    "parameters": [
+      "k: the key reused at all three key-addition points",
+      "x: the input to the encryption map",
+      "P and Q: the two public permutations",
+      "n: the size parameter governing the target computational security"
+    ],
+    "unresolved_remainder": "Determine whether the construction achieves computational security at the two-to-the-n target."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "key-alternating-ciphers",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)",
+        "locator": "EUROCRYPT 2012, page 16",
+        "doi": "10.1007/978-3-642-29011-4_5",
+        "url": "https://eprint.iacr.org/2012/035",
+        "eprint": "2012/035"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source singles out the case with all three keys equal and distinct public permutations, reporting no known attack below two-to-the-n computational complexity. Whether the construction attains that security target remains unresolved.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Key-Alternating Ciphers in a Provable Setting: Encryption Using a Small Number of Public Permutations - (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

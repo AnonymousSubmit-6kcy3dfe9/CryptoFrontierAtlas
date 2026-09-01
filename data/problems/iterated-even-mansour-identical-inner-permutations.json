@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iterated-even-mansour-identical-inner-permutations",
+  "group_id": "iterated-even-mansour-identical-inner-permutations",
+  "title": "Security with Identical Inner Permutations",
+  "summary": "The repeated-inner-permutation iterated Even–Mansour cipher is a practically appealing variant, but determining its security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of the $t$-round iterated Even--Mansour cipher when the same inner permutation is used in every round, namely $P_1 = \\cdots = P_t$. This practically appealing repeated-inner-permutation case remains an unresolved direction for research."
+  },
+  "scope": {
+    "domain": "Security analysis of the iterated Even–Mansour block cipher with one inner permutation reused across all rounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "t: number of rounds",
+      "P_1 through P_t: inner round permutations constrained to be identical"
+    ],
+    "unresolved_remainder": "Determine the security of the repeated-inner-permutation variant."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "block-ciphers",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Asymptotically Tight Security Analysis of the Iterated Even-Mansour Cipher",
+        "locator": "ASIACRYPT 2012, page 5",
+        "doi": "10.1007/978-3-642-34961-4_18"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the case in which all inner permutations are identical as a practically appealing direction for research. Its security remains unresolved.",
+      "citation_labels": [
+        "Rodolphe Lampe et al., An Asymptotically Tight Security Analysis of the Iterated Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "provability-of-mcgrew-viega-gcm-bounds",
+  "group_id": "provability-of-mcgrew-viega-gcm-bounds",
+  "title": "Provability of the McGrew–Viega GCM Bounds",
+  "summary": "For variable-length nonces, the attack invalidates only the second terms of the original GCM bounds, leaving open whether the privacy and authenticity bounds remain provable.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the original McGrew–Viega privacy and authenticity security bounds for GCM with variable-length nonces can still be proved, given that an attack invalidates only the second terms of those bounds and therefore does not rule out the bounds themselves."
+  },
+  "scope": {
+    "domain": "Provable security of GCM authenticated encryption with variable-length nonces.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Nonce length — allowed to vary in the GCM setting"
+    ],
+    "unresolved_remainder": "Whether the original McGrew–Viega privacy and authenticity security bounds can still be proved despite the attack on their second terms."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "gcm",
+      "authenticated-encryption",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking and Repairing GCM Security Proofs",
+        "locator": "CRYPTO 2012, page 13",
+        "doi": "10.1007/978-3-642-32009-5_3",
+        "url": "https://eprint.iacr.org/2012/438",
+        "eprint": "2012/438"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that its attack invalidates only the second terms of the original bounds and therefore does not preclude proofs of the bounds themselves. It presents improving its security bounds as an open direction.",
+      "citation_labels": [
+        "Tetsu Iwata et al., Breaking and Repairing GCM Security Proofs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

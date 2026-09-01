@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zero-correlation-zero-sum-extension",
+  "group_id": "zero-correlation-zero-sum-extension",
+  "title": "Zero-Sum Extensions of Zero-Correlation Attacks",
+  "summary": "Integral distinguishers can often exploit a weaker zero-sum condition, but whether zero-correlation attacks admit an analogous extension remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether zero-correlation attacks can be extended by relaxing their balanced property to a zero-sum property, equivalently to the condition that a certain subfunction does not have maximal algebraic degree. Integral distinguishers often allow this relaxation, but no analogous extension is known for zero-correlation attacks."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis involving integral distinguishers and zero-correlation attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the balanced property in zero-correlation attacks can be relaxed to a zero-sum property, equivalently to a non-maximal algebraic-degree condition on a subfunction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "zero-correlation",
+      "integral-cryptanalysis",
+      "algebraic-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Integral and Multidimensional Linear Distinguishers with Correlation Zero",
+        "locator": "ASIACRYPT 2012, page 8",
+        "doi": "10.1007/978-3-642-34961-4_16"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2012-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an unresolved limitation: integral distinguishers often support the relaxation, while no analogous extension was known for zero-correlation attacks.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Integral and Multidimensional Linear Distinguishers with Correlation Zero"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
