@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "scarf-higher-round-multiple-tweak-differential-bias",
+  "group_id": "scarf-higher-round-multiple-tweak-differential-bias",
+  "title": "Higher-Round Multiple-Tweak Differential Bias in SCARF",
+  "summary": "The source provides smaller-round bias formulas, but the higher-round interaction of the two functions and its effect on differential bias remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For higher-round multiple-tweak differential analysis of SCARF, characterize how the differential properties of the S-box $S$ interact with those of $S^{-1}(S(\\cdot \\oplus k))$, where $k$ is the tweak parameter, and determine how this interaction affects the estimation of differential bias. The available formulas multiply probabilities of differential transitions through $S$ by the EDP for a transition over a smaller number of rounds in which $S^{-1}\\circ S(\\cdot \\oplus k)$ plays a role, but the interaction between these two functions and its influence on the bias remain unresolved. The characterization should apply to the difference values used in the bias computation."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis, specifically higher-round multiple-tweak differential analysis of SCARF.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "SCARF, the cipher under analysis",
+      "S, the S-box whose differential properties are considered",
+      "k, the tweak parameter",
+      "Difference values used in the bias computation"
+    ],
+    "unresolved_remainder": "Characterize the interaction between the differential properties of the S-box and the function S^{-1}(S(· ⊕ k)) in higher-round multiple-tweak analysis, and determine its effect on estimating differential bias for the difference values used in the computation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "structural-cryptanalysis",
+      "multiple-tweak"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Multiple-Tweak Differential Attack Against SCARF",
+        "locator": "ASIACRYPT 2024, page 26",
+        "doi": "10.1007/978-981-96-0941-3_11",
+        "url": "https://eprint.iacr.org/2024/1408",
+        "eprint": "2024/1408"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the interaction of the two functions and its influence on bias as an open question after describing formulas that combine differential-transition probabilities through the S-box with an EDP for a smaller-round transition involving the shifted inverse composition.",
+      "citation_labels": [
+        "Christina Boura et al., Multiple-Tweak Differential Attack Against SCARF"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

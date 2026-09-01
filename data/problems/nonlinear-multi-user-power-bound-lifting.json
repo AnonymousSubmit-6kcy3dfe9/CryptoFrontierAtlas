@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-multi-user-power-bound-lifting",
+  "group_id": "nonlinear-multi-user-power-bound-lifting",
+  "title": "Nonlinear Multi-User Power-Bound Lifting",
+  "summary": "Point-wise proximity lifts linear power bounds to dependent multi-user settings; extending it to nonlinear bounds while relaxing query-dependence conditions remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A point-wise-proximity method converts single-user power bounds into multi-user power bounds and remains applicable when different users are dependent, for example through a shared primitive. The method currently requires the power bound to be linear and imposes nontrivial conditions on how the bound depends on the number of queries. Extend single-user-to-multi-user power-bound lifting to nonlinear power bounds and, ideally, remove or weaken these query-dependence conditions while preserving applicability to dependent users."
+  },
+  "scope": {
+    "domain": "Information-theoretic security: lifting single-user power bounds to dependent multi-user settings via point-wise proximity.",
+    "assumptions": [
+      "The current power bound is linear.",
+      "The power bound's dependence on the number of queries satisfies nontrivial conditions."
+    ],
+    "parameters": [
+      "Number of queries — the variable whose influence on the bound is subject to nontrivial conditions"
+    ],
+    "unresolved_remainder": "Extend the lifting method to nonlinear power bounds and, ideally, remove or weaken its query-dependence conditions while retaining applicability to dependent users."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "information-theoretic-security",
+      "multi-user-lifting",
+      "point-wise-proximity"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Information-theoretic security with asymmetries",
+        "locator": "CRYPTO 2024, page 24",
+        "doi": "10.1007/978-3-031-68385-5_15",
+        "url": "https://eprint.iacr.org/2024/658",
+        "eprint": "2024/658"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a lifting method that accommodates dependencies among users, then highlights its linearity and query-dependence requirements as limitations framing a broader lifting challenge.",
+      "citation_labels": [
+        "Tim Beyne et al., Information-theoretic security with asymmetries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

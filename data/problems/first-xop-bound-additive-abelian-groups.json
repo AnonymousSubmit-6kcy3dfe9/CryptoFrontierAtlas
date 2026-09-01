@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "first-xop-bound-additive-abelian-groups",
+  "group_id": "first-xop-bound-additive-abelian-groups",
+  "title": "Extend the First XoP Bound to Additive Abelian Groups",
+  "summary": "Current XoP results cover only the original construction; although the second bound is group-independent, extending the first bound to arbitrary additive abelian groups remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved task is to extend the Fourier-analysis indistinguishability bounds for XoP, the XOR of independent random permutations, from the original XoP construction to its generalized variant defined over an arbitrary additive abelian group. The existing results apply only to the original construction; the second bound is already independent of the underlying group, whereas the proof of the first bound still requires modification. Thus, establish the first bound for the generalized XoP construction over every arbitrary additive abelian group."
+  },
+  "scope": {
+    "domain": "Fourier analysis of indistinguishability bounds for XoP constructions over additive abelian groups.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Underlying additive abelian group — algebraic domain of the generalized XoP construction"
+    ],
+    "unresolved_remainder": "Modify the proof and establish the first bound for generalized XoP over every arbitrary additive abelian group."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "xop",
+      "indistinguishability-bounds",
+      "abelian-groups"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Indistinguishability Bounds for the XOR of Independent Random Permutations by Fourier Analysis",
+        "locator": "EUROCRYPT 2024, page 6",
+        "doi": "10.1007/978-3-031-58716-0_2",
+        "url": "https://eprint.iacr.org/2024/338",
+        "eprint": "2024/338"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents its bounds as limited to the original XoP construction. It notes that the second bound is already group-independent and leaves modification of the first-bound proof for arbitrary additive abelian groups to future work.",
+      "citation_labels": [
+        "Itai Dinur et al., Tight Indistinguishability Bounds for the XOR of Independent Random Permutations by Fourier Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

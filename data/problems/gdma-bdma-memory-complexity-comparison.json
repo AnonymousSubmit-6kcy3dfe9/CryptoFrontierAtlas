@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gdma-bdma-memory-complexity-comparison",
+  "group_id": "gdma-bdma-memory-complexity-comparison",
+  "title": "GDMA–BDMA Memory-Complexity Comparison",
+  "summary": "Under the stated specialization, GDMA matches BDMA in time and uses no more data, but comparing their memory costs across GDMA key-guessing strategies remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For GDMA specialized by setting $k_b' = k_b$ and $k_f' = k_f$, GDMA and BDMA have exactly the same time complexity, while GDMA's data complexity is no larger than BDMA's. A general memory-complexity comparison remains unresolved because GDMA's memory complexity depends on its key-guessing strategy. Characterize how that strategy affects GDMA's memory complexity and use the characterization to compare GDMA's memory requirements with BDMA's."
+  },
+  "scope": {
+    "domain": "Symmetric-key differential and meet-in-the-middle cryptanalysis comparing GDMA and BDMA.",
+    "assumptions": [
+      "The specialization sets k_b′ equal to k_b and k_f′ equal to k_f."
+    ],
+    "parameters": [
+      "GDMA key-guessing strategy — the varying factor on which GDMA's memory complexity depends"
+    ],
+    "unresolved_remainder": "Characterize GDMA's strategy-dependent memory complexity and compare its memory requirements with BDMA's."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "meet-in-the-middle",
+      "memory-complexity"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Differential Key Recovery Attacks and Beyond",
+        "locator": "ASIACRYPT 2024, page 11",
+        "doi": "10.1007/978-981-96-0941-3_12",
+        "url": "https://eprint.iacr.org/2024/1447",
+        "eprint": "2024/1447"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports equal time complexity and no larger GDMA data complexity under the specialization. It frames a general memory comparison as difficult because GDMA's memory cost depends on the key-guessing strategy.",
+      "citation_labels": [
+        "Ling Song et al., Generic Differential Key Recovery Attacks and Beyond"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

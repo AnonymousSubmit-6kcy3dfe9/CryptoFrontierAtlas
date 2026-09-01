@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generalized-feistel-36-round-differential-security",
+  "group_id": "generalized-feistel-36-round-differential-security",
+  "title": "36-Round Differential Security of a Generalized Feistel Cipher",
+  "summary": "A 9-round impossible truncated differential is known, while whether 36 rounds prevent truncated and impossible differentials in the single-tweak setting remains conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the generalized Feistel cipher construction used for efficient prime-field masking, a 9-round impossible truncated differential is derived, and the unresolved task is to prove or refute whether 36 rounds suffice to prevent truncated and impossible differential attacks in the single-tweak setting."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of a generalized Feistel block cipher for efficient prime-field masking.",
+    "assumptions": [
+      "Single-tweak attack setting"
+    ],
+    "parameters": [
+      "9 rounds: length of the derived impossible truncated differential",
+      "36 rounds: conjectured round count for preventing truncated and impossible differential attacks"
+    ],
+    "unresolved_remainder": "Prove or refute that 36 rounds suffice to prevent truncated and impossible differential attacks in the single-tweak setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "impossible-differentials",
+      "generalized-feistel"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generalized Feistel Ciphers for Efficient Prime Field Masking",
+        "locator": "EUROCRYPT 2024, page 40",
+        "doi": "10.1007/978-3-031-58734-4_7",
+        "url": "https://eprint.iacr.org/2024/431",
+        "eprint": "2024/431"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper derives a 9-round impossible truncated differential and explicitly conjectures that 36 rounds suffice to prevent truncated and impossible differentials in the single-tweak setting.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Generalized Feistel Ciphers for Efficient Prime Field Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

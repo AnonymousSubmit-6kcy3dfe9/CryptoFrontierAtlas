@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "post-quantum-security-original-minalpher",
+  "group_id": "post-quantum-security-original-minalpher",
+  "title": "Post-Quantum Security for Original Minalpher",
+  "summary": "The paper proves post-quantum security only for a fixed-zero-padding Minalpher variant; extending the proof to the original flag- and nonce-dependent construction remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish post-quantum security for the original Minalpher construction using the tweakable block cipher $MA$, whose key expansion maps $k$ to $(k\\mathbin\\|\\mathsf{flag}\\mathbin\\|N)\\oplus P(k\\mathbin\\|\\mathsf{flag}\\mathbin\\|N)$, so the flag and nonce $N$, both components of the tweak, affect the tweaked keys. Existing tweakable Even--Mansour analysis based on fixed-zero key padding does not directly cover $MA$. The unresolved task is to prove post-quantum security without replacing this expansion by $k\\mapsto(k\\mathbin\\|0^{n/2})\\oplus P(k\\mathbin\\|0^{n/2})$, or to extend the analysis to handle the original flag- and nonce-dependent key expansion."
+  },
+  "scope": {
+    "domain": "Post-quantum security analysis of tweakable Even–Mansour block ciphers and the Minalpher authenticated-encryption construction.",
+    "assumptions": [
+      "P is modeled as a public random permutation.",
+      "The post-quantum model permits quantum access to P and only classical access to the secretly keyed construction."
+    ],
+    "parameters": [
+      "k: secret-key input to the key-expansion map",
+      "N: nonce that is also a tweak component and affects the tweaked keys",
+      "flag: tweak component that affects the tweaked keys",
+      "n: block-length parameter governing the fixed-zero-padding alternative",
+      "P: public permutation used by the key expansion and MA"
+    ],
+    "unresolved_remainder": "Prove post-quantum security for original Minalpher and MA with flag- and nonce-dependent key expansion, or extend the analysis to cover it without substituting fixed-zero padding."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "post-quantum-security",
+      "tweakable-even-mansour",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum security of Tweakable Even-Mansour, and Applications",
+        "locator": "EUROCRYPT 2024, page 23",
+        "doi": "10.1007/978-3-031-58716-0_11",
+        "url": "https://eprint.iacr.org/2022/1097",
+        "eprint": "2022/1097"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that fixed-zero-padding analysis does not directly apply when the flag and nonce affect MA's tweaked keys. It establishes post-quantum security for a modified Minalpher0 variant instead, leaving the original construction unresolved.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Post-Quantum security of Tweakable Even-Mansour, and Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

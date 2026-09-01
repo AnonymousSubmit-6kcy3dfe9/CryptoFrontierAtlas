@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lrq-adaptive-quantum-security",
+  "group_id": "lrq-adaptive-quantum-security",
+  "title": "Adaptive Quantum Security of LRQ",
+  "summary": "The existing adaptive LRQ proof fails because required construction-input information is absent from the compressed-oracle database; finding a valid security proof remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish adaptive quantum security of LRQ without relying on bad predicates that use input information absent from the oracle database."
+  },
+  "scope": {
+    "domain": "Adaptive quantum security proofs for the LRQ construction using compressed-oracle techniques.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove adaptive quantum security of LRQ without bad predicates that depend on input information absent from the oracle database."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "quantum-security",
+      "compressed-oracle",
+      "lrq"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs",
+        "locator": "ASIACRYPT 2024, page 29",
+        "doi": "10.1007/978-981-96-0947-5_8",
+        "url": "https://eprint.iacr.org/2024/1478",
+        "eprint": "2024/1478"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that the bad-database technique requires information present in the database, while part of the LRQ construction input never appears there. The supplied context treats this as a fundamental obstacle to the existing adaptive proof.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

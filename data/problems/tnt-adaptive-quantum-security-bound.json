@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tnt-adaptive-quantum-security-bound",
+  "group_id": "tnt-adaptive-quantum-security-bound",
+  "title": "Adaptive Quantum Security Bound for TNT",
+  "summary": "The prior adaptive and tight-security proofs for TNT are flawed; a valid quantum security bound, potentially degraded, remains to be established.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the strongest valid adaptive quantum security bound for TNT, possibly weaker than the previously claimed tight bound."
+  },
+  "scope": {
+    "domain": "Adaptive quantum security analysis of the TNT symmetric construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine the strongest valid adaptive quantum security bound for TNT, including whether the previously claimed tight bound can be recovered or only a weaker bound can be proved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "quantum-security",
+      "block-ciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs",
+        "locator": "ASIACRYPT 2024, page 29",
+        "doi": "10.1007/978-981-96-0947-5_8",
+        "url": "https://eprint.iacr.org/2024/1478",
+        "eprint": "2024/1478"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper finds flaws in the prior adaptive and tight-security proofs for TNT. It suggests that defining bad events through database entries may support a proof with a worse bound, but leaves that proof open.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

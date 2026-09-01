@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hilbert-series-lower-bound-on-solving-degree",
+  "group_id": "hilbert-series-lower-bound-on-solving-degree",
+  "title": "Hilbert-Series Lower Bound on Solving Degree",
+  "summary": "For the cipher-modeling polynomial systems, it remains to prove or refute whether solving degree is at least the first non-positive-coefficient index of the Hilbert series.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the constructed overdefined polynomial systems used to model Friday, Vision, RAIN, and Biscuit, prove or refute that the solving degree is at least the index of the first non-positive coefficient in the corresponding Hilbert series $S_{m,n}(z)$. [S1] The question concerns the conjectured lower bound in the setting where the Hilbert series can upper-bound the solving degree when syzygies are mainly trivial, while many non-trivial syzygies may require computation at a larger degree. [S1]"
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis via overdefined polynomial systems modeling Friday, Vision, RAIN, and Biscuit.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m and n: parameters indexing the Hilbert series",
+      "z: variable of the Hilbert series"
+    ],
+    "unresolved_remainder": "Prove or refute that the solving degree is lower-bounded by the index of the first non-positive coefficient in the corresponding Hilbert series."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "solving-degree",
+      "hilbert-series"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit",
+        "locator": "ASIACRYPT 2024, page 7",
+        "doi": "10.1007/978-981-96-0941-3_14",
+        "url": "https://eprint.iacr.org/2024/786",
+        "eprint": "2024/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the lower bound as a conjecture. It motivates the conjecture by contrasting mainly trivial syzygies, for which the Hilbert series can upper-bound solving degree, with non-trivial syzygies that may require computation at a larger degree.",
+      "citation_labels": [
+        "Fukang Liu et al., Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-user-security-for-symmetric-signcryption",
+  "group_id": "multi-user-security-for-symmetric-signcryption",
+  "title": "Multi-User Security for Symmetric Signcryption",
+  "summary": "Identity binding is needed for multi-user symmetric signcryption, while the exact security notions and guarantees for the basic schemes remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For symmetric signcryption compositions, including Sign-then-Encrypt and Encrypt-then-Sign variants, determine and analyze security notions for the multi-user setting that capture the required binding of each message to both its sender and its recipient. This task is motivated by the limitation that corresponding signcryption compositions are not secure in the multi-user setting unless measures are taken to bind messages to the communicating identities; the standard measures are to sign the recipient identity and encrypt the sender identity. The unresolved issue is to specify the exact security properties and resulting guarantees for the basic symmetric signcryption schemes, since the appropriate details depend on the security expected from those schemes."
+  },
+  "scope": {
+    "domain": "Multi-user security of symmetric Sign-then-Encrypt and Encrypt-then-Sign compositions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Specify and analyze the exact multi-user security properties and guarantees for the basic schemes, including the required binding of messages to sender and recipient identities."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-signcryption",
+      "multi-user-security",
+      "identity-binding"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Signcryption and E2EE Messaging in Keybase",
+        "locator": "EUROCRYPT 2024, page 4",
+        "doi": "10.1007/978-3-031-58734-4_10",
+        "url": "https://eprint.iacr.org/2024/799",
+        "eprint": "2024/799"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies sender and recipient identity binding as necessary for multi-user security and describes standard countermeasures. It defers the exact security definitions and guarantees because they depend on the security expected from the schemes.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Symmetric Signcryption and E2EE Messaging in Keybase"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "scarf-single-key-security",
+  "group_id": "scarf-single-key-security",
+  "title": "SCARF Security in the Single-Key Model",
+  "summary": "SCARF's claimed 80-bit security is not provided in the reported multi-key setting, while the security that can be established in the single-key model remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For SCARF, an unresolved question is what security can be established in the single-key model, given that full 8-round distinguishing attacks in the multi-key setting show that SCARF does not provide its claimed 80-bit security in that setting. Addressing the single-key question may require redefining the notion of bit security."
+  },
+  "scope": {
+    "domain": "This concerns symmetric cryptanalysis of SCARF security under single-key and multi-key models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "SCARF, the cipher being analyzed",
+      "Single-key versus multi-key model, the security setting",
+      "Full 8-round instance, the reported attack scope",
+      "Claimed 80-bit security, the stated security target",
+      "Bit-security notion, which may require redefinition"
+    ],
+    "unresolved_remainder": "Determine what security can be established for SCARF in the single-key model, potentially after redefining the notion of bit security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "single-key-model",
+      "bit-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Multiple-Tweak Differential Attack Against SCARF",
+        "locator": "ASIACRYPT 2024, page 28",
+        "doi": "10.1007/978-981-96-0941-3_11",
+        "url": "https://eprint.iacr.org/2024/1408",
+        "eprint": "2024/1408"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly calls the single-key question an interesting open question after reporting full 8-round distinguishing attacks in the multi-key setting. It says that answering it may require redefining bit security.",
+      "citation_labels": [
+        "Christina Boura et al., Multiple-Tweak Differential Attack Against SCARF"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

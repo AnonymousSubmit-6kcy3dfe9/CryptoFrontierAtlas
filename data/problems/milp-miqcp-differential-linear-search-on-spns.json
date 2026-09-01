@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "milp-miqcp-differential-linear-search-on-spns",
+  "group_id": "milp-miqcp-differential-linear-search-on-spns",
+  "title": "MILP/MIQCP Differential-Linear Search on SPNs",
+  "summary": "Bellini et al.’s resource-intensive tool has been practically limited to small ARX variants; whether it can efficiently find differential-linear distinguishers in SPN ciphers remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the MILP/MIQCP constraint-programming tool of Bellini et al. can efficiently identify differential-linear distinguishers in substitution-permutation-network (SPN) ciphers; its model is resource-intensive and has been limited in application to smaller ARX-cipher variants such as Speck-32."
+  },
+  "scope": {
+    "domain": "Automated symmetric cryptanalysis of SPN ciphers using MILP/MIQCP searches for differential-linear distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether Bellini et al.’s MILP/MIQCP tool can efficiently identify differential-linear distinguishers in SPN ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-linear",
+      "spn-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Differential-Linear Attacks via a Boomerang Perspective With Application to AES, Ascon, CLEFIA, SKINNY, PRESENT, KNOT, TWINE, WARP, LBlock, Simeck and SERPENT",
+        "locator": "CRYPTO 2024, page 3",
+        "doi": "10.1007/978-3-031-68385-5_2",
+        "url": "https://eprint.iacr.org/2024/255",
+        "eprint": "2024/255"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source describes Bellini et al.’s model as resource-intensive and practically limited to small Speck variants such as Speck-32. It explicitly leaves that tool’s efficiency on SPN ciphers open.",
+      "citation_labels": [
+        "Hosein Hadipour et al., Revisiting Differential-Linear Attacks via a Boomerang Perspective With Application to AES, Ascon, CLEFIA, SKINNY, PRESENT, KNOT, TWINE, WARP, LBlock, Simeck and SERPENT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

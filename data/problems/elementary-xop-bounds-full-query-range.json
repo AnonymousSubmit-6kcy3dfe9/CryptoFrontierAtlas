@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "elementary-xop-bounds-full-query-range",
+  "group_id": "elementary-xop-bounds-full-query-range",
+  "title": "Elementary XoP Bounds for the Full Query Range",
+  "summary": "Elementary Fourier bounds establish two-permutation XoP indistinguishability for only about half the full query range; extending the same method to the full range remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the XOR-of-permutations (XoP) construction formed from two independent random permutations, the available elementary Fourier-analysis bounds establish the relevant indistinguishability result only for query parameters $q \\leq 2^{n-1}-1$. The unresolved task is to strengthen those bounds so that the same result holds throughout the full range $q \\leq 2^n-1$."
+  },
+  "scope": {
+    "domain": "Indistinguishability analysis of XoP formed from two independent random permutations using elementary Fourier methods.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q: query parameter bounded in the indistinguishability result",
+      "n: size exponent determining the current and target query ranges"
+    ],
+    "unresolved_remainder": "Strengthen the elementary Fourier-analysis bounds so the same indistinguishability result holds throughout the full range q ≤ 2ⁿ − 1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "xor-of-permutations",
+      "fourier-analysis",
+      "indistinguishability-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Indistinguishability Bounds for the XOR of Independent Random Permutations by Fourier Analysis",
+        "locator": "EUROCRYPT 2024, page 6",
+        "doi": "10.1007/978-3-031-58716-0_2",
+        "url": "https://eprint.iacr.org/2024/338",
+        "eprint": "2024/338"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a limitation of its elementary Fourier-analysis method: a stronger prior theorem reaches the full range, but the paper's own bounds do not.",
+      "citation_labels": [
+        "Itai Dinur et al., Tight Indistinguishability Bounds for the XOR of Independent Random Permutations by Fourier Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

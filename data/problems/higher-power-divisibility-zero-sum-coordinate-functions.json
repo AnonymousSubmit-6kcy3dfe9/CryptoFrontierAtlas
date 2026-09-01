@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-power-divisibility-zero-sum-coordinate-functions",
+  "group_id": "higher-power-divisibility-zero-sum-coordinate-functions",
+  "title": "Higher-Power Divisibility for Zero-Sum Coordinate Functions",
+  "summary": "Saturation gives a dimension-dependent divisibility guarantee, while zero-sum functions have a baseline of divisibility by two; the open task is to find examples with a higher power-of-two divisor.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a coordinate function $f$ of a primitive on an affine input space $X$ of dimension $d$, saturation implies that the number of inputs $x\\in X$ satisfying $f(x)=1$ is divisible by $2^{d-1}$; when $f$ sums to zero, the stated baseline divisibility is only by $2$. The question is whether one can construct or identify zero-sum coordinate functions $f$ for which the number of solutions to $f(x)=1$ is divisible by a higher power of two than this baseline."
+  },
+  "scope": {
+    "domain": "Structural divisibility properties of Boolean coordinate functions in symmetric cryptanalysis.",
+    "assumptions": [
+      "f is a coordinate function of a primitive on an affine input space X of dimension d",
+      "f sums to zero for the target case"
+    ],
+    "parameters": [
+      "X, the affine input space",
+      "d, the dimension of X",
+      "f, the coordinate function",
+      "the power of two dividing the number of inputs satisfying f(x)=1"
+    ],
+    "unresolved_remainder": "Construct or identify zero-sum coordinate functions f for which the number of solutions to f(x)=1 is divisible by a higher power of two than the baseline divisibility by two."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "power-of-two-divisibility",
+      "zero-sum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ultrametric integral cryptanalysis",
+        "locator": "ASIACRYPT 2024, page 8",
+        "doi": "10.1007/978-981-96-0941-3_13",
+        "url": "https://eprint.iacr.org/2024/722",
+        "eprint": "2024/722"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a natural question after contrasting the saturation divisibility bound with the weaker zero-sum baseline, asking for zero-sum cases with a larger power-of-two divisor.",
+      "citation_labels": [
+        "Tim Beyne et al., Ultrametric integral cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

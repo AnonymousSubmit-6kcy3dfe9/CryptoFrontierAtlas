@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zip-gift-security-analysis",
+  "group_id": "zip-gift-security-analysis",
+  "title": "Detailed Security Analysis of ZIP-GIFT",
+  "summary": "ZIP-GIFT is identified as a concrete ZIP cipher, but no detailed security analysis is provided; developing one remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "ZIP-GIFT is a construction consisting of 14-round GIFT-64 followed by 14-round inverse GIFT-64. A detailed security analysis of ZIP-GIFT has not been provided, and developing such an analysis remains an open problem."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of the ZIP-GIFT block-cipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "14-round GIFT-64 and 14-round inverse GIFT-64: the forward and inverse components of ZIP-GIFT"
+    ],
+    "unresolved_remainder": "Develop a detailed security analysis of ZIP-GIFT."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "zip-gift",
+      "block-cipher",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES",
+        "locator": "ASIACRYPT 2024, page 28",
+        "doi": "10.1007/978-981-96-0947-5_10",
+        "url": "https://eprint.iacr.org/2024/2033",
+        "eprint": "2024/2033"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces ZIP-GIFT and explicitly says that, unlike ZIP-AES, it does not provide a detailed analysis, leaving that task open.",
+      "citation_labels": [
+        "Antonio Florez Gutierrez et al., General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

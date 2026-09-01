@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "parallel-matching-versus-pairwise-merging",
+  "group_id": "parallel-matching-versus-pairwise-merging",
+  "title": "Parallel Matching Versus Pairwise Merging",
+  "summary": "Parallel matching gives only a marginal gain when a third strategy enumerates one S-box or its filter; precisely when it should replace pairwise merging remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For differential key-recovery strategies, precisely characterize when parallel matching should replace the simple pairwise merge procedure. The characterization should compare overall time complexity and memory needs and account for the number of solutions output by the component sub-strategies and the sizes of their filters. In particular, it should cover the case in which a third strategy enumerates a single $\\mathrm{S}$-box or its associated filter, where parallel matching yields only a marginal gain over merging because few solutions are enumerated and basic strategies provide small filters."
+  },
+  "scope": {
+    "domain": "Complexity analysis of differential key-recovery strategies comparing parallel matching with pairwise merging.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Overall time complexity and memory needs as resource costs for comparing the procedures",
+      "Numbers of solutions output by component sub-strategies as inputs to the comparison",
+      "Filter sizes as inputs to the comparison",
+      "Enumeration of a single S-box or its associated filter by a third strategy as a case to cover"
+    ],
+    "unresolved_remainder": "Precisely characterize the cases in which parallel matching should replace the simple pairwise merge procedure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "automated-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A generic algorithm for efficient key recovery in differential attacks – and its associated tool",
+        "locator": "EUROCRYPT 2024, page 20",
+        "doi": "10.1007/978-3-031-58716-0_8",
+        "url": "https://eprint.iacr.org/2024/288",
+        "eprint": "2024/288"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the characterization as future work, motivated by the marginal gain from parallel matching when a third strategy enumerates a single S-box or its associated filter.",
+      "citation_labels": [
+        "Christina Boura et al., A generic algorithm for efficient key recovery in differential attacks – and its associated tool"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

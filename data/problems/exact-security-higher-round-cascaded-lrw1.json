@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-security-higher-round-cascaded-lrw1",
+  "group_id": "exact-security-higher-round-cascaded-lrw1",
+  "title": "Exact Security of Higher-Round Cascaded LRW1",
+  "summary": "The three-round cascaded LRW1 instance has tight birthday-bound security, while the exact security of the general higher-round family remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $r$-round cascaded $\\mathrm{LRW1}$ construction with $r \\ge 3$, determine the exact security as a function of $r$. The three-round instance is resolved, but the exact security of the general higher-round family remains open."
+  },
+  "scope": {
+    "domain": "Exact-security analysis of cascaded LRW1 tweakable block-cipher constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: number of cascaded LRW1 rounds, with r at least 3"
+    ],
+    "unresolved_remainder": "Determine the exact security of the general higher-round cascaded LRW1 family as a function of r."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "lrw1",
+      "block-ciphers",
+      "exact-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security of TNT and Beyond: Attacks, Proofs and Possibilities for the Cascaded LRW Paradigm",
+        "locator": "EUROCRYPT 2024, page 5",
+        "doi": "10.1007/978-3-031-58716-0_9",
+        "url": "https://eprint.iacr.org/2023/1272",
+        "eprint": "2023/1272"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the exact security of r-LRW1 as a natural open problem. The paper resolves the three-round case but reports no tightness result for higher rounds.",
+      "citation_labels": [
+        "Ashwin Jha et al., Tight Security of TNT and Beyond: Attacks, Proofs and Possibilities for the Cascaded LRW Paradigm"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

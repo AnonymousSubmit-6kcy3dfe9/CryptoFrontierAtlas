@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-mutual-information-bound-side-channel-queries",
+  "group_id": "nonlinear-mutual-information-bound-side-channel-queries",
+  "title": "Nonlinear Mutual-Information Bound for Side-Channel Queries",
+  "summary": "Mutual information is at most the logarithm of the secret-space size, so the linear-in-query bound is not tight for large query counts; a practical bounded nonlinear bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a secret $K$ observed through side-channel leakage $Y$ over $q$ queries, a known upper bound on $I(K;Y)$ grows linearly with $q$, although $I(K;Y)\\leq\\log|K|$, so the linear bound cannot be tight for large $q$. Derive an alternative practical upper bound that depends nonlinearly on $q$ and remains bounded as $q$ increases."
+  },
+  "scope": {
+    "domain": "Information-theoretic analysis of side-channel leakage across multiple queries.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K: secret",
+      "Y: side-channel leakage observation",
+      "q: number of side-channel queries"
+    ],
+    "unresolved_remainder": "Derive a practical upper bound on I(K;Y) that is nonlinear in q and remains bounded as q grows."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "side-channel-leakage",
+      "mutual-information",
+      "upper-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing",
+        "locator": "CRYPTO 2024, page 29",
+        "doi": "10.1007/978-3-031-68391-6_12",
+        "url": "https://eprint.iacr.org/2024/199",
+        "eprint": "2024/199"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts the known linear-in-query mutual-information bound with the fixed information-theoretic cap and explicitly leaves a practical bounded nonlinear alternative as an open question. It does not provide the requested mutual-information bound.",
+      "citation_labels": [
+        "Julien Béguinot et al., Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

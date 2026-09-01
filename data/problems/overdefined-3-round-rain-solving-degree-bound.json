@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "overdefined-3-round-rain-solving-degree-bound",
+  "group_id": "overdefined-3-round-rain-solving-degree-bound",
+  "title": "Tight Upper Bound on the Solving Degree of Overdefined 3-Round RAIN Systems",
+  "summary": "For overdefined 3-round RAIN systems, experiments indicate that using only part of the equations can underestimate complexity, while a theoretically tight upper bound on the actual solving degree remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the overdefined systems of quadratic equations modeling 3-round RAIN, including the $23\\ell$-equation model with $3\\ell$ variables, experiments indicate that considering only $18\\ell$ quadratic equations underestimates the time complexity as $\\ell$ increases, while the newly observed $5\\ell$ quadratic equations may improve estimates of the actual solving degree. The unresolved task is to derive a theoretically tight upper bound on the actual solving degree of these overdefined RAIN systems while accounting for the additional $5\\ell$ quadratic equations and the resulting system structure."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of overdefined systems of quadratic equations modeling 3-round RAIN.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "ell: scaling parameter controlling the equation and variable counts in the models"
+    ],
+    "unresolved_remainder": "Derive a theoretically tight upper bound on the actual solving degree while accounting for the additional 5ell quadratic equations and the resulting system structure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "solving-degree",
+      "rain"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit",
+        "locator": "ASIACRYPT 2024, page 25",
+        "doi": "10.1007/978-981-96-0941-3_14",
+        "url": "https://eprint.iacr.org/2024/786",
+        "eprint": "2024/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that considering only the smaller equation set underestimates time complexity as the scaling parameter grows, while the newly observed equations may improve estimates of the actual solving degree. It presents deriving a theoretically tight upper bound as challenging.",
+      "citation_labels": [
+        "Fukang Liu et al., Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

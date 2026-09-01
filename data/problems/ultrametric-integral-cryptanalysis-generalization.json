@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ultrametric-integral-cryptanalysis-generalization",
+  "group_id": "ultrametric-integral-cryptanalysis-generalization",
+  "title": "Extending Ultrametric Integral Cryptanalysis",
+  "summary": "The theory is developed for p equals q equals 2, while its extension to arbitrary primes and all commutative inverse monoids remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Ultrametric integral cryptanalysis is developed in the case $p=q=2$, while extending the theory to arbitrary primes $p$ and to all commutative inverse monoids remains an open task. The target is a general formulation and corresponding extension of the cryptanalysis results over these broader algebraic settings, including $F_n^q$ equipped with multiplication; for $p\\ge 5$, the theory must be defined over the $p$-adic numbers $\\mathbb{Q}_p$. This extension is expected to generalize the existing results, but its development requires additional technical background."
+  },
+  "scope": {
+    "domain": "This concerns ultrametric integral cryptanalysis over broader algebraic settings, including commutative inverse monoids.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p: prime parameter, fixed at 2 in the current development and generalized to arbitrary primes in the open extension",
+      "q: parameter, fixed at 2 in the current development and appearing in F_n^q",
+      "F_n^q: multiplication-equipped setting included in the target extension",
+      "Q_p: p-adic number system required when p is at least 5"
+    ],
+    "unresolved_remainder": "Develop a general formulation and extend the cryptanalysis results to arbitrary primes and all commutative inverse monoids, including F_n^q with multiplication; for p at least 5, define the theory over the p-adic numbers Q_p."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "ultrametric-cryptanalysis",
+      "integral-cryptanalysis",
+      "commutative-inverse-monoids"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ultrametric integral cryptanalysis",
+        "locator": "ASIACRYPT 2024, page 4",
+        "doi": "10.1007/978-981-96-0941-3_13",
+        "url": "https://eprint.iacr.org/2024/722",
+        "eprint": "2024/722"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the extension as future work, targeting all primes and all commutative inverse monoids, including F_n^q with multiplication. It notes that p-adic numbers Q_p are required when p is at least 5, that more technical background is needed, and that the existing results generalize to the broader setting.",
+      "citation_labels": [
+        "Tim Beyne et al., Ultrametric integral cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

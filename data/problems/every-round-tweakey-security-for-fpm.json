@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "every-round-tweakey-security-for-fpm",
+  "group_id": "every-round-tweakey-security-for-fpm",
+  "title": "Every-Round Tweakey Security for FPM Ciphers",
+  "summary": "FPM’s periodic tweakey schedule eases related-tweak analysis; whether adding the tweakey every round improves security, and what guarantees follow, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For FPM tweakable block ciphers, tweakeys are added every $N_r$ rounds to simplify related-tweak analysis. The unresolved task is to determine whether adding the tweakey in every round can provide improved security, and to characterize the resulting security guarantees despite the harder analysis required."
+  },
+  "scope": {
+    "domain": "Security analysis of tweakey scheduling in FPM tweakable block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N_r: number of rounds between tweakey additions"
+    ],
+    "unresolved_remainder": "Determine whether every-round tweakey addition improves security and characterize the resulting security guarantees despite the harder analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "tweakable-block-ciphers",
+      "related-tweak-security",
+      "tweakey-scheduling"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generalized Feistel Ciphers for Efficient Prime Field Masking",
+        "locator": "EUROCRYPT 2024, page 9",
+        "doi": "10.1007/978-3-031-58734-4_7",
+        "url": "https://eprint.iacr.org/2024/431",
+        "eprint": "2024/431"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents periodic tweakey addition as simplifying related-tweak analysis and leaves potentially stronger but harder-to-analyze every-round addition as future research.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Generalized Feistel Ciphers for Efficient Prime Field Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

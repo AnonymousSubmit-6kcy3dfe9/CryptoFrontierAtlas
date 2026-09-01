@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fbedm2-tight-security-bound",
+  "group_id": "fbedm2-tight-security-bound",
+  "title": "Tight Security Bound for FBEDM2",
+  "summary": "Tightness is established for six MAC schemes using two independent block-cipher calls, but FBEDM2 is excluded; its exact bound or a matching attack remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "What is the tight security bound for $\\mathsf{FBEDM}_2$, and can it be matched by an attack?"
+  },
+  "scope": {
+    "domain": "Security bounds for block-cipher-based message-authentication codes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "FBEDM2, the MAC construction whose security bound is sought",
+      "two independent block cipher calls, the relevant construction setting"
+    ],
+    "unresolved_remainder": "Determine the tight security bound for FBEDM2 and whether it can be matched by an attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "macs",
+      "security-bounds",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Toward Full n-bit Security and Nonce Misuse Resistance of Block Cipher-based MACs",
+        "locator": "ASIACRYPT 2024, page 4",
+        "doi": "10.1007/978-981-96-0947-5_9",
+        "url": "https://eprint.iacr.org/2024/731",
+        "eprint": "2024/731"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that tight security bounds are proved for six MAC schemes using two independent block cipher calls, except for FBEDM2. This exception is presented as the remaining case for a tight bound or matching attack.",
+      "citation_labels": [
+        "Wonseok Choi et al., Toward Full n-bit Security and Nonce Misuse Resistance of Block Cipher-based MACs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

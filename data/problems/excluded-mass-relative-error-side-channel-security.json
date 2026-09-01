@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "excluded-mass-relative-error-side-channel-security",
+  "group_id": "excluded-mass-relative-error-side-channel-security",
+  "title": "Excluded-Mass Relative Error for Side-Channel Security",
+  "summary": "Ordinary worst-case relative error is maximal for Gaussian-noisy Hamming-weight leakage; re-deriving affected security results with excluded-mass relative error remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Hamming-weight leakage with additive Gaussian noise, the ordinary worst-case relative error $\\operatorname{RE}(X;Y)$ reaches its maximal value $|\\mathcal{X}|-1$ because arbitrarily unlikely outputs can determine the supremum. For an exclusion budget $E$, define\n$$\n\\operatorname{RE}_{E}(X;Y):=\\inf_{\\substack{A\\subseteq\\mathcal{Y}\\\\ \\Pr[Y\\in A^{c}]\\le E}} \\sup_{y\\in A} \\sup_{x\\in\\mathcal{X}}\\left|\\frac{p_{Y\\mid X}(y\\mid x)}{p_Y(y)}-1\\right|,\n$$\nso that at most $E$ probability mass is excluded. Develop and prove $\\operatorname{RE}_{E}$-based analogues of all side-channel security results whose hypotheses or conclusions use ordinary $\\operatorname{RE}$."
+  },
+  "scope": {
+    "domain": "Relative-error analysis of side-channel security for noisy Hamming-weight leakage.",
+    "assumptions": [
+      "The leakage is Hamming-weight leakage with additive Gaussian noise."
+    ],
+    "parameters": [
+      "E: exclusion budget limiting the probability mass removed from consideration"
+    ],
+    "unresolved_remainder": "Develop and prove excluded-mass-relative-error analogues of all side-channel security results whose hypotheses or conclusions use ordinary relative error."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "relative-error",
+      "gaussian-noise"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing",
+        "locator": "CRYPTO 2024, page 53",
+        "doi": "10.1007/978-3-031-68391-6_12",
+        "url": "https://eprint.iacr.org/2024/199",
+        "eprint": "2024/199"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces excluded-mass relative error as a potential fix for domination by extremely unlikely outputs. It states that adopting this patch would require re-deriving all results in terms of the new definition.",
+      "citation_labels": [
+        "Julien Béguinot et al., Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

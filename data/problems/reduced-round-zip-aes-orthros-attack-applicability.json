@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reduced-round-zip-aes-orthros-attack-applicability",
+  "group_id": "reduced-round-zip-aes-orthros-attack-applicability",
+  "title": "Reduced-Round ZIP-AES Analysis and Orthros Attack Applicability",
+  "summary": "Known AES-PRF attacks transfer to ZIP-AES cases with a one- or two-round first branch; broader resistance, bias explanations, attack costs, and applicability to Orthros remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the attack resistance of the reduced-round family $\\operatorname{ZIP\\text{-}AES}_{r_0,r_1}(x) := \\operatorname{AES}_{r_0}(x) \\oplus \\operatorname{AES}_{r_1}^{-1}(x)$. Existing attacks against $\\operatorname{AES\\text{-}PRF}_{1,r}$ and $\\operatorname{AES\\text{-}PRF}_{2,r}$ for every $r \\ge 1$ also apply to $\\operatorname{ZIP\\text{-}AES}_{1,r}$ and $\\operatorname{ZIP\\text{-}AES}_{2,r}$, respectively; the unresolved task is to analyze the broader family, with particular attention to balanced instances satisfying $r_0=r_1\\ge 2$, to better evaluate ZIP-AES's resistance to attacks. In particular, explain the observed probability biases for $\\mathrm{ZIP\\text{-}AES}_{2,2}$ (above $2^{-32}$ for $(M_I\\cap D_{I'})\\to C_J$ and for the truncated differential from $C_i$ to $C_J$ with $|J|=3$ where practical tests report probability slightly greater than $2^{-32}$) and for $\\mathrm{ZIP\\text{-}AES}_{3,3}$ (above $2^{-16}$), and establish whether the latter occurs for full AES. Additionally, determine the data, time, and memory complexity of the potential attack on $\\mathrm{ZIP\\text{-}AES}_{2,r}$ that requires guessing at least one diagonal of the first-round key and one column of the second-round key, totaling at least eight key bytes. Finally, determine whether the newly introduced differential-and-linear key-recovery attack, described as a differential-linear attack on the composition, applies to Orthros; the unresolved task is to establish applicability to Orthros, including whether the attack's conditions and parameters can be instantiated for that construction."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of reduced-round ZIP-AES and differential-linear key recovery, including possible transfer to Orthros.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r0 and r1: round counts of the forward and inverse AES components; balanced instances have equal counts of at least two",
+      "r: variable round count of at least one in the matching AES-PRF and ZIP-AES subfamilies and the potential ZIP-AES attack",
+      "I, I', J, and i: indices or index sets selecting the reported differential events, with J containing three elements in the truncated case",
+      "Guessed key material: at least one first-round diagonal and one second-round column, totaling at least eight bytes",
+      "Data, time, and memory: resource-complexity measures to be determined for the potential attack"
+    ],
+    "unresolved_remainder": "Analyze the broader reduced-round ZIP-AES family, explain the reported probability biases and whether the latter bias occurs for full AES, determine the potential attack's resource complexity, and establish whether the new attack applies to Orthros."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "zip-aes",
+      "orthros",
+      "differential-linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES",
+        "locator": "ASIACRYPT 2024, page 29",
+        "doi": "10.1007/978-981-96-0947-5_10",
+        "url": "https://eprint.iacr.org/2024/2033",
+        "eprint": "2024/2033"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper introduces a differential-and-linear key-recovery attack and explicitly frames its applicability to Orthros as an open direction.",
+      "citation_labels": [
+        "Antonio Florez Gutierrez et al., General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

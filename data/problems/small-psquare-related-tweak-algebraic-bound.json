@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "small-psquare-related-tweak-algebraic-bound",
+  "group_id": "small-psquare-related-tweak-algebraic-bound",
+  "title": "Related-Tweak Algebraic-Attack Bound for small-pSquare",
+  "summary": "After full tweak absorption, 8 plus 4 times tau extra rounds are conjectured to stop related-tweak algebraic attacks on small-pSquare; establishing this for tau 1 or 2 remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the generalized Feistel cipher construction used for small-pSquare, related-tweak algebraic attacks are conjectured to be prevented when, after the tweak has been fully absorbed, the cipher includes $8+4\\tau$ extra rounds, equivalently $2+\\tau$ extra steps, for $\\tau\\in\\{1,2\\}$; the unresolved task is to establish this conjectured bound. The motivating limitation is that an attacker is considered unable to solve a system of equations in the tweaks covering more than 12 rounds, or equivalently 3 steps, after full tweak absorption. This algebraic bound is separate from the larger extra-step bounds stated for preventing related-tweak statistical attacks, namely 9 and 12 for $\\tau=1$ and $\\tau=2$, respectively."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the small-pSquare generalized Feistel cipher under related tweaks.",
+    "assumptions": [
+      "The tweak has been fully absorbed before the extra-round margin.",
+      "An attacker is considered unable to solve tweak-equation systems covering more than 12 rounds, equivalently 3 steps."
+    ],
+    "parameters": [
+      "τ ∈ {1, 2}: indexes the two conjectured extra-round and extra-step margins"
+    ],
+    "unresolved_remainder": "Establish that 8+4τ extra rounds, equivalently 2+τ extra steps, prevent related-tweak algebraic attacks for τ∈{1,2} after full tweak absorption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "related-tweak-attacks",
+      "generalized-feistel"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generalized Feistel Ciphers for Efficient Prime Field Masking",
+        "locator": "EUROCRYPT 2024, page 17",
+        "doi": "10.1007/978-3-031-58734-4_7",
+        "url": "https://eprint.iacr.org/2024/431",
+        "eprint": "2024/431"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly states the sufficiency bound as a conjecture, motivated by the presumed infeasibility of solving tweak-equation systems spanning more than 12 rounds after absorption. It notes that tightness is unnecessary because related-tweak statistical attacks require larger margins.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Generalized Feistel Ciphers for Efficient Prime Field Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

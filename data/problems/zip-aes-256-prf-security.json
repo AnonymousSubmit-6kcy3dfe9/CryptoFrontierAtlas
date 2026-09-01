@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zip-aes-256-prf-security",
+  "group_id": "zip-aes-256-prf-security",
+  "title": "PRF Security of ZIP-AES-256",
+  "summary": "The paper does not discuss ZIP-AES-256, leaving unresolved whether it attains 256-bit PRF security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does ZIP-AES-256 achieve 256-bit PRF security?"
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptography, specifically PRF security for ZIP-AES-256.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "256 bits: target PRF security level"
+    ],
+    "unresolved_remainder": "Whether ZIP-AES-256 achieves 256-bit PRF security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "block-ciphers",
+      "prf-security",
+      "zip-aes-256"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES",
+        "locator": "ASIACRYPT 2024, page 28",
+        "doi": "10.1007/978-981-96-0947-5_10",
+        "url": "https://eprint.iacr.org/2024/2033",
+        "eprint": "2024/2033"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that ZIP-AES-256 was not discussed in the paper and explicitly asks whether it derives a 256-bit secure PRF.",
+      "citation_labels": [
+        "Antonio Florez Gutierrez et al., General Practical Cryptanalysis of the Sum of Round-Reduced Block Ciphers and ZIP-AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

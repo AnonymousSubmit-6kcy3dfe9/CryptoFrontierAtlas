@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "automating-combined-higher-round-differential-mitm-attacks",
+  "group_id": "automating-combined-higher-round-differential-mitm-attacks",
+  "title": "Automating Combined Higher-Round Differential MITM Attacks",
+  "summary": "Differential MITM attacks can use techniques unavailable to classical differential attacks, but automating a combined approach over more rounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Build a tool combining differential MITM, parallel partitioning, and bicliques for higher-round attacks."
+  },
+  "scope": {
+    "domain": "Automated symmetric-key cryptanalysis combining differential meet-in-the-middle, parallel-partitioning, and biclique techniques.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Attack-round coverage — the tool targets higher-round attacks"
+    ],
+    "unresolved_remainder": "Construct a tool that integrates differential MITM, parallel partitioning, and bicliques for attacks over more rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "meet-in-the-middle",
+      "biclique-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Differential Meet-In-The-Middle Cryptanalysis",
+        "locator": "EUROCRYPT 2024, page 28",
+        "doi": "10.1007/978-3-031-58716-0_10",
+        "url": "https://eprint.iacr.org/2024/351",
+        "eprint": "2024/351"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion explicitly presents this as an open problem after arguing that differential MITM can use techniques unavailable to classical differential attacks. It leaves automation of the combined higher-round strategy unresolved.",
+      "citation_labels": [
+        "Zahra Ahmadian et al., Improved Differential Meet-In-The-Middle Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

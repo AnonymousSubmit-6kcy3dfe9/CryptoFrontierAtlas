@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-trivium-superpoly-statistics",
+  "group_id": "exact-trivium-superpoly-statistics",
+  "title": "Exact Cancellation-Aware Statistics for Trivium Superpolies",
+  "summary": "Trivium superpolies were recovered through 851 rounds, but their exact cancellation-aware statistics remain unknown within practical workstation memory.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each massive recovered Trivium superpoly, including the superpolies recovered through 851 rounds, determine the exact number of monomials after monomial cancellation, the exact number of involved key bits, and the exact algebraic degree. The available evaluations omit monomial cancellation because storing the monomials for each superpoly exceeds workstation memory, so the reported values are only upper bounds; the unresolved task is to obtain exact values while respecting practical workstation-memory limits."
+  },
+  "scope": {
+    "domain": "Cube-attack cryptanalysis of massive recovered Trivium superpolies.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Trivium round count, including up to 851 rounds, identifies the recovered superpolies under analysis"
+    ],
+    "unresolved_remainder": "Determine each superpoly's exact post-cancellation monomial count, involved-key-bit count, and algebraic degree within practical workstation-memory limits."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "trivium",
+      "algebraic-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Massive Superpoly Recovery with a Meet-in-the-middle Framework -- Improved Cube Attacks on Trivium and Kreyvium",
+        "locator": "EUROCRYPT 2024, page 27",
+        "doi": "10.1007/978-3-031-58716-0_13",
+        "url": "https://eprint.iacr.org/2024/342",
+        "eprint": "2024/342"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports recovering Trivium superpolies through 851 rounds but evaluating their statistics without monomial cancellation because full monomial storage exceeds workstation memory. The resulting values are only upper bounds.",
+      "citation_labels": [
+        "Jiahui He et al., Massive Superpoly Recovery with a Meet-in-the-middle Framework -- Improved Cube Attacks on Trivium and Kreyvium"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-security-of-tnt-sm4-32",
+  "group_id": "exact-security-of-tnt-sm4-32",
+  "title": "Exact Security of TNT-SM4-32",
+  "summary": "A known distinguisher does not directly apply to TNT-SM4-32’s 32-bit tweak space but breaks a prior beyond-the-birthday-bound proof; its exact security and BBB status remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{TNT\\text{-}SM4\\text{-}32}$, the tweak space is limited to $32$ bits. A known distinguisher requires $O(2^{n/2})$ tweaks with $n=128$ and therefore does not directly apply to $\\mathrm{TNT\\text{-}SM4\\text{-}32}$, although it breaks a prior beyond-the-birthday-bound security proof. Determine the exact security of $\\mathrm{TNT\\text{-}SM4\\text{-}32}$ and whether it achieves beyond-the-birthday-bound security despite its restricted tweak space."
+  },
+  "scope": {
+    "domain": "Security analysis of the restricted-tweak TNT-SM4-32 block-cipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "32-bit tweak space: the restricted tweak domain of TNT-SM4-32",
+      "n = 128: the parameter governing the known distinguisher's tweak requirement"
+    ],
+    "unresolved_remainder": "Determine the exact security of TNT-SM4-32 and whether it achieves beyond-the-birthday-bound security with its restricted tweak space."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "symmetric-cryptanalysis",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security of TNT and Beyond: Attacks, Proofs and Possibilities for the Cascaded LRW Paradigm",
+        "locator": "EUROCRYPT 2024, page 6",
+        "doi": "10.1007/978-3-031-58716-0_9",
+        "url": "https://eprint.iacr.org/2023/1272",
+        "eprint": "2023/1272"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source says its distinguisher does not directly apply because TNT-SM4-32’s tweak space is too small, yet it breaks a prior beyond-the-birthday-bound security proof. It explicitly leaves the construction’s exact security and beyond-the-birthday-bound status open.",
+      "citation_labels": [
+        "Ashwin Jha et al., Tight Security of TNT and Beyond: Attacks, Proofs and Possibilities for the Cascaded LRW Paradigm"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

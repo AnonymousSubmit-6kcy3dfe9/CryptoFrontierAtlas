@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-dimensional-grobner-bound-tightness",
+  "group_id": "higher-dimensional-grobner-bound-tightness",
+  "title": "Higher-Dimensional Tightness of Gröbner-Basis Lower Bounds",
+  "summary": "Lower bounds are experimentally tight for small-scale systems, but it remains unresolved whether they stay tight in higher dimensions or what gap separates them from actual solving complexity.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the constructed systems of quadratic equations, lower bounds on Gr?bner-basis solving complexity have been experimentally verified to be tight for small-scale systems, but their tightness in higher dimensions lacks theoretical support. The unresolved task is to determine whether this tightness persists for higher-dimensional instances of the constructed systems or, if it does not, to quantify the gap between each lower bound and the actual solving complexity as system dimension increases."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of symmetric ciphers modeled by overdefined systems of quadratic equations, focusing on Gröbner-basis solving complexity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "system dimension (the variable along which lower-bound tightness is assessed)"
+    ],
+    "unresolved_remainder": "Determine whether the tightness persists for higher-dimensional instances of the constructed systems; otherwise, quantify the gap between each lower bound and the actual solving complexity as system dimension increases."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "groebner-basis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit",
+        "locator": "ASIACRYPT 2024, page 4",
+        "doi": "10.1007/978-981-96-0941-3_14",
+        "url": "https://eprint.iacr.org/2024/786",
+        "eprint": "2024/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports experimental verification that the lower bounds are tight for small-scale equation systems, then says the same claim cannot be made for higher dimensions because theoretical support is lacking.",
+      "citation_labels": [
+        "Fukang Liu et al., Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

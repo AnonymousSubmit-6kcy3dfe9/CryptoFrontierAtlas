@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "adaptive-lrwq-security-proof",
+  "group_id": "adaptive-lrwq-security-proof",
+  "title": "Adaptive Security Proof for LRWQ",
+  "summary": "Existing LRWQ proofs fail in the adaptive setting; the unresolved task is to repair them using database-defined bad events and determine any resulting loss in the security bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Existing security proofs for the $\\mathrm{LRWQ}$ construction do not hold in the adaptive setting because their bad-database definitions depend on an input that the adversary may choose adaptively. The open problem is to give a valid adaptive security proof for $\\mathrm{LRWQ}$ by defining all relevant bad events directly and exclusively in terms of database entries, and to derive the resulting security bound, including any degradation caused by this reformulation."
+  },
+  "scope": {
+    "domain": "Adaptive compressed-oracle security proofs for the LRWQ block-cipher-style construction.",
+    "assumptions": [
+      "The adversary may choose the relevant input adaptively."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a valid adaptive LRWQ security proof using database-entry-only bad events and derive the resulting bound, including any degradation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "lrwq",
+      "adaptive-security",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs",
+        "locator": "ASIACRYPT 2024, page 24",
+        "doi": "10.1007/978-981-96-0947-5_8",
+        "url": "https://eprint.iacr.org/2024/1478",
+        "eprint": "2024/1478"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the adaptive LRWQ flaw as a definitional problem that seems repairable by defining bad events directly from database entries. It cautions that this repair may produce a slightly worse bound.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

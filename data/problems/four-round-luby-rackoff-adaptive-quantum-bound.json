@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "four-round-luby-rackoff-adaptive-quantum-bound",
+  "group_id": "four-round-luby-rackoff-adaptive-quantum-bound",
+  "title": "Adaptive Quantum Security of Four-Round Luby–Rackoff",
+  "summary": "The claimed adaptive quantum-CPA proof for four-round Luby–Rackoff is invalid, but a non-adaptive result is proved; a valid proof or the correct adaptive bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether $\\operatorname{Adv}^{\\mathrm{qcpa}}_{\\mathrm{LR}_4}(A)=O\\!\\left(\\sqrt{q^3/2^n}\\right)$ admits a valid proof, or establish the correct adaptive bound."
+  },
+  "scope": {
+    "domain": "Quantum security analysis of the four-round Luby–Rackoff Feistel construction.",
+    "assumptions": [
+      "The adversary operates with adaptive quantum chosen-plaintext access."
+    ],
+    "parameters": [
+      "A: adversary whose qCPA advantage is measured",
+      "q: query parameter in the claimed advantage bound",
+      "n: size parameter in the claimed advantage bound"
+    ],
+    "unresolved_remainder": "Determine whether the claimed adaptive qCPA bound has a valid proof or establish the correct adaptive bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "luby-rackoff",
+      "quantum-cpa",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs",
+        "locator": "ASIACRYPT 2024, page 1",
+        "doi": "10.1007/978-981-96-0947-5_8",
+        "url": "https://eprint.iacr.org/2024/1478",
+        "eprint": "2024/1478"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper identifies a gap invalidating the claimed adaptive quantum-CPA proof, emphasizes that this is not an attack, and proves only a non-adaptive replacement. It notes that the issue persists even with arbitrarily many rounds.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., Mind the Bad Norms: Revisiting Compressed Oracle-based Quantum Indistinguishability Proofs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

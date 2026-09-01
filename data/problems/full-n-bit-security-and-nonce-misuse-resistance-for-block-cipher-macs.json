@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-n-bit-security-and-nonce-misuse-resistance-for-block-cipher-macs",
+  "group_id": "full-n-bit-security-and-nonce-misuse-resistance-for-block-cipher-macs",
+  "title": "Full n-Bit Security and Nonce-Misuse Resistance for Block-Cipher MACs",
+  "summary": "Some nonce-based block-cipher MACs achieve three-quarters of n bits of PRF security, but full n-bit security with nonce-misuse resistance remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prior nonce-based block cipher-based MAC constructions using two block cipher calls, one universal hash-function call, and an arbitrary number of XOR operations have been analyzed in the faulty-nonce model; some achieve $3n/4$-bit PRF security, but the tightness of those constructions remains open. The unresolved construction-existence question is whether a nonce-based block cipher-based MAC construction can provide both full $n$-bit security and nonce misuse resistance. [S1]"
+  },
+  "scope": {
+    "domain": "Design and PRF security of nonce-based block-cipher MACs in the faulty-nonce model.",
+    "assumptions": [
+      "PRF security is analyzed in the faulty-nonce model."
+    ],
+    "parameters": [
+      "n: target security level measured in bits",
+      "Two block-cipher calls, one universal hash-function call, and arbitrary XOR operations: resource profile of the prior constructions"
+    ],
+    "unresolved_remainder": "Whether a nonce-based block-cipher MAC can provide full n-bit security and nonce-misuse resistance; the tightness of the constructions achieving three-quarters of n bits of PRF security also remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "macs",
+      "block-ciphers",
+      "nonce-misuse-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Toward Full n-bit Security and Nonce Misuse Resistance of Block Cipher-based MACs",
+        "locator": "ASIACRYPT 2024, page 3",
+        "doi": "10.1007/978-981-96-0947-5_9",
+        "url": "https://eprint.iacr.org/2024/731",
+        "eprint": "2024/731"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that some prior nonce-based constructions achieve three-quarters of n bits of PRF security while their tightness remains open. It then explicitly asks whether full n-bit security and nonce-misuse resistance can be achieved together.",
+      "citation_labels": [
+        "Wonseok Choi et al., Toward Full n-bit Security and Nonce Misuse Resistance of Block Cipher-based MACs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

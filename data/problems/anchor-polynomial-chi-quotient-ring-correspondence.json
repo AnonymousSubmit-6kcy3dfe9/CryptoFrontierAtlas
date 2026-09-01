@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "anchor-polynomial-chi-quotient-ring-correspondence",
+  "group_id": "anchor-polynomial-chi-quotient-ring-correspondence",
+  "title": "Anchor-Polynomial and Quotient-Ring Models of χ",
+  "summary": "Anchor polynomials and quotient-ring units both describe χ algebraically, but whether an explicit correspondence connects the two representations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether---and, if so, by what explicit correspondence---the anchor-polynomial representation of $\\chi$ is related to the quotient-ring representation in which generalized $\\chi$-maps are modeled as units of $\\mathbb{F}_2[X]/(X^{(n+1)/2})$ and $\\chi$ is represented by $[1+X]$. In the anchor-polynomial representation, if $a^{(i)}(X)$ is the anchor polynomial of an anchor $y_i$ and $b^{(i)}(X)$ is the anchor polynomial of $(\\chi(y))_i$, then $b^{(i)}(X)=(1+X)a^{(i)}(X)\\bmod X^{d_i}$, where $d_i$ depends on the distance to the previous anchor. A solution should specify how the anchor polynomials and anchor-dependent moduli correspond to quotient-ring elements and operations, or show that no direct correspondence exists."
+  },
+  "scope": {
+    "domain": "Algebraic representations of the χ map on binary vectors, particularly anchor polynomials and truncated polynomial quotient rings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: controls the truncation degree of the quotient ring",
+      "i: indexes the selected anchor and its anchor polynomial",
+      "d_i: controls the anchor-dependent modulus and depends on the distance to the previous anchor"
+    ],
+    "unresolved_remainder": "Determine an explicit correspondence between anchor polynomials with anchor-dependent moduli and quotient-ring elements and operations, or establish that no direct correspondence exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "algebraic-structures",
+      "vectorial-boolean-functions",
+      "chi-map"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Structure of the Iterates of $\\chi$",
+        "locator": "CRYPTO 2024, page 10",
+        "doi": "10.1007/978-3-031-68385-5_13",
+        "url": "https://eprint.iacr.org/2024/801",
+        "eprint": "2024/801"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper notes the parallel algebraic descriptions and explicitly states that whether or how the two perspectives are related is unclear. It subsequently develops formulas for iterates and fixed points without resolving that relationship.",
+      "citation_labels": [
+        "Björn Kriepke et al., Algebraic Structure of the Iterates of $\\chi$"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

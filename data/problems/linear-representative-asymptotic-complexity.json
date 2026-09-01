@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-representative-asymptotic-complexity",
+  "group_id": "linear-representative-asymptotic-complexity",
+  "title": "Asymptotic Complexity of the Linear-Representative Subroutine",
+  "summary": "The suggested n-cubed-times-two-to-the-n bound conflicts with experiments, particularly for the AES S-box; the correct asymptotic complexity remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the correct asymptotic complexity, as a function of $n$, of the linear_representative subroutine that computes linear representatives in affine-equivalence testing for S-boxes. In particular, reconcile the suggested $O(n^3 2^n)$ bound with experimental results that do not match it, including the worse complexity observed for the AES S-box."
+  },
+  "scope": {
+    "domain": "Algorithmic complexity of linear-representative computation in affine-equivalence testing for S-boxes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n — parameter with respect to which asymptotic complexity is measured"
+    ],
+    "unresolved_remainder": "Determine the correct asymptotic complexity and reconcile the suggested n-cubed-times-two-to-the-n bound with the observed behavior, including the worse AES S-box case."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "affine-equivalence",
+      "algorithmic-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "HAWKEYE – Recovering Symmetric Cryptography From Hardware Circuits",
+        "locator": "CRYPTO 2024, page 18",
+        "doi": "10.1007/978-3-031-68385-5_11",
+        "url": "https://eprint.iacr.org/2024/860",
+        "eprint": "2024/860"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts a suggested complexity bound with experimental behavior that is worse for the AES S-box and leaves the discrepancy unresolved.",
+      "citation_labels": [
+        "Gregor Leander et al., HAWKEYE – Recovering Symmetric Cryptography From Hardware Circuits"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

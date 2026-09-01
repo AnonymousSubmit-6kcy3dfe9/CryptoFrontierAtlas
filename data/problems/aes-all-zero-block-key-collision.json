@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-all-zero-block-key-collision",
+  "group_id": "aes-all-zero-block-key-collision",
+  "title": "AES Key Collisions on the All-Zero Block",
+  "summary": "When the AES key size exceeds the block size, collisions on the all-zero block must exist; finding distinct colliding keys in fewer than two to the sixty-fourth trials remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "When the AES key size exceeds the block size, distinct keys encrypting the all-zero block to the same ciphertext must exist. Determine whether two such keys, $k_1$ and $k_2$, satisfying $\\operatorname{AES}_{k_1}(0)=\\operatorname{AES}_{k_2}(0)$, can be found in fewer than $2^{64}$ trials; prior work on chosen-key settings or AES hashing modes does not resolve this specific problem."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of target-plaintext key collisions in AES.",
+    "assumptions": [
+      "The AES key size exceeds the block size."
+    ],
+    "parameters": [
+      "AES key size and block size: sizes whose ordering guarantees collision existence",
+      "k1 and k2: distinct AES keys sought in the collision search",
+      "The all-zero block: fixed plaintext encrypted under both keys",
+      "2^64 trials: strict upper work threshold for the desired search"
+    ],
+    "unresolved_remainder": "Whether two distinct AES keys that encrypt the all-zero block to the same ciphertext can be found in fewer than 2^64 trials."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "target-plaintext-key-collision",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Collisions on AES and Its Applications",
+        "locator": "ASIACRYPT 2024, page 2",
+        "doi": "10.1007/978-981-96-0941-3_9",
+        "url": "https://eprint.iacr.org/2024/1508",
+        "eprint": "2024/1508"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper quotes this as an explicit open problem, noting that prior chosen-key and AES hashing-mode work does not resolve it. Its reduced-round results leave the standard full-round question open.",
+      "citation_labels": [
+        "Kodai Taiyama et al., Key Collisions on AES and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

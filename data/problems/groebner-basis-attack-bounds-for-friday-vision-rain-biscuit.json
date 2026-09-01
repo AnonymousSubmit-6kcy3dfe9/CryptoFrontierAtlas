@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "groebner-basis-attack-bounds-for-friday-vision-rain-biscuit",
+  "group_id": "groebner-basis-attack-bounds-for-friday-vision-rain-biscuit",
+  "title": "Gröbner Basis Attack Bounds for Friday, Vision, RAIN, and Biscuit",
+  "summary": "Same-scale random quadratic systems provide lower-bound intuition, but better upper and lower bounds for attacks on Friday, Vision, RAIN, and Biscuit remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the ciphers Friday, Vision, RAIN, and Biscuit, develop methods based on the overdefined-system-of-quadratic-equations modelling approach that more accurately estimate both upper and lower bounds for Gr?bner basis attack complexity. The constructed systems are not semi-regular, so semi-regularity-based reasoning cannot justify upper bounds, and solving a random quadratic system of the same scale provides only lower-bound intuition; the desired estimates must therefore account for the specific non-semi-regular systems of these four ciphers."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Friday, Vision, RAIN, and Biscuit using overdefined systems of quadratic equations.",
+    "assumptions": [
+      "The constructed quadratic systems are non-semi-regular."
+    ],
+    "parameters": [
+      "System scale, used to match random quadratic systems to the modeled cipher systems for lower-bound estimation"
+    ],
+    "unresolved_remainder": "Obtain more accurate upper and lower bounds for Gröbner basis attack complexity that account for the specific non-semi-regular systems of the four ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "groebner-basis",
+      "complexity-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit",
+        "locator": "ASIACRYPT 2024, page 1",
+        "doi": "10.1007/978-981-96-0941-3_14",
+        "url": "https://eprint.iacr.org/2024/786",
+        "eprint": "2024/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source treats solving a same-scale random quadratic system as a lower-bound reference. It explicitly leaves better estimation of both upper and lower bounds from the modelling method as an open problem.",
+      "citation_labels": [
+        "Fukang Liu et al., Modelling Ciphers with Overdefined Systems of Quadratic Equations: Application to Friday, Vision, RAIN and Biscuit"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

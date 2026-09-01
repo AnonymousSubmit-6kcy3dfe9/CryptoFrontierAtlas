@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ideal-ete-enciphering-from-common-primitives",
+  "group_id": "ideal-ete-enciphering-from-common-primitives",
+  "title": "Constructing Ideal EtE Enciphering from Common Primitives",
+  "summary": "EtE achieves s-bit receiver-binding security with s-bit expansion under an ideal cipher, but realizing the needed enciphering from common primitives remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Encode-then-Encipher (EtE), when its underlying cipher is modeled as ideal, achieves $s$ bits of receiver-binding (r-BIND) security with $s$ bits of expansion; r-BIND is a form of commitment distinct from CMT. Off-the-shelf enciphering schemes such as AEZ and Adiantum do not provide a solution because EtE's committing security breaks down when they are used. Can this ideal enciphering be constructed from common primitives such as a block cipher while preserving the $s$-bit r-BIND guarantee with $s$-bit expansion?"
+  },
+  "scope": {
+    "domain": "Receiver-binding authenticated-encryption design based on Encode-then-Encipher and symmetric enciphering primitives.",
+    "assumptions": [
+      "For the known guarantee, EtE's underlying cipher is modeled as ideal."
+    ],
+    "parameters": [
+      "s: bit level of both the r-BIND guarantee and expansion"
+    ],
+    "unresolved_remainder": "Construct the enciphering needed by EtE from common primitives such as a block cipher while retaining s-bit r-BIND security with s-bit expansion."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "block-ciphers",
+      "receiver-binding"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Succinctly-Committing Authenticated Encryption",
+        "locator": "CRYPTO 2024, page 7",
+        "doi": "10.1007/978-3-031-68385-5_10",
+        "url": "https://eprint.iacr.org/2024/875",
+        "eprint": "2024/875"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents ideal-cipher EtE as achieving s-bit r-BIND security with matching s-bit expansion, while saying that realization from common primitives is unclear. It also reports that AEZ and Adiantum break EtE's committing security.",
+      "citation_labels": [
+        "Mihir Bellare et al., Succinctly-Committing Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

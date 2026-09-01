@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lower-feistel-crooked-indifferentiability-round-constant",
+  "group_id": "lower-feistel-crooked-indifferentiability-round-constant",
+  "title": "Lowering the Feistel Crooked-Indifferentiability Round Constant",
+  "summary": "The Feistel construction is proved crooked-indifferentiable with round-bound constant 337; whether refined proof parameters can lower it below 200 remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Feistel construction considered under crooked indifferentiability, the proven sufficient number of rounds is $\\ell \\geq 337n/\\log(1/\\epsilon)$. Can the proof parameters be refined to establish crooked indifferentiability with $\\ell \\geq cn/\\log(1/\\epsilon)$ for some constant $c<200$?"
+  },
+  "scope": {
+    "domain": "Round complexity of Feistel constructions under crooked indifferentiability.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "ℓ: number of Feistel rounds",
+      "n: size parameter in the round bound",
+      "ε: parameter governing the logarithmic term in the round bound",
+      "c: target multiplicative constant below 200"
+    ],
+    "unresolved_remainder": "Refine the proof parameters to establish crooked indifferentiability with the stated round bound for some constant c below 200."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "feistel-networks",
+      "crooked-indifferentiability",
+      "round-complexity"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Crooked Indifferentiability of the Feistel Construction",
+        "locator": "ASIACRYPT 2024, page 10",
+        "doi": "10.1007/978-981-96-0938-3_14",
+        "url": "https://eprint.iacr.org/2024/1456",
+        "eprint": "2024/1456"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "After proving the round bound with constant 337, the paper remarks that a more careful choice of proof parameters could potentially reduce the constant below 200.",
+      "citation_labels": [
+        "Alexander Russell et al., Crooked Indifferentiability of the Feistel Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

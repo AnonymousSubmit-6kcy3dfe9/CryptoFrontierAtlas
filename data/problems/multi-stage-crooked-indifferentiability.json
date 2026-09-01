@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-stage-crooked-indifferentiability",
+  "group_id": "multi-stage-crooked-indifferentiability",
+  "title": "Multi-Stage Crooked Indifferentiability",
+  "summary": "The current crooked-indifferentiability replacement/composition guarantee is single-stage; a multi-stage version for disjoint adversaries remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can crooked indifferentiability and its replacement/composition guarantee, currently restricted to single-stage settings, be extended to multi-stage settings in which disjoint adversaries are split across several stages?"
+  },
+  "scope": {
+    "domain": "Cryptographic indifferentiability frameworks and their replacement/composition guarantees.",
+    "assumptions": [
+      "The target multi-stage setting uses disjoint adversaries split across several stages."
+    ],
+    "parameters": [
+      "Number of stages — distinguishes the current single-stage setting from the proposed multi-stage setting",
+      "Adversary allocation — specifies how disjoint adversaries are split across stages"
+    ],
+    "unresolved_remainder": "Develop a multi-stage extension of crooked indifferentiability and its replacement/composition guarantee for disjoint adversaries divided among several stages."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "crooked-indifferentiability",
+      "cryptographic-composition",
+      "multi-stage-security"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Crooked Indifferentiability of the Feistel Construction",
+        "locator": "ASIACRYPT 2024, page 37",
+        "doi": "10.1007/978-981-96-0938-3_14",
+        "url": "https://eprint.iacr.org/2024/1456",
+        "eprint": "2024/1456"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that its replacement/composition theorem is restricted to single-stage settings and leaves extension to multiple stages with disjoint adversaries as future work.",
+      "citation_labels": [
+        "Alexander Russell et al., Crooked Indifferentiability of the Feistel Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

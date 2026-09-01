@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "q2-fast-correlation-attack-beyond-grover-search",
+  "group_id": "q2-fast-correlation-attack-beyond-grover-search",
+  "title": "Q2 Fast-Correlation Attack Beyond Grover Search",
+  "summary": "Attempts on eight stream ciphers have not beaten Grover search; finding a Q2 fast-correlation attack that recovers an initial state or key faster remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find a $\\mathrm{Q2}$ fast-correlation attack on at least one of Grain v1, Grain-128, Grain-128a, Fruit-v2, Fruit-80, Plantlet, SNOW-V, or SNOW-Vi that recovers the initial state or secret key faster than exhaustive key search with Grover's algorithm. Attempts to quantum-speed classical fast-correlation attacks on these targets have not produced such an attack. For every target except SNOW-V and SNOW-Vi, the identified obstacle is that the absolute correlations are too small. SNOW-V and SNOW-Vi instead use $512$-bit LFSRs and $256$-bit keys and have absolute correlations greater than $2^{-50}$, but the QFCA2 quantum fast-correlation method still has time complexity at least $2^{150}$ because of its $2^{18}\\ell^4$ factor when $\\ell=512$."
+  },
+  "scope": {
+    "domain": "Quantum fast-correlation cryptanalysis of LFSR-based stream ciphers.",
+    "assumptions": [
+      "The attack is evaluated in the Q2 model."
+    ],
+    "parameters": [
+      "Target cipher: one of Grain v1, Grain-128, Grain-128a, Fruit-v2, Fruit-80, Plantlet, SNOW-V, or SNOW-Vi",
+      "Recovery target: the initial state or secret key",
+      "Performance benchmark: exhaustive key search with Grover's algorithm",
+      "Absolute correlation: the identified bottleneck for every target except SNOW-V and SNOW-Vi",
+      "LFSR length ell: equal to 512 for SNOW-V and SNOW-Vi and used in the stated QFCA2 time factor",
+      "Key size: 256 bits for SNOW-V and SNOW-Vi"
+    ],
+    "unresolved_remainder": "Construct a Q2 fast-correlation attack on at least one named cipher that recovers the initial state or secret key faster than Grover exhaustive key search."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "fast-correlation-attacks",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Algorithms for Fast Correlation Attacks on LFSR-Based Stream Ciphers",
+        "locator": "ASIACRYPT 2024, page 30",
+        "doi": "10.1007/978-981-96-0944-4_13",
+        "url": "https://eprint.iacr.org/2024/894",
+        "eprint": "2024/894"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that attempts to speed up classical fast-correlation attacks on all eight ciphers produced no Q2 attack faster than Grover exhaustive search. It attributes the obstacle to small correlations except for SNOW-V and SNOW-Vi, where QFCA2 still has time complexity at least 2^150.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Quantum Algorithms for Fast Correlation Attacks on LFSR-Based Stream Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cdc-proofs-masking-with-shuffling",
+  "group_id": "cdc-proofs-masking-with-shuffling",
+  "title": "CDC Proofs for Masking with Shuffling",
+  "summary": "CDC-based proofs cover masking alone; proving security for masking combined with shuffling and whether it lowers the required physical-noise level remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a formal security proof using the CDC/Doeblin-coefficient framework for implementations that combine masking with shuffling, and determine whether this combination can lower the physical-noise level required to obtain relevant security parameters."
+  },
+  "scope": {
+    "domain": "Side-channel security of masked-and-shuffled implementations in the noisy leakage model using CDC/Doeblin coefficients.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "physical-noise level — requirement whose possible reduction is being assessed",
+      "security parameters — target values for which the physical-noise requirement is evaluated"
+    ],
+    "unresolved_remainder": "Develop a CDC-based formal proof for masking combined with shuffling and determine whether the combination lowers the physical-noise level needed for relevant security parameters."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-security",
+      "doeblin-coefficients",
+      "masking-shuffling"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing",
+        "locator": "CRYPTO 2024, page 34",
+        "doi": "10.1007/978-3-031-68391-6_12",
+        "url": "https://eprint.iacr.org/2024/199",
+        "eprint": "2024/199"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a perspective extending CDC-based proofs for masking alone, leaving the combined proof and possible noise reduction for future investigation.",
+      "citation_labels": [
+        "Julien Béguinot et al., Formal Security Proofs via Doeblin Coefficients: Optimal Side-channel Factorization from Noisy Leakage to Random Probing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

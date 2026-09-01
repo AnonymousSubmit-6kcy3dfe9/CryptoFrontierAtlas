@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "theoretical-bounds-on-differential-linear-bias",
+  "group_id": "theoretical-bounds-on-differential-linear-bias",
+  "title": "Theoretical Bounds on Differential-Linear Bias",
+  "summary": "No theoretical lower or upper bounds are currently available for differential-linear distinguisher bias in the studied setting; establishing such bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For differential-linear distinguishers targeting SPN symmetric-key primitives modeled as Markov ciphers, establish theoretically justified lower or upper bounds on the distinguisher bias; currently, no such theoretical bounds are available in this setting."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis of SPN symmetric-key primitives.",
+    "assumptions": [
+      "Target ciphers satisfy the Markov-cipher model."
+    ],
+    "parameters": [
+      "Distinguisher bias — the target quantity for theoretical lower or upper bounds"
+    ],
+    "unresolved_remainder": "Establish theoretically justified lower or upper bounds on differential-linear distinguisher bias in this setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "differential-linear-cryptanalysis",
+      "spn-ciphers",
+      "bias-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Approaches for Estimating the Bias of Differential-Linear Distinguishers",
+        "locator": "CRYPTO 2024, page 6",
+        "doi": "10.1007/978-3-031-68385-5_6",
+        "url": "https://eprint.iacr.org/2024/871",
+        "eprint": "2024/871"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2024-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports bias estimates for concrete reduced-round distinguishers, then explicitly remarks that it cannot provide theoretical lower or upper bounds. Establishing such bounds remains open in its SPN Markov-cipher setting.",
+      "citation_labels": [
+        "Ting Peng et al., New Approaches for Estimating the Bias of Differential-Linear Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
