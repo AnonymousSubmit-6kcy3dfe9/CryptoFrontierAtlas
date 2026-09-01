@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "correlation-immunity-weight-2m-bound",
+  "group_id": "correlation-immune-side-channel-constructions",
+  "title": "Correlation-immunity bound for weight-$2^m$ functions",
+  "summary": "Determine whether the source conjectured lower bound on maximum correlation immunity is valid for all admissible parameters.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given a positive integer $l$ and $k=n-m$ in the source interval $\\{2^l-l-1,\\ldots,2^{l+1}-l-2\\}$, let $D_{n,m}$ be the maximum correlation immunity of the source-defined $n$-variable Boolean functions of Hamming weight $2^m$. Is the conjectured lower bound $$D_{n,m}\\ge \\nu^{(k)}_{m-l+2}$$ (with the source's piecewise definitions for $m$ and $\\nu^{(k)}$) valid for every admissible $l,m,n$? Prove or refute it and classify equality cases."
+  },
+  "scope": {
+    "domain": "Correlation-immune Boolean functions used in side-channel countermeasures",
+    "assumptions": [
+      "The Boolean functions are exactly those defined by the source equation (6)",
+      "$D_{n,m}$ and $\\nu^{(k)}$ use the source definitions",
+      "$k=n-m$ lies in the stated source interval"
+    ],
+    "parameters": [
+      "positive integer $l$",
+      "n,m",
+      "k=n-m",
+      "D_{n,m}",
+      "\\nu^{(k)}"
+    ],
+    "unresolved_remainder": "A proof or counterexample for every admissible parameter instance and an equality classification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.side-channel"
+    ],
+    "tags": [
+      "correlation-immunity",
+      "side-channel",
+      "hamming-weight",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation-immunity lower-bound conjecture",
+        "locator": "Conjecture 1, journal p. 7514",
+        "doi": "10.1109/TIT.2021.3109946",
+        "url": "https://doi.org/10.1109/TIT.2021.3109946"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-11-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Correlation-immunity lower-bound conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-gamma-linear-structures",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Linear structures of the APN differential-spectrum function",
+  "summary": "Determine whether the Boolean function associated with an APN differential spectrum has nonzero linear structures.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ be APN and let $\\gamma_F(a,b)=1$ exactly when $F(x+a)+F(x)=b$ has a solution. For the source-defined even-dimensional case, determine all linear structures of $\\gamma_F$ (in particular, whether a nonzero structure of the form $(0,\\beta)$ exists). Prove nonexistence or characterize every such structure for general APN $F$."
+  },
+  "scope": {
+    "domain": "APN vectorial Boolean functions and the Boolean differential-spectrum function $\\gamma_F$",
+    "assumptions": [
+      "$F$ is APN under the source definition",
+      "$n$ is even for the nonzero-structure subproblem",
+      "$\\gamma_F$ is defined from the differential spectrum"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN function $F$",
+      "linear structure $(\\alpha,\\beta)$"
+    ],
+    "unresolved_remainder": "The plateaued APN subclass is settled in even dimensions. A complete existence/nonexistence result and characterization remains open for non-plateaued APN functions in the source's even-dimensional domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "differential-spectrum",
+      "linear-structures",
+      "walsh-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, APN differential-spectrum linear-structure problem",
+        "locator": "Open problem 1, journal p. 6931",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Mihaila--Thornburgh, plateaued APN case",
+        "locator": "Proposition 7.2",
+        "doi": "10.1007/s12095-026-00908-9",
+        "eprint": "arXiv:2509.02280",
+        "url": "https://doi.org/10.1007/s12095-026-00908-9"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, APN differential-spectrum linear-structure problem"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "kind": "public_result",
+      "summary": "Proposition 7.2 proves that gamma_F has no nontrivial linear structures when n is even and F is plateaued APN; non-plateaued APN functions remain outside the theorem.",
+      "citation_labels": [
+        "Mihaila--Thornburgh, plateaued APN case"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-bent-component-affine-space-maximum",
+      "apn-bent-boolean-affine-space-maximum"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-corollary3-walsh-condition",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Repeated Walsh maxima for APN functions",
+  "summary": "Determine whether every APN function satisfies the repeated-maximum Walsh condition used for the source nonlinearity bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does every APN function $F$ satisfy the condition of Corollary 3, namely that the maximum absolute value of its nonzero-component Walsh spectrum is attained for at least two distinct nonzero inputs? If not, characterize and, if possible, determine all source-defined $(n,m)$-functions that fail this condition."
+  },
+  "scope": {
+    "domain": "APN vectorial Boolean functions and component Walsh spectra",
+    "assumptions": [
+      "$F$ is APN",
+      "The Corollary 3 Walsh-spectrum condition is the source condition"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN function $F$",
+      "Walsh inputs $(u,v)$"
+    ],
+    "unresolved_remainder": "Decide the condition for every APN function; if it fails, characterize and, if possible, determine all source-defined $(n,m)$-functions that do not satisfy it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential",
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "apn-functions",
+      "walsh-spectrum",
+      "nonlinearity",
+      "differential-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, Corollary 3 APN Walsh condition",
+        "locator": "Open problem 4, journal p. 6937",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, Corollary 3 APN Walsh condition"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-attainable-nonlinearity-values"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

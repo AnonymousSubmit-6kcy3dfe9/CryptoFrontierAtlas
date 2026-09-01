@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-bent-component-affine-space-maximum",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Maximum affine spaces of bent APN components",
+  "summary": "Determine the largest dimension of an affine space of bent components of an APN vectorial function in every even dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive even integer $n$, determine the maximum dimension of an affine space consisting entirely of bent scalar components of an APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$. Give matching upper bounds and constructions."
+  },
+  "scope": {
+    "domain": "APN vectorial functions and affine spaces of bent components",
+    "assumptions": [
+      "$n$ is a positive even integer",
+      "$F:\\mathbb F_2^n\\to\\mathbb F_2^n$ is APN",
+      "Components are scalar products of $F$"
+    ],
+    "parameters": [
+      "even dimension $n$",
+      "APN function $F$",
+      "affine-space dimension"
+    ],
+    "unresolved_remainder": "For plateaued APN functions, the later linear-structure theorem rules out the maximum possible dimension n-1, but the exact plateaued maximum remains unknown. The exact maximum over all APN functions is still open for every even n."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "apn-functions",
+      "bent-components",
+      "affine-spaces",
+      "dimension-extremal"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, maximum affine spaces of APN bent components",
+        "locator": "Open problem 2, journal p. 6931",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Mihaila--Thornburgh, plateaued APN hyperplane exclusion",
+        "locator": "Proposition 7.2, combined with the source hyperplane equivalence",
+        "doi": "10.1007/s12095-026-00908-9",
+        "eprint": "arXiv:2509.02280",
+        "url": "https://doi.org/10.1007/s12095-026-00908-9"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, maximum affine spaces of APN bent components"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "kind": "public_result",
+      "summary": "Proposition 7.2 excludes nontrivial linear structures for even-dimensional plateaued APN functions; through the source equivalence, this rules out an affine hyperplane of bent components in that strict subclass.",
+      "citation_labels": [
+        "Mihaila--Thornburgh, plateaued APN hyperplane exclusion"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-gamma-linear-structures",
+      "apn-bent-boolean-affine-space-maximum"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

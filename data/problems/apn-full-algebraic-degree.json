@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-full-algebraic-degree",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Full algebraic degree APN functions",
+  "summary": "Determine whether an APN vectorial Boolean function can attain algebraic degree equal to its dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist an APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ with algebraic degree $\\deg(F)=n$? Construct such a function or prove nonexistence for every dimension."
+  },
+  "scope": {
+    "domain": "APN vectorial Boolean functions",
+    "assumptions": [
+      "$F$ is an APN $(n,n)$-function",
+      "Algebraic degree uses the source vectorial Boolean-function convention"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN function $F$",
+      "algebraic degree"
+    ],
+    "unresolved_remainder": "Corollary 3.9 excludes APN functions having a component exactly equal to $x_1x_2\\cdots x_n$. Components of the form $x_1x_2\\cdots x_n+g$ with nonzero lower-degree $g$ remain possible; construct a full-degree APN function or prove global nonexistence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "algebraic-degree",
+      "vectorial-functions",
+      "differential-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, full-degree APN existence problem",
+        "locator": "Explicit open statement, journal p. 6930",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Czerwinski--Pott, monomial component exclusion",
+        "locator": "Corollary 3.9",
+        "doi": "10.1016/j.jcta.2025.106129",
+        "eprint": "arXiv:2411.12911",
+        "url": "https://doi.org/10.1016/j.jcta.2025.106129"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, full-degree APN existence problem"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "kind": "public_result",
+      "summary": "Corollary 3.9 proves that no APN function has a component exactly equal to the full monomial x_1 x_2 ... x_n; it does not exclude full-degree components with lower-degree terms.",
+      "citation_labels": [
+        "Czerwinski--Pott, monomial component exclusion"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

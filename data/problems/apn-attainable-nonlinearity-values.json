@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-attainable-nonlinearity-values",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Attainable nonlinearity values of APN functions",
+  "summary": "Classify the nonlinearity values attainable by APN vectorial functions and their differential-spectrum functions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every dimension $n$, determine exactly which values can occur as $\\operatorname{NL}(F)$ for a general APN function $F:\\mathbb F_2^n\\to\\mathbb F_2^n$, and consequently which values can occur as $\\operatorname{NL}(\\gamma_F)$. In particular, decide whether odd APN nonlinearity values are possible."
+  },
+  "scope": {
+    "domain": "APN vectorial Boolean functions and the Boolean differential-spectrum function $\\gamma_F$",
+    "assumptions": [
+      "$F$ is an APN $(n,n)$-function",
+      "$\\gamma_F$ is defined from the differential spectrum"
+    ],
+    "parameters": [
+      "dimension $n$",
+      "APN function $F$",
+      "nonlinearity values"
+    ],
+    "unresolved_remainder": "Corollary 3.7 of the later Sidon-set work rules out nonlinearity 1 for APN functions in every dimension n at least 3. A complete attainable-value classification for every n, including the remaining odd-value cases, is still open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential",
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "apn-functions",
+      "nonlinearity",
+      "walsh-spectrum",
+      "attainable-values"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, attainable APN nonlinearity values",
+        "locator": "Open problem 5, journal p. 6938",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Czerwinski--Pott, APN linearity bound",
+        "locator": "Corollary 3.7",
+        "doi": "10.1016/j.jcta.2025.106129",
+        "eprint": "arXiv:2411.12911",
+        "url": "https://doi.org/10.1016/j.jcta.2025.106129"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Beneteau et al., quadratic APN amplitude constraints",
+        "locator": "Theorems IV.5 and IV.6",
+        "doi": "10.1109/TIT.2026.3695003",
+        "eprint": "arXiv:2510.12008",
+        "url": "https://doi.org/10.1109/TIT.2026.3695003"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, attainable APN nonlinearity values"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "kind": "public_result",
+      "summary": "Corollary 3.7 proves L(F) at most 2^n - 4 for every APN function with n at least 3, equivalently excluding APN nonlinearity 1, but it does not classify the remaining attainable values.",
+      "citation_labels": [
+        "Czerwinski--Pott, APN linearity bound"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "kind": "public_result",
+      "summary": "Theorems IV.5 and IV.6 restrict the possible amplitude distributions of quadratic APN functions in dimensions eight and ten, giving subclass and finite-dimensional constraints rather than a general attainable-value classification.",
+      "citation_labels": [
+        "Beneteau et al., quadratic APN amplitude constraints"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-corollary3-walsh-condition"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

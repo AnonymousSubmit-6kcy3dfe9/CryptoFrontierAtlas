@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "apn-bent-boolean-affine-space-maximum",
+  "group_id": "carlet-apn-differential-spectrum-open-problems",
+  "title": "Maximum affine spaces of bent Boolean functions",
+  "summary": "Determine the largest dimension of an affine space of bent Boolean functions in every even dimension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive even integer $n$, determine the maximum dimension of an affine space of bent Boolean functions on $\\mathbb F_2^n$. Give matching upper bounds and constructions."
+  },
+  "scope": {
+    "domain": "Affine spaces of bent Boolean functions",
+    "assumptions": [
+      "$n$ is a positive even integer",
+      "Every function in the affine space is bent under the source definition"
+    ],
+    "parameters": [
+      "even dimension $n$",
+      "affine-space direction subspace"
+    ],
+    "unresolved_remainder": "The exact maximum dimension for every even n, including matching constructions and upper bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "bent-functions",
+      "affine-spaces",
+      "dimension-extremal",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, maximum affine spaces of bent Boolean functions",
+        "locator": "Open problem 3, journal p. 6931",
+        "doi": "10.1109/TIT.2021.3081139",
+        "url": "https://doi.org/10.1109/TIT.2021.3081139"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2021-10-01",
+      "kind": "source_statement",
+      "summary": "The TIT source explicitly states this unresolved problem and fixes its mathematical scope.",
+      "citation_labels": [
+        "Carlet, maximum affine spaces of bent Boolean functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "apn-gamma-linear-structures",
+      "apn-bent-component-affine-space-maximum"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

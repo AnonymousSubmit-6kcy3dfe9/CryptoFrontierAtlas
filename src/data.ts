@@ -164,6 +164,13 @@ import recordMaioranaMcfarlandDerivativeSpreadDesarguesianity from '../data/prob
 import recordNonGoldApnMonomialCczEaClassification from '../data/problems/non-gold-apn-monomial-ccz-ea-classification.json';
 import recordQuadraticBentDerivativeKernelSpreadCharacterization from '../data/problems/quadratic-bent-derivative-kernel-spread-characterization.json';
 import recordQuadraticFunctionCczLeAutomorphismRepresentative from '../data/problems/quadratic-function-ccz-le-automorphism-representative.json';
+import recordApnAttainableNonlinearityValues from '../data/problems/apn-attainable-nonlinearity-values.json';
+import recordApnBentBooleanAffineSpaceMaximum from '../data/problems/apn-bent-boolean-affine-space-maximum.json';
+import recordApnBentComponentAffineSpaceMaximum from '../data/problems/apn-bent-component-affine-space-maximum.json';
+import recordApnCorollary3WalshCondition from '../data/problems/apn-corollary3-walsh-condition.json';
+import recordApnFullAlgebraicDegree from '../data/problems/apn-full-algebraic-degree.json';
+import recordApnGammaLinearStructures from '../data/problems/apn-gamma-linear-structures.json';
+import recordCorrelationImmunityWeight2mBound from '../data/problems/correlation-immunity-weight-2m-bound.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -401,6 +408,13 @@ export const problems = [
   recordNonGoldApnMonomialCczEaClassification,
   recordQuadraticBentDerivativeKernelSpreadCharacterization,
   recordQuadraticFunctionCczLeAutomorphismRepresentative,
+  recordApnAttainableNonlinearityValues,
+  recordApnBentBooleanAffineSpaceMaximum,
+  recordApnBentComponentAffineSpaceMaximum,
+  recordApnCorollary3WalshCondition,
+  recordApnFullAlgebraicDegree,
+  recordApnGammaLinearStructures,
+  recordCorrelationImmunityWeight2mBound,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;
