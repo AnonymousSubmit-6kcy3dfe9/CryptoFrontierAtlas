@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "uniform-correction-terms-for-shared-aes-s-box",
+  "group_id": "uniform-correction-terms-for-shared-aes-s-box",
+  "title": "Uniform Correction Terms for a Shared AES S-Box",
+  "summary": "In the examined shared AES S-box, correction terms cancel under linear mixing, causing nonuniformity and recoverable first-order leakage; a uniform combination remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider the shared AES S-box design in which outputs of shared multiplication modules over $\\mathrm{GF}(2^2)$ having some shared inputs are combined by linear functions. In the examined design, correction terms added to the shared multiplications to provide uniformity cancel during this linear mixing, so the S-box outputs are not uniformly distributed and glitch-induced combinational-circuit leakage yields recoverable first-order leakage. Determine whether any choice and combination of correction terms avoids this cancellation and makes the resulting distribution uniform; if such a choice exists, construct it. The prior search neither exhausted all possible combinations nor found a suitable one."
+  },
+  "scope": {
+    "domain": "Side-channel-resistant shared AES S-box design using linearly combined outputs of shared finite-field multiplication modules.",
+    "assumptions": [
+      "Some shared multiplication modules have shared inputs, and linear functions combine their outputs."
+    ],
+    "parameters": [
+      "GF(2²): the field used by the shared multiplication modules",
+      "Correction-term choice and combination: the design variables intended to provide uniformity"
+    ],
+    "unresolved_remainder": "Determine whether a correction-term choice and combination can avoid cancellation and yield a uniform distribution, and construct one if it exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "s-boxes",
+      "threshold-implementation"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pushing the Limits: A Very Compact and a Threshold Implementation of AES",
+        "locator": "EUROCRYPT 2011, page 16",
+        "doi": "10.1007/978-3-642-20465-4_6"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports cancellation, nonuniform outputs, and recoverable first-order glitch leakage in the examined design. It found no suitable correction-term combination but did not exhaust the search.",
+      "citation_labels": [
+        "Amir Moradi et al., Pushing the Limits: A Very Compact and a Threshold Implementation of AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

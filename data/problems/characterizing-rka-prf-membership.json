@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "characterizing-rka-prf-membership",
+  "group_id": "characterizing-rka-prf-membership",
+  "title": "Characterizing RKA[PRF] Membership",
+  "summary": "Some related-key derivation classes admit RKA-secure PRFs while others do not; characterize exactly which classes do.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a key space $K$, let $\\Phi$ be a class of related-key derivation functions $\\phi: K \\to K$, and define $\\mathrm{RKA}[\\mathrm{PRF}]$ as the set of classes $\\Phi$ for which some pseudorandom function is $\\Phi$-RKA secure, with related-key queries restricted to functions $\\phi \\in \\Phi$. Natural examples of classes outside $\\mathrm{RKA}[\\mathrm{PRF}]$ are known, and explicit constructions establish membership for certain specific classes, but no general characterization is available. Determine exactly which classes $\\Phi$ belong to $\\mathrm{RKA}[\\mathrm{PRF}]$, equivalently, give necessary and sufficient conditions on $\\Phi$ for the existence of a $\\Phi$-RKA-secure pseudorandom function."
+  },
+  "scope": {
+    "domain": "Related-key security of pseudorandom functions and the structure of admissible key-derivation classes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K: the key space",
+      "Φ: the class of allowed related-key derivation functions mapping K to K"
+    ],
+    "unresolved_remainder": "Give necessary and sufficient conditions on Φ for a Φ-RKA-secure pseudorandom function to exist."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "related-key-attacks",
+      "pseudorandom-functions",
+      "security-characterization"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptography Secure against Related-Key Attacks and Tampering",
+        "locator": "ASIACRYPT 2011, page 4",
+        "doi": "10.1007/978-3-642-25385-0_26",
+        "url": "https://eprint.iacr.org/2011/252",
+        "eprint": "2011/252"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks which classes belong to RKA[PRF], noting natural classes outside it and explicit constructions for certain members. It reports that no general characterization is available.",
+      "citation_labels": [
+        "Mihir Bellare et al., Cryptography Secure against Related-Key Attacks and Tampering"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

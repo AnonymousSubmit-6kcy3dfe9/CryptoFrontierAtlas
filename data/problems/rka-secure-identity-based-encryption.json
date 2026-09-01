@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rka-secure-identity-based-encryption",
+  "group_id": "rka-secure-identity-based-encryption",
+  "title": "Constructing Φ-RKA-Secure Identity-Based Encryption",
+  "summary": "Known transformations make RKA-secure IBE an enabling primitive for related-key-secure signatures and CCA public-key encryption, but constructing such an IBE remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given a class $\\Phi$ of related-key derivation functions, construct an identity-based encryption scheme that is secure against $\\Phi$-related-key attacks, namely a $\\Phi$-RKA-secure IBE scheme."
+  },
+  "scope": {
+    "domain": "Identity-based encryption under related-key attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Φ: the class of related-key derivation functions against which security is required"
+    ],
+    "unresolved_remainder": "Construct a Φ-RKA-secure identity-based encryption scheme."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "identity-based-encryption",
+      "related-key-attacks",
+      "cryptographic-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptography Secure against Related-Key Attacks and Tampering",
+        "locator": "ASIACRYPT 2011, page 16",
+        "doi": "10.1007/978-3-642-25385-0_26",
+        "url": "https://eprint.iacr.org/2011/252",
+        "eprint": "2011/252"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly leaves finding Φ-RKA-secure IBE schemes as an interesting open problem. It motivates them as enabling constructions for related-key-secure signatures and CCA public-key encryption.",
+      "citation_labels": [
+        "Mihir Bellare et al., Cryptography Secure against Related-Key Attacks and Tampering"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

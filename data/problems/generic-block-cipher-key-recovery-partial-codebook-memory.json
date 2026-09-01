@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-block-cipher-key-recovery-partial-codebook-memory",
+  "group_id": "generic-block-cipher-key-recovery-partial-codebook-memory",
+  "title": "Generic Block-Cipher Key Recovery with Partial Codebooks or Memory",
+  "summary": "No generic method is known to speed up block-cipher key recovery given part of a codebook; the open task is to devise generic attacks exploiting partial-codebook access or memory.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "No generic method is known to speed up block-cipher key recovery when part of the codebook is available. Develop generic block-cipher key-recovery attacks that gain an advantage by exploiting access to a small part of the codebook or available memory."
+  },
+  "scope": {
+    "domain": "Generic block-cipher key-recovery cryptanalysis using partial-codebook or memory resources.",
+    "assumptions": [
+      "A small part of the codebook or some memory is available."
+    ],
+    "parameters": [
+      "Available codebook portion — the data resource an attack may exploit",
+      "Available memory — the storage resource an attack may exploit"
+    ],
+    "unresolved_remainder": "Develop generic block-cipher key-recovery attacks that gain an advantage from a small part of the codebook or available memory."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "block-cipher",
+      "key-recovery",
+      "partial-codebook"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Biclique Cryptanalysis of the Full AES",
+        "locator": "ASIACRYPT 2011, page 28",
+        "doi": "10.1007/978-3-642-25385-0_19",
+        "url": "https://eprint.iacr.org/2011/449",
+        "eprint": "2011/449"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this in its Open Problems section after stating that no generic method is known to speed up key recovery given part of the codebook. It proposes seeking generic attacks that exploit a small codebook portion or available memory.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Biclique Cryptanalysis of the Full AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

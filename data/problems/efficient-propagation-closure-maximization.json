@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-propagation-closure-maximization",
+  "group_id": "efficient-propagation-closure-maximization",
+  "title": "Efficient Maximization of Propagation Closure",
+  "summary": "A simple greedy heuristic builds good insufficient variable sets, but efficiently maximizing their propagation closure for global pruning remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Efficiently find $V$ with $K\\subseteq V\\subseteq X$, $\\operatorname{Propagate}^{*}(V)\\ne X$, maximizing $|\\operatorname{Propagate}^{*}(V)|$."
+  },
+  "scope": {
+    "domain": "Automated symmetric cryptanalysis, specifically global pruning in guess-and-determine attack search.",
+    "assumptions": [
+      "The selected set V must contain K, lie within X, and remain insufficient under propagation."
+    ],
+    "parameters": [
+      "K: the currently known variable set",
+      "V: the insufficient variable set to be selected",
+      "X: the ambient variable set",
+      "Propagate*: the propagation closure used for pruning"
+    ],
+    "unresolved_remainder": "Find an efficient method that selects a feasible V with maximum propagation closure, beyond the reported greedy heuristic."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "automated-cryptanalysis",
+      "guess-and-determine",
+      "propagation-pruning"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search of Attacks on Round-Reduced AES and Applications",
+        "locator": "CRYPTO 2011, page 9",
+        "doi": "10.1007/978-3-642-22792-9_10",
+        "url": "https://eprint.iacr.org/2012/069",
+        "eprint": "2012/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly says that the problem remains and reports a simple greedy heuristic for building good sets. It highlights a tradeoff between time spent pruning the DAG and time spent exploring it.",
+      "citation_labels": [
+        "Charles Bouillaguet et al., Automatic Search of Attacks on Round-Reduced AES and Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

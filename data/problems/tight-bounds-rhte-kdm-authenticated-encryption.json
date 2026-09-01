@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-bounds-rhte-kdm-authenticated-encryption",
+  "group_id": "tight-bounds-rhte-kdm-authenticated-encryption",
+  "title": "Tight Bounds for RHtE KDM Authenticated Encryption",
+  "summary": "RHtE's proven random-nonce KDM authenticated-encryption bound appears loose; tighten it or design an alternative scheme with a provably tight bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the RHtE construction, the existing proof of random-nonce KDM authenticated-encryption security (with key-independent headers) yields a concrete bound that appears not to be tight. Obtain a proof with a better bound for RHtE in this setting, or design an alternative KDM-secure authenticated-encryption scheme for which a tight bound can be proved."
+  },
+  "scope": {
+    "domain": "Concrete security analysis of RHtE and KDM-secure authenticated encryption.",
+    "assumptions": [
+      "Nonces are random",
+      "Headers are key-independent"
+    ],
+    "parameters": [
+      "Concrete security bound — the quantity to improve or prove tight"
+    ],
+    "unresolved_remainder": "Prove a better bound for RHtE in this setting, or design an alternative KDM-secure authenticated-encryption scheme with a provably tight bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "kdm-security",
+      "concrete-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated and Misuse-Resistant Encryption of Key-Dependent Data",
+        "locator": "CRYPTO 2011, page 6",
+        "doi": "10.1007/978-3-642-22792-9_35",
+        "url": "https://eprint.iacr.org/2011/269",
+        "eprint": "2011/269"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the concrete security bound proved for RHtE as weaker than desired and explicitly asks for either a better bound or an alternative scheme with such a bound.",
+      "citation_labels": [
+        "Mihir Bellare et al., Authenticated and Misuse-Resistant Encryption of Key-Dependent Data"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

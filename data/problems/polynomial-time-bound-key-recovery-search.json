@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "polynomial-time-bound-key-recovery-search",
+  "group_id": "polynomial-time-bound-key-recovery-search",
+  "title": "Polynomial-Time Bound for a Key-Recovery Search",
+  "summary": "No polynomial-time bound is proved for the attack’s message-space search; determine whether such a bound holds for an attack with constant key-recovery probability.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the proposed key-recovery attack, the procedure $\\phi_{V,i}$ searches the message space for a message $M$ satisfying $\\operatorname{Hip}(V,E(K,i,\\varepsilon,M))=K[i]$, with $i$ used as the nonce and $\\varepsilon$ as the header. Its output enables an adversary to compute $\\operatorname{Hip}(V,C)$ and recover $K[i]$, repeating for $i=1,\\ldots,k$ to recover $K$. Determine whether the search by $\\phi_{V,i}$ has a polynomial-time bound, in particular for an attack having constant key-recovery probability; without such a bound, the strategy is not proved to be a polynomial-time attack."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of a message-search-based key-recovery attack.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "V: value used by the search procedure and the Hip computation",
+      "i: index of the recovered key component and nonce for that search, ranging from 1 to k",
+      "M: message sought in the message space",
+      "epsilon: header supplied to the encryption call",
+      "C: ciphertext used to compute the recovered key component",
+      "k: number of indexed recovery iterations used to recover K",
+      "key-recovery probability: required to be constant in the highlighted attack case"
+    ],
+    "unresolved_remainder": "Whether the message-space search is polynomially bounded, particularly for an attack with constant key-recovery probability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "key-recovery",
+      "polynomial-time"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated and Misuse-Resistant Encryption of Key-Dependent Data",
+        "locator": "CRYPTO 2011, page 10",
+        "doi": "10.1007/978-3-642-22792-9_35",
+        "url": "https://eprint.iacr.org/2011/269",
+        "eprint": "2011/269"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains how a successful message search yields each indexed key component, then identifies the absence of a runtime analysis as the gap preventing a polynomial-time attack claim. It highlights constant key-recovery probability as the relevant success regime.",
+      "citation_labels": [
+        "Mihir Bellare et al., Authenticated and Misuse-Resistant Encryption of Key-Dependent Data"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

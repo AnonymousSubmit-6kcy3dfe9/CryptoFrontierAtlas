@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fastest-guess-and-determine-attack-on-three-round-aes",
+  "group_id": "fastest-guess-and-determine-attack-on-three-round-aes",
+  "title": "Fastest Guess-and-Determine Attack on Three-Round AES",
+  "summary": "A solution faster than exhaustive search was found for three-round AES, but the fastest attack in the considered guess-and-determine class remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine $\\min_{A\\in\\mathcal{G}_{3\\mathrm{R}}}T(A)$, where $\\mathcal{G}_{3\\mathrm{R}}$ is the considered guess-and-determine class."
+  },
+  "scope": {
+    "domain": "Automated cryptanalysis of three-round AES via guess-and-determine attack search.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "A: a candidate attack",
+      "G_3R: the considered guess-and-determine class for the three-round target",
+      "T(A): the objective value minimized over candidate attacks"
+    ],
+    "unresolved_remainder": "Determine the minimum objective value over the considered class, thereby resolving which three-round AES attack is fastest within that class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "automated-cryptanalysis",
+      "round-reduced-aes",
+      "guess-and-determine"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search of Attacks on Round-Reduced AES and Applications",
+        "locator": "CRYPTO 2011, page 11",
+        "doi": "10.1007/978-3-642-22792-9_10",
+        "url": "https://eprint.iacr.org/2012/069",
+        "eprint": "2012/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that exhaustive search was completed through 2.5 AES rounds but was not run to completion for three rounds. It found a solution faster than exhaustive search without guaranteeing that it is fastest in the considered class.",
+      "citation_labels": [
+        "Charles Bouillaguet et al., Automatic Search of Attacks on Round-Reduced AES and Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ope-one-wayness-non-uniform-inputs",
+  "group_id": "ope-one-wayness-non-uniform-inputs",
+  "title": "OPE One-Wayness Beyond Uniform Inputs",
+  "summary": "OPE one-wayness analyses cover uniform inputs; characterize non-uniform classes admitting positive guarantees despite conjectured barriers for arbitrary distributions and adversarial challenges.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the existing one-wayness analyses of order-preserving encryption (OPE)---including window one-wayness, distance one-wayness, and window distance one-wayness for encryption by a random order-preserving function (ROPF)---from uniform input distributions to non-uniform input distributions. Characterize the distributions for which positive one-wayness guarantees remain possible, while accounting for the apparent obstacles posed by arbitrary input distributions and by settings in which an adversary chooses the challenge messages or their distributions, for which such guarantees are conjectured to be unlikely."
+  },
+  "scope": {
+    "domain": "One-wayness analysis of order-preserving encryption, including window, distance, and window-distance notions for random order-preserving functions.",
+    "assumptions": [
+      "Inputs are uniformly distributed in the existing analyses."
+    ],
+    "parameters": [
+      "Input-distribution class: determines whether inputs are uniform, non-uniform, or arbitrary",
+      "Challenge-selection model: determines whether challenge messages or their distributions are chosen by the adversary"
+    ],
+    "unresolved_remainder": "Characterize the non-uniform distributions permitting positive one-wayness guarantees and determine whether any guarantees remain possible for arbitrary distributions or adversary-chosen challenge messages or distributions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "order-preserving-encryption",
+      "one-wayness",
+      "input-distributions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Order-Preserving Encryption Revisited: Improved Security Analysis and Alternative Solutions",
+        "locator": "CRYPTO 2011, page 13",
+        "doi": "10.1007/978-3-642-22792-9_33",
+        "url": "https://eprint.iacr.org/2012/625",
+        "eprint": "2012/625"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The paper analyzes OPE one-wayness for uniform inputs and explicitly leaves extension to other input distributions open. It conjectures that positive guarantees are unlikely for arbitrary distributions or adversary-chosen challenge messages or distributions.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Order-Preserving Encryption Revisited: Improved Security Analysis and Alternative Solutions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

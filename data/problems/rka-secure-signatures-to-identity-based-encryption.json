@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rka-secure-signatures-to-identity-based-encryption",
+  "group_id": "rka-secure-signatures-to-identity-based-encryption",
+  "title": "RKA-Secure Signatures versus Identity-Based Encryption",
+  "summary": "Naor's transform establishes the IBE-to-signature direction for RKA security; whether every RKDF class supporting RKA-secure signatures also supports RKA-secure IBE remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For related-key attacks, determine whether every related-key-deriving-function (RKDF) class for which an RKA-secure signature scheme exists also supports an RKA-secure identity-based encryption scheme for the same class; equivalently, decide whether $\\operatorname{RKA}[\\mathrm{Sig}] \\subseteq \\operatorname{RKA}[\\mathrm{IBE}]$."
+  },
+  "scope": {
+    "domain": "Related-key-attack security relationships between digital signatures and identity-based encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "RKDF class — specifies the family of related-key-deriving functions under consideration"
+    ],
+    "unresolved_remainder": "Whether RKA-secure signature achievability for an RKDF class implies RKA-secure identity-based encryption achievability for the same class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "related-key-attacks",
+      "identity-based-encryption",
+      "digital-signatures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptography Secure against Related-Key Attacks and Tampering",
+        "locator": "ASIACRYPT 2011, page 16",
+        "doi": "10.1007/978-3-642-25385-0_26",
+        "url": "https://eprint.iacr.org/2011/252",
+        "eprint": "2011/252"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves that RKDF classes supporting RKA-secure IBE also support RKA-secure signatures via Naor's transform, then explicitly asks whether the converse holds.",
+      "citation_labels": [
+        "Mihir Bellare et al., Cryptography Secure against Related-Key Attacks and Tampering"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

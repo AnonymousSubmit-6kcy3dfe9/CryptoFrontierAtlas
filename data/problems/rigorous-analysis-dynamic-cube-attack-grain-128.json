@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rigorous-analysis-dynamic-cube-attack-grain-128",
+  "group_id": "rigorous-analysis-dynamic-cube-attack-grain-128",
+  "title": "Rigorous Analysis of the Dynamic Cube Attack on Full Grain-128",
+  "summary": "Large-scale experiments support the dynamic cube attack on full Grain-128, but its expected bias, guess ranking, and complexity still lack rigorous mathematical analysis.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Rigorously analyze the expected bias, guess ranking, and complexity of the dynamic cube attack on full Grain-128."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of full Grain-128 using dynamic cube attacks and cube testers.",
+    "assumptions": [
+      "Incorrect guesses behave as random functions when estimating the correct guess's rank."
+    ],
+    "parameters": [
+      "Expected bias — probabilistic behavior of the attack requiring analysis",
+      "Guess ranking — position of the correct guess among candidate guesses",
+      "Attack complexity — computational work required by the attack",
+      "Cube dimensions 49 and 50 — dimensions used in the reported experimental summations"
+    ],
+    "unresolved_remainder": "Derive a rigorous mathematical analysis of the expected bias, guess ranking, and complexity of the dynamic cube attack on full Grain-128."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [],
+    "tags": [
+      "cube-attack",
+      "grain-128",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Experimentally Verified Attack on Full Grain-128 Using Dedicated Reconfigurable Hardware",
+        "locator": "ASIACRYPT 2011, page 10",
+        "doi": "10.1007/978-3-642-25385-0_18",
+        "url": "https://eprint.iacr.org/2011/282",
+        "eprint": "2011/282"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The paper treats mathematical analysis as difficult, verifying complexity through experiments over dozens of random keys and thousands of cube summations and estimating guess ranking with a random-function model. A rigorous derivation remains unresolved.",
+      "citation_labels": [
+        "Itai Dinur et al., An Experimentally Verified Attack on Full Grain-128 Using Dedicated Reconfigurable Hardware"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

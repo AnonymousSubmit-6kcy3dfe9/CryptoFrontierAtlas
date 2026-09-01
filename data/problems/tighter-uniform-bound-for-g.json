@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-uniform-bound-for-g",
+  "group_id": "tighter-uniform-bound-for-g",
+  "title": "Tighter Uniform Bound for the Auxiliary Function g",
+  "summary": "The derivation retains the constant 2, while numerics suggest values near 1 at large scale; prove a smaller rigorous uniform bound and quantify its improvement.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For parameters satisfying $0\\leq\\varepsilon\\leq 1$ and $1\\leq Mk\\leq M-1$, define $g(\\varepsilon,k,M)=\\left(1+\\frac{2\\sqrt{1.25-\\varepsilon}-\\varepsilon}{2kM+\\varepsilon-1}\\right)^{\\varepsilon}\\left(1+\\frac{2\\sqrt{1.25-\\varepsilon}}{2(1-k)M}\\right)^{\\varepsilon}$. The existing derivation avoids directly controlling $g$ and retains the looser constant $2$. Prove a rigorous upper bound $C<2$ such that $g(\\varepsilon,k,M)\\leq C$ uniformly over this parameter domain. Also quantify how the bound improves under a restriction $M>M_0$, ideally obtaining a constant close to $1$ for large $M_0$; a numerical search under $M>10^6$ reported $1$, but no analytic estimate was provided."
+  },
+  "scope": {
+    "domain": "Analytic probability bounds arising in the security analysis of order-preserving encryption.",
+    "assumptions": [
+      "0 ≤ ε ≤ 1",
+      "1 ≤ Mk ≤ M − 1",
+      "The refined regime restricts M to be greater than M₀."
+    ],
+    "parameters": [
+      "ε: constrained input and exponent in both factors of g",
+      "k: constrained input governing denominator terms in g",
+      "M: scale input appearing in both denominator terms",
+      "C: sought uniform upper-bound constant below 2",
+      "M₀: lower threshold for studying improvement as M grows"
+    ],
+    "unresolved_remainder": "Prove a uniform upper bound below 2 for g and quantify its improvement when M is bounded below, ideally obtaining a constant near 1 for large thresholds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "probability-bounds",
+      "analytic-inequalities",
+      "order-preserving-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Order-Preserving Encryption Revisited: Improved Security Analysis and Alternative Solutions",
+        "locator": "CRYPTO 2011, page 34",
+        "doi": "10.1007/978-3-642-22792-9_33",
+        "url": "https://eprint.iacr.org/2012/625",
+        "eprint": "2012/625"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2011-01-01",
+      "kind": "source_statement",
+      "summary": "The paper retains the looser constant 2 and proposes directly bounding g to tighten it. A numerical search reports 1 when M exceeds one million, but no analytic estimate is given.",
+      "citation_labels": [
+        "Alexandra Boldyreva et al., Order-Preserving Encryption Revisited: Improved Security Analysis and Alternative Solutions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
