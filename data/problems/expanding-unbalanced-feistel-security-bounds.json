@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "expanding-unbalanced-feistel-security-bounds",
+  "group_id": "expanding-unbalanced-feistel-security-bounds",
+  "title": "Security Bounds for Expanding Unbalanced Feistel Schemes",
+  "summary": "A restricted security range is known; proving security toward the information-theoretic range and for exponents above one, ideally at least k, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For unbalanced Feistel schemes with expanding functions, establish a security proof that extends the provable security range from the known bound $m \\le 2^{(1-1/k)n}$ toward the information-theoretic range $m \\ll 2^n$. The ultimate goal is to prove security for $m \\approx 2^{\\alpha n}$ with $\\alpha > 1$, and ideally for $\\alpha \\ge k$, thereby approaching the information-theoretic limit."
+  },
+  "scope": {
+    "domain": "Provable security for expanding, unbalanced Feistel schemes in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m — query count defining the security range",
+      "n — size parameter setting the exponential scale",
+      "k — parameter appearing in the known bound and desired exponent threshold",
+      "α — exponent controlling the targeted security range"
+    ],
+    "unresolved_remainder": "Establish a security proof extending the current range toward the information-theoretic regime and ultimately to an exponent greater than one, ideally at least k."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "unbalanced-feistel",
+      "security-bounds",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Generic Attacks on Unbalanced Feistel Schemes with Expanding Functions",
+        "locator": "ASIACRYPT 2010, page 23",
+        "doi": "10.1007/978-3-642-17373-8_6",
+        "url": "https://eprint.iacr.org/2007/449",
+        "eprint": "2007/449"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "In its open-problems section, the source contrasts the comparatively small current range with the desired exponentially larger security regime. It describes proving any exponent above one, especially k or higher, as very difficult.",
+      "citation_labels": [
+        "Emmanuel Volte et al., Improved Generic Attacks on Unbalanced Feistel Schemes with Expanding Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

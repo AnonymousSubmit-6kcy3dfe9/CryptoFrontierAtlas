@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-practical-security-margin",
+  "group_id": "aes-practical-security-margin",
+  "title": "AES Practical Security Margin",
+  "summary": "Practical attacks reach reduced-round AES-256 variants but do not directly break standardized AES-128 or AES-256; determine the AES family's remaining security margin.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine how far the AES family is from practical insecurity, using about $2^{64}$ basic instructions as the practical-time threshold."
+  },
+  "scope": {
+    "domain": "Practical cryptanalysis and attack-complexity assessment of the AES block-cipher family.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "About 2^64 basic instructions: the practical-time threshold for evaluating attacks"
+    ],
+    "unresolved_remainder": "Determine the distance to practical insecurity through the best attack complexity on full AES and the proximity of practical reduced-round attacks to the standardized round counts."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "symmetric-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds",
+        "locator": "EUROCRYPT 2010, page 1",
+        "doi": "10.1007/978-3-642-13190-5_15",
+        "url": "https://eprint.iacr.org/2009/374",
+        "eprint": "2009/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents AES's distance from practical insecurity as a crucial question and uses about 2^64 basic instructions as a practical-time benchmark. Its reduced-round AES-256 attacks narrow the margin but do not directly break standardized AES-128 or AES-256.",
+      "citation_labels": [
+        "Alex Biryukov et al., Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

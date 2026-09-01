@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zero-amplitude-detection-in-gaussian-quantum-states",
+  "group_id": "zero-amplitude-detection-in-gaussian-quantum-states",
+  "title": "Zero-Amplitude Detection in Centered-Gaussian Quantum States",
+  "summary": "For centered-Gaussian quantum-state amplitudes at the stated scale, no algorithm faster than order two to the n is known to detect or locate an exact zero, whose use in key recovery remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given a quantum state $\\sum_x \\alpha_x\\lvert x\\rangle$ whose amplitudes follow a centered Gaussian distribution, determine whether one coordinate amplitude is exactly zero or no coordinate amplitude is exactly zero, and, when a zero exists, identify its coordinate. When the remaining amplitudes have standard deviation $O(2^{-n/2})$, no algorithm better than $O(2^n)$ is known for this task, and it remains unresolved how to exploit the zero-amplitude property for key-recovery attacks."
+  },
+  "scope": {
+    "domain": "This is a quantum-cryptanalysis problem concerning centered-Gaussian quantum states and key recovery.",
+    "assumptions": [
+      "The quantum-state amplitudes follow a centered Gaussian distribution.",
+      "For the stated known bound, the remaining amplitudes have standard deviation on the order of two to the minus n over two."
+    ],
+    "parameters": [
+      "n: governs the standard-deviation scale and the stated exponential algorithmic bound"
+    ],
+    "unresolved_remainder": "Develop an algorithm improving on the stated exponential bound to detect and locate an exact zero amplitude, and determine how to exploit that property in key-recovery attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "key-recovery",
+      "zero-amplitude-detection"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 30",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents deciding the zero-amplitude case and identifying its coordinate as an unresolved quantum algorithmic challenge. It reports no algorithm better than order two to the n at the stated scale and no known way to exploit the property for key recovery.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

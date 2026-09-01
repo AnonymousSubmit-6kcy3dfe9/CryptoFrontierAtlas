@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "best-attacks-on-hybrid-aes-like-schemes",
+  "group_id": "best-attacks-on-hybrid-aes-like-schemes",
+  "title": "Best Attacks on Hybrid AES-Like Schemes",
+  "summary": "For hybrid AES-like schemes spanning different round counts and key sizes, identifying the best attacks for each resulting parameter combination remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For hybrid AES-like schemes that combine varying numbers of rounds with varying key sizes, determine the best cryptanalytic attacks for the resulting parameter combinations."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of hybrid AES-like block-cipher schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of rounds: varied round configuration",
+      "Key size: varied key-length configuration"
+    ],
+    "unresolved_remainder": "Determine the best cryptanalytic attacks for the resulting combinations of round counts and key sizes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "aes-like-schemes",
+      "attack-discovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds",
+        "locator": "EUROCRYPT 2010, page 14",
+        "doi": "10.1007/978-3-642-13190-5_15",
+        "url": "https://eprint.iacr.org/2009/374",
+        "eprint": "2009/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as the first item in its explicit list of main open problems, asking for the best attacks on hybrid AES-like schemes with different round counts and key sizes.",
+      "citation_labels": [
+        "Alex Biryukov et al., Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-adaptation-of-10-round-aes-256-attack",
+  "group_id": "related-key-adaptation-of-10-round-aes-256-attack",
+  "title": "Related-Key Adaptation of a 10-Round AES-256 Attack",
+  "summary": "An existing 10-round AES-256 attack is formulated in the related-subkey model; adapting it to the more standard related-key model remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $10$-round AES-256, an existing attack is formulated in the related-subkey model rather than the more standard related-key model. Determine whether this attack can be modified to operate in the related-key model."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of 10-round AES-256 in related-subkey and related-key attack models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "10 rounds — round count of the targeted AES-256 variant"
+    ],
+    "unresolved_remainder": "Whether the existing attack can be modified from the related-subkey model to the related-key model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "aes-256",
+      "related-key",
+      "differential-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds",
+        "locator": "EUROCRYPT 2010, page 14",
+        "doi": "10.1007/978-3-642-13190-5_15",
+        "url": "https://eprint.iacr.org/2009/374",
+        "eprint": "2009/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this question in its Conclusions and Open Problems section, asking whether its 10-round AES-256 attack can be moved from the related-subkey model to the more standard related-key model.",
+      "citation_labels": [
+        "Alex Biryukov et al., Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

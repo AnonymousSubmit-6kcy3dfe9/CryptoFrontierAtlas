@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-256-key-recovery-data-complexity",
+  "group_id": "aes-256-key-recovery-data-complexity",
+  "title": "Reducing Data for AES-256 Key Recovery up to 10 Rounds",
+  "summary": "The paper describes key-recovery attacks on AES-256 variants with up to 10 rounds, but whether they can use fewer chosen plaintexts or ciphertexts remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the data complexity of the key-recovery attacks on $\\mathrm{AES}\\text{-}256$ variants with up to $10$ rounds can be reduced by lowering the number of required chosen plaintexts or chosen ciphertexts."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of key-recovery attacks on AES-256 variants with up to 10 rounds.",
+    "assumptions": [
+      "Chosen-plaintext or chosen-ciphertext access."
+    ],
+    "parameters": [
+      "Round count: at most 10 rounds in the targeted AES-256 variants",
+      "Number of chosen plaintexts or chosen ciphertexts: the data-complexity quantity to be reduced"
+    ],
+    "unresolved_remainder": "Whether the attacks can be modified to require fewer chosen plaintexts or chosen ciphertexts."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "aes-256",
+      "key-recovery",
+      "data-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds",
+        "locator": "EUROCRYPT 2010, page 14",
+        "doi": "10.1007/978-3-642-13190-5_15",
+        "url": "https://eprint.iacr.org/2009/374",
+        "eprint": "2009/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this question in its Conclusions and Open Problems section after presenting practical attacks that require large chosen-plaintext or chosen-ciphertext data sets.",
+      "citation_labels": [
+        "Alex Biryukov et al., Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

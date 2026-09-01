@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "arbitrary-group-cca-security-expanding-feistel-networks",
+  "group_id": "arbitrary-group-cca-security-expanding-feistel-networks",
+  "title": "Arbitrary-Group CCA Security for Expanding Feistel Networks",
+  "summary": "CCA security is established for two modular-addition combining operations; whether the expanding unbalanced Feistel result extends to arbitrary group operations remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\Sigma$ be a non-binary alphabet with $d=|\\Sigma|\\ge 2$. For expanding unbalanced Feistel networks in the parameter regime $n\\le m$, a CCA-security result is established when the combining operation is integer addition modulo $d^m$ or characterwise addition modulo $d$. Determine whether the same CCA-security result holds when the operation on $\\Sigma^m$ is replaced by an arbitrary group operation; the existing proof does not cover this generalization."
+  },
+  "scope": {
+    "domain": "CCA security of expanding unbalanced Feistel networks over non-binary alphabets.",
+    "assumptions": [
+      "The alphabet Σ is non-binary.",
+      "The parameters satisfy n ≤ m."
+    ],
+    "parameters": [
+      "d: alphabet size, with d = |Σ| ≥ 2",
+      "n and m: network parameters defining the expanding regime n ≤ m"
+    ],
+    "unresolved_remainder": "Whether the established CCA-security result extends from integer or characterwise modular addition to every group operation on Σ^m."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "feistel-networks",
+      "cca-security",
+      "group-operations"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On Generalized Feistel Networks",
+        "locator": "CRYPTO 2010, page 10",
+        "doi": "10.1007/978-3-642-14623-7_33",
+        "url": "https://eprint.iacr.org/2010/301",
+        "eprint": "2010/301"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper establishes the expanding-case result for integer addition modulo d^m and characterwise addition modulo d. It then identifies arbitrary group operations as a case not covered by the existing proof.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., On Generalized Feistel Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

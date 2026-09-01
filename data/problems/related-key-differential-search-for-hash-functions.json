@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-differential-search-for-hash-functions",
+  "group_id": "related-key-differential-search-for-hash-functions",
+  "title": "Related-Key Differential Search for Hash Functions",
+  "summary": "The automated search tool was developed for byte-oriented block ciphers; adapting it to hash functions with very large internal states remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Adapt the automated search tool for related-key differential characteristics to hash functions, while overcoming the state-space problem posed by the very large internal states of some modern hash functions."
+  },
+  "scope": {
+    "domain": "Automated differential cryptanalysis of hash functions using related-key differential-characteristic search.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Internal-state size: determines the state-space burden of the automated search"
+    ],
+    "unresolved_remainder": "Adapt the search tool to hash functions while overcoming the state-space problem caused by very large internal states."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-cryptanalysis",
+      "hash-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others",
+        "locator": "EUROCRYPT 2010, page 15",
+        "doi": "10.1007/978-3-642-13190-5_17",
+        "url": "https://eprint.iacr.org/2010/248",
+        "eprint": "2010/248"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this as an open problem arising from the implemented search tool. It identifies the very large internal states of some modern hash functions as the main obstacle to adaptation.",
+      "citation_labels": [
+        "Alex Biryukov et al., Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-128-attack-faster-than-exhaustive-search",
+  "group_id": "aes-128-attack-faster-than-exhaustive-search",
+  "title": "AES-128 Attack Faster Than Exhaustive Search",
+  "summary": "No AES-128 attack faster than exhaustive search was known; the open task is to determine whether one exists and construct it.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists an attack on $\\mathrm{AES}\\text{-}128$ that is faster than exhaustive search and, if so, construct such an attack."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of the AES-128 block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "128-bit AES key size: identifies the target variant and determines the exhaustive-search baseline"
+    ],
+    "unresolved_remainder": "Whether any attack on AES-128 is faster than exhaustive search and, if so, how to construct one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "aes-128",
+      "symmetric-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds",
+        "locator": "EUROCRYPT 2010, page 14",
+        "doi": "10.1007/978-3-642-13190-5_15",
+        "url": "https://eprint.iacr.org/2009/374",
+        "eprint": "2009/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly lists this question among its open problems, noting that its attacks do not apply to AES-128 and that no faster-than-exhaustive attack was known.",
+      "citation_labels": [
+        "Alex Biryukov et al., Key Recovery Attacks of Practical Complexity on AES-256 Variants with up to 10 Rounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "second-order-dpa-beyond-hamming-weight-leakage",
+  "group_id": "second-order-dpa-beyond-hamming-weight-leakage",
+  "title": "Second-Order DPA Beyond Hamming-Weight Leakage",
+  "summary": "For Pearson-correlation second-order DPA, optimal-model and normalized-product conclusions rely on Hamming-weight leakage; their counterparts for other leakage functions remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In Pearson-correlation-based second-order differential power analysis, conclusions about the optimal prediction model and the optimal way to combine leakage samples, including the assessment that the normalized-product combination is the best analyzed choice, were obtained under a fixed Hamming-weight leakage function. Determine how replacing Hamming weight with another leakage function affects those conclusions: characterize the resulting optimal prediction model and sample-combination function, and establish whether the normalized product remains optimal."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis using Pearson-correlation-based second-order differential power analysis.",
+    "assumptions": [
+      "Pearson's correlation coefficient is used to evaluate second-order differential power analysis.",
+      "The existing optimality conclusions assume a fixed Hamming-weight leakage function."
+    ],
+    "parameters": [
+      "Leakage function: varied from Hamming weight to another leakage function"
+    ],
+    "unresolved_remainder": "Characterize the optimal prediction model and leakage-sample combination function for other leakage functions, and determine whether the normalized product remains optimal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "second-order-dpa",
+      "leakage-models"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The World Is Not Enough: Another Look on Second-Order DPA",
+        "locator": "ASIACRYPT 2010, page 2",
+        "doi": "10.1007/978-3-642-17373-8_7",
+        "url": "https://eprint.iacr.org/2010/180",
+        "eprint": "2010/180"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source says prior observations about optimal prediction and leakage-sample combination were derived for a fixed Hamming-weight leakage function. It explicitly leaves their behavior under a different leakage function open.",
+      "citation_labels": [
+        "François-Xavier Standaert et al., The World Is Not Enough: Another Look on Second-Order DPA"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

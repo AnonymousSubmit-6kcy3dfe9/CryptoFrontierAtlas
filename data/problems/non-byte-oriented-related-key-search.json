@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-byte-oriented-related-key-search",
+  "group_id": "non-byte-oriented-related-key-search",
+  "title": "Related-Key Differential Search Beyond Byte-Oriented Components",
+  "summary": "Existing automated search is byte-oriented; supporting small non-byte-oriented cipher components, including Camellia's key-schedule rotations, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a method for the related-key differential-characteristic search tool for byte-oriented block ciphers to handle ciphers containing small non-byte-oriented components, with Camellia's key-schedule rotations as a specific case that the method must support."
+  },
+  "scope": {
+    "domain": "Automated related-key differential cryptanalysis of byte-oriented block ciphers with small non-byte-oriented components, including Camellia key-schedule rotations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Develop a method that enables the search tool to handle small non-byte-oriented components, including Camellia's key-schedule rotations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-cryptanalysis",
+      "related-key-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others",
+        "locator": "EUROCRYPT 2010, page 15",
+        "doi": "10.1007/978-3-642-13190-5_17",
+        "url": "https://eprint.iacr.org/2010/248",
+        "eprint": "2010/248"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as the first open problem arising from implementation of the tool and identifies Camellia's key-schedule rotations as the motivating unsupported case.",
+      "citation_labels": [
+        "Alex Biryukov et al., Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mutual-information-profiled-dpa-success",
+  "group_id": "mutual-information-profiled-dpa-success",
+  "title": "Mutual Information and Profiled-Attack Success in Higher-Order DPA",
+  "summary": "Experiments link mutual information to profiled-attack success in second- and higher-order DPA, but a formal justification of this relationship remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In second- and higher-order differential power analysis (DPA), experiments exhibit a relationship between mutual information and the success rate of a profiled attack. Formally analyze and justify this relationship, for example under the assumption that leakage noise is Gaussian."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of profiled attacks using second- and higher-order differential power analysis.",
+    "assumptions": [
+      "Gaussian leakage noise as an example assumption"
+    ],
+    "parameters": [
+      "Mutual information — information-theoretic measure",
+      "Profiled-attack success rate — attack-performance measure",
+      "DPA order — second- and higher-order attack setting"
+    ],
+    "unresolved_remainder": "Formally analyze and justify the experimentally observed relationship between mutual information and profiled-attack success rate."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "differential-power-analysis",
+      "mutual-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The World Is Not Enough: Another Look on Second-Order DPA",
+        "locator": "ASIACRYPT 2010, page 16",
+        "doi": "10.1007/978-3-642-17373-8_7",
+        "url": "https://eprint.iacr.org/2010/180",
+        "eprint": "2010/180"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The paper experimentally exhibits the relationship in second- and higher-order DPA. It leaves a formal justification for future analysis and suggests Gaussian leakage noise as one possible assumption.",
+      "citation_labels": [
+        "François-Xavier Standaert et al., The World Is Not Enough: Another Look on Second-Order DPA"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

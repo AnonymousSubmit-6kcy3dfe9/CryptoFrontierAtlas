@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-differential-weight-bounds",
+  "group_id": "related-key-differential-weight-bounds",
+  "title": "Bounding Related-Key Differential Characteristic Weights",
+  "summary": "Techniques cover different numbers of rounds at no weight cost, leaving open how to upper-bound chosen related-key differential characteristic weights and prove attack resistance.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a sound method to estimate upper bounds on the weights of chosen related-key differential characteristics and use those bounds to prove resistance to chosen related-key differential attacks. The method must account for techniques that cover different numbers of rounds without weight cost: one round for the rebound attack, two rounds for the Super-Sbox technique, and still more rounds for the tool of Khovratovich and collaborators."
+  },
+  "scope": {
+    "domain": "Chosen related-key differential cryptanalysis of byte-oriented block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Characteristic weight—the quantity whose upper bound is needed to prove resistance",
+      "Free-round count—the number of rounds an attack technique covers without weight cost"
+    ],
+    "unresolved_remainder": "Find a sound upper-bound method that accounts for technique-dependent free-round coverage and use it to prove resistance to chosen related-key differential attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "related-key-attacks",
+      "rebound-attack"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others",
+        "locator": "EUROCRYPT 2010, page 9",
+        "doi": "10.1007/978-3-642-13190-5_17",
+        "url": "https://eprint.iacr.org/2010/248",
+        "eprint": "2010/248"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly labels proving resistance as open, attributing the obstacle to the lack of a sound weight bound when different techniques cover different numbers of rounds for free.",
+      "citation_labels": [
+        "Alex Biryukov et al., Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

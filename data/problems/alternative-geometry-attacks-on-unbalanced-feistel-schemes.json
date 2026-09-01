@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alternative-geometry-attacks-on-unbalanced-feistel-schemes",
+  "group_id": "alternative-geometry-attacks-on-unbalanced-feistel-schemes",
+  "title": "Alternative-Geometry Attacks on Unbalanced Feistel Schemes",
+  "summary": "For unbalanced Feistel schemes with expanding functions, the examined multi-rectangle approach fails; find a generic attack improving on both two-point and rectangle attacks.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For unbalanced Feistel schemes with expanding functions, construct a generic attack that improves upon both the two-point attack $\\mathrm{TWO}$ and the rectangle attacks $\\mathrm{R1}$, $\\mathrm{R2}$, $\\mathrm{R3}$, $\\mathrm{R4}$ by employing alternative equation geometries---such as hexagons, multidimensional cubes, or linked multi-rectangles---in place of the standard two-dimensional rectangles. The key challenge is that the multi-rectangle approach has been shown to fail, and most other alternative geometries investigated so far have not outperformed the rectangle-based attacks; some variants remain under investigation, leaving this construction as an open problem."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of generic attacks on unbalanced Feistel schemes with expanding functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Equation geometry: the structural arrangement varied to seek improvement over standard two-dimensional rectangles"
+    ],
+    "unresolved_remainder": "Construct a working generic attack using an alternative equation geometry that improves upon both TWO and the R1, R2, R3, and R4 rectangle attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "feistel-networks",
+      "generic-attacks",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Generic Attacks on Unbalanced Feistel Schemes with Expanding Functions",
+        "locator": "ASIACRYPT 2010, page 22",
+        "doi": "10.1007/978-3-642-17373-8_6",
+        "url": "https://eprint.iacr.org/2007/449",
+        "eprint": "2007/449"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The source calls designing attacks better than two-point or rectangle attacks an interesting problem and describes trials with alternative equation geometries. Its illustrative multi-rectangle example does not work, and multi-rectangle attacks remain under investigation.",
+      "citation_labels": [
+        "Emmanuel Volte et al., Improved Generic Attacks on Unbalanced Feistel Schemes with Expanding Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

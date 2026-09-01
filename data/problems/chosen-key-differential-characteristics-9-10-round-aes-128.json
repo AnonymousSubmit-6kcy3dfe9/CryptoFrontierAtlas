@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chosen-key-differential-characteristics-9-10-round-aes-128",
+  "group_id": "chosen-key-differential-characteristics-9-10-round-aes-128",
+  "title": "Chosen-Key Differential Characteristics for 9- and 10-Round AES-128",
+  "summary": "The reported search found no ten-round AES characteristic with at most 21 active state S-boxes; chosen-key differential characteristics for nine and ten rounds remain to be constructed.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct chosen-key differential characteristics for both nine-round and ten-round $\\mathrm{AES\\text{-}128}$."
+  },
+  "scope": {
+    "domain": "Chosen-key differential cryptanalysis of AES-128.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AES-128: the target block-cipher variant",
+      "Round count: nine and ten rounds are the two target instances"
+    ],
+    "unresolved_remainder": "Construct chosen-key differential characteristics for both target round counts."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "aes-128",
+      "differential-cryptanalysis",
+      "chosen-key"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others",
+        "locator": "EUROCRYPT 2010, page 15",
+        "doi": "10.1007/978-3-642-13190-5_17",
+        "url": "https://eprint.iacr.org/2010/248",
+        "eprint": "2010/248"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2010-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion explicitly presents producing chosen-key differential characteristics for nine and ten rounds of AES-128 as an open problem. The paper reports finding no ten-round AES characteristic with at most 21 active state S-boxes.",
+      "citation_labels": [
+        "Alex Biryukov et al., Automatic Search for Related-Key Differential Characteristics in Byte-Oriented Block Ciphers: Application to AES, Camellia, Khazad and Others"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

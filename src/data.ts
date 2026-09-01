@@ -3,9 +3,12 @@ import problem_17a245a9ef94 from '../data/problems/active-attack-detection-for-g
 import problem_7319a5cc2f66 from '../data/problems/adaptive-lrwq-security-proof.json';
 import problem_f51e5ca6b1b3 from '../data/problems/adaptive-q2-security-of-four-round-luby-rackoff.json';
 import problem_9917d4dc38b8 from '../data/problems/adaptive-security-of-grappa.json';
+import problem_5ef93bb4093a from '../data/problems/aes-128-attack-faster-than-exhaustive-search.json';
+import problem_96f7946d26bf from '../data/problems/aes-256-key-recovery-data-complexity.json';
 import problem_d575ddfc446c from '../data/problems/aes-all-zero-block-key-collision.json';
 import problem_d62e985bf09f from '../data/problems/aes-censoring-conjecture.json';
 import recordAesFullRoundFixedTargetKeyCollision from '../data/problems/aes-full-round-fixed-target-key-collision.json';
+import problem_5c47f0a6cbf7 from '../data/problems/aes-practical-security-margin.json';
 import problem_c15b1aba9b5f from '../data/problems/aes-provable-security-assumption.json';
 import problem_6e15c5ca0ac4 from '../data/problems/aeth-quadratic-encryption-query-bound.json';
 import problem_34befab6b4f0 from '../data/problems/algebraic-attacks-on-non-polynomial-ciphers-over-integer-rings.json';
@@ -13,9 +16,11 @@ import problem_0049f5452170 from '../data/problems/all-key-validity-of-speedy-di
 import recordAlmostMmFourToOneMappings from '../data/problems/almost-mm-four-to-one-mappings.json';
 import recordAlmostMmOutsideMsharpClassification from '../data/problems/almost-mm-outside-msharp-classification.json';
 import problem_ddc7d28ad96c from '../data/problems/alternative-feature-extractors-for-imac.json';
+import problem_aa3fdfbed4e0 from '../data/problems/alternative-geometry-attacks-on-unbalanced-feistel-schemes.json';
 import problem_66b02d40ade0 from '../data/problems/anchor-polynomial-chi-quotient-ring-correspondence.json';
 import recordApnFourUniformNonlinearityThreshold from '../data/problems/apn-four-uniform-nonlinearity-threshold.json';
 import recordApnPermutationMinimumCarlitzRank from '../data/problems/apn-permutation-minimum-carlitz-rank.json';
+import problem_47e1f8b71c9f from '../data/problems/arbitrary-group-cca-security-expanding-feistel-networks.json';
 import problem_9668778a7a54 from '../data/problems/arkst-single-s-box-spanning-conjecture.json';
 import problem_68d6abc166d7 from '../data/problems/ascon-post-quantum-multi-user-security.json';
 import problem_7969c27f8927 from '../data/problems/ascon-post-quantum-security-independent-permutations.json';
@@ -29,10 +34,12 @@ import recordBentPartitionDepthPowerOfP from '../data/problems/bent-partition-de
 import recordBentPartitionSectionIvGeneralizedMmSeparation from '../data/problems/bent-partition-section-iv-generalized-mm-separation.json';
 import recordBentPartitionSectionsIiiViMmSeparation from '../data/problems/bent-partition-sections-iii-vi-mm-separation.json';
 import recordBentPartitionWbpTheorem4Converse from '../data/problems/bent-partition-wbp-theorem4-converse.json';
+import problem_47502e981f5f from '../data/problems/best-attacks-on-hybrid-aes-like-schemes.json';
 import problem_f6081feed8b5 from '../data/problems/beyond-birthday-bound-hash-ctr-hash-modes.json';
 import recordBinaryNihoS4EvenCrossCorrelationDistribution from '../data/problems/binary-niho-s4-even-cross-correlation-distribution.json';
 import bogdanov from '../data/problems/bogdanov-dcufn-dplus1-active-sboxes.json';
 import recordBoundedStoragePrivacyAmplificationSecurityExponent from '../data/problems/bounded-storage-privacy-amplification-security-exponent.json';
+import problem_93bbc34288be from '../data/problems/bounding-mu-t-for-noninvertible-feedback-ttp-constructions.json';
 import recordBourgainTwoSourceExtractorQmaSecurity from '../data/problems/bourgain-two-source-extractor-qma-security.json';
 import carlet13314 from '../data/problems/carlet-13-3-14-affine-derivatives.json';
 import carlet1377 from '../data/problems/carlet-13-7-7-layer-algebraic-immunity.json';
@@ -45,6 +52,7 @@ import problem_43b45b481f4a from '../data/problems/chacha20-poly1305-psiv-cmt-4-
 import problem_bb9d68b80562 from '../data/problems/characterizing-weak-separability-simon-periodic-distinguishers.json';
 import problem_fe8257aa8696 from '../data/problems/chilow-round-count-sufficiency.json';
 import problem_669707f270e0 from '../data/problems/choosing-polynomial-perturbation-subsets.json';
+import problem_e2f2ac835482 from '../data/problems/chosen-key-differential-characteristics-9-10-round-aes-128.json';
 import problem_3fc34e12d4be from '../data/problems/compact-secure-image-macs.json';
 import recordCompletedMaioranaMcfarlandExtensionAsymptotics from '../data/problems/completed-maiorana-mcfarland-extension-asymptotics.json';
 import problem_7cdb9c9fa62e from '../data/problems/compression-tolerant-macs-for-ciphertexts.json';
@@ -75,6 +83,7 @@ import problem_60f5699e5258 from '../data/problems/exact-security-higher-round-c
 import problem_58d53a47b164 from '../data/problems/exact-security-of-tnt-sm4-32.json';
 import problem_f545ec2931a2 from '../data/problems/exact-trivium-superpoly-statistics.json';
 import problem_fe3595c41b9b from '../data/problems/excluded-mass-relative-error-side-channel-security.json';
+import problem_43241051a063 from '../data/problems/expanding-unbalanced-feistel-security-bounds.json';
 import problem_5f375cf07b58 from '../data/problems/expected-unresolved-list-bound.json';
 import problem_5c26285316d9 from '../data/problems/exponential-quantum-speedup-for-ddt-attacks.json';
 import problem_3dd2d0c405a7 from '../data/problems/extending-2r-is-beyond-two-rounds.json';
@@ -92,6 +101,7 @@ import problem_131224a669b4 from '../data/problems/formal-random-probing-bound-o
 import problem_f5f3750c1a22 from '../data/problems/format-preserving-authenticated-encryption-for-compressed-video.json';
 import problem_9e610e0c5f4b from '../data/problems/forward-security-logarithmic-storage.json';
 import problem_565d8a77a985 from '../data/problems/four-round-luby-rackoff-adaptive-quantum-bound.json';
+import problem_d63fd5d43580 from '../data/problems/full-key-recovery-for-reduced-round-aes-256.json';
 import problem_0d59ce331f56 from '../data/problems/full-n-bit-security-and-nonce-misuse-resistance-for-block-cipher-macs.json';
 import problem_b43411184bfc from '../data/problems/full-round-scarf-collision-model-security.json';
 import problem_39bef821f287 from '../data/problems/galois-ring-diffusion-for-integer-ring-ciphers.json';
@@ -155,8 +165,10 @@ import problem_f5d3ae33a856 from '../data/problems/minimum-vectorial-linearity-o
 import problem_ca35c00e9d4c from '../data/problems/multi-stage-crooked-indifferentiability.json';
 import problem_46bfb8f40e94 from '../data/problems/multi-user-security-even-mansour-blinded-hash.json';
 import problem_495881875e45 from '../data/problems/multi-user-security-for-symmetric-signcryption.json';
+import problem_f2d6b93d8d6a from '../data/problems/mutual-information-profiled-dpa-success.json';
 import recordNfsrCycleStructurePeriods from '../data/problems/nfsr-cycle-structure-periods.json';
 import recordNfsrDegeneracySubfamilies from '../data/problems/nfsr-degeneracy-subfamilies.json';
+import problem_c98ca2f3c05e from '../data/problems/non-byte-oriented-related-key-search.json';
 import recordNonNormalCubicBentExistence from '../data/problems/non-normal-cubic-bent-existence.json';
 import problem_cb3eeece46d0 from '../data/problems/non-plateau-fixed-key-differential-probabilities.json';
 import problem_b8d93865911a from '../data/problems/non-tag-based-committing-ae-ciphertext-shortening.json';
@@ -193,11 +205,15 @@ import recordQuantumMultipleAccessOtpOneShotRateRegion from '../data/problems/qu
 import problem_1e9fc050d408 from '../data/problems/rain-linearized-polynomial-decompositions.json';
 import problem_eb1ad52cf047 from '../data/problems/reduced-round-zip-aes-orthros-attack-applicability.json';
 import recordReedMullerShannonIntrinsicRandomness from '../data/problems/reed-muller-shannon-intrinsic-randomness.json';
+import problem_2bd5d8c2d2e9 from '../data/problems/related-key-adaptation-of-10-round-aes-256-attack.json';
+import problem_cff92d4f9668 from '../data/problems/related-key-differential-search-for-hash-functions.json';
+import problem_48ab6b08edfb from '../data/problems/related-key-differential-weight-bounds.json';
 import recordRemarkFourVectorialBentConstruction from '../data/problems/remark-four-vectorial-bent-construction.json';
 import recordRotationSymmetricBentLinearityIndices from '../data/problems/rotation-symmetric-bent-linearity-indices.json';
 import recordRotationSymmetricBentMultipleThreeMsharp from '../data/problems/rotation-symmetric-bent-multiple-three-msharp.json';
 import problem_0afdf44616ae from '../data/problems/scarf-higher-round-multiple-tweak-differential-bias.json';
 import problem_eb9bcd5f728b from '../data/problems/scarf-single-key-security.json';
+import problem_32f37779fbba from '../data/problems/second-order-dpa-beyond-hamming-weight-leakage.json';
 import problem_72d451255a19 from '../data/problems/secure-haystack-ciphers.json';
 import recordSelfOrthogonalTheorem2ResidualWeightDistribution from '../data/problems/self-orthogonal-theorem2-residual-weight-distribution.json';
 import problem_b1e04678716a from '../data/problems/semi-regularity-solving-degree-overestimation.json';
@@ -238,6 +254,7 @@ import recordVectorialDualBentAttainableSigmaClassification from '../data/proble
 import vectorial from '../data/problems/vectorial-nonlinearity-beyond-nyberg.json';
 import recordWangHengHbResidualWeightDistribution from '../data/problems/wang-heng-hb-residual-weight-distribution.json';
 import problem_b7f36ada7ae3 from '../data/problems/xcb-full-plaintext-recovery.json';
+import problem_e13f8e3b9b76 from '../data/problems/zero-amplitude-detection-in-gaussian-quantum-states.json';
 import problem_10aa0d6eec48 from '../data/problems/zip-aes-256-prf-security.json';
 import problem_f8404ac6324d from '../data/problems/zip-gift-security-analysis.json';
 import manifest from '../data/manifest.json';
@@ -311,9 +328,12 @@ export const problems = [
   problem_7319a5cc2f66,
   problem_f51e5ca6b1b3,
   problem_9917d4dc38b8,
+  problem_5ef93bb4093a,
+  problem_96f7946d26bf,
   problem_d575ddfc446c,
   problem_d62e985bf09f,
   recordAesFullRoundFixedTargetKeyCollision,
+  problem_5c47f0a6cbf7,
   problem_c15b1aba9b5f,
   problem_6e15c5ca0ac4,
   problem_34befab6b4f0,
@@ -321,9 +341,11 @@ export const problems = [
   recordAlmostMmFourToOneMappings,
   recordAlmostMmOutsideMsharpClassification,
   problem_ddc7d28ad96c,
+  problem_aa3fdfbed4e0,
   problem_66b02d40ade0,
   recordApnFourUniformNonlinearityThreshold,
   recordApnPermutationMinimumCarlitzRank,
+  problem_47e1f8b71c9f,
   problem_9668778a7a54,
   problem_68d6abc166d7,
   problem_7969c27f8927,
@@ -337,10 +359,12 @@ export const problems = [
   recordBentPartitionSectionIvGeneralizedMmSeparation,
   recordBentPartitionSectionsIiiViMmSeparation,
   recordBentPartitionWbpTheorem4Converse,
+  problem_47502e981f5f,
   problem_f6081feed8b5,
   recordBinaryNihoS4EvenCrossCorrelationDistribution,
   bogdanov,
   recordBoundedStoragePrivacyAmplificationSecurityExponent,
+  problem_93bbc34288be,
   recordBourgainTwoSourceExtractorQmaSecurity,
   carlet13314,
   carlet1377,
@@ -353,6 +377,7 @@ export const problems = [
   problem_bb9d68b80562,
   problem_fe8257aa8696,
   problem_669707f270e0,
+  problem_e2f2ac835482,
   problem_3fc34e12d4be,
   recordCompletedMaioranaMcfarlandExtensionAsymptotics,
   problem_7cdb9c9fa62e,
@@ -383,6 +408,7 @@ export const problems = [
   problem_58d53a47b164,
   problem_f545ec2931a2,
   problem_fe3595c41b9b,
+  problem_43241051a063,
   problem_5f375cf07b58,
   problem_5c26285316d9,
   problem_3dd2d0c405a7,
@@ -400,6 +426,7 @@ export const problems = [
   problem_f5f3750c1a22,
   problem_9e610e0c5f4b,
   problem_565d8a77a985,
+  problem_d63fd5d43580,
   problem_0d59ce331f56,
   problem_b43411184bfc,
   problem_39bef821f287,
@@ -463,8 +490,10 @@ export const problems = [
   problem_ca35c00e9d4c,
   problem_46bfb8f40e94,
   problem_495881875e45,
+  problem_f2d6b93d8d6a,
   recordNfsrCycleStructurePeriods,
   recordNfsrDegeneracySubfamilies,
+  problem_c98ca2f3c05e,
   recordNonNormalCubicBentExistence,
   problem_cb3eeece46d0,
   problem_b8d93865911a,
@@ -501,11 +530,15 @@ export const problems = [
   problem_1e9fc050d408,
   problem_eb1ad52cf047,
   recordReedMullerShannonIntrinsicRandomness,
+  problem_2bd5d8c2d2e9,
+  problem_cff92d4f9668,
+  problem_48ab6b08edfb,
   recordRemarkFourVectorialBentConstruction,
   recordRotationSymmetricBentLinearityIndices,
   recordRotationSymmetricBentMultipleThreeMsharp,
   problem_0afdf44616ae,
   problem_eb9bcd5f728b,
+  problem_32f37779fbba,
   problem_72d451255a19,
   recordSelfOrthogonalTheorem2ResidualWeightDistribution,
   problem_b1e04678716a,
@@ -546,6 +579,7 @@ export const problems = [
   vectorial,
   recordWangHengHbResidualWeightDistribution,
   problem_b7f36ada7ae3,
+  problem_e13f8e3b9b76,
   problem_10aa0d6eec48,
   problem_f8404ac6324d,
 ] as unknown as Problem[];
