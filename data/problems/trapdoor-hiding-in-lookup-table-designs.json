@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "trapdoor-hiding-in-lookup-table-designs",
+  "group_id": "trapdoor-hiding-in-lookup-table-designs",
+  "title": "Trapdoor Hiding in Lookup-Table-Based Designs",
+  "summary": "All reported attempts to hide a trapdoor in lookup-table-based designs failed; it remains to prove impossibility given state-of-the-art preimage-resistant-function design or exhibit a counterexample.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "All attempts to hide a trapdoor in lookup-table-based designs have failed. Determine whether, given the state of the art in the design of preimage-resistant functions, every lookup-table-based scheme necessarily fails to hide a trapdoor; prove this conjectured impossibility or refute it by exhibiting a scheme that does hide one."
+  },
+  "scope": {
+    "domain": "Design of lookup-table-based cryptographic schemes with hidden trapdoors.",
+    "assumptions": [
+      "The claimed impossibility is considered given the state of the art in designing preimage-resistant functions."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove that every lookup-table-based scheme fails to hide a trapdoor under the stated limitation, or refute the conjecture by exhibiting a scheme that hides one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "trapdoor-hiding",
+      "lookup-table-designs",
+      "preimage-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)",
+        "locator": "ASIACRYPT 2014, page 4",
+        "doi": "10.1007/978-3-662-45611-8_4",
+        "url": "https://eprint.iacr.org/2014/474",
+        "eprint": "2014/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that all attempts so far had failed and explicitly conjectures that no lookup-table-based scheme can hide a trapdoor, at least given the state of the art in designing preimage-resistant functions.",
+      "citation_labels": [
+        "Alex Biryukov et al., Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

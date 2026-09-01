@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iterated-two-key-even-mansour-attack-complexity",
+  "group_id": "iterated-two-key-even-mansour-attack-complexity",
+  "title": "Attack Complexity of Iterated Two-Key Even–Mansour in Alternative Models",
+  "summary": "For iterated two-key Even–Mansour, existing analyses use known plaintexts and count all operations; whether chosen or adaptive queries and uncounted precomputation reduce complexity remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For iterated two-key Even–Mansour schemes, determine whether the attack complexities established in the conservative model—where the adversary has access only to known plaintexts and all operations, including a potential preprocessing stage, are counted—can be reduced when chosen-plaintext or adaptively chosen-plaintext queries are allowed, and when precomputation is not counted in the overall attack complexity."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of iterated two-key Even–Mansour schemes across attack models.",
+    "assumptions": [
+      "The baseline adversary has access only to known plaintexts.",
+      "The baseline attack complexity counts all operations, including a potential preprocessing stage."
+    ],
+    "parameters": [
+      "Plaintext-access model: distinguishes known, chosen, and adaptively chosen plaintext access",
+      "Precomputation accounting: determines whether preprocessing is included in overall attack complexity"
+    ],
+    "unresolved_remainder": "Whether chosen-plaintext or adaptively chosen-plaintext access, together with excluding precomputation from the overall cost, can reduce the established attack complexities."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "even-mansour",
+      "symmetric-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Iterated Even-Mansour Schemes with Two Keys",
+        "locator": "ASIACRYPT 2014, page 17",
+        "doi": "10.1007/978-3-662-45611-8_23",
+        "url": "https://eprint.iacr.org/2013/674",
+        "eprint": "2013/674"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source analyzes attacks in a conservative known-plaintext model that counts every operation, including preprocessing. It explicitly leaves complexity reductions in alternative plaintext-query and precomputation-accounting models as an open direction.",
+      "citation_labels": [
+        "Itai Dinur et al., Cryptanalysis of Iterated Even-Mansour Schemes with Two Keys"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

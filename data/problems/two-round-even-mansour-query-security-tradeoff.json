@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-even-mansour-query-security-tradeoff",
+  "group_id": "two-round-even-mansour-query-security-tradeoff",
+  "title": "Tight Query-Security Tradeoff for Two-Round Even–Mansour",
+  "summary": "Proven security and a generic attack bound different query regimes for two-round Even–Mansour with one inner permutation; the tight tradeoff in the intermediate regime remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight query-security tradeoff for the two-round Even--Mansour construction with a single inner permutation, as a function of the number $q_e$ of outer-cipher queries and $q_p$ of inner-permutation queries. Proven security covers one range of $(q_e,q_p)$, while a generic attack establishes insecurity in another; the security status of the intermediate parameter pairs remains unresolved."
+  },
+  "scope": {
+    "domain": "Block-cipher query security for the two-round Even–Mansour construction with a single inner permutation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q_e: number of outer-cipher queries",
+      "q_p: number of inner-permutation queries"
+    ],
+    "unresolved_remainder": "Determine the security status of the intermediate query-parameter pairs and thereby establish the tight query-security tradeoff."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "even-mansour",
+      "query-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Even-Mansour Cipher",
+        "locator": "CRYPTO 2014, page 6",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "url": "https://eprint.iacr.org/2014/443",
+        "eprint": "2014/443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source compares proven secure regions with a generic-attack insecurity region and explicitly marks the intervening single-permutation parameter region as open.",
+      "citation_labels": [
+        "Shan Chen et al., Minimizing the Two-Round Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "clefia-like-related-key-cancellation",
+  "group_id": "clefia-like-related-key-cancellation",
+  "title": "Related-Key Cancellation in CLEFIA-Like Designs",
+  "summary": "Cancellation can make low-probability key-schedule differentials exploitable in CLEFIA-like designs; the causal design flaws and preventive conditions remain to be characterized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For CLEFIA-like Feistel block-cipher designs whose key schedule contains a nonlinear component followed by a linear round-key-generation function, determine which design features and operating conditions allow iterative round-key differences to produce state and round-key cancellation across rounds, thereby turning very low-probability key-schedule differentials into exploitable related-key weaknesses. The unresolved task is to characterize the design drawbacks responsible for this behavior, distinguish those causes from the resulting weak-key class and analysis invariances, and specify design conditions that prevent the behavior in future designs. The question is motivated by the observation that the Feistel structure can permit probability-1 characteristics through cancellation and that the number of cipher rounds may not affect the analysis complexity when the differences avoid the substitution-permutation layers. [S1]"
+  },
+  "scope": {
+    "domain": "Design and related-key differential cryptanalysis of CLEFIA-like Feistel block ciphers with nonlinear key-schedule components followed by linear round-key generation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of cipher rounds: may leave analysis complexity unchanged when differences avoid the substitution-permutation layers"
+    ],
+    "unresolved_remainder": "Identify the causal design features and operating conditions that enable cancellation, distinguish them from the resulting weak-key class and invariances, and specify preventive design conditions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "related-key-cryptanalysis",
+      "key-schedules"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Low Probability Differentials and the Cryptanalysis of Full-Round CLEFIA-128",
+        "locator": "ASIACRYPT 2014, page 15",
+        "doi": "10.1007/978-3-662-45611-8_8",
+        "url": "https://eprint.iacr.org/2014/056",
+        "eprint": "2014/056"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source treats the weak-key class and three analysis invariances as consequences that provide clues rather than as the causes of the weakness. It explicitly calls for identifying the underlying design drawbacks to prevent similar analyses.",
+      "citation_labels": [
+        "Sareh Emami et al., Low Probability Differentials and the Cryptanalysis of Full-Round CLEFIA-128"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

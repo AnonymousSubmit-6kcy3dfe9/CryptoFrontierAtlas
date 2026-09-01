@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-known-key-distinguisher-for-aes-star-10",
+  "group_id": "improved-known-key-distinguisher-for-aes-star-10",
+  "title": "Improved Known-Key Distinguisher for AES*10",
+  "summary": "A 10-round known-key distinguisher for AES*10 is known, but whether stronger higher-order relations yield a supported improvement remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{AES}^{*}_{10}$, determine whether a stronger higher-order relation than $R8$ could allow deriving several pairs satisfying the differential relation used by the existing 10-round known-key distinguisher and potentially yield a 10-round known-key distinguisher that outperforms that baseline; provide a rigorous proof of the improvement, or, if a rigorous proof is too difficult, a plausible heuristic argument supporting its validity."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of AES*10 using known-key distinguishers and higher-order differential relations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "10 rounds — target distinguisher depth",
+      "R8 — baseline relation to be strengthened"
+    ],
+    "unresolved_remainder": "Determine whether a higher-order relation stronger than R8 can yield several relevant differential pairs and an outperforming 10-round known-key distinguisher, supported by a rigorous proof or plausible heuristic argument."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "known-key-distinguisher",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Simplified Representation of AES",
+        "locator": "ASIACRYPT 2014, page 21",
+        "doi": "10.1007/978-3-662-45611-8_11"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The paper suggests that a relation stronger than R8, yielding several relevant differential pairs, might outperform its 10-round baseline. It leaves the improved distinguisher and a rigorous proof—or plausible heuristic argument—as an open issue.",
+      "citation_labels": [
+        "Henri Gilbert et al., A Simplified Representation of AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

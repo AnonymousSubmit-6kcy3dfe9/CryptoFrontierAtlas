@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "second-order-threshold-implementation-share-lower-bound",
+  "group_id": "second-order-threshold-implementation-share-lower-bound",
+  "title": "Lower Bound on Second-Order Threshold-Implementation Shares",
+  "summary": "For the example quadratic function, second-order threshold implementations with 15 and 13 total shares are presented, but a lower bound on the combined share count remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a lower bound on $s_{\\mathrm{in}}+s_{\\mathrm{out}}$ for the second-order TI setting illustrated by $f(a,b,c)=1+a+bc$."
+  },
+  "scope": {
+    "domain": "Share complexity of second-order threshold implementations, illustrated by the quadratic function f(a,b,c)=1+a+bc.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "s_in: number of input shares",
+      "s_out: number of output shares"
+    ],
+    "unresolved_remainder": "Establish a lower bound on the combined input and output share count in the illustrated second-order threshold-implementation setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "threshold-implementations",
+      "share-complexity",
+      "lower-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Higher-Order Threshold Implementations",
+        "locator": "ASIACRYPT 2014, page 6",
+        "doi": "10.1007/978-3-662-45608-8_18",
+        "url": "https://eprint.iacr.org/2014/751",
+        "eprint": "2014/751"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents second-order implementations with share-count pairs (5,10) and (6,7), while noting that its generic construction does not minimize the output or total share count. It explicitly leaves the corresponding lower bound open.",
+      "citation_labels": [
+        "Begül Bilgin et al., Higher-Order Threshold Implementations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

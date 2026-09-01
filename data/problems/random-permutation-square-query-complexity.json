@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "random-permutation-square-query-complexity",
+  "group_id": "random-permutation-square-query-complexity",
+  "title": "Distinguishing a Random Permutation Square",
+  "summary": "To the proposers' best knowledge, it is unexplored how many queries are needed to distinguish the square of a uniformly random permutation from a uniformly random permutation.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine how many queries are needed to distinguish the squared permutation $P \\circ P$, where $P$ is a uniformly random permutation, from a uniformly random permutation $E$. This simple-to-state problem is, to its proposers' best knowledge, unexplored."
+  },
+  "scope": {
+    "domain": "Query complexity for distinguishing distributions over random permutations and their squares.",
+    "assumptions": [
+      "P is a uniformly random permutation.",
+      "E is a uniformly random permutation."
+    ],
+    "parameters": [
+      "Number of queries, measuring the cost of distinguishing the two permutation distributions"
+    ],
+    "unresolved_remainder": "Determine the query complexity of distinguishing the square of P from E."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "random-permutations",
+      "distribution-distinguishing",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Even-Mansour Cipher",
+        "locator": "CRYPTO 2014, page 8",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "url": "https://eprint.iacr.org/2014/443",
+        "eprint": "2014/443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a simple-to-state problem related to the permutation counting needed for the single-permutation security proof. It states that, to the proposers' best knowledge, the problem is unexplored.",
+      "citation_labels": [
+        "Shan Chen et al., Minimizing the Two-Round Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

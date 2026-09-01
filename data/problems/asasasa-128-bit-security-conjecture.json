@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "asasasa-128-bit-security-conjecture",
+  "group_id": "asasasa-128-bit-security-conjecture",
+  "title": "ASASASA 128-Bit Security Conjecture",
+  "summary": "The existing ASASA attack has not been extended to ASASASA; prove the conjectured 128-bit security of ASASASA or refute it with an attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether ASASASA components obtained by adding two layers to ASASA components achieve a 128-bit security level. Prove this conjectured security level or refute it by giving an attack, given that the existing attack on the ASASA structure has not been extended to the ASASASA structure."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of ASASASA components formed by adding two layers to ASASA components.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "128-bit security level — conjectured security target",
+      "Two added layers — transform ASASA components into ASASASA components"
+    ],
+    "unresolved_remainder": "Prove that the ASASASA components achieve 128-bit security or refute the conjecture by giving an attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "block-cipher",
+      "asasasa"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)",
+        "locator": "ASIACRYPT 2014, page 14",
+        "doi": "10.1007/978-3-662-45611-8_4",
+        "url": "https://eprint.iacr.org/2014/474",
+        "eprint": "2014/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that no way was found to extend the ASASA attack to ASASASA and therefore explicitly conjectures a 128-bit security level for ASASASA.",
+      "citation_labels": [
+        "Alex Biryukov et al., Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

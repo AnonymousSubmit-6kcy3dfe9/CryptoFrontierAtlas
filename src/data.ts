@@ -1,4 +1,6 @@
 import problem_fdb84409783b from '../data/problems/8-bit-s-box-vectorial-linearity-below-14.json';
+import problem_c904e32d7999 from '../data/problems/a10-a12-composition-authenticity.json';
+import problem_1e219e585eda from '../data/problems/accelerating-milp-differential-cryptanalysis.json';
 import problem_17a245a9ef94 from '../data/problems/active-attack-detection-for-group-key-progression.json';
 import problem_7319a5cc2f66 from '../data/problems/adaptive-lrwq-security-proof.json';
 import problem_f51e5ca6b1b3 from '../data/problems/adaptive-q2-security-of-four-round-luby-rackoff.json';
@@ -25,6 +27,8 @@ import recordApnFourUniformNonlinearityThreshold from '../data/problems/apn-four
 import recordApnPermutationMinimumCarlitzRank from '../data/problems/apn-permutation-minimum-carlitz-rank.json';
 import problem_47e1f8b71c9f from '../data/problems/arbitrary-group-cca-security-expanding-feistel-networks.json';
 import problem_9668778a7a54 from '../data/problems/arkst-single-s-box-spanning-conjecture.json';
+import problem_9133063473fc from '../data/problems/asasa-efficient-linearity.json';
+import problem_45d29f5eac2b from '../data/problems/asasasa-128-bit-security-conjecture.json';
 import problem_68d6abc166d7 from '../data/problems/ascon-post-quantum-multi-user-security.json';
 import problem_7969c27f8927 from '../data/problems/ascon-post-quantum-security-independent-permutations.json';
 import problem_65514e82714f from '../data/problems/automating-combined-higher-round-differential-mitm-attacks.json';
@@ -58,6 +62,8 @@ import problem_bb9d68b80562 from '../data/problems/characterizing-weak-separabil
 import problem_fe8257aa8696 from '../data/problems/chilow-round-count-sufficiency.json';
 import problem_669707f270e0 from '../data/problems/choosing-polynomial-perturbation-subsets.json';
 import problem_e2f2ac835482 from '../data/problems/chosen-key-differential-characteristics-9-10-round-aes-128.json';
+import problem_1105573b016c from '../data/problems/cipher-description-to-milp-compiler.json';
+import problem_2f8deca04126 from '../data/problems/clefia-like-related-key-cancellation.json';
 import problem_3fc34e12d4be from '../data/problems/compact-secure-image-macs.json';
 import recordCompletedMaioranaMcfarlandExtensionAsymptotics from '../data/problems/completed-maiorana-mcfarland-extension-asymptotics.json';
 import problem_7cdb9c9fa62e from '../data/problems/compression-tolerant-macs-for-ciphertexts.json';
@@ -74,6 +80,7 @@ import derbezEuler from '../data/problems/derbez-euler-expanded-equivalence.json
 import gfn3840 from '../data/problems/derbez-gfn-38-40-branch-diffusion.json';
 import recordDeterministicNthTwoAdicHalfProfile from '../data/problems/deterministic-nth-two-adic-half-profile.json';
 import problem_17564d49d7dc from '../data/problems/differential-linear-distinguisher-bounds-for-10-round-serpent.json';
+import problem_1e83cf1f9e56 from '../data/problems/differential-multidimensional-linear-data-complexity.json';
 import problem_e1ff830514b5 from '../data/problems/direct-linear-hull-analysis-of-printcipher-biases.json';
 import problem_0afffc4ecc9d from '../data/problems/direct-tbc-use-as-collision-resistant-tcc.json';
 import recordEaInequivalentBentFourConcatenations from '../data/problems/ea-inequivalent-bent-four-concatenations.json';
@@ -134,8 +141,11 @@ import problem_32be47eaa0c6 from '../data/problems/higher-degree-sel-computation
 import problem_4685d5b79753 from '../data/problems/higher-dimensional-grobner-bound-tightness.json';
 import problem_a3e3263af082 from '../data/problems/higher-power-divisibility-zero-sum-coordinate-functions.json';
 import problem_ddd5742b92b5 from '../data/problems/hilbert-series-lower-bound-on-solving-degree.json';
+import problem_5ea76d603400 from '../data/problems/honey-encryption-dependent-message-key-distributions.json';
 import problem_d498af3470ab from '../data/problems/ideal-ete-enciphering-from-common-primitives.json';
 import recordIextQuantumProofSeededExtractor from '../data/problems/iext-quantum-proof-seeded-extractor.json';
+import problem_354e4af5d73a from '../data/problems/impossible-differential-to-multidimensional-linear-key-recovery.json';
+import problem_5030335620e8 from '../data/problems/improved-known-key-distinguisher-for-aes-star-10.json';
 import problem_ad475c8b19bb from '../data/problems/improving-32-bit-aes-super-s-box-affine-approximation.json';
 import problem_87cbd7734350 from '../data/problems/improving-ie-decryption-quality.json';
 import problem_01fbe6916a4f from '../data/problems/incomplete-bicliques-for-block-cipher-cryptanalysis.json';
@@ -150,15 +160,20 @@ import problem_2fd74237ee09 from '../data/problems/involution-based-tem-with-vil
 import recordIrreducibleCyclicAuthenticationSubstitutionProbability from '../data/problems/irreducible-cyclic-authentication-substitution-probability.json';
 import problem_43feaff9ffc9 from '../data/problems/iterated-even-mansour-identical-inner-permutations.json';
 import problem_6b7b6d83d2e8 from '../data/problems/iterated-even-mansour-identical-key-security.json';
+import problem_6ef232fc7f9e from '../data/problems/iterated-two-key-even-mansour-attack-complexity.json';
 import problem_63ab07291aa0 from '../data/problems/iv1-strong-bound-beyond-gwc.json';
+import problem_21ee9b51b40a from '../data/problems/ive-security-implies-knowledge-of-tags.json';
 import problem_40191c2fbc19 from '../data/problems/joint-execution-order-resource-randomization.json';
+import problem_7931ee1b94d4 from '../data/problems/k-wise-independent-hashing-for-honey-encryption.json';
 import kaleyski from '../data/problems/kaleyski-conjecture21-second-identity.json';
+import problem_044cab59a1b7 from '../data/problems/katan-32-third-moment-leakage-non-detection.json';
 import problem_5a1424f1820a from '../data/problems/key-alternating-ciphers-identical-round-keys.json';
 import problem_b90c096132d5 from '../data/problems/key-alternating-ciphers-with-minimal-key-scheduling.json';
 import problem_bbd7e2ff17f4 from '../data/problems/key-schedules-avoiding-weak-expanded-keys.json';
 import koelsch from '../data/problems/koelsch-f4-direct-xor.json';
 import recordKooKwonCondition42ComplementExactFiveUniformity from '../data/problems/koo-kwon-condition42-complement-exact-five-uniformity.json';
 import recordKooKwonCondition42ExactFourUniformity from '../data/problems/koo-kwon-condition42-exact-four-uniformity.json';
+import problem_3487f0313864 from '../data/problems/larger-register-complexity-carlet-sbox-masking.json';
 import recordLiKaleyskiConjecture11RootFreeness from '../data/problems/li-kaleyski-conjecture-11-root-freeness.json';
 import recordLiKaleyskiConjecture6RootFreeness from '../data/problems/li-kaleyski-conjecture-6-root-freeness.json';
 import recordLiKaleyskiF1F2ExplicitEquivalence from '../data/problems/li-kaleyski-f1-f2-explicit-equivalence.json';
@@ -182,9 +197,12 @@ import recordMesnagerWuF2uExactFiveUniformity4027 from '../data/problems/mesnage
 import recordMesnagerWuF2uExactFourUniformity839 from '../data/problems/mesnager-wu-f2u-exact-four-uniformity-839.json';
 import problem_baf86725e91a from '../data/problems/milp-miqcp-differential-linear-search-on-spns.json';
 import problem_8f3489f03dfd from '../data/problems/minimal-block-cipher-calls-for-n-bit-secure-dae.json';
+import problem_2753e5b8461b from '../data/problems/minimal-mask-refreshing-for-output-decoding.json';
 import problem_a57f8aef3e15 from '../data/problems/minimum-calls-for-secure-tweakable-block-ciphers.json';
+import problem_8f5851ba77f5 from '../data/problems/minimum-rounds-for-iterated-even-mansour-security.json';
 import problem_e32e1c72d17c from '../data/problems/minimum-secure-round-count-for-feistel-ciphers.json';
 import problem_f5d3ae33a856 from '../data/problems/minimum-vectorial-linearity-of-8-bit-permutation-s-boxes.json';
+import problem_5bcc622a69da from '../data/problems/multi-round-even-mansour-sum-capture-bound.json';
 import problem_ca35c00e9d4c from '../data/problems/multi-stage-crooked-indifferentiability.json';
 import problem_46bfb8f40e94 from '../data/problems/multi-user-security-even-mansour-blinded-hash.json';
 import problem_495881875e45 from '../data/problems/multi-user-security-for-symmetric-signcryption.json';
@@ -192,6 +210,7 @@ import problem_f2d6b93d8d6a from '../data/problems/mutual-information-profiled-d
 import recordNfsrCycleStructurePeriods from '../data/problems/nfsr-cycle-structure-periods.json';
 import recordNfsrDegeneracySubfamilies from '../data/problems/nfsr-degeneracy-subfamilies.json';
 import problem_c98ca2f3c05e from '../data/problems/non-byte-oriented-related-key-search.json';
+import problem_cb641472d184 from '../data/problems/non-key-share-bound-adaptive-probing.json';
 import recordNonNormalCubicBentExistence from '../data/problems/non-normal-cubic-bent-existence.json';
 import problem_cb3eeece46d0 from '../data/problems/non-plateau-fixed-key-differential-probabilities.json';
 import problem_b8d93865911a from '../data/problems/non-tag-based-committing-ae-ciphertext-shortening.json';
@@ -200,9 +219,12 @@ import problem_49bc2b976333 from '../data/problems/nonlinear-multi-user-power-bo
 import problem_958df4540908 from '../data/problems/nonlinear-mutual-information-bound-side-channel-queries.json';
 import recordNonquadraticCrookedApnExistence from '../data/problems/nonquadratic-crooked-apn-existence.json';
 import problem_9ffcacf3ce9f from '../data/problems/nonuniform-haystack-block-reduction.json';
+import problem_2ebbfd5f9088 from '../data/problems/odd-even-multiple-encryption-advantage-curves.json';
 import problem_c2d97fd3c2e4 from '../data/problems/ope-one-wayness-non-uniform-inputs.json';
+import problem_679d76896c9c from '../data/problems/optimal-llr-weighted-independent-trace-selection.json';
 import problem_ca8c5a4f4fda from '../data/problems/optimal-output-rate-permutation-based-drbgs.json';
 import problem_f2aa4b6f121f from '../data/problems/optimal-three-part-differential-linear-distinguishers.json';
+import problem_38f1bd528e8e from '../data/problems/optimality-of-interleaving-linear-layers.json';
 import problem_34f24607acce from '../data/problems/optimize-hctr2-committing-security-constants.json';
 import problem_493386f51bfb from '../data/problems/overdefined-3-round-rain-solving-degree-bound.json';
 import recordP2InheritanceIv1Permutation from '../data/problems/p2-inheritance-iv1-permutation.json';
@@ -211,12 +233,14 @@ import recordPeriodicBinaryNonlinearComplexityDistribution from '../data/problem
 import recordPeriodicNonlinearComplexityShiftMaxEquality from '../data/problems/periodic-nonlinear-complexity-shift-max-equality.json';
 import problem_4d72f1d21683 from '../data/problems/perseus-practical-side-channel-security-levels.json';
 import recordPlateauedNonaffineIndicatorPreservation from '../data/problems/plateaued-nonaffine-indicator-preservation.json';
+import problem_c8db2d851554 from '../data/problems/poet-field-multiplier-security.json';
 import problem_7474c6fa270c from '../data/problems/polynomial-correlation-congruence-preservation-relation.json';
 import problem_cb75ed40b1a1 from '../data/problems/polynomial-time-bound-key-recovery-search.json';
 import problem_040ee0e1864a from '../data/problems/post-quantum-bounds-ascon-keyed-sponges.json';
 import problem_874a5d1c7e3f from '../data/problems/post-quantum-security-original-minalpher.json';
 import problem_0797055e3659 from '../data/problems/post-quantum-security-spongewrap-related-constructions.json';
 import problem_79ca9f76bb1e from '../data/problems/practical-sbb-encryption-with-boundary-hiding-and-dos-resistance.json';
+import problem_1ab0eb76ca81 from '../data/problems/present-truncated-differential-resistance.json';
 import problem_6fa87dd6e154 from '../data/problems/prf-security-of-reduced-round-dbhtf-macs.json';
 import problem_e77910d1c746 from '../data/problems/prince-strong-differential-linear-hull-effects.json';
 import problem_a17865c40e2e from '../data/problems/princecore-cycle-profile-attacks-beyond-six-layers.json';
@@ -233,7 +257,9 @@ import problem_e1e0e9d22924 from '../data/problems/quantum-assisted-geometric-cr
 import recordQuantumMultipleAccessOtpGeneralEveRateRegion from '../data/problems/quantum-multiple-access-otp-general-eve-rate-region.json';
 import recordQuantumMultipleAccessOtpOneShotRateRegion from '../data/problems/quantum-multiple-access-otp-one-shot-rate-region.json';
 import problem_1e9fc050d408 from '../data/problems/rain-linearized-polynomial-decompositions.json';
+import problem_bebe6c38add1 from '../data/problems/random-permutation-square-query-complexity.json';
 import problem_2a2c2bce566d from '../data/problems/randomized-message-locked-encryption-beyond-xtespke.json';
+import problem_e7bb0aad20b0 from '../data/problems/rc4-fixed-key-byte-mppe-biases.json';
 import problem_8bf55793db73 from '../data/problems/rebound-attack-security-with-multiple-inbound-stages.json';
 import problem_eb1ad52cf047 from '../data/problems/reduced-round-zip-aes-orthros-attack-applicability.json';
 import recordReedMullerShannonIntrinsicRandomness from '../data/problems/reed-muller-shannon-intrinsic-randomness.json';
@@ -250,6 +276,7 @@ import recordRotationSymmetricBentMultipleThreeMsharp from '../data/problems/rot
 import problem_0afdf44616ae from '../data/problems/scarf-higher-round-multiple-tweak-differential-bias.json';
 import problem_eb9bcd5f728b from '../data/problems/scarf-single-key-security.json';
 import problem_32f37779fbba from '../data/problems/second-order-dpa-beyond-hamming-weight-leakage.json';
+import problem_4103171aa822 from '../data/problems/second-order-threshold-implementation-share-lower-bound.json';
 import problem_43d6128c0ca9 from '../data/problems/secure-efficient-block-cipher-key-schedules.json';
 import problem_72d451255a19 from '../data/problems/secure-haystack-ciphers.json';
 import recordSelfOrthogonalTheorem2ResidualWeightDistribution from '../data/problems/self-orthogonal-theorem2-residual-weight-distribution.json';
@@ -263,9 +290,11 @@ import recordSnow5gFastCorrelationTightBoundary from '../data/problems/snow-5g-f
 import problem_18eb635cb0e0 from '../data/problems/spectral-uniformity-below-the-inverse.json';
 import recordSporadicApnRepresentative30InfiniteFamily from '../data/problems/sporadic-apn-representative-30-infinite-family.json';
 import problem_28e1cd285076 from '../data/problems/structural-weaknesses-beyond-xcb-modes.json';
+import problem_0055b491828d from '../data/problems/sum-capture-for-nonlinear-bijections.json';
 import problem_c23d49fa1806 from '../data/problems/swap-or-not-full-query-security-mixing.json';
 import problem_8d69a593f861 from '../data/problems/swap-or-not-indifferentiability.json';
 import problem_2c0e926ca170 from '../data/problems/symmetry-and-round-independent-trail-clustering.json';
+import problem_f565b54696d1 from '../data/problems/table-recomputation-security-t-plus-one-shares.json';
 import recordTernaryVectorialDualBentEpsilonMinusOne from '../data/problems/ternary-vectorial-dual-bent-epsilon-minus-one.json';
 import tezcan from '../data/problems/tezcan-ozbudak-differential-factor.json';
 import problem_c6e5f87cecd5 from '../data/problems/theoretical-bounds-on-differential-linear-bias.json';
@@ -281,6 +310,7 @@ import problem_ae22d07f48f1 from '../data/problems/tight-quantum-one-wayness-bou
 import problem_57e375098763 from '../data/problems/tight-quantum-preimage-bounds-multi-round-sponges.json';
 import problem_f7d7cb4ad245 from '../data/problems/tight-security-bounds-cascade-xor-cascade-encryption.json';
 import problem_3c366bfd7f6d from '../data/problems/tight-security-four-round-cascaded-lrw1.json';
+import problem_cfe73461c19a from '../data/problems/tighter-cvv-maximum-load-bound.json';
 import problem_27281c495e0c from '../data/problems/tighter-prf-security-bound-for-tbc-mac.json';
 import problem_8531932abd62 from '../data/problems/tighter-uniform-bound-for-g.json';
 import problem_31a58b3e580f from '../data/problems/tightness-post-quantum-bounds-ascon-keyed-sponges.json';
@@ -291,8 +321,11 @@ import problem_7afce4c43e38 from '../data/problems/transistor-ideal-degree-lower
 import problem_d41e8a3b51dc from '../data/problems/transistor-linear-distinguisher-capacity.json';
 import problem_d350bdc1dd2c from '../data/problems/transistor-linear-trail-bound-tightness.json';
 import problem_048c00ac3651 from '../data/problems/transistor-lower-capacity-linear-relations.json';
+import problem_73fa80fb878f from '../data/problems/trapdoor-hiding-in-lookup-table-designs.json';
 import tuDeng from '../data/problems/tu-deng-conjecture.json';
 import problem_d30868deb50b from '../data/problems/tweakable-xorp-security-bound-tightness.json';
+import problem_1f36b2ef17e2 from '../data/problems/tweaked-sr-multi-domain-security.json';
+import problem_3a935d2aa8af from '../data/problems/two-round-even-mansour-query-security-tradeoff.json';
 import problem_5f93037090ad from '../data/problems/ultrametric-integral-cryptanalysis-generalization.json';
 import problem_3ad9f4a9c627 from '../data/problems/unified-inverse-walk-mixing-bound.json';
 import problem_fbcf372831c7 from '../data/problems/uniform-correction-terms-for-shared-aes-s-box.json';
@@ -301,6 +334,7 @@ import vectorial from '../data/problems/vectorial-nonlinearity-beyond-nyberg.jso
 import recordWangHengHbResidualWeightDistribution from '../data/problems/wang-heng-hb-residual-weight-distribution.json';
 import problem_b7f36ada7ae3 from '../data/problems/xcb-full-plaintext-recovery.json';
 import problem_5add65f47331 from '../data/problems/xor-cascade-related-key-security.json';
+import problem_8224ab77d0c7 from '../data/problems/xor3-nae-qd-loss-necessity.json';
 import problem_e13f8e3b9b76 from '../data/problems/zero-amplitude-detection-in-gaussian-quantum-states.json';
 import problem_1ed5f4ca37a4 from '../data/problems/zero-correlation-zero-sum-extension.json';
 import problem_10aa0d6eec48 from '../data/problems/zip-aes-256-prf-security.json';
@@ -372,6 +406,8 @@ export interface Problem {
 
 export const problems = [
   problem_fdb84409783b,
+  problem_c904e32d7999,
+  problem_1e219e585eda,
   problem_17a245a9ef94,
   problem_7319a5cc2f66,
   problem_f51e5ca6b1b3,
@@ -398,6 +434,8 @@ export const problems = [
   recordApnPermutationMinimumCarlitzRank,
   problem_47e1f8b71c9f,
   problem_9668778a7a54,
+  problem_9133063473fc,
+  problem_45d29f5eac2b,
   problem_68d6abc166d7,
   problem_7969c27f8927,
   problem_65514e82714f,
@@ -431,6 +469,8 @@ export const problems = [
   problem_fe8257aa8696,
   problem_669707f270e0,
   problem_e2f2ac835482,
+  problem_1105573b016c,
+  problem_2f8deca04126,
   problem_3fc34e12d4be,
   recordCompletedMaioranaMcfarlandExtensionAsymptotics,
   problem_7cdb9c9fa62e,
@@ -447,6 +487,7 @@ export const problems = [
   gfn3840,
   recordDeterministicNthTwoAdicHalfProfile,
   problem_17564d49d7dc,
+  problem_1e83cf1f9e56,
   problem_e1ff830514b5,
   problem_0afffc4ecc9d,
   recordEaInequivalentBentFourConcatenations,
@@ -507,8 +548,11 @@ export const problems = [
   problem_4685d5b79753,
   problem_a3e3263af082,
   problem_ddd5742b92b5,
+  problem_5ea76d603400,
   problem_d498af3470ab,
   recordIextQuantumProofSeededExtractor,
+  problem_354e4af5d73a,
+  problem_5030335620e8,
   problem_ad475c8b19bb,
   problem_87cbd7734350,
   problem_01fbe6916a4f,
@@ -523,15 +567,20 @@ export const problems = [
   recordIrreducibleCyclicAuthenticationSubstitutionProbability,
   problem_43feaff9ffc9,
   problem_6b7b6d83d2e8,
+  problem_6ef232fc7f9e,
   problem_63ab07291aa0,
+  problem_21ee9b51b40a,
   problem_40191c2fbc19,
+  problem_7931ee1b94d4,
   kaleyski,
+  problem_044cab59a1b7,
   problem_5a1424f1820a,
   problem_b90c096132d5,
   problem_bbd7e2ff17f4,
   koelsch,
   recordKooKwonCondition42ComplementExactFiveUniformity,
   recordKooKwonCondition42ExactFourUniformity,
+  problem_3487f0313864,
   recordLiKaleyskiConjecture11RootFreeness,
   recordLiKaleyskiConjecture6RootFreeness,
   recordLiKaleyskiF1F2ExplicitEquivalence,
@@ -555,9 +604,12 @@ export const problems = [
   recordMesnagerWuF2uExactFourUniformity839,
   problem_baf86725e91a,
   problem_8f3489f03dfd,
+  problem_2753e5b8461b,
   problem_a57f8aef3e15,
+  problem_8f5851ba77f5,
   problem_e32e1c72d17c,
   problem_f5d3ae33a856,
+  problem_5bcc622a69da,
   problem_ca35c00e9d4c,
   problem_46bfb8f40e94,
   problem_495881875e45,
@@ -565,6 +617,7 @@ export const problems = [
   recordNfsrCycleStructurePeriods,
   recordNfsrDegeneracySubfamilies,
   problem_c98ca2f3c05e,
+  problem_cb641472d184,
   recordNonNormalCubicBentExistence,
   problem_cb3eeece46d0,
   problem_b8d93865911a,
@@ -573,9 +626,12 @@ export const problems = [
   problem_958df4540908,
   recordNonquadraticCrookedApnExistence,
   problem_9ffcacf3ce9f,
+  problem_2ebbfd5f9088,
   problem_c2d97fd3c2e4,
+  problem_679d76896c9c,
   problem_ca8c5a4f4fda,
   problem_f2aa4b6f121f,
+  problem_38f1bd528e8e,
   problem_34f24607acce,
   problem_493386f51bfb,
   recordP2InheritanceIv1Permutation,
@@ -584,12 +640,14 @@ export const problems = [
   recordPeriodicNonlinearComplexityShiftMaxEquality,
   problem_4d72f1d21683,
   recordPlateauedNonaffineIndicatorPreservation,
+  problem_c8db2d851554,
   problem_7474c6fa270c,
   problem_cb75ed40b1a1,
   problem_040ee0e1864a,
   problem_874a5d1c7e3f,
   problem_0797055e3659,
   problem_79ca9f76bb1e,
+  problem_1ab0eb76ca81,
   problem_6fa87dd6e154,
   problem_e77910d1c746,
   problem_a17865c40e2e,
@@ -606,7 +664,9 @@ export const problems = [
   recordQuantumMultipleAccessOtpGeneralEveRateRegion,
   recordQuantumMultipleAccessOtpOneShotRateRegion,
   problem_1e9fc050d408,
+  problem_bebe6c38add1,
   problem_2a2c2bce566d,
+  problem_e7bb0aad20b0,
   problem_8bf55793db73,
   problem_eb1ad52cf047,
   recordReedMullerShannonIntrinsicRandomness,
@@ -623,6 +683,7 @@ export const problems = [
   problem_0afdf44616ae,
   problem_eb9bcd5f728b,
   problem_32f37779fbba,
+  problem_4103171aa822,
   problem_43d6128c0ca9,
   problem_72d451255a19,
   recordSelfOrthogonalTheorem2ResidualWeightDistribution,
@@ -636,9 +697,11 @@ export const problems = [
   problem_18eb635cb0e0,
   recordSporadicApnRepresentative30InfiniteFamily,
   problem_28e1cd285076,
+  problem_0055b491828d,
   problem_c23d49fa1806,
   problem_8d69a593f861,
   problem_2c0e926ca170,
+  problem_f565b54696d1,
   recordTernaryVectorialDualBentEpsilonMinusOne,
   tezcan,
   problem_c6e5f87cecd5,
@@ -654,6 +717,7 @@ export const problems = [
   problem_57e375098763,
   problem_f7d7cb4ad245,
   problem_3c366bfd7f6d,
+  problem_cfe73461c19a,
   problem_27281c495e0c,
   problem_8531932abd62,
   problem_31a58b3e580f,
@@ -664,8 +728,11 @@ export const problems = [
   problem_d41e8a3b51dc,
   problem_d350bdc1dd2c,
   problem_048c00ac3651,
+  problem_73fa80fb878f,
   tuDeng,
   problem_d30868deb50b,
+  problem_1f36b2ef17e2,
+  problem_3a935d2aa8af,
   problem_5f93037090ad,
   problem_3ad9f4a9c627,
   problem_fbcf372831c7,
@@ -674,6 +741,7 @@ export const problems = [
   recordWangHengHbResidualWeightDistribution,
   problem_b7f36ada7ae3,
   problem_5add65f47331,
+  problem_8224ab77d0c7,
   problem_e13f8e3b9b76,
   problem_1ed5f4ca37a4,
   problem_10aa0d6eec48,

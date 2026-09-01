@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.2.0",
+  "id": "odd-even-multiple-encryption-advantage-curves",
+  "group_id": "odd-even-multiple-encryption-advantage-curves",
+  "title": "Odd–Even Advantage Curves for Multiple Encryption",
+  "summary": "A slight advantage for the adversary in the odd-round case was observed when r equals one, but whether it persists relative to the even-round case for all positive r remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the ideal cipher model, determine whether the adversary-advantage curve for $(2r-1)$-round multiple encryption is slightly more favorable to the adversary than the curve for $2r$-round multiple encryption, for general positive integer $r$, and prove the claim or provide a counterexample. This fine-grained comparison is unresolved because the available analysis cannot verify the conjectured separation; the analogous behavior was observed for $r=1$ by Aiello et al."
+  },
+  "scope": {
+    "domain": "Fine-grained security of multiple encryption through adversary-advantage curves.",
+    "assumptions": [
+      "The comparison is made in the ideal cipher model."
+    ],
+    "parameters": [
+      "r: a general positive integer indexing the compared odd and even round counts"
+    ],
+    "unresolved_remainder": "Prove the conjectured fine-grained ordering of the odd- and even-round advantage curves for general positive r, or provide a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "multiple-encryption",
+      "ideal-cipher-model",
+      "advantage-curves"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Security of Multiple Encryption in the Ideal Cipher Model",
+        "locator": "CRYPTO 2014, page 4",
+        "doi": "10.1007/978-3-662-44371-2_2"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that the odd-round curve is slightly more favorable to the adversary, citing analogous behavior when r equals one. Its analysis is not fine-grained enough to verify the separation.",
+      "citation_labels": [
+        "Yuanxi Dai et al., The Security of Multiple Encryption in the Ideal Cipher Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

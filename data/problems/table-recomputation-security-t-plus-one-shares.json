@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "table-recomputation-security-t-plus-one-shares",
+  "group_id": "table-recomputation-security-t-plus-one-shares",
+  "title": "Table-Recomputation Security with t + 1 Shares",
+  "summary": "The proof needs twice t plus one shares, while security with t plus one shares in the restricted fixed-probe model remains heuristic and must be proved or refuted by an attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the table-recomputation countermeasure is secure with $n = t + 1$ shares in the restricted fixed-probe model. Its formal security proof requires $n \\geq 2t + 1$ shares, while security with $n \\geq t + 1$ shares in this restricted model is only presented as a heuristic possibility; the unresolved task is to prove security under the lower share bound or exhibit an attack showing that the countermeasure is insecure there."
+  },
+  "scope": {
+    "domain": "Side-channel security of a table-recomputation masking countermeasure in the restricted fixed-probe model.",
+    "assumptions": [
+      "Security is considered in the restricted fixed-probe model."
+    ],
+    "parameters": [
+      "n: number of shares",
+      "t: parameter determining the candidate and proof-supported share bounds"
+    ],
+    "unresolved_remainder": "Determine whether the countermeasure is secure with n = t + 1 shares by proving security under the lower share bound or exhibiting an attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "higher-order-masking",
+      "fixed-probe-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Higher Order Masking of Look-Up Tables",
+        "locator": "EUROCRYPT 2014, page 11",
+        "doi": "10.1007/978-3-642-55220-5_25",
+        "url": "https://eprint.iacr.org/2013/700",
+        "eprint": "2013/700"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The paper's formal security proof requires at least 2t + 1 shares, but it remarks that at least t + 1 shares seem heuristically sufficient in the restricted model. The lower-share claim remains unproved, with no attack established.",
+      "citation_labels": [
+        "Jean-Sébastien Coron et al., Higher Order Masking of Look-Up Tables"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

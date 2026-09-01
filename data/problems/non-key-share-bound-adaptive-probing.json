@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-key-share-bound-adaptive-probing",
+  "group_id": "non-key-share-bound-adaptive-probing",
+  "title": "Non-Key Share Bound in Adaptive Probing",
+  "summary": "Full-model security is proved with twice the parameter t plus one shares, a bound optimal for secret-key shares; whether t plus one shares suffice for non-key variables remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether $n=t+1$ shares suffice for non-key variables under the full adaptive probing model."
+  },
+  "scope": {
+    "domain": "Higher-order masking of look-up tables against side-channel probing attacks.",
+    "assumptions": [
+      "Security is considered under the full adaptive probing model."
+    ],
+    "parameters": [
+      "n: number of shares",
+      "t: order parameter in the proved and proposed share bounds"
+    ],
+    "unresolved_remainder": "Whether n = t + 1 shares suffice for non-key variables under the full adaptive probing model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "higher-order-masking",
+      "adaptive-probing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Higher Order Masking of Look-Up Tables",
+        "locator": "EUROCRYPT 2014, page 6",
+        "doi": "10.1007/978-3-642-55220-5_25",
+        "url": "https://eprint.iacr.org/2013/700",
+        "eprint": "2013/700"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The paper proves full-model security with at least twice t plus one shares and identifies this bound as optimal for secret-key shares. It leaves open whether t plus one shares suffice for other variables.",
+      "citation_labels": [
+        "Jean-Sébastien Coron et al., Higher Order Masking of Look-Up Tables"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

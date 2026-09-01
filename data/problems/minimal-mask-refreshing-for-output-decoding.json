@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimal-mask-refreshing-for-output-decoding",
+  "group_id": "minimal-mask-refreshing-for-output-decoding",
+  "title": "Minimal Mask Refreshing for Output Decoding",
+  "summary": "The full mask-refreshing sequence supports perfect simulation, but the minimum number and placement of refreshes needed for t-th-order security remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the output-decoding operation, $n$ output shares are subjected to a series of $n$ mask-refreshing operations before their recombination, and any set of $t$ intermediate variables can be perfectly simulated from at most $2t$ selected shares together with the recombined value. However, the claim that the full series of $n$ refreshings is necessary is only heuristic: determine the minimum number and the required placement of mask-refreshing operations before output-share recombination that are sufficient and necessary to preserve $t$-th-order simulation security, including the dependence on $n$ and $t$."
+  },
+  "scope": {
+    "domain": "Higher-order masking and side-channel simulation security for output decoding.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: number of output shares and refreshings in the full construction",
+      "t: number of intermediate variables considered and target order of simulation security"
+    ],
+    "unresolved_remainder": "Determine, as a function of n and t, the minimum number and required placement of pre-recombination mask refreshings that are sufficient and necessary for t-th-order simulation security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "higher-order-masking",
+      "mask-refreshing"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Higher Order Masking of Look-Up Tables",
+        "locator": "EUROCRYPT 2014, page 17",
+        "doi": "10.1007/978-3-642-55220-5_25",
+        "url": "https://eprint.iacr.org/2013/700",
+        "eprint": "2013/700"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes perfect simulation for any t intermediate variables from at most 2t selected shares and the recombined value when the full n-refresh sequence is used. It treats the necessity of all n refreshings only heuristically, leaving their minimum number and placement open.",
+      "citation_labels": [
+        "Jean-Sébastien Coron et al., Higher Order Masking of Look-Up Tables"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

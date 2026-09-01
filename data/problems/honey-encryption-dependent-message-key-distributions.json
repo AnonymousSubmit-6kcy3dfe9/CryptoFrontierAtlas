@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "honey-encryption-dependent-message-key-distributions",
+  "group_id": "honey-encryption-dependent-message-key-distributions",
+  "title": "Honey Encryption with Dependent Message–Key Distributions",
+  "summary": "The current honey-encryption model assumes independent message and key draws; it remains open whether security is possible under dependence and which schemes or distributions enable it.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Honey encryption is modeled with a message $M$ sampled from a distribution $p_m$ over a message space $\\mathcal{M}$ and a key $K$ sampled from a distribution $p_k$ over a key space $\\mathcal{K}$; the current model assumes that these draws are independent. Determine whether honey-encryption schemes can provide security when $M$ and $K$ instead have dependent distributions, either by constructing and analyzing such schemes or by characterizing the dependent distributions for which security is possible."
+  },
+  "scope": {
+    "domain": "Honey-encryption security with dependent message and key distributions.",
+    "assumptions": [
+      "In the current model, draws from the message and key distributions are independent."
+    ],
+    "parameters": [
+      "M, p_m, and message space 𝓜: the sampled message, its distribution, and its domain",
+      "K, p_k, and key space 𝓚: the sampled key, its distribution, and its domain"
+    ],
+    "unresolved_remainder": "Determine whether honey-encryption schemes can provide security for dependent message and key distributions by constructing and analyzing such schemes or characterizing the dependent distributions for which security is possible."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "honey-encryption",
+      "dependent-distributions",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Honey Encryption: Security Beyond the Brute-Force Bound",
+        "locator": "EUROCRYPT 2014, page 5",
+        "doi": "10.1007/978-3-642-55220-5_17",
+        "url": "https://eprint.iacr.org/2014/155",
+        "eprint": "2014/155"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states independence as the current modeling assumption and explicitly poses security for dependent message and key distributions as future work.",
+      "citation_labels": [
+        "Ari Juels et al., Honey Encryption: Security Beyond the Brute-Force Bound"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

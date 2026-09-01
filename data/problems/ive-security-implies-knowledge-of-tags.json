@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ive-security-implies-knowledge-of-tags",
+  "group_id": "ive-security-implies-knowledge-of-tags",
+  "title": "Does ivE-Security Imply Knowledge of Tags?",
+  "summary": "A10–A12 provide authenticity under the knowledge-of-tags assumption; whether ivE-security implies that assumption remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $A_{10}$, $A_{11}$, and $A_{12}$ schemes, determine whether the knowledge-of-tags assumption used to establish authenticity is implied by ivE-security. These three schemes are known to provide authenticity under this additional security assumption, but it is unresolved whether ivE-security entails the knowledge-of-tags assumption."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security for the A10, A11, and A12 generic-composition schemes.",
+    "assumptions": [
+      "The knowledge-of-tags assumption is used to establish authenticity."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether ivE-security implies the knowledge-of-tags assumption for A10, A11, and A12."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "security-implications"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reconsidering Generic Composition",
+        "locator": "EUROCRYPT 2014, page 11",
+        "doi": "10.1007/978-3-642-55220-5_15",
+        "url": "https://eprint.iacr.org/2014/206",
+        "eprint": "2014/206"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves authenticity for A10–A12 under the knowledge-of-tags assumption and explicitly states that its implication by ivE-security is unknown.",
+      "citation_labels": [
+        "Chanathip Namprempre et al., Reconsidering Generic Composition"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

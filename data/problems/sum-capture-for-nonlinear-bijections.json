@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sum-capture-for-nonlinear-bijections",
+  "group_id": "sum-capture-for-nonlinear-bijections",
+  "title": "Sum-Capture for Nonlinear Bijections",
+  "summary": "The sum-capture theorem currently applies only to linear bijections; whether it extends to nonlinear bijections on binary vector spaces remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the sum-capture theorem from $\\Gamma\\in GL(n)$ to nonlinear bijections $\\Gamma:\\mathbb F_2^n\\to\\mathbb F_2^n$."
+  },
+  "scope": {
+    "domain": "Sum-capture analysis of bijective key-derivation mappings on binary vector spaces.",
+    "assumptions": [
+      "The current sum-capture theorem requires the mapping Gamma to be a linear bijection."
+    ],
+    "parameters": [
+      "n: dimension of the binary vector space",
+      "Gamma: the bijection from the binary vector space to itself"
+    ],
+    "unresolved_remainder": "Determine whether the sum-capture theorem can be extended from linear bijections to nonlinear bijections of the binary vector space."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "sum-capture",
+      "nonlinear-bijections",
+      "key-derivation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Even-Mansour Cipher",
+        "locator": "CRYPTO 2014, page 10",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "url": "https://eprint.iacr.org/2014/443",
+        "eprint": "2014/443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that its results apply only to linear bijective key-derivation functions because the sum-capture proof requires linear mappings. It explicitly asks whether the theorem extends to nonlinear bijections.",
+      "citation_labels": [
+        "Shan Chen et al., Minimizing the Two-Round Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

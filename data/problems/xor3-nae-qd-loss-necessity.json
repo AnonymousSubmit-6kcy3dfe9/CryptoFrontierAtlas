@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor3-nae-qd-loss-necessity",
+  "group_id": "xor3-nae-qd-loss-necessity",
+  "title": "Necessity of the q_d Loss in XOR3-Based nAE Security",
+  "summary": "The nAE security bound has a multiplicative qd loss, but whether this loss is necessary or merely a proof artifact remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the favored ivE $+$ vecMAC compositions realized with the XOR3 construction, the security bound under a single-decryption-query characterization of nAE security incurs a multiplicative $q_d$ loss attributed to the weaker nAE-security definition; determine whether this $q_d$ factor is an artifact of the proof or is necessary under that characterization."
+  },
+  "scope": {
+    "domain": "Nonce-based authenticated-encryption security for favored ivE + vecMAC compositions realized with XOR3.",
+    "assumptions": [
+      "A single-decryption-query characterization of nAE security."
+    ],
+    "parameters": [
+      "q_d: quantity appearing as a multiplicative loss in the security bound"
+    ],
+    "unresolved_remainder": "Determine whether the q_d loss is an artifact of the proof or necessary under the stated characterization."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "nonce-based-authenticated-encryption",
+      "security-bounds",
+      "xor3"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reconsidering Generic Composition",
+        "locator": "EUROCRYPT 2014, page 14",
+        "doi": "10.1007/978-3-642-55220-5_15",
+        "url": "https://eprint.iacr.org/2014/206",
+        "eprint": "2014/206"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a quantitative q_d loss attributed to the weaker nAE definition and explicitly states that it has not determined whether the loss is artifactual or necessary.",
+      "citation_labels": [
+        "Chanathip Namprempre et al., Reconsidering Generic Composition"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

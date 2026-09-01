@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "a10-a12-composition-authenticity",
+  "group_id": "a10-a12-composition-authenticity",
+  "title": "Authenticity of the A10–A12 Compositions",
+  "summary": "Privacy in the nE sense follows from ivE security for A10–A12, but proving authenticity from the A1–A9 assumptions or finding counterexamples remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $\\text{ivE} + \\text{vecMAC}$ to $\\text{nAE}$ compositions $A10$, $A11$, and $A12$, privacy in the $\\text{nE}$ sense follows from security of the underlying $\\text{ivE}$ encryption scheme, but it is unresolved whether they provide authenticity under the same $\\text{ivE}$-security and PRF-security assumptions used for $A1$--$A9$. The open task is to determine whether those assumptions generically imply authenticity for $A10$, $A11$, and $A12$, or to construct counterexamples showing that they are insufficient. [S1]"
+  },
+  "scope": {
+    "domain": "Generic composition of ivE and vecMAC for nAE, specifically constructions A10, A11, and A12.",
+    "assumptions": [
+      "ivE security of the underlying encryption scheme",
+      "PRF security as assumed for A1–A9"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the ivE-security and PRF-security assumptions used for A1–A9 generically imply authenticity for A10, A11, and A12, or whether counterexamples show those assumptions insufficient."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "mac"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reconsidering Generic Composition",
+        "locator": "EUROCRYPT 2014, page 11",
+        "doi": "10.1007/978-3-642-55220-5_15",
+        "url": "https://eprint.iacr.org/2014/206",
+        "eprint": "2014/206"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that nE privacy follows from ivE security and that authenticity holds under an additional knowledge-of-tags assumption. Under the A1–A9 assumptions, it reports neither an authenticity proof nor a counterexample.",
+      "citation_labels": [
+        "Chanathip Namprempre et al., Reconsidering Generic Composition"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

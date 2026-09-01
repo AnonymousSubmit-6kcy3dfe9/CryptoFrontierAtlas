@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-round-even-mansour-sum-capture-bound",
+  "group_id": "multi-round-even-mansour-sum-capture-bound",
+  "title": "Sum-Capture Bounds for Multi-Round Even–Mansour",
+  "summary": "Sum-capture analysis currently stops at two rounds; the open task is to control bad-transcript probability for more rounds, beginning with three.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $r$-round Even–Mansour cipher with independent permutations and identical round keys, extend the sum-capture analysis beyond two rounds to upper-bound the probability of bad transcripts. The first unresolved case is $r=3$; establishing the required bound there is the immediate target."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography involving multi-round Even–Mansour block ciphers and bad-transcript analysis.",
+    "assumptions": [
+      "The round permutations are independent.",
+      "The round keys are identical."
+    ],
+    "parameters": [
+      "r: the number of cipher rounds, with three rounds as the first unresolved case"
+    ],
+    "unresolved_remainder": "Extend the sum-capture analysis beyond two rounds to upper-bound the probability of bad transcripts, beginning with the three-round case."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "block-ciphers",
+      "sum-capture-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Even-Mansour Cipher",
+        "locator": "CRYPTO 2014, page 10",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "url": "https://eprint.iacr.org/2014/443",
+        "eprint": "2014/443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a difficult extension of its two-round analysis and reports that no sum-capture bound is known even for three rounds under independent permutations and identical round keys.",
+      "citation_labels": [
+        "Shan Chen et al., Minimizing the Two-Round Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

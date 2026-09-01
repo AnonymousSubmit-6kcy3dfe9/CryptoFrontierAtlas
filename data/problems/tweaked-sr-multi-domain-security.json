@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweaked-sr-multi-domain-security",
+  "group_id": "tweaked-sr-multi-domain-security",
+  "title": "Multi-Domain Security for Tweaked-SR",
+  "summary": "Tweaked-SR has a single-domain security theorem; it remains open to prove concurrent multi-domain security without encoding each domain size in the round keys.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The tweaked-SR constructed cipher is specified first for one fixed domain $[N_0]$; the unresolved extension is to prove security when an adversary may simultaneously encipher points from any number of domains $[N_0]$, for $N_0 \\in \\mathbb{N}$. In this multi-domain model, the round function and round keys may depend on the description of the current domain, but the conjecture is that the round keys need not encode $N_0$ itself. Establish this conjecture by extending the existing single-domain security theorem for tweaked-SR to the concurrent multi-domain setting."
+  },
+  "scope": {
+    "domain": "Multi-domain security of the tweaked-SR cipher with round keys independent of the domain size.",
+    "assumptions": [
+      "An adversary may simultaneously encipher points from any number of domains.",
+      "The round function may depend on the description of the current domain."
+    ],
+    "parameters": [
+      "N₀: a natural number specifying the domain [N₀]"
+    ],
+    "unresolved_remainder": "Extend the single-domain security theorem to concurrent domains while showing that round keys need not encode N₀."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "multi-domain-security",
+      "round-keys"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Sometimes-Recurse Shuffle - Almost-Random Permutations in Logarithmic Expected Time",
+        "locator": "EUROCRYPT 2014, page 14",
+        "doi": "10.1007/978-3-642-55220-5_18",
+        "url": "https://eprint.iacr.org/2013/560",
+        "eprint": "2013/560"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents domain-dependent round functions and keys as a way to support concurrent domains, then conjectures that the keys need not encode the domain size. It says a proof requires generalizing Theorem 5.",
+      "citation_labels": [
+        "Ben Morris et al., Sometimes-Recurse Shuffle - Almost-Random Permutations in Logarithmic Expected Time"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

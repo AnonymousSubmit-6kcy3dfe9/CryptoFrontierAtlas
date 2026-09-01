@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-cvv-maximum-load-bound",
+  "group_id": "tighter-cvv-maximum-load-bound",
+  "title": "Tighter CVV Maximum-Load Bound",
+  "summary": "For CVV honey encryption, the analytical upper bound is 4.094% versus a 2.14% simulation estimate; obtaining a tighter expected-maximum-load bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Tighten the analytical upper bound on $\\mathbb{E}[L]$ for the CVV balls-and-bins instance toward the simulated value $0.0214$."
+  },
+  "scope": {
+    "domain": "Probabilistic and combinatorial analysis of the CVV balls-and-bins instance in honey encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "L: maximum load in the CVV balls-and-bins instance",
+      "0.0214: simulated expected-maximum-load value"
+    ],
+    "unresolved_remainder": "Derive an analytical upper bound on the expected maximum load that is closer to the simulated value 0.0214."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "honey-encryption",
+      "balls-and-bins",
+      "maximum-load"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Honey Encryption: Security Beyond the Brute-Force Bound",
+        "locator": "EUROCRYPT 2014, page 11",
+        "doi": "10.1007/978-3-642-55220-5_17",
+        "url": "https://eprint.iacr.org/2014/155",
+        "eprint": "2014/155"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a 2.14% mean expected maximum load over 100,000 simulation runs, compared with a 4.094% analytical upper bound. It identifies improved bounds as future work.",
+      "citation_labels": [
+        "Ari Juels et al., Honey Encryption: Security Beyond the Brute-Force Bound"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

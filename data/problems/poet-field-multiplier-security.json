@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "poet-field-multiplier-security",
+  "group_id": "poet-field-multiplier-security",
+  "title": "Field-Multiplier Security of POET",
+  "summary": "A distinguishing attack applies when POET uses a uniform-random-involution AXU hash; whether its online-encryption theorem remains valid with a field multiplier, and if so how to reprove it, is open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A distinguishing attack against POET is described when its AXU hash is instantiated as a uniform random involution, while it is conjectured that POET's claimed online-encryption security theorem may remain valid when the AXU hash is instantiated as a field multiplier. The unresolved task is to establish whether the theorem remains valid under the field-multiplier instantiation and, if so, provide a revised proof or reduction."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security proofs for POET under different AXU-hash instantiations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AXU-hash instantiation — uniform random involution for the attacked variant and field multiplier for the conjectured variant"
+    ],
+    "unresolved_remainder": "Establish whether POET's claimed online-encryption security theorem remains valid with the field-multiplier instantiation and, if so, provide a revised proof or reduction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "axu-hash",
+      "security-proof"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Forging Attacks on Two Authenticated Encryption Schemes COBRA and POET",
+        "locator": "ASIACRYPT 2014, page 12",
+        "doi": "10.1007/978-3-662-45611-8_7",
+        "url": "https://eprint.iacr.org/2014/363",
+        "eprint": "2014/363"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a single-query, nonce-respecting distinguishing privacy attack for the uniform-random-involution instantiation. It states that the theorem is believed to remain valid with the field-multiplier instantiation, but that the proof must be revised.",
+      "citation_labels": [
+        "Mridul Nandi et al., Forging Attacks on Two Authenticated Encryption Schemes COBRA and POET"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

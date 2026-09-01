@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "asasa-efficient-linearity",
+  "group_id": "asasa-efficient-linearity",
+  "title": "Efficient Linearity of ASASA",
+  "summary": "Efficient linearity was estimated for a decorrelated two-round Feistel scheme; estimating it for ASASA and comparing the resulting distribution with a random permutation remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $\\mathrm{ASASA}$ construction—an $\\mathrm{SAS}$ structure wrapped with $A$ layers—estimate its efficient-linearity parameter and characterize the resulting random variable. Efficient linearity has been estimated for a two-round Feistel scheme surrounded by Vaudenay's decorrelation module, but the corresponding analysis for the $A$-wrapped $\\mathrm{SAS}$ structure is more difficult. Determine whether the resulting distribution follows, or is distinguishable from, the distribution expected for a random permutation."
+  },
+  "scope": {
+    "domain": "Linear cryptanalysis of the ASASA block-cipher construction, an SAS structure wrapped with A layers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Efficient-linearity parameter: the linear-cryptanalytic quantity to estimate for ASASA"
+    ],
+    "unresolved_remainder": "Estimate efficient linearity for the A-wrapped SAS structure, characterize the resulting random variable, and determine whether its distribution matches or is distinguishable from that expected for a random permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "asasa",
+      "linear-cryptanalysis",
+      "random-permutation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)",
+        "locator": "ASIACRYPT 2014, page 11",
+        "doi": "10.1007/978-3-662-45611-8_4",
+        "url": "https://eprint.iacr.org/2014/474",
+        "eprint": "2014/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts the unresolved ASASA analysis with an efficient-linearity estimate for a two-round Feistel scheme surrounded by Vaudenay’s decorrelation module. It presents comparison with random-permutation behavior as a separate challenging problem.",
+      "citation_labels": [
+        "Alex Biryukov et al., Cryptographic Schemes Based on the ASASA Structure: Black-Box, White-Box, and Public-Key (Extended Abstract)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
