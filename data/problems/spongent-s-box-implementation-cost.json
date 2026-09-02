@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "spongent-s-box-implementation-cost",
+  "group_id": "spongent-s-box-implementation-cost",
+  "title": "Spongent S-box Implementation Cost",
+  "summary": "No operation-count figures were found in the literature for the Spongent S-box; determine its minimum implementation cost or establish the best-known cost.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the minimum, or establish the best-known, implementation cost of the Spongent S-box, measured by the numbers of binary $\\operatorname{XOR}$ operations, binary $\\operatorname{AND}/\\operatorname{OR}$ operations, and unary $\\operatorname{NOT}$ operations. No such operation-count figures were found in the literature."
+  },
+  "scope": {
+    "domain": "Implementation optimization for the Spongent S-box in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Counts of binary XOR, binary AND/OR, and unary NOT operations as the implementation-cost measure"
+    ],
+    "unresolved_remainder": "Determine the minimum cost under these operation counts, or establish the best-known implementation cost for the Spongent S-box."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "spongent",
+      "s-box",
+      "implementation-cost"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Thinking Outside the Superbox",
+        "locator": "CRYPTO 2021, page 13",
+        "doi": "10.1007/978-3-030-84252-9_12",
+        "url": "https://eprint.iacr.org/2021/293",
+        "eprint": "2021/293"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source surveys minimum operation-count implementations found in the literature and reports that no corresponding figures were found for Spongent, leaving its minimum or best-known cost unresolved.",
+      "citation_labels": [
+        "Nicolas Bordes et al., Thinking Outside the Superbox"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

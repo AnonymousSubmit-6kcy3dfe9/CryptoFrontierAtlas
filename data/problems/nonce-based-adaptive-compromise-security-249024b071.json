@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonce-based-adaptive-compromise-security-249024b071",
+  "group_id": "nonce-based-adaptive-compromise-security-249024b071",
+  "title": "Nonce-Based Adaptive-Compromise Security",
+  "summary": "Known analysis extensions cover standard randomized symmetric encryption with idealized components; their applicability to nonce-based schemes remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Analysis-extension techniques are known for showing that most standard randomized symmetric encryption schemes satisfy adaptive-compromise security definitions when their underlying components are appropriately idealized. Determine whether these techniques extend to nonce-based encryption schemes and yield security under the corresponding nonce-based adaptive-compromise definitions under the same idealization condition."
+  },
+  "scope": {
+    "domain": "Adaptive-compromise security of randomized and nonce-based symmetric encryption schemes.",
+    "assumptions": [
+      "underlying components are appropriately idealized"
+    ],
+    "parameters": [
+      "nonce-based encryption schemes as the target construction"
+    ],
+    "unresolved_remainder": "Whether the analysis-extension techniques extend to nonce-based encryption schemes and yield security under the corresponding nonce-based adaptive-compromise definitions under the same idealization condition."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-encryption",
+      "adaptive-compromise",
+      "nonce-based-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Handling Adaptive Compromise for Practical Encryption Schemes",
+        "locator": "CRYPTO 2020, page 34",
+        "doi": "10.1007/978-3-030-56784-2_1",
+        "url": "https://eprint.iacr.org/2020/765",
+        "eprint": "2020/765"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a security conjecture, noting that techniques from Sections 5 and 6 establish the relevant analysis extensions for standard randomized schemes and conjecturing that the same ideas apply to nonce-based schemes.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Handling Adaptive Compromise for Practical Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

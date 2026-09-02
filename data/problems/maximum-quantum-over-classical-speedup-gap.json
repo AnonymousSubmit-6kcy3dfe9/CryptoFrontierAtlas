@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maximum-quantum-over-classical-speedup-gap",
+  "group_id": "maximum-quantum-over-classical-speedup-gap",
+  "title": "Maximum Quantum-over-Classical Speedup Gap in Symmetric Cryptanalysis",
+  "summary": "Offline-Simon appears limited to a 2.5 gap, while a cubic separation seems achievable but remains unrealized for cryptographically interesting problems; the maximum attainable gap is unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For symmetric cryptanalytic attacks in the classical-query model, determine the largest possible quantum-over-classical speedup gap. The offline-Simon algorithm does not seem capable of producing a gap greater than 2.5, while a cubic separation appears achievable but has not been obtained for problems of cryptographic interest. The unresolved task is to determine the maximum attainable gap under these conditions. (S1)"
+  },
+  "scope": {
+    "domain": "Quantum and classical query complexity of attacks on symmetric cryptographic schemes.",
+    "assumptions": [
+      "classical-query model"
+    ],
+    "parameters": [
+      "quantum-over-classical speedup gap, the quantity to maximize",
+      "2.5, the apparent limit for the offline-Simon algorithm",
+      "cubic separation, an apparently achievable but not yet obtained gap for cryptographically interesting problems"
+    ],
+    "unresolved_remainder": "Determine the maximum attainable quantum-over-classical speedup gap under the stated conditions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "symmetric-cryptanalysis",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond quadratic speedups in quantum attacks on symmetric schemes",
+        "locator": "EUROCRYPT 2022, page 28",
+        "doi": "10.1007/978-3-031-07082-2_12",
+        "url": "https://eprint.iacr.org/2021/1348",
+        "eprint": "2021/1348"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents increasing the gap as its most obvious open question. It reports that offline-Simon does not seem to exceed 2.5, while a cubic separation seems achievable but was not obtained for a problem of cryptographic interest.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Beyond quadratic speedups in quantum attacks on symmetric schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

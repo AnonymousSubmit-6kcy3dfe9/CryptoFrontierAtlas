@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rotational-differential-linear-independence-assumptions",
+  "group_id": "rotational-differential-linear-independence-assumptions",
+  "title": "Independence in Rotational Differential-Linear Correlation Evaluation",
+  "summary": "Rotational differential-linear correlation evaluation relies on independence assumptions; whether they can be weakened or removed to explain experimental distinguishers remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the independence assumptions used in evaluating rotational differential-linear correlations can be weakened or eliminated, potentially enabling the correlation-evaluation method to explain experimental distinguishers that remain unexplained."
+  },
+  "scope": {
+    "domain": "Rotational differential-linear cryptanalysis of ARX ciphers.",
+    "assumptions": [
+      "Mutual independence of the bit-mismatch events used by the rotational differential-linear correlation-evaluation method."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the independence assumptions can be weakened or eliminated, potentially allowing the method to explain currently unexplained experimental distinguishers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.rotational-arx",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "rotational-cryptanalysis",
+      "differential-linear-cryptanalysis",
+      "arx-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rotational Differential-Linear Distinguishers of ARX Ciphers with Arbitrary Output Linear Masks",
+        "locator": "CRYPTO 2022, page 28",
+        "doi": "10.1007/978-3-031-15802-5_1",
+        "url": "https://eprint.iacr.org/2022/765",
+        "eprint": "2022/765"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks whether its correlation-evaluation method can avoid or weaken its independence assumptions and suggests that resolving this issue may explain experimental distinguishers that remain unexplained.",
+      "citation_labels": [
+        "Zhongfeng Niu et al., Rotational Differential-Linear Distinguishers of ARX Ciphers with Arbitrary Output Linear Masks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

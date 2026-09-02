@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "affine-quadratic-self-equivalence-lower-bound",
+  "group_id": "affine-quadratic-self-equivalence-lower-bound",
+  "title": "Lower Bound for Affine-Quadratic Self-Equivalences of Permuted Modular Addition",
+  "summary": "Subsets of the conjectured cardinality are constructed for word sizes 5–64, but the claimed universal lower bound from word size 4 onward remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For word sizes $5 \\le n \\le 64$, a construction yields a subset of affine-quadratic self-equivalences of permuted modular addition with cardinality $3^2\\cdot 2^{3n+14}-3\\cdot 2^{2n+8}$. Determine whether, for every word size $n\\ge 4$, the total number of such self-equivalences is at least $3^2\\cdot 2^{3n+14}-3\\cdot 2^{2n+8}$; that is, prove or refute this conjectured universal lower bound."
+  },
+  "scope": {
+    "domain": "Algebraic study of affine-quadratic self-equivalences of permuted modular addition.",
+    "assumptions": [
+      "The word size satisfies n ≥ 4."
+    ],
+    "parameters": [
+      "n: word size appearing in the range and cardinality bound"
+    ],
+    "unresolved_remainder": "Prove or refute whether the stated lower bound holds for every word size n at least 4."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "modular-addition",
+      "affine-quadratic",
+      "self-equivalences"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Implicit White-Box Implementations: White-Boxing ARX Ciphers",
+        "locator": "CRYPTO 2022, page 22",
+        "doi": "10.1007/978-3-031-15802-5_2",
+        "url": "https://eprint.iacr.org/2022/428",
+        "eprint": "2022/428"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source constructs subsets of the stated cardinality for word sizes 5–64 and explicitly conjectures that the same expression lower-bounds the total number of self-equivalences for every word size at least 4.",
+      "citation_labels": [
+        "Adrián Ranea et al., Implicit White-Box Implementations: White-Boxing ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

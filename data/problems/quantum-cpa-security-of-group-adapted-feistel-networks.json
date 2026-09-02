@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-cpa-security-of-group-adapted-feistel-networks",
+  "group_id": "quantum-cpa-security-of-group-adapted-feistel-networks",
+  "title": "Quantum-CPA Security of Group-Adapted Feistel Networks",
+  "summary": "Although the three-round Feistel cipher is classically secure, no quantum-CPA security proof is known for any number of rounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove quantum-CPA security of group-adapted Feistel networks for one or more round counts."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptography, focusing on the quantum security of group-adapted Feistel networks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "round count: number of Feistel rounds under consideration"
+    ],
+    "unresolved_remainder": "A quantum-CPA security proof for group-adapted Feistel networks at one or more round counts."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-cpa",
+      "feistel-networks",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts",
+        "locator": "EUROCRYPT 2017, page 23",
+        "doi": "10.1007/978-3-319-56617-7_3",
+        "url": "https://eprint.iacr.org/2016/960",
+        "eprint": "2016/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a gap between the known classical security of the three-round Feistel cipher and the absence of a quantum-CPA security proof for any number of rounds.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

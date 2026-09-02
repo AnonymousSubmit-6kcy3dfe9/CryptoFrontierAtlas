@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-cpa-security-of-key-alternating-ciphers",
+  "group_id": "quantum-cpa-security-of-key-alternating-ciphers",
+  "title": "Quantum-CPA Security of Key-Alternating Ciphers",
+  "summary": "In the quantum-CPA model, whitening keys do not strengthen FX, while finding attacks on key-alternating ciphers or ruling them out in general remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the quantum-CPA model, whitening keys in the FX construction do not increase security, but the security of key-alternating ciphers remains unresolved. Key-alternating ciphers are multiple-round generalizations of the Even--Mansour construction, and popular ciphers, most importantly AES, follow this design principle. Determine their quantum-CPA security by either designing quantum algorithms that break key-alternating ciphers or showing that such attacks are not possible in general."
+  },
+  "scope": {
+    "domain": "Quantum cryptanalysis of key-alternating block ciphers, which generalize the Even–Mansour construction to multiple rounds.",
+    "assumptions": [
+      "Quantum chosen-plaintext attack (quantum-CPA) model."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether quantum algorithms can break key-alternating ciphers or whether such attacks can be ruled out in general."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "quantum-cryptanalysis",
+      "key-alternating-ciphers",
+      "even-mansour"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Grover Meets Simon - Quantumly Attacking the FX-construction",
+        "locator": "ASIACRYPT 2017, page 16",
+        "doi": "10.1007/978-3-319-70697-9_6",
+        "url": "https://eprint.iacr.org/2017/427",
+        "eprint": "2017/427"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "After showing that whitening keys do not increase FX security in the quantum-CPA model, the paper presents the security of multi-round key-alternating ciphers as its first and possibly most important open problem. It calls for either quantum attacks or a general demonstration that such attacks are impossible.",
+      "citation_labels": [
+        "Gregor Leander et al., Grover Meets Simon - Quantumly Attacking the FX-construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "h-transform-support-span-linear-invariance",
+  "group_id": "h-transform-support-span-linear-invariance",
+  "title": "Linear Invariance of the H-Transform Support Span",
+  "summary": "For nonstandard H, the full H-transform lacks the relevant linear equivariance, but whether the span of its support remains linear invariant is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $H\\not\\sim H_0$, is $V_f:=\\operatorname{span}(\\operatorname{supp}(\\widehat f^{\\,H}))$ invariant under linear equivalence of $f$?"
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis using generalized Simon algorithms and Hadamard transforms of Boolean functions.",
+    "assumptions": [
+      "The Hadamard matrix H is not equivalent to the standard matrix H0."
+    ],
+    "parameters": [
+      "H: the Hadamard matrix defining the transform",
+      "f: the Boolean function being transformed",
+      "V_f: the span of the support of the H-transform of f"
+    ],
+    "unresolved_remainder": "Whether V_f is invariant under linear equivalence of f."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "simons-algorithm",
+      "hadamard-transform",
+      "linear-invariance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications",
+        "locator": "CRYPTO 2022, page 14",
+        "doi": "10.1007/978-3-031-15982-4_26",
+        "url": "https://eprint.iacr.org/2022/782",
+        "eprint": "2022/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper notes that Theorem 2 rules out the stated equivariance of the full H-transform but does not establish non-invariance of its support span. It describes invariant behavior as surprising and the computation of a linear-invariant property by Simon(H) as unlikely.",
+      "citation_labels": [
+        "Federico Canale et al., Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "universal-black-box-nae-to-nvae-transformation",
+  "group_id": "universal-black-box-nae-to-nvae-transformation",
+  "title": "Universal Black-Box nAE-to-nvAE Transformation",
+  "summary": "Hash-based key derivation is readily proved secure only in the random-oracle model; a universal black-box nAE-to-nvAE transformation in the standard model remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists a black-box transformation $\\Gamma$ that converts every nAE-secure authenticated-encryption scheme $\\Pi$ into an nvAE-secure variable-stretch scheme $\\Gamma(\\Pi)$, with security established in the standard model. A suggested hash-based key-derivation transformation is easily proved secure only in the random-oracle model and adds unnecessary complexity, while other described transformations apply only to large subsets of nAE-secure schemes rather than to every such scheme."
+  },
+  "scope": {
+    "domain": "Variable-stretch nonce-based authenticated encryption and universal black-box transformations.",
+    "assumptions": [
+      "The input authenticated-encryption scheme is nAE-secure.",
+      "Security must be established in the standard model."
+    ],
+    "parameters": [
+      "Π: an arbitrary nAE-secure authenticated-encryption scheme",
+      "Γ: the sought black-box transformation whose output Γ(Π) must be nvAE-secure"
+    ],
+    "unresolved_remainder": "Whether a standard-model black-box transformation exists that works for every nAE-secure authenticated-encryption scheme."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "variable-stretch",
+      "black-box-transformation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption with Variable Stretch",
+        "locator": "ASIACRYPT 2016, page 19",
+        "doi": "10.1007/978-3-662-53887-6_15",
+        "url": "https://eprint.iacr.org/2016/463",
+        "eprint": "2016/463"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper gives a hash-based approach that is easily proved secure only in the random-oracle model and describes transformations covering large subsets of nAE schemes. It explicitly leaves the universal standard-model treatment open.",
+      "citation_labels": [
+        "Reza Reyhanitabar et al., Authenticated Encryption with Variable Stretch"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

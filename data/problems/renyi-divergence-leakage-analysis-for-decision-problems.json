@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "renyi-divergence-leakage-analysis-for-decision-problems",
+  "group_id": "renyi-divergence-leakage-analysis-for-decision-problems",
+  "title": "Extending Rényi-Divergence Leakage Analysis to Decision Problems",
+  "summary": "A Rényi-divergence leakage analysis is known for search problems, but extending it to decision problems with the same efficiency remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A Rényi-divergence-based leakage analysis is currently valid only for search problems. The open problem is to extend this analysis to decision problems while retaining the same efficiency achieved for search problems."
+  },
+  "scope": {
+    "domain": "Cryptographic side-channel analysis of leakage-enabled security games.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q, the number of leakage queries affecting the efficiency target"
+    ],
+    "unresolved_remainder": "Extend the Rényi-divergence-based leakage analysis from search problems to decision problems while preserving the efficiency achieved for search problems."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "leakage-analysis",
+      "decision-problems"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unifying Leakage Models on a Rényi Day",
+        "locator": "CRYPTO 2019, page 29",
+        "doi": "10.1007/978-3-030-26948-7_24",
+        "url": "https://eprint.iacr.org/2019/138",
+        "eprint": "2019/138"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly limits the Rényi-divergence analysis to search problems and identifies matching efficiency for decision problems as an open question.",
+      "citation_labels": [
+        "Thomas Prest et al., Unifying Leakage Models on a Rényi Day"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

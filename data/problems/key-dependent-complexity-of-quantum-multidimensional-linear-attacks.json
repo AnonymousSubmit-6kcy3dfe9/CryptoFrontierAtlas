@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-dependent-complexity-of-quantum-multidimensional-linear-attacks",
+  "group_id": "key-dependent-complexity-of-quantum-multidimensional-linear-attacks",
+  "title": "Key-Dependent Complexity of Quantum Multidimensional Linear Attacks",
+  "summary": "Existing estimates average key-dependent squared correlations and capacity under a concentration assumption; determine attack complexity across keys without relying solely on that assumption.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For quantum multidimensional linear attacks, squared correlations and capacity may vary significantly with the key, while complexity estimates replace these key-dependent quantities by their averages under the assumption that they concentrate around their means. Determine the attack complexity as a function of the key-specific squared correlations and capacity without relying solely on that concentration assumption, and characterize how variation across keys changes the complexity."
+  },
+  "scope": {
+    "domain": "Quantum multidimensional linear cryptanalysis of symmetric ciphers.",
+    "assumptions": [
+      "Average-based estimates assume that squared correlations and capacity concentrate around their means."
+    ],
+    "parameters": [
+      "Cryptographic key: indexes potentially varying attack complexity",
+      "Key-specific squared correlations: key-dependent inputs to the complexity analysis",
+      "Key-specific capacity: a key-dependent input to the complexity analysis"
+    ],
+    "unresolved_remainder": "Determine complexity from key-specific squared correlations and capacity, and characterize its variation across keys without relying solely on concentration around mean values."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "quantum-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers",
+        "locator": "ASIACRYPT 2023, page 12",
+        "doi": "10.1007/978-981-99-8727-6_11",
+        "url": "https://eprint.iacr.org/2022/1558",
+        "eprint": "2022/1558"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper notes that squared correlations and capacity can vary significantly by key but estimates them using averages under a concentration assumption. It identifies an in-depth analysis of key-dependent complexity as important future work.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

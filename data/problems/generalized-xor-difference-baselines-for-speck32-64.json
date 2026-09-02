@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generalized-xor-difference-baselines-for-speck32-64",
+  "group_id": "generalized-xor-difference-baselines-for-speck32-64",
+  "title": "Generalized XOR-Difference Baselines for Speck32/64 Neural Distinguishers",
+  "summary": "Speck32/64 neural distinguishers learn extra features and outperform same-round Markov-based XOR-difference baselines; whether generalized XOR differences capture those features remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $r$-round neural distinguishers on Speck32/64, the learned output features can extend beyond differences and yield higher classification accuracy than the corresponding $r$-round XOR-difference differential distinguishers. Pure XOR-difference differential distinguishers may be inadequate baselines because they are computed under the Markov assumption. Determine whether incorporating generalized XOR differences through modular addition and multi-bit constraints yields a better classical baseline and captures the additional features learned by Speck32/64 neural distinguishers."
+  },
+  "scope": {
+    "domain": "Differential and neural cryptanalysis of the ARX cipher Speck32/64.",
+    "assumptions": [
+      "Pure XOR-difference differential distinguishers are computed under the Markov assumption."
+    ],
+    "parameters": [
+      "r: number of rounds in the compared neural and XOR-difference differential distinguishers"
+    ],
+    "unresolved_remainder": "Whether generalized XOR differences through modular addition and multi-bit constraints provide a better classical baseline and capture the neural distinguishers' additional features."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "neural-cryptanalysis",
+      "differential-cryptanalysis",
+      "arx-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Enhancing Differential-Neural Cryptanalysis",
+        "locator": "ASIACRYPT 2022, page 27",
+        "doi": "10.1007/978-3-031-22963-3_11",
+        "url": "https://eprint.iacr.org/2021/719",
+        "eprint": "2021/719"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that pure XOR-difference differential distinguishers are not the best baselines for Speck neural distinguishers and identifies the Markov assumption as a limitation. It proposes generalized XOR differences with modular-addition and multi-bit constraints as a possible remedy without establishing that they capture the neural advantage.",
+      "citation_labels": [
+        "Zhenzhen Bao et al., Enhancing Differential-Neural Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

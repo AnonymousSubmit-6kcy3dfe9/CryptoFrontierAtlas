@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-security-for-correlated-sub-key-distributions",
+  "group_id": "optimal-security-for-correlated-sub-key-distributions",
+  "title": "Optimal Security for Correlated Sub-Key Distributions",
+  "summary": "Known results cover one round and a constrained two-round case; characterizing correlated sub-key distributions that retain optimal security more broadly remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a $t$-round key-alternating cipher whose sub-keys may be correlated, determine which distributions of the sub-keys preserve optimal security against $q = N^{t/(t+1)}$ queries. Existing results address the one-round case and the two-round case under the constraint $s_0=s_1=s_2$, while the extension to more than three rounds and broader sub-key distributions remains unresolved. The open task is to characterize the correlated sub-key distributions, across the relevant round and parameter ranges, for which this optimal security threshold still holds."
+  },
+  "scope": {
+    "domain": "Security of key-alternating block ciphers with correlated sub-key distributions.",
+    "assumptions": [
+      "The known two-round result imposes the constraint s_0 = s_1 = s_2."
+    ],
+    "parameters": [
+      "t: number of cipher rounds",
+      "q: number of queries at the target optimal-security threshold",
+      "N: size parameter governing the target query threshold",
+      "s_0, s_1, and s_2: sub-keys constrained to be equal in the known two-round case"
+    ],
+    "unresolved_remainder": "Characterize the correlated sub-key distributions, particularly for more than three rounds and broader parameter ranges, that preserve the optimal query-security threshold."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "key-alternating-ciphers",
+      "correlated-subkeys",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys",
+        "locator": "ASIACRYPT 2021, page 2",
+        "doi": "10.1007/978-3-030-92078-4_15",
+        "url": "https://eprint.iacr.org/2021/1571",
+        "eprint": "2021/1571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks which sub-key distributions achieve the optimal query threshold after noting prior one-round and constrained two-round results. It reports partial progress for specific limited-independence key schedules while leaving broader distributions and parameter ranges unresolved.",
+      "citation_labels": [
+        "Stefano Tessaro et al., Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

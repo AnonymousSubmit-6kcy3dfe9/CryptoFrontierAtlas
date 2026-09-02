@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rate-1-no-fixed-order-encryptment-extension",
+  "group_id": "rate-1-no-fixed-order-encryptment-extension",
+  "title": "Extending the Rate-1 Encryptment Impossibility Result",
+  "summary": "Known rate-1 impossibility results cover fixed-key blockcipher-based encryptment; whether the exclusion extends to no-fixed-order verification algorithms remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the existing impossibility result extends to all rate-1 no-fixed-order verification algorithms for encryptment."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography focused on authenticated-encryption modes and encryptment verification algorithms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "rate-1: the verification algorithm's rate",
+      "no-fixed-order: the verification algorithm's ordering model",
+      "encryptment: the target cryptographic primitive"
+    ],
+    "unresolved_remainder": "Whether the existing impossibility result extends to all rate-1 no-fixed-order verification algorithms for encryptment."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "encryptment",
+      "impossibility-results",
+      "verification-algorithms"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fast Message Franking: From Invisible Salamanders to Encryptment",
+        "locator": "CRYPTO 2018, page 19",
+        "doi": "10.1007/978-3-319-96884-1_6",
+        "url": "https://eprint.iacr.org/2019/016",
+        "eprint": "2019/016"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the extension conditionally: a negative result based on [11, Th. 5] would rule out encryptment using any rate-1 no-fixed-order verification algorithm. It does not claim that negative result, so the extension remains unresolved.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Fast Message Franking: From Invisible Salamanders to Encryptment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

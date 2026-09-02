@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alternative-round-key-conditions-for-four-round-kaf",
+  "group_id": "alternative-round-key-conditions-for-four-round-kaf",
+  "title": "Alternative Round-Key Conditions for Four-Round KAF Security",
+  "summary": "The four-round KAF result leaves open the task of exhibiting sufficient round-key conditions not implied by Definition 1.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find round-key conditions sufficient for 4-round KAF security but not implied by Definition 1."
+  },
+  "scope": {
+    "domain": "Block-cipher design for key-alternating Feistel ciphers and their round-key conditions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Four rounds: the KAF round count considered by the security result"
+    ],
+    "unresolved_remainder": "Exhibit round-key conditions sufficient for four-round KAF security that are not implied by Definition 1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "feistel-networks",
+      "key-schedules"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 21",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as the only remaining improvement direction for its four-round result: exhibit other sufficient round-key conditions not implied by Definition 1.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

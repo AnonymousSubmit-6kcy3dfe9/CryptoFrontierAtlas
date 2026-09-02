@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-distinguishing-tradeoffs-2em-1-2em-2",
+  "group_id": "tight-distinguishing-tradeoffs-2em-1-2em-2",
+  "title": "Tight Distinguishing Tradeoffs for 2EM-1 and 2EM-2",
+  "summary": "Gazi’s generic attack meets the proved distinguishing lower bound for 2EM-1 and 2EM-2 at only one equal-data-and-time point; tight bounds elsewhere remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight data--time tradeoff for distinguishing attacks on the two-round Even--Mansour constructions 2EM-1 and 2EM-2. Gazi's generic distinguishing attack satisfies $DT^{2}=2^{2n}$, where $D$ and $T$ denote data and time complexities, respectively, but it matches the proved lower bound only at $D=T=2^{2n/3}$. Establish matching upper and lower bounds at every other data--time tradeoff point."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of distinguishing attacks on the two-round Even–Mansour constructions 2EM-1 and 2EM-2.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "D: data complexity",
+      "T: time complexity",
+      "n: parameter appearing in the exponents of the stated tradeoff and matching point"
+    ],
+    "unresolved_remainder": "Matching upper and lower bounds at every other data–time tradeoff point."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "distinguishing-attacks",
+      "data-time-tradeoffs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers",
+        "locator": "ASIACRYPT 2017, page 3",
+        "doi": "10.1007/978-3-319-70694-8_9",
+        "url": "https://eprint.iacr.org/2017/868",
+        "eprint": "2017/868"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that Gazi’s generic attack matches the proved distinguishing bound only at $D=T=2^{2n/3}$. It leaves matching upper and lower bounds at all other tradeoff points unresolved.",
+      "citation_labels": [
+        "Takanori Isobe et al., New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

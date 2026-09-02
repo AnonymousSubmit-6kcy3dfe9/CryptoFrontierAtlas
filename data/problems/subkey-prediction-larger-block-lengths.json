@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "subkey-prediction-larger-block-lengths",
+  "group_id": "subkey-prediction-larger-block-lengths",
+  "title": "Extending the Subkey-Prediction Lemma to Larger Block Lengths",
+  "summary": "Only the one-bit case is covered by the current subkey-prediction lemma; extending it to larger blocks with better bounds than the general lemma remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a big key modeled as a vector over $\\{0,1\\}^b$, where each probe returns one $b$-bit block or word, extend the subkey-prediction lemma currently established only for $b=1$ to larger block lengths $b$, and derive prediction bounds that improve on those obtainable from the previously available general lemma for larger $b$."
+  },
+  "scope": {
+    "domain": "Mathematical foundations of big-key symmetric encryption and subkey prediction for block- or word-valued probes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "b: the block or word length returned by each probe"
+    ],
+    "unresolved_remainder": "Extend the subkey-prediction lemma from the one-bit case to larger block lengths and derive bounds that improve on those from the available general lemma."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "big-key-encryption",
+      "subkey-prediction",
+      "theorem-extension"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Big-Key Symmetric Encryption: Resisting Key Exfiltration",
+        "locator": "CRYPTO 2016, page 7",
+        "doi": "10.1007/978-3-662-53018-4_14",
+        "url": "https://eprint.iacr.org/2016/541",
+        "eprint": "2016/541"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the current subkey-prediction lemma handles only the one-bit case. It notes that a general lemma gives bounds for larger blocks, but expects an extension of the current lemma to yield better bounds and identifies obtaining it as an open question.",
+      "citation_labels": [
+        "Mihir Bellare et al., Big-Key Symmetric Encryption: Resisting Key Exfiltration"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gradual-modification-of-enciphering-schemes",
+  "group_id": "gradual-modification-of-enciphering-schemes",
+  "title": "Gradual Modification of Enciphering Schemes",
+  "summary": "Local cipher modifications cannot change a mapping without affecting another domain point; the open task is to enable gradual modification over time.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "An unresolved construction problem is to modify an enciphering scheme gradually over time, including gracefully removing domain points and refreshing them with new mappings, even though no local cipher modification is possible because any changed mapping necessarily affects at least one other domain point; such a construction could support updating a client's token after a query."
+  },
+  "scope": {
+    "domain": "Design of symmetric cryptographic primitives, centered on enciphering schemes that support updates after deployment.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Domain points and mappings: the scheme elements to be removed or refreshed during gradual modification"
+    ],
+    "unresolved_remainder": "Determine a construction for modifying an enciphering scheme gradually over time, including graceful removal of domain points and refreshing them with new mappings."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "enciphering-schemes",
+      "post-deployment-updates"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modifying an Enciphering Scheme After Deployment",
+        "locator": "EUROCRYPT 2017, page 5",
+        "doi": "10.1007/978-3-319-56614-6_17",
+        "url": "https://eprint.iacr.org/2017/137",
+        "eprint": "2017/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves modification of schemes gradually over time as an interesting open problem, after noting that changing one mapping necessarily affects another domain point. It motivates the functionality with graceful removal and refreshing in a tokenization scenario.",
+      "citation_labels": [
+        "Paul Grubbs et al., Modifying an Enciphering Scheme After Deployment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

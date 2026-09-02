@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "application-dependent-cipher-fhe-selection",
+  "group_id": "application-dependent-cipher-fhe-selection",
+  "title": "Application-Dependent Cipher/FHE Selection",
+  "summary": "The designs may become more alike under converging modulus choices, but the best cipher/FHE pairing for each application range remains undetermined.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Among FHE-friendly symmetric ciphers, Elisabeth instantiated with larger moduli $q$ and HERA-like or PASTA-like designs instantiated with smaller moduli may become increasingly similar. Determine which cipher---and ultimately which symmetric-cipher/FHE combination---delivers the best global performance for each range of applications, taking into account the data processing required for the intended homomorphic operations."
+  },
+  "scope": {
+    "domain": "Application-dependent performance optimization of FHE-friendly symmetric ciphers for hybrid homomorphic encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q: modulus for Elisabeth, with larger values compared against smaller-modulus HERA-like or PASTA-like designs",
+      "application range: context for comparing global performance and required homomorphic data processing"
+    ],
+    "unresolved_remainder": "Determine which cipher and symmetric-cipher/FHE combination achieves the best global performance for each application range while accounting for the data processing required by the intended homomorphic operations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "fhe-friendly-ciphers",
+      "hybrid-homomorphic-encryption",
+      "performance-optimization"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Case-Optimized Hybrid Homomorphic Encryption -Featuring the Elisabeth Stream Cipher-",
+        "locator": "ASIACRYPT 2022, page 3",
+        "doi": "10.1007/978-3-031-22969-5_2",
+        "url": "https://eprint.iacr.org/2022/180",
+        "eprint": "2022/180"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that larger-modulus Elisabeth instances and smaller-modulus HERA-/PASTA-like ciphers may become increasingly similar. It explicitly frames application-dependent cipher choice as a long-term problem evaluated through global performance and homomorphic data-processing needs.",
+      "citation_labels": [
+        "Orel Cosseron et al., Towards Case-Optimized Hybrid Homomorphic Encryption -Featuring the Elisabeth Stream Cipher-"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

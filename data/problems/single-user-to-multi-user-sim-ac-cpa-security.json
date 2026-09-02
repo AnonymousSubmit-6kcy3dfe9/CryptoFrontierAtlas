@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-user-to-multi-user-sim-ac-cpa-security",
+  "group_id": "single-user-to-multi-user-sim-ac-cpa-security",
+  "title": "Single-User to Multi-User SIM-AC-CPA Security",
+  "summary": "Whether single-user security lifts to the multi-user SIM-AC-CPA notion remains open; simulator-state inconsistencies block the hybrid proof, while only strengthened SIM*-AC definitions are covered.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether single-user SIM-AC-CPA security implies multi-user SIM-AC-CPA security. A hybrid proof of this implication is obstructed by inconsistencies in simulator state between hybrid steps. A follow-up result establishes that the hybrid argument works for strengthened $\\mathrm{SIM}^{*}\\text{-}\\mathrm{AC}$ definitions, but this only partially resolves the question and does not establish the implication for the original SIM-AC-CPA notion."
+  },
+  "scope": {
+    "domain": "Simulation-based security for practical encryption schemes under adaptive compromise.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "user setting: single-user versus multi-user",
+      "security definition: original SIM-AC-CPA versus strengthened SIM*-AC"
+    ],
+    "unresolved_remainder": "Whether single-user SIM-AC-CPA security implies multi-user SIM-AC-CPA security under the original notion."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "simulation-security",
+      "adaptive-compromise",
+      "multi-user-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Handling Adaptive Compromise for Practical Encryption Schemes",
+        "locator": "CRYPTO 2020, page 16",
+        "doi": "10.1007/978-3-030-56784-2_1",
+        "url": "https://eprint.iacr.org/2020/765",
+        "eprint": "2020/765"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves the single-user-to-multi-user implication open because a hybrid proof must manage inconsistent simulator state between hybrid steps. A follow-up result handles strengthened SIM*-AC definitions only, so the original implication remains unresolved.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Handling Adaptive Compromise for Practical Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

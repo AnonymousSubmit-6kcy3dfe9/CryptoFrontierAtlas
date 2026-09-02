@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-key-kac-arbitrary-round-security",
+  "group_id": "single-key-kac-arbitrary-round-security",
+  "title": "Arbitrary-Round Security for Single-Key Key-Alternating Ciphers",
+  "summary": "Existing results cover only limited round counts; it remains open whether key-alternating ciphers using a Chen et al.-style single-key sub-key schedule can be proved secure for arbitrarily many rounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether key-alternating ciphers instantiated with a single-key sub-key schedule, as in Chen et al., can be proved secure for an arbitrary number of rounds; that is, whether security can be established for any round count beyond the limited-round results discussed for key-alternating ciphers."
+  },
+  "scope": {
+    "domain": "Security of key-alternating block ciphers using single-key sub-key schedules.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: the target is security for an arbitrary number of rounds"
+    ],
+    "unresolved_remainder": "Prove security for any number of rounds when the key-alternating cipher uses a single-key sub-key schedule as in Chen et al."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedules",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys",
+        "locator": "ASIACRYPT 2021, page 2",
+        "doi": "10.1007/978-3-030-92078-4_15",
+        "url": "https://eprint.iacr.org/2021/1571",
+        "eprint": "2021/1571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source frames this as the ultimate extension beyond limited-round security results, asking whether a Chen et al.-style single-key schedule can support an arbitrary number of rounds.",
+      "citation_labels": [
+        "Stefano Tessaro et al., Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

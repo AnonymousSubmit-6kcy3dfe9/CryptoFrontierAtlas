@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinnyee-security-margin",
+  "group_id": "skinnyee-security-margin",
+  "title": "Security Margin of SKINNYee",
+  "summary": "SKINNYee uses a distinct tweakey-extension method, but determining its security margin remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "SKINNYee is a tweakable block cipher based on SKINNYe-64-256 version 2, with a $128$-bit key, a $(256+3)$-bit tweak, and a $64$-bit plaintext block. Its method for extending the tweakey size differs from another proposed extension method. Determine the security margin of SKINNYee under its distinct tweakey-extension method."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of the SKINNYee tweakable block cipher and its tweakey schedule.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "128-bit key size",
+      "(256+3)-bit tweak size",
+      "64-bit plaintext block size"
+    ],
+    "unresolved_remainder": "Determine the security margin of SKINNYee under its distinct tweakey-extension method."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "tweakable-block-cipher",
+      "tweakey-schedule"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the TWEAKEY Schedule: Cryptanalysis on SKINNYe-64-256",
+        "locator": "ASIACRYPT 2022, page 26",
+        "doi": "10.1007/978-3-031-22963-3_10",
+        "url": "https://eprint.iacr.org/2022/789",
+        "eprint": "2022/789"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces SKINNYee and notes that its tweakey-size extension differs from the method proposed in the paper. It explicitly calls exploration of SKINNYee's security margin an interesting open problem.",
+      "citation_labels": [
+        "Lingyue Qin et al., Mind the TWEAKEY Schedule: Cryptanalysis on SKINNYe-64-256"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-private-pprfs-for-puncturable-key-wrapping",
+  "group_id": "efficient-private-pprfs-for-puncturable-key-wrapping",
+  "title": "Efficient Private PPRFs for Puncturable Key Wrapping",
+  "summary": "Current PKW and PPRF constructions reveal punctured points after key compromise, while efficient private PPRFs and private PKW schemes derived from them remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct practically efficient private PPRFs and derive private PKW schemes from them."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography involving private puncturable pseudorandom functions and private puncturable key-wrapping schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct practically efficient private PPRFs and derive private PKW schemes from them."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "puncturable-pseudorandom-functions",
+      "puncturable-key-wrapping",
+      "post-compromise-privacy"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Puncturable Key Wrapping and Its Applications",
+        "locator": "ASIACRYPT 2022, page 31",
+        "doi": "10.1007/978-3-031-22966-4_22",
+        "url": "https://eprint.iacr.org/2022/1209",
+        "eprint": "2022/1209"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "In its discussion and future-work section, the source explicitly presents finding practically efficient private PPRFs and building private PKW schemes from them as an open problem with immediate applications.",
+      "citation_labels": [
+        "Matilda Backendal et al., Puncturable Key Wrapping and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mimc-interpolation-gcd-time-memory-tradeoffs",
+  "group_id": "mimc-interpolation-gcd-time-memory-tradeoffs",
+  "title": "Time–Memory Trade-offs in MiMC Interpolation and GCD Attacks",
+  "summary": "For MiMC-129/129 with an attacker-memory budget of two raised to the sixty-fourth power bytes, 38 rounds suffice against the named attacks; time–memory trade-offs remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{MiMC}$, characterize possible time--memory trade-offs for interpolation and GCD attacks when the attacker cannot store all required polynomial coefficients. Determine whether additional computation can compensate for limited storage and quantify the resulting attack complexity. A concrete baseline is $\\mathrm{MiMC}\\text{-}129/129$: with attacker memory limited to $2^{64}$ bytes, 38 rounds suffice against interpolation, GCD, and other attacks, while possible time--memory trade-offs remain unresolved."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of MiMC through interpolation and GCD attacks, with MiMC-129/129 as the concrete baseline.",
+    "assumptions": [
+      "The attacker cannot store all required polynomial coefficients."
+    ],
+    "parameters": [
+      "Attacker memory: limits coefficient storage, with 2^64 bytes in the concrete MiMC-129/129 baseline",
+      "Round count: 38 rounds suffice in that baseline against interpolation, GCD, and other attacks"
+    ],
+    "unresolved_remainder": "Determine whether additional computation can compensate for limited coefficient storage and quantify the resulting time–memory trade-offs and attack complexity for interpolation and GCD attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "mimc",
+      "algebraic-cryptanalysis",
+      "time-memory-tradeoffs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity",
+        "locator": "ASIACRYPT 2016, page 17",
+        "doi": "10.1007/978-3-662-53887-6_7",
+        "url": "https://eprint.iacr.org/2016/492",
+        "eprint": "2016/492"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that 38 rounds protect MiMC-129/129 against interpolation, GCD, and other attacks when attacker memory is capped at 2^64 bytes, then explicitly leaves possible time–memory trade-offs for future research.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

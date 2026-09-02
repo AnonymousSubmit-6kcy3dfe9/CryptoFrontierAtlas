@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "s-box-component-selection-rationale",
+  "group_id": "s-box-component-selection-rationale",
+  "title": "Rationale for Selecting the Recovered S-Box Components",
+  "summary": "The S-box decomposition has been recovered and supports more efficient hardware implementation, but why its components were selected remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the S-box computation of $\\pi(\\ell\\mathbin\\|r)$, the recovered decomposition first applies the 8-bit linear permutation $\\alpha$ to $(\\ell\\mathbin\\|r)$, then applies $\\nu_0$ to $\\ell$ when $r=0$ and applies $\\nu_1$ to $\\ell\\mathbin{\\odot}r^{14}$ otherwise; it subsequently uses the nonlinear 4-bit function $\\varphi$, the nonlinear 4-bit permutation $\\sigma$, and the 8-bit linear permutation $\\omega$ in the remaining computation and final whitening. The unresolved task is to determine how and why $\\nu_0$, $\\nu_1$, $\\sigma$, $\\varphi$, $\\alpha$, and $\\omega$ were selected for this decomposition, given that the individual cryptographic properties of these components are described as unimpressive at best and bad at worst. The rationale for this component selection remains open."
+  },
+  "scope": {
+    "domain": "The problem concerns the design and reverse engineering of S-boxes in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "π: the S-box computation being decomposed",
+      "ℓ and r: input parts of the S-box computation",
+      "ν₀ and ν₁: nonlinear 4-bit permutations used conditionally",
+      "φ: nonlinear 4-bit function",
+      "σ: nonlinear 4-bit permutation",
+      "α and ω: 8-bit linear permutations used in the decomposition and final whitening"
+    ],
+    "unresolved_remainder": "Determine how and why ν₀, ν₁, σ, φ, α, and ω were selected for this decomposition; the rationale for this component selection remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-box-design",
+      "nonlinear-components",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse-Engineering the S-Box of Streebog, Kuznyechik and STRIBOBr1",
+        "locator": "EUROCRYPT 2016, page 28",
+        "doi": "10.1007/978-3-662-49890-3_15",
+        "url": "https://eprint.iacr.org/2016/071",
+        "eprint": "2016/071"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a recovered S-box decomposition using conditional nonlinear permutations, a nonlinear function, and linear permutations. It explicitly states that how and why these components were chosen remains an open question, noting that their individual cryptographic properties are unimpressive at best and bad at worst.",
+      "citation_labels": [
+        "Alex Biryukov et al., Reverse-Engineering the S-Box of Streebog, Kuznyechik and STRIBOBr1"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

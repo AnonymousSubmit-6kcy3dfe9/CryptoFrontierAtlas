@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dependent-modular-addition-chain-correlations",
+  "group_id": "dependent-modular-addition-chain-correlations",
+  "title": "Correlations in Dependent Modular-Addition Chains",
+  "summary": "Initial results do not sufficiently explain dependent-chain correlations; characterize or bound their effect, including whether linear-hull effects account for experimentally high absolute correlations.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize or bound the effect of dependence in chains of modular additions on the resulting cryptanalytic correlations. The analysis should account for experimentally observed absolute correlations that exceed theoretical expectations and determine whether linear-hull effects explain these deviations. Despite prior initial results, the correlation behavior of dependent modular-addition chains remains insufficiently understood."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of correlations in dependent chains of modular additions within ARX constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Dependence in chains of modular additions: the structural factor whose effect on correlations is to be characterized or bounded",
+      "Cryptanalytic correlations: the resulting quantity to be analyzed"
+    ],
+    "unresolved_remainder": "A characterization or bound for the effect of dependence on the resulting correlations, including whether linear-hull effects explain experimentally observed absolute correlations above theoretical expectations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "arx",
+      "modular-addition"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Differential-Linear Attacks with Applications to ARX Ciphers",
+        "locator": "CRYPTO 2020, page 29",
+        "doi": "10.1007/978-3-030-56877-1_12",
+        "url": "https://eprint.iacr.org/2020/775",
+        "eprint": "2020/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The authors state that, despite prior initial results, the impact of dependent chains of modular additions on correlations remains insufficiently understood and requires further study. They also identify unexplained experimentally high absolute correlations and linear-hull effects as a possible explanation.",
+      "citation_labels": [
+        "Christof Beierle et al., Improved Differential-Linear Attacks with Applications to ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

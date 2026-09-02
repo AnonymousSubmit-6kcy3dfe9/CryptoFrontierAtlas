@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "six-round-aes-vs-three-round-generic-spn-yoyo-game",
+  "group_id": "six-round-aes-vs-three-round-generic-spn-yoyo-game",
+  "title": "Six-Round AES Versus a Three-Round Generic SPN",
+  "summary": "A six-round AES distinguisher is presented, but whether six-round AES is weaker than a three-round generic SPN remains unresolved pending deeper analysis of the three-round yoyo game.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether six-round AES is weaker than a three-round generic SPN under the three-round yoyo game."
+  },
+  "scope": {
+    "domain": "Reduced-round symmetric cryptanalysis comparing AES with a generic SPN in the yoyo game.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "six rounds of AES: reduced-round construction under evaluation",
+      "three rounds of a generic SPN: comparison construction",
+      "three-round yoyo game: cryptanalytic game for the comparison"
+    ],
+    "unresolved_remainder": "Determine whether six-round AES is weaker than a three-round generic SPN under the three-round yoyo game; the source says this requires deeper analysis of that game."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "yoyo-game",
+      "structural-cryptanalysis",
+      "differential-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Yoyo Tricks with AES",
+        "locator": "ASIACRYPT 2017, page 22",
+        "doi": "10.1007/978-3-319-70694-8_8",
+        "url": "https://eprint.iacr.org/2017/980",
+        "eprint": "2017/980"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents a six-round AES distinguisher based on impossible zero-difference conditions and reports that the authors were unable to find a generic distinguisher for three generic SP rounds. It says that establishing the relative weakness requires deeper study of the three-round yoyo game.",
+      "citation_labels": [
+        "Sondre Rønjom et al., Yoyo Tricks with AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

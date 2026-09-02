@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "decryption-failure-leakage-in-non-xfrob-aead-ki",
+  "group_id": "decryption-failure-leakage-in-non-xfrob-aead-ki",
+  "title": "Decryption-Failure Leakage in Non-XFROB AEAD-KI",
+  "summary": "XFROB rules out decryption failure when the correct key is present, but it is unknown whether malicious-key probes against non-XFROB AEAD-KI can reveal an honest key vector's composition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For authenticated encryption with key identification (AEAD--KI) schemes that do not satisfy $\\mathsf{XFROB}$, determine whether an adversary can insert a malicious key into a key vector containing unknown honest keys, submit a ciphertext that should decrypt under the malicious key, and exploit a decryption failure caused by the presence of a particular key or by the ordering of keys. The unresolved goal is to establish whether such failure behavior can reveal information about the composition of the honest keys in the vector. $\\mathsf{XFROB}$ rules out these outcomes by guaranteeing that decryption cannot fail when the correct key is present in the key vector, whereas $\\mathsf{KI\\text{-}FROB}$ permits such failures; no such attacks are currently known in the wild."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of decryption robustness and key-vector composition leakage in authenticated encryption with key identification.",
+    "assumptions": [
+      "The scheme does not satisfy XFROB.",
+      "The adversary can insert a malicious key into a vector containing unknown honest keys and submit a ciphertext that should decrypt under the malicious key."
+    ],
+    "parameters": [
+      "Key vector: contains unknown honest keys and an adversarially inserted malicious key, with its honest-key composition as the leakage target",
+      "Decryption-failure trigger: the presence of a particular key or the ordering of keys",
+      "Probe ciphertext: should decrypt under the malicious key"
+    ],
+    "unresolved_remainder": "Whether the resulting decryption-failure behavior can reveal information about the honest-key composition of a non-XFROB AEAD-KI key vector."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "key-identification",
+      "robustness"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption with Key Identification",
+        "locator": "ASIACRYPT 2022, page 23",
+        "doi": "10.1007/978-3-031-22969-5_7",
+        "url": "https://eprint.iacr.org/2022/1680",
+        "eprint": "2022/1680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts XFROB, which prevents failure when the correct key is present, with KI-FROB, which permits such failures. It raises key-vector composition leakage as a hypothetical attack avenue and reports no such attacks in the wild.",
+      "citation_labels": [
+        "Julia Len et al., Authenticated Encryption with Key Identification"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

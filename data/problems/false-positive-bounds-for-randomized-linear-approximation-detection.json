@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "false-positive-bounds-for-randomized-linear-approximation-detection",
+  "group_id": "false-positive-bounds-for-randomized-linear-approximation-detection",
+  "title": "False-Positive Bounds for Randomized Linear-Approximation Detection",
+  "summary": "Nontrivial detections can be false positives without near-exhaustive queries, though they imply high correlation; rigorous false-positive and sample-complexity bounds remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an unkeyed oracle $E$, randomized detection samples inputs $x$ from $\\mathbb{F}_2^n$ and solves a linear system for a candidate $(\\alpha,\\beta,c)$. A non-trivial solution does not by itself certify a perfect linear approximation unless $E$ is queried on almost all inputs; however, any resulting false positive would imply a linear approximation with high absolute correlation. The unresolved problem is to derive rigorous bounds on the false-positive probability and on the sample complexity required by this randomized linear-system procedure, parameterized by the number or fraction of queried inputs and by the desired confidence and correlation guarantees."
+  },
+  "scope": {
+    "domain": "Automated linear cryptanalysis of an unkeyed oracle using randomized linear-system detection of perfect linear approximations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: dimension of the binary input space",
+      "Number or fraction of queried inputs: query and sampling budget",
+      "Desired confidence: target reliability of the detection result",
+      "Desired correlation guarantee: target absolute correlation associated with false positives"
+    ],
+    "unresolved_remainder": "Derive rigorous false-positive probability and sample-complexity bounds as functions of the query budget and desired confidence and correlation guarantees."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "automated-cryptanalysis",
+      "sample-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On Perfect Linear Approximations and Differentials over Two-Round SPNs",
+        "locator": "CRYPTO 2023, page 7",
+        "doi": "10.1007/978-3-031-38548-3_8",
+        "url": "https://eprint.iacr.org/2023/725",
+        "eprint": "2023/725"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that a linear-system solution need not certify a perfect linear approximation without querying almost all inputs, while any false positive would have high absolute correlation. It leaves false-positive behavior unanalyzed.",
+      "citation_labels": [
+        "Christof Beierle et al., On Perfect Linear Approximations and Differentials over Two-Round SPNs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

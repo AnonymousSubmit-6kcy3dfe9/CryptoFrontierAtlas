@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-four-round-confusion-diffusion-indifferentiability",
+  "group_id": "three-four-round-confusion-diffusion-indifferentiability",
+  "title": "Indifferentiability of Three- and Four-Round Confusion-Diffusion Networks",
+  "summary": "A distinguishing attack rules out indifferentiability from a random permutation for networks with at most two rounds; the three- and four-round cases remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For confusion-diffusion networks, a distinguishing attack establishes that networks with two rounds or fewer cannot be indifferentiable from a random permutation. No similarly general attack was found for three-round networks, leaving unresolved whether a three- or four-round confusion-diffusion network can be indifferentiable from a random permutation. The open task is therefore to determine indifferentiability for the three- and four-round cases, or, if either case is not indifferentiable, to develop a general distinguishing attack against it."
+  },
+  "scope": {
+    "domain": "Indifferentiability of confusion-diffusion networks as symmetric cryptographic constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of rounds, determining the network cases covered by the known attack and the unresolved three- and four-round cases"
+    ],
+    "unresolved_remainder": "Determine indifferentiability for the three- and four-round cases, or, if either case is not indifferentiable, develop a general distinguishing attack against it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "indifferentiability",
+      "confusion-diffusion-networks",
+      "distinguishing-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiability of Confusion-Diffusion Networks",
+        "locator": "EUROCRYPT 2016, page 8",
+        "doi": "10.1007/978-3-662-49896-5_24",
+        "url": "https://eprint.iacr.org/2015/680",
+        "eprint": "2015/680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a general distinguishing attack for networks with two rounds or fewer and says that no similarly general attack was found for three rounds. It presents the three- and four-round cases as open.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Indifferentiability of Confusion-Diffusion Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

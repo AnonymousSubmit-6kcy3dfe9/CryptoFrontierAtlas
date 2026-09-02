@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "more-efficient-base-gadgets-random-probing-security",
+  "group_id": "more-efficient-base-gadgets-random-probing-security",
+  "title": "More Efficient Base Gadgets for Random-Probing Security",
+  "summary": "The current compiler instantiation provides an efficiency baseline, while alternative base gadgets that improve complexity, tolerated leakage, or both remain an open direction.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct alternative base gadgets for the expanding random-probing-security framework that yield a more efficient compiler instantiation than the existing one, which has asymptotic complexity $O(\\kappa^{7.5})$ and tolerates a constant leakage probability $p \\approx 0.0045$. In particular, determine whether different base gadgets can reduce the asymptotic complexity, increase the tolerated leakage probability, or achieve both improvements."
+  },
+  "scope": {
+    "domain": "Construction of expanding random-probing-security compilers and their base gadgets.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "kappa: parameter in the asymptotic complexity",
+      "p: tolerated leakage probability"
+    ],
+    "unresolved_remainder": "Whether alternative base gadgets can reduce the asymptotic complexity, increase the tolerated leakage probability, or achieve both improvements."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "random-probing-security",
+      "base-gadgets",
+      "cryptographic-compilers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Random Probing Security: Verification, Composition, Expansion and New Constructions",
+        "locator": "CRYPTO 2020, page 3",
+        "doi": "10.1007/978-3-030-56784-2_12",
+        "url": "https://eprint.iacr.org/2020/786",
+        "eprint": "2020/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an existing instantiation with asymptotic complexity kappa to the 7.5 and tolerated leakage probability about 0.0045. It explicitly leaves more efficient constructions based on different base gadgets open for future work.",
+      "citation_labels": [
+        "Sonia Belaïd et al., Random Probing Security: Verification, Composition, Expansion and New Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

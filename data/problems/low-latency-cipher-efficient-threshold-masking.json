@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "low-latency-cipher-efficient-threshold-masking",
+  "group_id": "low-latency-cipher-efficient-threshold-masking",
+  "title": "Low-Latency Cipher with Efficient Threshold Masking",
+  "summary": "Proper threshold masking is incompatible with fully unrolled architectures; it remains open to design a strong cipher that is low-latency unrolled and efficiently masked when round-based.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A cipher-design gap remains: construct a cryptographically strong cipher that has low latency in both fully unrolled and round-based implementations, while also admitting a threshold-implementation-masked round-based implementation that is efficient in both area and latency for applications requiring provably secure side-channel-analysis protection."
+  },
+  "scope": {
+    "domain": "Block-cipher design for low-latency hardware and threshold-implementation side-channel protection.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Implementation architecture: fully unrolled and round-based forms are both subject to latency requirements",
+      "Area and latency: efficiency measures for the threshold-masked round-based implementation"
+    ],
+    "unresolved_remainder": "Construct a cryptographically strong cipher meeting both latency goals and providing an area- and latency-efficient threshold-masked round-based implementation for provably secure side-channel protection."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "block-ciphers",
+      "low-latency",
+      "threshold-masking"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Side-Channel Analysis Protection and Low-Latency in Action - - Case Study of PRINCE and Midori -",
+        "locator": "ASIACRYPT 2016, page 24",
+        "doi": "10.1007/978-3-662-53887-6_19",
+        "url": "https://eprint.iacr.org/2016/481",
+        "eprint": "2016/481"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "After analyzing PRINCE and Midori, the paper explicitly presents a “gap to fill” and does not claim a construction meeting the complete target.",
+      "citation_labels": [
+        "Amir Moradi et al., Side-Channel Analysis Protection and Low-Latency in Action - - Case Study of PRINCE and Midori -"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

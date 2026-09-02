@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-unforgeability-qind-cca2-or-cca1",
+  "group_id": "quantum-unforgeability-qind-cca2-or-cca1",
+  "title": "Does QUF Imply QIND-CCA2 or QIND-CCA1?",
+  "summary": "Conditioned on the existence of a QUF-but-not-QAE symmetric-key quantum encryption scheme, it remains open whether QUF implies QIND-CCA2, or QIND-CCA1 if the stronger implication fails.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Conditioned on the existence of a symmetric-key quantum encryption scheme satisfying quantum unforgeability (QUF) but not QAE, determine whether $\\mathrm{QUF}\\Rightarrow\\mathrm{QIND\\text{-}CCA2}$ (quantum indistinguishability under adaptive chosen-ciphertext attack); if that implication fails, determine whether $\\mathrm{QUF}\\Rightarrow\\mathrm{QIND\\text{-}CCA1}$."
+  },
+  "scope": {
+    "domain": "Security relations for symmetric-key quantum encryption schemes.",
+    "assumptions": [
+      "Existence of a symmetric-key quantum encryption scheme satisfying quantum unforgeability (QUF) but not QAE."
+    ],
+    "parameters": [
+      "QUF and QAE, the security properties defining the premise",
+      "QIND-CCA2 and QIND-CCA1, the primary and fallback implication targets"
+    ],
+    "unresolved_remainder": "Determine whether QUF implies QIND-CCA2; if that implication fails, determine whether QUF implies QIND-CCA1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "quantum-encryption",
+      "quantum-unforgeability",
+      "chosen-ciphertext-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unforgeable Quantum Encryption",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78372-7_16",
+        "url": "https://eprint.iacr.org/2017/960",
+        "eprint": "2017/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper's discussion lists this among several open questions. After asking whether a QUF-but-not-QAE scheme exists, it asks whether QUF implies QIND-CCA2 or QIND-CCA1.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Unforgeable Quantum Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

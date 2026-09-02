@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rasta-key-recovery-time-complexity",
+  "group_id": "rasta-key-recovery-time-complexity",
+  "title": "Time Complexity of Rasta Key Recovery",
+  "summary": "The source identifies Rasta's systems as a target of algebraic analysis, but their required solving time remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the time complexity of solving Rasta's non-linear Boolean key-recovery systems."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Rasta's non-linear Boolean key-recovery systems.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "the number of equations, as a broad measure of the nonlinear system size"
+    ],
+    "unresolved_remainder": "Determine the required time complexity for solving the systems."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "algebraic-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rasta: A Cipher with Low ANDdepth and Few ANDs per Bit",
+        "locator": "CRYPTO 2018, page 15",
+        "doi": "10.1007/978-3-319-96884-1_22",
+        "url": "https://eprint.iacr.org/2018/181",
+        "eprint": "2018/181"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source's discussion of algebraic attacks explicitly labels estimating the required time complexity for solving a Rasta non-linear system as an open research question.",
+      "citation_labels": [
+        "Christoph Dobraunig et al., Rasta: A Cipher with Low ANDdepth and Few ANDs per Bit"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "qind-cca2-scheme-not-upgradable-to-qae",
+  "group_id": "qind-cca2-scheme-not-upgradable-to-qae",
+  "title": "Existence of a QIND-CCA2 Scheme Not Upgradable to QAE",
+  "summary": "A prior QIND-CCA2-versus-QAE separation is repairable by changing decryption; the unresolved question is whether any separation resists such a decryption-only upgrade.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists a quantum encryption scheme that satisfies $\\mathsf{QIND\\text{-}CCA2}$ security but cannot be upgraded to $\\mathsf{QAE}$ solely by modifying its decryption function."
+  },
+  "scope": {
+    "domain": "Quantum cryptography for symmetric encryption and authenticated encryption.",
+    "assumptions": [
+      "The scheme satisfies QIND-CCA2 security."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether there exists such a scheme that cannot be upgraded to QAE solely by modifying its decryption function."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptography",
+      "authenticated-encryption",
+      "security-separation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unforgeable Quantum Encryption",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78372-7_16",
+        "url": "https://eprint.iacr.org/2017/960",
+        "eprint": "2017/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this as a final open question in its discussion, asking for a QIND-CCA2-secure scheme whose failure to achieve QAE cannot be fixed by changing only decryption.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Unforgeable Quantum Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

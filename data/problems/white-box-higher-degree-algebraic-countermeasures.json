@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "white-box-higher-degree-algebraic-countermeasures",
+  "group_id": "white-box-higher-degree-algebraic-countermeasures",
+  "title": "White-Box Countermeasures Against Higher-Degree Algebraic Attacks",
+  "summary": "The BU-model and quadratic masking were proposed to protect white-box implementations from linear algebraic attacks, but higher-degree countermeasures remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For white-box implementations, the BU-model and a quadratic masking scheme had been proposed to protect against linear algebraic attacks, while countermeasures against higher-degree attacks remained unresolved. The open problem is to develop or identify countermeasures that protect white-box implementations against higher-degree algebraic attacks."
+  },
+  "scope": {
+    "domain": "Protection of white-box implementations against algebraic cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Attack degree: distinguishes linear algebraic attacks from higher-degree algebraic attacks"
+    ],
+    "unresolved_remainder": "Develop or identify countermeasures that protect white-box implementations against higher-degree algebraic attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "white-box-cryptography",
+      "algebraic-cryptanalysis",
+      "higher-degree-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Dummy Shuffling against Algebraic Attacks in White-box Implementations",
+        "locator": "EUROCRYPT 2021, page 1",
+        "doi": "10.1007/978-3-030-77886-6_8",
+        "url": "https://eprint.iacr.org/2021/290",
+        "eprint": "2021/290"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the BU-model and quadratic masking as protection against linear algebraic attacks, then explicitly states that countermeasures against higher-degree attacks were left open.",
+      "citation_labels": [
+        "Alex Biryukov et al., Dummy Shuffling against Algebraic Attacks in White-box Implementations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

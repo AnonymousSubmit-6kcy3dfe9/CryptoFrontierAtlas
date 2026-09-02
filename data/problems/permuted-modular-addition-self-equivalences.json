@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "permuted-modular-addition-self-equivalences",
+  "group_id": "permuted-modular-addition-self-equivalences",
+  "title": "Self-Equivalence Groups of Permuted Modular Addition",
+  "summary": "Exact counts are known for word sizes 3–5, with matching lower bounds through 64; prove or refute that the same counts are exact for every word size at least 3.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For permuted modular addition with word size $n$, prove or refute the conjecture that, for every integer $n \\ge 3$, its full affine self-equivalence group has cardinality $3\\cdot 2^{2n+8}$ and its full linear self-equivalence group has cardinality $3\\cdot 2^{2n+2}$. These formulas give the exact cardinalities for $n\\in\\{3,4,5\\}$; for $6\\le n\\le 64$, self-equivalences attaining these cardinalities are known only as lower bounds on the full groups."
+  },
+  "scope": {
+    "domain": "Algebraic structure of affine and linear self-equivalences of permuted modular addition.",
+    "assumptions": [
+      "n is an integer at least 3."
+    ],
+    "parameters": [
+      "n: word size of permuted modular addition"
+    ],
+    "unresolved_remainder": "Prove or refute that the conjectured counts are the exact cardinalities of the full affine and linear self-equivalence groups for every integer n at least 3."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "modular-addition",
+      "self-equivalences",
+      "algebraic-structures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Implicit White-Box Implementations: White-Boxing ARX Ciphers",
+        "locator": "CRYPTO 2022, page 21",
+        "doi": "10.1007/978-3-031-15802-5_2",
+        "url": "https://eprint.iacr.org/2022/428",
+        "eprint": "2022/428"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures the two group cardinalities after establishing exactness for word sizes 3–5 and constructing matching-size subsets for word sizes 6–64, yielding only lower bounds there.",
+      "citation_labels": [
+        "Adrián Ranea et al., Implicit White-Box Implementations: White-Boxing ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

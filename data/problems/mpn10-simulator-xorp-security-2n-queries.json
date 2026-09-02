@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mpn10-simulator-xorp-security-2n-queries",
+  "group_id": "mpn10-simulator-xorp-security-2n-queries",
+  "title": "MPN10 Simulator Security for XORP up to 2^n Queries",
+  "summary": "The paper establishes full indifferentiable security with a simulator that differs on backward queries, but whether the original MPN10 simulator reaches the conjectured query threshold remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does the original MPN10 simulator provide indifferentiable security for XORP up to $2^n$ queries?"
+  },
+  "scope": {
+    "domain": "Indifferentiability security of XORP, with emphasis on the query limit of the original simulator.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "2^n: the conjectured query threshold"
+    ],
+    "unresolved_remainder": "Prove or refute whether the original MPN10 simulator itself provides the stated indifferentiable-security guarantee for XORP."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "indifferentiable-security",
+      "xorp",
+      "query-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Full Indifferentiable Security of the Xor of Two or More Random Permutations Using the \\chi ^2 Method",
+        "locator": "EUROCRYPT 2018, page 3",
+        "doi": "10.1007/978-3-319-78381-9_15",
+        "url": "https://eprint.iacr.org/2018/169",
+        "eprint": "2018/169"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the original MPN10 simulator's security claim as a conjecture about its query capacity. The paper's proof uses a simulator that differs on backward queries, so it does not settle the original-simulator claim.",
+      "citation_labels": [
+        "Srimanta Bhattacharya et al., Full Indifferentiable Security of the Xor of Two or More Random Permutations Using the \\chi ^2 Method"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

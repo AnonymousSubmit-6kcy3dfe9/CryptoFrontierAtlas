@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linalg-bwc-block-wiedemann-fixes",
+  "group_id": "linalg-bwc-block-wiedemann-fixes",
+  "title": "Fix linalg/bwc for General-Purpose Block Wiedemann",
+  "summary": "A square-matrix workaround sufficed for the reduced-cipher experiment, but resolving the software limitation for general Block Wiedemann use remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Diagnose and fix the linalg/bwc padding and matrix-shape issues to obtain a general-purpose implementation of the Block Wiedemann algorithm."
+  },
+  "scope": {
+    "domain": "Algebraic-cryptanalysis tooling for Block Wiedemann linear algebra.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Resolve the linalg/bwc padding and matrix-shape issues and obtain a general-purpose Block Wiedemann implementation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "block-wiedemann",
+      "sparse-linear-algebra"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Elisabeth-4",
+        "locator": "ASIACRYPT 2023, page 21",
+        "doi": "10.1007/978-981-99-8727-6_9",
+        "url": "https://eprint.iacr.org/2023/1436",
+        "eprint": "2023/1436"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that a square-matrix workaround was sufficient for the reduced-cipher experiment. It explicitly leaves investigation and resolution of the linalg/bwc issues as an open problem.",
+      "citation_labels": [
+        "Henri Gilbert et al., Cryptanalysis of Elisabeth-4"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-for-3-round-kacs-with-identical-key-schedules",
+  "group_id": "tight-security-for-3-round-kacs-with-identical-key-schedules",
+  "title": "Tight Security for 3-Round KACs with Identical Key Schedules",
+  "summary": "Good-key analysis is resolved for the stated sub-key independence level, but bounding bad keys to prove tight security for 3-round KACs with identical key schedules remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For key-alternating ciphers (KACs), the good-key analysis has been resolved for sub-keys satisfying $p^{t-2q}$-wise independence. The unresolved problem is to develop a new method for bounding the bad keys and thereby prove tight security for 3-round KACs whose sub-keys use identical key schedules. The task is to establish this tight-security result under the identical-schedule condition, with $p^{t-2q}$-wise independent sub-keys as the stated baseline."
+  },
+  "scope": {
+    "domain": "Tight-security analysis of 3-round key-alternating block ciphers whose sub-keys use identical key schedules.",
+    "assumptions": [
+      "Sub-keys satisfy $p^{t-2q}$-wise independence as the stated baseline."
+    ],
+    "parameters": [
+      "3 rounds: target KAC round count",
+      "$p^{t-2q}$-wise independence: baseline independence level for the sub-keys"
+    ],
+    "unresolved_remainder": "Develop new bad-key bounds and use them to prove tight security for 3-round KACs with identical key schedules."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "key-alternating-ciphers",
+      "tight-security",
+      "key-schedules"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys",
+        "locator": "ASIACRYPT 2021, page 26",
+        "doi": "10.1007/978-3-030-92078-4_15",
+        "url": "https://eprint.iacr.org/2021/1571",
+        "eprint": "2021/1571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports the good-key analysis as resolved for $p^{t-2q}$-wise independent sub-keys and identifies bad-key bounding as the missing step toward tight security for identical-schedule 3-round KACs.",
+      "citation_labels": [
+        "Stefano Tessaro et al., Tight Security for Key-Alternating Ciphers with Correlated Sub-Keys"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

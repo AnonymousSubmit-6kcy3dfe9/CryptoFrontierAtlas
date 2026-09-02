@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "complexity-estimates-full-mimc-algebraic-attack",
+  "group_id": "complexity-estimates-full-mimc-algebraic-attack",
+  "title": "Complexity of the Full MiMC Algebraic Attack",
+  "summary": "General complexity estimation for the attack's solving steps is difficult; reliable estimates for the complete procedure remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved problem is to obtain reliable complexity estimates for solving the multivariate polynomial systems arising from the generic algebraic attack on full MiMC. The relevant solution procedure computes a Gr?bner basis in degree-reverse-lexicographic order, converts it to lexicographic order, factorizes a univariate polynomial in the resulting basis, and back-substitutes its roots. General complexity estimation for these steps is difficult; the needed analysis should quantify the cost of the complete procedure, including Gr?bner-basis computation and subsequent solving, for generic systems with $N$ polynomials in $V$ variables over a base field $F$ and degree of regularity $D_{\\mathrm{reg}}$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of full MiMC using multivariate polynomial-system solving.",
+    "assumptions": [
+      "The systems are generic."
+    ],
+    "parameters": [
+      "N: number of polynomials",
+      "V: number of variables",
+      "F: base field",
+      "D_reg: degree of regularity"
+    ],
+    "unresolved_remainder": "Obtain reliable complexity estimates for the complete solving procedure, including Gr?bner-basis computation and subsequent solving."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "complexity-estimation",
+      "full-mimc"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC",
+        "locator": "ASIACRYPT 2020, page 40",
+        "doi": "10.1007/978-3-030-64837-4_16",
+        "url": "https://eprint.iacr.org/2020/182",
+        "eprint": "2020/182"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source describes the Gröbner-basis-based solving workflow and states that estimating the complexity of its steps is generally hard. It presents complexity estimation for the complete workflow as the unresolved problem.",
+      "citation_labels": [
+        "Maria Eichlseder et al., An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

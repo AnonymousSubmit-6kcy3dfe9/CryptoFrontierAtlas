@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-t-depth-quantum-aes-round-boundaries",
+  "group_id": "minimum-t-depth-quantum-aes-round-boundaries",
+  "title": "Minimum T-depth of Quantum AES Under Round Boundaries",
+  "summary": "An improved quantum AES construction uses a theoretically minimal T-depth-3 S-box; prove or disprove its overall T-depth minimality when optimization stays within AES round boundaries.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or disprove that the improved quantum AES circuit construction based on an AES S-box circuit of $T$-depth $3$ has minimum $T$-depth among quantum AES circuits optimized without crossing the natural hierarchical boundaries formed by AES round functions; equivalently, any further $T$-depth reduction requires optimization across those boundaries."
+  },
+  "scope": {
+    "domain": "Quantum circuit synthesis and T-depth optimization for AES.",
+    "assumptions": [
+      "Optimization does not cross the natural hierarchical boundaries formed by AES round functions."
+    ],
+    "parameters": [
+      "T-depth 3: the T-depth of the AES S-box circuit underlying the improved construction"
+    ],
+    "unresolved_remainder": "Prove or disprove that the construction has minimum T-depth under the restriction against optimization across AES round-function boundaries."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "quantum-circuits",
+      "aes",
+      "t-depth"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Synthesizing Quantum Circuits of AES with Lower T-depth and Less Qubits",
+        "locator": "ASIACRYPT 2022, page 28",
+        "doi": "10.1007/978-3-031-22969-5_21",
+        "url": "https://eprint.iacr.org/2022/620",
+        "eprint": "2022/620"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "After reporting improved AES circuits and an AES S-box circuit of T-depth 3, the source explicitly conjectures that no further T-depth reduction is possible without optimization across round-function boundaries.",
+      "citation_labels": [
+        "Zhenyu Huang et al., Synthesizing Quantum Circuits of AES with Lower T-depth and Less Qubits"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

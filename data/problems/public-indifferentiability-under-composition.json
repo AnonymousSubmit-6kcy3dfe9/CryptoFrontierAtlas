@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "public-indifferentiability-under-composition",
+  "group_id": "public-indifferentiability-under-composition",
+  "title": "Closure of Public Indifferentiability Under Composition",
+  "summary": "The general composition theorem does not establish public indifferentiability for composite schemes; determine whether arbitrary composition preserves it or find a counterexample.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given any two constructions that are each publicly indifferentiable, determine whether their composition must also be publicly indifferentiable. The general composition theorem cannot establish this implication for composite schemes. Either prove closure of public indifferentiability under arbitrary composition or exhibit a counterexample showing that such general closure fails."
+  },
+  "scope": {
+    "domain": "Structural composition properties of public indifferentiability.",
+    "assumptions": [
+      "Each of the two component constructions is publicly indifferentiable."
+    ],
+    "parameters": [
+      "Two arbitrary component constructions and the composition formed from them"
+    ],
+    "unresolved_remainder": "Whether public indifferentiability is closed under arbitrary composition or a counterexample disproves such closure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "public-indifferentiability",
+      "composition-theorems",
+      "cryptographic-foundations"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 21",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that the general composition theorem is inapplicable and turns to weak public indifferentiability rather than proving or refuting closure for ordinary public indifferentiability.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

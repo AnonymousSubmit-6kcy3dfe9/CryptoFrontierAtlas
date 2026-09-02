@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tidy-counterexample-blmr-security-implication",
+  "group_id": "tidy-counterexample-blmr-security-implication",
+  "title": "Tidy Counterexample to the BLMR Security Implication",
+  "summary": "The source leaves the existence of a tidy counterexample unresolved and calls its construction an interesting open question.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a tidy encryption-scheme counterexample to the BLMR security implication."
+  },
+  "scope": {
+    "domain": "Cryptographic-primitive design involving encryption schemes and the BLMR security implication.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "A tidy encryption-scheme counterexample to the BLMR security implication remains to be constructed."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "counterexamples",
+      "encryption-schemes",
+      "blmr"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Rotation for Authenticated Encryption",
+        "locator": "CRYPTO 2017, page 22",
+        "doi": "10.1007/978-3-319-63697-9_4",
+        "url": "https://eprint.iacr.org/2017/527",
+        "eprint": "2017/527"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents finding a tidy counter-example as an interesting open question.",
+      "citation_labels": [
+        "Adam Everspaugh et al., Key Rotation for Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

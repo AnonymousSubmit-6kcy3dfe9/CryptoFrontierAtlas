@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-even-mansour-data-time-lower-bound",
+  "group_id": "two-round-even-mansour-data-time-lower-bound",
+  "title": "Two-Round Even–Mansour Data–Time Lower Bound",
+  "summary": "The one-round data–time product lower bound is known, but a dedicated information-theoretic bound for two-round Even–Mansour attacks, including key recovery, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine and prove a dedicated information-theoretic lower bound relating data complexity $D$ and time complexity $T$ for attacks on two-round Even--Mansour ciphers, explicitly including key-recovery attacks. No such dedicated two-round bound is known. Any key-recovery bound must at least enforce $DT=\\Omega(2^n)$, as for the one-round construction, and must respect lower bounds for distinguishing attacks because a distinguishing attack can be derived directly from a key-recovery attack."
+  },
+  "scope": {
+    "domain": "Information-theoretic cryptanalysis of two-round Even–Mansour ciphers, including key-recovery and distinguishing attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "D: attack data complexity",
+      "T: attack time complexity",
+      "n: exponent parameter in the one-round lower-bound baseline"
+    ],
+    "unresolved_remainder": "Determine and prove a dedicated data–time lower bound for attacks on the two-round construction, including key recovery, that meets the one-round baseline and distinguishing-attack constraints."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "data-time-lower-bounds",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers",
+        "locator": "ASIACRYPT 2017, page 3",
+        "doi": "10.1007/978-3-319-70694-8_9",
+        "url": "https://eprint.iacr.org/2017/868",
+        "eprint": "2017/868"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that no dedicated information-theoretic data–time bound is known for the two-round construction. It identifies the one-round product bound and distinguishing lower bounds as necessary constraints on key recovery.",
+      "citation_labels": [
+        "Takanori Isobe et al., New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

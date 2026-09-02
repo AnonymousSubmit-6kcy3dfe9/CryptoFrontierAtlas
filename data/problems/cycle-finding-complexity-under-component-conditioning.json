@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cycle-finding-complexity-under-component-conditioning",
+  "group_id": "cycle-finding-complexity-under-component-conditioning",
+  "title": "Cycle-Finding Complexity Under Component Conditioning",
+  "summary": "An offline estimate heuristically treats cycle-finding costs as stable under component conditioning; proving this or quantifying the resulting gap remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "An offline precomputation complexity estimate for detecting a large component with a small cycle uses a heuristic assumption about cycle-finding costs. [S1] The assumption is that the average complexity of finding a cycle from a random point of a random function is not significantly different from the average complexity of finding a cycle from a fixed random function conditioned on having a $\\nu$-component. [S1] The unresolved task is to prove this similarity or quantify the difference between the two average complexities under that conditioning. [S1]"
+  },
+  "scope": {
+    "domain": "Random-function cycle statistics for offline precomputation in symmetric cryptanalysis.",
+    "assumptions": [
+      "The average complexity of cycle finding from a random point of a random function does not significantly differ from that for a random point of a fixed random function conditioned to have a ν-component."
+    ],
+    "parameters": [
+      "ν: parameter appearing in the ν-component condition on the fixed random function"
+    ],
+    "unresolved_remainder": "Prove the claimed similarity or quantify the difference between the two average cycle-finding complexities under ν-component conditioning."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "random-functions",
+      "cycle-finding",
+      "probability-statistics"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Attack on Duplex-Based AEAD Modes using Random Function Statistics",
+        "locator": "EUROCRYPT 2023, page 16",
+        "doi": "10.1007/978-3-031-30634-1_12",
+        "url": "https://eprint.iacr.org/2023/262",
+        "eprint": "2023/262"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the offline precomputation estimate as heuristic because it relies on a conditional cycle-finding complexity comparison. It argues that significant distortion is unlikely but does not establish the comparison rigorously.",
+      "citation_labels": [
+        "Henri Gilbert et al., Generic Attack on Duplex-Based AEAD Modes using Random Function Statistics"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

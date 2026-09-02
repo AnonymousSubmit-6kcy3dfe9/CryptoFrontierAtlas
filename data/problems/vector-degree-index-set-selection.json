@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "vector-degree-index-set-selection",
+  "group_id": "vector-degree-index-set-selection",
+  "title": "Selecting a Vector-Degree Index Set",
+  "summary": "Using every input index gives the best degree-estimation accuracy but costs exponential time and space; finding a resource-aware selection rule remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the vector numeric mapping applied to a function $g$ with $m$ inputs, determine a suitable rule for selecting the vector-degree index set $I$. Choosing all $m$ input indices, $I=[m]$, is best when only degree-estimation accuracy is considered, but the mapping's time and space complexity are exponential with respect to this set. The unresolved task is to select $I$ so as to retain useful degree-estimation accuracy while controlling both time and space costs."
+  },
+  "scope": {
+    "domain": "Vector numeric mapping for degree estimation in correlation cube cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m: number of inputs to the function g",
+      "I: vector-degree index set controlling the tradeoff between estimation accuracy and resource costs"
+    ],
+    "unresolved_remainder": "Determine how to choose the index set so that useful degree-estimation accuracy is retained while both time and space costs are controlled."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "cube-attack",
+      "automated-cryptanalysis",
+      "algebraic-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation Cube Attack Revisited:Improved Cube Search and Superpoly Recovery Techniques",
+        "locator": "ASIACRYPT 2023, page 20",
+        "doi": "10.1007/978-981-99-8727-6_7",
+        "url": "https://eprint.iacr.org/2023/1408",
+        "eprint": "2023/1408"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks how to choose the index set, identifies the full set as accuracy-optimal but exponentially costly, and points to heuristic ideas for Trivium rather than a general selection rule.",
+      "citation_labels": [
+        "Jianhua Wang et al., Correlation Cube Attack Revisited:Improved Cube Search and Superpoly Recovery Techniques"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "f4-complexity-estimation-over-rings-modulo-q",
+  "group_id": "f4-complexity-estimation-over-rings-modulo-q",
+  "title": "F4 Complexity Estimation over Rings Modulo q",
+  "summary": "F4 extends to polynomial rings modulo q, including composite q; whether finite-field complexity estimation generalizes to this setting, and how, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The F4 algorithm has been extended to polynomial rings over the integers modulo $q$, including the setting where $q$ is composite, but it is unresolved whether the standard procedure for estimating F4 complexity over finite fields can be generalized to this ring setting. The task is to determine whether such a generalization exists and, if so, how it should estimate the complexity of F4 for polynomial systems over the integers modulo $q$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis and Gröbner-basis complexity over polynomial rings modulo integers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q: modulus defining the coefficient ring, potentially composite"
+    ],
+    "unresolved_remainder": "Determine whether the standard finite-field procedure for estimating F4 complexity generalizes to polynomial rings modulo q and, if so, how to formulate the resulting estimate."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "groebner-bases",
+      "complexity-estimation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato",
+        "locator": "CRYPTO 2023, page 11",
+        "doi": "10.1007/978-3-031-38548-3_11",
+        "url": "https://eprint.iacr.org/2023/822",
+        "eprint": "2023/822"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly states that it is unclear whether the typical F4 complexity-estimation procedure generalizes to polynomial rings modulo q. It reports comparative experiments but leaves a general estimation method unresolved.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

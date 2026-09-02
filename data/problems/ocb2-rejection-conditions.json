@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ocb2-rejection-conditions",
+  "group_id": "ocb2-rejection-conditions",
+  "title": "Necessary and Sufficient Rejection Conditions for OCB2 Security",
+  "summary": "The proposed OCB2 input-rejection patch may not suffice, and the necessary and sufficient sender- and receiver-side conditions for security remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the proposed OCB2 counter-cryptanalysis patch based on rejecting selected inputs, characterize the necessary and sufficient sender- and receiver-side rejection conditions for security. The proposed change may be insufficient: the encryptor must reject every plaintext $M$ whose indexed component satisfies $M[m-1]=\\operatorname{len}(0^{n-s})$ for some $s\\in\\{1,\\ldots,n\\}$, and the decryptor must reject every ciphertext whose decrypted plaintext $M^{*}$ satisfies $M^{*}[m-1]=\\operatorname{len}(0^{n-s})$ for some such $s$. Determine whether these generalized encoded-length exclusions suffice and, if not, what additional rejection conditions are required."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, specifically authenticated-encryption security for an OCB2 input-rejection countermeasure.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "M: plaintext message",
+      "M*: plaintext obtained by decrypting a ciphertext",
+      "m: index of the referenced message component",
+      "n: upper endpoint of the s range",
+      "s: range variable from 1 through n"
+    ],
+    "unresolved_remainder": "Whether the generalized encoded-length exclusions suffice for security and, if not, which additional encryptor- and decryptor-side rejection conditions are necessary and sufficient."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ocb2",
+      "authenticated-encryption",
+      "security-conditions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality",
+        "locator": "CRYPTO 2019, page 21",
+        "doi": "10.1007/978-3-030-26948-7_1",
+        "url": "https://eprint.iacr.org/2019/311",
+        "eprint": "2019/311"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source cautions that the proposed rejection change may be insufficient and reports generalized plaintext and ciphertext rejection patterns from Section 4.4. It states that the necessary and sufficient security conditions remain under investigation.",
+      "citation_labels": [
+        "Akiko Inoue et al., Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

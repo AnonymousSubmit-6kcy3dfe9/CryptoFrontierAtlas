@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-techniques-for-gost-hash",
+  "group_id": "related-key-techniques-for-gost-hash",
+  "title": "Applying Related-Key Techniques to the GOST Hash Function",
+  "summary": "Related-key techniques apply to GOST2 and a GOST-based Davies–Meyer hash, but whether they can attack the actual GOST hash function remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A related-key differential for GOST based on 3-round local collisions has been developed, and the same techniques have been applied to GOST2 and to a Davies--Meyer hash function based on GOST; the unresolved task is to determine whether these techniques can be used to attack the actual GOST hash function."
+  },
+  "scope": {
+    "domain": "Related-key differential cryptanalysis of GOST-family block ciphers and hash functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "3 rounds: length of the local collisions underlying the related-key differential"
+    ],
+    "unresolved_remainder": "Determine whether the techniques can be used to attack the actual GOST hash function."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "related-key-attack",
+      "gost-hash"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Practical-Time Related-Key Attack on GOST with Secret S-boxes",
+        "locator": "CRYPTO 2023, page 30",
+        "doi": "10.1007/978-3-031-38548-3_7",
+        "url": "https://eprint.iacr.org/2023/374",
+        "eprint": "2023/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a related-key differential for GOST based on 3-round local collisions and applications to GOST2 and a GOST-based Davies–Meyer hash. It identifies applying these techniques to the actual GOST hash function as the main open question.",
+      "citation_labels": [
+        "Ariel Weizman et al., Practical-Time Related-Key Attack on GOST with Secret S-boxes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

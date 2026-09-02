@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "probability-of-a-unique-ff3-scale-cycle",
+  "group_id": "probability-of-a-unique-ff3-scale-cycle",
+  "title": "Probability of a Unique FF3-Scale Cycle",
+  "summary": "Prior cycle-length results support assuming that a unique cycle exists at the FF3 attack scale, but the event’s probability and asymptotic behavior remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\Pr[\\exists!$ a cycle of length approximately $\\widetilde{O}(N^{3/2})$ in a random permutation on $N^2$ points$]$, and its asymptotic behavior."
+  },
+  "scope": {
+    "domain": "Probabilistic combinatorics of permutation cycles relevant to the FF3 cycle-structure attack.",
+    "assumptions": [
+      "The probability is taken over a random permutation on N squared points."
+    ],
+    "parameters": [
+      "N: sets the permutation domain to N squared points and the target cycle length to approximately O-tilde of N to the three-halves"
+    ],
+    "unresolved_remainder": "Determine the probability that exactly one target-scale cycle exists and characterize the probability's asymptotic behavior."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "permutation-cycles",
+      "probabilistic-combinatorics",
+      "ff3-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Three Third Generation Attacks on the Format Preserving Encryption Scheme FF3",
+        "locator": "EUROCRYPT 2021, page 16",
+        "doi": "10.1007/978-3-030-77886-6_5",
+        "url": "https://eprint.iacr.org/2021/335",
+        "eprint": "2021/335"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper invokes prior cycle-length results to present existence and uniqueness at the relevant FF3 attack scale as reasonable assumptions motivating the cycle-structure attack.",
+      "citation_labels": [
+        "Ohad Amon et al., Three Third Generation Attacks on the Format Preserving Encryption Scheme FF3"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

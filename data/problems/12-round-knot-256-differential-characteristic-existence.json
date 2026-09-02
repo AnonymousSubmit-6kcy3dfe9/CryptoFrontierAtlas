@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "12-round-knot-256-differential-characteristic-existence",
+  "group_id": "12-round-knot-256-differential-characteristic-existence",
+  "title": "12-Round KNOT-256 Differential Characteristic Existence",
+  "summary": "The ten dominant characteristics have zero probability, while the search found no qualifying characteristic; whether any exists remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the 12-round KNOT-256 differential has a characteristic with average probability at least $2^{-70}$ and nonzero probability under the default round constants."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of KNOT-256 in the fixed-key model.",
+    "assumptions": [
+      "The default round constants are used."
+    ],
+    "parameters": [
+      "Round count: 12 rounds",
+      "KNOT-256 differential: the differential object under study",
+      "Average probability: threshold of at least 2^-70",
+      "Probability status: must be nonzero"
+    ],
+    "unresolved_remainder": "Whether a characteristic satisfying both probability conditions exists under the default round constants; the reported search does not prove nonexistence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "knot-256",
+      "automated-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Differential Cryptanalysis in the Fixed-Key Model",
+        "locator": "CRYPTO 2022, page 23",
+        "doi": "10.1007/978-3-031-15982-4_23",
+        "url": "https://eprint.iacr.org/2022/837",
+        "eprint": "2022/837"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes zero probability for each of the ten dominant characteristics and reports no characteristic meeting the threshold with nonzero probability. It consequently says the related forgery and collision attacks are unlikely to be valid, without proving their invalidity.",
+      "citation_labels": [
+        "Tim Beyne et al., Differential Cryptanalysis in the Fixed-Key Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

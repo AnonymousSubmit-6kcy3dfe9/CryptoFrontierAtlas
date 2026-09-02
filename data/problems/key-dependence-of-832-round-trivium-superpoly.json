@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-dependence-of-832-round-trivium-superpoly",
+  "group_id": "key-dependence-of-832-round-trivium-superpoly",
+  "title": "Key Dependence of the 832-Round Trivium Superpoly",
+  "summary": "A cube superpoly was recovered for 832-round Trivium, but whether it is key-dependent and permits partial key recovery rather than only distinguishing remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Todo et al.'s proposed attack on $832$-round Trivium, the superpoly of a size-$72$ cube was recovered with preprocessing time $2^{77}$. Determine whether this superpoly depends on the key: key dependence would permit extraction of at most one key-bit expression, whereas key independence would leave only a distinguisher."
+  },
+  "scope": {
+    "domain": "Cube cryptanalysis of the 832-round reduced variant of Trivium.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "832 rounds: reduced-round Trivium target",
+      "72: size of the cube",
+      "2^77: preprocessing time for recovering the superpoly"
+    ],
+    "unresolved_remainder": "Determine whether the recovered superpoly depends on the key; key dependence would permit extraction of at most one key-bit expression, while key independence would leave only a distinguisher."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [],
+    "tags": [
+      "cube-attack",
+      "trivium",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery",
+        "locator": "EUROCRYPT 2018, page 4",
+        "doi": "10.1007/978-3-319-78375-8_23",
+        "url": "https://eprint.iacr.org/2018/158",
+        "eprint": "2018/158"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the earlier result as a possible partial key recovery and leaves both key dependence and key independence as possible outcomes.",
+      "citation_labels": [
+        "Meicheng Liu et al., Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

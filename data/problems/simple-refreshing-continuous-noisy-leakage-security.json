@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simple-refreshing-continuous-noisy-leakage-security",
+  "group_id": "simple-refreshing-continuous-noisy-leakage-security",
+  "title": "Security of Simple Refreshing Under Continuous Noisy Leakage",
+  "summary": "The scheme has sufficient security against concrete higher-order side-channel attacks, but its security under continuous noisy leakage and repeated observations remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The target is the simple refreshing scheme. Although this scheme has been shown to provide sufficient security against concrete higher-order side-channel attacks, its security in the continuous noisy leakage model remains unresolved. The task is to determine whether the scheme remains secure under repeated noisy observations, including the setting where three probes may not reveal an intermediate value exactly and another three probes with independent noise may provide little additional information."
+  },
+  "scope": {
+    "domain": "Side-channel security of masking refresh schemes under continuous noisy leakage.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "simple refreshing scheme (target construction)",
+      "continuous noisy leakage model (leakage setting)",
+      "repeated noisy observations (observation pattern)"
+    ],
+    "unresolved_remainder": "Determine whether the simple refreshing scheme remains secure in the continuous noisy leakage model under repeated noisy observations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "noisy-leakage"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 24",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents investigation of the simple refreshing scheme in the continuous noisy leakage model as an interesting open problem. It contrasts this unresolved case with the scheme's sufficient security against concrete higher-order side-channel attacks.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

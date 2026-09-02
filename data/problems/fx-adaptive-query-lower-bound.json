@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fx-adaptive-query-lower-bound",
+  "group_id": "fx-adaptive-query-lower-bound",
+  "title": "Adaptive Classical-Query Bound for FX",
+  "summary": "For FX, the bound is established and matched by a non-adaptive attack for non-adaptive classical queries; whether it extends to adaptive queries remains unproved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the FX construction, given $D$ non-adaptive classical chosen-plaintext queries, a quantum adversary requires at least $2^{n+\\kappa}/D$ quantum queries to the underlying cipher $E$ to recover the key, and a matching attack is also non-adaptive. The unresolved question is whether the same quantum query lower bound, $2^{n+\\kappa}/D$, remains valid when the classical chosen-plaintext queries are adaptive, for an $n$-bit block size and a $\\kappa$-bit key."
+  },
+  "scope": {
+    "domain": "Quantum query complexity for key recovery in symmetric cryptanalysis of the FX construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "D, the number of classical chosen-plaintext queries",
+      "n, the block size in bits",
+      "kappa, the key size in bits"
+    ],
+    "unresolved_remainder": "Determine whether the same quantum-query lower bound remains valid when the classical chosen-plaintext queries are adaptive."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "query-complexity",
+      "chosen-plaintext"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond quadratic speedups in quantum attacks on symmetric schemes",
+        "locator": "EUROCRYPT 2022, page 8",
+        "doi": "10.1007/978-3-031-07082-2_12",
+        "url": "https://eprint.iacr.org/2021/1348",
+        "eprint": "2021/1348"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a lower bound and matching non-adaptive attack for non-adaptive classical chosen-plaintext queries. It identifies extending the same bound to adaptive classical queries as likely but not formally proven.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Beyond quadratic speedups in quantum attacks on symmetric schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

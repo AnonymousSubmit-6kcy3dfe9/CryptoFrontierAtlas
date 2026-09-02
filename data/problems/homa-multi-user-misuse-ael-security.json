@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "homa-multi-user-misuse-ael-security",
+  "group_id": "homa-multi-user-misuse-ael-security",
+  "title": "Multi-User and Misuse AEL Security for HOMA",
+  "summary": "HOMA's existing AEL-security proof excludes multi-user and misuse settings; extending the notion and proving HOMA secure there remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend AEL security to the multi-user and misuse settings by allowing multiple users and adversarial misuse queries, and prove HOMA secure under this extended notion. HOMA's existing AEL-security proof does not cover these settings."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security for HOMA under multi-user and misuse extensions of AEL security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Multiple users, defining the multi-user extension",
+      "Adversarial misuse queries, defining the misuse extension"
+    ],
+    "unresolved_remainder": "Prove HOMA secure under the AEL-security notion extended to both settings."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "multi-user-security",
+      "misuse-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Secret Can Be Public: Low-Memory AEAD Mode for High-Order Masking",
+        "locator": "CRYPTO 2022, page 14",
+        "doi": "10.1007/978-3-031-15982-4_11",
+        "url": "https://eprint.iacr.org/2022/812",
+        "eprint": "2022/812"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that its HOMA security proof does not cover multi-user or misuse settings and describes extending AEL security with multiple users and misuse queries. A proof for HOMA under that extension remains unresolved.",
+      "citation_labels": [
+        "Yusuke Naito et al., Secret Can Be Public: Low-Memory AEAD Mode for High-Order Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

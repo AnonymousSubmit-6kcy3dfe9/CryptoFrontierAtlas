@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "polytopic-trail-summation-scalability",
+  "group_id": "polytopic-trail-summation-scalability",
+  "title": "Scalability of Polytopic-Trail Summation",
+  "summary": "The analysis requires summing many polytopic trails, while whether their number remains computationally manageable as cipher rounds grow is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a given cipher, obtaining a higher-order differential whose probability exceeds that of any ordinary differential requires summing probabilities over many polytopic trails. The unresolved question is whether the number of polytopic trails that must be summed can remain computationally manageable as the number of cipher rounds becomes large."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of higher-order differentials using polytopic trails.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "number of cipher rounds, the scale variable for assessing computational manageability",
+      "number of polytopic trails, the quantity whose probabilities must be summed"
+    ],
+    "unresolved_remainder": "Whether the number of polytopic trails that must be summed can remain computationally manageable as the number of cipher rounds becomes large."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "polytopic-cryptanalysis",
+      "higher-order-differentials",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polytopic Cryptanalysis",
+        "locator": "EUROCRYPT 2016, page 27",
+        "doi": "10.1007/978-3-662-49890-3_9",
+        "url": "https://eprint.iacr.org/2016/160",
+        "eprint": "2016/160"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that obtaining a higher-order differential exceeding any ordinary differential requires summing over many polytopic trails. It leaves open whether this number remains manageable for a large number of rounds.",
+      "citation_labels": [
+        "Tyge Tiessen et al., Polytopic Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

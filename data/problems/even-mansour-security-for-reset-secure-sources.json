@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-mansour-security-for-reset-secure-sources",
+  "group_id": "even-mansour-security-for-reset-secure-sources",
+  "title": "Even–Mansour Security for Reset-Secure Sources",
+  "summary": "Even–Mansour pseudorandom-permutation security is known for computationally unpredictable sources, while the extension to reset-secure sources remains conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the random-permutation model, the Even–Mansour construction has a pseudorandom-permutation security theorem for computationally unpredictable sources. The unresolved task is to prove the corresponding pseudorandom-permutation theorem when the source is computationally reset-secure, a conjectured extension whose proof appears nontrivial; establishing it would validate the assumption used for the seeded sponge application."
+  },
+  "scope": {
+    "domain": "Public-seed pseudorandom permutations based on the Even–Mansour construction in the random-permutation model.",
+    "assumptions": [
+      "The analysis is in the random-permutation model.",
+      "The target source is computationally reset-secure."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove the corresponding Even–Mansour pseudorandom-permutation security theorem for computationally reset-secure sources."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "pseudorandom-permutations",
+      "reset-secure-sources"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Public-Seed Pseudorandom Permutations",
+        "locator": "EUROCRYPT 2017, page 24",
+        "doi": "10.1007/978-3-319-56614-6_14",
+        "url": "https://eprint.iacr.org/2017/539",
+        "eprint": "2017/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly conjectures extending its Even–Mansour theorem from computationally unpredictable sources to computationally reset-secure sources. It says the statement evades a simple proof and would validate the seeded-sponge assumption.",
+      "citation_labels": [
+        "Pratik Soni et al., Public-Seed Pseudorandom Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

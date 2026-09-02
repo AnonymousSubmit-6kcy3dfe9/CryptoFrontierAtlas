@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xpx-security-simultaneous-related-key-offsets",
+  "group_id": "xpx-security-simultaneous-related-key-offsets",
+  "title": "XPX Security with Simultaneous Related-Key Offsets",
+  "summary": "Existing XPX analysis covers primitive-dependent related-key maps with at most one nonzero offset; analyzing security when both offsets may be nonzero remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For XPX with underlying permutation $P$, extend the related-key security analysis from the primitive-dependent KDF family $\\Phi_{\\oplus}^{P}$ of maps $\\varphi_{\\delta,\\varepsilon}(k)=P^{-1}(P(k)\\oplus\\varepsilon)\\oplus\\delta$, restricted by $\\delta=0\\lor\\varepsilon=0$, to the full family obtained by removing this side condition and thus permitting $\\delta$ and $\\varepsilon$ to be nonzero simultaneously. The open task is to analyze XPX security in this enlarged related-key model."
+  },
+  "scope": {
+    "domain": "XPX related-key security for primitive-dependent KDF families in block-cipher design.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "P: the underlying permutation used by XPX and the KDF maps",
+      "k: the key input to a related-key map",
+      "delta and epsilon: XOR offsets that may both be nonzero in the enlarged family"
+    ],
+    "unresolved_remainder": "Analyze XPX related-key security for the full primitive-dependent KDF family after removing the restriction that at most one offset is nonzero."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "related-key-security",
+      "tweakable-block-ciphers",
+      "xpx"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "XPX: Generalized Tweakable Even-Mansour with Improved Security Guarantees",
+        "locator": "CRYPTO 2016, page 8",
+        "doi": "10.1007/978-3-662-53018-4_3",
+        "url": "https://eprint.iacr.org/2015/476",
+        "eprint": "2015/476"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper analyzes XPX under a side condition allowing only one of the two KDF offsets to be nonzero. It presents removal of that condition as theoretically interesting but technically demanding for the security analysis.",
+      "citation_labels": [
+        "Bart Mennink et al., XPX: Generalized Tweakable Even-Mansour with Improved Security Guarantees"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

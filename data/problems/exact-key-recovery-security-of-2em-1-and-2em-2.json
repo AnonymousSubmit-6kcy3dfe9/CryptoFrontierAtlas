@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-key-recovery-security-of-2em-1-and-2em-2",
+  "group_id": "exact-key-recovery-security-of-2em-1-and-2em-2",
+  "title": "Exact Key-Recovery Security of 2EM-1 and 2EM-2",
+  "summary": "A proved lower bound and known upper bound leave a gap for 2EM-1 and 2EM-2; determine their exact key-recovery security and a tight data–time tradeoff.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the exact key-recovery security of the minimal two-round Even--Mansour ciphers $\\mathrm{2EM\\text{-}1}$ and $\\mathrm{2EM\\text{-}2}$ by closing the gap between the proved lower bound and the known upper bound on their data--time complexity, thereby obtaining a tight data--time tradeoff for key recovery."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of key recovery for the minimal two-round Even–Mansour ciphers 2EM-1 and 2EM-2.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Data complexity: amount of data used by a key-recovery attack",
+      "Time complexity: computational work of a key-recovery attack"
+    ],
+    "unresolved_remainder": "Close the gap between the proved lower bound and known upper bound to establish the exact key-recovery security and a tight data–time tradeoff for both ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "key-recovery",
+      "data-time-tradeoff"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers",
+        "locator": "ASIACRYPT 2017, page 3",
+        "doi": "10.1007/978-3-319-70694-8_9",
+        "url": "https://eprint.iacr.org/2017/868",
+        "eprint": "2017/868"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly states that the accurate security of the two-round construction remains unknown because its proved lower bound and presented upper bound do not meet. Its new attacks narrow the upper-bound gap but do not establish a matching lower bound.",
+      "citation_labels": [
+        "Takanori Isobe et al., New Key Recovery Attacks on Minimal Two-Round Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

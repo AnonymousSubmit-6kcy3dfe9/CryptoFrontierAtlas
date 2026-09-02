@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "uniform-sharing-of-the-aes-s-box",
+  "group_id": "uniform-sharing-of-the-aes-s-box",
+  "title": "Uniform Sharing of the AES S-box",
+  "summary": "No uniform sharing of the AES S-box is currently known; the open task is to construct one suitable for bounded-query cryptanalysis while accounting for altered diffusion and the resulting need for more detailed security analysis.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether one can construct a uniform sharing of the AES S-box that is suitable for bounded-query cryptanalytic analysis of a masked cipher. No such uniform sharing is currently known, and directly applying the changing-of-the-guards method would alter the diffusion of the shared cipher and require a more detailed security analysis. The unresolved construction task is therefore to find a uniform sharing of the AES S-box while addressing this diffusion-related analysis requirement."
+  },
+  "scope": {
+    "domain": "This concerns masked-cipher cryptanalysis and the design of uniform sharings for the AES S-box.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AES S-box (target component)",
+      "uniform sharing (required construction property)",
+      "bounded-query cryptanalytic analysis (suitability criterion)",
+      "masked-cipher diffusion (property affected by the changing-of-the-guards method)"
+    ],
+    "unresolved_remainder": "Construct a uniform sharing of the AES S-box suitable for bounded-query cryptanalytic analysis while addressing the diffusion change and the need for more detailed security analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "aes-s-box",
+      "masked-ciphers",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Masked Ciphers: A not so Random Idea",
+        "locator": "ASIACRYPT 2020, page 27",
+        "doi": "10.1007/978-3-030-64837-4_27",
+        "url": "https://eprint.iacr.org/2020/993",
+        "eprint": "2020/993"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that no uniform sharing of the AES S-box is currently known and highlights finding one as a future-work problem. It also notes that changing-of-the-guards would alter diffusion and require more detailed security analysis.",
+      "citation_labels": [
+        "Tim Beyne et al., Cryptanalysis of Masked Ciphers: A not so Random Idea"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

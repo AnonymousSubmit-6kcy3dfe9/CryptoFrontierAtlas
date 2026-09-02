@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "one-pass-sct-like-authenticated-encryption",
+  "group_id": "one-pass-sct-like-authenticated-encryption",
+  "title": "One-Pass SCT-Like Authenticated Encryption",
+  "summary": "SCT uses two passes, which some applications may not tolerate; designing a similar one-pass mode with OAE online nonce-misuse resistance remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "SCT relies on two passes, which some applications may not tolerate. The open task is to design an authenticated-encryption mode similar to $\\mathrm{SCT}$ that uses only one pass while achieving online nonce-misuse resistance in the $\\mathrm{OAE}$ sense."
+  },
+  "scope": {
+    "domain": "Design of SCT-like authenticated-encryption modes with online nonce-misuse resistance.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Pass count: a processing constraint fixed at one for the sought mode, versus two for SCT"
+    ],
+    "unresolved_remainder": "Construct an SCT-like one-pass authenticated-encryption mode achieving online nonce-misuse resistance in the OAE sense."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "nonce-misuse-resistance",
+      "one-pass-modes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 7",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a future-work direction motivated by applications that cannot tolerate SCT's two passes. It seeks an SCT-like one-pass mode with online nonce-misuse resistance in the OAE sense.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

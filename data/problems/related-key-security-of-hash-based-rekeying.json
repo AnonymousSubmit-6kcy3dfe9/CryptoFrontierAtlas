@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "related-key-security-of-hash-based-rekeying",
+  "group_id": "related-key-security-of-hash-based-rekeying",
+  "title": "Related-Key Security of Hash-Based Re-keying",
+  "summary": "The proposed re-keying is analyzed in the ideal-cipher model, while standard-model reductions cover only more constrained methods; obtain such a reduction or find a related-key attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A hash-based re-keying mechanism derives block-cipher keys as $H(K,\\mathit{aux})$, where $\\mathit{aux}$ may be a short fixed-length value such as a counter, and its security analysis relies heavily on the ideal-cipher model. This reliance implicitly assumes related-key security of the underlying block cipher $E$ for the key relations induced by $H$. Determine whether $E$ remains secure under these induced relations, ideally by giving a standard-model security reduction for this re-keying method, or identify attacks that invalidate the assumption. Existing standard-model results cover only more involved key-derivation methods in a constrained setting where an adversary sequentially queries $B$ blocks under one key before moving to the next."
+  },
+  "scope": {
+    "domain": "Related-key cryptanalysis and standard-model security of hash-based block-cipher re-keying.",
+    "assumptions": [
+      "The security analysis uses the ideal-cipher model.",
+      "Related-key security of E is implicitly assumed for the key relations induced by H."
+    ],
+    "parameters": [
+      "K: master key used by the re-keying mechanism",
+      "aux: short fixed-length auxiliary value, such as a counter",
+      "H: hash function that derives keys and induces their relations",
+      "E: underlying block cipher whose related-key security is at issue",
+      "B: number of blocks queried sequentially under one key in the constrained prior model"
+    ],
+    "unresolved_remainder": "Determine whether E is secure under the H-induced key relations, ideally through a standard-model reduction, or exhibit attacks that invalidate the assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "related-key-security",
+      "hash-based-rekeying",
+      "standard-model-security"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds",
+        "locator": "EUROCRYPT 2018, page 16",
+        "doi": "10.1007/978-3-319-78381-9_18",
+        "url": "https://eprint.iacr.org/2018/136",
+        "eprint": "2018/136"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper flags that its analysis relies heavily on the ideal-cipher model and therefore implicitly assumes related-key security of the block cipher. It calls for careful assessment and contrasts the proposal with more involved, constrained methods having standard-model reductions.",
+      "citation_labels": [
+        "Priyanka Bose et al., Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

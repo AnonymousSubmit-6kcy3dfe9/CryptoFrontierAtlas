@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "indifferentiable-schemes-rate-2-3-gap",
+  "group_id": "indifferentiable-schemes-rate-2-3-gap",
+  "title": "Indifferentiable Schemes in the [2, 3) Rate Gap",
+  "summary": "The rate range from 2 up to but excluding 3 has no known constructions or lower bounds; the open task is to bridge the gap by finding either.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "No constructions or lower bounds are known for indifferentiable schemes with rate $r \\in [2,3)$. The open problem is to bridge this gap by constructing such schemes or proving lower bounds for them."
+  },
+  "scope": {
+    "domain": "Indifferentiability of cryptographic schemes, with structural questions about rates, constructions, and lower bounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "rate r, specifying the scheme's rate"
+    ],
+    "unresolved_remainder": "Bridge the gap by constructing indifferentiable schemes with rate r in [2,3) or proving lower bounds for them."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "rate-gap",
+      "lower-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 10",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the gap in its limitations and future-work discussion, stating that neither constructions nor lower bounds are known and that bridging it is left for future work.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

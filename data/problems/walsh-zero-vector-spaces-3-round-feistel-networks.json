@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "walsh-zero-vector-spaces-3-round-feistel-networks",
+  "group_id": "walsh-zero-vector-spaces-3-round-feistel-networks",
+  "title": "Walsh-Zero Vector Spaces in 3-Round Feistel Networks",
+  "summary": "Several families of vector spaces are known, and their count is unexpectedly large for 8-bit permutations; explaining this abundance remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a 3-round Feistel network $F$ that is a permutation on an 8-bit domain, explain why the Walsh-zero set $\\mathcal{Z}_F$ contains so many vector spaces."
+  },
+  "scope": {
+    "domain": "Structural questions in symmetric cryptanalysis about Walsh-zero sets and vector spaces of Feistel permutations.",
+    "assumptions": [
+      "F is a permutation"
+    ],
+    "parameters": [
+      "3 rounds: the Feistel-network round count",
+      "8-bit domain: the permutation domain size"
+    ],
+    "unresolved_remainder": "Explain why the Walsh-zero set contains so many vector spaces for the stated construction and domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "feistel-networks",
+      "walsh-zero-sets",
+      "vector-spaces"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anomalies and Vector Space Search: Tools for S-Box Analysis",
+        "locator": "ASIACRYPT 2019, page 25",
+        "doi": "10.1007/978-3-030-34578-5_8",
+        "url": "https://eprint.iacr.org/2019/528",
+        "eprint": "2019/528"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this as Open Problem 2 after presenting several families of vector spaces in the Walsh zeroes of 3-round Feistel networks. It observes that the number is unexpectedly large for 8-bit permutations but does not explain the phenomenon.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Anomalies and Vector Space Search: Tools for S-Box Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "otr-mask-collision-exclusion",
+  "group_id": "otr-mask-collision-exclusion",
+  "title": "Collision Exclusion for Original OTR Masks",
+  "summary": "Trivial collisions are known for special defining polynomials, but a general formal argument excluding collisions among the original OTR masks remains unavailable.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the original OTR mask polynomials over $\\mathbb{F}_{2^n}$, develop a general formal collision-exclusion argument parameterized by $n\\in\\mathbb{N}$, a primitive polynomial $P$ defining $\\mathbb{F}_{2^n}$ such that $X$ generates $\\mathbb{F}_{2^n}^{*}$, and an integer $t$ with $2<t\\le 2^{n/2}$. The argument should prove that no masks indexed by $i,j\\in[2,t]$ collide. No general formal argument establishing this exclusion is currently available."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the original OTR authenticated-encryption mask polynomials over binary finite fields.",
+    "assumptions": [
+      "The defining polynomial P is primitive, and X generates the multiplicative group of F₂ⁿ."
+    ],
+    "parameters": [
+      "n ∈ ℕ: the extension degree defining the field F₂ⁿ",
+      "P: the polynomial defining the chosen representation of F₂ⁿ",
+      "t: an integer setting the upper mask-index limit, with 2 < t ≤ 2^(n/2)",
+      "i and j: mask indices drawn from [2, t]"
+    ],
+    "unresolved_remainder": "Develop a general formal argument proving that no original OTR masks indexed by i and j in [2, t] collide under these conditions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "otr",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Trick or Tweak: On the (In)security of OTR's Tweaks",
+        "locator": "ASIACRYPT 2016, page 8",
+        "doi": "10.1007/978-3-662-53887-6_12",
+        "url": "https://eprint.iacr.org/2016/234",
+        "eprint": "2016/234"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the absence of a general formal collision-exclusion argument and reports trivial collisions for special defining polynomials, particularly trinomials and pentanomials. The general exclusion task remains open.",
+      "citation_labels": [
+        "Raphael Bost et al., Trick or Tweak: On the (In)security of OTR's Tweaks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

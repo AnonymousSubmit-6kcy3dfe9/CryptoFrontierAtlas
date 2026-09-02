@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cau-ctxt-ae-time-memory-trade-off",
+  "group_id": "cau-ctxt-ae-time-memory-trade-off",
+  "title": "CAU CTXT/AE Time-Memory Trade-Off",
+  "summary": "For CAU's CTXT or AE security, standard analyses do not appear to yield the desired time-memory trade-off, so establishing one remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can one establish a time--memory trade-off for the $\\mathrm{CTXT}$ or $\\mathrm{AE}$ security of $\\mathrm{CAU}$? The unresolved limitation is that the standard analysis of either security notion does not appear to yield such a trade-off."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security and time-memory trade-offs for the CAU construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "time and memory, the resources whose trade-off is sought"
+    ],
+    "unresolved_remainder": "Establishing a time-memory trade-off for the CTXT or AE security of CAU, since the standard analysis does not appear to yield one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "time-memory-tradeoff",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Memory-Tightness of Authenticated Encryption",
+        "locator": "CRYPTO 2020, page 11",
+        "doi": "10.1007/978-3-030-56784-2_5",
+        "url": "https://eprint.iacr.org/2020/785",
+        "eprint": "2020/785"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a limitation after its nonce-respecting INDR time-memory result for CAU: the standard CTXT/AE analysis does not appear to provide a similar trade-off. It gives CTXT and AE bounds only when CAU is used within the restricted NCH channel construction.",
+      "citation_labels": [
+        "Ashrujit Ghoshal et al., The Memory-Tightness of Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

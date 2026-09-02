@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simon32-64-neural-distinguisher-mechanism",
+  "group_id": "simon32-64-neural-distinguisher-mechanism",
+  "title": "What Simon32/64 Neural Distinguishers Learn",
+  "summary": "Observed Simon32/64 neural distinguishers perform similarly to but below one-fewer-round difference-distribution baselines; whether they only undo one unkeyed round and model differences remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{Simon32/64}$, observed $r$-round neural distinguishers achieve classification accuracy similar to, but lower than, $(r-1)$-round difference-distribution baselines. Determine whether an $r$-round neural distinguisher learns to decrypt one unkeyed round and then models only the resulting $(r-1)$-round difference distribution, learning no features beyond the distribution of differences."
+  },
+  "scope": {
+    "domain": "Differential-neural cryptanalysis of Simon32/64, comparing neural distinguishers with difference-distribution baselines.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: the neural distinguisher's round count, with r minus one rounds used for the difference-distribution baseline"
+    ],
+    "unresolved_remainder": "Determine whether the neural distinguisher only decrypts one unkeyed round and models the resulting one-fewer-round difference distribution, without learning features beyond differences."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-cryptanalysis",
+      "neural-distinguishers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Enhancing Differential-Neural Cryptanalysis",
+        "locator": "ASIACRYPT 2022, page 4",
+        "doi": "10.1007/978-3-031-22963-3_11",
+        "url": "https://eprint.iacr.org/2021/719",
+        "eprint": "2021/719"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source states this as an explicit mechanistic conjecture motivated by Simon32/64 experiments comparing neural distinguishers with difference-distribution baselines. It provides no proof of the conjectured learned behavior.",
+      "citation_labels": [
+        "Zhenzhen Bao et al., Enhancing Differential-Neural Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

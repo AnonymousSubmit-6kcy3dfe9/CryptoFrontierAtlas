@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alzette-seven-eight-round-differential-bounds",
+  "group_id": "alzette-seven-eight-round-differential-bounds",
+  "title": "Exact Differential Bounds for Seven and Eight Rounds of Alzette",
+  "summary": "For Alzette's seven- and eight-round cases, exhaustive search established upper bounds, but computational limits leave the exact maxima and tightness unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For seven and eight rounds of Alzette, determine the exact maximum expected differential characteristic probabilities over valid differential trails, equivalently the tight differential bounds. Exhaustive search established upper bounds of $2^{-24}$ and $2^{-32}$ for seven and eight rounds, respectively, but did not terminate in reasonable time and therefore did not determine whether these bounds are tight."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the 64-bit Alzette ARX-box.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Seven rounds: the first target round count",
+      "Eight rounds: the second target round count",
+      "Valid differential trails: the admissible trails over which the maximum is taken",
+      "Expected differential characteristic probability: the quantity to maximize",
+      "2^-24 and 2^-32: established upper bounds for seven and eight rounds, respectively"
+    ],
+    "unresolved_remainder": "Determine the exact maximum expected differential characteristic probabilities for seven and eight rounds and establish whether the respective upper bounds are tight."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "automated-cryptanalysis",
+      "arx-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 10",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that its search produced maximum-probability trails through six rounds but did not terminate in reasonable time for seven or eight rounds. Exhaustive search established upper bounds for those cases, leaving their tightness unresolved.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

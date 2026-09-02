@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "slide-attacks-on-other-general-spn-constructions",
+  "group_id": "slide-attacks-on-other-general-spn-constructions",
+  "title": "Slide Attacks on Other General SPN Constructions",
+  "summary": "The paper reports slide attacks on various general SPN schemes, while leaving open whether its techniques yield new attacks against other such constructions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Existing techniques for slide attacks, including slid sets, hypercubes of slid pairs, suggestive plaintext structures, and substitution slides, have produced attacks against various general SPN schemes spanning different key periods, last-round structures, S-box knowledge assumptions, and diffusion completeness. The unresolved task is to apply these techniques to other general SPN constructions and determine whether they yield new slide attacks against those constructions."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of general SPN constructions using slide-attack techniques.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Key period, last-round structure, S-box knowledge, and diffusion completeness as varying construction and attack-setting dimensions"
+    ],
+    "unresolved_remainder": "Apply the listed slide-attack techniques to other general SPN constructions and determine whether they yield new slide attacks against them."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "slide-attacks",
+      "spn-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Slide Attacks on Almost Self-Similar Ciphers",
+        "locator": "EUROCRYPT 2020, page 29",
+        "doi": "10.1007/978-3-030-45721-1_10",
+        "url": "https://eprint.iacr.org/2019/509",
+        "eprint": "2019/509"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this as an open problem for further work after reporting attacks on various general SPN schemes. It asks whether the paper's techniques can produce attacks on other general SPN constructions.",
+      "citation_labels": [
+        "Orr Dunkelman et al., New Slide Attacks on Almost Self-Similar Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

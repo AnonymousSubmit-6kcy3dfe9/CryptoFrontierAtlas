@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "karc2-fixed-point-security-bound",
+  "group_id": "karc2-fixed-point-security-bound",
+  "title": "KARC2 Fixed-Point Security Bound",
+  "summary": "Existing mirror-slide attacks make the current lower-bound term unavoidable for some reflectors, while the restricted case remains open to matching attacks or an improved bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For KARC2 with even block length $n$ and a linear involutory reflector $R$ having exactly $2^{n/2}$ fixed points, either construct attacks matching the existing security lower bound or improve that lower bound for this restricted case. Existing mirror-slide attacks establish that an $O(q^2/2^n)$ term is unavoidable for some choices of $R$, but do not settle the stated fixed-point regime."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the KARC2 reflection cipher and its security bound.",
+    "assumptions": [
+      "The block length n is even",
+      "R is a linear involutory reflector with exactly 2^(n/2) fixed points"
+    ],
+    "parameters": [
+      "n: block length",
+      "R: reflector whose fixed-point count defines the restricted case",
+      "q: query count in the known attack-bound term"
+    ],
+    "unresolved_remainder": "For the stated fixed-point regime, construct attacks matching the existing security lower bound or improve that bound; the existing mirror-slide result does not settle this case."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "block-cipher",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 12",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves this fixed-point regime as future work after showing that mirror-slide attacks make the existing lower-bound term unavoidable for some choices of the reflector. It frames the open direction as finding matching attacks or improving the security lower bound.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

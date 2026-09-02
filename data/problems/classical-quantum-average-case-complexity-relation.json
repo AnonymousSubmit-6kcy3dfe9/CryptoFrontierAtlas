@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "classical-quantum-average-case-complexity-relation",
+  "group_id": "classical-quantum-average-case-complexity-relation",
+  "title": "Classical-Quantum Average-Case Complexity Relation",
+  "summary": "Known total-function query-complexity relations do not settle whether classical and quantum average-case complexities are polynomially related in general for this cryptanalytic setting.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For ideal-model symmetric cryptanalytic problems in the relevant average-case setting, determine whether a polynomial relationship exists in general between the classical and quantum average-case complexities. Known randomized-versus-quantum query-complexity relations for total functions do not directly settle this average-case cryptanalytic setting."
+  },
+  "scope": {
+    "domain": "Mathematical foundations of classical and quantum average-case complexity in ideal-model symmetric cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether a polynomial relationship exists in general between the classical and quantum average-case complexities in the relevant cryptanalytic setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "quantum-complexity",
+      "average-case"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond quadratic speedups in quantum attacks on symmetric schemes",
+        "locator": "EUROCRYPT 2022, page 28",
+        "doi": "10.1007/978-3-031-07082-2_12",
+        "url": "https://eprint.iacr.org/2021/1348",
+        "eprint": "2021/1348"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts its average-case cryptanalytic setting with known randomized-versus-quantum query-complexity relations for total functions and states that no general polynomial relation is currently known.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Beyond quadratic speedups in quantum attacks on symmetric schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

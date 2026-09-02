@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "memory-tight-ae-ctxt-equivalence",
+  "group_id": "memory-tight-ae-ctxt-equivalence",
+  "title": "Memory-Tight Equivalence of AE-w and CTXT-w Notions",
+  "summary": "Only the memory-tight implication from w=2 to w=3 is known; whether the AE and CTXT variants remain fully equivalent under such reductions is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $x\\in\\{\\mathrm{AE},\\mathrm{CTXT}\\}$, do the $x$-$w$ notions for $w\\in\\{1,2,3\\}$ remain equivalent via memory-tight reductions beyond $2\\Rightarrow3$?"
+  },
+  "scope": {
+    "domain": "Authenticated-encryption and ciphertext-integrity security notions under memory-tight oracle-game reductions.",
+    "assumptions": [
+      "The adversary's storage of the relevant message data is not treated as free."
+    ],
+    "parameters": [
+      "x selects the AE or CTXT notion family",
+      "w selects the variant with value 1, 2, or 3"
+    ],
+    "unresolved_remainder": "Whether the remaining equivalences among the w-variants admit memory-tight reductions beyond the known implication from w=2 to w=3."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "ciphertext-integrity",
+      "memory-tight-reductions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Memory-Tightness of Authenticated Encryption",
+        "locator": "CRYPTO 2020, page 9",
+        "doi": "10.1007/978-3-030-56784-2_5",
+        "url": "https://eprint.iacr.org/2020/785",
+        "eprint": "2020/785"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The authors state that AE-w and CTXT-w are ordinarily equivalent without memory restrictions, but say it is unclear whether this survives memory-tight reductions. They identify only the w=2 to w=3 implication as memory-tight and note that other simulations appear to require remembering all prior encryption queries.",
+      "citation_labels": [
+        "Ashrujit Ghoshal et al., The Memory-Tightness of Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

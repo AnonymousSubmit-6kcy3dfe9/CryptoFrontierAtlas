@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-notions-for-truly-symmetric-key-ue-and-pre",
+  "group_id": "security-notions-for-truly-symmetric-key-ue-and-pre",
+  "title": "Security Notions for Truly Symmetric-Key UE and PRE",
+  "summary": "For UE and PRE, good security notions require public-key encryption, while the best symmetric-only guarantees and whether fast primitives can improve on 2Enc remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For updatable encryption (UE) and proxy re-encryption (PRE), \"good\" security notions necessarily imply public-key encryption, but practitioners may be unwilling to incur the additional resources required for such strong cryptography. Characterize the best security notions achievable using only truly symmetric-key primitives; in particular, determine whether fast symmetric primitives can provide stronger security than Lehmann and Tackmann's 2Enc double-encryption protocol, which uses purely symmetric-key primitives."
+  },
+  "scope": {
+    "domain": "Security notions for updatable encryption and proxy re-encryption in symmetric-key cryptography.",
+    "assumptions": [
+      "Only truly symmetric-key primitives are used."
+    ],
+    "parameters": [
+      "UE and PRE: the primitive classes under study",
+      "Fast symmetric primitives: candidate primitives whose security is evaluated",
+      "Lehmann and Tackmann's 2Enc: a purely symmetric-key double-encryption reference protocol"
+    ],
+    "unresolved_remainder": "Characterize the best security notions achievable for UE and PRE using only truly symmetric-key primitives, and determine whether fast symmetric primitives can provide stronger security than Lehmann and Tackmann's 2Enc double-encryption protocol."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "updatable-encryption",
+      "proxy-re-encryption",
+      "symmetric-key-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Primitives with Structured Secrets",
+        "locator": "CRYPTO 2019, page 7",
+        "doi": "10.1007/978-3-030-26948-7_23",
+        "url": "https://eprint.iacr.org/2019/608",
+        "eprint": "2019/608"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this in its open-problems discussion, noting that \"good\" notions for UE and PRE necessarily imply public-key encryption. It then uses Lehmann and Tackmann's 2Enc as a purely symmetric-key double-encryption example and asks whether fast symmetric primitives can offer stronger security.",
+      "citation_labels": [
+        "Navid Alamati et al., Symmetric Primitives with Structured Secrets"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

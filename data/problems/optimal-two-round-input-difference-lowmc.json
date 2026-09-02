@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-two-round-input-difference-lowmc",
+  "group_id": "optimal-two-round-input-difference-lowmc",
+  "title": "Optimal Two-Round Input Difference for Full-S-Box LowMC",
+  "summary": "For random-layer full-S-box LowMC, the expected inactive-S-box count is experimentally verified, but the exact two-round optimal input difference remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For full-S-box LowMC with a randomly generated linear layer, determine an input difference that activates exactly one S-box in the first round and maximizes the total number of inactive S-boxes across the first two rounds, equivalently minimizing the number of active S-boxes there. An exact optimum is difficult to obtain for a random linear layer; the available analysis instead computes the expected number of inactive S-boxes in the general case and verifies that expectation experimentally."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of two-round S-box activity in full-S-box LowMC.",
+    "assumptions": [
+      "The LowMC linear layer is randomly generated.",
+      "The chosen input difference activates exactly one S-box in the first round."
+    ],
+    "parameters": [
+      "Input difference: the optimization variable",
+      "Inactive S-box count across the first two rounds: the objective to maximize"
+    ],
+    "unresolved_remainder": "Determine an exact optimal input difference rather than only the experimentally verified expected inactive-S-box count for the general case."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "lowmc",
+      "differential-cryptanalysis",
+      "s-box-activity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Full LowMC and LowMC-M with Algebraic Techniques",
+        "locator": "CRYPTO 2021, page 21",
+        "doi": "10.1007/978-3-030-84252-9_13",
+        "url": "https://eprint.iacr.org/2020/1034",
+        "eprint": "2020/1034"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that a randomly generated linear layer makes an accurate optimum difficult to obtain. It instead calculates and experimentally verifies the expected inactive-S-box count in the general case, without resolving the exact optimum.",
+      "citation_labels": [
+        "Fukang Liu et al., Cryptanalysis of Full LowMC and LowMC-M with Algebraic Techniques"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

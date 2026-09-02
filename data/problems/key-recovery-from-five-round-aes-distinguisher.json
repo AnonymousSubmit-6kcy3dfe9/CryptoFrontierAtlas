@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-recovery-from-five-round-aes-distinguisher",
+  "group_id": "key-recovery-from-five-round-aes-distinguisher",
+  "title": "Key Recovery from a Five-Round AES Distinguisher",
+  "summary": "AES has a known five-round distinguishability result, but whether it can yield key-recovery attacks that outperform existing methods remains open for reduced-round and related AES-based schemes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Five-round AES is known to be distinguishable from a random permutation. Determine whether this distinguisher can be leveraged to construct key-recovery attacks against round-reduced AES or other schemes based on AES-like substitution-permutation network structures that are more efficient than existing attacks."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of AES-like substitution-permutation network ciphers and related AES-based schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Five rounds: the round count of the known distinguisher",
+      "Round-reduced AES and other AES-based schemes: target constructions"
+    ],
+    "unresolved_remainder": "Whether the known distinguisher can be leveraged to construct key-recovery attacks against round-reduced AES or other AES-based schemes that are more efficient than existing attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "aes",
+      "key-recovery",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Insights on AES-Like SPN Ciphers",
+        "locator": "CRYPTO 2016, page 6",
+        "doi": "10.1007/978-3-662-53018-4_22",
+        "url": "https://eprint.iacr.org/2016/533",
+        "eprint": "2016/533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a known five-round distinguisher for AES and explicitly leaves open whether it can support more efficient key-recovery attacks against round-reduced AES or other AES-based schemes.",
+      "citation_labels": [
+        "Bing Sun et al., New Insights on AES-Like SPN Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

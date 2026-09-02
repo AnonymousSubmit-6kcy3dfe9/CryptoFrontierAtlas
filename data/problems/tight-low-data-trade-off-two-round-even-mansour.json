@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-low-data-trade-off-two-round-even-mansour",
+  "group_id": "tight-low-data-trade-off-two-round-even-mansour",
+  "title": "Tight Low-Data Trade-off for Two-Round Even-Mansour",
+  "summary": "Known attacks and a product lower bound leave the tight data-offline-query trade-off unresolved for low-data two-round Even-Mansour.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight $D$--$Q$ trade-off for low-data 2EM, between the lower bound $DQ\\ge 2^n$ and known attacks."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of low-data two-round Even-Mansour.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "D: data complexity",
+      "Q: offline-query complexity"
+    ],
+    "unresolved_remainder": "The tight data-offline-query trade-off remains to be determined between the lower bound that D times Q is at least 2^n and the known attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "even-mansour",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Low-Memory Attacks Against Two-Round Even-Mansour Using the 3-XOR Problem",
+        "locator": "CRYPTO 2019, page 21",
+        "doi": "10.1007/978-3-030-26951-7_8",
+        "url": "https://eprint.iacr.org/2019/938",
+        "eprint": "2019/938"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies a gap between the best known distinguisher and the proof in this range as an open problem. It states the task as determining the tight trade-off between the product lower bound and known attacks.",
+      "citation_labels": [
+        "Gaëtan Leurent et al., Low-Memory Attacks Against Two-Round Even-Mansour Using the 3-XOR Problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

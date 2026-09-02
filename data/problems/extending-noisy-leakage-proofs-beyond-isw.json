@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extending-noisy-leakage-proofs-beyond-isw",
+  "group_id": "extending-noisy-leakage-proofs-beyond-isw",
+  "title": "Extending Noisy-Leakage Proofs Beyond I.S.W.",
+  "summary": "The direct noisy-leakage proof covers only I.S.W.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The direct noisy-leakage security proof currently covers only the I.S.W. masking scheme, whereas the generic approach through the probing model can cover any masking scheme. The unresolved theorem-extension problem is to determine whether the direct proof can be generalized from the I.S.W. multiplication gadget to other masking gadgets, in particular table-based masking schemes, and to establish the resulting security bounds in the noisy leakage model. This target is especially relevant because table-based masking schemes are known to be efficiently secure in the probing model but much less so in the noisy leakage model."
+  },
+  "scope": {
+    "domain": "Side-channel analysis of masking gadgets, including I.S.W. and table-based schemes, in probing and noisy-leakage models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether the direct I.S.W. proof extends to other masking gadgets, especially table-based schemes, and establish the resulting noisy-leakage security bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "noisy-leakage"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Prou? & Rivain’s Formal Security Proof of Masking, Revisited: Tight Bounds in the Noisy Leakage Model",
+        "locator": "CRYPTO 2023, page 24",
+        "doi": "10.1007/978-3-031-38548-3_12",
+        "url": "https://eprint.iacr.org/2023/883",
+        "eprint": "2023/883"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts a direct noisy-leakage proof limited to I.S.W. with a generic probing-model approach that can cover any masking scheme. It presents extension to other gadgets, particularly table-based masking, as an open avenue for improvement.",
+      "citation_labels": [
+        "Loïc Masure et al., Prou? & Rivain’s Formal Security Proof of Masking, Revisited: Tight Bounds in the Noisy Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

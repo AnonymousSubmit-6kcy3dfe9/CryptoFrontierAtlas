@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bison-security-beyond-single-key",
+  "group_id": "bison-security-beyond-single-key",
+  "title": "bison Security Beyond the Single-Key Model",
+  "summary": "The bison construction is claimed to provide n-bit security only in the single-key model; security in the related-key, chosen-key, and known-key models remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The \\textsf{bison} construction is claimed to provide $n$-bit security in the single-key model, but no security is claimed in the related-key, chosen-key, or known-key models. Determine whether \\textsf{bison} is secure in each of these three models by either establishing an appropriate security result or exhibiting an attack that refutes security."
+  },
+  "scope": {
+    "domain": "Security analysis of the bison symmetric block-cipher construction across multiple key models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: the claimed security level in bits"
+    ],
+    "unresolved_remainder": "Establish an appropriate security result for bison, or exhibit an attack that refutes its security, in each of the related-key, chosen-key, and known-key models."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "block-cipher",
+      "security-models",
+      "cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 18",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source states a single-key n-bit security claim and explicitly disclaims security claims in the related-key, chosen-key, and known-key models. It presents security in those three models as unresolved.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

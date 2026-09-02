@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "default-longer-round-differential-linear-bounds",
+  "group_id": "default-longer-round-differential-linear-bounds",
+  "title": "Longer-Round Differential and Linear Bounds for DEFAULT",
+  "summary": "Existing computations provide differential-probability and linear-bias bounds for DEFAULT only over a limited round range; extending them to additional rounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine differential-probability and linear-bias bounds for $\\mathrm{DEFAULT}$ at round counts beyond the currently computed range, using automated modelling or computation that overcomes the solver-time limitation of the existing modelling and computing resources."
+  },
+  "scope": {
+    "domain": "Automated differential and linear cryptanalysis of the DEFAULT block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: specifies the cipher depth for which differential-probability and linear-bias bounds are sought"
+    ],
+    "unresolved_remainder": "Extend the bounds to round counts beyond the currently computed range while overcoming the solver-time limitation of the existing modelling and computing resources."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 20",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports the computed bounds in Table 6 and says extending them is difficult because of solver time under its current modelling and computing resources.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

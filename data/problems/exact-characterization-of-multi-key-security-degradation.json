@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-characterization-of-multi-key-security-degradation",
+  "group_id": "exact-characterization-of-multi-key-security-degradation",
+  "title": "Exact Characterization of Multi-Key Security Degradation",
+  "summary": "A general sufficient condition rules out multi-key degradation but appears too strong; the open task is to find an exact, possibly class-specific characterization.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Open problem. Identify conditions that exactly characterize whether a cryptographic algorithm suffers from multi-key security degradation. An existing abstract condition applies to any algorithm and is sufficient to prove the absence of such degradation, but it appears overly strong. The sought characterization may instead be tailored to restricted classes of schemes—for example, stateless algorithms—and should distinguish precisely between algorithms that do and do not exhibit multi-key degradation."
+  },
+  "scope": {
+    "domain": "Structural analysis of multi-key security degradation in cryptographic algorithms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Find conditions that exactly separate algorithms exhibiting multi-key security degradation from those that do not, potentially within restricted classes such as stateless algorithms."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "multi-key-security",
+      "security-degradation",
+      "structural-characterization"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Analyzing Multi-key Security Degradation",
+        "locator": "ASIACRYPT 2017, page 28",
+        "doi": "10.1007/978-3-319-70697-9_20",
+        "url": "https://eprint.iacr.org/2017/435",
+        "eprint": "2017/435"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents an algorithm-independent sufficient condition for avoiding multi-key degradation as overly strong and proposes seeking exact alternative conditions, potentially for restricted classes such as stateless algorithms.",
+      "citation_labels": [
+        "Atul Luykx et al., Analyzing Multi-key Security Degradation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

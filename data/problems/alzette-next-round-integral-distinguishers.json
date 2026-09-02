@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alzette-next-round-integral-distinguishers",
+  "group_id": "alzette-next-round-integral-distinguishers",
+  "title": "Seven-Round Forward and Six-Round Inverse Integral Distinguishers for Alzette",
+  "summary": "Bit-based division-property search reaches six forward and five inverse rounds, but whether stronger methods yield the next-round integral distinguishers remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Alzette ARX-box, the reported bit-based division-property search found a $6$-round forward integral characteristic but no $7$-round forward integral distinguisher, and a $5$-round inverse integral characteristic but no $6$-round inverse integral distinguisher. These negative results are limited to that search and do not establish that such distinguishers are impossible in general. Determine whether any $7$-round forward or $6$-round inverse integral distinguisher exists, either by extending the bit-based division-property search to longer characteristics or by applying a stronger method."
+  },
+  "scope": {
+    "domain": "Integral and automated cryptanalysis of the Alzette ARX-box.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count and direction: six versus seven forward rounds and five versus six inverse rounds"
+    ],
+    "unresolved_remainder": "Determine whether any seven-round forward or six-round inverse integral distinguisher exists, either by extending the bit-based division-property search to longer characteristics or by applying a stronger method."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "division-property",
+      "arx-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 17",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports six-round forward and five-round inverse integral characteristics from a bit-based division-property search, but no corresponding next-round distinguishers. It presents these negative findings as limited to that search and leaves the broader existence question open.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

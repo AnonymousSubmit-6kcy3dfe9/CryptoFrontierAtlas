@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "affine-decision-tree-leaf-complexity",
+  "group_id": "affine-decision-tree-leaf-complexity",
+  "title": "Affine Decision-Tree Leaf Complexity of Balanced Boolean Functions",
+  "summary": "The minimum affine decision-tree leaf count is trivially at most two to the n; characterize its worst-case behavior over balanced Boolean functions and prove a nontrivial upper bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize $L_n=\\max_{f:\\mathbb F_2^n\\to\\mathbb F_2\\,\\mathrm{balanced}}\\operatorname{minLeaves}(f)$ and prove a nontrivial upper bound on $L_n$."
+  },
+  "scope": {
+    "domain": "Boolean-function complexity, specifically affine decision-tree leaf complexity for balanced Boolean functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: number of input bits",
+      "L_n: maximum minLeaves value over balanced n-bit Boolean functions, measuring worst-case affine decision-tree leaf complexity"
+    ],
+    "unresolved_remainder": "Characterize L_n and prove a nontrivial upper bound on it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "affine-decision-trees",
+      "complexity-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Framework for Key-Guessing Improvements",
+        "locator": "ASIACRYPT 2021, page 29",
+        "doi": "10.1007/978-3-030-92062-3_16",
+        "url": "https://eprint.iacr.org/2021/1238",
+        "eprint": "2021/1238"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the general behavior of the minimum leaf count as an interesting problem and specifically calls for a nontrivial upper bound. It reports structural properties and small-dimensional computations but no general nontrivial upper bound.",
+      "citation_labels": [
+        "Marek Broll et al., Generic Framework for Key-Guessing Improvements"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

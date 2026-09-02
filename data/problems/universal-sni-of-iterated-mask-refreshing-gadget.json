@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "universal-sni-of-iterated-mask-refreshing-gadget",
+  "group_id": "universal-sni-of-iterated-mask-refreshing-gadget",
+  "title": "Universal SNI of an Iterated Mask-Refreshing Gadget",
+  "summary": "The proposed construction is parallelizable, but strong non-interference for every share count remains unproved and requires either a proof or a counterexample.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the simple mask-refreshing gadget over $d$ shares, determine whether repeating the gadget exactly $\\lceil d(d-1)/3 \\rceil$ times always produces a mask-refreshing algorithm satisfying $(d-1)$-strong non-interference (SNI) for every $d$. The resulting construction is parallelizable, but strong non-interference for all values of $d$ has not been proved; the unresolved task is therefore to prove this universal claim or provide a counterexample."
+  },
+  "scope": {
+    "domain": "Mask refreshing and strong non-interference in side-channel cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "d, the number of shares",
+      "ceil(d(d−1)/3), the gadget repetition count",
+      "d−1, the target SNI order"
+    ],
+    "unresolved_remainder": "Whether the stated repetition count always yields a strong non-interference mask-refreshing algorithm for every share count, or whether a counterexample exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "mask-refreshing",
+      "strong-non-interference",
+      "side-channel-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 17",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents a conjecture that iterating the simple gadget from Algorithm 1 at the stated count yields a strong non-interference mask-refreshing algorithm over d shares. It notes that the construction is parallelizable and leaves a proof for all d as future work.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

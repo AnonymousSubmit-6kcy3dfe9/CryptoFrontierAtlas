@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "odd-dimension-boolean-functions-low-absolute-indicator",
+  "group_id": "odd-dimension-boolean-functions-low-absolute-indicator",
+  "title": "Generic Construction of Odd-Dimension Boolean Functions",
+  "summary": "The authors are not aware of a generic construction for odd input lengths with such a low absolute indicator, so finding one remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every odd $m$, construct $f:\\mathbb{F}_2^m\\to\\mathbb{F}_2$ with optimal or near-optimal $M(f)$."
+  },
+  "scope": {
+    "domain": "Boolean-function constructions over binary vector spaces, with absolute indicator as the quality measure.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m, the odd input dimension",
+      "M(f), the absolute-indicator target, sought to be optimal or near-optimal"
+    ],
+    "unresolved_remainder": "Find a generic construction for every odd input dimension whose absolute indicator is optimal or near-optimal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "construction-existence",
+      "absolute-indicator"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 28",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents an unresolved construction gap: the authors are not aware of a generic construction for odd input lengths with such a low absolute indicator.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-quantum-security-under-alternate-group-operations",
+  "group_id": "generic-quantum-security-under-alternate-group-operations",
+  "title": "Generic Quantum Security Under Alternate Group Operations",
+  "summary": "Complete reductions cover Even–Mansour and Encrypted-CBC-MAC, while generic quantum-CPA security for other transformed classically secure schemes remains to be proved or refuted.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does replacing the group operation of a classically secure symmetric-key scheme from $(\\mathbb{Z}/2)^n$ with a suitable operation from an alternate finite group generically provide security against quantum chosen-plaintext attacks? Complete security reductions for this transformation are available for the Even--Mansour cipher and Encrypted-CBC-MAC, while for other schemes vulnerable to attacks by the Simon algorithm, the available result is only that changing from $(\\mathbb{Z}/2)^n$ to alternatives such as $\\mathbb{Z}/2^n$ or $S_n$ thwarts those attacks. The unresolved task is to prove or refute generic quantum-CPA security for the transformed classically secure schemes beyond the two cases with complete reductions."
+  },
+  "scope": {
+    "domain": "Quantum security of symmetric-key cryptographic schemes under alternate finite-group operations.",
+    "assumptions": [
+      "The symmetric-key scheme is classically secure."
+    ],
+    "parameters": [
+      "The original group $(Z/2)^n$ and an alternate finite group: the original and replacement group structures",
+      "Quantum chosen-plaintext attacks: the target attack model"
+    ],
+    "unresolved_remainder": "Prove or refute generic quantum-CPA security for the transformed classically secure schemes beyond Even–Mansour and Encrypted-CBC-MAC."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "quantum-security",
+      "symmetric-key",
+      "security-reduction"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts",
+        "locator": "EUROCRYPT 2017, page 22",
+        "doi": "10.1007/978-3-319-56617-7_3",
+        "url": "https://eprint.iacr.org/2016/960",
+        "eprint": "2016/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents generic quantum-CPA security after replacing the group operation as a conjecture. It reports complete reductions only for Even–Mansour and Encrypted-CBC-MAC, and only attack-thwarting observations for the other Simon-vulnerable schemes.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "beyond-birthday-security-key-masked-sokac21",
+  "group_id": "beyond-birthday-security-key-masked-sokac21",
+  "title": "Beyond-Birthday Security for Key-Masked SoKAC21",
+  "summary": "The reported birthday attack on SoKAC21 does not work against its key-masked variant, while proving beyond-birthday security for that variant remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider the variant of SoKAC21 obtained by masking its final output with a key, itself a variant of sum-of-key alternating ciphers. The birthday attack on SoKAC21 does not work against this key-masked-output variant. The open problem is to prove beyond-birthday security for the variant."
+  },
+  "scope": {
+    "domain": "Security analysis of symmetric cryptographic constructions, specifically a key-masked-output variant of SoKAC21 among sum-of-key alternating ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "SoKAC21: the underlying construction",
+      "masking key: masks the final output to form the analyzed variant"
+    ],
+    "unresolved_remainder": "Prove beyond-birthday security for the key-masked-output variant."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "beyond-birthday-security",
+      "sum-of-key-alternating-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21",
+        "locator": "EUROCRYPT 2020, page 16",
+        "doi": "10.1007/978-3-030-45721-1_8",
+        "url": "https://eprint.iacr.org/2020/236",
+        "eprint": "2020/236"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports a birthday attack on SoKAC21 and notes that the attack does not work when the final output is masked with a key. It presents proving beyond-birthday security for the resulting variant as an open problem.",
+      "citation_labels": [
+        "Mridul Nandi et al., Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

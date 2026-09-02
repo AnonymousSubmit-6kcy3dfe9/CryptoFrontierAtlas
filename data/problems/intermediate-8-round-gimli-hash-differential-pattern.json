@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "intermediate-8-round-gimli-hash-differential-pattern",
+  "group_id": "intermediate-8-round-gimli-hash-differential-pattern",
+  "title": "Validity of the Intermediate 8-Round Gimli-Hash Differential Pattern",
+  "summary": "The MILP search did not refute the proposed pattern, but no confirming assignment was found, so its validity remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a conforming pair for the proposed intermediate $8$-round Gimli-Hash differential pattern?"
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis and automated verification of the reduced Gimli hash construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "8 rounds, the round count of the intermediate Gimli-Hash differential pattern"
+    ],
+    "unresolved_remainder": "Establish whether a conforming pair exists for the proposed intermediate 8-round Gimli-Hash differential pattern."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "automated-cryptanalysis",
+      "gimli-hash"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Verification of Differential Characteristics: Application to Reduced Gimli",
+        "locator": "CRYPTO 2020, page 27",
+        "doi": "10.1007/978-3-030-56877-1_8",
+        "url": "https://eprint.iacr.org/2020/591",
+        "eprint": "2020/591"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The authors apply a MILP model after noting that the pattern's validity may be doubted. Because the solver neither found a solution in practical time nor reported infeasibility, they state only that they believe the pattern is reasonable.",
+      "citation_labels": [
+        "Fukang Liu et al., Automatic Verification of Differential Characteristics: Application to Reduced Gimli"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "snow-v-key-recovery-from-initial-states",
+  "group_id": "snow-v-key-recovery-from-initial-states",
+  "title": "SNOW-V Key Recovery from Initial States",
+  "summary": "Encryption-stage state recovery enables SNOW-V keystream prediction, but effective recovery of the original secret key remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For SNOW-V, after the initial states of the encryption stage have been recovered and the keystream can therefore be predicted at any clock, develop an effective method for recovering the original secret key from those recovered initial states. [S1]"
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of SNOW-V key recovery from recovered encryption-stage states.",
+    "assumptions": [
+      "The initial states of the encryption stage have been recovered."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Develop an effective method for recovering the original secret key from the recovered initial states."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "key-recovery",
+      "snow-v"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Correlation Attack on Full SNOW-V and SNOW-Vi",
+        "locator": "EUROCRYPT 2022, page 17",
+        "doi": "10.1007/978-3-031-07082-2_2",
+        "url": "https://eprint.iacr.org/2021/1047",
+        "eprint": "2021/1047"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that recovered encryption-stage initial states permit keystream prediction at any clock, then explicitly leaves effective original-key recovery as an open problem.",
+      "citation_labels": [
+        "Zhen Shi et al., A Correlation Attack on Full SNOW-V and SNOW-Vi"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

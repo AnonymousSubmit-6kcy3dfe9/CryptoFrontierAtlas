@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-bounds-for-normalized-aggregated-mutual-information",
+  "group_id": "tighter-bounds-for-normalized-aggregated-mutual-information",
+  "title": "Tighter Bounds for Normalized Aggregated Mutual Information",
+  "summary": "A conservative interpolation bounds normalized aggregated mutual information; tighter, quickly evaluable bounds for computational-security estimates remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a key $K$, observed variables $X,\\bar{L}$, and an aggregation parameter $c$ ranging from $1$ to $2^m$, let $\\operatorname{NAMI}(c)$ denote normalized aggregated mutual information. Under the small-information condition $\\operatorname{MI}(K;X,\\bar{L})<2^{1-m}$, a conservative bound is obtained by straight-line interpolation as a function of $\\log_2 c$ between $\\log \\operatorname{NAMI}(1)=\\log \\operatorname{MI}(K;X,\\bar{L})$ and $\\log \\operatorname{NAMI}(2^m)=0$. Derive more accurate bounds on $\\operatorname{NAMI}(c)$ from this mutual-information input while retaining fast evaluation for computational-security estimation."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of leaking devices using normalized aggregated mutual information for computational-security estimation.",
+    "assumptions": [
+      "Small-information condition: $\\operatorname{MI}(K;X,\\bar{L})<2^{1-m}$."
+    ],
+    "parameters": [
+      "$K$: the key",
+      "$X$ and $\\bar{L}$: observed variables",
+      "$c$: aggregation parameter ranging from $1$ to $2^m$",
+      "$m$: controls the aggregation endpoint $2^m$ and the information threshold $2^{1-m}$"
+    ],
+    "unresolved_remainder": "Derive more accurate bounds on $\\operatorname{NAMI}(c)$ from the mutual-information input while retaining fast evaluation for computational-security estimation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "mutual-information",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Masking Proofs Are Tight and How to Exploit it in Security Evaluations",
+        "locator": "EUROCRYPT 2018, page 30",
+        "doi": "10.1007/978-3-319-78375-8_13",
+        "url": "https://eprint.iacr.org/2017/116",
+        "eprint": "2017/116"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper adopts a conservative straight-line interpolation for fast computational-security intuition and notes that more accurate bounds are reachable but does not derive them.",
+      "citation_labels": [
+        "Vincent Grosso et al., Masking Proofs Are Tight and How to Exploit it in Security Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

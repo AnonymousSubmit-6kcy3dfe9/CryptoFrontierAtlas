@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ewcdmd-nonce-respecting-mac-security",
+  "group_id": "ewcdmd-nonce-respecting-mac-security",
+  "title": "Nonce-Respecting MAC Security for EWCDMD",
+  "summary": "The known PRF attack on EWCDMD does not readily extend to nonce-respecting forgery, leaving MAC security in that setting unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The known attack against $\\mathrm{EWCDMD}$ is a $\\mathrm{PRF}$ attack and does not readily extend to a forgery attack in the nonce-respecting setting. Prove $\\mathrm{MAC}$ security for $\\mathrm{EWCDMD}$ in that setting."
+  },
+  "scope": {
+    "domain": "Security analysis of message authentication and authenticated-encryption constructions in symmetric cryptography.",
+    "assumptions": [
+      "Nonce-respecting setting"
+    ],
+    "parameters": [
+      "EWCDMD, the target construction"
+    ],
+    "unresolved_remainder": "Prove MAC security for EWCDMD in the nonce-respecting setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "mac-security",
+      "nonce-respecting",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21",
+        "locator": "EUROCRYPT 2020, page 16",
+        "doi": "10.1007/978-3-030-45721-1_8",
+        "url": "https://eprint.iacr.org/2020/236",
+        "eprint": "2020/236"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this question in Section 7.1, \"Some Open Problems,\" distinguishing its PRF attack on EWCDMD from a forgery attack in the nonce-respecting setting. It identifies proving MAC security as an interesting research problem.",
+      "citation_labels": [
+        "Mridul Nandi et al., Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

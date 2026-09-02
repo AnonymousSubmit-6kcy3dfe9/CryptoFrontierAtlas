@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-polynomial-cut-and-sew-s-box-constructions",
+  "group_id": "non-polynomial-cut-and-sew-s-box-constructions",
+  "title": "Non-Polynomial Cut-and-Sew S-Box Constructions",
+  "summary": "A non-polynomial cut-and-sew S-box construction is known in one ordered-parameter case; extending it to other composite moduli or finding alternative strategies remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For cut-and-sew S-boxes $S$ over the composite-modulus ring $\\mathbb{Z}_q$, an explicit construction of an S-box without a polynomial representation over $\\mathbb{Z}_q$ is available from an orthomorphism over $\\mathbb{F}_{p_2}$ only in the case $p_1>p_2$. The unresolved construction problem is to generalize this strategy beyond that parameter ordering and to other composite moduli, or to devise alternative methods for constructing such non-polynomial S-boxes, while accounting for the fact that $S$ still reduces to $S_1$ modulo $p_2$ and may therefore require additional construction care to avoid exploitable structure."
+  },
+  "scope": {
+    "domain": "Design of non-polynomial cut-and-sew S-boxes over composite-modulus rings.",
+    "assumptions": [
+      "An orthomorphism over the finite field indexed by p2 is available.",
+      "The known explicit construction is restricted to p1 greater than p2."
+    ],
+    "parameters": [
+      "q: the composite modulus defining the ring",
+      "p1 and p2: parameters whose ordering limits the known construction; p2 indexes the orthomorphism field and reduction modulus"
+    ],
+    "unresolved_remainder": "Extend the strategy beyond p1 greater than p2 and to other composite moduli, or develop alternative constructions, while preventing exploitation of the reduction to S1 modulo p2."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "s-boxes",
+      "composite-modulus-rings",
+      "non-polynomial-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato",
+        "locator": "CRYPTO 2023, page 15",
+        "doi": "10.1007/978-3-031-38548-3_11",
+        "url": "https://eprint.iacr.org/2023/822",
+        "eprint": "2023/822"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source supplies an explicit construction from an orthomorphism only when p1 exceeds p2 and explicitly leaves generalization or new strategies open. It also notes the potentially exploitable reduction modulo p2.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-bounds-for-zero-and-single-mask-side-channels",
+  "group_id": "tight-bounds-for-zero-and-single-mask-side-channels",
+  "title": "Tight Side-Channel Bounds for Zero- and Single-Mask Implementations",
+  "summary": "Existing success-rate bounds tighten only with many masks; deriving bounds that reflect adversary performance for zero- and single-mask implementations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In side-channel evaluation of implementations with one mask or no masks, existing theoretical success-rate bounds are very loose relative to estimated key ranks and do not realistically approximate adversary performance; such bounds tighten only when many masks are used. Derive substantially tighter success-rate or key-rank bounds that realistically approximate adversary performance in the single-mask and zero-mask regimes."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of unmasked and singly masked implementations, focusing on success-rate and key-rank bounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of masks: distinguishes the zero-mask, single-mask, and many-mask evaluation regimes"
+    ],
+    "unresolved_remainder": "Derive substantially tighter success-rate or key-rank bounds that realistically approximate adversary performance in the zero-mask and single-mask regimes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "key-rank",
+      "masking"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations",
+        "locator": "ASIACRYPT 2016, page 19",
+        "doi": "10.1007/978-3-662-53887-6_20",
+        "url": "https://eprint.iacr.org/2016/491",
+        "eprint": "2016/491"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that theoretical success-rate bounds are very loose relative to estimated key ranks and tighten only when many masks are used. Their failure to approximate adversary performance with zero or one mask is presented as an unresolved limitation.",
+      "citation_labels": [
+        "Daniel P. Martin et al., Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improving-gohr-neural-distinguisher-accuracy",
+  "group_id": "improving-gohr-neural-distinguisher-accuracy",
+  "title": "Improving Gohr’s Neural Distinguisher Accuracy",
+  "summary": "A neural distinguisher can separate real and random ciphertext-pair sets sharing the same differential distribution, but whether alternative settings improve accuracy remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether alternative settings can improve the accuracy of Gohr's neural distinguishers."
+  },
+  "scope": {
+    "domain": "Machine-learning-based symmetric cryptanalysis using Gohr’s neural distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Alternative settings — candidate choices whose effect on accuracy is to be evaluated",
+      "Accuracy — the target performance measure"
+    ],
+    "unresolved_remainder": "Whether any alternative settings can improve the accuracy of Gohr’s neural distinguishers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [],
+    "tags": [
+      "automated-cryptanalysis",
+      "neural-distinguishers",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Deeper Look at Machine Learning-Based Cryptanalysis",
+        "locator": "EUROCRYPT 2021, page 3",
+        "doi": "10.1007/978-3-030-77870-5_28",
+        "url": "https://eprint.iacr.org/2021/287",
+        "eprint": "2021/287"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a final natural question after observing that a neural distinguisher can separate real and random sets with the same differential distribution. It asks whether better settings could improve Gohr’s distinguishers.",
+      "citation_labels": [
+        "Adrien Benamira et al., A Deeper Look at Machine Learning-Based Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

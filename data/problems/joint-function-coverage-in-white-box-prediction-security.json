@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "joint-function-coverage-in-white-box-prediction-security",
+  "group_id": "joint-function-coverage-in-white-box-prediction-security",
+  "title": "Joint-Function Coverage in White-Box Prediction Security",
+  "summary": "The current prediction-security notion gives a single-function guarantee; whether several closure functions jointly enable an attack and require a stronger definition remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the prediction-security model of a white-box circuit, in which a pair $(C,E)$ is $d$-th-order prediction-secure when every adversary has negligible prediction advantage, determine whether the joint behavior of multiple functions in the $d$-th-order closure can enable an attack that is not covered by the existing single-function guarantee. In a first-order Boolean-masked white-box AES implementation, two circuit nodes may compute masks $f_1$ and $f_2$ of a first-round S-box output bit, and an adversary may form $\\tilde{f}=f_1\\oplus f_2$ in $F^{(1)}(C)$; establish whether this jointly constructed function can produce such an attack and, if so, strengthen the prediction-security definition so that it covers joint-function attacks."
+  },
+  "scope": {
+    "domain": "Prediction security for white-box circuits, including first-order Boolean-masked white-box AES.",
+    "assumptions": [
+      "In the motivating example, two circuit nodes compute masks f₁ and f₂ of a first-round S-box output bit."
+    ],
+    "parameters": [
+      "d: the order defining prediction security and the corresponding function closure",
+      "(C,E): the pair evaluated by the prediction-security model",
+      "f₁, f₂, and f̃: two node-computed masks and their XOR combination in the first-order closure"
+    ],
+    "unresolved_remainder": "Determine whether multiple functions in the d-th-order closure, including the first-order XOR construction, can jointly enable an attack outside the single-function guarantee and, if so, strengthen prediction security to cover it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "white-box-cryptography",
+      "prediction-security",
+      "boolean-masking"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Attacks and Countermeasures for White-box Designs",
+        "locator": "ASIACRYPT 2018, page 18",
+        "doi": "10.1007/978-3-030-03329-3_13",
+        "url": "https://eprint.iacr.org/2018/049",
+        "eprint": "2018/049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives the negligible-advantage definition and then flags joint behavior by multiple functions as a possible attack avenue. Its masked-AES example leaves both the attack question and any corresponding strengthening unresolved.",
+      "citation_labels": [
+        "Alex Biryukov et al., Attacks and Countermeasures for White-box Designs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

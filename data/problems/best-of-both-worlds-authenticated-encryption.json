@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "best-of-both-worlds-authenticated-encryption",
+  "group_id": "best-of-both-worlds-authenticated-encryption",
+  "title": "Best-of-Both-Worlds Authenticated Encryption",
+  "summary": "A related construction combines indifferentiability with standard-model collision resistance; the unresolved task is an authenticated-encryption scheme with indifferentiability and RAE security under a standard-model assumption.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a best-of-both-worlds authenticated-encryption scheme that is simultaneously indifferentiable from an ideal primitive and $\\mathrm{RAE}$-secure under a standard-model assumption. Such a combination is plausible because chop--Merkle--Damg$\\mathring{a}$rd can be proved both indifferentiable from a random oracle and collision resistant in the standard model under standard assumptions; the unresolved task is to obtain an analogous joint guarantee for $\\mathrm{RAE}$ security."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption design combining indifferentiability with RAE security.",
+    "assumptions": [
+      "a standard-model assumption"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a scheme that is simultaneously indifferentiable from an ideal primitive and RAE-secure under a standard-model assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "indifferentiability",
+      "rae-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 11",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a best-of-both-worlds construction as plausible, motivated by a construction with indifferentiability and standard-model collision resistance. It explicitly leaves the analogous RAE-security guarantee for future work.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

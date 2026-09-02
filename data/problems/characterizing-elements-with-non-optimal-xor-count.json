@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "characterizing-elements-with-non-optimal-xor-count",
+  "group_id": "characterizing-elements-with-non-optimal-xor-count",
+  "title": "Characterizing Elements with Non-Optimal XOR-Count",
+  "summary": "A search found implementations with at most three additions for examined elements outside proper subfields; observed XOR-count-two cases had pentanomial minimal polynomials; characterizing non-optimal cases is open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For nontrivial elements $\\alpha\\in\\mathrm{GF}(2^n)$, characterize those having non-optimal XOR-count in implementations of multiplication by $\\alpha$. Existing search results show that every examined $\\alpha$ not contained in a proper subfield can be implemented with at most three additions, and that whenever XOR-count $2$ is attainable, the minimal polynomial of $\\alpha$ is a pentanomial in all examined cases. The unresolved task is to obtain a more thorough characterization of the elements with non-optimal XOR-count."
+  },
+  "scope": {
+    "domain": "Lightweight finite-field multiplication and XOR-count structure in binary extension fields.",
+    "assumptions": [
+      "α is a nontrivial element of GF(2^n)."
+    ],
+    "parameters": [
+      "n: determines the binary extension field GF(2^n)",
+      "α: field element defining the multiplication implementation whose XOR-count is studied"
+    ],
+    "unresolved_remainder": "Characterize more thoroughly which nontrivial α in GF(2^n) have non-optimal XOR-count in multiplication-by-α implementations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "finite-field-arithmetic",
+      "xor-count",
+      "algebraic-structures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Lightweight Multiplication in GF(2^n) with Applications to MDS Matrices",
+        "locator": "CRYPTO 2016, page 15",
+        "doi": "10.1007/978-3-662-53018-4_23",
+        "url": "https://eprint.iacr.org/2016/119",
+        "eprint": "2016/119"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports search-based evidence: every examined α outside a proper subfield has an implementation using at most three additions, and every examined XOR-count-two case has a pentanomial minimal polynomial. It explicitly leaves a more thorough characterization of elements with non-optimal XOR-count as an open problem.",
+      "citation_labels": [
+        "Christof Beierle et al., Lightweight Multiplication in GF(2^n) with Applications to MDS Matrices"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

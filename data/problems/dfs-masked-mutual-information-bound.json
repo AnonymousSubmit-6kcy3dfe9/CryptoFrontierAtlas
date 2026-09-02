@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dfs-masked-mutual-information-bound",
+  "group_id": "dfs-masked-mutual-information-bound",
+  "title": "DFS Bound for Masked Mutual Information",
+  "summary": "The DFS bound estimating masked d-tuple leakage from single-share information remains conjectural; proving it without the square-root loss from statistical distance is open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove the DFS bound on masked mutual information without the square-root loss from reduction to statistical distance."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masked implementations through mutual-information leakage bounds.",
+    "assumptions": [
+      "Independent Shares' Leakage (ISL) assumption for reducing d-share leakage to single-share leakage."
+    ],
+    "parameters": [
+      "d: number of share leakages in the masked tuple"
+    ],
+    "unresolved_remainder": "Prove the conjectured DFS mutual-information bound without the square-root loss introduced by reduction to statistical distance."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "mutual-information"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Masking Proofs Are Tight and How to Exploit it in Security Evaluations",
+        "locator": "EUROCRYPT 2018, page 18",
+        "doi": "10.1007/978-3-319-78375-8_13",
+        "url": "https://eprint.iacr.org/2017/116",
+        "eprint": "2017/116"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the DFS bound as only conjectured and identifies an ignored square-root loss in the reduction from mutual information to statistical distance used in the proofs.",
+      "citation_labels": [
+        "Vincent Grosso et al., Masking Proofs Are Tight and How to Exploit it in Security Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

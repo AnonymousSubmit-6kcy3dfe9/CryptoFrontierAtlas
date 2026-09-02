@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-aggressive-rpaef-forkskinny-variant",
+  "group_id": "security-of-aggressive-rpaef-forkskinny-variant",
+  "title": "Security of the Aggressive RPAEF/ForkSkinny Variant",
+  "summary": "The aggressive RPAEF variant introduces a reduced-round design, but its security after adjusting rounds to the effective tweak size remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of the aggressive RPAEF variant based on ForkSkinny, which lowers the number of applied rounds to those of ForkSkinny-128-256 for all associated-data blocks and for all message blocks except the final one, because one tweakey-register component is effectively unused for those blocks. The unresolved task is to provide a thorough security analysis of this variant when its round counts are adjusted to the effective tweak size, taking into account that each tweak is used with a fixed number of rounds."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of an authenticated-encryption mode variant based on the ForkSkinny forkcipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "round count, the number of applied rounds for each block type",
+      "effective tweak size, the basis for adjusting the round count",
+      "block category, distinguishing associated-data, nonfinal message, and final message blocks",
+      "tweak usage, with each tweak used for a fixed number of rounds"
+    ],
+    "unresolved_remainder": "A thorough security analysis of the aggressive variant with round counts adjusted to the effective tweak size remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "forkskinny",
+      "security-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages",
+        "locator": "ASIACRYPT 2019, page 19",
+        "doi": "10.1007/978-3-030-34621-8_6",
+        "url": "https://eprint.iacr.org/2019/1004",
+        "eprint": "2019/1004"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a more aggressive RPAEF optimization using reduced rounds for associated-data and nonfinal message blocks because one tweakey-register component is effectively unused there. It explicitly leaves a thorough security analysis of the adjusted variant as an open question and notes that each tweak is used with a fixed number of rounds.",
+      "citation_labels": [
+        "Elena Andreeva et al., Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

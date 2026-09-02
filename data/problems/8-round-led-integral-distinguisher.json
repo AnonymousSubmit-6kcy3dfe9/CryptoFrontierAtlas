@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "8-round-led-integral-distinguisher",
+  "group_id": "8-round-led-integral-distinguisher",
+  "title": "Integral Distinguishers for 8-Round LED and Its Inverse",
+  "summary": "Traditional bit-based division property cannot find an integral distinguisher for 8-round LED or its inverse; whether one exists outside that framework remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether 8-round LED or its inverse admits an integral distinguisher. Any such distinguisher cannot be found using the traditional bit-based division property, even with perfect Super-Sbox modeling and arbitrary linear masks applied to Super-Sbox inputs and outputs, so the existence question must be resolved outside that framework."
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis of 8-round LED and its inverse.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "8 rounds — fixed number of LED rounds under study"
+    ],
+    "unresolved_remainder": "Whether 8-round LED or its inverse admits an integral distinguisher outside the traditional bit-based division-property framework."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "division-property",
+      "led"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Convexity of division property transitions: theory, algorithms and compact models",
+        "locator": "ASIACRYPT 2021, page 27",
+        "doi": "10.1007/978-3-030-92062-3_12",
+        "url": "https://eprint.iacr.org/2021/1285",
+        "eprint": "2021/1285"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source shows that traditional bit-based division property cannot find such a distinguisher, even with perfect Super-Sbox modeling and arbitrary input and output linear masks. It leaves the actual existence of a distinguisher unresolved.",
+      "citation_labels": [
+        "Aleksei Udovenko et al., Convexity of division property transitions: theory, algorithms and compact models"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

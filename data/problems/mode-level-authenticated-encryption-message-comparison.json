@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mode-level-authenticated-encryption-message-comparison",
+  "group_id": "mode-level-authenticated-encryption-message-comparison",
+  "title": "Mode-Level Authenticated Encryption Against Message Comparison Attacks",
+  "summary": "No mode-level authenticated-encryption solution is currently known to limit Message Comparison success to a negligible value; construct one that achieves this.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a mode-level authenticated-encryption solution secure against Message Comparison attacks in the following leakage setting: sample $K \\leftarrow \\{0,1\\}^n$ and $b \\leftarrow \\{0,1\\}$, and give an adversary $X_0$, $X_1$, and challenge leakage $L(X_b,K)$. Its goal is to recover $b$, equivalently to determine whether the leakage was produced using $X_0$ or $X_1$. No mode-level solution is currently known that limits this success probability to a negligible value; the required construction must achieve such a bound."
+  },
+  "scope": {
+    "domain": "Mode-level authenticated encryption under physical-leakage Message Comparison attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "K: an n-bit key sampled from {0,1}^n",
+      "b: a binary challenge bit sampled from {0,1}",
+      "X_0 and X_1: adversary-provided inputs",
+      "L(X_b,K): challenge leakage"
+    ],
+    "unresolved_remainder": "Construct a mode-level authenticated-encryption solution that limits the Message Comparison success probability to a negligible value."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "side-channel-security",
+      "message-comparison"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 10",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents Message Comparison as distinguishing whether challenge leakage came from X0 or X1, and reports that no mode-level solution is known to make the success probability negligible. It frames the remaining work as constructing such a solution.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

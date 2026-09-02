@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sparx-64-128-single-trail-distinguisher-bounds",
+  "group_id": "sparx-64-128-single-trail-distinguisher-bounds",
+  "title": "Tight Single-Trail Distinguisher Bounds for Sparx-64/128",
+  "summary": "Five steps exclude single-trail differential and linear distinguishers for Sparx-64/128, but the tight minimum step count for each type remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{Sparx}\\text{-}64/128$, the Long Trail argument proves that five steps are sufficient to exclude single-trail differential and linear distinguishers, but this five-step bound is not expected to be tight. Determine tight bounds for both types of single-trail distinguisher, including the minimum number of steps sufficient to exclude each type."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of the Sparx-64/128 block cipher against single-trail differential and linear distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of steps, determining the exclusion threshold for each distinguisher type"
+    ],
+    "unresolved_remainder": "Determine tight bounds, including the minimum sufficient number of steps, for excluding each type of single-trail distinguisher."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "sparx",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Design Strategies for ARX with Provable Bounds: Sparx and LAX",
+        "locator": "ASIACRYPT 2016, page 14",
+        "doi": "10.1007/978-3-662-53887-6_18",
+        "url": "https://eprint.iacr.org/2016/984",
+        "eprint": "2016/984"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves a five-step Long Trail bound for excluding both single-trail differential and linear distinguishers and states that this bound is not expected to be tight. Tighter minimum step thresholds remain unresolved.",
+      "citation_labels": [
+        "Daniel Dinu et al., Design Strategies for ARX with Provable Bounds: Sparx and LAX"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

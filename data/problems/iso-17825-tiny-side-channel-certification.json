@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "iso-17825-tiny-side-channel-certification",
+  "group_id": "iso-17825-tiny-side-channel-certification",
+  "title": "ISO 17825 Certification for Tiny Side-Channel Vulnerabilities",
+  "summary": "ISO 17825 level 4 lacks reliable sensitivity to tiny effects; the open problem is to identify certification methods and parameters suited to each realistic leakage scenario.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For ISO 17825 testing, the level 4 sample size is too small to reliably detect tiny effects, and the analysis compares repetition with multiplicity correction, including Bonferroni adjustment. The unresolved task is to determine which testing methods and parameter choices would enable certification with respect to realistic tiny side-channel vulnerabilities, with the appropriate configuration necessarily depending on the envisaged leakage scenario."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis focused on ISO 17825 testing and certification.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "level 4 sample size: available testing sample",
+      "testing methods: certification procedure",
+      "repetition or multiplicity correction, including Bonferroni: analysis choice",
+      "envisaged leakage scenario: appropriate test configuration"
+    ],
+    "unresolved_remainder": "Determine which testing methods and parameter choices would enable certification for realistic tiny side-channel vulnerabilities, with the appropriate configuration depending on the envisaged leakage scenario."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "iso-17825",
+      "statistical-testing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Critical Analysis of ISO 17825 (‘Testing Methods for the Mitigation of Non-invasive Attack Classes Against Cryptographic Modules’)",
+        "locator": "ASIACRYPT 2019, page 21",
+        "doi": "10.1007/978-3-030-34618-8_9",
+        "url": "https://eprint.iacr.org/2019/1013",
+        "eprint": "2019/1013"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that the ISO 17825 level 4 sample size is too small to reliably detect tiny effects and compares repetition with multiplicity correction, including Bonferroni adjustment. It then explicitly asks which methods and parameters would support certification, noting that configuration depends on the leakage scenario.",
+      "citation_labels": [
+        "Carolyn Whitnall et al., A Critical Analysis of ISO 17825 (‘Testing Methods for the Mitigation of Non-invasive Attack Classes Against Cryptographic Modules’)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

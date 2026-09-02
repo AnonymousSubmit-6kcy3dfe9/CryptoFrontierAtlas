@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "elmd-10-10-sub-128-bit-key-recovery",
+  "group_id": "elmd-10-10-sub-128-bit-key-recovery",
+  "title": "Sub-128-Bit Key Recovery for ELmD(10,10)",
+  "summary": "The paper refutes ELmD's claimed 128-bit security for the AES6 version, while a sub-128-bit key-recovery attack on ELmD(10,10) remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can $\\operatorname{ELmD}(10,10)$ be attacked for key recovery with time complexity below $2^{128}$?"
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the ELmD authenticated-encryption construction instantiated with 10-round AES.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "ELmD(10,10): target instantiation based on 10-round AES",
+      "2^128: time-complexity threshold that a key-recovery attack must beat"
+    ],
+    "unresolved_remainder": "Determine whether ELmD(10,10) admits a key-recovery attack with time complexity below 2^128."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "elmd",
+      "key-recovery",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Universal Forgery and Key Recovery Attacks on ELmD Authenticated Encryption Algorithm",
+        "locator": "ASIACRYPT 2016, page 13",
+        "doi": "10.1007/978-3-662-53887-6_13",
+        "url": "https://eprint.iacr.org/2016/640",
+        "eprint": "2016/640"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper refutes the claimed 128-bit plaintext and key-recovery security for the AES6 version and applies its attacks only to that instantiation. It provides no sub-128-bit key-recovery attack for AES10-based ELmD(10,10).",
+      "citation_labels": [
+        "Asli Bay et al., Universal Forgery and Key Recovery Attacks on ELmD Authenticated Encryption Algorithm"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

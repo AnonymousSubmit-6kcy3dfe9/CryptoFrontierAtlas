@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dff-multi-user-security-analysis",
+  "group_id": "dff-multi-user-security-analysis",
+  "title": "Multi-User Security Analysis for DFF",
+  "summary": "DFF security has been analyzed only for a single user with one key-derivation master key; a multi-user analysis with multiple master keys remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\mathrm{DFF}$ is a format-preserving-encryption construction that uses a key-derivation mechanism to derive subkeys from tweaks. Its existing formal security analysis covers only the single-user setting, in which the key-derivation mechanism has one master key. Establish a security analysis for $\\mathrm{DFF}$ in the multi-user setting, where the key-derivation mechanism operates under multiple master keys."
+  },
+  "scope": {
+    "domain": "Multi-user security of the DFF format-preserving-encryption construction and its tweak-based key derivation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of key-derivation master keys: one in the existing single-user analysis and multiple in the target multi-user analysis",
+      "Tweaks: inputs used by the key-derivation mechanism to derive subkeys"
+    ],
+    "unresolved_remainder": "Establish a security analysis for DFF in the multi-user setting with multiple key-derivation master keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "format-preserving-encryption",
+      "multi-user-security",
+      "key-derivation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds",
+        "locator": "EUROCRYPT 2018, page 6",
+        "doi": "10.1007/978-3-319-78381-9_18",
+        "url": "https://eprint.iacr.org/2018/136",
+        "eprint": "2018/136"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that DFF security has been formalized and studied, but only in the single-user setting with one key-derivation master key. The corresponding multi-user analysis remains unresolved.",
+      "citation_labels": [
+        "Priyanka Bose et al., Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

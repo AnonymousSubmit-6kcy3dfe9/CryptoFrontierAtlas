@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-quantum-secure-key-length-extension",
+  "group_id": "generic-quantum-secure-key-length-extension",
+  "title": "Generic Quantum-Secure Key-Length Extension",
+  "summary": "Cipher-specific key expansion requires internal knowledge; a generic method achieving full key-length security against quantum adversaries with minimal overhead remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Increasing a cipher's key size through cipher-specific internal modifications requires exact knowledge of its internal behavior. Construct a generic key-length extension that, given a cipher with an $m$-bit key, produces a cipher achieving $m$-bit security against quantum adversaries while incurring only a minimal performance penalty."
+  },
+  "scope": {
+    "domain": "Generic key-length extension for symmetric block ciphers against quantum adversaries.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "m: bit length of the input cipher's key and the target security level against quantum adversaries"
+    ],
+    "unresolved_remainder": "Construct a generic key-length extension achieving m-bit security against quantum adversaries with only a minimal performance penalty."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-length-extension",
+      "quantum-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Grover Meets Simon - Quantumly Attacking the FX-construction",
+        "locator": "ASIACRYPT 2017, page 17",
+        "doi": "10.1007/978-3-319-70697-9_6",
+        "url": "https://eprint.iacr.org/2017/427",
+        "eprint": "2017/427"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents this as a future research question and says related work offers only initial ideas. It does not provide the requested generic extension.",
+      "citation_labels": [
+        "Gregor Leander et al., Grover Meets Simon - Quantumly Attacking the FX-construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

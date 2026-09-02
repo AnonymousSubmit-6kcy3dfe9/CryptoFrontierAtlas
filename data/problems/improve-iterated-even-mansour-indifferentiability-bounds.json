@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improve-iterated-even-mansour-indifferentiability-bounds",
+  "group_id": "improve-iterated-even-mansour-indifferentiability-bounds",
+  "title": "Improve Concrete Indifferentiability Bounds for Iterated Even-Mansour",
+  "summary": "The established results have typically poor concrete indifferentiability bounds, and improving them remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For iterated Even--Mansour constructions, improve the currently poor concrete indifferentiability bounds in each setting where indifferentiability has been established: five rounds with a non-idealized key schedule and three rounds with a non-invertible idealized key schedule."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptography focused on concrete indifferentiability bounds for iterated Even--Mansour constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Five rounds: round count in the non-idealized key-schedule setting",
+      "Non-idealized key schedule: key-schedule setting",
+      "Three rounds: round count in the non-invertible idealized key-schedule setting",
+      "Non-invertible idealized key schedule: key-schedule setting"
+    ],
+    "unresolved_remainder": "Improve the currently poor concrete indifferentiability bounds in each of the two settings where indifferentiability has been established."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "indifferentiability",
+      "key-schedule"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiability of Iterated Even-Mansour Ciphers with Non-idealized Key-Schedules: Five Rounds Are Necessary and Sufficient",
+        "locator": "CRYPTO 2017, page 6",
+        "doi": "10.1007/978-3-319-63697-9_18",
+        "url": "https://eprint.iacr.org/2017/042",
+        "eprint": "2017/042"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies this as the main open question in both settings. It says the concrete indifferentiability bounds are typically poor and asks whether they can be improved.",
+      "citation_labels": [
+        "Yuanxi Dai et al., Indifferentiability of Iterated Even-Mansour Ciphers with Non-idealized Key-Schedules: Five Rounds Are Necessary and Sufficient"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

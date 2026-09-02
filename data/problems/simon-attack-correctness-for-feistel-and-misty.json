@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simon-attack-correctness-for-feistel-and-misty",
+  "group_id": "simon-attack-correctness-for-feistel-and-misty",
+  "title": "Correctness of Simon Attacks on Feistel and MISTY",
+  "summary": "For Simon-algorithm attacks on 3-round Feistel and 4-round MISTY R-FK, it remains to justify Simon's promise or derive differential attacks in exceptional cases.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Rigorous correctness analysis remains to be supplied for the Simon-algorithm attacks on the 3-round Feistel cipher and 4-round MISTY R-FK. For each attack, prove the required dichotomy: either its periodic function fulfills Simon's promise sufficiently to justify the attack, or any exceptional case gives rise to a differential-based attack."
+  },
+  "scope": {
+    "domain": "Quantum symmetric cryptanalysis of 3-round Feistel and 4-round MISTY R-FK using Simon's algorithm.",
+    "assumptions": [
+      "For simplicity, Simon's algorithm is assumed to return the correct period for the new key-recovery attacks."
+    ],
+    "parameters": [
+      "Three and four rounds identify the respective Feistel and MISTY R-FK attack targets"
+    ],
+    "unresolved_remainder": "Prove for each attack that Simon's promise is sufficiently fulfilled or that every exceptional case yields a differential-based attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "simons-algorithm",
+      "symmetric-cryptanalysis",
+      "differential-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications",
+        "locator": "CRYPTO 2022, page 9",
+        "doi": "10.1007/978-3-031-15982-4_26",
+        "url": "https://eprint.iacr.org/2022/782",
+        "eprint": "2022/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The authors indicate that a strategy from prior work could establish the required dichotomy, but defer the rigorous correctness analysis to future work.",
+      "citation_labels": [
+        "Federico Canale et al., Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

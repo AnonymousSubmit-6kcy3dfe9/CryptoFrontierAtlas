@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "missing-friet-trail-weights",
+  "group_id": "missing-friet-trail-weights",
+  "title": "Missing Friet Trail Weights",
+  "summary": "The source reports minimum trail weights for selected starting differences and masks but leaves several differential and linear entries unresolved; determine all missing weights under the stated conditions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Friet, an authenticated encryption scheme with built-in fault detection, trail experiments restrict differential trails to input differences in limb $a$ and linear trails to starting masks $q_0=(q_{0,a},q_{0,b},q_{0,c})$ with small Hamming weight in $q_{0,a}$ and $q_{0,b}=q_{0,c}=0$. The reported minimum trail weights consider starting differences or masks of $n=1,2,3$ bits in limb $a$, but leave unresolved the differential minimum weights for $n=2$ over 4 rounds and $n=3$ over 3 and 4 rounds, together with the linear minimum weights for $n=2$ over 5 and 6 rounds and $n=3$ over 4, 5, and 6 rounds. Determine all of these missing minimum weights under the stated starting conditions."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of differential and linear trails in Friet, an authenticated encryption scheme with built-in fault detection.",
+    "assumptions": [
+      "Differential trails are restricted to input differences in limb a.",
+      "Linear trails start from masks q₀ = (q₀,a, q₀,b, q₀,c) with small Hamming weight in q₀,a and q₀,b = q₀,c = 0."
+    ],
+    "parameters": [
+      "n: number of starting difference or mask bits in limb a, with n = 1, 2, or 3",
+      "round count: number of rounds in the trail",
+      "trail type: differential or linear"
+    ],
+    "unresolved_remainder": "The missing minimum weights are differential for n = 2 over 4 rounds and n = 3 over 3 and 4 rounds, and linear for n = 2 over 5 and 6 rounds and n = 3 over 4, 5, and 6 rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Friet: an Authenticated Encryption Scheme with Built-in Fault Detection",
+        "locator": "EUROCRYPT 2020, page 19",
+        "doi": "10.1007/978-3-030-45721-1_21",
+        "url": "https://eprint.iacr.org/2020/425",
+        "eprint": "2020/425"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents Table 3 as reporting minimum weights for trails starting with 1-, 2-, and 3-bit differences or masks in limb a. Question marks in the table identify the differential and linear entries that remain to be determined.",
+      "citation_labels": [
+        "Thierry Simon et al., Friet: an Authenticated Encryption Scheme with Built-in Fault Detection"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

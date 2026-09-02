@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "affine-subspace-trails-for-full-alzette-instances",
+  "group_id": "affine-subspace-trails-for-full-alzette-instances",
+  "title": "Affine-Subspace Trails for Full Alzette Instances",
+  "summary": "A randomized search found no nontrivial affine-subspace trail for full Sparkle Alzette instances, while two-round reductions have trails of dimensions 56 through 63; whether such trails exist remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each full Alzette instance $A_{c_i}$ using a round constant from Sparkle, determine whether there exists a nontrivial affine subspace that $A_{c_i}$ maps to a possibly different affine subspace of the same dimension: either construct such an affine-subspace trail or prove that none exists. A randomized to-and-fro search found no such trail, but it does not constitute a proof; the same method found trails of dimensions $56$ through $63$ for every two-round reduced ARX-box."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of full Alzette ARX-box instances using Sparkle round constants.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Sparkle round constant c_i, selecting an Alzette instance",
+      "Affine-subspace dimension, required to be nontrivial and preserved under the mapping"
+    ],
+    "unresolved_remainder": "Determine for each full Alzette instance using a Sparkle round constant whether a nontrivial affine subspace is mapped to a possibly different affine subspace of the same dimension, by constructing such a trail or proving that none exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "structural-cryptanalysis",
+      "invariant-subspaces",
+      "arx-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 17",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a randomized to-and-fro search over the Sparkle round constants and reports no nontrivial same-dimension affine-subspace trail for full Alzette instances. It explicitly says this is not a proof, while the same method found trails of dimensions 56 through 63 for every two-round reduced ARX-box.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dedicated-mrlae-authenticated-encryption-minimal-expansion",
+  "group_id": "dedicated-mrlae-authenticated-encryption-minimal-expansion",
+  "title": "Dedicated mrLAE Authenticated Encryption with Minimal Expansion",
+  "summary": "Generic SIVAT composition achieves misuse resistance but adds message expansion; constructing a dedicated mrLAE-secure scheme with minimal expansion remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Misuse resistance can be achieved through the generic MAC-then-Encrypt-then-MAC construction SIVAT, but at the cost of additional message expansion. Construct a dedicated authenticated-encryption scheme that achieves $\\mathrm{mrLAE}$ security with minimal message expansion."
+  },
+  "scope": {
+    "domain": "Authenticated encryption involving generic SIVAT composition and dedicated constructions targeting mrLAE security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Message expansion — the efficiency quantity to minimize"
+    ],
+    "unresolved_remainder": "Construct a dedicated authenticated-encryption scheme achieving mrLAE security with minimal message expansion."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "mrlae",
+      "message-expansion"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 29",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents generic SIVAT composition as achieving misuse resistance at the cost of additional message expansion. It identifies a dedicated mrLAE-secure construction with minimal expansion as an unresolved goal.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

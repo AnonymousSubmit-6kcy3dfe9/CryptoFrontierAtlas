@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mimc-feistel-exponent-reduction-degree-bounds",
+  "group_id": "mimc-feistel-exponent-reduction-degree-bounds",
+  "title": "Exponent-Reduction Effects on MiMC Algebraic Degree",
+  "summary": "Beyond the finite-field exponent threshold, exponent reduction and sparse terms can lower practical algebraic degree; predicting changed monomials and tightening bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the field-based polynomial analysis of MiMC-like Feistel constructions, characterize when finite-field exponent reduction, arising once the degree exceeds $2^n-1$, changes a particular monomial, and use this characterization to tighten algebraic-degree bounds while accounting for sparse polynomial terms that can lower the practical degree. The characterization should explain cases such as $n=3$, where $(x_0\\oplus k_0)^{27}(x_1\\oplus k_1)^{18}\\equiv(x_0\\oplus k_0)^6(x_1\\oplus k_1)^4$ and the algebraic degree decreases from $\\operatorname{wt}(27)+\\operatorname{wt}(18)=6$ to $\\operatorname{wt}(6)+\\operatorname{wt}(4)=4$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of field-based polynomial models for MiMC-like Feistel constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: finite-field parameter controlling the exponent-reduction threshold and instantiated as 3 in the example"
+    ],
+    "unresolved_remainder": "Find a condition predicting which monomials change under finite-field exponent reduction and use it to tighten algebraic-degree bounds while incorporating sparsity effects."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "finite-field-polynomials",
+      "mimc"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Field-Based Division Property: Applications to MiMC, Feistel MiMC and GMiMC",
+        "locator": "ASIACRYPT 2022, page 20",
+        "doi": "10.1007/978-3-031-22969-5_9",
+        "url": "https://eprint.iacr.org/2022/1210",
+        "eprint": "2022/1210"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper gives an n=3 example in which exponent reduction lowers the algebraic degree from 6 to 4, then identifies the lack of a predictive condition and the additional degree-lowering effect of sparse terms.",
+      "citation_labels": [
+        "jiamin cui et al., On the Field-Based Division Property: Applications to MiMC, Feistel MiMC and GMiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

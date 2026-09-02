@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "groebner-bases-for-general-polynomial-systems-over-zq",
+  "group_id": "groebner-bases-for-general-polynomial-systems-over-zq",
+  "title": "Gröbner Bases for General Polynomial Systems over Zq",
+  "summary": "Gröbner-basis techniques solve uniquely solvable overdetermined systems over Zq at higher cost than over finite fields, but their applicability to more general systems remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For polynomial systems over $\\mathbb{Z}_q$, Grobner-basis techniques can solve overdetermined systems that admit a unique solution, although at higher cost than when solving such systems over finite fields; determine whether, and under what conditions, Grobner-basis methods can find solutions to more general polynomial systems over $\\mathbb{Z}_q$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of polynomial systems over the ring Zq using Gröbner-basis techniques.",
+    "assumptions": [
+      "The known solvable case is overdetermined.",
+      "The known solvable case admits a unique solution."
+    ],
+    "parameters": [
+      "q determines the coefficient ring Zq"
+    ],
+    "unresolved_remainder": "Whether, and under what conditions, Gröbner-basis methods can find solutions to more general polynomial systems over Zq."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "groebner-bases",
+      "polynomial-systems"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato",
+        "locator": "CRYPTO 2023, page 5",
+        "doi": "10.1007/978-3-031-38548-3_11",
+        "url": "https://eprint.iacr.org/2023/822",
+        "eprint": "2023/822"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents uniquely solvable overdetermined systems as tractable by Gröbner-basis techniques, though at higher cost than over finite fields. It explicitly identifies applicability to more general systems over Zq as open.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

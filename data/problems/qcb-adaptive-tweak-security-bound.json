@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "qcb-adaptive-tweak-security-bound",
+  "group_id": "qcb-adaptive-tweak-security-bound",
+  "title": "Adaptive-Tweak Security Bound for QCB",
+  "summary": "QCB's security bound is established for pre-declared non-adaptive tweaks; whether the same bound holds for adaptively chosen tweaks remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether QCB's key-tweak insertion tweakable block cipher security bound, established for non-adaptive tweaks declared in advance, remains valid when an adversary selects tweaks adaptively based on its current state. This adaptive setting is unresolved because the query-magnitude argument used for the non-adaptive setting cannot be applied as is: the positions at which the outputs of $E^{+}$ and $E^{-}$ should be changed are not known in advance. The task is to prove that the same security bound holds for adaptive tweaks, or to determine the precise limitation or attack in that model; the available discussion reports no apparent better attack but leaves the question open."
+  },
+  "scope": {
+    "domain": "Security analysis of QCB's key-tweak insertion tweakable block cipher under adaptive tweak selection.",
+    "assumptions": [
+      "The established bound assumes non-adaptive tweaks declared in advance.",
+      "The open setting permits the adversary to select tweaks adaptively based on its current state."
+    ],
+    "parameters": [
+      "Tweak-selection regime: distinguishes the established non-adaptive setting from the unresolved adaptive setting"
+    ],
+    "unresolved_remainder": "Prove that the same security bound holds for adaptive tweaks, or identify the precise limitation or attack in that model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "adaptive-tweaks",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 37",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that the existing bound extends to adaptive tweaks and explicitly leaves the question open, noting no apparent better attack. It identifies the need to know output-change positions in advance as the obstacle to reusing the query-magnitude argument.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

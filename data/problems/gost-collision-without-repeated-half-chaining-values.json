@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gost-collision-without-repeated-half-chaining-values",
+  "group_id": "gost-collision-without-repeated-half-chaining-values",
+  "title": "GOST Collision Attack Without Repeated-Half Chaining Values",
+  "summary": "The strategy relies on a repeated-half chaining value, and a related attack checks two to the thirty-second power values; finding a collision below that cost without the structure remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the GOST hash function, determine whether the attack strategy that finds a collision by exploiting an initial chaining value of the form $H_{i-1}=(x,x)$ can find a collision with fewer than $2^{32}$ hash-function evaluations when the initial chaining value $H_{i-1}$ does not have that form. The existing strategy relies on $H_{i-1}=(x,x)$, and the related attack checks $2^{32}$ chaining values until it obtains one with this form before applying the attack."
+  },
+  "scope": {
+    "domain": "Collision cryptanalysis of the GOST hash function, focusing on the structure of chaining values.",
+    "assumptions": [
+      "The existing attack strategy relies on an initial chaining value of the form $H_{i-1}=(x,x)$."
+    ],
+    "parameters": [
+      "$H_{i-1}$: the initial chaining value and whether it has the repeated-half form $(x,x)$",
+      "$2^{32}$: the existing chaining-value search count and the hash-function evaluation threshold to beat"
+    ],
+    "unresolved_remainder": "Whether the strategy can find a collision with fewer than $2^{32}$ hash-function evaluations when the initial chaining value is not of the form $(x,x)$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "gost-hash",
+      "collision-attacks",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Practical-Time Related-Key Attack on GOST with Secret S-boxes",
+        "locator": "CRYPTO 2023, page 27",
+        "doi": "10.1007/978-3-031-38548-3_7",
+        "url": "https://eprint.iacr.org/2023/374",
+        "eprint": "2023/374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the existing strategy's dependence on $H_{i-1}=(x,x)$ and reports that the related attack checks $2^{32}$ chaining values before applying it. It leaves open whether the strategy can achieve a collision with fewer than $2^{32}$ hash-function evaluations from other initial values.",
+      "citation_labels": [
+        "Ariel Weizman et al., Practical-Time Related-Key Attack on GOST with Secret S-boxes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

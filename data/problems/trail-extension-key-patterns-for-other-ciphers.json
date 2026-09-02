@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "trail-extension-key-patterns-for-other-ciphers",
+  "group_id": "trail-extension-key-patterns-for-other-ciphers",
+  "title": "Trail-Extension Key Patterns for Other Ciphers",
+  "summary": "Trail extension efficiently yielded minimum-degree lower bounds for round-reduced SKINNY-64, GIFT-64, and PRESENT, but its applicability to other block ciphers remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For block ciphers other than SKINNY-64, GIFT-64, and PRESENT, determine whether the trail-extension technique can find key patterns having an odd number of division trails and assess how effectively it can do so. The technique enabled efficient computation of lower bounds on the minimum degree for round-reduced variants of SKINNY-64, GIFT-64, and PRESENT, but its applicability to other ciphers remains unresolved. An attempted application to CRAFT, using a modified version of the available tool, failed to find such key patterns despite CRAFT's similarity to SKINNY-64; the reported obstacle was that CRAFT's round function fundamentally disrupts trail extensions."
+  },
+  "scope": {
+    "domain": "Automated integral cryptanalysis of block ciphers using the trail-extension technique.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Target block cipher: a cipher other than SKINNY-64, GIFT-64, or PRESENT",
+      "Division-trail count: required to be odd for the sought key patterns"
+    ],
+    "unresolved_remainder": "Determine whether, and how effectively, trail extension can find odd-division-trail key patterns for other block ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "division-property",
+      "automated-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Strong and Tight Security Guarantees against Integral Distinguishers",
+        "locator": "ASIACRYPT 2021, page 20",
+        "doi": "10.1007/978-3-030-92062-3_13",
+        "url": "https://eprint.iacr.org/2021/1502",
+        "eprint": "2021/1502"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports efficient lower-bound computations for round-reduced SKINNY-64, GIFT-64, and PRESENT, then explicitly leaves extension to other ciphers open. A modified CRAFT attempt found no such key patterns because its round function disrupted trail extensions.",
+      "citation_labels": [
+        "Phil Hebborn et al., Strong and Tight Security Guarantees against Integral Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "indifferentiable-construction-below-rate-3",
+  "group_id": "indifferentiable-construction-below-rate-3",
+  "title": "Indifferentiable Construction Below Rate 3",
+  "summary": "The source identifies rate 3 as the achieved benchmark and leaves open whether an indifferentiable construction can improve on that efficiency.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\exists$ an indifferentiable construction with rate $r<3$?"
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, focusing on indifferentiable authenticated-encryption constructions and their efficiency.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "rate r, measuring the construction's primitive-call efficiency"
+    ],
+    "unresolved_remainder": "Whether an indifferentiable construction with rate strictly below 3 exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "indifferentiability",
+      "authenticated-encryption",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 10",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents rate 3 as an achieved benchmark and explicitly asks whether an indifferentiable construction with a lower rate is achievable.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fast-arbitrary-nonzero-difference-bounds",
+  "group_id": "fast-arbitrary-nonzero-difference-bounds",
+  "title": "Differential Bounds for Fixed Nonzero FAST Differences",
+  "summary": "FAST’s current differential analysis uses abstract difference behavior; deriving bounds for arbitrary fixed nonzero differences remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the differential analysis of FAST's format-preserving encryption and tokenization construction, extend the method so that it retains and analyzes arbitrary fixed nonzero differences in $Z_a$, rather than using only the abstract difference behavior currently considered. The unresolved task is to derive corresponding differential bounds for these arbitrary nonzero differences, despite the fact that a direct analysis would require forming $((a+1)^\\ell-1)\\times((a+1)^\\ell-1)$ matrices, which cannot be formed. [S1]"
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of FAST format-preserving encryption and tokenization.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "a: indexes the difference domain Z_a and appears in the direct-analysis matrix dimension",
+      "ell: exponent governing the direct-analysis matrix dimension"
+    ],
+    "unresolved_remainder": "Derive differential bounds for arbitrary fixed nonzero differences in Z_a without forming the direct-analysis matrices that cannot be formed."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "format-preserving-encryption",
+      "fast"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "FAST: Secure and High Performance Format-Preserving Encryption and Tokenization",
+        "locator": "ASIACRYPT 2021, page 57",
+        "doi": "10.1007/978-3-030-92078-4_16",
+        "url": "https://eprint.iacr.org/2021/1171",
+        "eprint": "2021/1171"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents arbitrary fixed nonzero differences as an unresolved extension of FAST’s abstract differential analysis. It identifies the required direct-analysis matrix size as the obstacle.",
+      "citation_labels": [
+        "F. Betül Durak et al., FAST: Secure and High Performance Format-Preserving Encryption and Tokenization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "stronger-leakage-simulators",
+  "group_id": "stronger-leakage-simulators",
+  "title": "Stronger Leakage Simulators for Simulatability",
+  "summary": "The first leakage-simulator instances were broken, and constructing new, stronger simulators remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct new, stronger leakage simulators for the simulatability approach: each simulator should use the same hardware that produces real leakage, have no access to the secret key, and generate fake leakage that is hard to distinguish from real leakage. This remains unresolved because the first proposed simulator instances were broken."
+  },
+  "scope": {
+    "domain": "The simulatability approach to physical leakage resistance in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Leakage simulators: target constructions for generating fake leakage"
+    ],
+    "unresolved_remainder": "Construct new, stronger leakage simulators for the simulatability approach."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "leakage-resistance",
+      "simulatability",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 10",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly reports that the first simulator instances were broken and identifies proposing new, stronger ones as an open problem.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

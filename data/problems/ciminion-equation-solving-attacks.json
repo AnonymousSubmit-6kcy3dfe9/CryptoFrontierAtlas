@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ciminion-equation-solving-attacks",
+  "group_id": "ciminion-equation-solving-attacks",
+  "title": "Equation-Solving Attacks on Ciminion",
+  "summary": "Ciminion’s truncated outputs make trivial meet-in-the-middle linearization difficult; whether equation-solving methods can exploit the resulting systems remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Ciminion, whose truncated output means that part of each output changes while remaining secret, each collected equation introduces additional secret variables, making a meet-in-the-middle-style trivial linearization difficult. It remains unresolved whether equation-solving attacks, including Gröbner-basis methods and other algebraic techniques, can exploit the resulting systems, and whether the equation systems generated after a few rounds contain exploitable structure such as sparse equations."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Ciminion’s truncated-output equation systems, contrasted with meet-in-the-middle linearization.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of collected equations: each equation adds secret variables to the system",
+      "Number of rounds: determines the equation systems examined for exploitable structure"
+    ],
+    "unresolved_remainder": "Whether Gröbner-basis or other algebraic equation-solving attacks can exploit the resulting systems, including special few-round structure such as sparse equations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "meet-in-the-middle",
+      "ciminion"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields",
+        "locator": "EUROCRYPT 2021, page 39",
+        "doi": "10.1007/978-3-030-77886-6_1",
+        "url": "https://eprint.iacr.org/2021/267",
+        "eprint": "2021/267"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source argues that truncation and newly introduced secret variables obstruct trivial meet-in-the-middle linearization. It leaves open whether equation-solving methods can exploit special structure, such as sparse equations, in few-round systems.",
+      "citation_labels": [
+        "Christoph Dobraunig et al., Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

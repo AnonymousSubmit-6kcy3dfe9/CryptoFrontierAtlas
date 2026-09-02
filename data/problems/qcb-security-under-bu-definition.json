@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "qcb-security-under-bu-definition",
+  "group_id": "qcb-security-under-bu-definition",
+  "title": "QCB Security Under the BU Definition",
+  "summary": "The BU definition permits success on a message not output by the forgery; proving QCB secure under this unknown-message condition remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved problem is to prove security for QCB under the BU definition in which a successful forgery is evaluated using a message $M$ that need not be an output of the forgery, so an adversary may forge on an unknown message $M$; the available evidence conjectures that this definition is non-trivial for QCB, while noting that such a proof would likely be more technical than the original security proof."
+  },
+  "scope": {
+    "domain": "Quantum-secure authenticated encryption and BU security for the QCB construction.",
+    "assumptions": [
+      "The BU success condition is evaluated using a message M that need not be an output of the forgery."
+    ],
+    "parameters": [
+      "M — the message used to evaluate forgery success, which may be unknown to the adversary"
+    ],
+    "unresolved_remainder": "Prove security for QCB under this BU definition."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "quantum-security",
+      "bu-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 28",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that the BU definition is non-trivial for QCB and might be proven for it. It leaves the proof open and expects it to be more technical than the original security proof.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

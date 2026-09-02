@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "query-preserving-security-for-traditional-cycle-walking",
+  "group_id": "query-preserving-security-for-traditional-cycle-walking",
+  "title": "Query-Preserving Security for Traditional Cycle Walking",
+  "summary": "Reverse 2-cycle walking achieves the broader domain-restriction goal, but proving traditional cycle walking secure without amplifying reduction queries remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $S=\\{0,\\ldots,N-1\\}$ and $T=\\{0,\\ldots,2N-1\\}$, and let $E_{\\mathrm{part}}$ be a block cipher on $T$ whose security is assumed only against $N$ queries. Determine whether traditional cycle walking can produce a cipher $E_{\\mathrm{full}}$ on $S$ with security against $N$ adversarial queries while admitting a reduction that makes at most $N$ queries to $E_{\\mathrm{part}}$. The unresolved obstacle is query amplification: each query to $E_{\\mathrm{full}}$ may require many queries to $E_{\\mathrm{part}}$, potentially forcing the reduction to query nearly all $2N$ points of $T$ and thereby exceed $E_{\\mathrm{part}}$'s assumed security threshold."
+  },
+  "scope": {
+    "domain": "Finite-domain block-cipher security reductions for traditional cycle walking.",
+    "assumptions": [
+      "The block cipher E_part on T is assumed secure only against N queries."
+    ],
+    "parameters": [
+      "N: determines the N-point target domain S, the 2N-point source domain T, and the stated query bounds",
+      "E_part and E_full: the underlying cipher on T and the desired traditional-cycle-walking cipher on S"
+    ],
+    "unresolved_remainder": "Whether traditional cycle walking can achieve N-query security on S through a reduction making at most N queries to E_part despite query amplification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "cycle-walking",
+      "block-ciphers",
+      "security-reductions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse Cycle Walking and Its Applications",
+        "locator": "ASIACRYPT 2016, page 6",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://eprint.iacr.org/2016/865",
+        "eprint": "2016/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents traditional cycle walking as a possible approach but identifies query amplification as the barrier to a security reduction. It proves the larger transformation with reverse 2-cycle walking rather than resolving that barrier for the traditional method.",
+      "citation_labels": [
+        "Sarah Miracle et al., Reverse Cycle Walking and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

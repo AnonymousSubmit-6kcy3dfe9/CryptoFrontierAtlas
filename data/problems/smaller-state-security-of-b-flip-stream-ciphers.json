@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "smaller-state-security-of-b-flip-stream-ciphers",
+  "group_id": "smaller-state-security-of-b-flip-stream-ciphers",
+  "title": "Smaller-State Security of b-FLIP Stream Ciphers",
+  "summary": "The source offers a conjecture, not a security result: whether b-FLIP designs can yield secure stream ciphers with smaller states remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A $b$-FLIP design is a stream-cipher construction that computes $b$ FLIP instances in parallel using one common filtering function and different permutations, then XORs their output bits to produce each keystream bit. The unresolved task is to determine whether these indirect-sum constructions can provide secure stream ciphers with smaller states, specifically whether the suggested $10$-FLIP$(10,20,1\\,\\Delta_{20})$ and $15$-FLIP$(15,30,1\\,\\Delta_{30})$ instances achieve the intended 80-bit and 128-bit security levels, respectively."
+  },
+  "scope": {
+    "domain": "Design and security of indirect-sum b-FLIP stream-cipher constructions built from parallel FLIP instances with a common filtering function and different permutations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "b — number of FLIP instances computed in parallel",
+      "10-FLIP(10, 20, 1 Δ20) — concrete candidate associated with the intended 80-bit security level",
+      "15-FLIP(15, 30, 1 Δ30) — concrete candidate associated with the intended 128-bit security level"
+    ],
+    "unresolved_remainder": "Whether the indirect-sum b-FLIP constructions can yield secure stream ciphers with smaller states, and whether the suggested instances achieve the intended 80-bit and 128-bit security levels, respectively."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "stream-ciphers",
+      "b-flip",
+      "security-conjectures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts",
+        "locator": "EUROCRYPT 2016, page 18",
+        "doi": "10.1007/978-3-662-49890-3_13",
+        "url": "https://eprint.iacr.org/2016/254",
+        "eprint": "2016/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces b-FLIP designs as parallel FLIP instances with a common filtering function and different permutations whose outputs are XORed. It presents smaller-state security as a conjecture and names the two concrete instances for 80-bit and 128-bit security.",
+      "citation_labels": [
+        "Pierrick Méaux et al., Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

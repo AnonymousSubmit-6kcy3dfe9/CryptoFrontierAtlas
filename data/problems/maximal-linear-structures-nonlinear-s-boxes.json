@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maximal-linear-structures-nonlinear-s-boxes",
+  "group_id": "maximal-linear-structures-nonlinear-s-boxes",
+  "title": "Maximal Linear Structures in Nonlinear S-Boxes",
+  "summary": "Known nonlinear constructions fall one power of two below the maximal proper linear-structure count; whether that maximum is attainable remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists a nonlinear $n\\times n$ S-box with exactly $2^{n-1}$ linear structures. An $n\\times n$ S-box with all $2^n$ linear structures would be linear, making $2^{n-1}$ the maximum possible number short of linearity, whereas the available constructions attain only $2^{n-2}$ linear structures."
+  },
+  "scope": {
+    "domain": "Linear structures of nonlinear square S-boxes and vectorial Boolean functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: input and output dimension of the square S-box"
+    ],
+    "unresolved_remainder": "Whether a nonlinear n×n S-box can have exactly two to the n minus one linear structures."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "vectorial-boolean-functions",
+      "linear-structures"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 26",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports S-boxes with at most two to the n minus two linear structures and identifies two to the n minus one as the maximum short of linearity. It explicitly leaves attainability of that maximum open.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

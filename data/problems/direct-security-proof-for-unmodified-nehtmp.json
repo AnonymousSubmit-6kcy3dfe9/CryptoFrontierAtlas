@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "direct-security-proof-for-unmodified-nehtmp",
+  "group_id": "direct-security-proof-for-unmodified-nehtmp",
+  "title": "Direct Security Proof for Unmodified nEHtMp",
+  "summary": "The modified m-nEHtMp workaround makes additional bad events easier to bound, but a direct security proof for the original nEHtMp construction remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish a security proof for the original, unmodified $\\mathrm{nEHtMp}$ construction by developing techniques strong enough to bound the additional bad events in its analysis. The modified $\\mathrm{m\\text{-}nEHtMp}$ workaround appends a hash evaluation of the input message $M$ under an extra hash key $h^{\\ast}$ to the output tag, thereby adding randomness that makes these bad events easier to bound. The unresolved task is to obtain the proof directly for $\\mathrm{nEHtMp}$ without this modification."
+  },
+  "scope": {
+    "domain": "Security analysis of the original nEHtMp nonce-based MAC and the modified m-nEHtMp workaround.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "M: input message hashed by the modified workaround",
+      "h*: extra hash key used for that hash evaluation"
+    ],
+    "unresolved_remainder": "Develop sufficiently strong bounds for the additional bad events and thereby prove security directly for the unmodified nEHtMp construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "mac-security",
+      "security-proof",
+      "bad-event-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Security Analysis of Two-Permutation Constructions",
+        "locator": "ASIACRYPT 2022, page 26",
+        "doi": "10.1007/978-3-031-22963-3_13",
+        "url": "https://eprint.iacr.org/2022/1244",
+        "eprint": "2022/1244"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves security for modified m-nEHtMp, whose extra hash evaluation makes the additional bad events easier to bound. It conjectures that stronger bad-event techniques combined with its new approaches can prove the original construction.",
+      "citation_labels": [
+        "Yu Long Chen et al., A Modular Approach to the Security Analysis of Two-Permutation Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor-cenc-kdf-2-unpredictability",
+  "group_id": "xor-cenc-kdf-2-unpredictability",
+  "title": "2-Unpredictability of XOR and CENC KDFs",
+  "summary": "The paper proves 2-unpredictability for KD0 and KD1 but leaves proving the same property for the XOR and CENC KDF constructions unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove that the XOR and CENC KDF constructions are $2$-unpredictable."
+  },
+  "scope": {
+    "domain": "Unpredictability analysis of block-cipher-based key-derivation constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "2, the target value of the unpredictability parameter"
+    ],
+    "unresolved_remainder": "Prove 2-unpredictability for both the XOR and CENC KDF constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "key-derivation-functions",
+      "block-ciphers",
+      "unpredictability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78381-9_18",
+        "url": "https://eprint.iacr.org/2018/136",
+        "eprint": "2018/136"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper proves 2-unpredictability for KD0 and KD1, then suggests establishing the same property for XOR and CENC. It proceeds with natural, 2-unpredictable KDFs without supplying those proofs.",
+      "citation_labels": [
+        "Priyanka Bose et al., Revisiting AES-GCM-SIV: Multi-user Security, Faster Key Derivation, and Better Bounds"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

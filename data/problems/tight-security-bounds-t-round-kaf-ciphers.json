@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-bounds-t-round-kaf-ciphers",
+  "group_id": "tight-security-bounds-t-round-kaf-ciphers",
+  "title": "Tight Security Bounds for t-Round KAF Ciphers",
+  "summary": "An upper-bound attack and separate lower bounds are known for t-round KAF ciphers, but tight security bounds for arbitrary t remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine tight security bounds for $t$-round Key-Alternating Feistel (KAF) ciphers; the precise bounds for this round-parameterized cipher remain unresolved."
+  },
+  "scope": {
+    "domain": "Symmetric-key block-cipher security for Key-Alternating Feistel networks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "t: number of rounds in the KAF cipher"
+    ],
+    "unresolved_remainder": "Determine tight security bounds for t-round KAF ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "key-alternating-feistel",
+      "security-bounds",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 10",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents tight security bounds for t-round KAF as an open problem. It reports an upper-bound attack and separate lower bounds without a tight characterization for arbitrary t.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

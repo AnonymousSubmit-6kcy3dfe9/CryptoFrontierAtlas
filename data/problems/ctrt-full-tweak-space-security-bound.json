@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ctrt-full-tweak-space-security-bound",
+  "group_id": "ctrt-full-tweak-space-security-bound",
+  "title": "CTRT Security with Full-Tweak-Space Counter Cycling",
+  "summary": "Existing NSIV analysis limits CTRT’s IV space to the block-space size; it remains to analyze full-tweak-space counter cycling and determine whether it yields a stronger security bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{CTRT}$ instantiated with a tweakable block cipher whose tweak space $\\mathcal{T}$ and block space $\\mathcal{X}$ satisfy $|\\mathcal{T}|>|\\mathcal{X}|$, the existing $\\mathrm{NSIV}$ composition analysis restricts the IV space to size at most $|\\mathcal{X}|$. It can therefore be applied by choosing an IV subset $\\mathcal{I}\\subset\\mathcal{T}$ of size $|\\mathcal{X}|$ and letting the counter update $\\operatorname{Inc}$ cycle over $\\mathcal{I}$. Extend the security analysis to the variant in which $\\operatorname{Inc}$ is a cyclic permutation of the entire tweak space $\\mathcal{T}$, and determine whether this yields a stronger $\\mathrm{CTRT}$ security bound."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security analysis for CTRT over a tweakable block cipher with a larger tweak space than block space.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Tweak space 𝒯 and block space 𝒳: the tweak space has greater cardinality than the block space",
+      "IV subset ℐ: a subset of 𝒯 with the same cardinality as 𝒳 used by the existing analysis",
+      "Counter update Inc: cycles over ℐ in the existing application and over all of 𝒯 in the proposed variant"
+    ],
+    "unresolved_remainder": "Extend the analysis to a cyclic counter update over the entire tweak space and determine whether the resulting CTRT security bound is stronger."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "tweakable-block-ciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 27",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a block-space-sized tweak subset that permits Theorem 1 to apply, then suggests that cycling over the entire tweak space may improve CTRT security without establishing the stronger bound.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mte-security-under-restricted-leakage",
+  "group_id": "mte-security-under-restricted-leakage",
+  "title": "MtE Security under Restricted Leakage Sets",
+  "summary": "A generic attack makes most MtE schemes insecure under general leakage; it remains open whether restricted leakage sets can yield security and exactly which restrictions suffice.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For MAC-then-Encrypt (MtE) schemes in a leakage setting, a generic attack applies to any scheme whose inversion follows either a decrypt-then-verify or a decrypt-and-verify structure, rendering most MtE schemes insecure under general leakage. Determine whether MtE schemes can be proven leakage-secure when the admissible leakage sets are more restricted than in the general setting, and characterize the precise conditions on the leakage sets under which such security can be achieved."
+  },
+  "scope": {
+    "domain": "Leakage security of MAC-then-Encrypt authenticated-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Admissible leakage sets — their restrictions govern the sought leakage-security characterization",
+      "Inversion structure — decrypt-then-verify or decrypt-and-verify enables the generic attack"
+    ],
+    "unresolved_remainder": "Determine whether restricted leakage sets permit provable leakage security for MtE schemes and characterize the precise restrictions under which security is achievable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "mac-then-encrypt",
+      "leakage-security",
+      "side-channel-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 29",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source attributes the insecurity of most MtE schemes under leakage to a generic attack on decrypt-then-verify and decrypt-and-verify inversion structures. It explicitly leaves leakage security under more restricted leakage sets as an open question.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

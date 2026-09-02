@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "practical-uae-strong-confidentiality-integrity",
+  "group_id": "practical-uae-strong-confidentiality-integrity",
+  "title": "Practical UAE With Strong Confidentiality and Integrity",
+  "summary": "The authenticated-encryption construction lacks strongest confidentiality and the RLWE construction has relaxed integrity; the unresolved task is a practical UAE scheme meeting both strongest notions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A practical updatable authenticated encryption (UAE) scheme is sought that simultaneously satisfies the strongest confidentiality and strongest integrity definitions. The authenticated-encryption-based construction provides security guarantees sufficient for typical updatable-encryption use cases but does not satisfy the strongest confidentiality definition, while the RLWE-based construction satisfies only a relaxed integrity notion. The unresolved task is therefore to construct a practical UAE scheme that meets both strongest notions simultaneously."
+  },
+  "scope": {
+    "domain": "Design of cryptographic primitives, specifically practical updatable authenticated encryption schemes and their confidentiality and integrity notions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a practical UAE scheme that simultaneously satisfies the strongest confidentiality and strongest integrity definitions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "updatable-encryption",
+      "authenticated-encryption",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improving Speed and Security in Updatable Encryption Schemes",
+        "locator": "ASIACRYPT 2020, page 27",
+        "doi": "10.1007/978-3-030-64840-4_19",
+        "url": "https://eprint.iacr.org/2020/222",
+        "eprint": "2020/222"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as the first of two open problems for future work. It contrasts the authenticated-encryption-based and RLWE-based constructions, then asks for a practical UAE scheme satisfying both strongest definitions.",
+      "citation_labels": [
+        "Dan Boneh et al., Improving Speed and Security in Updatable Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

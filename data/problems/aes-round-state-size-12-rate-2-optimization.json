@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-round-state-size-12-rate-2-optimization",
+  "group_id": "aes-round-state-size-12-rate-2-optimization",
+  "title": "AES-Round Optimization for State Size 12 and Rate 2",
+  "summary": "Six of seven proposed constructions were optimized; the state-size-12, rate-2 case remains to be optimized because one objective evaluation took half a day.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $s=12$ and $\\rho=2$, $\\operatorname*{maximize}_{\\mathrm{aes\\_masks},\\mathrm{feed\\_masks},\\mathrm{messages}} f(\\mathrm{aes\\_masks},\\mathrm{feed\\_masks},\\mathrm{messages})$ over rate-valid constructions despite the cost of evaluating $f$."
+  },
+  "scope": {
+    "domain": "Metaheuristic design of AES-round-based symmetric-key constructions using active-S-box bounds for internal-collision differential characteristics.",
+    "assumptions": [
+      "The search is restricted to rate-valid constructions."
+    ],
+    "parameters": [
+      "s = 12: state size",
+      "ρ = 2: construction rate",
+      "aes_masks, feed_masks, and messages: variables encoding a candidate construction",
+      "f: ILP-derived lower bound on active S-boxes in the best internal-collision differential characteristic"
+    ],
+    "unresolved_remainder": "Carry out the omitted maximization of f over rate-valid constructions for state size 12 and rate 2."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "symmetric-key-design",
+      "aes-round-constructions",
+      "metaheuristic-optimization"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Use Metaheuristics for Design of Symmetric-Key Primitives",
+        "locator": "ASIACRYPT 2017, page 14",
+        "doi": "10.1007/978-3-319-70700-6_13",
+        "url": "https://eprint.iacr.org/2017/851",
+        "eprint": "2017/851"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports optimizing six of seven constructions and omitting the state-size-12, rate-2 case because evaluating f once took half a day. It provides no optimization result for that case.",
+      "citation_labels": [
+        "Ivica Nikolic et al., How to Use Metaheuristics for Design of Symmetric-Key Primitives"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

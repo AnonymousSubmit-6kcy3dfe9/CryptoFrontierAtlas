@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "near-one-grover-simon-attack-success",
+  "group_id": "near-one-grover-simon-attack-success",
+  "title": "Near-One Success for the Grover–Simon Attack",
+  "summary": "The attack is proved to succeed with probability at least two-fifths; proving success close to one from n plus a constant Simon samples remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish that $n+O(1)$ values $u_i$ span $U$ in the periodic case and have rank $n$ in the non-periodic case with probability close to $1$, yielding attack success close to $1$."
+  },
+  "scope": {
+    "domain": "Quantum symmetric-key cryptanalysis of the FX construction via the Grover–Simon attack.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: dimension parameter controlling the sample count and the full-rank target",
+      "u_i: sampled Simon vectors whose span or rank controls classification",
+      "U: subspace to be spanned in the periodic case"
+    ],
+    "unresolved_remainder": "Prove that n plus a constant sampled vectors span U in the periodic case and have rank n in the non-periodic case with probability close to one, thereby establishing near-one attack success."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "symmetric-cryptanalysis",
+      "grover-simon"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Grover Meets Simon - Quantumly Attacking the FX-construction",
+        "locator": "ASIACRYPT 2017, page 16",
+        "doi": "10.1007/978-3-319-70697-9_6",
+        "url": "https://eprint.iacr.org/2017/427",
+        "eprint": "2017/427"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves attack success with probability at least two-fifths, then presents near-one success from n plus a constant samples as an expected improvement. The required spanning and rank behavior remains unproved.",
+      "citation_labels": [
+        "Gregor Leander et al., Grover Meets Simon - Quantumly Attacking the FX-construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

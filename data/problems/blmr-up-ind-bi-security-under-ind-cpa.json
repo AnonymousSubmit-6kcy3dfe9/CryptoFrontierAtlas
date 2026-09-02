@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "blmr-up-ind-bi-security-under-ind-cpa",
+  "group_id": "blmr-up-ind-bi-security-under-ind-cpa",
+  "title": "BLMR UP-IND-BI Security Under IND-CPA",
+  "summary": "The existing proof sketch is flawed, and the source considers the implied circular-security reduction unlikely; whether security follows from IND-CPA or can be ruled out remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the BLMR scheme, determine whether $\\text{UP-IND-BI}$ security can be established under only $\\text{IND-CPA}$ security of the underlying KEM, despite the bug in the existing proof sketch, or instead prove that such a security proof cannot exist by separating $\\text{IND-CPA}$ security from the circular security it would imply for a simple KEM/DEM-style symmetric-encryption scheme; the latter implication is considered unlikely in light of known negative results."
+  },
+  "scope": {
+    "domain": "Security proofs for authenticated-encryption key-rotation schemes.",
+    "assumptions": [
+      "IND-CPA security of the underlying KEM"
+    ],
+    "parameters": [
+      "BLMR scheme (target construction)",
+      "simple KEM/DEM-style symmetric-encryption scheme (separation target)"
+    ],
+    "unresolved_remainder": "Whether the proof can be established under only IND-CPA security of the underlying KEM, or whether such a proof can be ruled out by separating IND-CPA security from the circular security it would imply for a simple KEM/DEM-style symmetric-encryption scheme."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "security-proof",
+      "circular-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key Rotation for Authenticated Encryption",
+        "locator": "CRYPTO 2017, page 20",
+        "doi": "10.1007/978-3-319-63697-9_4",
+        "url": "https://eprint.iacr.org/2017/527",
+        "eprint": "2017/527"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that the existing UP-IND-BI proof sketch has a bug but does not give a direct attack or settle whether it can be repaired. It instead presents an implication to circular security and considers that implication unlikely in light of known negative results.",
+      "citation_labels": [
+        "Adam Everspaugh et al., Key Rotation for Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

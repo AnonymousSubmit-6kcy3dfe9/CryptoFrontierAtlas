@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "direct-instance-of-a-true-fil-tweakable-pri",
+  "group_id": "direct-instance-of-a-true-fil-tweakable-pri",
+  "title": "Direct Instance of a True FIL Tweakable PRI",
+  "summary": "The paper identifies a concrete construction gap and leaves open whether the target primitive has a direct instance.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Whether a direct instance of a true FIL tweakable PRI exists remains unresolved. [S1]"
+  },
+  "scope": {
+    "domain": "Design of cryptographic primitives, specifically direct instances of true FIL tweakable PRIs.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether a direct instance of a true FIL tweakable PRI exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "cryptographic-primitives",
+      "tweakable-pri",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages",
+        "locator": "ASIACRYPT 2019, page 21",
+        "doi": "10.1007/978-3-030-34621-8_6",
+        "url": "https://eprint.iacr.org/2019/1004",
+        "eprint": "2019/1004"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents this as another question left open, stating that a direct instance of a true FIL tweakable PRI remains unresolved.",
+      "citation_labels": [
+        "Elena Andreeva et al., Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

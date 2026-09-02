@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-key-recovery-from-massive-superpolies",
+  "group_id": "efficient-key-recovery-from-massive-superpolies",
+  "title": "Efficient Key Recovery from Massive Superpolies",
+  "summary": "Disjoint sets exploiting sparse superpolies improve cube attacks but require huge memory; efficient key recovery from increasingly massive full-key superpolies remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In cube attacks, a disjoint-set key-recovery method can exploit sparse variables in a superpoly to improve attacks, but it incurs huge memory cost. Since superpolies are expected to become increasingly massive as the number of rounds grows, develop an efficient secret-key recovery method for cube attacks based on massive superpolies involving all secret-key bits while addressing the disjoint-set method's memory bottleneck."
+  },
+  "scope": {
+    "domain": "Cube-attack key recovery using massive superpolies involving all secret-key bits.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of rounds: expected to drive growth in superpoly size"
+    ],
+    "unresolved_remainder": "Develop an efficient secret-key recovery method for massive full-key superpolies that overcomes the disjoint-set method's memory bottleneck."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "algebraic-cryptanalysis",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Massive Superpoly Recovery with Nested Monomial Predictions",
+        "locator": "ASIACRYPT 2021, page 27",
+        "doi": "10.1007/978-3-030-92062-3_14",
+        "url": "https://eprint.iacr.org/2021/1225",
+        "eprint": "2021/1225"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports improved key-recovery attacks using sparse superpoly structure and a disjoint-set method, while identifying the method's huge memory cost. It explicitly poses efficient recovery from increasingly massive full-key superpolies as an open question.",
+      "citation_labels": [
+        "Kai Hu et al., Massive Superpoly Recovery with Nested Monomial Predictions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

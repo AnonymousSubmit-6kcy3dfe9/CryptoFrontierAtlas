@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dedicated-structured-xor-solver-for-even-mansour",
+  "group_id": "dedicated-structured-xor-solver-for-even-mansour",
+  "title": "Dedicated Structured-XOR Solver for Even-Mansour",
+  "summary": "For four or more rounds, strong zero-bit structure remains unexploited, leaving open a dedicated solver with competitive time-memory trade-offs.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $r\\ge 4$, design a dedicated solver for the structured $(r+1)$-XOR instance of $r\\mathrm{EM}$ with competitive $(T,M)$ trade-offs."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the Even-Mansour construction using structured XOR instances.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: round count, restricted to four or more",
+      "(r+1)-XOR: structured instance form",
+      "(T,M): computational time and memory trade-offs"
+    ],
+    "unresolved_remainder": "Design a dedicated solver for the structured (r+1)-XOR instance of r-round Even-Mansour with competitive time-memory trade-offs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "even-mansour",
+      "xor-problem"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Low-Memory Attacks Against Two-Round Even-Mansour Using the 3-XOR Problem",
+        "locator": "CRYPTO 2019, page 24",
+        "doi": "10.1007/978-3-030-26951-7_8",
+        "url": "https://eprint.iacr.org/2019/938",
+        "eprint": "2019/938"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly opens this question after observing strong structure in the lists, including many bits fixed to zero. It asks for a dedicated algorithm with competitive computational time and memory trade-offs.",
+      "citation_labels": [
+        "Gaëtan Leurent et al., Low-Memory Attacks Against Two-Round Even-Mansour Using the 3-XOR Problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

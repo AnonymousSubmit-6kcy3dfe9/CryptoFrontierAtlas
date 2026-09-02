@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-feistel-recovery-near-linear-samples",
+  "group_id": "generic-feistel-recovery-near-linear-samples",
+  "title": "Efficient Feistel Recovery at the Near-Linear Sample Boundary",
+  "summary": "Exhaustive search is the known recovery baseline, and no efficient generic recovery method is known at the information-theoretic sample boundary, leaving that regime unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a balanced Feistel network, does there exist a generic efficient attack, polynomial in $N$, that recovers the round functions from $q \\sim N$ known plaintext/ciphertext samples? Exhaustive search can recover all functions in time $N^{O(N)}$, while no efficient generic attack polynomial in $N$ is known in the $q \\sim N$ regime."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis and generic attack complexity for balanced Feistel networks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N: size parameter governing polynomial-time efficiency",
+      "q: number of known plaintext/ciphertext samples, with q approximately N"
+    ],
+    "unresolved_remainder": "Whether a generic efficient attack polynomial in N can recover the round functions from approximately N known plaintext/ciphertext samples."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "feistel-network",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the FF3 Format-Preserving Encryption Standard over Small Domains",
+        "locator": "CRYPTO 2017, page 4",
+        "doi": "10.1007/978-3-319-63715-0_23",
+        "url": "https://eprint.iacr.org/2017/521",
+        "eprint": "2017/521"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives exhaustive search as a recovery baseline and states that no efficient generic attack polynomial in N is known in the approximately N-sample regime.",
+      "citation_labels": [
+        "F. Betül Durak et al., Breaking the FF3 Format-Preserving Encryption Standard over Small Domains"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

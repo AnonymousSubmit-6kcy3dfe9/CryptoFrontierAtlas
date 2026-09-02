@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "zero-sum-labeled-cycle-goodness",
+  "group_id": "zero-sum-labeled-cycle-goodness",
+  "title": "Goodness of Zero-Sum Labeled Cycles",
+  "summary": "Experiments support the conjecture for cycles of length three; it remains unresolved whether the goodness property holds for qualifying cycles of general length.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the attack graph $G$ used to identify vertices that yield valid equations for the round function $F_0$, determine whether every cycle $v_1v_2\\cdots v_Lv_1$ of length $L$ whose vertex labels sum to zero and whose vertices use no messages in common consists entirely of good vertices with probability close to $1$. This statement is supported by experiment when $L=3$, but it remains to be proved or refuted for general $L$."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of FF3 using an attack graph for round-function recovery in a four-round Feistel scheme.",
+    "assumptions": [
+      "The vertices form a cycle in G.",
+      "The vertex labels sum to zero.",
+      "The vertices use no messages in common."
+    ],
+    "parameters": [
+      "G, the attack graph used to identify vertices yielding valid equations",
+      "F0, the round function",
+      "L, the cycle length",
+      "v1 through vL, the cycle vertices"
+    ],
+    "unresolved_remainder": "For general L, prove or refute whether every qualifying cycle consists entirely of good vertices with probability close to 1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "format-preserving-encryption",
+      "feistel-networks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the FF3 Format-Preserving Encryption Standard over Small Domains",
+        "locator": "CRYPTO 2017, page 13",
+        "doi": "10.1007/978-3-319-63715-0_23",
+        "url": "https://eprint.iacr.org/2017/521",
+        "eprint": "2017/521"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source states this as Conjecture 1 and notes experimental support when L=3. The corresponding claim for general L is left to proof or refutation.",
+      "citation_labels": [
+        "F. Betül Durak et al., Breaking the FF3 Format-Preserving Encryption Standard over Small Domains"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

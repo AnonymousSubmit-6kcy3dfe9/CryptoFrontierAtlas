@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ctr-security-with-prp",
+  "group_id": "ctr-security-with-prp",
+  "title": "CTR Security with a PRP",
+  "summary": "A streaming bound is known for one-block messages, but extending CTR security analysis to the general PRP setting or finding a different proof remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a security analysis for CTR\\$ when the underlying blockcipher $F$ is modeled as a PRP, beyond the one-block-message setting for which a streaming bound is available. The existing CTR\\$ streaming analysis treats $F$ as a random function and relies on its entropy; when $F$ is instead a random permutation, its entropy is not sufficiently large for that argument. The unresolved task is to extend the analysis or devise a different proof for the general PRP setting."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, focused on the security of CTR\\$ mode with blockciphers.",
+    "assumptions": [
+      "The underlying blockcipher $F$ is modeled as a PRP."
+    ],
+    "parameters": [
+      "CTR\\$ mode: the construction under analysis",
+      "Message length: beyond the one-block-message setting"
+    ],
+    "unresolved_remainder": "Extend the CTR\\$ security analysis to the general PRP setting or devise a different proof."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "ctr-mode",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 19",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies the gap: the existing CTR\\$ streaming analysis handles a random function, while random-permutation entropy is insufficient for that argument. It notes a streaming bound for one-block messages and leaves extension to the general PRP setting unresolved.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

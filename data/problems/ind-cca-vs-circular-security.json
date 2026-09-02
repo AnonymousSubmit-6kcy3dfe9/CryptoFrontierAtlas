@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ind-cca-vs-circular-security",
+  "group_id": "ind-cca-vs-circular-security",
+  "title": "IND-CCA Security Versus Circular Security",
+  "summary": "An IND-CCA-secure but non-circular-secure system is generically attainable, but it remains unresolved whether IND-CCA offers greater resistance to circular-security attacks than IND-CPA.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For private-key bit-encryption systems, determine whether replacing $\\text{IND-CPA}$ security with chosen-ciphertext ($\\text{IND-CCA}$) security makes circular-security attacks less effective or makes circular security more likely. The relevant separation setting permits an $\\text{IND-CCA}$-secure bit-encryption system that is not circular secure, and such a system can be obtained generically by combining an $\\text{IND-CPA}$-secure but not circular-secure bit-encryption system with a multi-bit CCA-secure encryption scheme. The unresolved task is to determine whether $\\text{IND-CCA}$ security nevertheless provides greater resistance to circular-security attacks than $\\text{IND-CPA}$ security."
+  },
+  "scope": {
+    "domain": "Private-key bit-encryption security, comparing chosen-ciphertext security with circular-security resistance.",
+    "assumptions": [
+      "private-key bit-encryption systems"
+    ],
+    "parameters": [
+      "IND-CPA and IND-CCA security as the compared security notions"
+    ],
+    "unresolved_remainder": "Whether IND-CCA security provides greater resistance to circular-security attacks than IND-CPA security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "ind-cca",
+      "ind-cpa",
+      "circular-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Separating Semantic and Circular Security for Symmetric-Key Bit Encryption from the Learning with Errors Assumption",
+        "locator": "EUROCRYPT 2017, page 4",
+        "doi": "10.1007/978-3-319-56614-6_18",
+        "url": "https://eprint.iacr.org/2017/120",
+        "eprint": "2017/120"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly poses whether chosen-ciphertext security makes a bit-encryption system more resistant to circular-security attacks. It also presents a generic IND-CCA-secure but non-circular-secure separation, leaving the comparative resistance question open.",
+      "citation_labels": [
+        "Rishab Goyal et al., Separating Semantic and Circular Security for Symmetric-Key Bit Encryption from the Learning with Errors Assumption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

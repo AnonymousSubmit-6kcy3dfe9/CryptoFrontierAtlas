@@ -2,29 +2,29 @@
   "schema_version": "0.2.0",
   "id": "bounding-mu-t-for-noninvertible-feedback-ttp-constructions",
   "group_id": "bounding-mu-t-for-noninvertible-feedback-ttp-constructions",
-  "title": "Bounding μ_T for Noninvertible-Feedback TtP Constructions",
-  "summary": "Prior bounds cover TtP constructions with invertible decryption feedback, but a useful upper bound for the noninvertible case, including keyed Sponge Duplex and Ascon, remains unresolved.",
+  "title": "Bounding μT for Noninvertible-Feedback TtP Constructions",
+  "summary": "Prior bounds cover invertible-feedback TtP constructions; after an Ascon-specific analysis, a useful upper bound on μT for generic noninvertible-feedback cases such as keyed Sponge Duplex remains open.",
   "formal_statement": {
     "format": "markdown-latex",
     "body": "Determine a useful upper bound on the quantity $\\mu_T$ for Transform-then-Permute (TtP) constructions with a noninvertible decryption feedback function, particularly keyed Sponge Duplex and Ascon constructions; bounding $\\mu_T$ under this condition remains open."
   },
   "scope": {
-    "domain": "The domain is symmetric authenticated encryption, with security analysis of Transform-then-Permute constructions such as keyed Sponge Duplex and Ascon.",
+    "domain": "Security analysis of noninvertible-feedback Transform-then-Permute authenticated-encryption constructions, especially keyed Sponge Duplex and Ascon.",
     "assumptions": [
-      "the decryption feedback function is noninvertible"
+      "None"
     ],
     "parameters": [
-      "μ_T, the quantity for which a useful upper bound is sought"
+      "μ_T — the quantity for which a useful upper bound is sought"
     ],
-    "unresolved_remainder": "A useful upper bound on μ_T for the noninvertible-feedback TtP case, particularly for keyed Sponge Duplex and Ascon, remains unresolved."
+    "unresolved_remainder": "Establish a useful upper bound on μ_T for noninvertible-feedback TtP constructions; the generic keyed Sponge Duplex case remains unresolved after the Ascon-specific analysis."
   },
   "classification": {
     "taxonomy_version": "0.2.0",
     "primary": "design.macs-authenticated-encryption",
     "secondary": [],
     "tags": [
-      "authenticated-encryption",
       "transform-then-permute",
+      "sponge-duplex",
       "security-bounds"
     ]
   },
@@ -52,7 +52,7 @@
     {
       "date": "2023-01-01",
       "kind": "source_statement",
-      "summary": "The source contrasts known bounds for TtP constructions with invertible decryption feedback with the noninvertible-feedback cases. It identifies keyed Sponge Duplex and Ascon as examples for which bounding μ_T was left open for future research.",
+      "summary": "The source explicitly presents bounding μ_T for noninvertible-feedback TtP constructions, including keyed Sponge Duplex and Ascon, as an open problem for future research. Its Ascon-specific analysis does not settle the generic keyed Sponge Duplex case.",
       "citation_labels": [
         "Bishwajit Chakraborty et al., Exact Security Analysis of ASCON"
       ]

@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-distinguisher-three-round-spn",
+  "group_id": "generic-distinguisher-three-round-spn",
+  "title": "Generic Distinguisher for Three-Round Substitution-Permutation Networks",
+  "summary": "The three-round yoyo structure preserves a zero-difference pattern, but its external recognition remains unresolved; determine whether the relation has a generic distinguishing property and construct a distinguisher if it does.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a generic three-round substitution--permutation network with substitution layer $S$, let $U$ and $V$ be complementary linear subspaces of the ambient vector space, and consider $x,y\\in U$ and $z\\in V$ such that the ciphertext difference satisfies $c_1-c_2=S(x+z)-S(y+z)$. Determine whether this relation has a recognizable generic distinguishing property and, if so, construct a generic distinguisher. Such a distinguisher would also apply to the analogous plaintext relation using $S^{-1}$ and corresponding complementary subspaces $U'$ and $V'$."
+  },
+  "scope": {
+    "domain": "Structural and differential cryptanalysis of generic three-round substitution-permutation networks and yoyo-induced difference relations.",
+    "assumptions": [
+      "U and V are complementary linear subspaces of the ambient vector space",
+      "x and y belong to U, while z belongs to V"
+    ],
+    "parameters": [
+      "S: substitution layer",
+      "U and V: subspaces defining the ciphertext-side relation",
+      "x, y, and z: elements defining the structured difference",
+      "S inverse, U prime, and V prime: the inverse substitution and corresponding plaintext-side analogue"
+    ],
+    "unresolved_remainder": "Determine whether the specified ciphertext-difference relation has a recognizable generic distinguishing property and, if so, construct a generic distinguisher; the same distinguisher would apply to the analogous plaintext relation using the inverse substitution and corresponding subspaces."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "structural-cryptanalysis",
+      "differential-cryptanalysis",
+      "generic-distinguisher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Yoyo Tricks with AES",
+        "locator": "ASIACRYPT 2017, page 10",
+        "doi": "10.1007/978-3-319-70694-8_8",
+        "url": "https://eprint.iacr.org/2017/980",
+        "eprint": "2017/980"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a problem for further study after its three-round yoyo analysis identifies a preserved zero-difference pattern that the adversary cannot externally recognize. It asks whether the resulting ciphertext relation has generic distinguishing properties and whether a distinguisher can be constructed, with an analogous plaintext application.",
+      "citation_labels": [
+        "Sondre Rønjom et al., Yoyo Tricks with AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

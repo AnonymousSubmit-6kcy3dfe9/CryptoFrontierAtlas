@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-tweakable-zero-sum-prf-constructions",
+  "group_id": "efficient-tweakable-zero-sum-prf-constructions",
+  "title": "Efficient Tweakable Zero-Sum PRF Constructions",
+  "summary": "A simple tweakable zero-sum PRF construction with a security proof is known; optimizing its parameters or finding a more efficient construction remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the tweakable zero-sum pseudorandom-function primitive used by public dummy shuffling, a simple construction with a security proof has been proposed; the unresolved task is to optimize its parameters or develop a new, more efficient construction."
+  },
+  "scope": {
+    "domain": "Design and efficiency of tweakable zero-sum pseudorandom functions for public dummy shuffling.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Parameters of the proposed construction, to be optimized for efficiency"
+    ],
+    "unresolved_remainder": "Optimize the proposed construction's parameters or develop a new, more efficient construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "pseudorandom-functions",
+      "dummy-shuffling",
+      "cryptographic-primitives"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Dummy Shuffling against Algebraic Attacks in White-box Implementations",
+        "locator": "EUROCRYPT 2021, page 27",
+        "doi": "10.1007/978-3-030-77886-6_8",
+        "url": "https://eprint.iacr.org/2021/290",
+        "eprint": "2021/290"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a simple construction with a security proof for the tweakable zero-sum PRF used by public dummy shuffling. It explicitly leaves parameter optimization or a more efficient construction as an open question.",
+      "citation_labels": [
+        "Alex Biryukov et al., Dummy Shuffling against Algebraic Attacks in White-box Implementations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

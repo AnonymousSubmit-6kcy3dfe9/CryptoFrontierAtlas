@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "concrete-security-prime-encoding-masking",
+  "group_id": "concrete-security-prime-encoding-masking",
+  "title": "Concrete Security of Prime-Encoding Masking",
+  "summary": "Theoretical guarantees exist for simple additive masking, but their concrete implications for prime-encoding masking under practical leakage and noise remain unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For prime-encoding masking, determine the concrete security guarantees under practically relevant leakage functions and noise levels that follow from the existing theoretical guarantees for simple additive masking schemes, whose practical impact has not yet been established."
+  },
+  "scope": {
+    "domain": "Side-channel security analysis of prime-encoding masking.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Leakage function: models the practically relevant leakage setting",
+      "Noise level: sets the amount of noise in the leakage setting"
+    ],
+    "unresolved_remainder": "Determine how existing theoretical guarantees translate into concrete security guarantees for practically relevant leakage functions and noise levels."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "concrete-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers",
+        "locator": "EUROCRYPT 2023, page 2",
+        "doi": "10.1007/978-3-031-30634-1_20",
+        "url": "https://eprint.iacr.org/2022/863",
+        "eprint": "2022/863"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the practical impact of theoretical guarantees for simple additive masking has not yet been studied. It explicitly asks how those guarantees translate into concrete security under practically relevant leakage functions and noise levels.",
+      "citation_labels": [
+        "Loïc Masure et al., Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

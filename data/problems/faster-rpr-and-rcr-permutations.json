@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "faster-rpr-and-rcr-permutations",
+  "group_id": "faster-rpr-and-rcr-permutations",
+  "title": "Faster RPR and RCR Permutations",
+  "summary": "Explicit constructions with small RPR/RCR are known, but it remains open whether substantially faster permutations can be devised.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct faster-than-linear RPR permutations and faster-than-polynomial RCR permutations."
+  },
+  "scope": {
+    "domain": "Permutation constructions for randomized preimage and collision resistance in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "RPR implementation speed: faster than linear",
+      "RCR implementation speed: faster than polynomial"
+    ],
+    "unresolved_remainder": "Devise permutations with faster-than-linear RPR and faster-than-polynomial RCR."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "permutation-constructions",
+      "preimage-resistance",
+      "collision-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiability of Confusion-Diffusion Networks",
+        "locator": "EUROCRYPT 2016, page 10",
+        "doi": "10.1007/978-3-662-49896-5_24",
+        "url": "https://eprint.iacr.org/2015/680",
+        "eprint": "2015/680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents explicit constructions with small RPR/RCR, then identifies substantially faster constructions as an interesting research direction.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Indifferentiability of Confusion-Diffusion Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

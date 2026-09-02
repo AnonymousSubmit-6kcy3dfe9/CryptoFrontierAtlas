@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-order-security-for-masked-ciphers",
+  "group_id": "higher-order-security-for-masked-ciphers",
+  "title": "Extending Masked-Cipher Reductions to Higher-Order Security",
+  "summary": "The bounded-query reduction is established for second-order protection; whether it remains valid for higher-order security with additional probes is unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A bounded-query probing-security reduction to linear cryptanalysis of masked ciphers has been established for second-order protection. The unresolved task is to extend this theoretical framework to higher-order security, where an adversary can place more than second-order probes, and determine whether the reduction remains valid under those conditions. Because additional probes can exploit non-zero correlations over a small number of rounds, establishing adequate security for the extension may require a more detailed analysis of the trails in the masked cipher."
+  },
+  "scope": {
+    "domain": "This concerns bounded-query probing security and linear cryptanalysis of masked ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Probe order: the established result covers second-order protection, while the unresolved extension concerns higher-order security",
+      "Number of probes: higher-order adversaries can place more than second-order probes",
+      "Number of rounds: additional probes may exploit non-zero correlations over a small number of rounds"
+    ],
+    "unresolved_remainder": "Extend the theoretical framework to higher-order security and determine whether the reduction remains valid when the adversary places more than second-order probes; adequate security may require more detailed analysis of the trails in the masked cipher."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "linear-cryptanalysis",
+      "masked-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Masked Ciphers: A not so Random Idea",
+        "locator": "ASIACRYPT 2020, page 27",
+        "doi": "10.1007/978-3-030-64837-4_27",
+        "url": "https://eprint.iacr.org/2020/993",
+        "eprint": "2020/993"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a future-work direction: the analysis is limited to second-order protection, while the higher-order framework is expected to remain largely similar. It notes that additional probes may exploit short-round correlations, requiring more detailed trail analysis.",
+      "citation_labels": [
+        "Tim Beyne et al., Cryptanalysis of Masked Ciphers: A not so Random Idea"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

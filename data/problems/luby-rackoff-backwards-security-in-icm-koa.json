@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "luby-rackoff-backwards-security-in-icm-koa",
+  "group_id": "luby-rackoff-backwards-security-in-icm-koa",
+  "title": "Luby–Rackoff Backwards Security in ICM-KOA",
+  "summary": "Beyond-birthday-bound security is known for the construction in ICM, but whether it achieves such security in ICM-KOA remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Revisit the Bellare--Krovetz--Rogaway Luby--Rackoff Backwards PRF-from-PRP construction in ICM-KOA and determine whether it achieves beyond-birthday-bound security in that model. Existing positive beyond-birthday-bound results for the construction are established in ICM despite the presence of secret keys, leaving its security in ICM-KOA unresolved."
+  },
+  "scope": {
+    "domain": "Security of the Bellare–Krovetz–Rogaway Luby–Rackoff Backwards PRF-from-PRP construction in ideal-cipher models.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the construction achieves beyond-birthday-bound security in ICM-KOA."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "prf-from-prp",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Salvaging Weak Security Bounds for Blockcipher-Based Constructions",
+        "locator": "ASIACRYPT 2016, page 7",
+        "doi": "10.1007/978-3-662-53887-6_16",
+        "url": "https://eprint.iacr.org/2016/864",
+        "eprint": "2016/864"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes positive beyond-birthday-bound results for the construction in ICM despite secret keys, then proposes revisiting it in ICM-KOA. It does not resolve that construction-specific analysis.",
+      "citation_labels": [
+        "Thomas Shrimpton et al., Salvaging Weak Security Bounds for Blockcipher-Based Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

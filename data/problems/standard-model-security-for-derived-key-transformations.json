@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "standard-model-security-for-derived-key-transformations",
+  "group_id": "standard-model-security-for-derived-key-transformations",
+  "title": "Standard-Model Security for Derived-Key Transformations",
+  "summary": "The derived-key transformation is readily provable secure in the random-oracle model, while a formal standard-model security treatment remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a formal standard-model security treatment for the key-derivation approach in which a transformed scheme $\\Gamma(\\Pi)$, with key $K$, uses the internal scheme $\\Pi$ under the derived key $K' = H(\\tau,K)$, where $H$ is a hash function and $\\tau$ is an input parameter. The transformation is readily provable secure in the random-oracle model, but a formal treatment in the standard model remains open."
+  },
+  "scope": {
+    "domain": "Standard-model security analysis of a hash-based key-derivation transformation for authenticated encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Π: internal scheme",
+      "Γ(Π): transformed scheme",
+      "K: key of the transformed scheme",
+      "K′: derived key used internally with Π",
+      "τ: input parameter to the key derivation",
+      "H: hash function deriving K′ from τ and K"
+    ],
+    "unresolved_remainder": "Develop a formal security treatment of the key-derivation transformation in the standard model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "key-derivation",
+      "standard-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption with Variable Stretch",
+        "locator": "ASIACRYPT 2016, page 19",
+        "doi": "10.1007/978-3-662-53887-6_15",
+        "url": "https://eprint.iacr.org/2016/463",
+        "eprint": "2016/463"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents random-oracle security as readily provable and explicitly leaves the corresponding formal standard-model treatment as an open problem.",
+      "citation_labels": [
+        "Reza Reyhanitabar et al., Authenticated Encryption with Variable Stretch"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

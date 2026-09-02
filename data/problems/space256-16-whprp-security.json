@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "space256-16-whprp-security",
+  "group_id": "space256-16-whprp-security",
+  "title": "whPRP Security of SPACE256-16",
+  "summary": "At concrete leakage, time, query, and advantage bounds, SPACE256-16 is conjectured to be whPRP-secure; proving or refuting the claim remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute the conjecture that $\\mathrm{SPACE256\\text{-}16}$, the 256-bit-block variant of $\\mathrm{SPACE\\text{-}16}$, is a $(\\lambda,t,q,t_{\\mathrm{lif}},q_{\\mathrm{sim}},\\varepsilon)$-secure $\\mathrm{whPRP}$ for leakage $\\lambda\\approx 2^{20}$ bits, adversarial running time $t\\approx 2^{128}$, adversarial query bound $q\\approx 2^{64}$, simulator query bound $q_{\\mathrm{sim}}\\approx 2^{64}$, distinguishing advantage $\\varepsilon\\ll 1$, and lifter running time $t_{\\mathrm{lif}}\\ll q_{\\mathrm{sim}}$."
+  },
+  "scope": {
+    "domain": "White-box pseudorandom-permutation security of the 256-bit-block cipher SPACE256-16.",
+    "assumptions": [
+      "The lifter running time is much smaller than the simulator query bound."
+    ],
+    "parameters": [
+      "λ: leakage budget, approximately 2^20 bits",
+      "t: adversarial running-time budget, approximately 2^128",
+      "q: adversarial query bound, approximately 2^64",
+      "t_lif: lifter running time",
+      "q_sim: simulator query bound, approximately 2^64",
+      "ε: distinguishing advantage, much less than 1"
+    ],
+    "unresolved_remainder": "Prove or refute that SPACE256-16 satisfies the stated whPRP security claim in this parameter regime."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "white-box-security",
+      "pseudorandom-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 30",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents the parameterized whPRP claim as a conjecture. Its appendix offers heuristic security discussion rather than a proof, leaving the claim unresolved.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

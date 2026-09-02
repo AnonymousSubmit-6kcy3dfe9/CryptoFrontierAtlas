@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-security-bounds-for-general-sponge-constructions",
+  "group_id": "improved-security-bounds-for-general-sponge-constructions",
+  "title": "Improved Security Bounds for General Sponge Constructions",
+  "summary": "Existing analysis does not directly cover general Sponge constructions lacking the double-keyed tag protocol; bounds narrowing the gap with recent attacks remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For general Sponge constructions without the double-keyed tag-generation and tag-verification protocol, establish improved security bounds that narrow the gap between currently known security bounds and recent known attacks. Existing analysis does not directly apply to these constructions."
+  },
+  "scope": {
+    "domain": "Security analysis of general Sponge constructions without the double-keyed tag-generation and tag-verification protocol.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Establish improved security bounds that narrow the gap between currently known bounds and recent known attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "sponge-constructions",
+      "authenticated-encryption",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Exact Security Analysis of ASCON",
+        "locator": "ASIACRYPT 2023, page 23",
+        "doi": "10.1007/978-981-99-8727-6_12",
+        "url": "https://eprint.iacr.org/2023/775",
+        "eprint": "2023/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that its analysis cannot be applied directly to general Sponge constructions without the double-keyed tag-generation and tag-verification protocol. It presents improving their security bounds in light of the gap with recent attacks as an open research problem.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Exact Security Analysis of ASCON"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

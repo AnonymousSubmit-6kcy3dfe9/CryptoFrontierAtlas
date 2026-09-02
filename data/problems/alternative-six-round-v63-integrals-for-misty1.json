@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "alternative-six-round-v63-integrals-for-misty1",
+  "group_id": "alternative-six-round-v63-integrals-for-misty1",
+  "title": "Alternative Six-Round V63 Integrals for MISTY1",
+  "summary": "A roughly 70-bit-time attack on full MISTY1 is known; it remains open whether alternative six-round integrals can remove Phase 2 and realize the conjectured 64-bit-time improvement.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the attack on full MISTY1, determine whether additional six-round $V_{63}$ integral structures can be obtained by fixing bits other than the last seven. If such structures exist, determine whether their additional filtering in Phase 1 suffices to eliminate Phase 2, yielding an attack consisting only of Phase 1 with time complexity approximately $2^{64}$, dominated by data decryption."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of full MISTY1 using six-round integral structures.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "six rounds: round span of the sought integral structures",
+      "V63: integral-structure class sought under alternative fixed-bit choices",
+      "last seven bits: fixed-bit choice that the proposed structures would replace",
+      "approximately two to the sixty-four: target attack time complexity"
+    ],
+    "unresolved_remainder": "Establish whether the additional V63 structures exist and whether their Phase 1 filtering eliminates Phase 2 to yield the proposed Phase-1-only attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "integral-cryptanalysis",
+      "misty1",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A 2^70 Attack on the Full MISTY1",
+        "locator": "CRYPTO 2016, page 22",
+        "doi": "10.1007/978-3-662-53018-4_16",
+        "url": "https://eprint.iacr.org/2015/746",
+        "eprint": "2015/746"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents reducing the attack's data complexity as a problem for further research and proposes additional six-round integrals as a possible direction. It explicitly conjectures that alternative V63 structures would enable enough Phase 1 filtering for a roughly 64-bit-time attack.",
+      "citation_labels": [
+        "Achiya Bar-On et al., A 2^70 Attack on the Full MISTY1"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

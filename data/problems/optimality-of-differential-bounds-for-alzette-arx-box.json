@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimality-of-differential-bounds-for-alzette-arx-box",
+  "group_id": "optimality-of-differential-bounds-for-alzette-arx-box",
+  "title": "Optimality of Differential Bounds for Alzette's ARX Box",
+  "summary": "The source gives round-dependent differential bounds for selecting Alzette's ARX box and leaves their optimality through five rounds at every offset to be proved or refuted.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the iterated ARX-box structure used to select Alzette, a candidate must have differential bounds, measured as $-\\log_2$ probabilities, of $0,1,2,6,$ and $10$ for $1,2,3,4,$ and $5$ rounds, respectively, at each of the four possible offsets. Prove or refute the conjecture that these bounds are optimal through five rounds for every offset."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the iterated ARX-box structure used to select Alzette.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count: one through five rounds for the stated differential bounds",
+      "Offset: each of the four possible offsets",
+      "Differential bound: measured as negative base-2 log-probability"
+    ],
+    "unresolved_remainder": "Whether the stated differential bounds are optimal through five rounds for every offset."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "arx",
+      "automated-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 8",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents these bounds as a heuristic criterion for selecting the final Alzette ARX-box and explicitly conjectures that they are optimal through five rounds for all four offsets.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

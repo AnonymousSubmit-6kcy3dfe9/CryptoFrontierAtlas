@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multiplicity-bounds-for-pkemlr6-keyed-sponges",
+  "group_id": "multiplicity-bounds-for-pkemlr6-keyed-sponges",
+  "title": "Multiplicity Bounds for PKEMLR6 Keyed Sponges",
+  "summary": "Multiplicity features yield tighter inner-keyed-sponge bounds, but whether they can improve security bounds for PKEMLR6-based keyed sponges remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether multiplicity-based features of the cascade used by Andreeva et al. can also be exploited in keyed sponges built from PKEMLR6 to obtain a tighter security analysis or stronger security bounds than the simpler bounds available for the inner-keyed setting. [S1]"
+  },
+  "scope": {
+    "domain": "Security analysis of PKEMLR6-based keyed sponge constructions using multiplicity features of the underlying cascade.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether multiplicity-based cascade features can provide a tighter security analysis or stronger bounds for PKEMLR6-based keyed sponges."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "keyed-sponges",
+      "even-mansour",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 35",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explains that multiplicity features enable tighter bounds in the inner-keyed setting and leaves their use for PKEMLR6-based sponges as future work.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "beyond-birthday-bound-linear-tweakable-even-mansour",
+  "group_id": "beyond-birthday-bound-linear-tweakable-even-mansour",
+  "title": "Beyond-Birthday-Bound Security for Linear Tweakable Even-Mansour",
+  "summary": "A known 4-round linear TEM construction reaches 2n/3-bit security, while whether linear tweakable Even-Mansour can achieve beyond-birthday-bound security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A tweakable Even--Mansour (TEM) construction using linear key-tweak mixing, an $n$-bit key, and an $n$-bit tweak is known to achieve $2n/3$-bit security in a 4-round instance. The unresolved question is whether a TEM construction with linear mixing, an $n$-bit key, and an $n$-bit tweak can achieve security beyond the birthday bound."
+  },
+  "scope": {
+    "domain": "Design of symmetric-cryptographic tweakable block-cipher constructions based on Even-Mansour.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n-bit key: key length",
+      "n-bit tweak: tweak length",
+      "4-round instance: known construction depth",
+      "Linear key-tweak mixing: mixing-function design constraint"
+    ],
+    "unresolved_remainder": "Whether a tweakable Even-Mansour construction with linear mixing, an n-bit key, and an n-bit tweak can achieve security beyond the birthday bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "tweakable-even-mansour",
+      "block-ciphers",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Tweakable Even-Mansour Cipher",
+        "locator": "ASIACRYPT 2020, page 4",
+        "doi": "10.1007/978-3-030-64837-4_20",
+        "url": "https://eprint.iacr.org/2020/1076",
+        "eprint": "2020/1076"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this explicitly as an open problem after noting that a 4-round TEM with linear key-tweak mixing achieves 2n/3-bit security. It states that realizing beyond-birthday-bound security for a TEM with an n-bit key and n-bit tweak remains open.",
+      "citation_labels": [
+        "Avijit Dutta et al., Minimizing the Two-Round Tweakable Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

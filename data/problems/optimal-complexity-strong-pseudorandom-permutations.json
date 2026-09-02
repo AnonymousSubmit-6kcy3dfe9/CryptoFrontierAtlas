@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-complexity-strong-pseudorandom-permutations",
+  "group_id": "optimal-complexity-strong-pseudorandom-permutations",
+  "title": "Optimal Complexity of Strong Pseudorandom Permutations",
+  "summary": "Worst-case time proportional to t of N times log N is achieved; whether it is optimal for strong pseudorandom permutations on general sets given only efficient membership testing remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\Theta(t(N)\\log N)$ is the optimal worst-case running time for strong pseudorandom permutations on general sets given only efficient membership testing."
+  },
+  "scope": {
+    "domain": "Worst-case complexity of strong pseudorandom permutations on general sets using a cipher on a larger set.",
+    "assumptions": [
+      "Membership in the target set can be tested efficiently.",
+      "A cipher is available on a larger set $T$."
+    ],
+    "parameters": [
+      "$N$: parameter governing the enciphering cost",
+      "$t(N)$: time required to encipher a point in the larger set $T$",
+      "$T$: larger set on which the available cipher operates"
+    ],
+    "unresolved_remainder": "Prove or disprove that the achieved $\\Theta(t(N)\\log N)$ worst-case running time is optimal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "strong-pseudorandom-permutations",
+      "worst-case-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse Cycle Walking and Its Applications",
+        "locator": "ASIACRYPT 2016, page 21",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://eprint.iacr.org/2016/865",
+        "eprint": "2016/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a worst-case running time of Θ(t(N) log N), where t(N) is the time to encipher a point in the larger set T, and explicitly conjectures that this running time is optimal.",
+      "citation_labels": [
+        "Sarah Miracle et al., Reverse Cycle Walking and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multidimensional-linear-cryptanalysis-for-qft-key-recovery",
+  "group_id": "multidimensional-linear-cryptanalysis-for-qft-key-recovery",
+  "title": "Multidimensional Linear Cryptanalysis for QFT Key Recovery",
+  "summary": "Independent multiple-linear statistics reduce variance in QFT-based key recovery; whether multidimensional linear cryptanalysis can replace them, with a corresponding analysis, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the QFT-based key-recovery framework, multiple linear approximations are analyzed using statistically independent relations, whose statistics have smaller variance and therefore make distinguishing the correct key easier. Multidimensional linear cryptanalysis instead uses a set of linear approximations whose masks form a linear subspace, making the statistical analysis more robust to dependencies, but its use in this framework has not been analyzed. Determine whether multidimensional linear cryptanalysis can replace the independent multiple-linear statistic in this QFT-based framework, and derive the corresponding statistical analysis."
+  },
+  "scope": {
+    "domain": "Quantum symmetric-key cryptanalysis using QFT-based linear key recovery and multidimensional linear cryptanalysis.",
+    "assumptions": [
+      "The existing multiple-linear analysis uses statistically independent relations."
+    ],
+    "parameters": [
+      "Set of linear approximations — its masks form the linear subspace used in multidimensional linear cryptanalysis"
+    ],
+    "unresolved_remainder": "Determine whether multidimensional linear cryptanalysis can replace the independent multiple-linear statistic in the QFT-based framework and derive the resulting statistical analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "quantum-cryptanalysis",
+      "qft-key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 19",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source shows that multiple linear approximations reduce variance and aid QFT-based attacks. It presents multidimensional linear cryptanalysis as an untried but plausible replacement that may handle dependencies more robustly.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

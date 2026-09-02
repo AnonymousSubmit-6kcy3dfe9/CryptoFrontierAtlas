@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonvanishing-coefficients-key-alternating-cipher-security",
+  "group_id": "nonvanishing-coefficients-key-alternating-cipher-security",
+  "title": "Nonvanishing Coefficients for Key-Alternating Cipher Security",
+  "summary": "The known round threshold alone does not ensure security, leaving open the coefficient analysis needed to derive a sufficient security condition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the key-alternating cipher $E_{k,r}$, whose polynomial representation is influenced by the secret key, the constant addition, and the S-box, characterize which coefficients do not vanish for specified choices of these quantities, sufficiently to derive a sufficient condition on the number of rounds that guarantees security. A round count at least $R_{\\mathrm{lin}}$ does not necessarily provide security, so the unresolved task is to turn the nonvanishing-coefficient analysis into such a sufficient security condition."
+  },
+  "scope": {
+    "domain": "Algebraic analysis of key-alternating ciphers, polynomial representations, and security round bounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Secret key, constant addition, and S-box: quantities influencing the polynomial representation",
+      "Number of rounds: quantity for which a sufficient security condition is sought"
+    ],
+    "unresolved_remainder": "Characterize the nonvanishing coefficients for specified choices of the secret key, constant addition, and S-box sufficiently to derive a sufficient security condition on the number of rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "algebraic-structures",
+      "key-alternating-ciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC",
+        "locator": "ASIACRYPT 2020, page 10",
+        "doi": "10.1007/978-3-030-64837-4_16",
+        "url": "https://eprint.iacr.org/2020/182",
+        "eprint": "2020/182"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents analyzing nonvanishing coefficients in the polynomial representation as a main obstacle to deriving a sufficient security condition on the number of rounds. It also states that a round count at least the stated threshold does not necessarily provide security.",
+      "citation_labels": [
+        "Maria Eichlseder et al., An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

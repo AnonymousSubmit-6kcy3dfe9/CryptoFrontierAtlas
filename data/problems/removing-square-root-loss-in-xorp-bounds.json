@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "removing-square-root-loss-in-xorp-bounds",
+  "group_id": "removing-square-root-loss-in-xorp-bounds",
+  "title": "Removing the Square-Root Loss in XORP Bounds",
+  "summary": "The χ² method proves full n-bit indifferentiable security for XORP and XORP[k], but a square-root loss spoils realistic bounds; whether refined analysis removes it remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The $\\chi^2$ analysis establishes full $n$-bit indifferentiable security for the $\\mathrm{XORP}$ and $\\mathrm{XORP}[k]$ constructions, but the square root in its bound prevents the result from yielding full $n$-bit security for realistic parameter choices. Determine whether a more sophisticated application of the $\\chi^2$ method can eliminate this square-root loss from the indifferentiability bounds for both constructions."
+  },
+  "scope": {
+    "domain": "Symmetric-cryptographic indifferentiability analysis of XORP and XORP[k] using the χ² method.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: bit length defining the full-security target",
+      "k: parameter indexing the XORP[k] construction"
+    ],
+    "unresolved_remainder": "Whether a more sophisticated χ² analysis can eliminate the square-root loss from the indifferentiability bounds for both XORP and XORP[k]."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "xorp",
+      "chi-square-method"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Full Indifferentiable Security of the Xor of Two or More Random Permutations Using the \\chi ^2 Method",
+        "locator": "EUROCRYPT 2018, page 23",
+        "doi": "10.1007/978-3-319-78381-9_15",
+        "url": "https://eprint.iacr.org/2018/169",
+        "eprint": "2018/169"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper establishes full n-bit indifferentiable security for XORP and XORP[k], while noting that the square root in its bounds prevents practical full security. It presents removing this loss through a more sophisticated χ² application as an immediate goal.",
+      "citation_labels": [
+        "Srimanta Bhattacharya et al., Full Indifferentiable Security of the Xor of Two or More Random Permutations Using the \\chi ^2 Method"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweakable-block-cipher-deck-prf-security",
+  "group_id": "tweakable-block-cipher-deck-prf-security",
+  "title": "PRF Security of a Tweakable-Block-Cipher Deck Construction",
+  "summary": "A tweakable-PRP assumption is identified as the prospective security basis, but a PRF proof for the proposed deck construction remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove that the proposed tweakable-block-cipher-based deck construction is PRF-secure assuming tweakable-PRP security of the underlying cipher."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, specifically the PRF security of a deck construction based on a tweakable block cipher.",
+    "assumptions": [
+      "The underlying tweakable block cipher has tweakable-PRP security."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove PRF security of the proposed deck construction under the stated tweakable-PRP assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "deck-function",
+      "tweakable-block-cipher",
+      "prf-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Jammin' on the deck",
+        "locator": "ASIACRYPT 2022, page 16",
+        "doi": "10.1007/978-3-031-22966-4_19",
+        "url": "https://eprint.iacr.org/2022/531",
+        "eprint": "2022/531"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the claimed reduction as plausible, conjecturing PRF security from the tweakable-PRP security of the underlying cipher.",
+      "citation_labels": [
+        "Norica Băcuieți et al., Jammin' on the deck"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "round-differential-independence-in-three-round-xoodoo",
+  "group_id": "round-differential-independence-in-three-round-xoodoo",
+  "title": "Round-Differential Independence in Three-Round Xoodoo",
+  "summary": "Dependence is prevalent among Rijndael-superbox trails, but whether it disappears in unaligned structures, especially three-round Xoodoo, remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The vast majority of differential trails over the Rijndael superbox have dependent round differentials. Determine whether this dependence disappears under an unaligned round structure, specifically for differential trails over three-round Xoodoo."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of dependence among round differentials, with Rijndael as a baseline and unaligned Xoodoo as the concrete setting.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Three rounds — the fixed span of the Xoodoo differential trails under investigation"
+    ],
+    "unresolved_remainder": "Whether the dependence effect disappears for unrestricted differential trails over three-round Xoodoo and for unaligned ciphers more broadly."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "xoodoo",
+      "round-differentials"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Thinking Outside the Superbox",
+        "locator": "CRYPTO 2021, page 26",
+        "doi": "10.1007/978-3-030-84252-9_12",
+        "url": "https://eprint.iacr.org/2021/293",
+        "eprint": "2021/293"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The authors expect the dependence effects seen in Rijndael to disappear in an unaligned cipher and investigate three-round Xoodoo. Independence is established only for the finite trail set examined, leaving the unrestricted Xoodoo and broader unaligned-cipher claims open.",
+      "citation_labels": [
+        "Nicolas Bordes et al., Thinking Outside the Superbox"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

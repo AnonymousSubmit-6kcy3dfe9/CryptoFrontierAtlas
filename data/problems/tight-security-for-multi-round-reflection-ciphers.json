@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-for-multi-round-reflection-ciphers",
+  "group_id": "tight-security-for-multi-round-reflection-ciphers",
+  "title": "Tight Security for Multi-Round Reflection Ciphers",
+  "summary": "The source covers the two-round case, while extending tight-security guarantees to more rounds under suitable key schedules remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved extension beyond the two-round case is to identify sufficient conditions on the key schedule such that, for $r>1$, a $2r$-round key-alternating reflection cipher achieves tight security."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, focusing on the security of key-alternating reflection block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r, the round parameter determining the $2r$-round construction"
+    ],
+    "unresolved_remainder": "Identify sufficient conditions on the key schedule under which the $2r$-round key-alternating reflection cipher achieves tight security for $r>1$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedules",
+      "reflection-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 6",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this in its Future work discussion as a third open problem: generalizing results beyond the two-round case. It asks for sufficient key-schedule conditions yielding tight security for the multi-round construction.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

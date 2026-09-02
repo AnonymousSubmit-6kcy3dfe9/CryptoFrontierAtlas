@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-256-ctr-drbg-seedless-security",
+  "group_id": "aes-256-ctr-drbg-seedless-security",
+  "title": "Security of AES-256 CTR-DRBG in the Seedless Setting",
+  "summary": "The known attack costs about 2^128 operations for AES-256 and is considered prohibitive; the open task is to extend it or prove resilience in the seedless setting.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of AES-256-based CTR-DRBG in the seedless setting. The available attack guesses the remaining unknown bits of $\\mathit{IV}$ after learning $K$ and a prefix of $\\mathit{IV}$; for AES-256, it costs about $2^{128}$ operations and is considered prohibitive. Either extend this attack to overcome that cost or prove that AES-256-based CTR-DRBG is resilient in the seedless setting."
+  },
+  "scope": {
+    "domain": "The problem concerns symmetric cryptanalysis of CTR-DRBG security in the seedless setting.",
+    "assumptions": [
+      "seedless setting"
+    ],
+    "parameters": [
+      "AES-256-based CTR-DRBG: target construction",
+      "K: key learned by the available attack",
+      "IV: value whose prefix is known and whose remaining bits are guessed",
+      "2^128 operations: approximate AES-256 attack cost"
+    ],
+    "unresolved_remainder": "Determine whether the attack can be extended to overcome its cost, or whether AES-256-based CTR-DRBG is resilient in the seedless setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "ctr-drbg",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 27",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly labels this an open problem after describing the attack's prohibitive cost for AES-256. It proposes extending the attack or proving resilience as the two unresolved directions.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

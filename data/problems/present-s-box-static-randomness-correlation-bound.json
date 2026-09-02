@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "present-s-box-static-randomness-correlation-bound",
+  "group_id": "present-s-box-static-randomness-correlation-bound",
+  "title": "Verify the Correlation Bound for Randomized Present S-Box Sharing",
+  "summary": "A maximal absolute correlation of one quarter is verified for the randomized three-sharing; it remains unresolved whether this holds for every static-randomness choice used for second-order probing security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The randomized three-sharing of the Present S-box component $G$ has been verified to have maximal absolute correlation $2^{-2}$. When randomness is used to make this sharing second-order probing secure, verify that the maximal absolute correlation remains $2^{-2}$ for every possible choice of the static randomness."
+  },
+  "scope": {
+    "domain": "Linear correlation and probing security of randomized masked S-box sharings in symmetric cryptanalysis.",
+    "assumptions": [
+      "Randomness is used to make the sharing second-order probing secure."
+    ],
+    "parameters": [
+      "Static randomness, with every possible choice in scope"
+    ],
+    "unresolved_remainder": "Verify that the maximal absolute correlation remains 2^{-2} for every possible choice of the static randomness."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.side-channel"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "side-channel-cryptanalysis",
+      "masked-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Masked Ciphers: A not so Random Idea",
+        "locator": "ASIACRYPT 2020, page 32",
+        "doi": "10.1007/978-3-030-64837-4_27",
+        "url": "https://eprint.iacr.org/2020/993",
+        "eprint": "2020/993"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a verified maximal absolute correlation of one quarter for the randomized three-sharing, then identifies re-verification for all static-randomness choices under second-order probing security as the open task.",
+      "citation_labels": [
+        "Tim Beyne et al., Cryptanalysis of Masked Ciphers: A not so Random Idea"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

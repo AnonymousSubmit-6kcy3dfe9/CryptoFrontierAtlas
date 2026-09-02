@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simple-descriptions-of-random-permutations",
+  "group_id": "simple-descriptions-of-random-permutations",
+  "title": "Simple Descriptions of Random Permutations",
+  "summary": "The paper leaves open whether a random permutation can be expected to have a simple description.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved question is whether a random permutation can be expected to have a simple description."
+  },
+  "scope": {
+    "domain": "Mathematical foundations and structural questions about whether random permutations admit simple descriptions in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether a random permutation can be expected to have a simple description."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "random-permutation",
+      "structural-questions",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anomalies and Vector Space Search: Tools for S-Box Analysis",
+        "locator": "ASIACRYPT 2019, page 2",
+        "doi": "10.1007/978-3-030-34578-5_8",
+        "url": "https://eprint.iacr.org/2019/528",
+        "eprint": "2019/528"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly lists this as a third natural question in the paper's contributions section. It connects answering it with disproof of a claim and estimating whether a random permutation can be hoped to be efficiently implemented.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Anomalies and Vector Space Search: Tools for S-Box Analysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

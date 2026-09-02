@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "r-round-kacsp-security-bound",
+  "group_id": "r-round-kacsp-security-bound",
+  "title": "Tight Security of r-Round KACSP Beyond Three Rounds",
+  "summary": "The tight security analysis is established only for 3KACSP; whether its bound generalizes to single-permutation KACSP constructions with more than three rounds remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute that $r$-round KACSP security is $\\Theta\\!\\left(2^{rn/(r+1)}\\right)$ in the random-permutation model. The tight security analysis established for the 3-round key-alternating cipher with a single permutation (3KACSP) applies only to the three-round setting; it remains unresolved whether this analysis and its tight security bound can be generalized to key-alternating cipher with a single permutation constructions using more than three rounds, namely an $r$-round KACSP for $r>3$."
+  },
+  "scope": {
+    "domain": "Security analysis of r-round key-alternating block ciphers using a single permutation in the random-permutation model.",
+    "assumptions": [
+      "random-permutation model",
+      "independently random round keys"
+    ],
+    "parameters": [
+      "r: number of rounds",
+      "n: parameter in the claimed security exponent"
+    ],
+    "unresolved_remainder": "Whether the tight analysis and bound extend to the single-permutation r-round KACSP for more than three rounds, namely r > 3, or can be refuted."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-alternating-ciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation",
+        "locator": "ASIACRYPT 2020, page 49",
+        "doi": "10.1007/978-3-030-64837-4_22",
+        "url": "https://eprint.iacr.org/2020/1073",
+        "eprint": "2020/1073"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes the tight analysis for 3KACSP and presents the analogous r-round security bound as a conjecture in the random-permutation model. The extension to more than three rounds is left open.",
+      "citation_labels": [
+        "Yusai Wu et al., Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

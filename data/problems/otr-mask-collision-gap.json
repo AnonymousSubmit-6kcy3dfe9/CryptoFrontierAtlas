@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "otr-mask-collision-gap",
+  "group_id": "otr-mask-collision-gap",
+  "title": "First OTR Mask Collision in the 128-Bit Field",
+  "summary": "Exhaustive search proves collision-freedom below index two to the forty-fifth; locate the first OTR mask collision before two to the sixty-fourth or extend the proof.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $P(X)=X^{128}+X^7+X^2+X+1$, determine the first OTR mask collision in $[2^{45},2^{64})$, or prove collision-freedom over a larger interval."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of OTR tweak-mask collisions in the standard 128-bit field representation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "P(X) = X^128 + X^7 + X^2 + X + 1: the polynomial fixing the 128-bit field representation",
+      "Index interval [2^45, 2^64): the unresolved range for the first mask collision"
+    ],
+    "unresolved_remainder": "Determine the first OTR mask collision in the interval from 2^45 inclusive to 2^64 exclusive, or prove collision-freedom over a larger interval."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "otr",
+      "algebraic-cryptanalysis",
+      "tweak-mask-collisions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Trick or Tweak: On the (In)security of OTR's Tweaks",
+        "locator": "ASIACRYPT 2016, page 17",
+        "doi": "10.1007/978-3-662-53887-6_12",
+        "url": "https://eprint.iacr.org/2016/234",
+        "eprint": "2016/234"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an exhaustive search proving no tweak-polynomial collision below index 2^45 and leaves the gap to 2^64 without a formal argument. Smaller-field experiments suggest, but do not prove, a collision shortly before the birthday bound.",
+      "citation_labels": [
+        "Raphael Bost et al., Trick or Tweak: On the (In)security of OTR's Tweaks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

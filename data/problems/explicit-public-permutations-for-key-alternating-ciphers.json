@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "explicit-public-permutations-for-key-alternating-ciphers",
+  "group_id": "explicit-public-permutations-for-key-alternating-ciphers",
+  "title": "Explicit Public Permutations for Key-Alternating Ciphers",
+  "summary": "A t-round KAC can at best be close to t-wise independent; suitable public permutations exist, but an explicit construction attaining the nearly optimal closeness remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Explicitly construct fixed permutations $p_1,\\ldots,p_r$ for a key-alternating cipher (KAC) that are public and known to the adversary and, with only the round keys $s_i$ providing secret randomness, give the cipher the nearly optimal pointwise closeness to $t$-wise independence known to be achievable. A $t$-round KAC can at best be close to $t$-wise independent, while the known guarantee is purely existential: suitable permutations exist, and most choices work, but no explicit choice is provided."
+  },
+  "scope": {
+    "domain": "Symmetric cryptographic primitive design focused on key-alternating ciphers and t-wise independence.",
+    "assumptions": [
+      "The fixed permutations are public and known to the adversary",
+      "Only the round keys provide secret randomness"
+    ],
+    "parameters": [
+      "p_1,...,p_r: fixed permutations used by the KAC",
+      "s_i: round keys supplying secret randomness",
+      "t: round count and t-wise-independence level"
+    ],
+    "unresolved_remainder": "An explicit choice of the fixed public KAC permutations that achieves the known nearly optimal pointwise closeness to t-wise independence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-alternating-ciphers",
+      "t-wise-independence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The $t$-wise Independence of Substitution-Permutation Networks",
+        "locator": "CRYPTO 2021, page 31",
+        "doi": "10.1007/978-3-030-84259-8_16",
+        "url": "https://eprint.iacr.org/2021/507",
+        "eprint": "2021/507"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents an existential result: suitable fixed permutations exist and most choices work, but it does not explicitly construct them.",
+      "citation_labels": [
+        "Tianren Liu et al., The $t$-wise Independence of Substitution-Permutation Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

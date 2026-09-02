@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cipher-structures-for-cube-attack-assumptions",
+  "group_id": "cipher-structures-for-cube-attack-assumptions",
+  "title": "Characterizing Cipher Structures for Cube-Attack Assumptions",
+  "summary": "The source gives evidence for selected ciphers, but no general criterion for assumption validity; characterize the cipher structures that ensure both assumptions for recovered superpolys.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize cipher structures for which Assumptions 1 and 2 hold for division-property-recovered superpolys."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of cube attacks using division-property-recovered superpolys.",
+    "assumptions": [
+      "Assumption 1: finding many balanced superpolys",
+      "Assumption 2: finding many non-constant superpolys"
+    ],
+    "parameters": [
+      "cipher structure, the structural input affecting whether the assumptions hold",
+      "division-property-recovered superpolys, the superpolys under analysis"
+    ],
+    "unresolved_remainder": "Determine which cipher structures make Assumptions 1 and 2 hold for division-property-recovered superpolys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "cube-attacks",
+      "division-property",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cube Attacks on Non-Blackbox Polynomials Based on Division Property",
+        "locator": "CRYPTO 2017, page 28",
+        "doi": "10.1007/978-3-319-63697-9_9",
+        "url": "https://eprint.iacr.org/2017/306",
+        "eprint": "2017/306"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the validity of the two assumptions depends on the structure of the analyzed ciphers and provides evidence for selected ciphers, but no general criterion.",
+      "citation_labels": [
+        "Yosuke Todo et al., Cube Attacks on Non-Blackbox Polynomials Based on Division Property"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

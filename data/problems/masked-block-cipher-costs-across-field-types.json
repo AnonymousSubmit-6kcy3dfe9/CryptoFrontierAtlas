@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "masked-block-cipher-costs-across-field-types",
+  "group_id": "masked-block-cipher-costs-across-field-types",
+  "title": "Masked Block-Cipher Costs Across Field Types",
+  "summary": "Software and hardware cost tradeoffs between prime-field and binary-extension-field masked block-cipher implementations remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine and compare the software and hardware implementation cost of masked block-cipher operations when implemented in prime fields rather than in binary extension fields."
+  },
+  "scope": {
+    "domain": "Masked block-cipher implementation complexity across prime and binary extension fields.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Arithmetic domain: distinguishes prime fields from binary extension fields",
+      "Implementation setting: distinguishes software costs from hardware costs"
+    ],
+    "unresolved_remainder": "Determine and compare the software and hardware implementation costs of masked block-cipher operations in the two arithmetic domains."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "masking",
+      "implementation-cost"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers",
+        "locator": "EUROCRYPT 2023, page 3",
+        "doi": "10.1007/978-3-031-30634-1_20",
+        "url": "https://eprint.iacr.org/2022/863",
+        "eprint": "2022/863"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit practical open question in its discussion of masking in low-noise settings, requesting cost comparisons for both software and hardware.",
+      "citation_labels": [
+        "Loïc Masure et al., Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

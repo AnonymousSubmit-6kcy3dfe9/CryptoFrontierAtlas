@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "binary-gate-leakage-bounds-under-operand-dependence",
+  "group_id": "binary-gate-leakage-bounds-under-operand-dependence",
+  "title": "Binary-Gate Leakage Bounds Under Operand Dependence",
+  "summary": "Although the component inequalities may each be tight, whether the combined binary-gate leakage bound can be sharpened for non-independent operands remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the upper bound on the mutual information $I(Y;L(Z))$ for a binary gate, obtained by reducing potentially dependent, non-uniform operands to independent uniform operands, can be tightened when the operands are non-independent. The unresolved task is to characterize any strictly sharper bound under operand dependence, while accounting for the fact that the intermediate inequalities used to derive the existing bound may each be tight even though their combination has not been shown to be tight."
+  },
+  "scope": {
+    "domain": "Information-theoretic security analysis of binary gates in the noisy leakage model.",
+    "assumptions": [
+      "The binary-gate operands are non-independent."
+    ],
+    "parameters": [
+      "Y: the output of the binary gate",
+      "L(Z): the noisy leakage appearing in the mutual-information bound"
+    ],
+    "unresolved_remainder": "Determine whether operand dependence permits a strictly sharper upper bound and, if so, characterize such a bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "mutual-information",
+      "noisy-leakage",
+      "dependent-operands"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Prou? & Rivain’s Formal Security Proof of Masking, Revisited: Tight Bounds in the Noisy Leakage Model",
+        "locator": "CRYPTO 2023, page 14",
+        "doi": "10.1007/978-3-031-38548-3_12",
+        "url": "https://eprint.iacr.org/2023/883",
+        "eprint": "2023/883"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that tightness of the intermediate inequalities does not establish tightness of their combination. It explicitly leaves refinement of the bound for binary gates with non-independent operands open.",
+      "citation_labels": [
+        "Loïc Masure et al., Prou? & Rivain’s Formal Security Proof of Masking, Revisited: Tight Bounds in the Noisy Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

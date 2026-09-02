@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "adaptive-chosen-ciphertext-bound-lrw2-cascades",
+  "group_id": "adaptive-chosen-ciphertext-bound-lrw2-cascades",
+  "title": "Adaptive Chosen-Ciphertext Bound for LRW2 Cascades",
+  "summary": "For s-fold LRW2 cascades, security is proven up to 2 raised to sn/(s+2) queries; whether it reaches 2 raised to sn/(s+1) queries remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Show whether an $s$-fold LRW2 cascade is secure against adaptive chosen-ciphertext adversaries up to $2^{sn/(s+1)}$ queries, improving the proven $2^{sn/(s+2)}$ bound."
+  },
+  "scope": {
+    "domain": "Adaptive chosen-ciphertext security bounds for s-fold LRW2 tweakable-blockcipher cascades.",
+    "assumptions": [
+      "The attack model permits adaptive chosen-ciphertext queries."
+    ],
+    "parameters": [
+      "s: number of LRW2 evaluations in the cascade",
+      "n: parameter governing the exponent in both query bounds"
+    ],
+    "unresolved_remainder": "Whether security can be strengthened from the proven 2 raised to sn/(s+2) queries to 2 raised to sn/(s+1) queries in the same attack model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "lrw2-cascades",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers",
+        "locator": "ASIACRYPT 2016, page 3",
+        "doi": "10.1007/978-3-662-53887-6_17",
+        "url": "https://eprint.iacr.org/2016/876",
+        "eprint": "2016/876"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the sn/(s+2) exponent as proven by prior work and the stronger sn/(s+1) exponent as conjectured for adaptive chosen-ciphertext adversaries. It does not resolve the conjecture.",
+      "citation_labels": [
+        "Lei Wang et al., How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

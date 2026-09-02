@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extending-lower-bounds-to-blockcipher-based-robust-encryption",
+  "group_id": "extending-lower-bounds-to-blockcipher-based-robust-encryption",
+  "title": "Extending Lower Bounds to Blockcipher-Based Robust Encryption",
+  "summary": "Known lower bounds for r-BIND-secure encryptment extend to sr-BIND security; it remains open whether analogous lower bounds hold for blockcipher-based robust encryption.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved task is to determine whether the lower bounds known for $r$-BIND-secure encryptment schemes extend to blockcipher-based robust encryption schemes. The lower-bound results are stated for $r$-BIND security, and they also extend to $sr$-BIND security because $sr$-BIND security implies $r$-BIND security; the open question is whether an analogous extension reaches the blockcipher-based robust-encryption model."
+  },
+  "scope": {
+    "domain": "Design of cryptographic primitives involving encryptment and blockcipher-based robust encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r-BIND and sr-BIND, security notions framing the known lower bounds"
+    ],
+    "unresolved_remainder": "Determine whether the known lower bounds extend to blockcipher-based robust encryption schemes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "robust-encryption",
+      "encryptment",
+      "lower-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fast Message Franking: From Invisible Salamanders to Encryptment",
+        "locator": "CRYPTO 2018, page 19",
+        "doi": "10.1007/978-3-319-96884-1_6",
+        "url": "https://eprint.iacr.org/2019/016",
+        "eprint": "2019/016"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents lower bounds for r-BIND-secure encryptment schemes and notes that they extend to sr-BIND security because sr-BIND implies r-BIND. It then conjectures an extension to blockcipher-based robust encryption schemes and leaves it open.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Fast Message Franking: From Invisible Salamanders to Encryptment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

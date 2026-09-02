@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinny-differential-enumeration-key-recovery",
+  "group_id": "skinny-differential-enumeration-key-recovery",
+  "title": "Differential-Enumeration Key Recovery for SKINNY",
+  "summary": "A 13-round SKINNY-128-384 differential-enumeration distinguisher does not extend to the best key-recovery attack; determine whether the linear layer causes this gap and when extension is possible.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For SKINNY, within the Demirci--Sel?uk meet-in-the-middle model, differential enumeration is used to obtain the strongest distinguishers, whereas the strongest key-recovery attacks do not use it. In the single-key, single-tweak setting, this gap includes a 13-round distinguisher for SKINNY-128-384 that cannot be extended to the best key-recovery attack. The proposed explanation is that SKINNY's linear layer maps the backward differential trail and the backward determination trail from the same input to different trails, whereas AES uses the same trail for both; consequently, the round keys needed to find plaintext pairs satisfying a truncated differential trail differ from those needed to construct a $\\delta(A)$-set. The unresolved question is whether this linear-layer mismatch necessarily prevents a differential-enumeration-based distinguisher from yielding an equally strong key-recovery attack, and, if not, what precise linear-layer conditions and related round-key relationships permit such an extension."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of SKINNY in the Demirci–Selçuk meet-in-the-middle model using differential enumeration.",
+    "assumptions": [
+      "Single-key, single-tweak setting"
+    ],
+    "parameters": [
+      "SKINNY-128-384: cipher variant exhibiting the concrete gap",
+      "13 rounds: length of the distinguisher that cannot be extended to the best key-recovery attack"
+    ],
+    "unresolved_remainder": "Determine whether SKINNY's linear-layer trail mismatch necessarily blocks an equally strong key-recovery extension and, if not, which linear-layer conditions and round-key relationships permit one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.automated",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "automated-cryptanalysis",
+      "meet-in-the-middle",
+      "differential-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Exploiting Non-Full Key Additions: Full-Fledged Automatic Demirci-Sel{\\c{c}}uk Meet-in-the-Middle Cryptanalysis of SKINNY",
+        "locator": "EUROCRYPT 2023, page 29",
+        "doi": "10.1007/978-3-031-30634-1_3",
+        "url": "https://eprint.iacr.org/2023/255",
+        "eprint": "2023/255"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that differential enumeration yields the best SKINNY distinguishers but not the best key-recovery attacks, including a 13-round SKINNY-128-384 case that cannot be extended. It conjectures that divergent backward trails through the linear layer explain the gap, without proving or characterizing the explanation.",
+      "citation_labels": [
+        "Danping Shi et al., Exploiting Non-Full Key Additions: Full-Fledged Automatic Demirci-Sel{\\c{c}}uk Meet-in-the-Middle Cryptanalysis of SKINNY"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

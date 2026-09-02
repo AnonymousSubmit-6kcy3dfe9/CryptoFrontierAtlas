@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xocb-tight-security-bounds",
+  "group_id": "xocb-tight-security-bounds",
+  "title": "Tight Security Bounds for XOCB",
+  "summary": "For constant maximum input length, XOCB has a known bound of 2 to the power 2n/3 but an attack near 2 to the power n; tight bounds there and in the intermediate regime remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "XOCB is a beyond-birthday-bound secure authenticated-encryption mode with rate-one computation. For constant maximum input length $l = O(1)$, the known security bound is $2^{2n/3}$, whereas the relevant attack has complexity about $2^n$ queries and total processed data, so the bound is not known to be tight in this regime. More generally, the bound is also non-tight in the intermediate regime $O(1) < l < 2^{n/2}$. The unresolved task is to characterize the tight security bound for XOCB when $l$ is constant and, more generally, throughout that intermediate range of maximum input length."
+  },
+  "scope": {
+    "domain": "Security-bound tightness for the XOCB rate-one authenticated-encryption mode.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "l: maximum input length",
+      "n: exponent parameter governing the stated security bound and attack complexity"
+    ],
+    "unresolved_remainder": "Characterize the tight XOCB security bound for constant maximum input length and throughout the intermediate range."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "security-bounds",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "XOCB: Beyond-Birthday-Bound Secure Authenticated Encryption Mode with Rate-One Computation",
+        "locator": "EUROCRYPT 2023, page 26",
+        "doi": "10.1007/978-3-031-30634-1_18",
+        "url": "https://eprint.iacr.org/2023/253",
+        "eprint": "2023/253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper contrasts the known bound for constant maximum input length with a much larger attack complexity and explicitly leaves further analysis open. It also presents the intermediate-length regime as non-tight.",
+      "citation_labels": [
+        "Zhenzhen Bao et al., XOCB: Beyond-Birthday-Bound Secure Authenticated Encryption Mode with Rate-One Computation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

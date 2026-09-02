@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "recursive-zig-zag-sprp-security-beyond-hidden-set-model",
+  "group_id": "recursive-zig-zag-sprp-security-beyond-hidden-set-model",
+  "title": "Recursive Zig-Zag SPRP Security Beyond the Hidden-Set Model",
+  "summary": "Under the material baseline condition, the analysis covers a uniformly hidden preserved-set model; extending SPRP security to other distributions or adversary-knowledge models remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $t \\le d-n$, extend the SPRP-security analysis of Recursive Zig-Zag domain extension beyond the model in which $T$ is chosen uniformly from the size-$t$ subsets of the original domain $D$ and is hidden from the adversary, to other adversarial distributions over $T$ or other adversary-knowledge models for $T$."
+  },
+  "scope": {
+    "domain": "SPRP security analysis for Recursive Zig-Zag domain extension in symmetric cryptography.",
+    "assumptions": [
+      "t <= d-n",
+      "the adversary knows the original domain D",
+      "the preserved set T is chosen uniformly from the size-t subsets of D and is hidden from the adversary"
+    ],
+    "parameters": [
+      "t: size of the preserved set",
+      "d and n: parameters in the baseline condition",
+      "T: preserved set",
+      "D: original domain"
+    ],
+    "unresolved_remainder": "Extend the SPRP-security analysis to other adversarial distributions over T or other adversary-knowledge models for T."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "domain-extension",
+      "sprp-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Modifying an Enciphering Scheme After Deployment",
+        "locator": "EUROCRYPT 2017, page 21",
+        "doi": "10.1007/978-3-319-56614-6_17",
+        "url": "https://eprint.iacr.org/2017/137",
+        "eprint": "2017/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents SPRP security when T is chosen uniformly from size-t subsets of D and hidden from the adversary, then explicitly says that treating other cases is an open question.",
+      "citation_labels": [
+        "Paul Grubbs et al., Modifying an Enciphering Scheme After Deployment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

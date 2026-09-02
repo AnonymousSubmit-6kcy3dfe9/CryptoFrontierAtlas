@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-inner-product-masking-for-x-times-g-of-x",
+  "group_id": "efficient-inner-product-masking-for-x-times-g-of-x",
+  "title": "Efficient Inner-Product Masking for x·g(x)",
+  "summary": "A related efficient method is cited, but an analogous secure construction under inner-product masking remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an efficient IP-masking algorithm that securely evaluates $x\\cdot g(x)$ for linear $g$, analogous to [17]."
+  },
+  "scope": {
+    "domain": "This concerns symmetric cryptography, specifically inner-product masking for masked nonlinear-component evaluation.",
+    "assumptions": [
+      "g is linear"
+    ],
+    "parameters": [
+      "x, the input variable",
+      "g, the linear function used in the evaluation"
+    ],
+    "unresolved_remainder": "Whether an analogous efficient algorithm can be devised for secure evaluation under IP masking remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "inner-product-masking",
+      "masked-computation",
+      "s-boxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Consolidating Inner Product Masking",
+        "locator": "ASIACRYPT 2017, page 17",
+        "doi": "10.1007/978-3-319-70694-8_25",
+        "url": "https://eprint.iacr.org/2017/1047",
+        "eprint": "2017/1047"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves this as open work, asking whether a similar algorithm can be devised for IP masking. It reports no construction or resolution.",
+      "citation_labels": [
+        "Josep Balasch et al., Consolidating Inner Product Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multiplicity-correction-leakage-evaluation",
+  "group_id": "multiplicity-correction-leakage-evaluation",
+  "title": "Multiplicity-Correction Trade-Offs in Leakage Evaluation",
+  "summary": "Existing recommendations may produce excessive false positives; the open task is to improve the false-negative/false-positive trade-off through parameter choices or another correction method.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In side-channel leakage evaluation, standard multiplicity-correction recommendations can yield overall false-positive rates that are too high for a procedure that fails a device after a single rejected null hypothesis. The unresolved task is to determine whether some choice of multiplicity-correction parameters, or an alternative multiplicity-correction method, can achieve a better trade-off between the overall false-negative and false-positive rates across the relevant leakage scenarios."
+  },
+  "scope": {
+    "domain": "Side-channel leakage evaluation with multiple-testing correction for cryptographic modules.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Multiplicity-correction parameters or method choice, which determine the testing procedure and its error-rate trade-off",
+      "Trace length, leakage density, number of leaks, significance level, and sample size, which affect comparative effectiveness across leakage scenarios"
+    ],
+    "unresolved_remainder": "Whether any multiplicity-correction parameter setting or alternative method can achieve a better trade-off between overall false-negative and false-positive rates across relevant leakage scenarios."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel",
+      "multiplicity-correction",
+      "error-rates"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Critical Analysis of ISO 17825 (‘Testing Methods for the Mitigation of Non-invasive Attack Classes Against Cryptographic Modules’)",
+        "locator": "ASIACRYPT 2019, page 17",
+        "doi": "10.1007/978-3-030-34618-8_9",
+        "url": "https://eprint.iacr.org/2019/1013",
+        "eprint": "2019/1013"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source compares several correction methods and gives scenario-specific recommendations, but explicitly leaves open whether parameter choices or another correction method can improve the error-rate trade-off.",
+      "citation_labels": [
+        "Carolyn Whitnall et al., A Critical Analysis of ISO 17825 (‘Testing Methods for the Mitigation of Non-invasive Attack Classes Against Cryptographic Modules’)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

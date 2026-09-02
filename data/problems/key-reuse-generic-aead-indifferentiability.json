@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "key-reuse-generic-aead-indifferentiability",
+  "group_id": "key-reuse-generic-aead-indifferentiability",
+  "title": "Indifferentiability of Key-Reuse AEAD Compositions",
+  "summary": "The three modified key-reuse AEAD compositions are plausible indifferentiability candidates, but proving or disproving their indifferentiability remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the three modified generic AEAD compositions with key reuse---respectively, enhanced Encrypt-and-MAC, Encrypt-then-MAC, and MAC-then-Encrypt---are indifferentiable. In each candidate, $N$ and $A$ are included in the computation of the initialization vector, and $(N,A,M)$ is included in the computation of the tag $T$. These constructions are plausible indifferentiability candidates, but proving or disproving their indifferentiability remains open."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography concerning generic authenticated-encryption compositions and indifferentiability.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Candidate transforms: enhanced Encrypt-and-MAC, Encrypt-then-MAC, and MAC-then-Encrypt",
+      "Key reuse: the setting for the three modified generic AEAD compositions",
+      "N and A: inputs included in the initialization-vector computation",
+      "N, A, and M: inputs included in the tag computation producing T"
+    ],
+    "unresolved_remainder": "Whether these three candidate transforms are indifferentiable, by either proving or disproving indifferentiability, remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "indifferentiability",
+      "key-reuse"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 20",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the three modified key-reuse transforms as plausible indifferentiability candidates. It explicitly leaves proving or disproving their indifferentiability to future work.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

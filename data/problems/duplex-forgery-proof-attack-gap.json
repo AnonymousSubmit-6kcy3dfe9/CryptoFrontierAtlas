@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "duplex-forgery-proof-attack-gap",
+  "group_id": "duplex-forgery-proof-attack-gap",
+  "title": "Duplex Forgery Proof–Attack Gap",
+  "summary": "Generic Duplex analyses use a data–time boundary exponential in c, but the best-known forgery attack applies only at a scale exponential in three-halves c; closing the gap remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For generic Duplex-based authenticated-encryption constructions with data--time product $DT$ and capacity parameter $c$, find a forgery attack matching the security-analysis boundary associated with $DT \\ll 2^c$, or improve the best-known attack, which applies only in the regime $DT \\gg 2^{3c/2}$, enough to close this proof--attack gap."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of generic Duplex-based authenticated-encryption constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "DT: data–time product",
+      "c: capacity parameter"
+    ],
+    "unresolved_remainder": "Find a forgery attack matching the analysis boundary associated with DT ≪ 2^c, or improve the attack known only for DT ≫ 2^(3c/2), thereby closing the proof–attack gap."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "duplex-constructions",
+      "authenticated-encryption",
+      "forgery-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Exact Security Analysis of ASCON",
+        "locator": "ASIACRYPT 2023, page 4",
+        "doi": "10.1007/978-981-99-8727-6_12",
+        "url": "https://eprint.iacr.org/2023/775",
+        "eprint": "2023/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that no forgery attack matches the generic Duplex analysis boundary and places the best-known attack only in the larger data–time regime. It thus presents a concrete proof–attack gap.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Exact Security Analysis of ASCON"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

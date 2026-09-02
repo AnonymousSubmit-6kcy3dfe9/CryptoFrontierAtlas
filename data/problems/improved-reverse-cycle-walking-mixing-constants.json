@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-reverse-cycle-walking-mixing-constants",
+  "group_id": "improved-reverse-cycle-walking-mixing-constants",
+  "title": "Improved Mixing Constants for Reverse Cycle Walking",
+  "summary": "RCW has an explicit logarithmic-step variation-distance bound toward uniform permutations; the open task is to improve its constants while retaining the same guarantee.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the reverse cycle walking (RCW) algorithm on a set of size $N_S$, existing analysis provides explicit constants $k_1$ and $k_2$ such that, after $k=k_1\\log(N_S)$ steps, the distribution $\\nu_k^{\\mathrm{rcw}}$ satisfies $\\lVert\\nu_k^{\\mathrm{rcw}}-\\mu_S\\rVert\\le N_S^{-k_2}$, where $\\mu_S$ is uniform over permutations of the set. Derive quantitatively improved explicit constants while preserving a mixing and variation-distance guarantee of this form."
+  },
+  "scope": {
+    "domain": "Markov-chain mixing analysis of reverse cycle walking on finite permutation spaces.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N_S: size of the set",
+      "k: number of RCW steps",
+      "k_1: multiplier in the logarithmic step count",
+      "k_2: exponent governing the variation-distance bound"
+    ],
+    "unresolved_remainder": "Derive quantitatively improved explicit constants while retaining a mixing and variation-distance guarantee of the stated form."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "reverse-cycle-walking",
+      "markov-chain-mixing",
+      "variation-distance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse Cycle Walking and Its Applications",
+        "locator": "ASIACRYPT 2016, page 10",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://eprint.iacr.org/2016/865",
+        "eprint": "2016/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper customizes the analysis for RCW by providing explicit constants and new proofs of two key lemmas. It presents these constants as a starting point and states that further reduction is possible.",
+      "citation_labels": [
+        "Sarah Miracle et al., Reverse Cycle Walking and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

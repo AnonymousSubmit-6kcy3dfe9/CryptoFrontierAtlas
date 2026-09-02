@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "large-scale-chi-algebraic-immunity",
+  "group_id": "large-scale-chi-algebraic-immunity",
+  "title": "Algebraic Immunity of the Large-Scale χ Operation",
+  "summary": "No efficient method is known to compute algebraic immunity for a huge S-box; efficiently computing or characterizing it for the large-scale χ operation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find an efficient algorithm to compute or characterize the algebraic immunity of the large-scale $\\chi$ operation."
+  },
+  "scope": {
+    "domain": "The domain is algebraic cryptanalysis of the large-scale χ Boolean S-box in Rasta and Dasta.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Develop an efficient algorithm to compute or characterize the algebraic immunity of the large-scale χ operation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "algebraic-immunity",
+      "s-boxes",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Attacks on Rasta and Dasta Using Low-Degree Equations",
+        "locator": "ASIACRYPT 2021, page 4",
+        "doi": "10.1007/978-3-030-92062-3_8",
+        "url": "https://eprint.iacr.org/2021/474",
+        "eprint": "2021/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents the large-scale χ operation as a huge Boolean S-box and notes that no efficient method is known to compute its algebraic immunity. Efficient computation or characterization remains unresolved.",
+      "citation_labels": [
+        "Fukang Liu et al., Algebraic Attacks on Rasta and Dasta Using Low-Degree Equations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

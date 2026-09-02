@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "six-calls-arbitrary-arity-correlation-intractability",
+  "group_id": "six-calls-arbitrary-arity-correlation-intractability",
+  "title": "Six Calls for Arbitrary-Arity Correlation Intractability",
+  "summary": "Correlation intractability is fully covered only for constant-arity evasive relations; whether six random-function calls are necessary at arbitrary arity remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For correlation intractability with evasive relations of arity $k$, the available result fully covers only constant arity $k=O(1)$. Its proof fails for larger $k$, although no counterexamples showing attacks are known. Determine whether six calls to a random function are necessary for correlation intractability at arbitrary arity."
+  },
+  "scope": {
+    "domain": "Correlation intractability for evasive relations and random-function-based cryptographic constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "k: arity of the evasive relation",
+      "Number of random-function calls: resource count whose necessity is assessed, with six as the candidate value"
+    ],
+    "unresolved_remainder": "Whether six calls to a random function are necessary for correlation intractability at arbitrary arity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "correlation-intractability",
+      "evasive-relations",
+      "random-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Naor-Reingold Goes Public: The Complexity of Known-Key Security",
+        "locator": "EUROCRYPT 2018, page 5",
+        "doi": "10.1007/978-3-319-78372-7_21",
+        "url": "https://eprint.iacr.org/2018/137",
+        "eprint": "2018/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a limitation: full coverage holds for constant arity, while the proof inherently fails for larger arities and no attacks are known. It leaves the necessity of six random-function calls at arbitrary arity for future work.",
+      "citation_labels": [
+        "Pratik Soni et al., Naor-Reingold Goes Public: The Complexity of Known-Key Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

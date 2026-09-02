@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hidden-shift-over-cyclic-groups",
+  "group_id": "hidden-shift-over-cyclic-groups",
+  "title": "Quantum Complexity of Hidden Shift over Cyclic Groups",
+  "summary": "The known Kuperberg algorithm provides a subexponential quantum baseline, but whether cyclic Hidden Shift has an efficient algorithm or is quantum-hard remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Hidden Shift problem over the cyclic group $\\mathbb{Z}/N$, determine whether an efficient quantum algorithm exists beyond the known Kuperberg algorithm with running time $2^{O(\\sqrt{\\log N})}$, or establish evidence that the problem is quantum-hard. This unresolved algorithmic question matters because an efficient quantum algorithm for Hidden Shift over $\\mathbb{Z}/N$ would yield efficient quantum attacks on important public-key cryptosystems, including prime candidates for quantum security and the eventual replacement of RSA in Internet cryptography."
+  },
+  "scope": {
+    "domain": "Quantum algorithmic complexity of the Hidden Shift problem over cyclic groups.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N, the parameter defining the cyclic group Z/N"
+    ],
+    "unresolved_remainder": "Determine whether an efficient quantum algorithm exists beyond the known Kuperberg algorithm, or establish evidence that Hidden Shift over Z/N is quantum-hard."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "hidden-shift",
+      "quantum-algorithms",
+      "cyclic-groups"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts",
+        "locator": "EUROCRYPT 2017, page 2",
+        "doi": "10.1007/978-3-319-56617-7_3",
+        "url": "https://eprint.iacr.org/2016/960",
+        "eprint": "2016/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents Hidden Shift over Z/N as an unresolved algorithmic problem despite Kuperberg's known algorithm, and emphasizes the cryptographic significance of possible efficient quantum algorithms.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-degree-bound-cube-superpoly-coefficients",
+  "group_id": "tight-degree-bound-cube-superpoly-coefficients",
+  "title": "Nonzero Cube-Superpoly Coefficients from a Tight Degree Bound",
+  "summary": "The restricted algebraic degree has an upper bound, but whether tightness of that bound forces all basis-indexed coefficient functions to be nonzero remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $f_c$ be a cube superpoly with a basis $Q$ and coefficient functions $f_g$ indexed by $g\\in Q$. Suppose that $d(Q)$, the upper bound on the algebraic degree of $f_c\\big|_{\\{g=0\\mid g\\in Q\\}}$, is tight. Determine whether this implies $\\forall g\\in Q,\\ f_g\\not\\equiv 0$."
+  },
+  "scope": {
+    "domain": "Cube-superpoly structure and Boolean-function decomposition in symmetric cryptanalysis.",
+    "assumptions": [
+      "The upper bound d(Q) on the restricted algebraic degree is tight."
+    ],
+    "parameters": [
+      "f_c: the cube superpoly under study",
+      "Q: a basis for f_c and the index set for its coefficient functions",
+      "f_g: the coefficient function indexed by an element g of Q",
+      "d(Q): the upper bound on the restricted algebraic degree of f_c"
+    ],
+    "unresolved_remainder": "Whether tightness of d(Q) implies that every coefficient function f_g indexed by Q is not identically zero."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "cube-attacks",
+      "boolean-functions",
+      "algebraic-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery",
+        "locator": "EUROCRYPT 2018, page 11",
+        "doi": "10.1007/978-3-319-78375-8_23",
+        "url": "https://eprint.iacr.org/2018/158",
+        "eprint": "2018/158"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents nonvanishing of all indexed coefficient functions under a tight restricted-degree bound as an expectation rather than a proved result.",
+      "citation_labels": [
+        "Meicheng Liu et al., Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

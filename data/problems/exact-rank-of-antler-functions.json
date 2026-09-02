@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-rank-of-antler-functions",
+  "group_id": "exact-rank-of-antler-functions",
+  "title": "Exact Rank of Antler Functions",
+  "summary": "The Antler-function rank is proved at most 2 to the power 10.43, while proving or correcting the experimentally suggested exact value 1088 remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the family of Antler functions $G_{S_1,S_2,S_3}$, let the rank be the dimension of the space spanned by all such functions. The proved upper bound is $2^{10.43}$, while experiments suggest that the rank is $1088=2^{10.09}$, without a theoretical explanation. Prove that the rank is exactly $1088$, or otherwise determine the exact rank and theoretically account for the experimentally observed value."
+  },
+  "scope": {
+    "domain": "Structural rank analysis of the Antler family of Boolean functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "S_1, S_2, S_3 — indices in the Antler function family"
+    ],
+    "unresolved_remainder": "Prove that the rank is exactly 1088, or determine its exact value and theoretically explain the experimental observation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "symmetric-cryptanalysis",
+      "rank"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Elisabeth-4",
+        "locator": "ASIACRYPT 2023, page 14",
+        "doi": "10.1007/978-981-99-8727-6_9",
+        "url": "https://eprint.iacr.org/2023/1436",
+        "eprint": "2023/1436"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves a rank upper bound of 2 to the power 10.43, then reports experiments suggesting 1088. It explicitly states that this tighter value lacks a theoretical explanation.",
+      "citation_labels": [
+        "Henri Gilbert et al., Cryptanalysis of Elisabeth-4"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

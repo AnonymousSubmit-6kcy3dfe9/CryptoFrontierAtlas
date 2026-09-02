@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-ldt-with-four-or-more-rounds",
+  "group_id": "security-of-ldt-with-four-or-more-rounds",
+  "title": "Security of LDT with Four or More Rounds",
+  "summary": "Results cover 2-LDT and 3-LDT; extending security to four or more rounds and quantifying the marginal bound gain against the large efficiency cost remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish security theorems for $r$-round LDT with $r \\ge 4$ using the two harmonic permutation primitives and the proof approach applied to LDT, and quantify the resulting improvement in the security bound and the associated efficiency penalty; the anticipated improvement is marginal, while the efficiency penalty is large."
+  },
+  "scope": {
+    "domain": "Security analysis of multi-round LDT domain extenders using harmonic permutation primitives.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r: the number of LDT rounds, restricted to r ≥ 4"
+    ],
+    "unresolved_remainder": "Prove security for r-round LDT when r ≥ 4 using the two harmonic permutation primitives, and quantify the resulting bound improvement and efficiency penalty."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "domain-extenders",
+      "security-proofs",
+      "harmonic-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Short Variable Length Domain Extenders with Beyond Birthday Bound Security",
+        "locator": "ASIACRYPT 2018, page 4",
+        "doi": "10.1007/978-3-030-03326-2_9",
+        "url": "https://eprint.iacr.org/2018/783",
+        "eprint": "2018/783"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper proves results for 2-LDT and 3-LDT and presents its harmonic-permutation proof approach as extendable to LDT with at least four rounds. It anticipates only a marginal bound improvement at a large efficiency penalty.",
+      "citation_labels": [
+        "Yu Long Chen et al., Short Variable Length Domain Extenders with Beyond Birthday Bound Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

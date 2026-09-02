@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "pkcs11-semantics-and-public-key-api-extension",
+  "group_id": "pkcs11-semantics-and-public-key-api-extension",
+  "title": "PKCS#11 Semantics and Public-Key API Extension",
+  "summary": "The modular cryptographic-API model covers symmetric keys; formalizing further PKCS#11 attribute semantics and extending the model to public-key functionality remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the existing modular cryptographic-API model beyond its symmetric-key scope by identifying and formalizing the intended semantics of PKCS#11 attributes not yet treated and extending the model to support public-key functionality."
+  },
+  "scope": {
+    "domain": "Modular security modeling of cryptographic APIs, including PKCS#11 attributes and public-key functionality.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Identify and formalize the intended semantics of untreated PKCS#11 attributes and extend the model to public-key functionality."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "cryptographic-apis",
+      "pkcs11",
+      "public-key-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Treatment of Cryptographic APIs: The Symmetric-Key Case",
+        "locator": "CRYPTO 2016, page 4",
+        "doi": "10.1007/978-3-662-53018-4_11",
+        "url": "https://eprint.iacr.org/2016/586",
+        "eprint": "2016/586"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents its symmetric-key model as a suitable starting point for further extension and explicitly leaves PKCS#11 attribute semantics and public-key functionality as open tasks.",
+      "citation_labels": [
+        "Thomas Shrimpton et al., A Modular Treatment of Cryptographic APIs: The Symmetric-Key Case"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

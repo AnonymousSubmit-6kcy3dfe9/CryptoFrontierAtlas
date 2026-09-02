@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chi-squared-law-random-permutation-capacity",
+  "group_id": "chi-squared-law-random-permutation-capacity",
+  "title": "Chi-Squared Law for Random-Permutation Capacity",
+  "summary": "A plausibility argument supports a chi-squared law for the scaled linear-correlation capacity of a random permutation, but a formal proof remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $P$ be a randomly chosen permutation of $\\mathbb{F}_2^n$, and let $V\\subseteq\\mathbb{F}_2^n\\times\\mathbb{F}_2^n$ be any vector subspace. For masks $(\\alpha,\\beta)$, define $\\operatorname{Cor}(P;\\alpha,\\beta)=\\Pr_{x\\leftarrow\\mathbb{F}_2^n}[\\alpha\\cdot x=\\beta\\cdot P(x)]-\\Pr_{x\\leftarrow\\mathbb{F}_2^n}[\\alpha\\cdot x\\ne\\beta\\cdot P(x)]$, where $x$ is uniform. Set $v=\\dim(V)$, $u=\\dim\\!\\left(V\\cap(\\mathbb{F}_2^n\\times\\{0^n\\})\\right)$, and $w=\\dim\\!\\left(V\\cap(\\{0^n\\}\\times\\mathbb{F}_2^n)\\right)$. Formally prove the conjecture that $2^n\\sum_{(\\alpha,\\beta)\\in V\\setminus\\{(0^n,0^n)\\}}\\operatorname{Cor}(P;\\alpha,\\beta)^2$ approximately follows a $\\chi^2$ distribution with $2^v-2^u-2^w+1$ degrees of freedom. Only a plausibility explanation, rather than a formal proof, is currently available."
+  },
+  "scope": {
+    "domain": "Probabilistic analysis of multidimensional linear correlations for random permutations in symmetric cryptanalysis.",
+    "assumptions": [
+      "P is a randomly chosen permutation of F₂ⁿ.",
+      "V is any vector subspace of F₂ⁿ × F₂ⁿ.",
+      "The correlation probabilities use uniform x in F₂ⁿ."
+    ],
+    "parameters": [
+      "n: dimension of the binary permutation domain",
+      "V: vector subspace indexing the input-output mask pairs",
+      "v, u, and w: dimensions of V and its two zero-coordinate intersections, determining the conjectured degrees of freedom"
+    ],
+    "unresolved_remainder": "Give a formal proof that the scaled sum of squared nonzero-mask correlations approximately follows the stated chi-squared distribution."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "random-permutations",
+      "chi-squared-distribution"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers",
+        "locator": "ASIACRYPT 2023, page 7",
+        "doi": "10.1007/978-981-99-8727-6_11",
+        "url": "https://eprint.iacr.org/2022/1558",
+        "eprint": "2022/1558"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source labels the distribution claim a conjecture and reports no formal proof, offering only a plausibility explanation in its appendix.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

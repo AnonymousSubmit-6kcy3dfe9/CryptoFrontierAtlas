@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-round-xoodoo-trail-clustering",
+  "group_id": "three-round-xoodoo-trail-clustering",
+  "title": "Clustering in Three-Round Xoodoo Differential Trails",
+  "summary": "Enumerated three-round Xoodoo trail cores show no clustering through weight 50, but whether higher-weight trails avoid clustering remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Do all three-round differential trails of Xoodoo avoid clustering, including trails of weight $w>50$?"
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of Xoodoo, focusing on clustering among three-round differential trails.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "w: differential-trail weight"
+    ],
+    "unresolved_remainder": "Whether three-round Xoodoo differential trails of weight above 50 avoid clustering."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "xoodoo",
+      "trail-clustering"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Thinking Outside the Superbox",
+        "locator": "CRYPTO 2021, page 25",
+        "doi": "10.1007/978-3-030-84252-9_12",
+        "url": "https://eprint.iacr.org/2021/293",
+        "eprint": "2021/293"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures that the negligible clustering observed for two-round Xoodoo differentials also holds for three rounds. The supplied context records verification for enumerated three-round trail cores only through weight 50.",
+      "citation_labels": [
+        "Nicolas Bordes et al., Thinking Outside the Superbox"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

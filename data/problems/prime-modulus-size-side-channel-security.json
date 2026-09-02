@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "prime-modulus-size-side-channel-security",
+  "group_id": "prime-modulus-size-side-channel-security",
+  "title": "Prime Modulus Size and Side-Channel Security",
+  "summary": "The effect of larger prime moduli on the practical security of masked prime-field encodings across information-theoretic and physical side-channel evaluations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine how increasing the prime modulus size changes the practical side-channel security of prime-field masked encodings, comparing the resulting behavior in information-theoretic and physical side-channel evaluations."
+  },
+  "scope": {
+    "domain": "Side-channel security analysis of masking with prime-field encodings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Prime modulus size: varied to study its impact on practical side-channel security"
+    ],
+    "unresolved_remainder": "Characterize and compare how increasing the prime modulus affects practical side-channel security in information-theoretic and physical evaluations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "prime-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers",
+        "locator": "EUROCRYPT 2023, page 3",
+        "doi": "10.1007/978-3-031-30634-1_20",
+        "url": "https://eprint.iacr.org/2022/863",
+        "eprint": "2022/863"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly poses the impact of increasing the prime size as an open question for the practical evaluation cases. These cases are information-theoretic and physical side-channel evaluations of prime-field masked encodings.",
+      "citation_labels": [
+        "Loïc Masure et al., Effective and Efficient Masking with Low Noise using Small-Mersenne-Prime Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

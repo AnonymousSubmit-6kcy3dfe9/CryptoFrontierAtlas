@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cau2-auth2-advantage-bound",
+  "group_id": "cau2-auth2-advantage-bound",
+  "title": "Tighter CAU2 Auth2-Advantage Bound",
+  "summary": "The paper obtains an indirect authenticity bound through generic reductions; a tighter direct bound for the stated adversary remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Directly bound the CAU2 auth2 advantage for multiple users and verification queries more tightly than the bound obtained via generic reductions."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security, focusing on CAU2 authenticity under multi-user, multi-verification-query adversaries.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Multiple users and verification queries, defining the adversary's query scope"
+    ],
+    "unresolved_remainder": "A direct analysis yielding a tighter auth2-advantage bound for the multiple-user, multiple-verification-query setting remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "authenticity",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Nonces Are Noticed: AEAD Revisited",
+        "locator": "CRYPTO 2019, page 30",
+        "doi": "10.1007/978-3-030-26948-7_9",
+        "url": "https://eprint.iacr.org/2019/624",
+        "eprint": "2019/624"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly labels this an interesting open question. It asks for a direct analysis of the relevant adversary and a better auth2-advantage bound than the one obtained through generic reductions.",
+      "citation_labels": [
+        "Mihir Bellare et al., Nonces Are Noticed: AEAD Revisited"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

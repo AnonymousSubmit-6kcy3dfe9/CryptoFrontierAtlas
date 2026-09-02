@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "monomial-occurrence-in-the-trail-present-case",
+  "group_id": "monomial-occurrence-in-the-trail-present-case",
+  "title": "Monomial Occurrence in the Trail-Present Case",
+  "summary": "General monomial prediction certifies absence when no trail exists but is inconclusive when a trail exists; the open task is to decide whether the target monomial appears.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For ciphers defined over fields, general monomial prediction can certify that a specific monomial $m$ is absent from the cipher's polynomial representation when no general monomial trail leads from $m$ to that representation, but it provides no information when at least one such trail exists. Develop a refinement that, in the trail-present case, determines whether $m$ actually appears, equivalently whether its corresponding coefficient $c$ is nonzero."
+  },
+  "scope": {
+    "domain": "Field-based algebraic and integral cryptanalysis of cipher polynomial representations using general monomial prediction.",
+    "assumptions": [
+      "The cipher is defined over a field."
+    ],
+    "parameters": [
+      "m: the specific monomial whose occurrence is being tested",
+      "c: the coefficient corresponding to m in the cipher's polynomial representation"
+    ],
+    "unresolved_remainder": "Determine, when at least one general monomial trail exists, whether m appears in the polynomial representation, equivalently whether c is nonzero."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "division-property",
+      "general-monomial-prediction"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On the Field-Based Division Property: Applications to MiMC, Feistel MiMC and GMiMC",
+        "locator": "ASIACRYPT 2022, page 11",
+        "doi": "10.1007/978-3-031-22969-5_9",
+        "url": "https://eprint.iacr.org/2022/1210",
+        "eprint": "2022/1210"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents general monomial prediction as a one-sided test: no trail certifies absence, while the existence of a trail leaves occurrence unknown. The trail-present case remains unresolved.",
+      "citation_labels": [
+        "jiamin cui et al., On the Field-Based Division Property: Applications to MiMC, Feistel MiMC and GMiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

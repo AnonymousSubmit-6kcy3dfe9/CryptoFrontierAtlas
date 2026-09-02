@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "practical-countermeasure-cost-of-fresh-rekeying",
+  "group_id": "practical-countermeasure-cost-of-fresh-rekeying",
+  "title": "Practical Countermeasure Cost of Fresh Rekeying",
+  "summary": "The rekeying schemes can replace stronger side-channel countermeasures in specific scenarios, but the practical reduction in countermeasure cost remains unquantified.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the proposed fresh-rekeying schemes, which use DPA protection for subkey generation and lighter SPA protection for the core encryption function, quantify in realistic implementations how much the resulting separation reduces the cost of side-channel countermeasures, while accounting for the protection still required by the rekeying functions and for the specific scenarios in which the schemes replace stronger countermeasures."
+  },
+  "scope": {
+    "domain": "Practical side-channel protection costs for fresh-rekeying schemes in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "DPA and SPA protection levels, defining the protection split between subkey generation and the core encryption function",
+      "Protection required by the rekeying functions, capturing residual countermeasure cost",
+      "Implementation scenarios, determining when stronger countermeasures are replaced"
+    ],
+    "unresolved_remainder": "Quantify in realistic implementations how much the separation reduces side-channel countermeasure cost while accounting for residual rekeying protection and replacement scenarios."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "fresh-rekeying",
+      "countermeasure-cost"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption",
+        "locator": "ASIACRYPT 2020, page 37",
+        "doi": "10.1007/978-3-030-64837-4_21",
+        "url": "https://eprint.iacr.org/2020/1082",
+        "eprint": "2020/1082"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an interesting direction for future investigation. It notes that the schemes may replace stronger side-channel countermeasures in specific scenarios, while the rekeying functions still require protection.",
+      "citation_labels": [
+        "Bart Mennink et al., Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

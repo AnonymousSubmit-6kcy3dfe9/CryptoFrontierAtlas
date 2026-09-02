@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rectangle-19-round-key-guessing-attack",
+  "group_id": "rectangle-19-round-key-guessing-attack",
+  "title": "19-Round Attack on RECTANGLE",
+  "summary": "An improved differential attack covers 18 rounds of RECTANGLE; constructing a 19-round attack through stronger key-guessing optimization remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a 19-round attack on $\\mathrm{RECTANGLE}$ by designing a new attack using the key-guessing-improvement framework and further optimizing its key-guessing complexity, rather than retaining the simplicity-oriented design choices of the existing applications."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the RECTANGLE block cipher using key-guessing improvements.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count — attack coverage, with 19 rounds as the target",
+      "Key-guessing complexity — the optimization objective for extending the attack"
+    ],
+    "unresolved_remainder": "Design a new attack covering 19 rounds of RECTANGLE by further optimizing key-guessing complexity instead of retaining simplicity-oriented design choices."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "rectangle",
+      "key-guessing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Framework for Key-Guessing Improvements",
+        "locator": "ASIACRYPT 2021, page 3",
+        "doi": "10.1007/978-3-030-92062-3_16",
+        "url": "https://eprint.iacr.org/2021/1238",
+        "eprint": "2021/1238"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an improved differential attack on 18-round RECTANGLE and expects a 19-round attack to be within reach. It calls for a new attack with more aggressively optimized key guessing.",
+      "citation_labels": [
+        "Marek Broll et al., Generic Framework for Key-Guessing Improvements"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "grain128a-cube-index-selection",
+  "group_id": "grain128a-cube-index-selection",
+  "title": "Choosing Cube Indices for Grain128a",
+  "summary": "A Grain128a key-recovery attack reaches 832 rounds versus a previous best of 799, but choosing evidence-supported cube indices remains unresolved because exhaustive evaluation is difficult.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Grain128a application of cube attacks on non-blackbox polynomials based on division property, the reported key-recovery attack reaches 832 rounds, compared with a previous best attack at 799 rounds, but the chosen cube indices are not supported by plausible evidence, and choosing cube size 80 remains difficult because evaluating all cubes of the selected size requires trying out $|I|$ cubes. The unresolved task is to determine how to choose appropriate cube indices for this attack, subject to that evaluation difficulty."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of Grain128a using cube attacks on non-blackbox polynomials based on division property.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "cube size 80, the selected cube-size choice",
+      "cube indices, the choices to be determined"
+    ],
+    "unresolved_remainder": "Determine how to choose appropriate cube indices for this attack, subject to the difficulty of evaluating all cubes of the selected size."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "cube-attack",
+      "grain128a"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cube Attacks on Non-Blackbox Polynomials Based on Division Property",
+        "locator": "CRYPTO 2017, page 16",
+        "doi": "10.1007/978-3-319-63697-9_9",
+        "url": "https://eprint.iacr.org/2017/306",
+        "eprint": "2017/306"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an 832-round key-recovery attack, exceeding the previous best of 799 rounds, while noting that the selected cube indices lack plausible supporting evidence. It explicitly leaves the choice of appropriate cubes as an open question.",
+      "citation_labels": [
+        "Yosuke Todo et al., Cube Attacks on Non-Blackbox Polynomials Based on Division Property"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "beyond-birthday-bound-ae-under-nonce-repetition",
+  "group_id": "beyond-birthday-bound-ae-under-nonce-repetition",
+  "title": "Beyond-Birthday-Bound AE under Arbitrary Nonce Repetition",
+  "summary": "SCT has beyond-birthday-bound security only for nonce-respecting use; constructing authenticated encryption with such security under arbitrary nonce repetition remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an authenticated-encryption (AE) scheme that remains beyond-birthday-bound (BBB) secure even when nonces are repeated arbitrarily. The main technical difficulty is constructing a deterministic, stateless, BBB-secure message authentication code (MAC), which is known to be notably hard."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption and message-authentication design under nonce misuse.",
+    "assumptions": [
+      "Nonces may be repeated arbitrarily."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct an authenticated-encryption scheme retaining beyond-birthday-bound security under arbitrary nonce repetition, overcoming the deterministic, stateless MAC obstacle."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "nonce-misuse",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 7",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents this as a challenging open problem and identifies constructing a deterministic, stateless, beyond-birthday-bound-secure MAC as the main difficulty.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "qft-replacement-in-quantum-linear-key-recovery",
+  "group_id": "qft-replacement-in-quantum-linear-key-recovery",
+  "title": "QFT Replacement in Quantum Linear Key Recovery",
+  "summary": "The FFT accelerates classical linear key-recovery attacks, but whether the QFT can effectively replace it in quantum linear attacks remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether, in quantum linear key-recovery attacks, the FFT step used to speed up classical linear key-recovery attacks can be effectively replaced by the quantum Fourier transform (QFT). Prior quantum linear attacks left this replacement unresolved, and carrying it out is described as difficult."
+  },
+  "scope": {
+    "domain": "Quantum linear cryptanalysis adapting classical FFT-accelerated key recovery to the QFT.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether the classical FFT acceleration step can be effectively replaced by the QFT in quantum linear key-recovery attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "linear-cryptanalysis",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 2",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents replacing the FFT with the QFT as a natural but difficult step and states that previous quantum linear attacks left it open.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

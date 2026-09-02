@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-time-memory-tradeoffs-for-additional-randomized-modes",
+  "group_id": "tight-time-memory-tradeoffs-for-additional-randomized-modes",
+  "title": "Tight Time-Memory Tradeoffs for Additional Randomized Modes",
+  "summary": "Low-state distinguishing attacks do not rule out good tradeoffs for the candidate modes; proving tight security tradeoffs for them remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether additional randomized CTR, OFB, CBC, and CFB modes admit provably tight time-memory tradeoffs."
+  },
+  "scope": {
+    "domain": "Symmetric-encryption modes and tight time-memory security tradeoffs under memory-bounded distinguishing.",
+    "assumptions": [
+      "INDR security against memory-bounded distinguishers"
+    ],
+    "parameters": [
+      "S, memory available to the distinguisher",
+      "T, encrypted-block complexity",
+      "N, primitive domain size"
+    ],
+    "unresolved_remainder": "Whether randomized CTR instantiated with a permutation and randomized OFB, CBC, and CFB modes admit proofs of tight time-memory tradeoffs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "symmetric-encryption",
+      "time-memory-tradeoffs",
+      "encryption-modes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 22",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a broader open question after discussing candidate randomized modes. It notes that low-state distinguishing attacks do not rule out good time-memory tradeoffs, leaving tight proofs unresolved.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

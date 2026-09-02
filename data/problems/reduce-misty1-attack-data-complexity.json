@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reduce-misty1-attack-data-complexity",
+  "group_id": "reduce-misty1-attack-data-complexity",
+  "title": "Reducing the Data Complexity of the Full MISTY1 Attack",
+  "summary": "The full MISTY1 attack has impractically high data complexity; reducing it remains open, with lower-order six-round integral characteristics suggested as a possible route.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The attack on full $\\mathrm{MISTY1}$ has impractically high data complexity. Determine whether this data complexity can be reduced, potentially by finding additional six-round integral characteristics of lower order."
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis of the full MISTY1 block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Data complexity: the attack resource targeted for reduction",
+      "Order of six-round integral characteristics: a proposed lever for reducing data complexity"
+    ],
+    "unresolved_remainder": "Whether the attack's data complexity can be reduced, potentially by finding additional lower-order six-round integral characteristics."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "misty1",
+      "integral-cryptanalysis",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A 2^70 Attack on the Full MISTY1",
+        "locator": "CRYPTO 2016, page 22",
+        "doi": "10.1007/978-3-662-53018-4_16",
+        "url": "https://eprint.iacr.org/2015/746",
+        "eprint": "2015/746"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents reducing the attack's data complexity as a problem for further research and suggests finding additional lower-order six-round integral characteristics as a possible direction.",
+      "citation_labels": [
+        "Achiya Bar-On et al., A 2^70 Attack on the Full MISTY1"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

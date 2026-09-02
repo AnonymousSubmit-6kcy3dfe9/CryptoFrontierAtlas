@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "better-dsf-parameters-for-ascon-distinguishers",
+  "group_id": "better-dsf-parameters-for-ascon-distinguishers",
+  "title": "Better DSF Parameters for Ascon Distinguishers",
+  "summary": "The current intuitive DSF search covers only a small fraction of candidates; finding choices that yield stronger higher-order differential distinguishers for Ascon remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In DSF, the current method for selecting the parameter pair $(X,\\Delta)$ for higher-order differential (HD) distinguishers of the Ascon permutation is intuitive and examines only a small percentage of the candidates. Find better choices of $(X,\\Delta)$ that yield stronger HD distinguishers for the Ascon permutation."
+  },
+  "scope": {
+    "domain": "DSF-based higher-order differential cryptanalysis of the Ascon permutation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "(X, Δ): parameter pair selected for DSF higher-order differential distinguishers"
+    ],
+    "unresolved_remainder": "Identify better choices of (X, Δ) that yield stronger higher-order differential distinguishers for the Ascon permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "ascon",
+      "higher-order-differential",
+      "distinguisher-search"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Higher-Order Differential-Linear Attacks from an Algebraic Perspective",
+        "locator": "ASIACRYPT 2023, page 31",
+        "doi": "10.1007/978-981-99-8727-6_14",
+        "url": "https://eprint.iacr.org/2022/1335",
+        "eprint": "2022/1335"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an intuitive DSF selection method that searches only a small fraction of candidates. It explicitly leaves finding parameter choices that lead to stronger Ascon HD distinguishers as future work.",
+      "citation_labels": [
+        "Kai Hu et al., Revisiting Higher-Order Differential-Linear Attacks from an Algebraic Perspective"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

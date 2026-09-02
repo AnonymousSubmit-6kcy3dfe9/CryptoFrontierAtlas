@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mrlae-with-less-ciphertext-expansion",
+  "group_id": "mrlae-with-less-ciphertext-expansion",
+  "title": "mrLAE with Less Ciphertext Expansion",
+  "summary": "A generic mrLAE construction adds two ciphertext blocks, while achieving mrLAE security with lower expansion remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A generic construction achieves misuse-resistant leakage-resilient authenticated-encryption (mrLAE) security but produces ciphertexts two blocks longer than their messages. Construct an mrLAE-secure authenticated-encryption scheme with ciphertext expansion of less than two blocks, ideally only one block."
+  },
+  "scope": {
+    "domain": "Design of misuse-resistant, leakage-resilient authenticated-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Ciphertext expansion, measured in blocks, is the efficiency target"
+    ],
+    "unresolved_remainder": "Construct an mrLAE-secure scheme with less than two blocks of ciphertext expansion, ideally one block."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "leakage-resilience",
+      "ciphertext-expansion"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 4",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a generic mrLAE construction with two-block ciphertext expansion and explicitly leaves achieving the same security with less expansion open.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

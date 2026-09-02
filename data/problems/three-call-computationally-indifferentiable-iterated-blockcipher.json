@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-call-computationally-indifferentiable-iterated-blockcipher",
+  "group_id": "three-call-computationally-indifferentiable-iterated-blockcipher",
+  "title": "3-Call Computationally Indifferentiable Iterated Blockcipher",
+  "summary": "Although statistical indifferentiability is impossible for three or fewer calls, it remains open whether computational indifferentiability is achievable for a 3-call iterated blockcipher under suitable hardness assumptions.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists a 3-call iterated blockcipher that is computationally indifferentiable from an ideal cipher under suitable hardness assumptions, including assumptions based on graph problems or key derivation functions; the achievability of such a construction remains unresolved."
+  },
+  "scope": {
+    "domain": "Construction of iterated block ciphers with computational indifferentiability from an ideal cipher.",
+    "assumptions": [
+      "Suitable hardness assumptions, including assumptions based on graph problems or key derivation functions"
+    ],
+    "parameters": [
+      "3-call iteration limit for the blockcipher construction"
+    ],
+    "unresolved_remainder": "Whether a 3-call iterated blockcipher computationally indifferentiable from an ideal cipher can be constructed under suitable hardness assumptions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "indifferentiability",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls",
+        "locator": "EUROCRYPT 2023, page 9",
+        "doi": "10.1007/978-3-031-30634-1_14",
+        "url": "https://eprint.iacr.org/2023/226",
+        "eprint": "2023/226"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents computational indifferentiability with three calls as an intriguing constructive direction, suggesting graph-problem or key-derivation-function hardness assumptions may help. It leaves achievability unresolved.",
+      "citation_labels": [
+        "Chun Guo et al., Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

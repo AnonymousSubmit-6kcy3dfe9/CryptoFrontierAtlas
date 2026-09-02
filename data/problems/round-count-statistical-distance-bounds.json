@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "round-count-statistical-distance-bounds",
+  "group_id": "round-count-statistical-distance-bounds",
+  "title": "Round Count and Statistical Distance Bounds",
+  "summary": "Existing AES/SPN bounds can make statistical distance arbitrarily small by iteration, but their round-versus-distance tradeoff is loose; tighter quantitative bounds remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Obtain tighter bounds relating the round count $r$ to statistical distance $\\varepsilon$."
+  },
+  "scope": {
+    "domain": "Quantitative security analysis of substitution-permutation networks using statistical distance.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "r, the number of rounds",
+      "epsilon, the statistical distance"
+    ],
+    "unresolved_remainder": "Determine tighter quantitative bounds relating the round count to statistical distance."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "substitution-permutation-networks",
+      "statistical-distance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The $t$-wise Independence of Substitution-Permutation Networks",
+        "locator": "CRYPTO 2021, page 7",
+        "doi": "10.1007/978-3-030-84259-8_16",
+        "url": "https://eprint.iacr.org/2021/507",
+        "eprint": "2021/507"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly calls a tighter tradeoff between the number of rounds and statistical distance an interesting open question. Existing AES/SPN bounds achieve arbitrarily small distance by iteration but have loose round dependence.",
+      "citation_labels": [
+        "Tianren Liu et al., The $t$-wise Independence of Substitution-Permutation Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-masking-and-shuffling-protections-against-spa",
+  "group_id": "minimum-masking-and-shuffling-protections-against-spa",
+  "title": "Minimum Masking and Shuffling Protections Against SPA",
+  "summary": "The source warns against unprotected embedded software in side-channel-sensitive applications, while the minimum masking or shuffling protections and their implementation costs remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For embedded software implementations in applications sensitive to side-channel attacks, unprotected implementations should be avoided, while low-order masking and shuffling are potential countermeasures against $\\mathrm{SPA}$. Determine concretely the minimum masking and shuffling protections needed to prevent $\\mathrm{SPA}$ and measure their implementation costs, given the difficulty of protecting embedded software implementations."
+  },
+  "scope": {
+    "domain": "Side-channel security of embedded software implementations in symmetric cryptography.",
+    "assumptions": [
+      "The implementations are used in applications sensitive to side-channel attacks."
+    ],
+    "parameters": [
+      "Masking and shuffling protections, as candidate countermeasures",
+      "Implementation costs, as the quantity to measure"
+    ],
+    "unresolved_remainder": "Determine concretely the minimum masking and shuffling protections needed to prevent SPA and measure their implementation costs for embedded software implementations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel",
+      "masking",
+      "shuffling"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 24",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the concrete investigation of minimum protections and their implementation cost as an interesting open problem. It identifies low-order masking and shuffling as potential countermeasures for software implementations.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

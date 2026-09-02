@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "kcv-aead-compatibility-without-separate-kdf",
+  "group_id": "kcv-aead-compatibility-without-separate-kdf",
+  "title": "KCV–AEAD Compatibility Without a Separate KDF",
+  "summary": "The generic construction requires a collision-resistant PRF KDF to separate the AEAD key; identifying and analyzing secure KCV–AEAD pairs that reuse the original key remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A generic key-check-value construction derives an independent authenticated-encryption-with-associated-data (AEAD) key through a separate key-derivation function (KDF), which must be a collision-resistant pseudorandom function and therefore adds overhead. This overhead may be unnecessary when the key identifier is never used in the AEAD scheme's internal computation. Identify concrete pairs of key-check-value functions and AEAD schemes that can securely share the original key without a separate KDF, and provide a security analysis establishing their compatibility."
+  },
+  "scope": {
+    "domain": "Shared-key composition of key-check-value functions with authenticated-encryption-with-associated-data schemes.",
+    "assumptions": [
+      "The key identifier is never used in the AEAD scheme's internal computation."
+    ],
+    "parameters": [
+      "Choice of key-check-value function and AEAD scheme—the concrete pair evaluated for shared-key compatibility"
+    ],
+    "unresolved_remainder": "Identify concrete compatible pairs that can securely share the original key without a separate KDF and establish their compatibility through security analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "key-identification",
+      "key-derivation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption with Key Identification",
+        "locator": "ASIACRYPT 2022, page 15",
+        "doi": "10.1007/978-3-031-22969-5_7",
+        "url": "https://eprint.iacr.org/2022/1680",
+        "eprint": "2022/1680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explains that its generic approach derives an independent AEAD key using a collision-resistant PRF KDF, adding potentially avoidable overhead. It explicitly leaves pair-specific analysis without a separate KDF as an open problem.",
+      "citation_labels": [
+        "Julia Len et al., Authenticated Encryption with Key Identification"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reducing-round-key-randomness-three-round-key-alternating-cipher",
+  "group_id": "reducing-round-key-randomness-three-round-key-alternating-cipher",
+  "title": "Reducing Round-Key Randomness in a Three-Round Key-Alternating Cipher",
+  "summary": "Existing security results require random, independent round keys; reducing the randomness used to generate them without significant security loss remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the three-round key-alternating cipher with a single permutation, the existing security results apply only when the round keys are random and independent of one another. The unresolved task is to determine whether the randomness used to generate the round keys can be reduced while preserving security without a significant loss."
+  },
+  "scope": {
+    "domain": "Security and key scheduling for a three-round key-alternating block cipher using a single permutation.",
+    "assumptions": [
+      "The round keys are random and independent of one another."
+    ],
+    "parameters": [
+      "Round-key randomness, the resource whose reduction is investigated"
+    ],
+    "unresolved_remainder": "Whether the randomness used to generate the round keys can be reduced while preserving security without a significant loss."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedules",
+      "security-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation",
+        "locator": "ASIACRYPT 2020, page 50",
+        "doi": "10.1007/978-3-030-64837-4_22",
+        "url": "https://eprint.iacr.org/2020/1073",
+        "eprint": "2020/1073"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that its security results currently require random, mutually independent round keys. It presents reducing this randomness without significant security loss as an unknown problem.",
+      "citation_labels": [
+        "Yusai Wu et al., Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-order-differential-probabilities",
+  "group_id": "higher-order-differential-probabilities",
+  "title": "Accurate Probabilities for Higher-Order Differentials",
+  "summary": "The known probability-1 case for higher-order differentials follows from a degree limit; determining accurate probabilities beyond it without prohibitively large Boolean-function evaluations remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In differential cryptanalysis, determine accurate probabilities for higher-order differentials when evaluating the associated Boolean functions would require prohibitively many terms. The unresolved task is to obtain these probabilities without that prohibitively expensive evaluation, enabling higher-order differentials to be used beyond cases with probability 1, where a derivative of a certain order must evaluate to zero because of a limit on the function's degree."
+  },
+  "scope": {
+    "domain": "The domain is differential cryptanalysis, specifically the probability analysis of higher-order differentials.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine accurate probabilities for higher-order differentials without evaluating associated Boolean functions with prohibitively many terms, extending their use beyond probability-1 cases."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "higher-order-differentials",
+      "boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Polytopic Cryptanalysis",
+        "locator": "EUROCRYPT 2016, page 1",
+        "doi": "10.1007/978-3-662-49890-3_9",
+        "url": "https://eprint.iacr.org/2016/160",
+        "eprint": "2016/160"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the issue as an open problem in differential cryptanalysis and attributes the difficulty of determining accurate higher-order differential probabilities to prohibitively large Boolean-function evaluations. It notes that the common use case is the probability-1 setting arising from a degree limit.",
+      "citation_labels": [
+        "Tyge Tiessen et al., Polytopic Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

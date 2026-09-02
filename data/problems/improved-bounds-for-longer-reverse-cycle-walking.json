@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-bounds-for-longer-reverse-cycle-walking",
+  "group_id": "improved-bounds-for-longer-reverse-cycle-walking",
+  "title": "Improved Bounds for Longer Reverse Cycle Walking",
+  "summary": "Security bounds have been proved for reverse 2-cycle walking; whether variants with cycle length greater than two yield better bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Reverse $2$-cycle walking has been analyzed for security, while reverse cycle walking also generalizes to reverse $t$-cycle walking for $t>2$. Determine whether any such longer-cycle variant yields better bounds than those proved for reverse $2$-cycle walking."
+  },
+  "scope": {
+    "domain": "Security analysis of reverse cycle-walking constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "t: cycle length in reverse t-cycle walking, with values greater than 2 defining the longer-cycle variants"
+    ],
+    "unresolved_remainder": "Determine whether any reverse t-cycle walking variant for t greater than 2 yields better bounds than those proved for reverse 2-cycle walking."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "reverse-cycle-walking",
+      "block-ciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse Cycle Walking and Its Applications",
+        "locator": "ASIACRYPT 2016, page 21",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://eprint.iacr.org/2016/865",
+        "eprint": "2016/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports a security analysis of reverse 2-cycle walking and notes its generalization to longer cycles. It asks whether choosing t greater than 2 can improve the bounds proved there.",
+      "citation_labels": [
+        "Sarah Miracle et al., Reverse Cycle Walking and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

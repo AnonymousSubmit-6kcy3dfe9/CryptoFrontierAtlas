@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "unique-hsm-reference-rank-group-optimization",
+  "group_id": "unique-hsm-reference-rank-group-optimization",
+  "title": "Optimizing the Unique HSM Reference Rank-Group Index",
+  "summary": "The reference rank-group index for unique HSM remains unoptimized; find better choices and quantify their complexity savings, though the overall effect is expected to be negligible.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine how to choose the reference rank-group index $r'$ in the unique half-space-mask (HSM) algorithm to improve its complexity, and quantify the reduction achieved by better choices. The existing choice of $r'$ was not optimized, and better options are likely to exist; because the unique HSM algorithm does not dominate the overall complexity, such improvements are expected to have negligible effect on the overall complexity."
+  },
+  "scope": {
+    "domain": "Complexity optimization in structural cryptanalysis for the unique half-space-mask algorithm.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Reference rank-group index r′: identifies the rank group used as the reference and is the choice to optimize"
+    ],
+    "unresolved_remainder": "Identify better choices of r′ and quantify the resulting reduction in the unique HSM algorithm's complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "algorithm-complexity",
+      "parameter-optimization"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Improved Affine Equivalence Algorithm for Random Permutations",
+        "locator": "EUROCRYPT 2018, page 25",
+        "doi": "10.1007/978-3-319-78381-9_16",
+        "url": "https://eprint.iacr.org/2018/115",
+        "eprint": "2018/115"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "In its experimental-results discussion, the source notes that the tested reference rank-group index was not optimized and that better choices likely exist. It also says that improvements would have negligible effect on overall complexity because unique HSM is not dominant.",
+      "citation_labels": [
+        "Itai Dinur et al., An Improved Affine Equivalence Algorithm for Random Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

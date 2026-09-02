@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-round-xc-security-under-complete-subkey-collision",
+  "group_id": "three-round-xc-security-under-complete-subkey-collision",
+  "title": "Three-Round XC Security Under Complete Subkey Collision",
+  "summary": "Three-round XC analysis has a sizable gap from the matching attack and gives up when all subkeys coincide; establish a nontrivial PRP-security bound and assess whether the loss is a proof artifact.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the three-round $\\mathrm{XC}$ construction with uniform subkeys, establish a nontrivial single-user PRP-security bound under the extreme subkey-collision condition $J_1=J_2=J_3$. The existing analysis has a considerable gap from the matching attack and gives up when all subkeys coincide, although the construction is expected to retain reasonable security in that case; quantify this residual security and thereby determine whether the loss is only an artifact of the proof technique."
+  },
+  "scope": {
+    "domain": "Single-user PRP-security analysis of the three-round XC block-cipher construction.",
+    "assumptions": [
+      "Uniform subkeys.",
+      "Single-user PRP-security setting.",
+      "Extreme subkey collision satisfying J₁ = J₂ = J₃."
+    ],
+    "parameters": [
+      "Three rounds: the fixed number of XC rounds",
+      "J₁, J₂, and J₃: the three round subkeys"
+    ],
+    "unresolved_remainder": "Establish a nontrivial residual-security bound when all three subkeys coincide and determine whether the apparent loss is only an artifact of the proof technique."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "prp-security",
+      "subkey-collision"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Alternating Ciphers and Key-Length Extension: Exact Bounds and Multi-user Security",
+        "locator": "CRYPTO 2016, page 27",
+        "doi": "10.1007/978-3-662-53018-4_1",
+        "url": "https://eprint.iacr.org/2016/578",
+        "eprint": "2016/578"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a considerable three-round gap relative to the matching attack and says its single-user analysis gives up when all subkeys coincide. It conjectures that reasonable security remains and that the loss is probably a proof artifact.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Key-Alternating Ciphers and Key-Length Extension: Exact Bounds and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

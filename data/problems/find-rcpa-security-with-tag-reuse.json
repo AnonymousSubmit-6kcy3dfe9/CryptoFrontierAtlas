@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "find-rcpa-security-with-tag-reuse",
+  "group_id": "find-rcpa-security-with-tag-reuse",
+  "title": "Find-RCPA Security with Tag Reuse",
+  "summary": "Tag reuse requires misuse-resistant AEAD for find-cpa, but key commitment breaks the find-rcpa reduction; whether idealization is necessary remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the $\\mathsf{PKW}[\\mathsf{PPRF},\\mathsf{AEAD}]$ puncturable key-wrapping construction can support tag reuse for batch puncturing while achieving $\\mathsf{find\\text{-}rcpa}$ security. Under tag reuse, achieving $\\mathsf{find\\text{-}cpa}$ security requires a misuse-resistant AEAD component, but this modification is insufficient for $\\mathsf{find\\text{-}rcpa}$ security because reusing tags across real and challenge wrap queries creates a key-commitment problem that breaks the reduction. The unresolved task is to overcome this obstacle and determine whether a $\\mathsf{find\\text{-}rcpa}$ proof requires an idealized model or can also be obtained without one."
+  },
+  "scope": {
+    "domain": "Security reductions for puncturable key wrapping instantiated from a PPRF and AEAD.",
+    "assumptions": [
+      "Tags are reused to enable batch puncturing.",
+      "The AEAD component is misuse-resistant."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Overcome the key-commitment obstacle and determine whether find-rcpa security with tag reuse can be proved only in an idealized model or also without one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "puncturable-key-wrapping",
+      "key-commitment",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Puncturable Key Wrapping and Its Applications",
+        "locator": "ASIACRYPT 2022, page 18",
+        "doi": "10.1007/978-3-031-22966-4_22",
+        "url": "https://eprint.iacr.org/2022/1209",
+        "eprint": "2022/1209"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies misuse-resistant AEAD as the find-cpa requirement under tag reuse, then explains that key commitment breaks the find-rcpa reduction. It leaves addressing this obstacle, potentially in an idealized model, to future work.",
+      "citation_labels": [
+        "Matilda Backendal et al., Puncturable Key Wrapping and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

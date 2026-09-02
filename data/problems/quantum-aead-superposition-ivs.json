@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-aead-superposition-ivs",
+  "group_id": "quantum-aead-superposition-ivs",
+  "title": "Quantum AEAD Security with Superposition IVs",
+  "summary": "Quantum AEAD security is modeled with classical, distinct IVs without requiring randomness; extending the notions and guarantees to superposition IVs remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the quantum-setting security framework for AEAD, instantiated with classical distinct IVs and without requiring IV randomness, can be extended to allow IVs supplied in superposition, and, if so, define the corresponding security notions and establish security guarantees for that query model."
+  },
+  "scope": {
+    "domain": "Quantum security models for IV-based authenticated encryption with associated data.",
+    "assumptions": [
+      "The baseline quantum AEAD framework uses classical, distinct IVs.",
+      "IV randomness is not required in the baseline framework."
+    ],
+    "parameters": [
+      "IV query access: determines whether initialization vectors are supplied classically or in superposition"
+    ],
+    "unresolved_remainder": "Determine whether and how to extend the framework to superposition IVs, including corresponding security notions and security guarantees."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "quantum-security",
+      "superposition-iv-queries"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 4",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper uses classical, distinct IVs while relaxing the randomness assumption and presents a non-trivial extension to superposition IVs as potentially possible but out of scope.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

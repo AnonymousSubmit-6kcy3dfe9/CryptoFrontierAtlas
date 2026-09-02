@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "black-box-misuse-resistance-leakage-resistant-ae-modes",
+  "group_id": "black-box-misuse-resistance-leakage-resistant-ae-modes",
+  "title": "Black-Box Misuse Resistance for Leakage-Resistant AE Modes",
+  "summary": "The paper combines leakage resistance with nonce-misuse resilience, but leaves black-box misuse resistance as an additional mode requirement for future work.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish black-box nonce-misuse resistance as an additional property of the studied leakage-resistant AE modes."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography concerning leakage-resistant authenticated-encryption modes and their security properties.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The studied leakage-resistant AE modes: the mode constructions to which the additional property would apply"
+    ],
+    "unresolved_remainder": "Establish black-box nonce-misuse resistance as an additional property of the studied leakage-resistant AE modes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "leakage-resistance",
+      "misuse-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 5",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as future work: the limitation under discussion only holds in the presence of leakage, and black-box misuse resistance could be requested as an additional requirement of a mode. The paper does not consider that requirement.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

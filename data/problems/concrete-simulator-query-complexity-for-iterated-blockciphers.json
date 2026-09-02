@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "concrete-simulator-query-complexity-for-iterated-blockciphers",
+  "group_id": "concrete-simulator-query-complexity-for-iterated-blockciphers",
+  "title": "Concrete Simulator Query Complexity for Iterated Blockciphers",
+  "summary": "Classical analysis gives only a polynomial simulator-query bound for iterated blockciphers with at most three primitive calls; a fully concrete characterization remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For indifferentiability of iterated blockciphers constructed from at most three primitive calls, determine a fully concrete characterization of the simulator's query complexity. Existing classical treatment bounds this complexity only polynomially, and that bound appears incompatible with concrete analyses; resolving the gap may require a new paradigm."
+  },
+  "scope": {
+    "domain": "Indifferentiability analysis of iterated blockciphers built from at most three primitive calls.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Primitive-call count: limits the iterated-blockcipher construction to at most three calls",
+      "Simulator query complexity: the resource to be characterized concretely"
+    ],
+    "unresolved_remainder": "Determine a fully concrete characterization of the simulator's query complexity despite the apparent mismatch between the classical polynomial bound and concrete analyses."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "iterated-blockciphers",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls",
+        "locator": "EUROCRYPT 2023, page 9",
+        "doi": "10.1007/978-3-031-30634-1_14",
+        "url": "https://eprint.iacr.org/2023/226",
+        "eprint": "2023/226"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that classical treatment gives only a polynomial bound on simulator query complexity, which appears incompatible with concrete analyses. It leaves fully concrete characterizations for future work and suggests that a new paradigm may be needed.",
+      "citation_labels": [
+        "Chun Guo et al., Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

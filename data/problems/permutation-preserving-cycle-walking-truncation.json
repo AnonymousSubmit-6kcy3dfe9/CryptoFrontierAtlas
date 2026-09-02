@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "permutation-preserving-cycle-walking-truncation",
+  "group_id": "permutation-preserving-cycle-walking-truncation",
+  "title": "Permutation-Preserving Truncation of Cycle Walking",
+  "summary": "A naive cutoff can fail to produce a unique target-set image; whether bounded-step cycle walking can still define a target-set permutation remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a target subset $S \\subseteq T$ and a permutation $\\pi:T\\to T$ of the ambient set $T$, determine whether there exists a bounded-step truncation of ordinary cycle walking $\\mathrm{CW}_{\\pi}$ on $S$ that maps every $x\\in S$ to a unique point of $S$ and defines a permutation of $S$. The obstacle is that a naive cutoff may occur while the walk is traversing $T\\setminus S$, leaving no unique point in $S$ to serve as the image of $x$."
+  },
+  "scope": {
+    "domain": "Ordinary cycle walking for target-set permutation construction in symmetric cryptography.",
+    "assumptions": [
+      "S is a target subset of T.",
+      "π is a permutation of T."
+    ],
+    "parameters": [
+      "S: target set on which the truncated walk must define a permutation",
+      "T: ambient set traversed by ordinary cycle walking",
+      "π: permutation of T used by ordinary cycle walking"
+    ],
+    "unresolved_remainder": "Whether a bounded-step truncation of ordinary cycle walking can map every point of S to a unique point of S and thereby define a permutation of S."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "cycle-walking",
+      "block-ciphers",
+      "permutation-constructions"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Reverse Cycle Walking and Its Applications",
+        "locator": "ASIACRYPT 2016, page 4",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://eprint.iacr.org/2016/865",
+        "eprint": "2016/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that a naive cutoff may stop while the walk is outside the target subset and thus fail to supply a unique target image. It introduces reverse cycle walking as an alternative, leaving truncation of ordinary cycle walking unresolved.",
+      "citation_labels": [
+        "Sarah Miracle et al., Reverse Cycle Walking and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

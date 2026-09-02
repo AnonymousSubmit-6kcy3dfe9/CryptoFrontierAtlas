@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extended-factor-graph-sasca-for-masked-multiplication",
+  "group_id": "extended-factor-graph-sasca-for-masked-multiplication",
+  "title": "Extended-Factor-Graph SASCA for Masked Multiplication",
+  "summary": "Per-measurement SASCA belief propagation tends to degrade as noise rises; it remains open how the extended-factor-graph variant performs and whether its gain over standard DPA is noise-independent.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{SASCA}$ targeting masked secure multiplication, investigate the more computationally expensive variant in which a single factor graph is extended whenever a new measurement is added. Existing experiments instead decode a separate factor graph for each measurement and then recombine the resulting probabilities, with belief-propagation performance tending to worsen as noise increases. Determine the extended-graph variant's attack performance, particularly whether its gain over standard $\\mathrm{DPA}$ is independent of noise, as previously observed for such attacks against an unprotected $\\mathrm{AES}$ implementation."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masked secure multiplication using SASCA with belief-propagation factor graphs.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Noise level, whose effect on attack performance and relative gain over standard DPA is under study"
+    ],
+    "unresolved_remainder": "Determine the extended-factor-graph variant's attack performance, especially whether its gain over standard DPA is independent of noise."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "sasca",
+      "belief-propagation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Masking Proofs Are Tight and How to Exploit it in Security Evaluations",
+        "locator": "EUROCRYPT 2018, page 16",
+        "doi": "10.1007/978-3-319-78375-8_13",
+        "url": "https://eprint.iacr.org/2017/116",
+        "eprint": "2017/116"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that efficient per-measurement factor-graph decoding tends to perform worse as noise increases. It explicitly leaves the more expensive graph-extension variant open, motivated by noise-independent gains previously observed against unprotected AES.",
+      "citation_labels": [
+        "Vincent Grosso et al., Masking Proofs Are Tight and How to Exploit it in Security Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

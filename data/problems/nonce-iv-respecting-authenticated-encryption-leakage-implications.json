@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonce-iv-respecting-authenticated-encryption-leakage-implications",
+  "group_id": "nonce-iv-respecting-authenticated-encryption-leakage-implications",
+  "title": "Nonce- and IV-Respecting Authenticated-Encryption Leakage Implications",
+  "summary": "Encryption-query repetition makes the leakage-security implication trivial without nonce or IV restrictions; prove or refute it under those restrictions and determine whether a general combined leakage function exists.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In authenticated-encryption leakage security with nonce-respecting or IV-respecting settings, determine whether $L_E\\text{-}\\mathrm{IND}\\text{-}\\mathrm{CPLA} \\Longrightarrow (L_E, L_E^0)\\text{-}\\mathrm{IND}\\text{-}\\mathrm{aCPLA}$ holds for reasonable leakage sets, given that the encryption-query repetition used in the non-respecting setting is unavailable. Either prove the implication or give a counterexample. More generally, characterize whether for arbitrary leakage sets $L_E$ and $L_D$, there exists a combined leakage function $L_{ED}$ such that $L_{ED}\\text{-}\\mathrm{IND}\\text{-}\\mathrm{CPLA}$ implies $(L_E, L_D)\\text{-}\\mathrm{IND}\\text{-}\\mathrm{aCPLA}$."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption leakage security and IND-CPLA-to-IND-aCPLA implications under nonce or IV restrictions.",
+    "assumptions": [
+      "The leakage-security setting is nonce-respecting or IV-respecting, making the relevant encryption-query repetition unavailable.",
+      "The first implication concerns reasonable leakage sets."
+    ],
+    "parameters": [
+      "L_E: a leakage set used in both the CPLA premise and aCPLA target",
+      "L_E^0: the second leakage component in the first aCPLA target",
+      "L_D: an arbitrary leakage set in the general aCPLA target",
+      "L_ED: a sought combined leakage function for the general CPLA premise"
+    ],
+    "unresolved_remainder": "Prove the restricted-setting implication for reasonable leakage sets or give a counterexample, and determine whether arbitrary L_E and L_D admit an L_ED yielding the general implication."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "leakage-security",
+      "nonce-iv-respecting"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 29",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that the implication is trivial when leakage on a valid decryption query can be simulated by repeating the corresponding encryption query, but that this repetition is unavailable in nonce- and IV-respecting settings. It explicitly conjectures the restricted implication for many reasonable leakage sets and asks for a formalization or counterexample, then raises the combined-leakage question more generally.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

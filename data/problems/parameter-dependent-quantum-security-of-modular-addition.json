@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "parameter-dependent-quantum-security-of-modular-addition",
+  "group_id": "parameter-dependent-quantum-security-of-modular-addition",
+  "title": "Parameter-Dependent Quantum Security of Modular Addition",
+  "summary": "Modular addition blocks Simon’s linear attacks, yet Kuperberg-based attacks remain subexponential; quantify how state size and other parameters affect quantum chosen-plaintext security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For symmetric schemes using addition over $\\mathbb{Z}/(2^n)$ as a modular-addition countermeasure, determine how the countermeasure parameters, including the state size $n$, affect quantum security against quantum chosen-plaintext attacks. The hidden-shift-based security claim relies on the quantum hardness of the hidden-shift problem, and modular addition prevents Simon's algorithm from producing the $O(n)$ attacks applicable without that countermeasure, but the available analysis does not provide a deeper account of how the parameters affect security; attacks based on Kuperberg's algorithm can still be described with complexity $2^{O(\\sqrt{n})}$ rather than the generic $O(2^n)$. The unresolved task is therefore to quantify the parameter-dependent security and attack complexity of these modular-addition countermeasures."
+  },
+  "scope": {
+    "domain": "Quantum cryptanalysis of modular-addition countermeasures in symmetric schemes under quantum chosen-plaintext attacks.",
+    "assumptions": [
+      "Quantum hardness of the hidden-shift problem"
+    ],
+    "parameters": [
+      "Countermeasure parameters, including state size n: variables whose effect on quantum security and attack complexity must be quantified"
+    ],
+    "unresolved_remainder": "Quantify how the state size and other countermeasure parameters determine quantum security and attack complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "modular-addition",
+      "hidden-shift"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Hidden Shift Quantum Cryptanalysis and Implications",
+        "locator": "ASIACRYPT 2018, page 3",
+        "doi": "10.1007/978-3-030-03326-2_19",
+        "url": "https://eprint.iacr.org/2018/432",
+        "eprint": "2018/432"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents modular addition as making Simon’s linear attacks inapplicable while retaining Kuperberg-based attacks much faster than generic attacks. It explicitly identifies the lack of deeper parameter-security analysis.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Hidden Shift Quantum Cryptanalysis and Implications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

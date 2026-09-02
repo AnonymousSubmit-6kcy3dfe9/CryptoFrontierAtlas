@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "factor-graph-sasca-circuit-size-prediction",
+  "group_id": "factor-graph-sasca-circuit-size-prediction",
+  "title": "Factor-Graph SASCA and the Circuit-Size Prediction",
+  "summary": "Current evaluations cover only divide-and-conquer leakage; formalizing analytical SASCA and testing the circuit-size prediction with a full-implementation factor graph remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Existing investigations are limited to leakage samples exploitable by divide-and-conquer attacks that target independent key parts. Better formalize analytical SASCA attacks, and then analyze a SASCA that exploits a factor graph for a full masked implementation to determine to what extent it confirms the masking-security-proof prediction that an adversary's success rate is proportional to the target circuit size---the total amount of leakage samples---regardless of whether those samples correspond to enumerable intermediate computations."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masked implementations using factor-graph SASCA.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Target circuit size (the total amount of leakage samples): the predicted scaling parameter for the adversary's success rate"
+    ],
+    "unresolved_remainder": "Better formalize analytical SASCA attacks and determine whether a factor-graph SASCA on a full masked implementation confirms the predicted circuit-size proportionality regardless of whether leakage samples correspond to enumerable intermediate computations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking",
+      "sasca"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Masking Proofs Are Tight and How to Exploit it in Security Evaluations",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78375-8_13",
+        "url": "https://eprint.iacr.org/2017/116",
+        "eprint": "2017/116"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts its divide-and-conquer-only evaluations with masking proofs predicting success proportional to total leakage. It explicitly presents full-implementation factor-graph SASCA analysis, preceded by better formalization, as an important open problem.",
+      "citation_labels": [
+        "Vincent Grosso et al., Masking Proofs Are Tight and How to Exploit it in Security Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "s-bounded-short-message-tradeoffs-randomized-modes",
+  "group_id": "s-bounded-short-message-tradeoffs-randomized-modes",
+  "title": "S-Bounded Short-Message Tradeoffs for Randomized Modes",
+  "summary": "Birthday-length one-query distinguishers defeat the between-query-state formulation, but they do not settle the corresponding tradeoff bounds in the short-message regime.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether $S$-boundedness can prove tradeoff bounds of order $O(\\sqrt{Spq/N})$ in the short-message regime $p\\ll\\sqrt{N}$ for randomized $\\mathrm{CTR}\\$ instantiated with a permutation and for randomized $\\mathrm{OFB}\\$, $\\mathrm{CBC}\\$, and $\\mathrm{CFB}\\$, analogous to the positive bound for $\\mathrm{CTR}\\$ instantiated with a pseudorandom function. Birthday-length, one-query distinguishers at $p=\\Theta(\\sqrt{N})$ defeat the between-query-state formulation in that regime but do not rule out such bounds when $p\\ll\\sqrt{N}$. Here $S$ is the memory or state bound, $p$ is the message-length parameter, $q$ is the query parameter, and $N$ is the block-domain size."
+  },
+  "scope": {
+    "domain": "Symmetric-encryption security and time-memory tradeoffs for randomized block-cipher modes, including permutation-based CTR and randomized OFB, CBC, and CFB.",
+    "assumptions": [
+      "The adversary is subject to S-boundedness.",
+      "The short-message condition p is much smaller than the square root of N applies."
+    ],
+    "parameters": [
+      "S, the memory or state bound",
+      "p, the message-length parameter",
+      "q, the query parameter",
+      "N, the block-domain size"
+    ],
+    "unresolved_remainder": "Whether S-boundedness can establish tradeoff bounds of order O(sqrt(Spq/N)) for the listed randomized modes in the short-message regime p much smaller than sqrt(N)."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "time-memory-tradeoffs",
+      "s-boundedness"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 30",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the target as a possible S-boundedness proof direction for randomized CTR with a permutation and randomized OFB, CBC, and CFB. It records birthday-length one-query distinguishers at the birthday scale, while stating that these do not rule out the shorter-message tradeoffs.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

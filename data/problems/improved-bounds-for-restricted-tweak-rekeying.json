@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-bounds-for-restricted-tweak-rekeying",
+  "group_id": "improved-bounds-for-restricted-tweak-rekeying",
+  "title": "Improved Bounds for Restricted-Tweak Rekeying",
+  "summary": "Existing security bounds permit unrestricted tweak reuse; the open task is to derive improved security bounds when each tweak has an explicit maximum number of appearances.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For rekeying constructions $R1$, $R2$, and $R3$, existing security bounds do not impose a limit on how many times a user may use a given tweak; determine improved security bounds when each tweak is restricted to an explicit maximum number of appearances."
+  },
+  "scope": {
+    "domain": "Security analysis of rekeying constructions in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "R1, R2, and R3 rekeying constructions",
+      "maximum number of appearances allowed for each tweak"
+    ],
+    "unresolved_remainder": "Derive the improved security bounds under an explicit maximum on the number of appearances of each tweak."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "rekeying",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption",
+        "locator": "ASIACRYPT 2020, page 37",
+        "doi": "10.1007/978-3-030-64837-4_21",
+        "url": "https://eprint.iacr.org/2020/1082",
+        "eprint": "2020/1082"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that the bounds of Theorems 1-3 can be improved when the number of appearances per tweak is restricted, presenting this as an unresolved direction for stronger bounds.",
+      "citation_labels": [
+        "Bart Mennink et al., Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

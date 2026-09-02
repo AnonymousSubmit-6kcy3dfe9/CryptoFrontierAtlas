@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bounded-degree-equations-in-rasta-dasta-attacks",
+  "group_id": "bounded-degree-equations-in-rasta-dasta-attacks",
+  "title": "Bounded-Degree Equations in Rasta and Dasta Attacks",
+  "summary": "More complicated equations can reduce attack data while leaving linearization time and memory unchanged, but their bounded-degree count and maximum achievable data reduction remain unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Rasta and Dasta attacks, more complicated exploitable equations constructed from a plaintext-ciphertext pair can reduce data complexity, while the time and memory complexity of the linearization attack remain unchanged. The unresolved problem is to characterize or upper-bound, for each prescribed maximum degree, the number of exploitable equations of degree at most that bound and to determine the greatest reduction in data complexity achievable from them; the available evidence only indicates that this number appears small and that the data complexity may not be significantly reduced."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Rasta and Dasta using exploitable low-degree equations and linearization attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Maximum equation degree: bounds the degrees of exploitable equations included in the count",
+      "Number of exploitable equations: the degree-bounded quantity to characterize or upper-bound",
+      "Data-complexity reduction: the achievable attack improvement to determine"
+    ],
+    "unresolved_remainder": "For each prescribed maximum degree, characterize or upper-bound the number of exploitable equations and determine the greatest resulting reduction in data complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "low-degree-equations",
+      "data-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Attacks on Rasta and Dasta Using Low-Degree Equations",
+        "locator": "ASIACRYPT 2021, page 22",
+        "doi": "10.1007/978-3-030-92062-3_8",
+        "url": "https://eprint.iacr.org/2021/474",
+        "eprint": "2021/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that constructing more complicated equations from a plaintext-ciphertext pair can reduce data complexity without changing linearization time or memory. It indicates that the bounded-degree equation count appears small but leaves both that count and the attainable reduction unresolved.",
+      "citation_labels": [
+        "Fukang Liu et al., Algebraic Attacks on Rasta and Dasta Using Low-Degree Equations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

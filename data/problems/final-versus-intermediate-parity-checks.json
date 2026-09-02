@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "final-versus-intermediate-parity-checks",
+  "group_id": "final-versus-intermediate-parity-checks",
+  "title": "Final Versus Intermediate Parity Checks",
+  "summary": "The authors believe a single final parity check offers the best performance-versus-fault-detection tradeoff, but the comparison with intermediate checks remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a code-abiding permutation protected by parity equations, faults injected at different computation steps may propagate in hard-to-predict ways and may compensate, producing an erroneous state that still decodes successfully; the unresolved task is to determine whether checking the parity equations only once at the end provides a better performance-versus-fault-detection tradeoff than adding intermediate checks between steps."
+  },
+  "scope": {
+    "domain": "This concerns fault detection in parity-protected permutations for authenticated encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Parity-check placement: compares a single check at the end with intermediate checks between computation steps"
+    ],
+    "unresolved_remainder": "Determine whether a single parity check at the end provides a better performance-versus-fault-detection tradeoff than intermediate parity checks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "fault-detection",
+      "parity-checks",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Friet: an Authenticated Encryption Scheme with Built-in Fault Detection",
+        "locator": "EUROCRYPT 2020, page 6",
+        "doi": "10.1007/978-3-030-45721-1_21",
+        "url": "https://eprint.iacr.org/2020/425",
+        "eprint": "2020/425"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the authors' belief that intermediate parity checks are not worth their cost because faults can propagate unpredictably and compensate. It favors a single final check but does not resolve the comparison.",
+      "citation_labels": [
+        "Thierry Simon et al., Friet: an Authenticated Encryption Scheme with Built-in Fault Detection"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

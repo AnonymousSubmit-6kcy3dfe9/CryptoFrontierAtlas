@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "kaf-single-user-multi-user-bound-equality",
+  "group_id": "kaf-single-user-multi-user-bound-equality",
+  "title": "Equality of Single-User and Multi-User KAF Security Bounds",
+  "summary": "IEM with INDRK has quantitatively equal single-user and multi-user bounds; whether such equality holds for general KAF ciphers remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For IEM with INDRK, the single-user and multi-user security bounds are quantitatively the same. For key-alternating Feistel (KAF) ciphers in general, establish or refute whether the single-user and multi-user security bounds are quantitatively equal; the available results appear to suggest that this equality does not hold in general, leaving the question unresolved."
+  },
+  "scope": {
+    "domain": "Single-user and multi-user security bounds for general key-alternating Feistel ciphers, with IEM under INDRK as the known comparison case.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "User regime — distinguishes the single-user and multi-user security bounds being compared"
+    ],
+    "unresolved_remainder": "Establish or refute quantitative equality between the single-user and multi-user security bounds for general KAF ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "key-alternating-feistel",
+      "multi-user-security",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 5",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source cites known equality for IEM with INDRK, notes suggestive KAF results, but does not expect the equality to hold for KAF in general. It leaves deeper investigation for future work.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

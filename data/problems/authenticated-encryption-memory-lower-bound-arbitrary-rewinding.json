@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "authenticated-encryption-memory-lower-bound-arbitrary-rewinding",
+  "group_id": "authenticated-encryption-memory-lower-bound-arbitrary-rewinding",
+  "title": "Authenticated-Encryption Memory Lower Bound Under Arbitrary Rewinding",
+  "summary": "Full rewinding cannot overcome insufficient memory, but whether the memory-tightness lower bound extends to arbitrary rewinding strategies remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can the memory-tightness lower bound for authenticated-encryption reductions be extended from the full-rewinding model to arbitrary rewinding strategies? Full rewinding means rerunning the adversary from the beginning. The established partial result is absolute for full rewinding: if memory is too small, no amount of full rewinding helps; whether the same conclusion holds under arbitrary rewinding remains open."
+  },
+  "scope": {
+    "domain": "This concerns authenticated-encryption reductions and memory-tightness lower bounds.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "memory: the resource constrained by the lower bound",
+      "rewinding strategy: full rewinding from the beginning versus arbitrary rewinding"
+    ],
+    "unresolved_remainder": "Whether the absolute memory-tightness lower bound established for full rewinding also holds for arbitrary rewinding strategies."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "memory-tightness",
+      "rewinding"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Memory-Tightness of Authenticated Encryption",
+        "locator": "CRYPTO 2020, page 4",
+        "doi": "10.1007/978-3-030-56784-2_5",
+        "url": "https://eprint.iacr.org/2020/785",
+        "eprint": "2020/785"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents arbitrary rewinding as out of reach and reports partial progress only for full rewinding, where rerunning the adversary from the beginning does not help. It characterizes that full-rewinding result as absolute when memory is too small.",
+      "citation_labels": [
+        "Ashrujit Ghoshal et al., The Memory-Tightness of Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

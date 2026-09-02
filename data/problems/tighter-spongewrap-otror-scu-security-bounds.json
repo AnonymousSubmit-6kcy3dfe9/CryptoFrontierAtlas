@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-spongewrap-otror-scu-security-bounds",
+  "group_id": "tighter-spongewrap-otror-scu-security-bounds",
+  "title": "Tighter SpongeWrap otROR and SCU Security Bounds",
+  "summary": "Existing analyses establish otROR and SCU security for SpongeWrap-based encryptment, but tighter quantitative bounds remain to be derived.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The SpongeWrap-based encryptment scheme is established by existing security analyses to achieve otROR and SCU security, but those analyses may admit tighter quantitative bounds. The unresolved task is to derive tighter otROR and SCU security bounds for the SpongeWrap-based encryptment scheme."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography focused on SpongeWrap-based encryptment and its security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "otROR and SCU security bounds, the quantitative measures whose tightness is at issue"
+    ],
+    "unresolved_remainder": "Derive tighter quantitative otROR and SCU security bounds for the SpongeWrap-based encryptment scheme."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "sponge-constructions",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fast Message Franking: From Invisible Salamanders to Encryptment",
+        "locator": "CRYPTO 2018, page 42",
+        "doi": "10.1007/978-3-319-96884-1_6",
+        "url": "https://eprint.iacr.org/2019/016",
+        "eprint": "2019/016"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents existing analyses as implying otROR and SCU security for SpongeWrap-based encryptment, then identifies tighter quantitative bounds as a likely direction for improvement.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Fast Message Franking: From Invisible Salamanders to Encryptment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

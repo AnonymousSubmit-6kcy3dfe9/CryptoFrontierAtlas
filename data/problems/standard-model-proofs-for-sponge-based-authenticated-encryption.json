@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "standard-model-proofs-for-sponge-based-authenticated-encryption",
+  "group_id": "standard-model-proofs-for-sponge-based-authenticated-encryption",
+  "title": "Standard-Model Proofs for Sponge-Based Authenticated Encryption",
+  "summary": "TBC-based designs have standard-model proofs under simulatability, whereas sponge-based designs often use idealized assumptions; whether this gap can be bridged remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For leakage-resistant authenticated-encryption constructions, TBC-based designs admit standard-model security proofs under the simulatability assumption, while sponge-based designs frequently require idealized assumptions even for black-box security proofs. Determine whether analogous standard-model proofs can be obtained for sponge-based designs under simulatability or a weaker physical assumption."
+  },
+  "scope": {
+    "domain": "Leakage-resistant authenticated-encryption constructions in symmetric cryptography, comparing TBC-based and sponge-based designs.",
+    "assumptions": [
+      "simulatability assumption",
+      "a weaker physical assumption"
+    ],
+    "parameters": [
+      "construction family: TBC-based or sponge-based design"
+    ],
+    "unresolved_remainder": "Whether analogous standard-model security proofs can be obtained for sponge-based designs under simulatability or a weaker physical assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "sponge-constructions",
+      "physical-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 16",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts TBC-based constructions, which allow standard-model proofs under simulatability, with sponge-based constructions, for which idealized assumptions are frequently used even in black-box proofs. It presents bridging this gap under simulatability or a weaker physical assumption as an interesting open problem.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hypergeometric-tail-bound-3-round-key-alternating-cipher",
+  "group_id": "hypergeometric-tail-bound-3-round-key-alternating-cipher",
+  "title": "Hypergeometric Tail Bounds for a 3-Round Key-Alternating Cipher",
+  "summary": "The analysis uses a Chebyshev tail estimate, while the open task is an explicit hypergeometric moment-generating-function expression or Chernoff-type bound yielding a concrete security result.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the 3-round key-alternating cipher with a single permutation, determine an explicit moment-generating-function expression for the hypergeometric distribution, or otherwise derive a Chernoff-type tail inequality for that distribution, that can replace the Chebyshev-based tail estimate used in the security analysis. The needed result must remove the deviation term $\\zeta(q_e)$ and the parameter $t$ from the resulting security bound and thereby yield a concrete bound for the cipher's advantage, under the same proof framework and query parameters appearing in the analysis. [S1]"
+  },
+  "scope": {
+    "domain": "Probability tail bounds for the security analysis of a 3-round key-alternating cipher with one permutation.",
+    "assumptions": [
+      "the same proof framework and query parameters appearing in the analysis"
+    ],
+    "parameters": [
+      "q_e (argument of the deviation term)",
+      "t (parameter in the security bound)"
+    ],
+    "unresolved_remainder": "Obtain an explicit moment-generating-function expression for the hypergeometric distribution or derive a Chernoff-type tail inequality that replaces the Chebyshev estimate, removes the deviation term and t, and yields a concrete advantage bound within the same proof framework and query parameters."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "hypergeometric-distribution",
+      "tail-inequality",
+      "block-cipher-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation",
+        "locator": "ASIACRYPT 2020, page 9",
+        "doi": "10.1007/978-3-030-64837-4_22",
+        "url": "https://eprint.iacr.org/2020/1073",
+        "eprint": "2020/1073"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a limitation of the current analysis: it reports no explicit hypergeometric moment-generating function and therefore no available Chernoff-type bound. It states that a more accurate tail inequality could remove the deviation term and t and yield a concrete advantage bound.",
+      "citation_labels": [
+        "Yusai Wu et al., Tight Security Analysis of 3-Round Key-Alternating Cipher with A Single Permutation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

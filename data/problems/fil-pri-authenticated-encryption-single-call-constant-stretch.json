@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fil-pri-authenticated-encryption-single-call-constant-stretch",
+  "group_id": "fil-pri-authenticated-encryption-single-call-constant-stretch",
+  "title": "Single-Call, Constant-Stretch AE from a FIL PRI",
+  "summary": "An attempted design did not meet both target efficiency properties, and whether any such authenticated-encryption mode exists remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The open task is to determine whether there exists an authenticated-encryption mode built from a fixed-input-length (FIL) PRI that simultaneously uses a single primitive call for the shortest queries and has constant ciphertext stretch. The available result is that an attempted design could not achieve both properties, so the existence of such a mode remains unresolved."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption mode design using a fixed-input-length (FIL) PRI.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Fixed-input-length (FIL) PRI: underlying primitive",
+      "Single primitive call for the shortest queries: query-cost requirement",
+      "Constant ciphertext stretch: ciphertext-expansion requirement"
+    ],
+    "unresolved_remainder": "Determine whether an authenticated-encryption mode built from a fixed-input-length PRI can satisfy both the single-call requirement for shortest queries and constant ciphertext stretch."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "fixed-input-length-pri",
+      "mode-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages",
+        "locator": "ASIACRYPT 2019, page 21",
+        "doi": "10.1007/978-3-030-34621-8_6",
+        "url": "https://eprint.iacr.org/2019/1004",
+        "eprint": "2019/1004"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that an attempted FIL PRI-based authenticated-encryption mode could not achieve both one primitive call for shortest queries and constant ciphertext stretch. It then explicitly leaves the existence of such a mode as an open question.",
+      "citation_labels": [
+        "Elena Andreeva et al., Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

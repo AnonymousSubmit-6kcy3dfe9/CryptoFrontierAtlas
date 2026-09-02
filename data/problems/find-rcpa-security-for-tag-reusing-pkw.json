@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "find-rcpa-security-for-tag-reusing-pkw",
+  "group_id": "find-rcpa-security-for-tag-reusing-pkw",
+  "title": "Find-RCPA Security for Tag-Reusing PKW",
+  "summary": "Nonce-misuse-resistant AEAD enables tag reuse in generic PKW, but whether the key-commitment barrier to find-RCPA security can be overcome in the standard model or requires an idealized model remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a tag-reusing puncturable key-wrapping (PKW) instantiation obtained by using nonce-misuse-resistant authenticated encryption with associated data (AEAD) in the generic PPRF-and-AEAD construction, determine how to establish the stronger $\\mathsf{find\\$\\text{-}rcpa}$ security notion despite the key-commitment problem encountered in its proof. Specifically, resolve whether this obstacle can be overcome in the standard model or instead requires an idealized model."
+  },
+  "scope": {
+    "domain": "Security proofs for tag-reusing puncturable key wrapping instantiated by nonce-misuse-resistant AEAD in the generic PPRF-and-AEAD construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the key-commitment obstacle can be overcome to prove find-RCPA security in the standard model or an idealized model is required."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "puncturable-key-wrapping",
+      "find-rcpa-security",
+      "key-commitment"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Puncturable Key Wrapping and Its Applications",
+        "locator": "ASIACRYPT 2022, page 31",
+        "doi": "10.1007/978-3-031-22966-4_22",
+        "url": "https://eprint.iacr.org/2022/1209",
+        "eprint": "2022/1209"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The discussion identifies key commitment as the obstacle to proving the stronger find-RCPA security of the tag-reusing instantiation. It explicitly leaves open whether the obstacle can be resolved in the standard model or needs an idealized model.",
+      "citation_labels": [
+        "Matilda Backendal et al., Puncturable Key Wrapping and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

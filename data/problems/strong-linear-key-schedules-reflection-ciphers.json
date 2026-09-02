@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "strong-linear-key-schedules-reflection-ciphers",
+  "group_id": "strong-linear-key-schedules-reflection-ciphers",
+  "title": "Classifying Strong Linear Key Schedules for Reflection Ciphers",
+  "summary": "Security is proved for one alternating two-key schedule, but a complete classification of strong linear schedules using two independent master keys remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a complete classification of all strong linear key schedules for reflection ciphers that use two independent master keys."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography concerning key-schedule security in reflection ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Two independent master keys (keying model)"
+    ],
+    "unresolved_remainder": "A complete classification of all strong linear key schedules for reflection ciphers using two independent master keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedules",
+      "reflection-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 6",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an open question in its future-work discussion, after results for one alternating two-key schedule. It identifies the broader classification of strong linear schedules using two independent master keys as unresolved.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

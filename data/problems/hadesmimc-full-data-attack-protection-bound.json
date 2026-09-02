@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hadesmimc-full-data-attack-protection-bound",
+  "group_id": "hadesmimc-full-data-attack-protection-bound",
+  "title": "HadesMiMC Full-Data Attack Protection Bound",
+  "summary": "Experiments motivate a sufficient round condition for HadesMiMC, but protection against the specified full-data attack under that condition remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For HadesMiMC with parameters $N,t,\\alpha,R_F,R_P$, prove or refute the conjecture that the construction is protected against the full-data Gr?bner-basis attack strategy using plaintext-ciphertext pairs whenever $$R_F t+R_P\\geq \\left\\lceil\\frac{N}{2\\log_2\\!\\left(\\alpha^\\alpha/(\\alpha-1)^{\\alpha-1}\\right)}\\right\\rceil+\\left\\lceil\\frac{t}{2}\\right\\rceil+1.$$ This proposed sufficient condition is motivated by practical tests with $\\alpha=3$, in which the attack complexity was minimized at $M=1$ plaintext-ciphertext pair, and by analogous results in the decryption direction."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the HadesMiMC block-cipher construction under a full-data attack strategy.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N, t, alpha, R_F, and R_P: construction parameters appearing in the conjectured condition",
+      "M: number of plaintext-ciphertext pairs in the motivating test"
+    ],
+    "unresolved_remainder": "Prove or refute whether the construction is protected against the full-data Gr?bner-basis attack strategy using plaintext-ciphertext pairs under the stated condition."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "block-cipher",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 52",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit conjecture motivated by practical tests with alpha=3, where attack complexity was minimized at one plaintext-ciphertext pair, together with analogous results in the decryption direction.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

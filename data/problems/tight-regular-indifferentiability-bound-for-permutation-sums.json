@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-regular-indifferentiability-bound-for-permutation-sums",
+  "group_id": "tight-regular-indifferentiability-bound-for-permutation-sums",
+  "title": "Tight Regular-Indifferentiability Bound for Permutation Sums",
+  "summary": "For two public n-bit permutations, the proven bound is two to the two-n-thirds divided by n; closing the gap to the two-to-five-n-sixths-query attack threshold remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the tight regular-indifferentiability security bound for the sum of two independent public $n$-bit permutations, including whether the gap between the proven bound $2^{2n/3}/n$ and the generic uniform-simulator attack threshold of $2^{5n/6}$ queries can be closed."
+  },
+  "scope": {
+    "domain": "Regular indifferentiability and query security for sums of public permutations in symmetric cryptography.",
+    "assumptions": [
+      "The two public n-bit permutations are independent."
+    ],
+    "parameters": [
+      "n: bit length of each permutation and exponent scale in the security bounds"
+    ],
+    "unresolved_remainder": "Determine the tight security bound and whether the gap between the proven bound and the generic uniform-simulator attack threshold can be closed."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "permutation-sums",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting the Indifferentiability of the Sum of Permutations",
+        "locator": "CRYPTO 2023, page 5",
+        "doi": "10.1007/978-3-031-38548-3_21",
+        "url": "https://eprint.iacr.org/2023/840",
+        "eprint": "2023/840"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly leaves the tightness of indifferentiability for the sum of permutations open. It contrasts a proven bound of 2^(2n/3)/n with a generic uniform-simulator attack threshold of 2^(5n/6) queries.",
+      "citation_labels": [
+        "Aldo Gunsing et al., Revisiting the Indifferentiability of the Sum of Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

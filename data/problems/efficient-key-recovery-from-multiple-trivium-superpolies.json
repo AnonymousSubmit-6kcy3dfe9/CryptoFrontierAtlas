@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-key-recovery-from-multiple-trivium-superpolies",
+  "group_id": "efficient-key-recovery-from-multiple-trivium-superpolies",
+  "title": "Efficient Key Recovery from Multiple Trivium Superpolies",
+  "summary": "Multiple superpolies are known for 846- and 847-round Trivium, but efficiently combining them to recover key-bit information remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Multiple superpolies have been recovered for both $846$-round and $847$-round $\\mathrm{Trivium}$; develop an efficient method that uses multiple such superpolies to recover information about the key bits."
+  },
+  "scope": {
+    "domain": "Cube-attack and algebraic cryptanalysis of reduced-round Trivium using multiple full-key superpolies.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "846 and 847 rounds: the reduced-round Trivium instances for which multiple superpolies were recovered",
+      "80 key bits: all secret variables involved in the relevant superpolies",
+      "Multiple recovered superpolies: the relations to combine for efficient key-information recovery"
+    ],
+    "unresolved_remainder": "Find an efficient method for jointly using multiple recovered superpolies to obtain information about the key bits."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "algebraic-cryptanalysis",
+      "trivium"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Stretching Cube Attacks: Improved Methods to Recover Massive Superpolies",
+        "locator": "ASIACRYPT 2022, page 23",
+        "doi": "10.1007/978-3-031-22972-5_19",
+        "url": "https://eprint.iacr.org/2022/1218",
+        "eprint": "2022/1218"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports recovering multiple superpolies for both 846- and 847-round Trivium and explicitly asks how they can reveal key-bit information. The relevant superpolies are neither linear nor quadratic, involve all 80 key bits, and have no known disjoint set.",
+      "citation_labels": [
+        "Jiahui He et al., Stretching Cube Attacks: Improved Methods to Recover Massive Superpolies"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xc-e-3-multi-user-prp-bound-gap",
+  "group_id": "xc-e-3-multi-user-prp-bound-gap",
+  "title": "Multi-User PRP Bound Gap for XC[E,3]",
+  "summary": "For XC with parameter three and uniform subkeys, a gap remains between the multi-user PRP bound and the matching attack; close it or prove it unavoidable.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $t=3$, tighten the multi-user PRP bound for $\\mathrm{XC}[E,3]$ with uniform subkeys to close its gap with the matching attack, or prove that the gap is necessary."
+  },
+  "scope": {
+    "domain": "Multi-user PRP security analysis for the XC[E,3] symmetric-key construction.",
+    "assumptions": [
+      "The subkeys are uniform."
+    ],
+    "parameters": [
+      "t: fixed to 3, identifying the unresolved case"
+    ],
+    "unresolved_remainder": "Tighten the multi-user PRP bound to close its gap with the matching attack, or prove that the gap is necessary."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "prp-security",
+      "multi-user-security",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Key-Alternating Ciphers and Key-Length Extension: Exact Bounds and Multi-user Security",
+        "locator": "CRYPTO 2016, page 6",
+        "doi": "10.1007/978-3-662-53018-4_1",
+        "url": "https://eprint.iacr.org/2016/578",
+        "eprint": "2016/578"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves open reducing the gap for the parameter-three case or proving its necessity. The supplied row frames this as a gap between the multi-user PRP bound for XC[E,3] and the matching attack.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Key-Alternating Ciphers and Key-Length Extension: Exact Bounds and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

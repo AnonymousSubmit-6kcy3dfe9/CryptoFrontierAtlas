@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nontrivial-otr-tweak-polynomial-collisions",
+  "group_id": "nontrivial-otr-tweak-polynomial-collisions",
+  "title": "Nontrivial OTR Tweak-Polynomial Collisions",
+  "summary": "Beyond trivial collisions induced by sparse field polynomials, it remains unknown how hard pre-birthday OTR tweak-polynomial collisions are to find and how their indices are distributed.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the OTR tweak-polynomial family, set aside the trivial collisions obtained directly from special sparse forms of the irreducible polynomial defining the finite field. Determine the computational difficulty of finding any other collision before the birthday bound, and characterize the distribution of the indices at which such tweak-polynomial collisions occur. As a baseline, randomly behaving tweak polynomials would be expected to collide only shortly before the birthday bound."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of OTR tweak-polynomial collisions over finite fields.",
+    "assumptions": [
+      "Trivial collisions obtained directly from special sparse forms of the field-defining irreducible polynomial are excluded."
+    ],
+    "parameters": [
+      "Collision indices — identify where colliding tweak polynomials occur and are the subject of the requested distribution",
+      "Birthday bound — serves as the threshold for the collision search"
+    ],
+    "unresolved_remainder": "Determine the difficulty of finding nontrivial collisions before the birthday bound and characterize the distribution of their indices."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "otr",
+      "collision-search"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Trick or Tweak: On the (In)security of OTR's Tweaks",
+        "locator": "ASIACRYPT 2016, page 17",
+        "doi": "10.1007/978-3-662-53887-6_12",
+        "url": "https://eprint.iacr.org/2016/234",
+        "eprint": "2016/234"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks these questions after identifying trivial collisions caused by sparse field polynomials. It notes the random-behavior baseline and reports experiments at 16, 32, and 64 bits, without a general resolution.",
+      "citation_labels": [
+        "Raphael Bost et al., Trick or Tweak: On the (In)security of OTR's Tweaks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

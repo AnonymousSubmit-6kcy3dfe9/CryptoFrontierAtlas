@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-key-recovery-for-6-or-more-rounds-of-aes",
+  "group_id": "efficient-key-recovery-for-6-or-more-rounds-of-aes",
+  "title": "Efficient Key Recovery for 6 or More Rounds of AES",
+  "summary": "A new 5-round secret-key distinguisher is proposed, but whether it can yield an efficient key-recovery attack for 6 or more AES rounds remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For AES, given the proposed new 5-round secret-key distinguisher, determine whether an efficient key-recovery attack can be constructed for 6 or more rounds by exploiting that distinguisher or a modified version of it."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the AES block cipher using secret-key distinguishers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AES, the target block cipher",
+      "5-round secret-key distinguisher, the proposed source technique",
+      "6 or more rounds, the target round range"
+    ],
+    "unresolved_remainder": "Determine whether an efficient key-recovery attack can be constructed for 6 or more rounds using the proposed distinguisher or a modified version of it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "aes",
+      "structural-cryptanalysis",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A New Structural-Differential Property of 5-Round AES",
+        "locator": "EUROCRYPT 2017, page 27",
+        "doi": "10.1007/978-3-319-56614-6_10",
+        "url": "https://eprint.iacr.org/2017/118",
+        "eprint": "2017/118"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit further-extension question. It asks whether the proposed 5-round secret-key distinguisher, or a modification of it, can support efficient key-recovery attacks beyond 5 rounds.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., A New Structural-Differential Property of 5-Round AES"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

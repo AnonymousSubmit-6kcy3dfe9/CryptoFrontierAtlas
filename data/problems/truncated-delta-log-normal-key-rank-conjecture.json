@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "truncated-delta-log-normal-key-rank-conjecture",
+  "group_id": "truncated-delta-log-normal-key-rank-conjecture",
+  "title": "Truncated Delta-Log-Normal Key-Rank Conjecture",
+  "summary": "Logarithmic key-rank histograms appear approximately normal in their interior, but whether the full distribution is truncated delta-log-normal remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish or refute the conjecture that the side-channel key-rank distribution is a truncated delta-log-normal law: a mixture comprising a point mass at key rank zero and a log-normal component for positive ranks, restricted to the finite rank range imposed by the key space. Although logarithmic key-rank histograms appear approximately normal in their interior, it remains to prove that this full characterization holds or to exhibit evidence that rules it out."
+  },
+  "scope": {
+    "domain": "Statistical characterization of side-channel key-rank distributions in symmetric cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Key rank: the finite-range random variable whose distribution is being characterized"
+    ],
+    "unresolved_remainder": "Prove that the full side-channel key-rank distribution has the conjectured truncated delta-log-normal form, or exhibit evidence refuting it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "side-channel-analysis",
+      "key-rank-distribution",
+      "probability-statistics"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations",
+        "locator": "ASIACRYPT 2016, page 12",
+        "doi": "10.1007/978-3-662-53887-6_20",
+        "url": "https://eprint.iacr.org/2016/491",
+        "eprint": "2016/491"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures a truncated delta-log-normal model based on empirical observations and heuristic support. It provides no general proof or exact characterization.",
+      "citation_labels": [
+        "Daniel P. Martin et al., Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mimc-algorithm-1-beyond-35",
+  "group_id": "mimc-algorithm-1-beyond-35",
+  "title": "Applicability of Algorithm 1 to MiMC-N/N Beyond N=35",
+  "summary": "The method is verified for odd block sizes from 5 through 35 and shows an empirical extra zero-sum round; whether it applies to larger odd MiMC-N/N sizes remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $rKR=1$ univariate key-recovery Algorithm 1 for MiMC-N/N, the method has been verified for odd block sizes $N$ from $5$ through $35$ and empirically succeeds with one more zero-sum round than the theoretical expectation; however, its behavior for larger odd $N$ has not been proved. The unresolved question is whether Algorithm 1 can be applied to MiMC-N/N for odd integers $N>35$."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of MiMC via a univariate key-recovery attack.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "MiMC-N/N: construction targeted by Algorithm 1",
+      "N: odd block size, verified from 5 through 35 and unresolved above 35",
+      "rKR=1: key-recovery setting for Algorithm 1"
+    ],
+    "unresolved_remainder": "Whether Algorithm 1 can be applied to MiMC-N/N for odd integers N>35."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "key-recovery",
+      "mimc"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC",
+        "locator": "ASIACRYPT 2020, page 20",
+        "doi": "10.1007/978-3-030-64837-4_16",
+        "url": "https://eprint.iacr.org/2020/182",
+        "eprint": "2020/182"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports verification for odd block sizes 5 through 35 and an empirical extra zero-sum round beyond the theoretical expectation. It then explicitly leaves applicability to odd N>35 as an open question because the behavior for larger values has not been proved.",
+      "citation_labels": [
+        "Maria Eichlseder et al., An Algebraic Attack on Ciphers with Low-Degree Round Functions: Application to Full MiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

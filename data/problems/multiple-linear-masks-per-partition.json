@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multiple-linear-masks-per-partition",
+  "group_id": "multiple-linear-masks-per-partition",
+  "title": "Multiple Linear Masks per Partition in Differential-Linear Attacks",
+  "summary": "Existing applications use one linear mask per partition; handling dependencies among multiple masks and determining whether a multidimensional treatment improves attacks remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Within the differential-linear attack framework, existing applications use one linear mask per partition. Develop and evaluate an extension that uses multiple linear masks per partition, explicitly analyzes dependencies among those masks, and determines whether a multidimensional treatment yields improved attacks."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis using differential-linear attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "number of linear masks per partition, the quantity varied from the one-mask baseline"
+    ],
+    "unresolved_remainder": "Develop and evaluate the multiple-mask extension, analyze dependencies among the masks, and determine whether a multidimensional treatment yields improved attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "differential-linear",
+      "linear-cryptanalysis",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Differential-Linear Attacks with Applications to ARX Ciphers",
+        "locator": "CRYPTO 2020, page 29",
+        "doi": "10.1007/978-3-030-56877-1_12",
+        "url": "https://eprint.iacr.org/2020/775",
+        "eprint": "2020/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a possible framework improvement: applications used one mask per partition, multiple masks raise an independence question, and a multidimensional approach is suggested as a possible direction.",
+      "citation_labels": [
+        "Christof Beierle et al., Improved Differential-Linear Attacks with Applications to ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

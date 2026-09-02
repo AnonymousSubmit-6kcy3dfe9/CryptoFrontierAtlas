@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "constant-call-tweakable-blockciphers-standard-prp",
+  "group_id": "constant-call-tweakable-blockciphers-standard-prp",
+  "title": "Fully Secure Constant-Call Tweakable Blockciphers in the Standard PRP Model",
+  "summary": "Thirty-two constructions achieve full provable security with minimal blockcipher calls in the ideal-blockcipher model; constant-call full security in the standard PRP model remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Thirty-two tweakable-blockcipher constructions achieve full provable security with a minimum number of blockcipher calls in the ideal-blockcipher model. Determine whether fully secure tweakable blockciphers can instead be constructed in the standard pseudorandom-permutation model using only a constant number of blockcipher calls."
+  },
+  "scope": {
+    "domain": "Provably secure tweakable-blockcipher design from classical blockciphers.",
+    "assumptions": [
+      "The underlying blockcipher satisfies the standard pseudorandom-permutation assumption."
+    ],
+    "parameters": [
+      "Blockcipher-call count: the construction must use only a constant number of calls"
+    ],
+    "unresolved_remainder": "Whether a fully secure tweakable blockcipher can be constructed in the standard pseudorandom-permutation model with a constant number of blockcipher calls."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-blockciphers",
+      "pseudorandom-permutations",
+      "block-cipher-design"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers",
+        "locator": "ASIACRYPT 2016, page 26",
+        "doi": "10.1007/978-3-662-53887-6_17",
+        "url": "https://eprint.iacr.org/2016/876",
+        "eprint": "2016/876"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion presents this as future work after reporting 32 fully secure constructions with a minimum number of blockcipher calls in the ideal-blockcipher model. It leaves the constant-call construction in the standard PRP model unresolved.",
+      "citation_labels": [
+        "Lei Wang et al., How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

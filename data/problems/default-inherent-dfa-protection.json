@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "default-inherent-dfa-protection",
+  "group_id": "default-inherent-dfa-protection",
+  "title": "Adapting DEFAULT for Inherent DFA Protection",
+  "summary": "Linear structures appear insufficient for inherent cipher-level DFA protection; the open task is to adapt DEFAULT to provide that protection.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The DEFAULT block-cipher design strategy is based on linear structures, but achieving inherent cipher-level protection against differential fault analysis appears to require substantial ideas beyond linear structures. The unresolved task is to find an adaptation of the DEFAULT design strategy that achieves such inherent DFA protection."
+  },
+  "scope": {
+    "domain": "Symmetric block-cipher design focused on linear-structure-based strategies and inherent protection against differential fault analysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "DEFAULT design strategy, the block-cipher construction to be adapted",
+      "Linear structures, the stated basis of the design strategy"
+    ],
+    "unresolved_remainder": "Find an adaptation of the DEFAULT design strategy that achieves inherent cipher-level protection against differential fault analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "block-ciphers",
+      "differential-fault-analysis",
+      "cryptographic-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Information-Combining Differential Fault Attacks on DEFAULT",
+        "locator": "EUROCRYPT 2022, page 23",
+        "doi": "10.1007/978-3-031-07082-2_7",
+        "url": "https://eprint.iacr.org/2021/1374",
+        "eprint": "2021/1374"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly raises adapting the DEFAULT design strategy as an open question after stating that inherent cipher-level DFA protection appears to require ideas beyond linear structures. It provides no such adaptation or resolution.",
+      "citation_labels": [
+        "Marcel Nageler et al., Information-Combining Differential Fault Attacks on DEFAULT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

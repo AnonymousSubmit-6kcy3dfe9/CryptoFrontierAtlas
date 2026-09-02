@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-linearization-key-recovery-complexity",
+  "group_id": "lowmc-linearization-key-recovery-complexity",
+  "title": "Tight Complexity of Linearization-Based LowMC Key Recovery",
+  "summary": "Existing analysis gives only an upper bound for extended linearization-based LowMC key recovery; a simple, tight expected-time formula accounting for the equation–variable tradeoff remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a simple, tight formula for the expected time required by linearization-based full-key recovery against LowMC from $N$ compact differential trails when the attack is extended backward by more than $b+r_3$ rounds under the condition $b\\le r_1+r_2$. The formula must capture the tradeoff that extending the attack can reveal more linear equations but requires additional variables to linearize inactive S-boxes: each inactive S-box introduces three extra variables, whereas each active S-box yields only two linear equations. Existing analysis provides only an upper bound for this regime."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of LowMC using linearization-based full-key recovery from compact differential trails.",
+    "assumptions": [
+      "The attack is extended backward by more than b + r₃ rounds.",
+      "The regime satisfies b ≤ r₁ + r₂."
+    ],
+    "parameters": [
+      "N: number of compact differential trails",
+      "b, r₁, r₂, and r₃: parameters defining the backward-round extension and its applicable regime"
+    ],
+    "unresolved_remainder": "Find a simple, tight expected-time formula that accounts for both the additional linear equations and the extra variables needed to linearize inactive S-boxes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "lowmc",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Full LowMC and LowMC-M with Algebraic Techniques",
+        "locator": "CRYPTO 2021, page 18",
+        "doi": "10.1007/978-3-030-84252-9_13",
+        "url": "https://eprint.iacr.org/2020/1034",
+        "eprint": "2020/1034"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents Equation 10 as only an upper bound in the extended-backward regime. It identifies the obstacle as the tradeoff between additional leaked equations and the variables needed to linearize inactive S-boxes.",
+      "citation_labels": [
+        "Fukang Liu et al., Cryptanalysis of Full LowMC and LowMC-M with Algebraic Techniques"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

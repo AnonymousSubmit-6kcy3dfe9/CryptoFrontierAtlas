@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hybrid-space-hardness-conjecture",
+  "group_id": "hybrid-space-hardness-conjecture",
+  "title": "Hybrid SPACE Hardness of the SPACE Family",
+  "summary": "Under the stated parameter bounds, SPACE is conjectured to satisfy hybrid SPACE hardness; proving or refuting this, including for SPACE256, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{SPACE}$ with block size $n_a$, establish or refute the conjecture that $\\mathrm{SPACE}$ satisfies $(t,\\lambda,q,t_{\\mathrm{lif}})$-hybrid SPACE hardness for $\\lambda=(128-n_a)2^{n_a-2}$, $t+t_{\\mathrm{lif}}<2^{128}$, and $q<2^{128}-\\lfloor\\lambda/128\\rfloor$. In particular, for the instantiation $\\mathrm{SPACE256}$ with $n_a=16$, determine whether $\\mathrm{SPACE256}$ satisfies $(t,\\lambda,q,t_{\\mathrm{lif}})$-hybrid SPACE hardness for $\\lambda=(256-16)\\times 2^{16-2}$, $t+t_{\\mathrm{lif}}<2^{128}$, and $q<2^{256}-\\lfloor\\lambda/256\\rfloor$."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of the SPACE block-cipher family under hybrid SPACE hardness.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n_a: block size of SPACE, fixed to 16 for the SPACE256 instantiation",
+      "t, lambda, q, and t_lif: parameters of hybrid SPACE hardness subject to the stated equalities and upper bounds"
+    ],
+    "unresolved_remainder": "Prove or refute hybrid SPACE hardness for SPACE under the stated bounds, including whether SPACE256 satisfies it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "block-cipher",
+      "cryptanalysis",
+      "hybrid-space-hardness"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 84",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents SPACE as an expected example satisfying hybrid SPACE hardness rather than as a proved result. The open task is to establish or refute the claim under the stated bounds, particularly for SPACE256.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

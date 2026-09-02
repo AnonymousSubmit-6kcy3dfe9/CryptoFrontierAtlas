@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "combined-side-channel-dfa-against-default",
+  "group_id": "combined-side-channel-dfa-against-default",
+  "title": "Combined Side-Channel and DFA Attack on DEFAULT",
+  "summary": "It remains open how far an attack combining side-channel analysis with differential fault analysis can be carried against the DEFAULT cipher.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine how far a combined side-channel analysis and differential fault analysis (DFA) attack can be carried against the DEFAULT cipher. Because the question fixes no side-channel leakage model, fault model, ordering or interaction of attack stages, or success metric, a resolution should state these choices, construct and evaluate the combined attack, and characterize its resulting capability against DEFAULT."
+  },
+  "scope": {
+    "domain": "Symmetric-key cryptanalysis of the DEFAULT cipher using combined side-channel analysis and differential fault analysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Side-channel leakage model — defines the leakage observations available to the attack",
+      "Fault model — defines the faulty executions or outputs available to the attack",
+      "Attack-stage ordering or interaction — determines how side-channel and differential-fault information are combined",
+      "Success metric — measures the resulting attack capability"
+    ],
+    "unresolved_remainder": "Construct and evaluate a combined side-channel and DFA attack under stated choices and characterize its capability against DEFAULT."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "differential-fault-analysis",
+      "default-cipher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 23",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a future attack direction, asking how far combined side-channel analysis and DFA can go against DEFAULT. It leaves the attack models, their interaction, and the success metric open.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

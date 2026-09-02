@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "formal-security-of-always-pmac-ocb2",
+  "group_id": "formal-security-of-always-pmac-ocb2",
+  "title": "Formal Security of the Always-PMAC OCB2 Variant",
+  "summary": "Preliminary analysis finds the empty-input PMAC value unpredictable and non-replayable, but formal authenticated-encryption security of the repaired OCB2 remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In OCB2, the value $\\mathsf{PMAC}(A)$ computed on associated data $A$ is XORed into the authentication tag only when $A\\neq\\varepsilon$. Consider the modified variant that removes this condition and always XORs $\\mathsf{PMAC}(A)$ into the tag, including when $A=\\varepsilon$. Initial analysis indicates that $\\mathsf{PMAC}(\\varepsilon)$ is unpredictable and cannot be replayed from other ciphertexts. Establish or refute a formal authenticated-encryption-with-associated-data security theorem for this modified OCB2 variant, explicitly covering both $A=\\varepsilon$ and $A\\neq\\varepsilon$."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, focusing on authenticated encryption and PMAC-based authentication in OCB2.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "A: associated data input, with empty and nonempty cases",
+      "ε: the empty associated-data value"
+    ],
+    "unresolved_remainder": "Establish or refute a formal authenticated-encryption-with-associated-data security theorem for the modified OCB2 variant, covering both empty and nonempty associated data."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ocb2",
+      "authenticated-encryption",
+      "pmac"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality",
+        "locator": "CRYPTO 2019, page 21",
+        "doi": "10.1007/978-3-030-26948-7_1",
+        "url": "https://eprint.iacr.org/2019/311",
+        "eprint": "2019/311"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents always including PMAC on associated data, including empty data, as an OCB2 repair. It reports preliminary evidence of unpredictability and non-replayability for the empty case but leaves the repair's formal security theorem unproved.",
+      "citation_labels": [
+        "Akiko Inoue et al., Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improving-26-round-gift-attack",
+  "group_id": "improving-26-round-gift-attack",
+  "title": "Improving the 26-Round GIFT Attack",
+  "summary": "A 26-round attack on GIFT is known, while applying the proposed key-guessing framework to improve it remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can the proposed key-guessing framework improve the 26-round GIFT attack of [20]?"
+  },
+  "scope": {
+    "domain": "Key-guessing cryptanalysis of the GIFT block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "26 rounds: round count of the GIFT attack targeted for improvement"
+    ],
+    "unresolved_remainder": "Whether the proposed key-guessing framework can improve the 26-round GIFT attack of [20]."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "gift",
+      "key-guessing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Framework for Key-Guessing Improvements",
+        "locator": "ASIACRYPT 2021, page 3",
+        "doi": "10.1007/978-3-030-92062-3_16",
+        "url": "https://eprint.iacr.org/2021/1238",
+        "eprint": "2021/1238"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The authors express confidence that their techniques can improve the new best GIFT attack in [20], but they do not construct that improvement.",
+      "citation_labels": [
+        "Marek Broll et al., Generic Framework for Key-Guessing Improvements"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

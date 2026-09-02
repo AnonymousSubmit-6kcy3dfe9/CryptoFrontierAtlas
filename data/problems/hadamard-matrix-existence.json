@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hadamard-matrix-existence",
+  "group_id": "hadamard-matrix-existence",
+  "title": "Hadamard Matrix Existence Conjecture",
+  "summary": "At the time of writing, dimension 668 was the smallest unresolved case; prove or disprove existence in every positive dimension divisible by four.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or disprove: For every $N\\in\\mathbb{Z}_{>0}$, if $4\\mid N$, then there exists a Hadamard matrix of dimension $N$."
+  },
+  "scope": {
+    "domain": "Combinatorial existence of Hadamard matrices.",
+    "assumptions": [
+      "N is a positive integer divisible by 4."
+    ],
+    "parameters": [
+      "N: dimension of the Hadamard matrix"
+    ],
+    "unresolved_remainder": "Whether a Hadamard matrix exists in every positive dimension divisible by 4."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [],
+    "tags": [
+      "hadamard-matrices",
+      "combinatorics",
+      "matrix-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications",
+        "locator": "CRYPTO 2022, page 24",
+        "doi": "10.1007/978-3-031-15982-4_26",
+        "url": "https://eprint.iacr.org/2022/782",
+        "eprint": "2022/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a famous conjecture that remains open and notes that 668 was the smallest qualifying dimension for which no Hadamard matrix was known at the time of writing.",
+      "citation_labels": [
+        "Federico Canale et al., Simon's Algorithm and Symmetric Crypto: Generalizations and Automatized Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quf-qind-cca2-imply-qae",
+  "group_id": "quf-qind-cca2-imply-qae",
+  "title": "Do QUF and QIND-CCA2 Imply QAE?",
+  "summary": "Classically, unforgeability with IND-CCA2 implies authenticated encryption; whether QUF and QIND-CCA2 imply QAE for quantum encryption remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Classically, unforgeability together with IND-CCA2 security implies authenticated encryption. Determine whether the analogous implication holds for quantum encryption: does $\\mathrm{QUF} \\land \\mathrm{QIND\\text{-}CCA2} \\implies \\mathrm{QAE}$ for every encryption scheme?"
+  },
+  "scope": {
+    "domain": "The problem concerns security-property implications for quantum encryption schemes, including quantum unforgeability, QIND-CCA2, and QAE.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "QUF, the quantum unforgeability premise",
+      "QIND-CCA2, the quantum chosen-ciphertext security premise",
+      "QAE, the target quantum authenticated-encryption property"
+    ],
+    "unresolved_remainder": "Whether every quantum encryption scheme satisfying QUF and QIND-CCA2 security also satisfies QAE."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "quantum-encryption",
+      "authenticated-encryption",
+      "security-reductions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unforgeable Quantum Encryption",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78372-7_16",
+        "url": "https://eprint.iacr.org/2017/960",
+        "eprint": "2017/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this in its discussion among several open questions. It recalls that classical unforgeability and IND-CCA2 imply authenticated encryption, then asks whether QUF and QIND-CCA2 imply QAE in the quantum setting.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Unforgeable Quantum Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

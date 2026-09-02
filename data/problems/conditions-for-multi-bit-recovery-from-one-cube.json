@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "conditions-for-multi-bit-recovery-from-one-cube",
+  "group_id": "conditions-for-multi-bit-recovery-from-one-cube",
+  "title": "Conditions for Multi-Bit Recovery from One Cube",
+  "summary": "Examples show that multiple secret-variable bits can be recovered from one cube by varying constant IV parts, but the conditions for independent balanced superpolys and reliable recovery remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the cube-attack setting, determine the conditions under which changing the constant part of an initialization vector (IV) for a single cube yields multiple independent balanced superpolys, so that multiple bits of the secret variables can be recovered reliably. Existing examples show that more than one bit of information can be recovered by combining different constant IV parts, and that two bits can be recovered when two independent balanced superpolys are found; the unresolved task is to characterize when this phenomenon occurs and when the resulting superpolys suffice for multi-bit recovery. [S1]"
+  },
+  "scope": {
+    "domain": "This concerns cube attacks and algebraic cryptanalysis in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "single cube: the attack object under consideration",
+      "constant part of the IV: the value varied",
+      "secret variables: the recovery targets",
+      "independent balanced superpolys: the conditions associated with recovering multiple bits"
+    ],
+    "unresolved_remainder": "Characterize when varying the constant IV part for one cube produces multiple independent balanced superpolys and when those superpolys suffice to recover multiple secret-variable bits reliably."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "algebraic-cryptanalysis",
+      "multi-bit-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cube Attacks on Non-Blackbox Polynomials Based on Division Property",
+        "locator": "CRYPTO 2017, page 29",
+        "doi": "10.1007/978-3-319-63697-9_9",
+        "url": "https://eprint.iacr.org/2017/306",
+        "eprint": "2017/306"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents multi-bit recovery from one cube as a possibility when a constant IV value is changed. It reports examples and the two-bit case from two independent balanced superpolys, then leaves the general conditions unresolved.",
+      "citation_labels": [
+        "Yosuke Todo et al., Cube Attacks on Non-Blackbox Polynomials Based on Division Property"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

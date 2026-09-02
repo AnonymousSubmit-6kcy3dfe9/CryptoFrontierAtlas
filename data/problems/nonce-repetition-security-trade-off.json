@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonce-repetition-security-trade-off",
+  "group_id": "nonce-repetition-security-trade-off",
+  "title": "Nonce-Repetition Security Trade-off",
+  "summary": "A conditional nonce-respecting security claim is known, while the trade-off between permitted nonce repetitions and the resulting security bound remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the construction $\\pi_3\\bigl(\\pi_1(\\nu)\\oplus\\pi_2(\\nu)\\oplus H(m)\\bigr)$, where $\\pi_1$, $\\pi_2$, and $\\pi_3$ are independent random permutations, the nonce-respecting model is stated to provide $2^n$ security under the assumption that the sum of permutations provides $n$-bit PRF security. Determine the trade-off between the number of allowed repetitions of the nonce $\\nu$ and the resulting security bound."
+  },
+  "scope": {
+    "domain": "Nonce-based authenticated-encryption security for a construction using three independent random permutations and a hash function.",
+    "assumptions": [
+      "the sum of permutations provides n-bit PRF security"
+    ],
+    "parameters": [
+      "number of allowed repetitions of the nonce ν, the varying parameter in the requested security trade-off",
+      "n, the exponent in the stated security claim and the bit length of the PRF-security assumption"
+    ],
+    "unresolved_remainder": "The trade-off between the number of allowed repetitions of the nonce ν and the resulting security bound remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "nonce-repetition",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21",
+        "locator": "EUROCRYPT 2020, page 16",
+        "doi": "10.1007/978-3-030-45721-1_8",
+        "url": "https://eprint.iacr.org/2020/236",
+        "eprint": "2020/236"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this in its Some Open Problems section, gives a conditional nonce-respecting security claim, and states that the trade-off under nonce repetition is unknown.",
+      "citation_labels": [
+        "Mridul Nandi et al., Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

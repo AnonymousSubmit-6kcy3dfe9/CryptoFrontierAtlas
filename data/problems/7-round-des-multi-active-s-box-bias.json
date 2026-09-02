@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "7-round-des-multi-active-s-box-bias",
+  "group_id": "7-round-des-multi-active-s-box-bias",
+  "title": "Multi-Active-S-Box Bias in 7-Round DES Differential-Linear Distinguishers",
+  "summary": "Maximum bias is verified for 7-round DES differential-linear distinguishers with one active S-box at each end; whether multi-active-S-box cases can exceed it, even with subcipher dependency, remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $7$-round $\\mathrm{DES}$ differential-linear distinguishers, a maximum-bias distinguisher has been verified within the class that starts and ends with a single active S-box. Determine whether any distinguisher with more than one active S-box in its input difference or output bias can exceed that verified maximum, including one that exploits dependency between the subciphers."
+  },
+  "scope": {
+    "domain": "This is a differential-linear cryptanalysis problem about the bias of 7-round DES distinguishers and active S-box patterns.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "7 rounds: the round count for the DES distinguisher",
+      "active S-box count: the number in the input difference or output bias",
+      "distinguisher bias: the quantity compared against the verified maximum",
+      "subcipher dependency: a dependency that a candidate distinguisher may exploit"
+    ],
+    "unresolved_remainder": "Whether a 7-round DES differential-linear distinguisher with more than one active S-box in its input difference or output bias can exceed the verified maximum, including when it exploits dependency between the subciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "differential-linear",
+      "des",
+      "s-box"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DLCT: A New Tool for Differential-Linear Cryptanalysis",
+        "locator": "EUROCRYPT 2019, page 27",
+        "doi": "10.1007/978-3-030-17653-2_11",
+        "url": "https://eprint.iacr.org/2019/256",
+        "eprint": "2019/256"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports maximal bias within the class of 7-round distinguishers that starts and ends with a single active S-box. It presents the unchecked multi-active-S-box case as highly unlikely to exceed that bias, even when subcipher dependency is exploited.",
+      "citation_labels": [
+        "Achiya Bar-On et al., DLCT: A New Tool for Differential-Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

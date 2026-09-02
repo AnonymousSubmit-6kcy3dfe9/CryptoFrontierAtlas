@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-key-indifferentiability-of-generic-aead-compositions",
+  "group_id": "single-key-indifferentiability-of-generic-aead-compositions",
+  "title": "Single-Key Indifferentiability of Generic AEAD Compositions",
+  "summary": "All generic AEAD compositions of Namprempre et al.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the generic AEAD compositions of Namprempre et al., Barbosa and Farshim established non-indifferentiability for every composition in the two-key setting and for only some compositions, including SIV, in the single-key setting. For each composition not covered by their single-key result, determine whether it is indifferentiable in the single-key setting or construct a single-key differentiator."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, specifically indifferentiability of the generic AEAD compositions of Namprempre et al.",
+    "assumptions": [
+      "Single-key setting."
+    ],
+    "parameters": [
+      "Composition: any generic AEAD composition of Namprempre et al. not covered by the existing single-key result"
+    ],
+    "unresolved_remainder": "For every uncovered composition, either prove single-key indifferentiability or construct a single-key differentiator."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "indifferentiability",
+      "single-key"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 43",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source attributes two-key non-indifferentiability for all these compositions and single-key non-indifferentiability for some, including SIV, to Barbosa and Farshim. It leaves the remaining single-key cases without either an indifferentiability result or a differentiator.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

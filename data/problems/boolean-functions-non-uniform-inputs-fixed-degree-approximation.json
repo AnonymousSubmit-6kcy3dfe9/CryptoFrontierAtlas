@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "boolean-functions-non-uniform-inputs-fixed-degree-approximation",
+  "group_id": "boolean-functions-non-uniform-inputs-fixed-degree-approximation",
+  "title": "Boolean Functions Under Non-Uniform Inputs and Fixed-Degree Approximation",
+  "summary": "The paper relies on uniform-input properties and fixed-degree truncation, leaving non-uniform behavior and the best fixed-degree approximation unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Boolean functions, characterize their behavior under non-uniform input distributions and determine the best approximation achievable at each fixed degree; this approximation is needed to analyze higher-order correlation attacks."
+  },
+  "scope": {
+    "domain": "Structural analysis of Boolean functions in symmetric cryptography, with distributional and approximation questions relevant to higher-order correlation attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "input distribution: the distribution under which Boolean-function behavior is analyzed",
+      "degree: the fixed degree used for the approximation"
+    ],
+    "unresolved_remainder": "Characterize Boolean functions under non-uniform input distributions and determine the best approximation achievable at each fixed degree for higher-order correlation-attack analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "boolean-functions",
+      "non-uniform-distributions",
+      "higher-order-correlation-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts",
+        "locator": "EUROCRYPT 2016, page 26",
+        "doi": "10.1007/978-3-662-49890-3_13",
+        "url": "https://eprint.iacr.org/2016/254",
+        "eprint": "2016/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents these as interesting problems raised by its analyses of Boolean functions. It specifically identifies non-uniform input distributions and best fixed-degree approximations, with the latter needed for higher-order correlation attacks.",
+      "citation_labels": [
+        "Pierrick Méaux et al., Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

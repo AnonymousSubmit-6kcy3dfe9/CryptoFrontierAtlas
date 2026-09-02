@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ctr-drbg-multi-instance-security",
+  "group_id": "ctr-drbg-multi-instance-security",
+  "title": "Multi-Instance Security for CTR-DRBG",
+  "summary": "Distinct nonces permit multiple CTR-DRBG instances to share a randomness source, but existing analysis omits multi-instance security; establishing the corresponding theorem remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish a multi-instance security theorem for CTR-DRBG when multiple generator instances share the same randomness source but receive distinct nonces through the optional nonce inputs to setup and refresh. Existing analysis does not cover this multi-instance setting, although distinct nonces permit multiple CTR-DRBG instances to use a common randomness source."
+  },
+  "scope": {
+    "domain": "Multi-instance security analysis of CTR-DRBG with a shared randomness source.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Multiple generator instances: the instances whose joint security is to be analyzed",
+      "Setup and refresh nonces: optional inputs that are distinct across instances and permit a common randomness source"
+    ],
+    "unresolved_remainder": "Establish a security theorem covering multiple CTR-DRBG instances that share the randomness source while using distinct setup and refresh nonces."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "ctr-drbg",
+      "multi-instance-security",
+      "shared-randomness"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 15",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that setup and refresh may accept nonces, enabling multiple CTR-DRBG instances to use one randomness source when their nonces differ. It explicitly states that the work does not consider multi-instance security.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

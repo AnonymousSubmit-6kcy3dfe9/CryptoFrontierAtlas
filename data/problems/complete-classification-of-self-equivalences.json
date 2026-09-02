@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "complete-classification-of-self-equivalences",
+  "group_id": "complete-classification-of-self-equivalences",
+  "title": "Complete Classification of Self-Equivalences",
+  "summary": "Affine, linear, and affine-quadratic self-equivalence subsets are already large enough, but finding all self-equivalences remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Since the affine, linear, and affine-quadratic self-equivalence subsets are large enough, we did not focus on finding all the self-equivalences and we leave it as an open problem."
+  },
+  "scope": {
+    "domain": "Algebraic structures and self-equivalences in white-box ARX cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine all the self-equivalences."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "self-equivalences",
+      "algebraic-structures",
+      "white-box-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Implicit White-Box Implementations: White-Boxing ARX Ciphers",
+        "locator": "CRYPTO 2022, page 22",
+        "doi": "10.1007/978-3-031-15802-5_2",
+        "url": "https://eprint.iacr.org/2022/428",
+        "eprint": "2022/428"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper states that the affine, linear, and affine-quadratic subsets were large enough that it did not pursue all self-equivalences, explicitly leaving that task open.",
+      "citation_labels": [
+        "Adrián Ranea et al., Implicit White-Box Implementations: White-Boxing ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

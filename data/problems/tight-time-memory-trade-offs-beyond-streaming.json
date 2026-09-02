@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-time-memory-trade-offs-beyond-streaming",
+  "group_id": "tight-time-memory-trade-offs-beyond-streaming",
+  "title": "Tight Time-Memory Trade-Offs Beyond Streaming",
+  "summary": "The streaming model is the current boundary for tight trade-off proofs; the unresolved task is to extend techniques to more complex symmetric-encryption security games.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "No proof technique is known for establishing tight time--memory trade-offs in symmetric-encryption security games outside the streaming model. Develop such techniques, including for games with decryption-oracle access."
+  },
+  "scope": {
+    "domain": "Symmetric-encryption security games and tight time-memory trade-offs beyond the streaming model.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Time and memory, the resources in the trade-off"
+    ],
+    "unresolved_remainder": "Develop proof techniques for tight time-memory trade-offs in symmetric-encryption security games outside the streaming model, including games with decryption-oracle access."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-encryption",
+      "time-memory-tradeoffs",
+      "decryption-oracles"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 22",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this in its Open Questions section, noting that it does not know how to prove trade-offs for more complex security games outside the streaming model. It gives security in the presence of decryption oracles as an example.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

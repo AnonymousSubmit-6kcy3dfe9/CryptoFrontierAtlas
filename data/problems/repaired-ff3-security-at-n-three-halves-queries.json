@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "repaired-ff3-security-at-n-three-halves-queries",
+  "group_id": "repaired-ff3-security-at-n-three-halves-queries",
+  "title": "Repaired FF3 Security at N^(3/2) Queries",
+  "summary": "Lower-query security results leave the repaired FF3-style construction's security unresolved in the query regime relevant to its four-round attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The repaired FF3-style Feistel construction, obtained by shortening FF3's tweak and concatenating the round index rather than XORing it, has security results only for lower query regimes; those results say nothing when $q\\sim N^{3/2}$, the regime relevant to the four-round attack. The unresolved task is to characterize the construction's security when $q\\sim N^{3/2}$ queries are available."
+  },
+  "scope": {
+    "domain": "Security of a repaired FF3-style Feistel construction for format-preserving encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q, the number of available queries",
+      "N, the parameter governing the query regime"
+    ],
+    "unresolved_remainder": "Characterize the repaired construction's security when the available query count is approximately N to the three-halves power."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "format-preserving-encryption",
+      "feistel-network",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Breaking the FF3 Format-Preserving Encryption Standard over Small Domains",
+        "locator": "CRYPTO 2017, page 23",
+        "doi": "10.1007/978-3-319-63715-0_23",
+        "url": "https://eprint.iacr.org/2017/521",
+        "eprint": "2017/521"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents security results for the repaired construction only in lower-query regimes. It explicitly identifies the approximately N to the three-halves query regime as uncovered and relevant to the four-round attack.",
+      "citation_labels": [
+        "F. Betül Durak et al., Breaking the FF3 Format-Preserving Encryption Standard over Small Domains"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

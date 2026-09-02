@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "stronger-key-schedule-for-gmicmerf",
+  "group_id": "stronger-key-schedule-for-gmicmerf",
+  "title": "Stronger Key Schedule for GMiMCerf",
+  "summary": "A slide-like attack breaks the analyzed versions in theory; it remains conjectured that a stronger key schedule could prevent it without changing MPC application cost.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The analyzed versions of GMiMCerf are theoretically broken by a slide-like attack that relies only on their weak key schedule and does not exploit any particular property of the cipher. Can GMiMCerf be equipped with a stronger key schedule that avoids this attack while preserving its MPC application cost, given that round keys are precomputed in MPC applications and the key schedule therefore does not affect that cost?"
+  },
+  "scope": {
+    "domain": "Block-cipher design, key schedules, and resistance to slide-like attacks in MPC-oriented symmetric cryptography.",
+    "assumptions": [
+      "Round keys are precomputed in MPC applications."
+    ],
+    "parameters": [
+      "The GMiMCerf key schedule, as the component to strengthen",
+      "MPC application cost, as the cost to preserve"
+    ],
+    "unresolved_remainder": "Whether GMiMCerf can be equipped with a stronger key schedule that avoids the slide-like attack while preserving its MPC application cost."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "key-schedule",
+      "slide-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 31",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source says the analyzed GMiMCerf versions are theoretically broken by a slide-like attack that uses only the weak key schedule. It then conjectures that a stronger key schedule could avoid the attack, noting that precomputed round keys leave MPC application cost unaffected.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "input-homomorphic-weak-prfs-for-nonabelian-output-groups",
+  "group_id": "input-homomorphic-weak-prfs-for-nonabelian-output-groups",
+  "title": "Input-Homomorphic Weak PRFs for Nonabelian Output Groups",
+  "summary": "For nonabelian output groups, the construction remains pseudorandom but is not input-homomorphic; the open task is to remove the abelian restriction while retaining input-homomorphism.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the generic construction of an input-homomorphic weak pseudorandom function from a key-homomorphic weak pseudorandom function whose output group is $Y$. The construction's input-homomorphism relies on $Y$ being abelian: when $Y$ is nonabelian, the resulting function remains pseudorandom but is not input-homomorphic. The goal is to remove the abelian restriction on $Y$ while retaining input-homomorphism."
+  },
+  "scope": {
+    "domain": "Design of cryptographic primitives focused on generic constructions of input-homomorphic weak pseudorandom functions from key-homomorphic weak pseudorandom functions.",
+    "assumptions": [
+      "The existing construction's input-homomorphism relies on the output group Y being abelian."
+    ],
+    "parameters": [
+      "Y, the output group whose abelianity determines the input-homomorphism behavior"
+    ],
+    "unresolved_remainder": "Remove the abelian restriction on Y while retaining input-homomorphism."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "input-homomorphism",
+      "weak-pseudorandom-functions",
+      "nonabelian-groups"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Primitives with Structured Secrets",
+        "locator": "CRYPTO 2019, page 6",
+        "doi": "10.1007/978-3-030-26948-7_23",
+        "url": "https://eprint.iacr.org/2019/608",
+        "eprint": "2019/608"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the issue as an open problem after stating that the construction remains pseudorandom but loses input-homomorphism when Y is nonabelian. It asks to remove the abelian restriction while retaining input-homomorphism.",
+      "citation_labels": [
+        "Navid Alamati et al., Symmetric Primitives with Structured Secrets"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

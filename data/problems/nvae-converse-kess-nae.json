@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nvae-converse-kess-nae",
+  "group_id": "nvae-converse-kess-nae",
+  "title": "Converse Relationship Between nvAE and kess+nAE",
+  "summary": "The kess property together with nAE security implies nvAE security; whether nvAE implies both, or instead admits a qualified converse or separation, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For authenticated-encryption schemes, satisfying both the $\\mathsf{kess}$ property and $\\mathsf{nAE}$ security is known to imply $\\mathsf{nvAE}$ security. Determine the exact converse relationship: does $\\mathsf{nvAE}$ security imply $\\mathsf{kess}\\land\\mathsf{nAE}$, and, if not, what qualification or separation precisely characterizes the reverse direction?"
+  },
+  "scope": {
+    "domain": "Security relationships among notions for variable-stretch authenticated-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether nvAE security implies both kess and nAE security; otherwise, characterize the precise qualification or separation in the reverse direction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "variable-stretch",
+      "security-implications"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption with Variable Stretch",
+        "locator": "ASIACRYPT 2016, page 19",
+        "doi": "10.1007/978-3-662-53887-6_15",
+        "url": "https://eprint.iacr.org/2016/463",
+        "eprint": "2016/463"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The discussion states that Theorem 2 proves kess together with nAE implies nvAE. It explicitly leaves the exact reverse relationship as an open problem.",
+      "citation_labels": [
+        "Reza Reyhanitabar et al., Authenticated Encryption with Variable Stretch"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

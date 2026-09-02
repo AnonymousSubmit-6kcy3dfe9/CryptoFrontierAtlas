@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "explaining-higher-differential-linear-correlations",
+  "group_id": "explaining-higher-differential-linear-correlations",
+  "title": "Explaining Higher Differential-Linear Correlations",
+  "summary": "Experiments sometimes find absolute correlations above theory, improving attack efficiency; explaining the discrepancy and determining whether linear-hull effects cause the excess remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Experimental verification of the differential-linear attacks sometimes yields absolute correlations higher than their theoretical estimates, making the attacks more efficient than estimated. The open problem is to explain this theory--experiment discrepancy and determine whether linear-hull effects cause the unexpectedly high absolute correlations."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis and linear-hull effects in symmetric ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Explain the discrepancy between observed and theoretical absolute correlations and determine whether linear-hull effects cause the unexpectedly high values."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "differential-linear",
+      "linear-hull",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Differential-Linear Attacks with Applications to ARX Ciphers",
+        "locator": "CRYPTO 2020, page 29",
+        "doi": "10.1007/978-3-030-56877-1_12",
+        "url": "https://eprint.iacr.org/2020/775",
+        "eprint": "2020/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that experimental verification sometimes produces higher-than-expected absolute correlations, making the attacks more efficient than estimated. It explicitly presents explaining these deviations and assessing likely linear-hull effects as a question to tackle.",
+      "citation_labels": [
+        "Christof Beierle et al., Improved Differential-Linear Attacks with Applications to ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

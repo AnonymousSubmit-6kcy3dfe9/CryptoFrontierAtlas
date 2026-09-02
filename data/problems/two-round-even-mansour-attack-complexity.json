@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-even-mansour-attack-complexity",
+  "group_id": "two-round-even-mansour-attack-complexity",
+  "title": "Improved Attack Complexity for Two-Round Even-Mansour",
+  "summary": "For the two-round Even-Mansour cipher, the best cited attack is the current baseline, and improving its time complexity remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the two-round Even-Mansour cipher, the best cited attack, due to Leurent and Sibleyras, has time complexity $O(2^n/\\sqrt{n})$; the open problem is to develop an attack with improved time complexity."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the two-round Even-Mansour cipher, centered on attack time complexity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: parameter appearing in the attack time-complexity expression"
+    ],
+    "unresolved_remainder": "Develop an attack on the two-round Even-Mansour cipher with improved time complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "even-mansour",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 6",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies the analogous two-round Even-Mansour attack-complexity problem as open and records the Leurent and Sibleyras attack as the best cited baseline.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

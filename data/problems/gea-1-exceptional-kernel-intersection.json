@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gea-1-exceptional-kernel-intersection",
+  "group_id": "gea-1-exceptional-kernel-intersection",
+  "title": "GEA-1's Exceptional Kernel Intersection",
+  "summary": "GEA-1's kernel intersection is far larger than those seen in random LFSR instances; explain the anomaly and determine whether it was deliberately engineered.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For GEA-1, determine why the selected primitive feedback polynomials and register shifts for LFSR lengths $d_1=31$ and $d_2=32$, with shift parameter $c_s=16$, induce a 24-dimensional intersection of kernels, when 1,000,000 randomly generated LFSR instances with these lengths and shift parameter produced intersections of dimension at most 11, and determine whether the exceptional structure was deliberately engineered. [S1]"
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the LFSR-based design choices in GEA-1.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "d₁ = 31 and d₂ = 32: LFSR lengths",
+      "cₛ = 16: shift parameter",
+      "1,000,000: number of randomly generated LFSR instances tested"
+    ],
+    "unresolved_remainder": "Explain the exceptional 24-dimensional kernel intersection and determine whether the underlying design choices were deliberate."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "lfsr",
+      "gea-1"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of the GPRS Encryption Algorithms GEA-1 and GEA-2",
+        "locator": "EUROCRYPT 2021, page 14",
+        "doi": "10.1007/978-3-030-77886-6_6",
+        "url": "https://eprint.iacr.org/2021/819",
+        "eprint": "2021/819"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts GEA-1's 24-dimensional intersection with one million random LFSR instances, whose intersection dimensions were at most 11, and calls for further research into the cipher's design. The cause and the possibility of deliberate engineering remain unresolved.",
+      "citation_labels": [
+        "Christof Beierle et al., Cryptanalysis of the GPRS Encryption Algorithms GEA-1 and GEA-2"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

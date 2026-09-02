@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lowmc-m-non-aligned-differential-attack-complexity",
+  "group_id": "lowmc-m-non-aligned-differential-attack-complexity",
+  "title": "LowMC-M Non-Aligned Differential Attack Complexity",
+  "summary": "The limited-birthday estimate is only a best case because the targeted sub-tweak differences are unlikely to be aligned; the actual attack complexity remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{LowMC\\text{-}M}$, determine the attack complexity of recovering a high-probability related-tweak differential characteristic when the targeted set of sub-tweak differences lacks suitable alignment. The existing best-case estimate uses a generic limited-birthday algorithm that assumes an admissible output-difference set aligned for maximal use of local birthday-type search. Because the targeted sub-tweak-difference set is unlikely to satisfy this assumption, the estimate does not determine the attack complexity in the non-aligned case."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the tweakable block cipher LowMC-M.",
+    "assumptions": [
+      "An admissible output-difference set is aligned for maximal use of local birthday-type search."
+    ],
+    "parameters": [
+      "The targeted set of sub-tweak differences: the target set whose alignment is at issue",
+      "The admissible output-difference set: the output set whose alignment is assumed by the estimate"
+    ],
+    "unresolved_remainder": "Determine the attack complexity of recovering a high-probability related-tweak differential characteristic when the targeted sub-tweak-difference set lacks suitable alignment."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "attack-complexity",
+      "tweakable-block-cipher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The MALICIOUS Framework: Embedding Backdoors into Tweakable Block Ciphers",
+        "locator": "CRYPTO 2020, page 26",
+        "doi": "10.1007/978-3-030-56877-1_9",
+        "url": "https://eprint.iacr.org/2020/986",
+        "eprint": "2020/986"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the limited-birthday estimate as an attacker's best-case complexity because its required output-set alignment is unlikely for the targeted sub-tweak differences. It leaves the actual complexity in the non-aligned case undetermined.",
+      "citation_labels": [
+        "haoyang wang et al., The MALICIOUS Framework: Embedding Backdoors into Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "concrete-security-bound-lr6-outer-keyed-sponges",
+  "group_id": "concrete-security-bound-lr6-outer-keyed-sponges",
+  "title": "Concrete Security Bound for LR6 Outer-Keyed Sponges",
+  "summary": "Existing bounds requiring a uniformly sampled PKEM key do not directly apply to a derived key; obtain a concrete bound for the LR6-instantiated outer-keyed sponge.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an outer-keyed sponge, the initial $b$-bit PKEM key $L$ is derived from $K$ by the key-derivation function rather than sampled uniformly, so existing bounds that require a uniformly selected $L$ cannot be directly applied. When the sponge permutation is instantiated by the six-round keyless Feistel construction $\\mathrm{LR6}$, derive a concrete security bound for this setting, with the sponge rate $r$ and capacity $c$ as parameters."
+  },
+  "scope": {
+    "domain": "Concrete security analysis of outer-keyed sponges instantiated with the six-round keyless Feistel construction LR6.",
+    "assumptions": [
+      "The initial PKEM key L is derived from K by the key-derivation function rather than sampled uniformly."
+    ],
+    "parameters": [
+      "b: bit length of the initial PKEM key L",
+      "r: sponge rate",
+      "c: sponge capacity"
+    ],
+    "unresolved_remainder": "Derive a concrete security bound for the LR6-instantiated outer-keyed sponge with a derived PKEM key, using the sponge rate and capacity as parameters."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [],
+    "tags": [
+      "outer-keyed-sponge",
+      "feistel-network",
+      "concrete-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 35",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that existing bounds cannot be directly applied because the PKEM key is derived rather than uniformly chosen. It leaves a concrete bound open while identifying LR6 as a secure permutation instantiation.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

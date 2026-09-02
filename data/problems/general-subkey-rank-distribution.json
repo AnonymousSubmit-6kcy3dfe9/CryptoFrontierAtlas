@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "general-subkey-rank-distribution",
+  "group_id": "general-subkey-rank-distribution",
+  "title": "Characterizing the General Subkey-Rank Distribution",
+  "summary": "Guessing entropy gives only the expected subkey rank, while the distinguishing-vector distribution tends to a multivariate Gaussian; the full rank distribution remains to be characterized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Open problem. In a side-channel evaluation, consider the subkey-rank random variable associated with a distinguishing vector; its expectation is the subkey guessing entropy. Characterize the full probability distribution of this rank in general, rather than only its expectation. Although the distinguishing-vector distribution tends to a multivariate Gaussian, the subkey-rank distribution itself remains insufficiently understood."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of subkey-rank distributions associated with distinguishing vectors.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "A general characterization of the full subkey-rank probability distribution beyond its expectation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "subkey-rank",
+      "guessing-entropy"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations",
+        "locator": "ASIACRYPT 2016, page 6",
+        "doi": "10.1007/978-3-662-53887-6_20",
+        "url": "https://eprint.iacr.org/2016/491",
+        "eprint": "2016/491"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents subkey guessing entropy as the expected subkey rank and notes that the distinguishing-vector distribution tends to a multivariate Gaussian. It identifies the general subkey-rank distribution as insufficiently explored.",
+      "citation_labels": [
+        "Daniel P. Martin et al., Characterisation and Estimation of the Key Rank Distribution in the Context of Side Channel Evaluations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

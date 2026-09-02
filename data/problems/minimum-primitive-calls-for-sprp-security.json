@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-primitive-calls-for-sprp-security",
+  "group_id": "minimum-primitive-calls-for-sprp-security",
+  "title": "Minimum Primitive Calls for SPRP Security",
+  "summary": "The paper distinguishes reducing the call rate from proving optimality; the exact minimum primitive-call count for SPRP security remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the minimum number of primitive calls required for SPRP security."
+  },
+  "scope": {
+    "domain": "Primitive-call complexity of cryptographic constructions targeting strong pseudorandom permutation security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Primitive-call count: the resource to be minimized while retaining SPRP security"
+    ],
+    "unresolved_remainder": "Determine the exact minimum number of primitive calls necessary for SPRP security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "sprp-security",
+      "primitive-call-complexity",
+      "block-cipher-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls",
+        "locator": "ASIACRYPT 2018, page 3",
+        "doi": "10.1007/978-3-030-03326-2_12",
+        "url": "https://eprint.iacr.org/2018/819",
+        "eprint": "2018/819"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as a strongly related question, separating reductions in call rate from establishing the exact minimum necessary for SPRP security.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

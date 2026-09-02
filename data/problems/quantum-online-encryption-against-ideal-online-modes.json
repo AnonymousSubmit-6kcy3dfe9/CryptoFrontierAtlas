@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-online-encryption-against-ideal-online-modes",
+  "group_id": "quantum-online-encryption-against-ideal-online-modes",
+  "title": "Quantum Online Encryption Against Ideal Online Modes",
+  "summary": "No online mode, including QCB, can achieve qIND-qCPA under a random-permutation comparison; defining and proving security against an ideal online mode remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For QCB, an online authenticated-encryption mode, the $\\mathrm{qIND\\text{-}qCPA}$ security definition cannot be achieved by any online mode, including QCB, when security is formulated by distinguishing the mode from a random-permutation idealization. An attack causing this limitation should no longer apply if the comparison target is changed to an ideal online mode. The unresolved task is therefore to define a security notion for a quantum-secure online encryption mode in which an adversary distinguishes the mode from an ideal online mode rather than from a random permutation, and to analyze that notion by giving security definitions and proofs. Determine whether such a notion can be formulated and establish corresponding security results for online modes; the resulting definitions and security proofs may be substantially more involved than those for the random-permutation comparison."
+  },
+  "scope": {
+    "domain": "Quantum-secure online authenticated encryption and distinguishing-based security definitions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Formulate a security notion comparing a quantum-secure online mode with an ideal online mode and establish corresponding definitions, proofs, and security results."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "quantum-security",
+      "security-definitions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 27",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents comparison with an ideal online mode as a way the stated attack should no longer apply. It explicitly leaves formulation of the definition and its security proofs as an open problem.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

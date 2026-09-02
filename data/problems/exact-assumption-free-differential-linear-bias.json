@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-assumption-free-differential-linear-bias",
+  "group_id": "exact-assumption-free-differential-linear-bias",
+  "title": "Exact Assumption-Free Differential-Linear Bias",
+  "summary": "The most accurate known bias expression still relies on randomness assumptions, including round independence; the unresolved task is to derive an exact expression without them.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a differential-linear distinguisher decomposed into components $E_{00}$, $E_m$, and $E_{10}$, the current bias expression sums over intermediate differences $\\Delta$ and masks $\\lambda$ the transition probability $\\Pr[\\Delta_I \\xrightarrow{E_{00}} \\Delta]$, $\\operatorname{DLCT}_{E_m}(\\Delta,\\lambda)$, and the squared correlation $(c^{E_{10}}_{\\lambda,\\lambda_O})^2$. Derive an exact expression for this bias that is free of randomness assumptions, particularly round-independence assumptions within $E_{00}$ and $E_{10}$; the current expression still relies on these assumptions despite being the most accurate obtained so far."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis of symmetric ciphers, focused on DLCT-based distinguisher bias.",
+    "assumptions": [
+      "The current expression uses randomness assumptions, particularly round independence within E00 and E10."
+    ],
+    "parameters": [
+      "Intermediate differences Delta and masks lambda in the bias summation",
+      "Input difference Delta_I and output mask lambda_O for the distinguisher"
+    ],
+    "unresolved_remainder": "Derive an exact bias expression without randomness assumptions, particularly without round-independence assumptions within E00 and E10."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "linear-cryptanalysis",
+      "dlct"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DLCT: A New Tool for Differential-Linear Cryptanalysis",
+        "locator": "EUROCRYPT 2019, page 10",
+        "doi": "10.1007/978-3-030-17653-2_11",
+        "url": "https://eprint.iacr.org/2019/256",
+        "eprint": "2019/256"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the existing bias expression as the most accurate result obtained so far, while noting that it still depends on randomness assumptions, including round independence within E00 and E10. An exact expression free of those assumptions remains unresolved.",
+      "citation_labels": [
+        "Achiya Bar-On et al., DLCT: A New Tool for Differential-Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

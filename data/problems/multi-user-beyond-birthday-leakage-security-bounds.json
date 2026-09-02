@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-user-beyond-birthday-leakage-security-bounds",
+  "group_id": "multi-user-beyond-birthday-leakage-security-bounds",
+  "title": "Multi-User and Beyond-Birthday Leakage-Security Bounds",
+  "summary": "The source marks quantitative, ideally tight leakage-security bounds as future work; obtaining them for the investigated AE schemes remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Derive quantitative, ideally tight, multi-user and beyond-birthday leakage-security bounds for the investigated AE schemes."
+  },
+  "scope": {
+    "domain": "Leakage-security analysis of authenticated-encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "multi-user setting and beyond-birthday regime, specifying the security-bound scope"
+    ],
+    "unresolved_remainder": "Derive quantitative, ideally tight, multi-user and beyond-birthday leakage-security bounds for the investigated AE schemes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "leakage-security",
+      "authenticated-encryption",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 5",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents quantitative, ideally tight bounds for all investigated schemes as an important scope for further research. The supplied statement specifies the multi-user and beyond-birthday leakage-security aspects.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

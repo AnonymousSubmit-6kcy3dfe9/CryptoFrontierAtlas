@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "composable-security-for-quantum-encryption",
+  "group_id": "composable-security-for-quantum-encryption",
+  "title": "Composable Security for Quantum Encryption",
+  "summary": "The non-relaying/measurement interpretation breaks under protocol composition, leaving a general composable-security model for quantum encryption open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop and analyze a general composable-security model for quantum encryption protocols in which an $\\mathrm{IND}$ challenge query is an intermediate step and the plaintext and ciphertext registers may later be reunited. In this setting, not relaying the relevant register is not necessarily equivalent to measuring it, so the model must formulate composable security without relying on that equivalence."
+  },
+  "scope": {
+    "domain": "Composable security for quantum encryption and indistinguishability games.",
+    "assumptions": [
+      "The IND challenge query is an intermediate protocol step.",
+      "The plaintext and ciphertext registers may later be reunited."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Develop and analyze a general composable-security model that does not rely on equating non-relaying with measurement."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "composable-security",
+      "quantum-encryption",
+      "indistinguishability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Semantic Security and Indistinguishability in the Quantum World",
+        "locator": "CRYPTO 2016, page 13",
+        "doi": "10.1007/978-3-662-53015-3_3",
+        "url": "https://eprint.iacr.org/2015/355",
+        "eprint": "2015/355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper excludes composition scenarios in which an IND query is intermediate and its registers are later reunited. It explicitly leaves the general composable-security case open.",
+      "citation_labels": [
+        "Tommaso Gagliardoni et al., Semantic Security and Indistinguishability in the Quantum World"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

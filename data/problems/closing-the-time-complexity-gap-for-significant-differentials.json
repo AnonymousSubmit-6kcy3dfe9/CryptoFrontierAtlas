@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "closing-the-time-complexity-gap-for-significant-differentials",
+  "group_id": "closing-the-time-complexity-gap-for-significant-differentials",
+  "title": "Closing the Time-Complexity Gap for Significant Differentials",
+  "summary": "Known upper and information-theoretic lower bounds leave a small multiplicative gap, whose closure for significant-differential detection remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a function $f$, close the small multiplicative gap $p^{-1}$ between the upper and lower time-complexity bounds for finding significant differentials of $f$."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis focused on detecting significant differentials and bounding the required time.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p^{-1}, the small multiplicative gap between the upper and lower time-complexity bounds"
+    ],
+    "unresolved_remainder": "Determine whether the multiplicative gap between the upper and lower time-complexity bounds for finding significant differentials of $f$ can be closed."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "attack-complexity",
+      "open-problem"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Efficient Detection of High Probability Statistical Properties of Cryptosystems via Surrogate Differentiation",
+        "locator": "EUROCRYPT 2023, page 28",
+        "doi": "10.1007/978-3-031-30634-1_4",
+        "url": "https://eprint.iacr.org/2023/288",
+        "eprint": "2023/288"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this question among the open problems left by the research. It asks whether the remaining gap between the upper and lower time bounds for finding significant differentials can be closed.",
+      "citation_labels": [
+        "Itai Dinur et al., Efficient Detection of High Probability Statistical Properties of Cryptosystems via Surrogate Differentiation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

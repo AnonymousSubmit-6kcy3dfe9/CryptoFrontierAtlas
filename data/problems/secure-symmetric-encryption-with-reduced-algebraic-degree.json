@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "secure-symmetric-encryption-with-reduced-algebraic-degree",
+  "group_id": "secure-symmetric-encryption-with-reduced-algebraic-degree",
+  "title": "Secure Symmetric Encryption with Aggressively Reduced Algebraic Degree",
+  "summary": "Filter permutators provide a low-noise, low-degree design direction, but secure symmetric encryption with aggressively reduced algebraic degree remains an open construction question.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Filter permutators are symmetric constructions that apply low-degree filtering directly to permuted key bits to obtain low homomorphic noise [S1]. Their non-standard design principles require additional cryptanalysis, including algebraic attacks that exploit sparsity in the resulting systems of equations [S1]. The unresolved construction-existence question is whether one can construct a secure symmetric encryption scheme whose algebraic degree is aggressively reduced [S1]."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography and stream-cipher design focused on filter permutators and low-noise encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether one can construct a secure symmetric encryption scheme whose algebraic degree is aggressively reduced."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "symmetric-cryptography",
+      "stream-ciphers",
+      "algebraic-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts",
+        "locator": "EUROCRYPT 2016, page 26",
+        "doi": "10.1007/978-3-662-49890-3_13",
+        "url": "https://eprint.iacr.org/2016/254",
+        "eprint": "2016/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as the main question raised by filter permutators and notes that their non-standard design principles require additional cryptanalysis, including algebraic attacks exploiting sparsity in the resulting systems of equations.",
+      "citation_labels": [
+        "Pierrick Méaux et al., Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

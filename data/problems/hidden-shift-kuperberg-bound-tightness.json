@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hidden-shift-kuperberg-bound-tightness",
+  "group_id": "hidden-shift-kuperberg-bound-tightness",
+  "title": "Tightness of Kuperberg Algorithm 1's Bound",
+  "summary": "Simulations of a one-pass variant match Algorithm 1's exponent and show a constant polynomial factor, but tightness and the correct factor for Algorithm 1 remain unproved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the hidden-shift problem, the original Kuperberg Algorithm 1 has a stated complexity bound for retrieving the last bit, while an improved one-pass Algorithm 2 has simulations whose exponent complexity matches that of Algorithm 1 and whose polynomial factor is constant. Determine rigorously whether the exponent in the original Algorithm 1 bound is tight and, if so, what the correct polynomial factor is, rather than relying on the indication that the exponent is probably tight but the polynomial factor is not. [S1]"
+  },
+  "scope": {
+    "domain": "Complexity analysis of Kuperberg hidden-shift algorithms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Kuperberg Algorithms 1 and 2: the original and improved one-pass hidden-shift algorithms being compared",
+      "Exponent and polynomial factor: the two components of the last-bit retrieval complexity bound"
+    ],
+    "unresolved_remainder": "Prove whether the exponent in Algorithm 1's bound is tight and, if so, determine the correct polynomial factor."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "hidden-shift",
+      "quantum-algorithms",
+      "complexity-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Hidden Shift Quantum Cryptanalysis and Implications",
+        "locator": "ASIACRYPT 2018, page 13",
+        "doi": "10.1007/978-3-030-03326-2_19",
+        "url": "https://eprint.iacr.org/2018/432",
+        "eprint": "2018/432"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports simulations for the improved one-pass Algorithm 2 that match Algorithm 1's exponent complexity and yield a constant polynomial factor. It presents this only as evidence that Algorithm 1's exponent is probably tight while its polynomial factor is not.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Hidden Shift Quantum Cryptanalysis and Implications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-query-security-tweakey-instances",
+  "group_id": "full-query-security-tweakey-instances",
+  "title": "Full-Query Security of TWEAKEY Instances",
+  "summary": "Several TWEAKEY instances are conjectured to achieve full-query security beyond the birthday bound; proving the bound or refuting the conjecture remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the several TWEAKEY instances specified by Jean et al.---ad hoc tweakable blockciphers constructed from key-alternating ciphers with $n$-bit blocks---determine whether they achieve security against up to $2^n$ adversarial queries, surpassing the $2^{n/2}$-query birthday bound. These instances were conjectured to attain full $2^n$-query security but lacked formal security proofs; resolve the conjecture by proving the claimed bound for the specified instances or by refuting it."
+  },
+  "scope": {
+    "domain": "Security of TWEAKEY tweakable blockciphers constructed from key-alternating ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: block size in bits, governing the adversarial-query security bounds"
+    ],
+    "unresolved_remainder": "Prove security against up to 2^n adversarial queries for the specified TWEAKEY instances, or refute the conjecture."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakey",
+      "tweakable-block-ciphers",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers",
+        "locator": "ASIACRYPT 2016, page 2",
+        "doi": "10.1007/978-3-662-53887-6_17",
+        "url": "https://eprint.iacr.org/2016/876",
+        "eprint": "2016/876"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper surveys beyond-birthday-bound constructions and reports that the specified TWEAKEY instances were conjectured fully secure but still lacked formal security proofs. It presents the conjecture as unresolved.",
+      "citation_labels": [
+        "Lei Wang et al., How to Build Fully Secure Tweakable Blockciphers from Classical Blockciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

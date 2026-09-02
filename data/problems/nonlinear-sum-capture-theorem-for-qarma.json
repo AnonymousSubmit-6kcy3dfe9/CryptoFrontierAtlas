@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-sum-capture-theorem-for-qarma",
+  "group_id": "nonlinear-sum-capture-theorem-for-qarma",
+  "title": "Nonlinear Extension of the Sum-Capture Theorem for Qarma",
+  "summary": "The sum-capture theorem covers invertible linear maps, but Qarma's nonlinear reflector lies outside its scope; extend the theorem to nonlinear mappings to enable Qarma security analysis.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The existing sum-capture theorem handles invertible linear maps and therefore does not directly apply to Qarma, whose reflector between the middle key additions is nonlinear. Extend the sum-capture theorem to a class of nonlinear mappings that includes this reflector, thereby enabling a security analysis of the Qarma construction."
+  },
+  "scope": {
+    "domain": "Mathematical foundations of symmetric cryptography, combining finite-probability and combinatorial analysis of reflection ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Qarma reflector: nonlinear mapping between the middle key additions that the extended theorem must include"
+    ],
+    "unresolved_remainder": "Extend the sum-capture theorem to a class of nonlinear mappings that includes Qarma's reflector, enabling a security analysis of Qarma."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "theorem-extension",
+      "nonlinear-mappings",
+      "reflection-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 27",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that the sum-capture theorem is not directly applicable to Qarma because its reflector between the middle key additions is nonlinear. It identifies an extension allowing nonlinearity as an interesting problem whose solution could enable Qarma security analysis.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

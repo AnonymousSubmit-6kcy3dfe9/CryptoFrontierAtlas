@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rate-one-post-quantum-aead-from-qprps",
+  "group_id": "rate-one-post-quantum-aead-from-qprps",
+  "title": "Rate-One Post-Quantum AEAD from qPRPs",
+  "summary": "LRW gives a rate-one tweakable block cipher from a PRP classically, but constructing a rate-one post-quantum AEAD using only qPRP security remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The unresolved problem is whether it is possible to construct a post-quantum authenticated-encryption-with-associated-data (AEAD) scheme of rate one from a block cipher under only a quantum-secure pseudorandom-permutation (qPRP) assumption. The supplied comparison states that the LRW construction gives a rate-one tweakable block cipher (TBC), meaning one block-cipher call per TBC call, from a PRP assumption, whereas the construction called Ours requires related-key security for its underlying block cipher; it also says that the LRW approach does not seem applicable to the post-quantum setting. The task is therefore to determine whether such a rate-one post-quantum AEAD can be built with qPRP security alone."
+  },
+  "scope": {
+    "domain": "Post-quantum authenticated encryption constructed from block ciphers.",
+    "assumptions": [
+      "Only quantum-secure pseudorandom-permutation (qPRP) security for the underlying block cipher."
+    ],
+    "parameters": [
+      "Rate one: the required efficiency of the target post-quantum AEAD"
+    ],
+    "unresolved_remainder": "Whether a rate-one post-quantum AEAD can be constructed from a block cipher under qPRP security alone."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "block-ciphers",
+      "post-quantum-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 28",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts LRW's classical rate-one TBC from a PRP with its own reliance on related-key security and says LRW does not seem applicable post-quantum. It then explicitly asks for a qPRP-only rate-one post-quantum AEAD.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

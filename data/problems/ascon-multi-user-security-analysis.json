@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ascon-multi-user-security-analysis",
+  "group_id": "ascon-multi-user-security-analysis",
+  "title": "Multi-User Security Analysis of ASCON",
+  "summary": "The current ASCON security result does not directly extend to multiple users because a bad-event term scales with the user count; a separate multi-user bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a separate multi-user security analysis of ASCON that yields a security bound accounting for the first bad-event contribution $\\frac{\\mu(q_p+\\sigma)}{2^\\kappa}$, where $\\mu$ is the number of users; the existing analysis does not directly extend to this setting because this contribution acquires the factor $\\mu$."
+  },
+  "scope": {
+    "domain": "Multi-user security bounds for ASCON authenticated encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "μ — number of users",
+      "qₚ and σ — additive quantities in the first bad-event contribution",
+      "κ — denominator exponent in the first bad-event contribution"
+    ],
+    "unresolved_remainder": "Develop a separate multi-user ASCON security analysis yielding a bound that accounts for the user-count factor in the first bad-event contribution."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ascon",
+      "multi-user-security",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Exact Security Analysis of ASCON",
+        "locator": "ASIACRYPT 2023, page 23",
+        "doi": "10.1007/978-981-99-8727-6_12",
+        "url": "https://eprint.iacr.org/2023/775",
+        "eprint": "2023/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that the first bad-event term gains a factor equal to the number of users, so the current ASCON result does not directly extend. It calls for a separate multi-user analysis.",
+      "citation_labels": [
+        "Bishwajit Chakraborty et al., Exact Security Analysis of ASCON"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

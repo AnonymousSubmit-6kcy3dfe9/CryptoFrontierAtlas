@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fea-1-ff3-1-left-half-recovery-complexity",
+  "group_id": "fea-1-ff3-1-left-half-recovery-complexity",
+  "title": "Rigorous Left-Half Recovery Analysis for FEA-1 and FF3-1",
+  "summary": "The source gives a heuristic data-complexity claim for constant message-recovery advantage in the left-half attacks, but the conditions and rigorous justification remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Give a rigorous analysis showing when the left-half message-recovery attack on FEA-1 and FF3-1 attains constant advantage with $q=\\widetilde{O}(N^{r/2-3/2})$ data."
+  },
+  "scope": {
+    "domain": "Symmetric-cipher linear cryptanalysis of left-half message recovery for FEA-1 and FF3-1.",
+    "assumptions": [
+      "fixed plaintext input",
+      "the correlation and statistical conditions used in Section 5.2"
+    ],
+    "parameters": [
+      "q, the data amount used by the attack",
+      "N, a parameter in the asymptotic data bound",
+      "r, an exponent parameter in the asymptotic data bound"
+    ],
+    "unresolved_remainder": "A rigorous analysis must establish the conditions under which the left-half message-recovery attack on FEA-1 and FF3-1 achieves constant advantage with the stated data complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "message-recovery",
+      "data-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Linear Cryptanalysis of FF3-1 and FEA",
+        "locator": "CRYPTO 2021, page 21",
+        "doi": "10.1007/978-3-030-84242-0_3",
+        "url": "https://eprint.iacr.org/2021/815",
+        "eprint": "2021/815"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the complexity as a heuristic derived from the expected statistic gap and its chi-squared-scale standard deviation. It explicitly says the argument is not made rigorous, then turns to Monte Carlo estimates and concrete experiments.",
+      "citation_labels": [
+        "Tim Beyne et al., Linear Cryptanalysis of FF3-1 and FEA"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

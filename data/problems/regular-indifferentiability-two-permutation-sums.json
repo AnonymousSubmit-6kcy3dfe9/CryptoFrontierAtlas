@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "regular-indifferentiability-two-permutation-sums",
+  "group_id": "regular-indifferentiability-two-permutation-sums",
+  "title": "Extending Regular Indifferentiability for Two-Permutation Sums",
+  "summary": "Regular indifferentiability for the sum of two public permutations is proved up to a query bound of two raised to two n over three and divided by n; proving a larger bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the sum of two public permutations, determine whether regular indifferentiability can be proved with a query bound strictly greater than $2^{2n/3}/n$. The currently reattained result establishes regular indifferentiability up to $2^{2n/3}/n$ queries using the Mennink--Preneel simulator, query shuffling, and a sequential-indifferentiability result as a black box; the query-shuffling argument is valid only up to that bound. The unresolved task is to surpass $2^{2n/3}/n$ by overcoming the simulator-query-shuffling and sequential-indifferentiability bottlenecks, potentially through a more sophisticated simulator or an entirely different proof approach."
+  },
+  "scope": {
+    "domain": "Symmetric-cryptographic indifferentiability of the sum of two public permutations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: size parameter governing the query bound",
+      "Number of queries: resource threshold whose bound is to be improved"
+    ],
+    "unresolved_remainder": "Whether regular indifferentiability can be proved beyond $2^{2n/3}/n$ queries despite the simulator, query-shuffling, and sequential-indifferentiability bottlenecks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "permutation-sums",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting the Indifferentiability of the Sum of Permutations",
+        "locator": "CRYPTO 2023, page 30",
+        "doi": "10.1007/978-3-031-38548-3_21",
+        "url": "https://eprint.iacr.org/2023/840",
+        "eprint": "2023/840"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reattains the stated query bound using the Mennink–Preneel simulator, query shuffling, and sequential indifferentiability as a black box. It suggests that exceeding the bound may require a more sophisticated simulator or a different proof approach.",
+      "citation_labels": [
+        "Aldo Gunsing et al., Revisiting the Indifferentiability of the Sum of Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

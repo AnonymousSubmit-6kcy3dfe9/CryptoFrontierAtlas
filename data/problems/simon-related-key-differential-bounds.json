@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simon-related-key-differential-bounds",
+  "group_id": "simon-related-key-differential-bounds",
+  "title": "Related-Key Differential Bounds for SIMON",
+  "summary": "No related-key differential-characteristic bound is known for any SIMON version; the open task is to find meaningful bounds or determine whether high-probability characteristics exist.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the SIMON family of ciphers, no differential-characteristic bound is known in the related-key model for any version. Establish meaningful related-key differential-characteristic bounds for SIMON, or determine whether high-probability related-key differential characteristics exist for any version."
+  },
+  "scope": {
+    "domain": "Related-key differential cryptanalysis of the SIMON block-cipher family.",
+    "assumptions": [
+      "The differential analysis is conducted in the related-key model."
+    ],
+    "parameters": [
+      "SIMON version — identifies which member of the cipher family is analyzed"
+    ],
+    "unresolved_remainder": "Establish meaningful related-key differential-characteristic bounds for SIMON, or determine whether high-probability related-key differential characteristics exist for any version."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "related-key",
+      "simon"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS",
+        "locator": "CRYPTO 2016, page 3",
+        "doi": "10.1007/978-3-662-53008-5_5",
+        "url": "https://eprint.iacr.org/2016/660",
+        "eprint": "2016/660"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the absence of any related-key bound for SIMON as a security gap and warns that good related-key differential characteristics may exist.",
+      "citation_labels": [
+        "Christof Beierle et al., The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

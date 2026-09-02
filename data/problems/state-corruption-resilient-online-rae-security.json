@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "state-corruption-resilient-online-rae-security",
+  "group_id": "state-corruption-resilient-online-rae-security",
+  "title": "State-Corruption-Resilient Online RAE Security",
+  "summary": "The existing online RAE notion excludes adversarial view and control of algorithmic state; formalizing a corruption-resilient strengthening and establishing its implication from indifferentiability remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Formally define and analyze a strengthened online RAE security notion in which an adversary may corrupt the state values of the encryption and decryption algorithms. The existing notion keeps those states outside the adversary's view and control. Formally establish that indifferentiability implies this state-corruption-resilient notion, using the single-stage character of indifferentiability."
+  },
+  "scope": {
+    "domain": "Design of cryptographic primitives, focused on online RAE security and indifferentiability.",
+    "assumptions": [
+      "The existing online RAE notion keeps encryption and decryption state outside the adversary's view and control."
+    ],
+    "parameters": [
+      "Encryption and decryption state values: the values that may be corrupted in the strengthened notion"
+    ],
+    "unresolved_remainder": "Formally define and analyze the strengthened online RAE notion allowing adversarial corruption of encryption and decryption state values, and establish that indifferentiability implies it because indifferentiability is single-stage."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "online-rae",
+      "state-corruption",
+      "indifferentiability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 43",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies a possible strengthening of the online RAE definition that permits adversarial corruption of state values. It says indifferentiability would imply the strengthening because it is single-stage, but leaves the formal treatment for future work.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

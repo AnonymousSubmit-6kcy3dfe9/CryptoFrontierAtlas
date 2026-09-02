@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "matching-attacks-single-encryption-without-key-revelation",
+  "group_id": "matching-attacks-single-encryption-without-key-revelation",
+  "title": "Matching Attacks for Single Encryption Without Key Revelation",
+  "summary": "An attack is known with post-query key revelation, while matching attacks remain open without key revelation when n is much smaller than k.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the single-encryption setting, an attack is known for the model in which the adversary receives all keys after completing its queries. The unresolved task is to find matching attacks for the regime $n \\ll k$ when the keys are not revealed to the adversary after querying."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of single encryption in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n and k: parameters defining the unresolved regime in which n is much smaller than k"
+    ],
+    "unresolved_remainder": "Find matching attacks for the regime n ≪ k when the keys are not revealed to the adversary after querying."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "single-encryption",
+      "key-revelation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Multi-user Security of Double Encryption",
+        "locator": "EUROCRYPT 2017, page 24",
+        "doi": "10.1007/978-3-319-56614-6_13",
+        "url": "https://eprint.iacr.org/2017/145",
+        "eprint": "2017/145"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents this as an open problem in its discussion of attacking single encryption. It contrasts the unresolved no-key-revelation regime with a model where all keys are given to the adversary after querying, for which an attack is known.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., The Multi-user Security of Double Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "code-based-masking-specification-optimization",
+  "group_id": "code-based-masking-specification-optimization",
+  "title": "Specification and Optimization of Code-Based Masking",
+  "summary": "A generic code-based masking scheme is known, but its concrete specification and optimization remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A generic code-based masking scheme has been proposed, but its further specification and optimization remain unresolved; the open task is to provide a concrete specification of the scheme and optimize it."
+  },
+  "scope": {
+    "domain": "Side-channel masking in the design of cryptographic primitives.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Generic code-based masking scheme, the construction to be further specified and optimized"
+    ],
+    "unresolved_remainder": "Provide a concrete specification of the generic code-based masking scheme and optimize it."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "side-channel-masking",
+      "code-based-masking",
+      "cryptographic-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Packed Multiplication: How to Amortize the Cost of Side-channel Masking?",
+        "locator": "ASIACRYPT 2020, page 5",
+        "doi": "10.1007/978-3-030-64837-4_28",
+        "url": "https://eprint.iacr.org/2020/1103",
+        "eprint": "2020/1103"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents code-based masking as a generic scheme and explicitly states that its further specification and optimization were left as an open problem.",
+      "citation_labels": [
+        "Weijia Wang et al., Packed Multiplication: How to Amortize the Cost of Side-channel Masking?"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

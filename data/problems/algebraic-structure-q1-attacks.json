@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "algebraic-structure-q1-attacks",
+  "group_id": "algebraic-structure-q1-attacks",
+  "title": "When Does Superposition-Attack Structure Enable Q1 Attacks?",
+  "summary": "The offline Simon algorithm cannot attack schemes lacking a superposition-model attack, while the enabling algebraic structure makes a practical difference for Q1 attacks; the conditions and cross-scheme relationship remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a cryptographic scheme, determine and characterize when algebraic structure that enables an attack with superposition queries also yields a meaningful attack with classical queries and offline quantum computation, including whether such a relationship extends to schemes without a known superposition-query attack. The offline Simon algorithm cannot attack schemes that lack a superposition-model attack, while the algebraic structure enabling a superposition attack was observed to make a practical difference for classical-query attacks; the unresolved task is to identify the conditions under which this structure produces a meaningful Q1 attack and to characterize the relationship across schemes. [S1]"
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of symmetric schemes across superposition-query and classical-query attack models with offline quantum computation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "query access model: superposition queries versus classical queries with offline quantum computation",
+      "algebraic structure: structure enabling a superposition attack and potentially yielding a meaningful Q1 attack"
+    ],
+    "unresolved_remainder": "Identify the conditions under which the algebraic structure produces a meaningful Q1 attack and characterize whether the relationship extends across schemes, including schemes without a known superposition-query attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "structural-cryptanalysis",
+      "quantum-cryptanalysis",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Attacks Without Superposition Queries: The Offline Simon’s Algorithm",
+        "locator": "ASIACRYPT 2019, page 30",
+        "doi": "10.1007/978-3-030-34578-5_20",
+        "url": "https://eprint.iacr.org/2019/614",
+        "eprint": "2019/614"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that schemes without a superposition-model attack cannot be attacked by the algorithm and reports that the enabling algebraic structure makes a practical difference for Q1 attacks. It explicitly says that this question needs further investigation.",
+      "citation_labels": [
+        "Xavier Bonnetain et al., Quantum Attacks Without Superposition Queries: The Offline Simon’s Algorithm"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

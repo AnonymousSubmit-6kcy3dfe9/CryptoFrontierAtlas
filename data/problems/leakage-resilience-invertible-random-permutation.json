@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "leakage-resilience-invertible-random-permutation",
+  "group_id": "leakage-resilience-invertible-random-permutation",
+  "title": "Leakage Resilience Under an Invertible Random Permutation",
+  "summary": "The leakage-resilience proof covers a random transformation, while its extension to an invertible random permutation remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Extend the leakage-resilience proof from a random transformation to an invertible random permutation."
+  },
+  "scope": {
+    "domain": "Leakage-resilience security analysis for sponge-based authenticated encryption.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Random transformation, the model covered by the existing proof",
+      "Invertible random permutation, the target model for the extension",
+      "Slae or the underlying FGHF' construction, the construction being analyzed"
+    ],
+    "unresolved_remainder": "Extend the leakage-resilience analysis of Slae or the underlying FGHF' construction to an invertible random permutation and derive corresponding security bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "leakage-resilience",
+      "authenticated-encryption",
+      "sponge-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Sponges Resist Leakage: The Case of Authenticated Encryption",
+        "locator": "ASIACRYPT 2019, page 15",
+        "doi": "10.1007/978-3-030-34621-8_8",
+        "url": "https://eprint.iacr.org/2019/1034",
+        "eprint": "2019/1034"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the random-transformation case as analyzed, while describing the invertible-random-permutation case as an additional layer of complexity that was not pursued.",
+      "citation_labels": [
+        "Jean Paul Degabriele et al., Sponges Resist Leakage: The Case of Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

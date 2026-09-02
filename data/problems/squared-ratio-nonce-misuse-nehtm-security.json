@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "squared-ratio-nonce-misuse-nehtm-security",
+  "group_id": "squared-ratio-nonce-misuse-nehtm-security",
+  "title": "Squared-Ratio Security for Nonce-Misuse nEHtM",
+  "summary": "The nonce-respecting case has been analyzed, but extending the Squared-Ratio method to prove multi-user security for two-permutation nEHtM under nonce reuse remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the Squared-Ratio method can be extended to establish a multi-user security theorem for the two-permutation nEHtM MAC when nonces may be reused across queries, and develop the required combinatorial analysis despite its anticipated complexity."
+  },
+  "scope": {
+    "domain": "Multi-user security analysis of the two-permutation nEHtM message authentication code in nonce-misuse settings.",
+    "assumptions": [
+      "Nonces may be reused across queries."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Extend the Squared-Ratio method to prove a multi-user security theorem for two-permutation nEHtM with nonce reuse and provide the necessary combinatorial analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "macs",
+      "multi-user-security",
+      "nonce-misuse"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Multi-User Security Using the Squared-Ratio Method",
+        "locator": "CRYPTO 2023, page 7",
+        "doi": "10.1007/978-3-031-38545-2_23",
+        "url": "https://eprint.iacr.org/2023/871",
+        "eprint": "2023/871"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "Following an analysis of two-permutation nEHtM in the nonce-respecting setting, the authors state that a similar approach should work with nonce misuse. They leave the required combinatorial analysis unresolved and expect it to be very complex.",
+      "citation_labels": [
+        "Yu Long Chen et al., Improved Multi-User Security Using the Squared-Ratio Method"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

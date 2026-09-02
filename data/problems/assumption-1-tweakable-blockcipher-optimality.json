@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "assumption-1-tweakable-blockcipher-optimality",
+  "group_id": "assumption-1-tweakable-blockcipher-optimality",
+  "title": "Optimality of Assumption 1 for Tweakable Blockciphers",
+  "summary": "The conjectured security level of a cascade of LRW2 constructions is treated as best possible for non-tweak-rekeyable tweakable blockciphers; whether that optimality assumption is reasonable remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Lampe and Seurin conjectured that a cascade of $\\sigma$ LRW2 constructions achieves $2\\sigma n/(\\sigma+1)$ security, and Assumption 1 treats this level as the best possible for non-tweak-rekeyable tweakable blockciphers. The unresolved question is whether that optimality claim is reasonable."
+  },
+  "scope": {
+    "domain": "Tweakable blockcipher security and the optimality of cascade constructions in the standard-versus-ideal model comparison.",
+    "assumptions": [
+      "non-tweak-rekeyable tweakable blockciphers"
+    ],
+    "parameters": [
+      "σ: number of LRW2 constructions in the cascade",
+      "n: parameter in the conjectured security level"
+    ],
+    "unresolved_remainder": "Determine whether Assumption 1's claim that this level is best possible is reasonable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "tweakable-blockciphers",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security",
+        "locator": "CRYPTO 2017, page 20",
+        "doi": "10.1007/978-3-319-63715-0_24",
+        "url": "https://eprint.iacr.org/2017/474",
+        "eprint": "2017/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the issue as the explicit question \"Is Assumption 1 reasonable?\", after recalling Lampe and Seurin's conjectured security level and Assumption 1's best-possible claim.",
+      "citation_labels": [
+        "Bart Mennink et al., Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

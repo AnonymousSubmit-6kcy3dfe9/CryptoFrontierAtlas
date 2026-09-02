@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "defining-quantum-cca2-security",
+  "group_id": "defining-quantum-cca2-security",
+  "title": "Defining Quantum CCA2 Security",
+  "summary": "Excluding challenge-ciphertext decryption is easy classically; defining a quantum CCA2 game that enforces this for nonclassical queries without disturbing challenge or query states remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Define a $\\mathrm{CCA2}$ (adaptive chosen-ciphertext attack) security game in the quantum setting that prevents an adversary from obtaining a decryption of the challenge ciphertext, which would yield a trivial break. Although this restriction is easy to implement classically, the quantum game must specify what it means for a queried ciphertext to differ from the challenge ciphertext and how the challenger can enforce that distinction for nonclassical decryption queries without disturbing either the challenge ciphertext or the query states."
+  },
+  "scope": {
+    "domain": "Quantum security definitions for adaptive chosen-ciphertext attacks.",
+    "assumptions": [
+      "The adversary may make nonclassical decryption queries."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Define when a queried ciphertext differs from the challenge ciphertext and enforce that distinction for nonclassical decryption queries without disturbing the challenge ciphertext or query states."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptography",
+      "cca2-security",
+      "security-games"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Semantic Security and Indistinguishability in the Quantum World",
+        "locator": "CRYPTO 2016, page 29",
+        "doi": "10.1007/978-3-662-53015-3_3",
+        "url": "https://eprint.iacr.org/2015/355",
+        "eprint": "2015/355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly calls the definition of quantum CCA2 security an outstanding open problem. It says there may be several reasonable ways to define ciphertext difference, but reports no way to check it for nonclassical queries without disturbing the relevant states.",
+      "citation_labels": [
+        "Tommaso Gagliardoni et al., Semantic Security and Indistinguishability in the Quantum World"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

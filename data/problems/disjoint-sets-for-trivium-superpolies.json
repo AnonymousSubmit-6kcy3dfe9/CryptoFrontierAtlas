@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "disjoint-sets-for-trivium-superpolies",
+  "group_id": "disjoint-sets-for-trivium-superpolies",
+  "title": "Disjoint Sets for 846- and 847-Round Trivium Superpolies",
+  "summary": "A search found no disjoint set for the 846- and 847-round Trivium superpolies; whether one enabling reduction to linear systems exists remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The superpolies of 846-- and 847-round Trivium are neither linear nor quadratic and involve all secret variables. The disjoint-set technique can reduce solving a system of nonlinear or non-quadratic equations to solving multiple systems of linear equations, but a search found no disjoint set for these superpolies. Determine whether a disjoint set enabling this reduction exists for the 846-- and 847-round Trivium superpolies, and construct one if it does."
+  },
+  "scope": {
+    "domain": "Cube-attack cryptanalysis of the nonlinear, nonquadratic 846- and 847-round Trivium superpolies involving all secret variables.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "846 and 847 rounds — the Trivium round counts defining the target superpolies"
+    ],
+    "unresolved_remainder": "Determine whether a disjoint set enabling reduction to multiple linear systems exists for these Trivium superpolies, and construct one if it does."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "algebraic-cryptanalysis",
+      "trivium"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Stretching Cube Attacks: Improved Methods to Recover Massive Superpolies",
+        "locator": "ASIACRYPT 2022, page 70",
+        "doi": "10.1007/978-3-031-22972-5_19",
+        "url": "https://eprint.iacr.org/2022/1218",
+        "eprint": "2022/1218"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that its search for a disjoint set for the 846- and 847-round Trivium superpolies found none. It provides neither a construction nor a nonexistence proof.",
+      "citation_labels": [
+        "Jiahui He et al., Stretching Cube Attacks: Improved Methods to Recover Massive Superpolies"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

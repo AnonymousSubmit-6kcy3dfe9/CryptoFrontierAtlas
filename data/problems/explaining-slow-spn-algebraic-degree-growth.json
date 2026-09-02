@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "explaining-slow-spn-algebraic-degree-growth",
+  "group_id": "explaining-slow-spn-algebraic-degree-growth",
+  "title": "Explaining Slow SPN Algebraic-Degree Growth",
+  "summary": "For one SPN parameter set, the algebraic-degree upper bound rises by 7 per round after round 7; explaining or characterizing this unexpectedly slow growth remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the univariate setting of the studied SPN cipher over $\\mathbb{F}_2^n$ with $w=2$, the upper bound on algebraic degree for parameters $(n,d,h_1,h_2)=(129,1,0,63)$ is reported to grow linearly, increasing by $7$ in every round after round $7$. This behavior is difficult to explain because the comparison quantity $\\log_2((2^1+1)\\cdot 2^{63})\\approx 64.6$ is much larger than $7$. The unresolved problem is to develop a theoretical explanation or characterization of this unexpectedly slow degree growth under these parameter conditions."
+  },
+  "scope": {
+    "domain": "Algebraic-degree growth in the univariate setting of the studied SPN cipher over a binary extension field.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "w: fixed to 2 in the studied univariate setting",
+      "n, d, h1, h2: fixed to 129, 1, 0, 63 for the parameter instance under study",
+      "round number: the reported linear regime increases by 7 per round after round 7"
+    ],
+    "unresolved_remainder": "Develop a theoretical explanation or characterization of the reported unexpectedly slow linear degree growth."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "algebraic-degree",
+      "algebraic-structures",
+      "spn-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping for Complex Affine Layers",
+        "locator": "CRYPTO 2023, page 28",
+        "doi": "10.1007/978-3-031-38548-3_18",
+        "url": "https://eprint.iacr.org/2023/782",
+        "eprint": "2023/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports an upper-bound pattern that increases by 7 per round after round 7 for the specified parameters, despite a comparison quantity of about 64.6. It leaves the development of a theoretical interpretation as an interesting problem.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping for Complex Affine Layers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

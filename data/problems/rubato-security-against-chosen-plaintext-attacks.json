@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rubato-security-against-chosen-plaintext-attacks",
+  "group_id": "rubato-security-against-chosen-plaintext-attacks",
+  "title": "Rubato Security Against Chosen-Plaintext Attacks",
+  "summary": "The authors believe Rubato resists the named chosen-plaintext attacks, but the security claim remains unproved and must be proved or refuted.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute security of Rubato against the stated chosen-plaintext attack classes under the random-oracle XOF model."
+  },
+  "scope": {
+    "domain": "This is a cryptanalysis question about the symmetric construction Rubato under chosen-plaintext attacks.",
+    "assumptions": [
+      "The XOF is modeled as a random oracle.",
+      "The attack model permits adversarially chosen nonces."
+    ],
+    "parameters": [
+      "Chosen-plaintext attack classes: higher-order differential, truncated differential, invariant-subspace trail, and cube attacks"
+    ],
+    "unresolved_remainder": "Prove or refute Rubato's security against all of the named chosen-plaintext attack classes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "higher-order-cryptanalysis",
+      "cube-attack"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rubato: Noisy Ciphers for Approximate Homomorphic Encryption",
+        "locator": "EUROCRYPT 2022, page 13",
+        "doi": "10.1007/978-3-031-06944-4_20",
+        "url": "https://eprint.iacr.org/2022/537",
+        "eprint": "2022/537"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper attributes its belief to the random-oracle treatment of the XOF and the resulting inability of chosen nonces to control internal differences. It presents security against higher-order and truncated differential, invariant-subspace, and cube attacks as an unproved claim.",
+      "citation_labels": [
+        "Jincheol Ha et al., Rubato: Noisy Ciphers for Approximate Homomorphic Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

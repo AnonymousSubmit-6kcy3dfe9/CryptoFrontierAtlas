@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "forkskinny-forking-point-impossible-differentials",
+  "group_id": "forkskinny-forking-point-impossible-differentials",
+  "title": "Truncated Impossible Differentials Around ForkSkinny's Forking Point",
+  "summary": "For ForkSkinny, existing results reach at most 11 rounds in the single-tweakey model and 12, 14, or 16 for TK1, TK2, or TK3; distinguishers around the forking point remain to be studied.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For ForkSkinny, study truncated impossible-differential distinguishers positioned around the forking point, a case not covered by the existing results that reach at most 11 rounds in the single-tweakey model and 12, 14, or 16 rounds for TK1, TK2, or TK3 in the related-tweakey setting. In particular, determine the maximum number of rounds covered in the single-tweakey case where the contradiction is formed by one active cell from one direction and one inactive cell from the other direction, and extend the analysis to the related-tweakey settings when applicable."
+  },
+  "scope": {
+    "domain": "This is a symmetric-key cryptanalysis problem concerning truncated impossible-differential distinguishers for ForkSkinny.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "tweakey setting: single-tweakey or related-tweakey, including TK1, TK2, and TK3",
+      "round count: number of rounds covered by the distinguisher",
+      "differential position: around the forking point",
+      "cell activity pattern: one active cell from one direction and one inactive cell from the other in the single-tweakey case"
+    ],
+    "unresolved_remainder": "Determine the maximum round coverage for the truncated impossible-differential case positioned around the ForkSkinny forking point, beginning with the specified single-tweakey contradiction and extending to related-tweakey settings when applicable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "impossible-differential",
+      "forkskinny",
+      "structural-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages",
+        "locator": "ASIACRYPT 2019, page 43",
+        "doi": "10.1007/978-3-030-34621-8_6",
+        "url": "https://eprint.iacr.org/2019/1004",
+        "eprint": "2019/1004"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies the around-the-forking-point placement as a case that remains to be studied. It presents the single-tweakey active/inactive-cell case as a first estimate against existing coverage of at most 11 rounds in the single-tweakey model and 12, 14, and 16 rounds for TK1, TK2, and TK3 in related-tweakey settings.",
+      "citation_labels": [
+        "Elena Andreeva et al., Forkcipher: A New Primitive for Authenticated Encryption of Very Short Messages"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

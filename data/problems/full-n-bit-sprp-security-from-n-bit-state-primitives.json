@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-n-bit-sprp-security-from-n-bit-state-primitives",
+  "group_id": "full-n-bit-sprp-security-from-n-bit-state-primitives",
+  "title": "Full n-Bit SPRP Security from an n-Bit-State Primitive",
+  "summary": "With state and output restricted to n bits, achieving full n-bit SPRP security from a single tweakable block cipher remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can an SPRP based on an $n$-bit-state primitive achieve full $n$-bit security?"
+  },
+  "scope": {
+    "domain": "Beyond-birthday SPRP security from a single tweakable block cipher with n-bit state and output.",
+    "assumptions": [
+      "The tweak length is at least the primitive state size."
+    ],
+    "parameters": [
+      "n: the primitive state and output size and the target full-security level"
+    ],
+    "unresolved_remainder": "Whether full n-bit SPRP security is achievable in this model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "sprp-security",
+      "tweakable-block-ciphers",
+      "beyond-birthday-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls",
+        "locator": "ASIACRYPT 2018, page 1",
+        "doi": "10.1007/978-3-030-03326-2_12",
+        "url": "https://eprint.iacr.org/2018/819",
+        "eprint": "2018/819"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents an explicit feasibility question about obtaining full n-bit security from primitives with n-bit state size in the beyond-birthday SPRP setting.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

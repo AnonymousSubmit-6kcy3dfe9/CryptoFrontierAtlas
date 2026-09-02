@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "whpri-secure-aead-from-generic-composition",
+  "group_id": "whpri-secure-aead-from-generic-composition",
+  "title": "whPRI-Secure AEAD from Generic Composition",
+  "summary": "Single-key SIV is suggested as a plausible publicly indifferentiable route, but whether generic composition can yield whPRI-secure AEAD remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether a $\\mathrm{whPRI}$-secure AEAD scheme can be constructed by a generic composition. In particular, determine whether the single-key $\\mathrm{SIV}$ composition is publicly indifferentiable when its tag-generation function is a completely random function, its conventional-encryption component is a family of $\\mathrm{VIL}$ random permutations, and the same key is used for both components."
+  },
+  "scope": {
+    "domain": "Generic authenticated-encryption composition, centered on single-key SIV, whPRI security, and public indifferentiability.",
+    "assumptions": [
+      "The tag-generation function is a completely random function.",
+      "The conventional-encryption component is a family of VIL random permutations.",
+      "The same key is used for tag generation and conventional encryption."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether a generic composition can yield a whPRI-secure AEAD scheme and, specifically, whether the stated single-key SIV composition is publicly indifferentiable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "public-indifferentiability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 59",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly raises generic construction of whPRI-secure AEAD as a natural question. It suggests that single-key SIV may be publicly indifferentiable in the stated model but provides no proof.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

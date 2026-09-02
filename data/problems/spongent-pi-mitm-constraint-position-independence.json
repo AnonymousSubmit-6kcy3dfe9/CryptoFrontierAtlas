@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "spongent-pi-mitm-constraint-position-independence",
+  "group_id": "spongent-pi-mitm-constraint-position-independence",
+  "title": "Spongent-π MITM Constraint-Position Independence",
+  "summary": "For Spongent-π, an attack adds one round to the seven-round MITM layer within the stated time target, but constraint-position independence of the maximum round count remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider the Present-like meet-in-the-middle problem for the $\\mathrm{Spongent}\\text{-}\\pi$ permutation: construct the list of $256$ input states satisfying a $4$-bit input constraint and a $4$-bit output constraint in time less than $2^{60}$. Prove or disprove the conjecture that the maximum number of permutation rounds attackable under this requirement is independent of the position chosen for this constraint pair, as suggested by the design's symmetries."
+  },
+  "scope": {
+    "domain": "Meet-in-the-middle and structural cryptanalysis of the Present-like Spongent-π permutation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Constraint pair: a four-bit input constraint and a four-bit output constraint whose chosen position is varied",
+      "State-list size: 256 qualifying input states",
+      "Construction-time bound: less than 2^60",
+      "Permutation-round count: attack reach to maximize under the construction requirement"
+    ],
+    "unresolved_remainder": "Prove or disprove that the maximum attackable permutation-round count is independent of the chosen constraint position."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "meet-in-the-middle",
+      "structural-cryptanalysis",
+      "spongent-pi"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simplified MITM Modeling for Permutations: New (Quantum) Attacks",
+        "locator": "CRYPTO 2022, page 19",
+        "doi": "10.1007/978-3-031-15982-4_24",
+        "url": "https://eprint.iacr.org/2022/189",
+        "eprint": "2022/189"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source improves the memory of a seven-round MITM layer and finds an attack covering one additional round within the stated time target. It then explicitly conjectures position independence based on the design's symmetries.",
+      "citation_labels": [
+        "André Schrottenloher et al., Simplified MITM Modeling for Permutations: New (Quantum) Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

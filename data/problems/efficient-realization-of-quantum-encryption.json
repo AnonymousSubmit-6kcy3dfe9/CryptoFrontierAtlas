@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-realization-of-quantum-encryption",
+  "group_id": "efficient-realization-of-quantum-encryption",
+  "title": "Efficient Realization of Quantum Encryption",
+  "summary": "Every known scheme has the required efficient realization, but whether this follows for every efficiently implementable encryption algorithm remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there exists a quantum encryption scheme whose encryption algorithm $\\operatorname{Enc}_k$ is efficiently implementable, but for which the following realization is not efficiently implementable: sample a random pure auxiliary state from a probability distribution, attach it to the plaintext, and apply a unitary operator. Each of these three steps is efficiently implementable for every known scheme, but it is unresolved whether this must hold for every scheme with an efficiently implementable $\\operatorname{Enc}_k$."
+  },
+  "scope": {
+    "domain": "Quantum encryption schemes and efficient implementation of their encryption algorithms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The key k, which indexes the encryption algorithm"
+    ],
+    "unresolved_remainder": "Whether there exists a quantum encryption scheme with an efficiently implementable encryption algorithm but a specified realization, consisting of auxiliary-state sampling, attachment to the plaintext, and unitary application, that is not efficiently implementable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "quantum-encryption",
+      "efficient-implementation",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unforgeable Quantum Encryption",
+        "locator": "EUROCRYPT 2018, page 5",
+        "doi": "10.1007/978-3-319-78372-7_16",
+        "url": "https://eprint.iacr.org/2017/960",
+        "eprint": "2017/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the three-step realization is efficiently implementable for every scheme known to the authors, then explicitly leaves open whether every efficiently implementable encryption algorithm has such a realization.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Unforgeable Quantum Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

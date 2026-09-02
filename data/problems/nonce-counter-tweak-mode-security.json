@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonce-counter-tweak-mode-security",
+  "group_id": "nonce-counter-tweak-mode-security",
+  "title": "Security of the Nonce-and-Counter Tweak Mode",
+  "summary": "The nonce-and-counter tweak mode is conjectured to offer beyond-birthday-bound security with respected nonces and robustness under nonce misuse; proving or refuting both guarantees remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the authenticated-encryption mode for a tweakable block cipher that concatenates the nonce and block counter in the tweak input and uses the IV as the plaintext input achieves beyond-birthday-bound security under nonce-respecting use and robust security under nonce misuse; either prove these guarantees or provide a counterexample. Account for the mode's drawback that it requires a larger, and therefore costly, tweak length."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption modes for tweakable block ciphers using a nonce-and-counter tweak.",
+    "assumptions": [
+      "Nonce-respecting use for the beyond-birthday-bound security objective",
+      "Nonce misuse for the robust-security objective"
+    ],
+    "parameters": [
+      "Nonce and block counter — concatenated to form the tweak input",
+      "IV — used as the plaintext input",
+      "Tweak length — enlarged by the construction and identified as costly"
+    ],
+    "unresolved_remainder": "Prove that the mode meets both stated security objectives or provide a counterexample, while accounting for the cost of the larger tweak length."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "tweakable-block-ciphers",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 9",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the mode's security as an explicit conjecture rather than an established result and highlights the costly larger tweak length as an important drawback.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

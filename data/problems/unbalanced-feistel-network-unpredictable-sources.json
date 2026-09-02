@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "unbalanced-feistel-network-unpredictable-sources",
+  "group_id": "unbalanced-feistel-network-unpredictable-sources",
+  "title": "Unbalanced Feistel Networks for Unpredictable Sources",
+  "summary": "The source presents the construction as a conjectural route to the unpredictable-source transformation; whether it achieves that transformation remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does a heavily unbalanced Feistel network with $\\Omega(n)$ rounds achieve the transformation for unpredictable sources?"
+  },
+  "scope": {
+    "domain": "Symmetric cryptography concerning Feistel-network constructions and transformations for unpredictable sources.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Heavily unbalanced Feistel network, the conjectured construction",
+      "One-bit round outputs, the round-output structure",
+      "Omega(n) rounds, the round-count requirement",
+      "Unpredictable sources, the source class for the target transformation"
+    ],
+    "unresolved_remainder": "Whether the conjectured heavily unbalanced Feistel network achieves the transformation for unpredictable sources."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "feistel-network",
+      "pseudorandom-permutations",
+      "unpredictable-sources"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Public-Seed Pseudorandom Permutations",
+        "locator": "EUROCRYPT 2017, page 5",
+        "doi": "10.1007/978-3-319-56614-6_14",
+        "url": "https://eprint.iacr.org/2017/539",
+        "eprint": "2017/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly frames the claim as a conjecture, proposing a heavily unbalanced Feistel network with Omega(n) rounds to achieve the transformation for unpredictable sources.",
+      "citation_labels": [
+        "Pratik Soni et al., Public-Seed Pseudorandom Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hades-aes-partial-nonlinear-rounds",
+  "group_id": "hades-aes-partial-nonlinear-rounds",
+  "title": "Applying HADES to AES with Partial Nonlinear Rounds",
+  "summary": "The strategy applies to any SPN design, but whether it can preserve AES security when some rounds use partial nonlinear layers remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The HADES design strategy can be applied to any substitution--permutation network (SPN) design. Determine whether HADES can be applied to AES so that a certain number of AES rounds are replaced by rounds containing partial nonlinear layers without decreasing AES's security."
+  },
+  "scope": {
+    "domain": "Symmetric cryptographic design involving the HADES strategy, substitution--permutation networks, and AES.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The number of AES rounds to replace, controlling the extent of the partial nonlinear-layer modification"
+    ],
+    "unresolved_remainder": "Whether HADES can be applied to AES by replacing a certain number of AES rounds with rounds containing partial nonlinear layers without decreasing AES's security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "spn-design",
+      "partial-nonlinear-layers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 14",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a possible future problem after stating that the HADES strategy applies to any SPN design. It proposes investigating an AES application with some rounds replaced by partial nonlinear rounds while preserving security.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

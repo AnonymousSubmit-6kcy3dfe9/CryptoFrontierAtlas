@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-order-masking-strength-analysis-bounded-moment-model",
+  "group_id": "higher-order-masking-strength-analysis-bounded-moment-model",
+  "title": "Higher-Order Masking-Strength Analysis in the Bounded Moment Model",
+  "summary": "Existing quantitative masking-strength analysis is limited to first-order leakages; extending it to higher-order leakages within the bounded moment model remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop, within the bounded moment model, a quantitative analysis of masking strength for higher-order leakages that extends the existing quantitative analysis currently limited to first-order leakages."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masking schemes in the bounded moment leakage model.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Leakage order, with first-order leakage as the existing baseline and higher-order leakage as the target"
+    ],
+    "unresolved_remainder": "Develop a quantitative analysis of masking strength for higher-order leakages within the bounded moment model that extends the first-order analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking-schemes",
+      "bounded-moment-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 27",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the bounded moment model as having potential to extend a quantitative masking-strength analysis that is limited to first-order leakages. It leaves the higher-order extension as a future direction.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

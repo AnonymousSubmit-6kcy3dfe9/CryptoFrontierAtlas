@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "neutral-byte-preprocessing-for-aes-like-collision-attacks",
+  "group_id": "neutral-byte-preprocessing-for-aes-like-collision-attacks",
+  "title": "Neutral-Byte Preprocessing for AES-Like Collision Attacks",
+  "summary": "Candidate reduced-round collision configurations have favorable nominal complexities, but the preprocessing needed to make them valid attacks remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find preprocessing with amortized per-value cost $O(1)$, $C_{\\mathrm{pre}} \\leq 2^{60}$ for 8-round AES-128, 10-round AES-256, and 9-round Kiasu-BC, $C_{\\mathrm{pre}} \\leq 2^{56}$ for 9-round AES-192."
+  },
+  "scope": {
+    "domain": "Meet-in-the-middle cryptanalysis of reduced-round AES and Kiasu-BC hashing configurations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Amortized per-value cost: efficiency required for generating each preprocessing value",
+      "C_pre: total preprocessing complexity subject to cipher-specific bounds",
+      "Round and cipher variant: identifies each targeted collision-attack configuration"
+    ],
+    "unresolved_remainder": "Find preprocessing meeting the amortized per-value and total-cost requirements for all four reduced-round configurations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "meet-in-the-middle",
+      "collision-attacks",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Superposition Meet-in-the-Middle Attacks: Updates on Fundamental Security of AES-like Ciphers",
+        "locator": "CRYPTO 2022, page 57",
+        "doi": "10.1007/978-3-031-15802-5_",
+        "url": "https://eprint.iacr.org/2021/575",
+        "eprint": "2021/575"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents efficient neutral-byte preprocessing as necessary to convert the proposed configurations into valid collision attacks. It reports that no such procedure was found and that the problem remains open for the listed configurations.",
+      "citation_labels": [
+        "Zhenzhen Bao et al., Superposition Meet-in-the-Middle Attacks: Updates on Fundamental Security of AES-like Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

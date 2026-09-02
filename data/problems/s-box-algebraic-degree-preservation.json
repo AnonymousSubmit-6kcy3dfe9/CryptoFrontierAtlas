@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "s-box-algebraic-degree-preservation",
+  "group_id": "s-box-algebraic-degree-preservation",
+  "title": "S-Boxes Preserving Algebraic Degree Across Rounds",
+  "summary": "The results rely on key addition and exclude permutations; identifying S-box families that preserve algebraic degree through more keyed rounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For key-alternating block ciphers, determine which individual S-boxes or families of S-boxes permit the algebraic degree of the block cipher to be preserved when additional keyed rounds are appended."
+  },
+  "scope": {
+    "domain": "Algebraic-degree analysis of S-box-based key-alternating block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "S-box or S-box family: nonlinear component to be characterized",
+      "Additional keyed rounds: extension depth over which algebraic-degree preservation is sought"
+    ],
+    "unresolved_remainder": "Characterize the individual S-boxes or S-box families that preserve the block cipher's algebraic degree when additional keyed rounds are appended."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "block-ciphers",
+      "s-boxes",
+      "algebraic-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Strong and Tight Security Guarantees against Integral Distinguishers",
+        "locator": "ASIACRYPT 2021, page 29",
+        "doi": "10.1007/978-3-030-92062-3_13",
+        "url": "https://eprint.iacr.org/2021/1502",
+        "eprint": "2021/1502"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this question in its conclusion as a future direction for extending algebraic-degree reasoning to more rounds. It calls for a better understanding of which S-boxes or S-box families enable degree preservation.",
+      "citation_labels": [
+        "Phil Hebborn et al., Strong and Tight Security Guarantees against Integral Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

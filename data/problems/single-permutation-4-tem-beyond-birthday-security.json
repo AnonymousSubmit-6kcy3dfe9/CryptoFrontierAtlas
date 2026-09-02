@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-permutation-4-tem-beyond-birthday-security",
+  "group_id": "single-permutation-4-tem-beyond-birthday-security",
+  "title": "Beyond-Birthday Security for Single-Permutation 4-TEM",
+  "summary": "The conjectured result is security beyond the birthday bound for single-permutation 4-TEM; proving or refuting it remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute beyond-birthday-bound security of 4-TEM when $\\pi_1=\\pi_2=\\pi_3=\\pi_4$."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography, specifically security of a tweakable Even-Mansour block-cipher construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "4-TEM, the four-round tweakable Even-Mansour construction",
+      "The four round permutations, whose identity defines the single-permutation variant"
+    ],
+    "unresolved_remainder": "Determine whether the single-permutation 4-TEM achieves security beyond the birthday bound by proving or refuting the conjecture."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "even-mansour",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Tweakable Even-Mansour Cipher",
+        "locator": "ASIACRYPT 2020, page 26",
+        "doi": "10.1007/978-3-030-64837-4_20",
+        "url": "https://eprint.iacr.org/2020/1076",
+        "eprint": "2020/1076"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source's conclusion explicitly presents this as a conjecture for single-permutation 4-TEM and states that its security proof is currently unknown.",
+      "citation_labels": [
+        "Avijit Dutta et al., Minimizing the Two-Round Tweakable Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

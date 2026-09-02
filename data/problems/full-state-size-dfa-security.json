@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-state-size-dfa-security",
+  "group_id": "full-state-size-dfa-security",
+  "title": "Full State-Size DFA Security for DEFAULT",
+  "summary": "DEFAULT’s methodology can achieve almost-full DFA security, while attainability of full state-size security within the methodology remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For DEFAULT's DFA-security methodology, determine whether full state-size DFA security is attainable. The methodology can achieve almost-full DFA security, but current evidence only suggests that full state-size security may be impossible. Settle the question by either attaining full state-size DFA security within the methodology or establishing that the methodology cannot attain it."
+  },
+  "scope": {
+    "domain": "Differential fault analysis security of the DEFAULT block-cipher methodology.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "state size — defines the target level for full state-size DFA security",
+      "number of S-box linear structures — controls the methodology's DFA search complexity"
+    ],
+    "unresolved_remainder": "Determine whether the methodology can attain full state-size DFA security, or prove that it cannot."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "differential-fault-analysis",
+      "block-ciphers",
+      "s-boxes"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 23",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents almost-full DFA security as technically achievable but says full state-size security does not seem possible under the methodology, leaving a construction-or-impossibility challenge.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

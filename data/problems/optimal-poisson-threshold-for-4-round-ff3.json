@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "optimal-poisson-threshold-for-4-round-ff3",
+  "group_id": "optimal-poisson-threshold-for-4-round-ff3",
+  "title": "Optimal Poisson Threshold for 4-Round FF3",
+  "summary": "The distinguisher statistic has Poisson models for random and 4-round FF3 cases; finding the optimal decision threshold and its error probability remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the symmetric-slide distinguisher for the truncated differential characteristic of 4-round FF3, the sum of indicators from $m$ candidate pairs is modeled by $\\operatorname{Poisson}(m/N)$ for a random permutation and by $\\operatorname{Poisson}(2m/N)$ for 4-round FF3. The unresolved task is to derive the statistically optimal decision threshold separating these two distributions, either analytically from the Poisson model or experimentally, and to quantify the resulting distinguishing error probability under these models."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the symmetric-slide distinguisher for the truncated differential characteristic of 4-round FF3.",
+    "assumptions": [
+      "For m candidate pairs, the random-permutation indicator sum is modeled by a Poisson distribution with parameter m/N.",
+      "For m candidate pairs, the 4-round FF3 indicator sum is modeled by a Poisson distribution with parameter 2m/N."
+    ],
+    "parameters": [
+      "m: number of candidate pairs",
+      "N: quantity scaling the two Poisson parameters",
+      "Decision threshold: cutoff separating the random-permutation and 4-round FF3 models"
+    ],
+    "unresolved_remainder": "Derive the statistically optimal threshold analytically or experimentally and quantify the resulting distinguishing error probability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "ff3",
+      "statistical-distinguisher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Three Third Generation Attacks on the Format Preserving Encryption Scheme FF3",
+        "locator": "EUROCRYPT 2021, page 13",
+        "doi": "10.1007/978-3-030-77886-6_5",
+        "url": "https://eprint.iacr.org/2021/335",
+        "eprint": "2021/335"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the optimal threshold can be found experimentally or by analyzing the Poisson distribution. The optimal threshold and resulting distinguishing error probability remain unresolved.",
+      "citation_labels": [
+        "Ohad Amon et al., Three Third Generation Attacks on the Format Preserving Encryption Scheme FF3"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

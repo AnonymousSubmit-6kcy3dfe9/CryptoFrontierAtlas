@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-correlation-computation-for-higher-degree-boolean-functions",
+  "group_id": "efficient-correlation-computation-for-higher-degree-boolean-functions",
+  "title": "Efficient Correlation Computation for Higher-Degree Boolean Functions",
+  "summary": "Exact correlation is efficiently computable for quadratic Boolean functions; whether an efficient method exists for degree greater than two remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether there is an efficient algorithm for computing the correlation of Boolean functions of degree greater than two."
+  },
+  "scope": {
+    "domain": "Boolean-function correlation and algorithmic questions in symmetric cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Boolean-function degree, with the unresolved case being greater than two"
+    ],
+    "unresolved_remainder": "Determine whether there is an efficient algorithm for computing the correlation of Boolean functions of degree greater than two."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "correlation-computation",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full $$\\mathsf {MORUS}$$",
+        "locator": "CRYPTO 2019, page 29",
+        "doi": "10.1007/978-3-030-26951-7_7",
+        "url": "https://eprint.iacr.org/2019/172",
+        "eprint": "2019/172"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The authors present this as the first of two open questions after giving a polynomial-time method for exact correlation of arbitrary quadratic Boolean functions. They note that an efficient higher-degree algorithm would significantly affect cryptanalysis.",
+      "citation_labels": [
+        "Danping Shi et al., Correlation of Quadratic Boolean Functions: Cryptanalysis of All Versions of Full $$\\mathsf {MORUS}$$"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-statistical-distance-bound-two-round-key-alternating-cipher",
+  "group_id": "tight-statistical-distance-bound-two-round-key-alternating-cipher",
+  "title": "Tight Statistical-Distance Bound for a Two-Round Key-Alternating Cipher",
+  "summary": "A direct analysis establishes convergence to pairwise independence but yields a loose bound; the tight bound and the suggested constant-at-most-two scaling remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For even block size $n$, consider the two-round key-alternating cipher instantiated over $\\mathbb{F}_{2^n}$ with the inverse permutation $P(x)=x^{2^n-2}$, using the usual extension $P(0)=0$. A direct analysis proves convergence to pairwise independence but gives a statistical-distance bound described as loose, while experimental validation suggests that the actual distance from uniform is closer to $c/2^n$ for some $c\\le 2$. Determine the tight statistical-distance bound as a function of $n$, and in particular whether a bound of $c/2^n$ with $c\\le 2$ holds."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography and pseudorandomness, focusing on statistical distance from pairwise independence in key-alternating ciphers.",
+    "assumptions": [
+      "The block size n is even."
+    ],
+    "parameters": [
+      "n, the block size and field exponent",
+      "c, the constant in the experimentally suggested bound"
+    ],
+    "unresolved_remainder": "Determine the tight statistical-distance bound as a function of n, including whether c divided by 2 to the n with c at most 2 is valid."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "pairwise-independence",
+      "statistical-distance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The $t$-wise Independence of Substitution-Permutation Networks",
+        "locator": "CRYPTO 2021, page 45",
+        "doi": "10.1007/978-3-030-84259-8_16",
+        "url": "https://eprint.iacr.org/2021/507",
+        "eprint": "2021/507"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a direct analysis proving convergence to pairwise independence but describes its statistical-distance bound as loose. Experiments suggest a bound of c/2^n with c≤2, while the tight bound remains open.",
+      "citation_labels": [
+        "Tianren Liu et al., The $t$-wise Independence of Substitution-Permutation Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

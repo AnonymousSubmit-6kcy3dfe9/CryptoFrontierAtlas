@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "conductance-bound-for-arbitrary-linear-permutations",
+  "group_id": "conductance-bound-for-arbitrary-linear-permutations",
+  "title": "Conductance Bound for Arbitrary Linear Permutations",
+  "summary": "The conductance lower bound is established for generic linear permutations with high probability, but its extension to every arbitrary linear permutation remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the confusion-diffusion network with a linear permutation over $\\text{GF}(2^n)$, determine whether the conductance lower bound established for a generic linear permutation also holds for every arbitrary linear permutation. The existing analysis establishes this lower bound with probability $1-o(1)$ for a random matrix $A\\in F^{w\\times w}$, for $q=o(|F|)$, with a constant factor depending on $w$, but does not cover non-generic linear permutations. The unresolved task is therefore to prove or refute that the same conductance lower bound holds for arbitrary $\\text{GF}(2^n)$-linear permutations."
+  },
+  "scope": {
+    "domain": "Mathematical foundations of confusion-diffusion networks, finite-field linear permutations, and conductance.",
+    "assumptions": [
+      "F is a finite field",
+      "q=o(|F|)"
+    ],
+    "parameters": [
+      "n: field-size exponent in GF(2^n)",
+      "F: finite field containing the matrix entries",
+      "A: random w-by-w matrix defining the generic linear permutation",
+      "w: matrix dimension and parameter controlling the constant factor",
+      "q: asymptotic parameter constrained by the field size"
+    ],
+    "unresolved_remainder": "Prove or refute whether the same conductance lower bound holds for every arbitrary, including non-generic, GF(2^n)-linear permutation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "conductance",
+      "linear-permutations",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiability of Confusion-Diffusion Networks",
+        "locator": "EUROCRYPT 2016, page 36",
+        "doi": "10.1007/978-3-662-49896-5_24",
+        "url": "https://eprint.iacr.org/2015/680",
+        "eprint": "2015/680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures that the lower bound for generic linear permutations should carry over to non-generic, arbitrary linear permutations. It states that the existing analysis does not cover this case.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Indifferentiability of Confusion-Diffusion Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "speck-128-weak-key-key-recovery-improvement",
+  "group_id": "speck-128-weak-key-key-recovery-improvement",
+  "title": "Weak-Key Key-Recovery Improvement for Speck-128",
+  "summary": "For Speck-128, existing weak-key key-recovery attacks probably do not beat exhaustive search over the reduced key space; it remains unresolved whether cheap condition checks can yield a key-recovery improvement and, if so, what time...",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{Speck\\text{-}128}$, existing weak-key key-recovery attacks probably do not outperform exhaustive search over the reduced key space, so only a distinguisher is reported. Determine whether the weak-key conditions can be checked cheaply enough---when candidate-key checking dominates the cost---to obtain a key-recovery improvement over exhaustive search, and provide a detailed analysis of the resulting time complexity."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of Speck-128 in the fixed-key model, focusing on weak-key key-recovery attack complexity.",
+    "assumptions": [
+      "Candidate-key checking dominates the cost."
+    ],
+    "parameters": [
+      "Reduced key space: exhaustive-search baseline",
+      "Weak-key conditions: conditions tested during key recovery"
+    ],
+    "unresolved_remainder": "Determine whether, when candidate-key checking dominates the cost, weak-key conditions can be checked cheaply enough to obtain a key-recovery improvement over exhaustive search, and analyze the resulting time complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.rotational-arx"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "weak-key-attacks",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Differential Cryptanalysis in the Fixed-Key Model",
+        "locator": "CRYPTO 2022, page 28",
+        "doi": "10.1007/978-3-031-15982-4_23",
+        "url": "https://eprint.iacr.org/2022/837",
+        "eprint": "2022/837"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that its Speck-128 analysis probably does not improve weak-key key recovery over exhaustive search and therefore lists only a distinguisher. It leaves a possible improvement conditional on comparatively cheap weak-key testing and notes that detailed time-complexity analysis was outside the paper's scope.",
+      "citation_labels": [
+        "Tim Beyne et al., Differential Cryptanalysis in the Fixed-Key Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

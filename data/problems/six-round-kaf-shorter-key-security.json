@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "six-round-kaf-shorter-key-security",
+  "group_id": "six-round-kaf-shorter-key-security",
+  "title": "Beyond-Birthday Security for Shorter-Key Six-Round KAF",
+  "summary": "Key collisions cap multi-user security with one n-bit key at half the key length; proving six-round KAF beyond-birthday security with fewer than twice n bits of main key and weaker round-key independence remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For six-round Key-Alternating Feistel (KAF) ciphers, prove beyond-birthday security when the main key contains fewer than $2n$ bits, ideally when a single $n$-bit main key is used, while relaxing the assumption that the round keys are independent. The problem is constrained by the fact that using only one $n$-bit main key gives at most $n/2$-bit multi-user security because an attacker can exploit key collisions, so a successful result must account for this limitation."
+  },
+  "scope": {
+    "domain": "Security of six-round Key-Alternating Feistel block ciphers with reduced main-key material and less independent round keys.",
+    "assumptions": [
+      "Round-key independence is the assumption targeted for relaxation."
+    ],
+    "parameters": [
+      "n: size parameter governing the main-key lengths and the stated multi-user security ceiling"
+    ],
+    "unresolved_remainder": "Establish beyond-birthday security with fewer than 2n main-key bits, ideally a single n-bit key, after relaxing round-key independence while accounting for the n/2-bit multi-user ceiling caused by key collisions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "feistel-networks",
+      "beyond-birthday-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 21",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a concrete direction for improving its six-round result by reducing the main-key length and dropping round-key independence. It identifies key-collision attacks as limiting multi-user security with a single n-bit key to half the key length.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

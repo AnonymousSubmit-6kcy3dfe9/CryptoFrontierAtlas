@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "selective-opening-security-for-compactly-committing-aead",
+  "group_id": "selective-opening-security-for-compactly-committing-aead",
+  "title": "Selective-Opening Security for Compactly Committing AEAD",
+  "summary": "Existing committing-AEAD definitions omit selective-opening attacks, and it remains open whether compact commitment can coexist with selective-opening security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Existing committing-$\\mathrm{AEAD}$ definitions do not model selective-opening attacks, which may permit compromise of the entire cryptographic key rather than only access to commitment openings. Determine whether compact commitment and selective-opening security are compatible: construct a compactly committing $\\mathrm{AEAD}$ scheme and prove it secure against selective-opening attacks, at least in the random-oracle model, or establish a fundamental incompatibility between committing $\\mathrm{AEAD}$ and selective-opening security."
+  },
+  "scope": {
+    "domain": "Symmetric authenticated encryption research on committing AEAD and security against selective-opening attacks.",
+    "assumptions": [
+      "random-oracle model"
+    ],
+    "parameters": [
+      "compactly committing AEAD scheme: target construction",
+      "selective-opening security: target security requirement"
+    ],
+    "unresolved_remainder": "Determine whether compact commitment and selective-opening security are compatible by constructing and proving secure a compactly committing AEAD scheme, at least in the random-oracle model, or by establishing a fundamental incompatibility."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "selective-opening",
+      "key-commitment"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Message Franking via Committing Authenticated Encryption",
+        "locator": "CRYPTO 2017, page 5",
+        "doi": "10.1007/978-3-319-63697-9_3",
+        "url": "https://eprint.iacr.org/2017/664",
+        "eprint": "2017/664"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a future direction and explicitly conjectures that the apparent tension is not fundamental. It calls for a selectively opening secure compactly committing AEAD construction, particularly in the random-oracle model.",
+      "citation_labels": [
+        "Paul Grubbs et al., Message Franking via Committing Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

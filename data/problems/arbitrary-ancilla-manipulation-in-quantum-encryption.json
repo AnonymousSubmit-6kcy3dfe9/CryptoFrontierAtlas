@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "arbitrary-ancilla-manipulation-in-quantum-encryption",
+  "group_id": "arbitrary-ancilla-manipulation-in-quantum-encryption",
+  "title": "Arbitrary Ancilla Manipulation in Quantum Encryption",
+  "summary": "Correctness is specified for honest encryption with a zero-initialized ancilla; characterizing the transformation under arbitrary ancilla manipulation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an encryption map $\\operatorname{Enc}_k$ implemented by a quantum transformation $\\sum_{x,y}\\alpha_{x,y}\\lvert x,y\\rangle\\mapsto\\sum_{x,y}\\alpha_{x,y}\\lvert\\phi_{x,y}\\rangle$, the ancilla register $y$ has length $\\lvert\\operatorname{Enc}_k(x)\\rvert-\\lvert x\\rvert$, and correctness is required when $y=0$ through $\\phi_{x,0}=\\operatorname{Enc}_k(x)$. Determine and characterize the transformation's behavior when the ancilla is not initialized to $\\lvert0\\rangle$ and can instead be manipulated arbitrarily, while retaining the stated correctness condition for honest, zero-initialized execution."
+  },
+  "scope": {
+    "domain": "Quantum encryption implementations with ancilla registers subject to arbitrary manipulation.",
+    "assumptions": [
+      "Honest execution initializes the ancilla to the zero state and satisfies the stated encryption correctness condition."
+    ],
+    "parameters": [
+      "k: the key selecting the encryption map",
+      "x: the message-register input",
+      "y: the ancilla register, whose prescribed length is the encryption-output length minus the input length"
+    ],
+    "unresolved_remainder": "Determine and characterize the transformation's behavior when the ancilla is not initialized to the zero state and may be manipulated arbitrarily, while retaining honest-execution correctness."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "quantum-encryption",
+      "ancilla-manipulation",
+      "side-channel-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Semantic Security and Indistinguishability in the Quantum World",
+        "locator": "CRYPTO 2016, page 12",
+        "doi": "10.1007/978-3-662-53015-3_3",
+        "url": "https://eprint.iacr.org/2015/355",
+        "eprint": "2015/355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source specifies correct behavior for a zero-initialized ancilla in honest execution. It explicitly leaves arbitrary ancilla manipulation as an interesting open problem.",
+      "citation_labels": [
+        "Tommaso Gagliardoni et al., Semantic Security and Indistinguishability in the Quantum World"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

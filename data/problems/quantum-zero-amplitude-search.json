@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-zero-amplitude-search",
+  "group_id": "quantum-zero-amplitude-search",
+  "title": "Quantum Zero-Amplitude Detection and Search",
+  "summary": "At the specified Gaussian amplitude scale, no algorithm better than two-to-the-n time is known to distinguish one zero amplitude from none and locate it when present.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider a black-box quantum procedure that prepares a state of the form $\\sum_x \\alpha_x\\lvert x\\rangle$, whose amplitudes follow a centered Gaussian distribution. The unresolved task is to determine whether exactly one coordinate amplitude is zero or no coordinate amplitude is zero and, in the former case, to locate that coordinate, when the nonzero amplitudes have standard deviation $O(2^{-n/2})$. No algorithm with running time better than $O(2^n)$ is currently known for this task, although solving it would enable exploitation of the zero-correlation property for key-recovery attacks."
+  },
+  "scope": {
+    "domain": "Quantum search for zero-correlation linear key-recovery cryptanalysis.",
+    "assumptions": [
+      "Black-box access to a quantum procedure preparing the stated state.",
+      "The amplitudes follow a centered Gaussian distribution, with either exactly one zero coordinate amplitude or none.",
+      "The nonzero amplitudes have standard deviation O(2^{-n/2})."
+    ],
+    "parameters": [
+      "n: size parameter governing the nonzero-amplitude scale and known running-time benchmark",
+      "x: coordinate index in the prepared quantum state",
+      "α_x: amplitude at coordinate x whose exact zero status is tested"
+    ],
+    "unresolved_remainder": "Develop an algorithm improving on the known O(2^n) running time to distinguish the promised cases and locate the zero coordinate when it exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "zero-correlation",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 30",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this explicitly as Problem 3 and reports no algorithm better than O(2^n) in the specified amplitude regime. It explains that a solution would enable use of zero correlation in key-recovery attacks.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

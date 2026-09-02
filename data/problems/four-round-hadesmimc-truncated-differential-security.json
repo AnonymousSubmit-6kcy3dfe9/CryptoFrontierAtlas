@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "four-round-hadesmimc-truncated-differential-security",
+  "group_id": "four-round-hadesmimc-truncated-differential-security",
+  "title": "Four-Round HadesMiMC Truncated Differential Security",
+  "summary": "The source finds no probability-one trail beyond one round but leaves longer trails unexcluded, so the four-round security conjecture remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The possibility of longer truncated differential trails has not been excluded, whether or not they depend on details of the S-box. Prove or refute the conjecture that four rounds of HadesMiMC with full S-box layers are secure against truncated differential attacks."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of HadesMiMC using truncated differential attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Four rounds, the target reduced-round setting",
+      "Full S-box layers, the specified round configuration"
+    ],
+    "unresolved_remainder": "Determine whether longer truncated differential trails can be set up, whether or not they depend on details of the S-box, and prove or refute the conjecture that four rounds of HadesMiMC with full S-box layers are secure against truncated differential attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "truncated-differential",
+      "block-cipher"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 43",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit conjecture after comparing HadesMiMC's full-state diffusion with AES. It notes that longer truncated differential trails have not been excluded and asks whether four rounds are secure.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

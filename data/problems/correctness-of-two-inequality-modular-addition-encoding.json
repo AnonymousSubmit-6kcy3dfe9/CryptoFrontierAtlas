@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "correctness-of-two-inequality-modular-addition-encoding",
+  "group_id": "correctness-of-two-inequality-modular-addition-encoding",
+  "title": "Correctness of the Two-Inequality Encoding for Modular Addition",
+  "summary": "Experiments report correct division-property propagation for word sizes through seven, while proving the encoding correct for every word size remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$\\forall n \\ge 1$, prove that the two-inequality encoding yields the correct division-property propagation for addition modulo $2^n$."
+  },
+  "scope": {
+    "domain": "The domain is division-property cryptanalysis of modular addition in symmetric ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n, the word size in bits"
+    ],
+    "unresolved_remainder": "Prove correctness of the propagation encoding for arbitrary word sizes beyond the experimentally checked sizes up to seven."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "division-property",
+      "modular-addition",
+      "cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 15",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that the two inequalities produce the correct division-property propagation table for word sizes up to seven in experiments, while noting a few redundant transitions. The open task is to establish the stated correctness for every word size.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-auth2-bounds-cau2-gcm",
+  "group_id": "tighter-auth2-bounds-cau2-gcm",
+  "title": "Tighter Auth2 Bounds for CAU2 GCM",
+  "summary": "Existing analyses give authenticity bounds for the AE2-secure GCM variant, but a tighter bound from direct multi-query analysis remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Derive a tighter bound on $\\operatorname{Adv}^{\\mathrm{auth2}}_{\\mathrm{CAU2}[E,H,\\ell]}$ by directly analyzing adversaries with multiple New and Vf queries."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security analysis for the AE2-secure CAU2 GCM construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "CAU2[E,H,ell]: the AE2-secure GCM construction being analyzed",
+      "auth2 advantage: the authenticity measure whose upper bound is sought",
+      "Multiple New and Vf queries: the adversary-query setting for the direct analysis"
+    ],
+    "unresolved_remainder": "Derive a tighter auth2-advantage bound through direct analysis of adversaries making multiple New and Vf queries."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "gcm",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Nonces Are Noticed: AEAD Revisited",
+        "locator": "CRYPTO 2019, page 8",
+        "doi": "10.1007/978-3-030-26948-7_9",
+        "url": "https://eprint.iacr.org/2019/624",
+        "eprint": "2019/624"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as possible future work: proving better authenticity bounds for its AE2-secure GCM version. The row narrows that goal to direct analysis of adversaries making multiple New and Vf queries.",
+      "citation_labels": [
+        "Mihir Bellare et al., Nonces Are Noticed: AEAD Revisited"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

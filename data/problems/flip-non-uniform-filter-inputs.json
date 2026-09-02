@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "flip-non-uniform-filter-inputs",
+  "group_id": "flip-non-uniform-filter-inputs",
+  "title": "Cryptanalytic Impact of FLIP's Non-Uniform Filter Inputs",
+  "summary": "Small-scale tests found sufficient output balance, but the security consequences of the induced input non-uniformity beyond that check remain unresolved from cryptanalytic and Boolean-functions perspectives.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For FLIP, the fixed-Hamming-weight key register makes the filter inputs non-uniform, although small-scale experiments checked that the output remained sufficiently balanced; the unresolved task is to characterize how this non-uniformity affects cryptanalytic security against attacks other than the balance check and to analyze the issue from the Boolean-functions perspective, including whether imbalanced inputs create weaknesses and how such impact could be mitigated."
+  },
+  "scope": {
+    "domain": "This concerns cryptanalysis and Boolean-function analysis of FLIP's filter inputs under a fixed-Hamming-weight-induced non-uniform distribution.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Fixed Hamming weight of the key register, which induces the non-uniform filter-input distribution"
+    ],
+    "unresolved_remainder": "Characterize how the non-uniformity affects cryptanalytic security against attacks other than the balance check, analyze the issue from the Boolean-functions perspective, and determine whether imbalanced inputs create weaknesses and how their impact could be mitigated."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "boolean-functions",
+      "non-uniform-distributions",
+      "cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts",
+        "locator": "EUROCRYPT 2016, page 17",
+        "doi": "10.1007/978-3-662-49890-3_13",
+        "url": "https://eprint.iacr.org/2016/254",
+        "eprint": "2016/254"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports small-scale experiments showing sufficiently balanced output despite the non-uniform inputs. It explicitly leaves the impact on other attacks as important research from both cryptanalysis and Boolean-functions perspectives, while noting possible mitigation tweaks if weaknesses arise.",
+      "citation_labels": [
+        "Pierrick Méaux et al., Towards Stream Ciphers for Efficient FHE with Low-Noise Ciphertexts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

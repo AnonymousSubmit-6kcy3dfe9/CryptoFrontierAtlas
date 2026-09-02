@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "four-round-feistel-correlation-intractability",
+  "group_id": "four-round-feistel-correlation-intractability",
+  "title": "Four-Round Feistel Correlation Intractability for Binary and Ternary Evasive Relations",
+  "summary": "Four-round Feistel is not correlation intractable against 4-ary evasive relations with oracle-only round-function access; the binary and ternary cases remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The four-round Feistel construction is not correlation intractable against 4-ary evasive relations even when an adversary has only oracle access to the underlying round functions. Determine whether the four-round Feistel construction is correlation intractable against binary or ternary evasive relations in this oracle-only access model."
+  },
+  "scope": {
+    "domain": "Block-cipher security, specifically correlation intractability of the four-round Feistel construction against evasive relations.",
+    "assumptions": [
+      "The adversary has only oracle access to the underlying round functions."
+    ],
+    "parameters": [
+      "Evasive-relation arity: 4-ary for the known negative result and binary or ternary for the unresolved cases"
+    ],
+    "unresolved_remainder": "Whether the four-round Feistel construction is correlation intractable against binary or ternary evasive relations when the adversary has only oracle access to the underlying round functions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "feistel-network",
+      "correlation-intractability",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Naor-Reingold Goes Public: The Complexity of Known-Key Security",
+        "locator": "EUROCRYPT 2018, page 45",
+        "doi": "10.1007/978-3-319-78372-7_21",
+        "url": "https://eprint.iacr.org/2018/137",
+        "eprint": "2018/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a negative result for 4-ary evasive relations under oracle-only round-function access, then explicitly leaves the binary and ternary cases for future work.",
+      "citation_labels": [
+        "Pratik Soni et al., Naor-Reingold Goes Public: The Complexity of Known-Key Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

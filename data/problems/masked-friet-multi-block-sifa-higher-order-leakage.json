@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "masked-friet-multi-block-sifa-higher-order-leakage",
+  "group_id": "masked-friet-multi-block-sifa-higher-order-leakage",
+  "title": "Masked Friet Beyond First-Order and Single-Block Security",
+  "summary": "Masked Friet resists first-order DPA and single-block SIFA, but its security against broader fault and leakage models, and any needed extension, remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the masked Friet architecture is secure against SIFA attacks whose faulty computations span multiple computational blocks and against leakage attacks of order higher than first order. The established result covers first-order DPA and SIFA attacks limited to a single computational block, because each block processes only one share per limb, making a fault at a block's output independent of any native variable. If security does not hold under either broader model, extend the masked Friet architecture accordingly."
+  },
+  "scope": {
+    "domain": "Side-channel and fault security of the masked Friet authenticated-encryption architecture.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "fault span: single-block baseline versus faulty computations spanning multiple computational blocks",
+      "leakage order: first-order baseline versus higher-than-first-order leakage",
+      "masking architecture: each block processes only one share per limb"
+    ],
+    "unresolved_remainder": "Whether masked Friet remains secure against SIFA attacks spanning multiple computational blocks and against leakage attacks of order higher than first order; if not, extend the architecture accordingly."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "sifa",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Friet: an Authenticated Encryption Scheme with Built-in Fault Detection",
+        "locator": "EUROCRYPT 2020, page 21",
+        "doi": "10.1007/978-3-030-45721-1_21",
+        "url": "https://eprint.iacr.org/2020/425",
+        "eprint": "2020/425"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes resistance to first-order DPA and SIFA faults confined to one block, attributing this to the one-share-per-limb block structure. It leaves multi-block SIFA and higher-order leakage, with possible architecture extension, unresolved.",
+      "citation_labels": [
+        "Thierry Simon et al., Friet: an Authenticated Encryption Scheme with Built-in Fault Detection"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

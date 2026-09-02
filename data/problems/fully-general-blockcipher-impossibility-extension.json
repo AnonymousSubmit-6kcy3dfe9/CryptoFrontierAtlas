@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fully-general-blockcipher-impossibility-extension",
+  "group_id": "fully-general-blockcipher-impossibility-extension",
+  "title": "Impossibility for Fully General Two- and Three-Call Blockciphers",
+  "summary": "Impossibility is established for iterated blockciphers with at most three primitive calls; whether it extends to fully general two- or three-call constructions remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the impossibility results for iterated blockciphers using at most three primitive calls extend to fully general blockcipher constructions using two or three calls in the same oracle model. These general constructions are not required to be iterated, and resolving the question requires handling the difficulty of obtaining a rigorous argument when valid intermediate values and interference among data-dependent encipherments must be considered, particularly for three-call ciphers."
+  },
+  "scope": {
+    "domain": "General blockcipher constructions and impossibility results in the same oracle model.",
+    "assumptions": [
+      "the same oracle model"
+    ],
+    "parameters": [
+      "two or three primitive calls, determining the construction's call count"
+    ],
+    "unresolved_remainder": "Determine whether the impossibility results for iterated blockciphers extend to fully general, non-iterated constructions using two or three calls."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "impossibility-results",
+      "theorem-extension"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls",
+        "locator": "EUROCRYPT 2023, page 9",
+        "doi": "10.1007/978-3-031-30634-1_14",
+        "url": "https://eprint.iacr.org/2023/226",
+        "eprint": "2023/226"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents fully general two- and three-call blockciphers as an intriguing future direction. It emphasizes that a rigorous argument is difficult because of valid intermediate values and interference among data-dependent encipherments, especially for three-call ciphers.",
+      "citation_labels": [
+        "Chun Guo et al., Impossibility of Indifferentiable Iterated Blockciphers from 3 or Less Primitive Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

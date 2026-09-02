@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinny-joint-tweakey-optimization",
+  "group_id": "skinny-joint-tweakey-optimization",
+  "title": "Joint Optimization of SKINNY Tweakey Injection",
+  "summary": "The paper optimizes SKINNY's tweakey permutation alone; jointly choosing that permutation and the eight injected tweakey nibbles for related-tweakey resistance remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In $\\mathrm{SKINNY}$, $\\operatorname{AddRoundTweakey}$ XORs into the state the eight tweakey-word nibbles in the first two rows. The unresolved task is to optimize resistance to related-tweakey attacks jointly over the tweakey permutation $\\mathrm{PT}$ and the choice of which eight tweakey-word nibbles $\\operatorname{AddRoundTweakey}$ XORs into the state, rather than fixing the latter to the first two rows."
+  },
+  "scope": {
+    "domain": "Joint tweakey-schedule design for the SKINNY block cipher against related-tweakey attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "PT: the SKINNY tweakey permutation",
+      "Eight selected tweakey-word nibbles: the AddRoundTweakey inputs XORed into the state"
+    ],
+    "unresolved_remainder": "Determine a joint choice of PT and eight injected tweakey-word nibbles that optimizes resistance to related-tweakey attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-cipher",
+      "skinny",
+      "related-tweakey"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "How to Use Metaheuristics for Design of Symmetric-Key Primitives",
+        "locator": "ASIACRYPT 2017, page 12",
+        "doi": "10.1007/978-3-319-70700-6_13",
+        "url": "https://eprint.iacr.org/2017/851",
+        "eprint": "2017/851"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents joint optimization of PT and AddRoundTweakey as a potential future direction after optimizing PT alone; it reports no joint solution.",
+      "citation_labels": [
+        "Ivica Nikolic et al., How to Use Metaheuristics for Design of Symmetric-Key Primitives"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

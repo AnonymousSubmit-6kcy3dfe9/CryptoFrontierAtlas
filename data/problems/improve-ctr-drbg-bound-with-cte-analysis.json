@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improve-ctr-drbg-bound-with-cte-analysis",
+  "group_id": "improve-ctr-drbg-bound-with-cte-analysis",
+  "title": "Can Dedicated CtE Analysis Improve the CTR-DRBG Bound?",
+  "summary": "The current robustness bound includes a contribution from the Generalized Leftover Hash Lemma analysis of CtE; it remains unresolved whether dedicated guessing-advantage analysis can improve it.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The CTR-DRBG robustness bound contains a term approximately $\\frac{\\sqrt{p}\\,q}{2^{\\lambda/2}}$, arising from use of the Generalized Leftover Hash Lemma to analyze the guessing advantage of $\\operatorname{CtE}[E,n]$. Determine whether a dedicated analysis of this guessing advantage can improve the term."
+  },
+  "scope": {
+    "domain": "Security analysis of the NIST CTR-DRBG robustness bound and the guessing advantage of its CtE construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p and q: factors in the robustness-bound term",
+      "lambda: exponent parameter in the denominator",
+      "E and n: inputs to CtE"
+    ],
+    "unresolved_remainder": "Whether a dedicated analysis of CtE's guessing advantage can improve the robustness-bound term."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.hash-functions",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "ctr-drbg",
+      "security-bounds",
+      "guessing-advantage"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 18",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "In its discussion of bound tightness, the source attributes this term to use of the Generalized Leftover Hash Lemma in analyzing CtE's guessing advantage and states that it is unclear whether a dedicated analysis can improve it.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

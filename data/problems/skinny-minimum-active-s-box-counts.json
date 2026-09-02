@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinny-minimum-active-s-box-counts",
+  "group_id": "skinny-minimum-active-s-box-counts",
+  "title": "Exact Minimum Active S-Boxes in SKINNY",
+  "summary": "Most reported active-S-box bounds for SKINNY are not tight and may underestimate the minima; determining tight minimum counts remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the exact minimum numbers of active $\\mathrm{S}$-boxes in SKINNY differential characteristics. Most reported bounds on these numbers are not tight, and the true minima may be higher; the unresolved task is to establish tight minimum active-$\\mathrm{S}$-box counts."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the lightweight block cipher SKINNY.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Active S-box count — the quantity minimized over SKINNY differential characteristics"
+    ],
+    "unresolved_remainder": "Establish the exact, tight minimum active-S-box counts."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "skinny",
+      "active-s-boxes"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS",
+        "locator": "CRYPTO 2016, page 16",
+        "doi": "10.1007/978-3-662-53008-5_5",
+        "url": "https://eprint.iacr.org/2016/660",
+        "eprint": "2016/660"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports active-S-box bounds for SKINNY but emphasizes that most are not tight and that higher minima may be possible, leaving the exact tight counts open.",
+      "citation_labels": [
+        "Christof Beierle et al., The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

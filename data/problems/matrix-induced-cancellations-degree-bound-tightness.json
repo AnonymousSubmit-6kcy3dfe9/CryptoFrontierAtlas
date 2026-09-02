@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "matrix-induced-cancellations-degree-bound-tightness",
+  "group_id": "matrix-induced-cancellations-degree-bound-tightness",
+  "title": "Matrix-Induced Cancellations and Degree-Bound Tightness",
+  "summary": "The coefficient-grouping bound may be non-tight when the affine-layer matrix changes monomial coefficients; characterizing those cancellations and their impact on tightness remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize cancellations induced by $M$ over $\\mathbb{F}_{2^n}$ and determine their effect on the tightness of the algebraic-degree upper bound."
+  },
+  "scope": {
+    "domain": "Algebraic-degree analysis of coefficient grouping for affine layers in symmetric cryptography.",
+    "assumptions": [
+      "The cipher is defined over $\\mathbb{F}_{2^n}$."
+    ],
+    "parameters": [
+      "$M$: the invertible matrix whose changes to monomial coefficients can induce cancellations",
+      "$n$: determines the finite-field size and the range of possible coefficient values"
+    ],
+    "unresolved_remainder": "Characterize the monomial cancellations induced by $M$ over $\\mathbb{F}_{2^n}$ and determine their effect on upper-bound tightness."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "algebraic-degree",
+      "finite-fields",
+      "monomial-cancellation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping for Complex Affine Layers",
+        "locator": "CRYPTO 2023, page 10",
+        "doi": "10.1007/978-3-031-38548-3_18",
+        "url": "https://eprint.iacr.org/2023/782",
+        "eprint": "2023/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source omits the influence of $M$ in its coefficient-grouping analysis by setting all possible monomial coefficients to 1, and warns that some choices of $M$ may make the upper bound non-tight. It explicitly presents detecting the resulting cancellations as an open problem.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping for Complex Affine Layers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

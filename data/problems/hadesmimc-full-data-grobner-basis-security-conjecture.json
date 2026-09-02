@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hadesmimc-full-data-grobner-basis-security-conjecture",
+  "group_id": "hadesmimc-full-data-grobner-basis-security-conjecture",
+  "title": "HadesMiMC Full-Data Gröbner-Basis Security Conjecture",
+  "summary": "The source conjectures a sufficient full-round security bound, motivated by tests in which attack complexity was lowest with one plaintext–ciphertext pair when alpha equaled three; prove or refute it.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a HadesMiMC parameter set $(N,\\alpha,t,R_P,R_F)$, with $R_F$ denoting the number of full rounds, prove or refute the conjecture that HadesMiMC is secure against the full-data variant of the Gröbner-basis attack whenever\n\n$$R_F \\ge 2+\\log_{\\alpha}(2)\\cdot\\left\\lceil\\frac{N+2\\log_2(t+R_P)-2\\log_2(t)}{2t+R_P}\\right\\rceil.$$\n\nThe motivating observation is that, in all practically tested instances with $\\alpha=3$, the attack's computational complexity was minimized by using a single plaintext–ciphertext pair."
+  },
+  "scope": {
+    "domain": "This concerns algebraic cryptanalysis of HadesMiMC against full-data Gröbner-basis attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "N, alpha, t, and R_P: HadesMiMC parameters appearing in the conjectured bound",
+      "R_F: number of full rounds",
+      "alpha equal to three: tested value in the motivating observation"
+    ],
+    "unresolved_remainder": "Prove or refute that HadesMiMC is secure against the full-data variant of the Gröbner-basis attack whenever the stated lower bound on R_F holds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "block-cipher",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 55",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the claim explicitly as a conjecture, after reporting that all practically tested instances with alpha equal to three had minimum attack complexity with a single plaintext–ciphertext pair. It leaves security under the stated full-round condition to proof or refutation.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

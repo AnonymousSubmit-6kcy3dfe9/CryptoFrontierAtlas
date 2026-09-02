@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "beth-4-elisabeth-4-security-ordering",
+  "group_id": "beth-4-elisabeth-4-security-ordering",
+  "title": "Security Ordering of Beth-4 and Elisabeth-4",
+  "summary": "The paper estimates attack complexities for Beth-4, but whether Beth-4 is at most as secure as Elisabeth-4 for the analyzed attacks remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute that Beth-4 is at most as secure as Elisabeth-4 against the attacks considered in the paper."
+  },
+  "scope": {
+    "domain": "Comparative structural cryptanalysis of Beth-4, a stream-cipher variant of Elisabeth-4 that replaces some modulo-16 additions with coordinate-wise XOR.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Prove or refute the conjectured security ordering for the algebraic, correlation, and guess-and-determine attacks analyzed in the paper."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "stream-cipher",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Towards Case-Optimized Hybrid Homomorphic Encryption -Featuring the Elisabeth Stream Cipher-",
+        "locator": "ASIACRYPT 2022, page 21",
+        "doi": "10.1007/978-3-031-22969-5_2",
+        "url": "https://eprint.iacr.org/2022/180",
+        "eprint": "2022/180"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces Beth-4 as an easier-to-analyze variation of Elisabeth-4 and explicitly conjectures that it is at most as secure. It then assumes this ordering when using Beth-4 attack-complexity estimates as lower bounds for Elisabeth-4.",
+      "citation_labels": [
+        "Orel Cosseron et al., Towards Case-Optimized Hybrid Homomorphic Encryption -Featuring the Elisabeth Stream Cipher-"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

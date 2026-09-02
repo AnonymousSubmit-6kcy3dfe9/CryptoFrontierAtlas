@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improved-recovering-security-bound-for-ctr-drbg",
+  "group_id": "improved-recovering-security-bound-for-ctr-drbg",
+  "title": "Improved Recovering-Security Bound for CTR-DRBG",
+  "summary": "A contrived universal-hash example makes a factor-p loss inherent for the generic analysis, but a stronger recovering-security bound for concrete CTR-DRBG using CtE's structure remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{CTR\\text{-}DRBG}$, a generic counterexample based on a contrived universal hash function shows that treating $\\mathrm{CtE}$ only as a universal hash can inherently incur a factor-$p$ loss when one of $p$ inputs is selected adaptively; this counterexample does not establish that $\\mathrm{CTR\\text{-}DRBG}$ itself has inferior recovering security. Prove a strong recovering-security bound for $\\mathrm{CTR\\text{-}DRBG}$ that improves on this generic factor-$p$ loss by exploiting concrete structure of $\\mathrm{CtE}$ beyond its universal-hash property."
+  },
+  "scope": {
+    "domain": "Cryptographic security bounds for NIST CTR-DRBG and the concrete CtE construction.",
+    "assumptions": [
+      "One of p inputs is selected adaptively"
+    ],
+    "parameters": [
+      "p, the number of inputs among which one is selected adaptively"
+    ],
+    "unresolved_remainder": "Whether a strong recovering-security bound for CTR-DRBG can improve on the generic factor-p loss by exploiting concrete CtE structure beyond its universal-hash property."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "ctr-drbg",
+      "recovering-security",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 3",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a contrived universal-hash counterexample showing that the factor-p loss is inherent under that abstraction, while noting that this does not show inferior recovering security for CTR-DRBG itself. It points to exploiting concrete CtE structure as the route to a better bound.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xhx2-real-block-cipher-security-reduction",
+  "group_id": "xhx2-real-block-cipher-security-reduction",
+  "title": "Real-Block-Cipher Security Reduction for XHX2",
+  "summary": "XHX2 is analyzed using independently keyed permutations; establishing a real-block-cipher reduction with secure related-key and known-/chosen-key behavior remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish a real-block-cipher security reduction for XHX2 under related-key and known-/chosen-key-secure key schedules."
+  },
+  "scope": {
+    "domain": "Security reductions for XHX2 instantiated with real block ciphers and their key schedules.",
+    "assumptions": [
+      "The underlying block-cipher key schedule is secure against related-key and known-/chosen-key distinguishing attacks."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Establish a security reduction for XHX2 instantiated with a real block cipher under the stated key-schedule security conditions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "security-reductions",
+      "key-schedules"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tweakable Block Ciphers Secure Beyond the Birthday Bound in the Ideal Cipher Model",
+        "locator": "ASIACRYPT 2018, page 3",
+        "doi": "10.1007/978-3-030-03326-2_11",
+        "url": "https://eprint.iacr.org/2018/784",
+        "eprint": "2018/784"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a practical key-schedule requirement arising from a model in which every block-cipher key defines an independent permutation, rather than as a formally labeled open problem.",
+      "citation_labels": [
+        "ByeongHak Lee et al., Tweakable Block Ciphers Secure Beyond the Birthday Bound in the Ideal Cipher Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

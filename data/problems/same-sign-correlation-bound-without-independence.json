@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "same-sign-correlation-bound-without-independence",
+  "group_id": "same-sign-correlation-bound-without-independence",
+  "title": "Same-Sign Correlation Bound Without Independence",
+  "summary": "Independence guarantees the correlation bound; it remains open whether the same lower bound holds for same-sign correlations without independence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Without independence, prove or refute that same-sign $\\varepsilon_1,\\varepsilon_2$ imply $|\\varepsilon|\\geq\\max\\{|\\varepsilon_1|,|\\varepsilon_2|\\}$."
+  },
+  "scope": {
+    "domain": "Conditional-correlation bounds in correlation cube cryptanalysis.",
+    "assumptions": [
+      "The component correlations $\\varepsilon_1$ and $\\varepsilon_2$ have the same sign.",
+      "Statistical independence is not assumed."
+    ],
+    "parameters": [
+      "$\\varepsilon_1$ and $\\varepsilon_2$: component conditional correlations",
+      "$\\varepsilon$: combined conditional correlation"
+    ],
+    "unresolved_remainder": "Prove or refute that the combined-correlation lower bound holds for same-sign component correlations without statistical independence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [],
+    "tags": [
+      "cube-attack",
+      "conditional-correlation",
+      "correlation-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery",
+        "locator": "EUROCRYPT 2018, page 12",
+        "doi": "10.1007/978-3-319-78375-8_23",
+        "url": "https://eprint.iacr.org/2018/158",
+        "eprint": "2018/158"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "Experiments on Trivium support independence as a reasonable approximation, although the authors do not expect it to hold perfectly. They conjecture that the bound remains sound for same-sign correlations even when independence fails.",
+      "citation_labels": [
+        "Meicheng Liu et al., Correlation Cube Attacks: From Weak-Key Distinguisher to Key Recovery"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

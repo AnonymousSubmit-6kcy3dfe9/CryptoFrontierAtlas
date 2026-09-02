@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reed-muller-fixed-weight-enumeration",
+  "group_id": "reed-muller-fixed-weight-enumeration",
+  "title": "General Reed–Muller Fixed-Weight Enumeration",
+  "summary": "The relevant Reed–Muller codeword count is computable when d equals two, but no general formula in n, d, and k is known.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a general formula, as a function of $n,d,k$, for the number of weight-$k$ codewords in the Reed--Muller code of length $2^n$ and order $n-d$. This count determines the probability that a set $X$ of size $k$ satisfies the division property of order $d$. The count is computable when $d=2$, corresponding to Todo's distinguishers, but no formula is known in general."
+  },
+  "scope": {
+    "domain": "Fixed-weight enumeration in Reed–Muller codes for division-property analysis in symmetric cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: determines the Reed–Muller code length and, together with d, its order",
+      "d: specifies the division-property order and the offset in the Reed–Muller code order",
+      "k: specifies both the codeword weight and the size of the set X"
+    ],
+    "unresolved_remainder": "Find a general formula in n, d, and k for the number of weight-k codewords; only the case d equals two is stated to be computable."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "reed-muller-codes",
+      "weight-enumeration",
+      "division-property"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Another View of the Division Property",
+        "locator": "CRYPTO 2016, page 28",
+        "doi": "10.1007/978-3-662-53018-4_24",
+        "url": "https://eprint.iacr.org/2016/554",
+        "eprint": "2016/554"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reduces the probability that a size-k set satisfies the division property to a fixed-weight Reed–Muller codeword count. It states that the count is computable for d equal to two but has no known general formula.",
+      "citation_labels": [
+        "Christina Boura et al., Another View of the Division Property"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

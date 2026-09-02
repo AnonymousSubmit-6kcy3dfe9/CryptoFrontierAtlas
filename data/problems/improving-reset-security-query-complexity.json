@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improving-reset-security-query-complexity",
+  "group_id": "improving-reset-security-query-complexity",
+  "title": "Improving Reset-Security Query Complexity",
+  "summary": "One term in the reset-security reduction has quadratic dependence on p; whether the Barak–Mahmoody technique can make that dependence linear remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the reset-security reduction, the query complexity contains a term $8qp^2/\\varepsilon$. Can the technique of Barak and Mahmoody be adapted to prove a corresponding query-complexity term of $O(qp)/\\varepsilon$?"
+  },
+  "scope": {
+    "domain": "Query-complexity analysis of reset-security reductions for block-cipher security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q: multiplicative parameter in both query-complexity terms",
+      "p: parameter with quadratic dependence in the current term and linear dependence in the conjectured term",
+      "ε: inverse factor in both query-complexity terms"
+    ],
+    "unresolved_remainder": "Determine whether the Barak–Mahmoody technique can be adapted to prove the O(qp)/ε query-complexity term."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "reset-security",
+      "query-complexity",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Naor-Reingold Goes Public: The Complexity of Known-Key Security",
+        "locator": "EUROCRYPT 2018, page 15",
+        "doi": "10.1007/978-3-319-78372-7_21",
+        "url": "https://eprint.iacr.org/2018/137",
+        "eprint": "2018/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source states its belief that the Barak–Mahmoody technique can improve the term, but leaves this avenue unexplored because another proof approach was easier to adapt.",
+      "citation_labels": [
+        "Pratik Soni et al., Naor-Reingold Goes Public: The Complexity of Known-Key Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tls-aware-rcau-multi-user-bound",
+  "group_id": "tls-aware-rcau-multi-user-bound",
+  "title": "TLS-Aware Multi-User Security Bound for RCAU",
+  "summary": "The generic bound has no immediate matching TLS attack because failed MACs end sessions; determine whether RCAU admits a considerably tighter active multi-user bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether $\\mathrm{RCAU}$, when used within $\\mathrm{TLS}$, admits a considerably tighter multi-user security bound against active attacks than the generic bound containing the term $up/2^{\\kappa}$. This term does not immediately yield a matching $\\mathrm{TLS}$ attack because realizing such an attack would require sending many crafted ciphertexts within one session, whereas $\\mathrm{TLS}$ terminates the session and discards its keys after the first failed MAC verification. The analysis must incorporate this session-abort and key-discard rule."
+  },
+  "scope": {
+    "domain": "Multi-user active-security analysis of RCAU used within TLS.",
+    "assumptions": [
+      "TLS terminates a session and discards its keys after the first failed MAC verification."
+    ],
+    "parameters": [
+      "u and p: multiplicative factors in the stated generic-bound term",
+      "κ: exponent in the power-of-two denominator of that term"
+    ],
+    "unresolved_remainder": "Whether incorporating TLS session abort and key disposal yields a considerably tighter multi-user security bound for RCAU against active attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "multi-user-security",
+      "tls"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Multi-user Security of Authenticated Encryption: AES-GCM in TLS 1.3",
+        "locator": "CRYPTO 2016, page 42",
+        "doi": "10.1007/978-3-662-53018-4_10",
+        "url": "https://eprint.iacr.org/2016/564",
+        "eprint": "2016/564"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source observes that matching the generic bound term would require many crafted ciphertexts in one session, but TLS aborts after the first failed MAC and discards the keys. It presents a tighter active-security bound as conceivable rather than established.",
+      "citation_labels": [
+        "Mihir Bellare et al., The Multi-user Security of Authenticated Encryption: AES-GCM in TLS 1.3"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

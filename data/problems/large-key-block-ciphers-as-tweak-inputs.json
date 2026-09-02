@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "large-key-block-ciphers-as-tweak-inputs",
+  "group_id": "large-key-block-ciphers-as-tweak-inputs",
+  "title": "Large-Key Block Ciphers as Tweak Inputs",
+  "summary": "The general use of a large block-cipher key as a tweak lacks clear security conditions; the half-key AES-256 approach is considered a very bad idea because of related-key attacks.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether, and under what security conditions, the key input of a block cipher whose key is large relative to its block size can generally be used to supply the tweak input when constructing a tweakable block cipher. A specific approach that allocates half of the AES-256 key input to the tweak is considered a very bad idea because of related-key attacks against AES-256."
+  },
+  "scope": {
+    "domain": "Design and security analysis of tweakable block-cipher constructions using block ciphers with keys large relative to their block sizes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Key size relative to block size — identifies the large-key setting",
+      "Tweak input — the input potentially supplied by the block-cipher key",
+      "Half of the AES-256 key input — the specific allocation discussed"
+    ],
+    "unresolved_remainder": "Whether the key input can generally serve as the tweak input, and the security conditions under which it can do so, remains unresolved."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "tweakable-block-ciphers",
+      "related-key-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "ZMAC: A Fast Tweakable Block Cipher Mode for Highly Secure Message Authentication",
+        "locator": "CRYPTO 2017, page 26",
+        "doi": "10.1007/978-3-319-63697-9_2",
+        "url": "https://eprint.iacr.org/2017/535",
+        "eprint": "2017/535"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source raises the issue while discussing block ciphers with keys large relative to their block sizes and says it remains unclear whether the key input can generally serve as a tweak input. It illustrates the concern with allocating half of AES-256's key input to the tweak, described as a very bad idea because of related-key attacks.",
+      "citation_labels": [
+        "Tetsu Iwata et al., ZMAC: A Fast Tweakable Block Cipher Mode for Highly Secure Message Authentication"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

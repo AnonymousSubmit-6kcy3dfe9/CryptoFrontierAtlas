@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "squared-degree-extremality-uniform-hypergraphs",
+  "group_id": "squared-degree-extremality-uniform-hypergraphs",
+  "title": "Squared-Degree Extremality for Uniform Hypergraphs",
+  "summary": "For k above half of N, the source conjectures that the complete uniform hypergraph attains the squared-degree extremum; proof, refutation, or a sufficient quantitative relaxation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$$k>\\frac N2,\\quad m=\\binom Ak,\\quad A\\ge k\\quad\\Longrightarrow\\quad D^2_{N,k}(m)=D^2(K_{A,k}),$$"
+  },
+  "scope": {
+    "domain": "Extremal combinatorics of uniform hypergraphs concerning sums of squared vertex degrees.",
+    "assumptions": [
+      "k > N/2",
+      "A >= k",
+      "m equals the number of k-subsets of an A-element set"
+    ],
+    "parameters": [
+      "N: parameter indexing the extremal quantity",
+      "k: uniformity parameter",
+      "m: edge-count parameter",
+      "A: number of vertices supporting the complete k-uniform hypergraph"
+    ],
+    "unresolved_remainder": "Resolve Conjecture 1 by proving or refuting it, or establish a quantitatively relaxed version sufficient for the memory-bounded switching lemma."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [],
+    "tags": [
+      "uniform-hypergraphs",
+      "extremal-combinatorics",
+      "squared-degrees"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 22",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents this as Conjecture 1 among important questions left open. It states that resolving the conjecture, or a relaxed version sufficient for its final statement, remains necessary.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

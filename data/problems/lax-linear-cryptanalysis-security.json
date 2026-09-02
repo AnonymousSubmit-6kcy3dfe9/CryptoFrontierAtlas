@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lax-linear-cryptanalysis-security",
+  "group_id": "lax-linear-cryptanalysis-security",
+  "title": "Provable Security of LAX Against Linear Cryptanalysis",
+  "summary": "LAX has provable bounds against differential cryptanalysis, but proving its security against linear cryptanalysis remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The LAX family illustrates an ARX design strategy with provable bounds against differential cryptanalysis; the unresolved task is to establish provable security for LAX against linear cryptanalysis."
+  },
+  "scope": {
+    "domain": "Linear and differential cryptanalysis of the LAX family of ARX constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Establish provable security for LAX against linear cryptanalysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "arx",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Design Strategies for ARX with Provable Bounds: Sparx and LAX",
+        "locator": "ASIACRYPT 2016, page 29",
+        "doi": "10.1007/978-3-662-53887-6_18",
+        "url": "https://eprint.iacr.org/2016/984",
+        "eprint": "2016/984"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents LAX as an ARX construction with provable bounds against differential cryptanalysis. It explicitly leaves provable security against linear cryptanalysis as an open problem.",
+      "citation_labels": [
+        "Daniel Dinu et al., Design Strategies for ARX with Provable Bounds: Sparx and LAX"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

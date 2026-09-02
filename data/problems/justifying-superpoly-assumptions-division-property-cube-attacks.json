@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "justifying-superpoly-assumptions-division-property-cube-attacks",
+  "group_id": "justifying-superpoly-assumptions-division-property-cube-attacks",
+  "title": "Justifying Superpoly Assumptions in Division-Property Cube Attacks",
+  "summary": "The source proposes strong and weak superpoly conditions for attack validity under a key-length restriction, but general guarantees for enough qualifying non-cube IV assignments remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a division-property-based cube attack, let $C_I$ denote a cube of IV variables, let $J$ denote a set of key bits, and let $n$ be the key length. The attack uses the corresponding superpoly under assignments to the remaining, constant IV variables. Its validity is based on either a strong condition that many such assignments make the superpoly balanced or a weak condition that many make it nonconstant, with $|I|+|J|<n$. The unresolved task is to prove or characterize conditions guaranteeing that these many non-cube IV assignments exist, especially when $|I|+|J|$ is close to $n$, where the rationale for the assumptions is difficult to establish."
+  },
+  "scope": {
+    "domain": "This concerns symmetric cryptanalysis of division-property-based cube attacks and their superpolies.",
+    "assumptions": [
+      "Many assignments to the remaining constant IV variables make the corresponding superpoly balanced (strong condition).",
+      "Many assignments to the remaining constant IV variables make the corresponding superpoly nonconstant (weak condition).",
+      "The attack is considered under |I| + |J| < n."
+    ],
+    "parameters": [
+      "C_I: cube of IV variables",
+      "J: set of key bits",
+      "n: key length",
+      "Remaining constant IV variables: variables assigned outside the cube"
+    ],
+    "unresolved_remainder": "Prove or characterize conditions guaranteeing that many non-cube IV assignments yield balanced or nonconstant corresponding superpolies, especially when |I| + |J| is close to n."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "division-property",
+      "algebraic-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Division Property Based Cube Attacks Exploiting Algebraic Properties of Superpoly",
+        "locator": "CRYPTO 2018, page 4",
+        "doi": "10.1007/978-3-319-96884-1_10",
+        "url": "https://eprint.iacr.org/2017/1063",
+        "eprint": "2017/1063"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents strong and weak assumptions as the basis for validating the attack under the key-length restriction. It says their rationality is difficult to prove, especially near the boundary; a flag technique offers only partial support in the studied attacks.",
+      "citation_labels": [
+        "Qingju Wang et al., Improved Division Property Based Cube Attacks Exploiting Algebraic Properties of Superpoly"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

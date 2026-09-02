@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lower-symmetry-factors-stronger-classifiers",
+  "group_id": "lower-symmetry-factors-stronger-classifiers",
+  "title": "Lower Symmetry Factors and Stronger Classifiers",
+  "summary": "Experiments in dimensions two and four support stronger classification at lower symmetry factors, but proving or refuting the general relationship remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$s=\\frac{\\ell}{2^M}$, all else equal, $s_1<s_2\\Longrightarrow \\operatorname{Strength}(\\mathrm{LC}_{s_1})>\\operatorname{Strength}(\\mathrm{LC}_{s_2})$."
+  },
+  "scope": {
+    "domain": "Multiple linear cryptanalysis with asymmetric Gaussian-mixture models for right-key correlation vectors and key classification.",
+    "assumptions": [
+      "All else is equal in the comparison."
+    ],
+    "parameters": [
+      "M: number of approximations in the right-key correlation vector",
+      "ℓ: number of sign components in the modeled Gaussian-mixture distribution",
+      "s: symmetry factor equal to ℓ divided by two to the power M; s₁ and s₂ are compared values"
+    ],
+    "unresolved_remainder": "Prove or refute that a lower symmetry factor always gives a strictly stronger linear-cryptanalysis classifier when all else is equal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "symmetry-factor",
+      "key-classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Linear Cryptanalysis of DES with Asymmetries",
+        "locator": "ASIACRYPT 2017, page 26",
+        "doi": "10.1007/978-3-319-70694-8_7",
+        "url": "https://eprint.iacr.org/2017/895",
+        "eprint": "2017/895"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source introduces the symmetry factor and explicitly conjectures that lower values produce stronger classifiers, all else equal. It reports empirical evidence in dimensions two and four but no general proof.",
+      "citation_labels": [
+        "Andrey Bogdanov et al., Linear Cryptanalysis of DES with Asymmetries"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

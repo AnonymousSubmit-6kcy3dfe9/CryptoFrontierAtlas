@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "absolute-indicator-lower-bound-without-bent-functions",
+  "group_id": "absolute-indicator-lower-bound-without-bent-functions",
+  "title": "Absolute Indicator Lower Bounds Without Bent Functions",
+  "summary": "Bent functions are unavailable in the odd-variable case, and an earlier conjectured bound was disproved; the optimal non-bent lower bound remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a meaningful, preferably tight, lower bound on the absolute indicator of Boolean functions when bent functions are excluded, with particular emphasis on functions having an odd number of variables, where bent functions cannot be used. The bound should clarify the role of restrictions such as balancedness and algebraic degree. A previously conjectured lower bound for balanced functions of degree at least $3$ was disproved, including at odd numbers of variables, so it does not settle the optimal bound in the non-bent setting."
+  },
+  "scope": {
+    "domain": "This concerns Boolean functions and their absolute indicators, especially non-bent functions on an odd number of variables.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Number of variables, especially odd values",
+      "Balancedness as a possible function restriction",
+      "Algebraic degree as a possible function restriction"
+    ],
+    "unresolved_remainder": "Determine a meaningful, preferably tight lower bound on the absolute indicator in the non-bent setting, including the roles of balancedness and algebraic degree."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "boolean-functions",
+      "absolute-indicator",
+      "lower-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 28",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly identifies the lack of a meaningful lower bound for the absolute indicator when bent functions are excluded. It also notes that a previously conjectured bound for balanced functions of degree at least three was disproved, leaving the optimal non-bent bound open.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

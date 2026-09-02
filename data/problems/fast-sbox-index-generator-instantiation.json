@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fast-sbox-index-generator-instantiation",
+  "group_id": "fast-sbox-index-generator-instantiation",
+  "title": "Instantiating FAST's Sbox-Index Generator",
+  "summary": "FAST specifies the role of its Sbox-index generator and prefers AES in CTR mode, but selecting or constructing a suitable instantiation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The FAST format-preserving encryption and tokenization construction requires a pseudorandom generator $\\text{PRNG}_{1,m,n}$ that, given an $L_1$-bit key $K_{\\text{SEQ}}$, outputs an $n$-element Sbox-index sequence $\\text{SEQ}=[i_0,i_1,i_2,\\ldots,i_{n-1}]$ whose entries lie in $\\{0,1,\\ldots,m-1\\}$. The unresolved task is to determine or construct a suitable instantiation of this generator for these parameters; AES in CTR mode is identified as a preferred option, but the generator choice remains open."
+  },
+  "scope": {
+    "domain": "This problem concerns pseudorandom Sbox-index sequence generation in FAST format-preserving encryption and tokenization.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "L₁: bit length of the input key",
+      "KSEQ: key supplied to the generator",
+      "n: number of indices in the generated sequence",
+      "m: range parameter, with indices running from 0 through m−1"
+    ],
+    "unresolved_remainder": "Determine or construct a suitable instantiation of the generator for these parameters; AES in CTR mode is preferred, but the choice remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "format-preserving-encryption",
+      "pseudorandom-generator",
+      "sbox-index-generation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "FAST: Secure and High Performance Format-Preserving Encryption and Tokenization",
+        "locator": "ASIACRYPT 2021, page 6",
+        "doi": "10.1007/978-3-030-92078-4_16",
+        "url": "https://eprint.iacr.org/2021/1171",
+        "eprint": "2021/1171"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents the generator choice as open and identifies AES in CTR mode only as its preferred option.",
+      "citation_labels": [
+        "F. Betül Durak et al., FAST: Secure and High Performance Format-Preserving Encryption and Tokenization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

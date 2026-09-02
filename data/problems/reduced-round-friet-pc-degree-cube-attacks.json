@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reduced-round-friet-pc-degree-cube-attacks",
+  "group_id": "reduced-round-friet-pc-degree-cube-attacks",
+  "title": "Reduced-Round Friet-PC Degree and Cube Attacks",
+  "summary": "The degree bound was verified through four rounds, with selected degree-32 monomials at five, but attack-relevant degree growth and cube-attack feasibility remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the algebraic degree of Friet-PC and its inverse after 22 or 23 rounds is well below 130, and whether this enables cube attacks against Friet."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Friet-PC and its inverse for cube attacks against the Friet authenticated-encryption construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "22 or 23 rounds: reduced-round depths under study",
+      "130: reference degree threshold for assessing low-degree attack feasibility"
+    ],
+    "unresolved_remainder": "Whether the algebraic degree after 22 or 23 rounds is well below 130, and whether this enables cube attacks against Friet."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.cube"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "cube-attacks",
+      "higher-order-differentials"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Friet: an Authenticated Encryption Scheme with Built-in Fault Detection",
+        "locator": "EUROCRYPT 2020, page 15",
+        "doi": "10.1007/978-3-030-45721-1_21",
+        "url": "https://eprint.iacr.org/2020/425",
+        "eprint": "2020/425"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents low algebraic degree as a possible route to cube or higher-order differential attacks. It verifies the theoretical upper bound through four rounds and gives selected degree-32 monomials for five rounds, leaving the 22- or 23-round degree behavior unresolved.",
+      "citation_labels": [
+        "Thierry Simon et al., Friet: an Authenticated Encryption Scheme with Built-in Fault Detection"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "pfb-style-aead-early-plaintext-release",
+  "group_id": "pfb-style-aead-early-plaintext-release",
+  "title": "PFB-Style AEAD with Early Plaintext Release",
+  "summary": "The source states security for PFB Plus and PFBω when unverified plaintext is not released and nonces are not repeated; security when plaintext may be released before verification remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct or prove a PFB-style AEAD secure when decryption may release plaintext before tag verification."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption mode security for PFB-style constructions.",
+    "assumptions": [
+      "no unverified plaintext is released",
+      "no nonce is repeated"
+    ],
+    "parameters": [
+      "PFB Plus and PFBω (the AEAD modes under discussion)"
+    ],
+    "unresolved_remainder": "Construct or prove security for a PFB-style AEAD when decryption may release plaintext before tag verification."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "plaintext-release",
+      "misuse-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Lightweight Authenticated Encryption Mode Suitable for Threshold Implementation",
+        "locator": "EUROCRYPT 2020, page 6",
+        "doi": "10.1007/978-3-030-45724-2_24",
+        "url": "https://eprint.iacr.org/2020/542",
+        "eprint": "2020/542"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives PFB Plus and PFBω a conditional security statement requiring no unverified plaintext release and no nonce repetition. It also states that misuse security is not ensured; the row frames the missing early-release guarantee as a construction-or-proof task.",
+      "citation_labels": [
+        "Yusuke Naito et al., Lightweight Authenticated Encryption Mode Suitable for Threshold Implementation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

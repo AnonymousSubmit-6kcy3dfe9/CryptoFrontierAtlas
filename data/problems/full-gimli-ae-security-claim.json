@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-gimli-ae-security-claim",
+  "group_id": "full-gimli-ae-security-claim",
+  "title": "Full Gimli AE's 128-Bit Security Claim",
+  "summary": "The paper reports attacks only on reduced-round Gimli, leaving the full AE scheme's claimed security relative to its key length unexplained.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Explain or match the $2^{128}$-security claim for full Gimli AE despite its $256$-bit key."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of the full Gimli authenticated-encryption scheme.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "128-bit security claim (claimed security level)",
+      "256-bit key (key length)",
+      "5- and 9-round reduced variants (reported attack targets)"
+    ],
+    "unresolved_remainder": "Explain or match the full Gimli AE scheme's 128-bit security claim despite its 256-bit key; the reported attacks apply only to reduced-round variants."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "gimli",
+      "authenticated-encryption",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Automatic Verification of Differential Characteristics: Application to Reduced Gimli",
+        "locator": "CRYPTO 2020, page 3",
+        "doi": "10.1007/978-3-030-56877-1_8",
+        "url": "https://eprint.iacr.org/2020/591",
+        "eprint": "2020/591"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks why the AE scheme claims 128-bit security while using a 256-bit key. Its reported state-recovery attacks concern only reduced 5- and 9-round variants and do not threaten full Gimli.",
+      "citation_labels": [
+        "Fukang Liu et al., Automatic Verification of Differential Characteristics: Application to Reduced Gimli"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

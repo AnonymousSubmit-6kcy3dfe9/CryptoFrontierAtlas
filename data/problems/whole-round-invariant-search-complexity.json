@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "whole-round-invariant-search-complexity",
+  "group_id": "whole-round-invariant-search-complexity",
+  "title": "Complexity of Whole-Round Invariant Search",
+  "summary": "Whole-round invariant search appears exponential in the block size, but its complexity is unestablished and whether substantially faster methods exist remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a fixed-key instantiation of a block cipher in which no function is invariant under both the substitution layer and the linear part of each round, an invariant attacker must search for invariants of the whole round function. This search appears to have exponential cost in the block size, but that complexity is not established. Determine the complexity of finding such whole-round invariants, particularly whether they can be found substantially faster than exponential time under the stated absence of a shared building-block invariant."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of invariant attacks on block-cipher round functions.",
+    "assumptions": [
+      "The block cipher is instantiated with a fixed key.",
+      "No function is invariant under both the substitution layer and the linear part of each round."
+    ],
+    "parameters": [
+      "Block size, the size parameter for the apparent exponential search cost"
+    ],
+    "unresolved_remainder": "Determine the complexity of finding whole-round invariants, especially whether they can be found substantially faster than exponential time under the absence of a shared building-block invariant."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "invariant-attacks",
+      "block-ciphers",
+      "attack-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Proving Resistance Against Invariant Attacks: How to Choose the Round Constants",
+        "locator": "CRYPTO 2017, page 2",
+        "doi": "10.1007/978-3-319-63715-0_22",
+        "url": "https://eprint.iacr.org/2017/463",
+        "eprint": "2017/463"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that, without a shared building-block invariant, an invariant attacker must search the whole round function. It says this search generally appears exponential in the block size, but does not establish that complexity.",
+      "citation_labels": [
+        "Christof Beierle et al., Proving Resistance Against Invariant Attacks: How to Choose the Round Constants"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

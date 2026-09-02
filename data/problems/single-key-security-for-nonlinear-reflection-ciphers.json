@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-key-security-for-nonlinear-reflection-ciphers",
+  "group_id": "single-key-security-for-nonlinear-reflection-ciphers",
+  "title": "Single-Key Security for Nonlinear Reflection Ciphers",
+  "summary": "Known results cover reflection ciphers only with two independent keys; it remains open to prove the corresponding single-key result using a nonlinear involution and techniques that handle nonlinearity.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The starting point is a security result for reflection ciphers that applies only when two independent keys are used. Establish a corresponding security result for a single-key reflection cipher using a nonlinear involution $\\sigma$, and develop proof techniques that can handle this nonlinear setting despite the sum-capture theorem's requirement of linear mappings."
+  },
+  "scope": {
+    "domain": "Provable security of symmetric-key reflection ciphers, with emphasis on single-key designs and nonlinear involutions.",
+    "assumptions": [
+      "The starting security result is established only for two independent keys."
+    ],
+    "parameters": [
+      "single-key reflection cipher, the target keying configuration",
+      "nonlinear involution sigma, the proposed mechanism for addressing the single-key difficulties"
+    ],
+    "unresolved_remainder": "Establish the corresponding security result for a single-key reflection cipher using a nonlinear involution sigma, and develop proof techniques that handle the nonlinear setting despite the sum-capture theorem's requirement of linear mappings."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "reflection-ciphers",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 6",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as future work: current results apply only with two independent keys, while a nonlinear involution may address the single-key difficulties. It identifies the need for novel proof techniques because the sum-capture theorem requires linear mappings.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

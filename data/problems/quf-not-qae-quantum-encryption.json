@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quf-not-qae-quantum-encryption",
+  "group_id": "quf-not-qae-quantum-encryption",
+  "title": "Separating QUF from QAE",
+  "summary": "The source notes that QAE implies cQCA and leaves open whether the proposed construction exists to separate QUF from QAE.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a symmetric-key quantum encryption scheme that satisfies $\\mathrm{QUF}$ but not $\\mathrm{QAE}$, thereby proving $\\mathrm{QUF}\\not\\Rightarrow\\mathrm{QAE}$?"
+  },
+  "scope": {
+    "domain": "This concerns symmetric-key quantum encryption and relationships among quantum security notions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "QUF and QAE, the security notions whose implication is being tested"
+    ],
+    "unresolved_remainder": "Whether the scheme discussed below Proposition 4 exists and proves that QUF does not imply QAE."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptography",
+      "authenticated-encryption",
+      "unforgeability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Unforgeable Quantum Encryption",
+        "locator": "EUROCRYPT 2018, page 22",
+        "doi": "10.1007/978-3-319-78372-7_16",
+        "url": "https://eprint.iacr.org/2017/960",
+        "eprint": "2017/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this explicitly in the Discussion as an open question about the encryption scheme discussed below Proposition 4. The proposed route uses a one-time scheme with cQCA security for trivial adversarial side information but insecurity with nontrivial side information, followed by a PRF; existence of that base scheme remains open.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Unforgeable Quantum Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

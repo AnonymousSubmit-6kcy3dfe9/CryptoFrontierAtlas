@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "correction-term-selection-uniform-threshold-implementations",
+  "group_id": "correction-term-selection-uniform-threshold-implementations",
+  "title": "Selecting Correction Terms for Uniform Threshold Implementations",
+  "summary": "Correction terms can change uniformity while correctness and non-completeness remain unchanged, but a method that avoids exhaustive search for large functions remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a non-uniform threshold implementation of a large nonlinear Boolean function, find a method for selecting and combining correction terms so that the resulting implementation is uniform while correctness and non-completeness remain unchanged. The method should avoid exhaustive examination of all candidate correction terms and their combinations, which is infeasible for large functions."
+  },
+  "scope": {
+    "domain": "Threshold implementations of large nonlinear Boolean functions, focusing on achieving uniformity through correction terms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Boolean function size: the large-function regime",
+      "correction terms: candidates to select and combine"
+    ],
+    "unresolved_remainder": "Find a method for selecting and combining correction terms to obtain uniformity while keeping correctness and non-completeness unchanged, without exhaustively examining all candidate terms and combinations for large functions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "threshold-implementations",
+      "boolean-functions",
+      "uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The First Thorough Side-Channel Hardware Trojan",
+        "locator": "ASIACRYPT 2017, page 8",
+        "doi": "10.1007/978-3-319-70694-8_26",
+        "url": "https://eprint.iacr.org/2017/865",
+        "eprint": "2017/865"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explains that adding correction terms changes the design's uniformity without altering correctness and non-completeness, while exhaustive examination of all terms and combinations is infeasible for large functions. It leaves the method for obtaining a uniform construction unresolved.",
+      "citation_labels": [
+        "Maik Ender et al., The First Thorough Side-Channel Hardware Trojan"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimal-sop-for-rijndael-s-box",
+  "group_id": "minimal-sop-for-rijndael-s-box",
+  "title": "Minimal SOP for the Rijndael S-box",
+  "summary": "The reported Espresso optimization could not find a minimal SOP for the Rijndael S-box; determining one and its two-layer NAND implementation remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Finding a minimal sum-of-products (SOP) form for the Rijndael S-box was infeasible using the reported Espresso-based two-level logic optimization. Determine such a minimal SOP form and, via De Morgan's laws, the corresponding implementation with two layers of NAND gates."
+  },
+  "scope": {
+    "domain": "Two-level Boolean logic optimization for S-box implementations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Rijndael S-box — target Boolean function",
+      "sum-of-products form — representation to minimize",
+      "two NAND-gate layers — target implementation depth"
+    ],
+    "unresolved_remainder": "Determine a minimal SOP form for the Rijndael S-box and derive the corresponding two-layer NAND implementation via De Morgan's laws."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "logic-minimization",
+      "nand-circuits"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Thinking Outside the Superbox",
+        "locator": "CRYPTO 2021, page 13",
+        "doi": "10.1007/978-3-030-84252-9_12",
+        "url": "https://eprint.iacr.org/2021/293",
+        "eprint": "2021/293"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that finding the Rijndael S-box's minimal SOP with Espresso was infeasible. It also observes that De Morgan's laws convert an SOP form into a two-layer NAND implementation.",
+      "citation_labels": [
+        "Nicolas Bordes et al., Thinking Outside the Superbox"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

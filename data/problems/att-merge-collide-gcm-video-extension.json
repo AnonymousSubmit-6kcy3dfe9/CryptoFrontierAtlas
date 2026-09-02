@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "att-merge-collide-gcm-video-extension",
+  "group_id": "att-merge-collide-gcm-video-extension",
+  "title": "Att-Merge/Collide-GCM Video-Format Extension",
+  "summary": "The attack is demonstrated for image formats but not video formats; whether the conjectured video extension is feasible remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the Att-Merge/Collide-GCM attack can be extended from image file formats to video file formats so that one shared GCM ciphertext parses as two different valid videos under two distinct GCM keys. The image-format attack already achieves this shared-ciphertext, two-valid-files behavior, whereas the video-format extension was not implemented; video formats are more complex, and its feasibility was only conjectured. The unresolved task is therefore to construct such an extension, or establish whether it is possible, while preserving validity of both video parses under their respective keys."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of GCM-based attacks involving image and video file formats.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Att-Merge/Collide-GCM, the attack under extension",
+      "Image and video file formats, the source and target formats",
+      "A shared GCM ciphertext and two distinct GCM keys, the dual-valid parsing condition"
+    ],
+    "unresolved_remainder": "Construct the video-format extension, or determine whether it is possible, while preserving validity of both video parses under their respective keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "structural-cryptanalysis",
+      "gcm",
+      "file-formats"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fast Message Franking: From Invisible Salamanders to Encryptment",
+        "locator": "CRYPTO 2018, page 13",
+        "doi": "10.1007/978-3-319-96884-1_6",
+        "url": "https://eprint.iacr.org/2019/016",
+        "eprint": "2019/016"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The authors state that they did not implement Att-Merge for video formats because those formats are more complex than image formats, and explicitly conjecture that the extension is possible.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Fast Message Franking: From Invisible Salamanders to Encryptment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

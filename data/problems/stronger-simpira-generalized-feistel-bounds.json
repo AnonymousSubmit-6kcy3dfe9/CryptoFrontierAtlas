@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "stronger-simpira-generalized-feistel-bounds",
+  "group_id": "stronger-simpira-generalized-feistel-bounds",
+  "title": "Stronger Bounds for Simpira and Generalized Feistel Structures",
+  "summary": "Several Simpira permutations have indistinguishability proofs, but most stop at two to the sixty-fourth queries; stronger bounds with a better query–round tradeoff remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove stronger generic indistinguishability-from-random-permutation bounds for Simpira's Feistel-based permutations and other generalized Feistel structures. Existing proofs cover several Simpira permutations, but most available proofs do not go beyond $2^{64}$ queries, while approaching $2^{128}$ queries requires a very large number of rounds. Establish an improved provable query--round tradeoff, subject to the caveat that Simpira with $b=1$ is always an even permutation and can therefore be distinguished from a random permutation with $2^{128}-1$ queries."
+  },
+  "scope": {
+    "domain": "Generic random-permutation indistinguishability for Simpira's Feistel-based permutations and generalized Feistel structures.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Query count: resource level covered by an indistinguishability proof",
+      "Round count: construction cost in the desired query–round tradeoff",
+      "b: Simpira parameter identifying the exceptional b = 1 case"
+    ],
+    "unresolved_remainder": "Prove stronger generic indistinguishability bounds with an improved query–round tradeoff for Simpira and other generalized Feistel structures."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "simpira",
+      "generalized-feistel",
+      "indistinguishability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simpira v2: A Family of Efficient Permutations Using the AES Round Function",
+        "locator": "ASIACRYPT 2016, page 20",
+        "doi": "10.1007/978-3-662-53887-6_4",
+        "url": "https://eprint.iacr.org/2016/122",
+        "eprint": "2016/122"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly presents stronger security bounds for Simpira and other generalized Feistel structures as an open problem. It notes that most proofs stop at 2^64 queries and that nearing 2^128 queries requires many rounds, subject to the b = 1 parity caveat.",
+      "citation_labels": [
+        "Shay Gueron et al., Simpira v2: A Family of Efficient Permutations Using the AES Round Function"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

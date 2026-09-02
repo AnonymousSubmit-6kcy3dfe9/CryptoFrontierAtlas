@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "anonymous-ae-timing-side-channels",
+  "group_id": "anonymous-ae-timing-side-channels",
+  "title": "Timing Side-Channels in Anonymous AE",
+  "summary": "Anonymous AE's timing side-channel can reveal whether a nonce was anticipated; modeling, analyzing, and eliminating it remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Anonymous AE, the unresolved research task is to model, analyze, and eliminate timing side-channels arising from the use of $L_x$ and $N_x$. Phase 1 processes only headers in $L_x$ and is expected to be faster than Phase 2; this timing difference can leak information about whether a nonce was anticipated. A complete resolution must therefore characterize the timing leakage associated with these two phases and provide a way to eliminate it while preserving the stated operation of Anonymous AE."
+  },
+  "scope": {
+    "domain": "Timing side-channel analysis of the Anonymous AE authenticated-encryption construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Lx and Nx: named objects whose use gives rise to the timing side-channel",
+      "Phase 1 and Phase 2: processing phases whose relative timing is at issue"
+    ],
+    "unresolved_remainder": "Model, analyze, and eliminate the timing side-channels arising from use of Lx and Nx, including the leakage caused by the timing difference between Phase 1 and Phase 2, while preserving Anonymous AE's stated operation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "timing-side-channel",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Anonymous AE",
+        "locator": "ASIACRYPT 2019, page 24",
+        "doi": "10.1007/978-3-030-34621-8_7",
+        "url": "https://eprint.iacr.org/2019/1033",
+        "eprint": "2019/1033"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly labels the modeling, analysis, and elimination of timing side-channels as an open problem. It links the issue to Phase 1 being expected to run faster than Phase 2, potentially revealing whether a nonce was anticipated.",
+      "citation_labels": [
+        "John Chan et al., Anonymous AE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

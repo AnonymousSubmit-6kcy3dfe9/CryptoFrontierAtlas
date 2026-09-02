@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-user-double-encryption-matching-attacks",
+  "group_id": "multi-user-double-encryption-matching-attacks",
+  "title": "Matching Attacks for Multi-User Double Encryption",
+  "summary": "The bound is tight when n is at least k, including DES and AES; matching attacks remain open when n is much smaller than k.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the multi-user security setting for double encryption, the security bound is tight when $n \\geq k$, including the DES and AES settings; when $n \\ll k$, a regime occurring in Format-Preserving Encryption and several block-cipher designs, the unresolved task is to find attacks whose advantage matches the applicable bound."
+  },
+  "scope": {
+    "domain": "Multi-user security and attack discovery for double encryption in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n and k (parameters compared to determine the applicable bound regime)"
+    ],
+    "unresolved_remainder": "Find attacks whose advantage matches the applicable bound when n is much smaller than k."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "multi-user-security",
+      "double-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Multi-user Security of Double Encryption",
+        "locator": "EUROCRYPT 2017, page 3",
+        "doi": "10.1007/978-3-319-56614-6_13",
+        "url": "https://eprint.iacr.org/2017/145",
+        "eprint": "2017/145"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that the bound is tight when n is at least k, including DES and AES. It explicitly leaves finding matching attacks when n is much smaller than k as an open problem.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., The Multi-user Security of Double Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

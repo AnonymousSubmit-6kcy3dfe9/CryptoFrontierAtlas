@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-generic-ae-schemes-a9-a12",
+  "group_id": "security-of-generic-ae-schemes-a9-a12",
+  "title": "Security of Generic AE Schemes A9–A12",
+  "summary": "For generic nonce-based AE schemes A9–A12, neither strong security bounds nor insecurity was established; each must be given such a bound or shown insecure.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each $A_i$ ($9 \\le i \\le 12$), prove a strong security bound or establish insecurity."
+  },
+  "scope": {
+    "domain": "Security classification of generic nonce-based authenticated-encryption compositions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "i: index identifying each scheme from A9 through A12"
+    ],
+    "unresolved_remainder": "For every scheme A9–A12, prove a strong security bound or establish insecurity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 9",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists A9–A12 as four unresolved cases, reporting that neither strong security bounds nor insecurity had been established.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

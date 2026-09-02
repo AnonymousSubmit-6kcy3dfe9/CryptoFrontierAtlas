@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "chaghri-affine-layer-density",
+  "group_id": "chaghri-affine-layer-density",
+  "title": "Affine-Layer Density for Exponential Degree Growth",
+  "summary": "The design seeks exponential algebraic-degree growth with low-degree S-boxes and low FHE overhead; the required affine-layer density remains to be characterized.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the Chaghri-related component design, determine analytically, or by a more refined method, how dense the affine layer must be to obtain exponential algebraic-degree growth while retaining the low-degree S-box and low-FHE-overhead design conditions. The unresolved task is to characterize the required affine-layer density for that degree-growth objective; the supplied context does not specify a particular density measure."
+  },
+  "scope": {
+    "domain": "Design of Chaghri-related symmetric-cryptographic components with controlled algebraic-degree growth.",
+    "assumptions": [
+      "The design retains a low-degree S-box.",
+      "The design retains low FHE overhead."
+    ],
+    "parameters": [
+      "Affine-layer density, governing the targeted exponential algebraic-degree growth"
+    ],
+    "unresolved_remainder": "Determine analytically, or through a more refined method, how dense the affine layer must be to achieve exponential algebraic-degree growth."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "affine-layer",
+      "algebraic-degree",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping: Breaking Chaghri and More",
+        "locator": "EUROCRYPT 2023, page 28",
+        "doi": "10.1007/978-3-031-30634-1_10",
+        "url": "https://eprint.iacr.org/2022/991",
+        "eprint": "2022/991"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly lists this question among its open questions. It asks for a refined or analytical characterization of the affine-layer density needed for exponential degree growth.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping: Breaking Chaghri and More"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

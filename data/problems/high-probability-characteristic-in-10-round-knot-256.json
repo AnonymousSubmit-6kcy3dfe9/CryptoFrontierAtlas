@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "high-probability-characteristic-in-10-round-knot-256",
+  "group_id": "high-probability-characteristic-in-10-round-knot-256",
+  "title": "High-Probability Characteristic in 10-Round KNOT-256",
+  "summary": "The 10-round KNOT-256 differential was not exhaustively analyzed at or below average probability 2 to the minus 66, leaving open whether an omitted characteristic is unexpectedly likely under the default constants.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the 10-round KNOT-256 differential has an omitted characteristic $C$ with $p_{\\mathrm{avg}}(C)\\le 2^{-66}$ but unexpectedly high probability under the default constants."
+  },
+  "scope": {
+    "domain": "Fixed-key differential cryptanalysis of the 10-round KNOT-256 differential under its default round constants.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "10 rounds: the analyzed KNOT-256 round count",
+      "C: an omitted differential characteristic",
+      "2 to the minus 66: the upper bound on the characteristic's average probability",
+      "Default round constants: the fixed constants under which unexpectedly high probability is sought"
+    ],
+    "unresolved_remainder": "Whether an omitted characteristic at or below the average-probability bound has unexpectedly high probability under the default constants."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "fixed-key-model",
+      "knot-256"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Differential Cryptanalysis in the Fixed-Key Model",
+        "locator": "CRYPTO 2022, page 23",
+        "doi": "10.1007/978-3-031-15982-4_23",
+        "url": "https://eprint.iacr.org/2022/837",
+        "eprint": "2022/837"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports zero probability for the examined characteristics through selected average probabilities down to 2 to the minus 65, while those at 2 to the minus 66 or lower were not exhaustively analyzed. It argues that a high-probability characteristic is unlikely because each can be nonzero for only a very small fraction of round constants.",
+      "citation_labels": [
+        "Tim Beyne et al., Differential Cryptanalysis in the Fixed-Key Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

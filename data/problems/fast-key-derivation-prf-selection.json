@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fast-key-derivation-prf-selection",
+  "group_id": "fast-key-derivation-prf-selection",
+  "title": "PRF Selection for FAST Key Derivation",
+  "summary": "FAST fixes the key-derivation PRF interface and cites AES-CMAC as a typical option, but selecting or constructing a suitable PRF for the PRNG1 key remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In FAST, the key-derivation component uses a pseudorandom function $\\mathrm{PRF}_{\\lambda}$ with an $L$-bit key, variable-length input, and $\\lambda$-bit output; setting $\\lambda=L_1$ yields $K_{\\mathrm{SEQ}}$, the key used for $\\mathrm{PRNG}_1$. The PRF choice remains open: the unresolved task is to determine or construct a suitable PRF for deriving $K_{\\mathrm{SEQ}}$ for $\\mathrm{PRNG}_1$ while satisfying this stated interface. AES-CMAC is identified as a typical choice, but it is not fixed by the construction."
+  },
+  "scope": {
+    "domain": "Pseudorandom-function selection for FAST key derivation in format-preserving encryption and tokenization.",
+    "assumptions": [
+      "The PRF accepts an L-bit key and variable-length input and produces a λ-bit output."
+    ],
+    "parameters": [
+      "L: PRF key length",
+      "λ: PRF output length",
+      "L1: output-length setting used to derive KSEQ for PRNG1"
+    ],
+    "unresolved_remainder": "Determine or construct a suitable PRF satisfying the interface for deriving KSEQ for PRNG1."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "pseudorandom-functions",
+      "key-derivation",
+      "format-preserving-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "FAST: Secure and High Performance Format-Preserving Encryption and Tokenization",
+        "locator": "ASIACRYPT 2021, page 8",
+        "doi": "10.1007/978-3-030-92078-4_16",
+        "url": "https://eprint.iacr.org/2021/1171",
+        "eprint": "2021/1171"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves the PRF choice open and identifies AES-CMAC as a typical, non-mandatory choice.",
+      "citation_labels": [
+        "F. Betül Durak et al., FAST: Secure and High Performance Format-Preserving Encryption and Tokenization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

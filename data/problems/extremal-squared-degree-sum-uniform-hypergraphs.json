@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "extremal-squared-degree-sum-uniform-hypergraphs",
+  "group_id": "extremal-squared-degree-sum-uniform-hypergraphs",
+  "title": "Extremal Squared-Degree Sum in Uniform Hypergraphs",
+  "summary": "The only known upper bound is loose, and determining or tightly bounding the maximum squared-degree sum remains unresolved except in the well-understood graph case.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For integers $N,k,m$, let $H$ range over all simple $k$-uniform hypergraphs on vertex set $[N]$ having exactly $m$ distinct edges, and let $d_H(i)$ denote the number of edges containing vertex $i$. Determine, or tightly bound, the extremal quantity $$D_2(m)=\\max_H\\sum_{i=1}^{N}d_H(i)^2$$. The known upper bound is loose, and the general extremal problem is believed to be out of reach; only the special case $k=2$ is well understood."
+  },
+  "scope": {
+    "domain": "Extremal combinatorics of simple uniform hypergraphs and their vertex-degree sequences.",
+    "assumptions": [
+      "N, k, and m are integers"
+    ],
+    "parameters": [
+      "N: number of vertices",
+      "k: uniform edge size",
+      "m: number of distinct edges",
+      "D2(m): extremal maximum of the sum of squared vertex degrees"
+    ],
+    "unresolved_remainder": "Determine, or tightly bound, D2(m) for the general k-uniform hypergraph case; only k=2 is well understood."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [],
+    "tags": [
+      "hypergraphs",
+      "extremal-combinatorics",
+      "degree-sequences"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 3",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents estimation of D2(m) as challenging because the only known upper bound is loose and the general question is believed to be out of reach. It notes that only the graph case k=2 is well understood.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

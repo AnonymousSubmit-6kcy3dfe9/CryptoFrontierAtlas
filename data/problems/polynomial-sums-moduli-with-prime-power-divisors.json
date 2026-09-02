@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "polynomial-sums-moduli-with-prime-power-divisors",
+  "group_id": "polynomial-sums-moduli-with-prime-power-divisors",
+  "title": "Polynomial Sums for Moduli with Prime-Power Divisors",
+  "summary": "Squarefree moduli admit an exact formula and generally nonzero sums; for moduli with prime-power divisors, exact characterization and useful zero-sum behavior remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a polynomial function $F$ over $\\mathbb{Z}_q$, where $q$ has prime-power divisors, determine an exact characterization of the sum $\\sum_{x\\in\\mathbb{Z}_q} F(x) \\bmod q$ and establish whether this sum can satisfy a useful zero-sum property. The corresponding behavior for such moduli is unresolved; in particular, small-scale experiments over $\\mathbb{Z}_{2^y}$ suggest that the sum is not zero."
+  },
+  "scope": {
+    "domain": "Algebraic behavior of polynomial sums over residue rings in symmetric cryptanalysis.",
+    "assumptions": [
+      "F is a polynomial function over the residue ring modulo q.",
+      "q has prime-power divisors."
+    ],
+    "parameters": [
+      "F: polynomial function whose values are summed",
+      "q: modulus defining the residue ring and reduction of the sum",
+      "y: exponent in the power-of-two rings used in small-scale experiments"
+    ],
+    "unresolved_remainder": "Characterize the sum modulo q for moduli with prime-power divisors and determine whether it can satisfy a useful zero-sum property."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "polynomial-sums",
+      "residue-rings",
+      "zero-sum-property"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato",
+        "locator": "CRYPTO 2023, page 38",
+        "doi": "10.1007/978-3-031-38548-3_11",
+        "url": "https://eprint.iacr.org/2023/822",
+        "eprint": "2023/822"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts the exact squarefree-modulus formula with the missing characterization when q has prime-power divisors. Small power-of-two experiments suggest that the sum is nonzero rather than yielding a zero-sum.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., Cryptanalysis of Symmetric Primitives over Rings and a Key Recovery Attack on Rubato"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

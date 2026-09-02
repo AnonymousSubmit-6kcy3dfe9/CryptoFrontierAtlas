@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "maximal-s-box-decomposition-invariants",
+  "group_id": "maximal-s-box-decomposition-invariants",
+  "title": "Invariants of Maximal S-Box Decompositions",
+  "summary": "For decompositions of a bijection, maximality ensures irreducible S-box components; whether it forces equal component counts or size spectra remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a bijective function, consider any two maximal decompositions, where a decomposition is maximal when none of its individual S-boxes can be decomposed further. The unresolved question is whether the two maximal decompositions must contain the same number of S-boxes and, more strongly, must have the same size spectrum, meaning the same multiset of S-box sizes."
+  },
+  "scope": {
+    "domain": "Structural questions about maximal S-box decompositions of bijective functions.",
+    "assumptions": [
+      "The function is bijective.",
+      "Each decomposition is maximal: none of its individual S-boxes can be decomposed further."
+    ],
+    "parameters": [
+      "S-box count: the number of components compared between decompositions",
+      "Size spectrum: the multiset of S-box sizes compared between decompositions"
+    ],
+    "unresolved_remainder": "Whether any two maximal decompositions of the same bijective function must have equal S-box counts and, more strongly, equal size spectra."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "s-boxes",
+      "maximal-decompositions",
+      "size-spectrum"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Pitfalls and Shortcomings for Decompositions and Alignment",
+        "locator": "EUROCRYPT 2023, page 7",
+        "doi": "10.1007/978-3-031-30634-1_11",
+        "url": "https://eprint.iacr.org/2023/240",
+        "eprint": "2023/240"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper defines maximal decompositions by non-refinability and explicitly leaves the component-count question open, along with the stronger size-spectrum question.",
+      "citation_labels": [
+        "Baptiste Lambin et al., Pitfalls and Shortcomings for Decompositions and Alignment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

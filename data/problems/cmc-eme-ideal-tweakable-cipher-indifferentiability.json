@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cmc-eme-ideal-tweakable-cipher-indifferentiability",
+  "group_id": "cmc-eme-ideal-tweakable-cipher-indifferentiability",
+  "title": "Indifferentiability of CMC or EME from an Ideal Tweakable Cipher",
+  "summary": "CMC and EME have been proved strong pseudorandom permutations, but whether either is indifferentiable from an ideal tweakable cipher remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The receiver-binding analysis of committing Encode-then-Encipher assumes an ideal variable-input-length tweakable cipher, meaning that a fresh uniformly random permutation is drawn for each distinct key--tweak pair. CMC and EME are mature variable-input-length tweakable-cipher constructions proved to be strong pseudorandom permutations, but it is unknown whether either is indifferentiable from an ideal tweakable cipher. Determine whether CMC or EME, possibly after suitable modification, satisfies this indifferentiability requirement and can therefore instantiate the ideal cipher assumed by the analysis."
+  },
+  "scope": {
+    "domain": "Cryptographic design and security analysis of variable-input-length tweakable ciphers for committing authenticated encryption.",
+    "assumptions": [
+      "The receiver-binding analysis assumes an ideal variable-input-length tweakable cipher.",
+      "A fresh uniformly random permutation is drawn for each distinct key--tweak pair."
+    ],
+    "parameters": [
+      "CMC and EME: candidate mature variable-input-length tweakable-cipher constructions",
+      "Key--tweak pair: identifies the permutation in the ideal model"
+    ],
+    "unresolved_remainder": "Determine whether CMC or EME, possibly after suitable modification, satisfies the indifferentiability requirement and can instantiate the ideal tweakable cipher assumed by the analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.macs-authenticated-encryption"
+    ],
+    "tags": [
+      "tweakable-ciphers",
+      "indifferentiability",
+      "authenticated-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Message Franking via Committing Authenticated Encryption",
+        "locator": "CRYPTO 2017, page 15",
+        "doi": "10.1007/978-3-319-63697-9_3",
+        "url": "https://eprint.iacr.org/2017/664",
+        "eprint": "2017/664"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the ideal tweakable cipher as the model used in the receiver-binding proof. It notes that CMC and EME have been proved strong pseudorandom permutations, while their indifferentiability from the ideal model remains unknown.",
+      "citation_labels": [
+        "Paul Grubbs et al., Message Franking via Committing Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

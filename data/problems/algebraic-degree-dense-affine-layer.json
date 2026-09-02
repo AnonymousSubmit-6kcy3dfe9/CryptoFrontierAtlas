@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "algebraic-degree-dense-affine-layer",
+  "group_id": "algebraic-degree-dense-affine-layer",
+  "title": "Algebraic Degree Bounds with Dense Affine Layers",
+  "summary": "The source leaves open the determination of tight upper bounds for the algebraic degree of the cipher polynomial with a dense affine layer.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine tight upper bounds for the algebraic degree of the cipher polynomial when the affine layer is dense."
+  },
+  "scope": {
+    "domain": "Algebraic degree questions for cipher polynomials in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Dense affine layer: the structural condition under which the algebraic degree is to be bounded"
+    ],
+    "unresolved_remainder": "Determine tight upper bounds for the algebraic degree of the cipher polynomial when the affine layer is dense."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "algebraic-degree",
+      "cipher-polynomial",
+      "affine-layer"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping: Breaking Chaghri and More",
+        "locator": "EUROCRYPT 2023, page 28",
+        "doi": "10.1007/978-3-031-30634-1_10",
+        "url": "https://eprint.iacr.org/2022/991",
+        "eprint": "2022/991"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this question as one of several open questions, specifically asking for tight upper bounds on algebraic degree in the dense-affine-layer setting.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping: Breaking Chaghri and More"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

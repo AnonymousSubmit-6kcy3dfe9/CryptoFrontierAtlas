@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-analysis-simon-clustering-effect",
+  "group_id": "tight-analysis-simon-clustering-effect",
+  "title": "Tight Analysis of Simon’s Clustering Effect",
+  "summary": "Simon’s linear-potential bound grows significantly with window size and is looser than Simeck’s; tightly capturing the full clustering effect and its security impact remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Simon cipher, the available bound on the linear potential increases significantly with the window size $w$ and is not as tight as the corresponding bound for Simeck; determine how to capture the full clustering effect tightly enough to establish whether this effect further reduces Simon's security margin."
+  },
+  "scope": {
+    "domain": "Linear cryptanalysis of clustering effects in the Simon block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Window size w — the window size associated with the linear-potential bound"
+    ],
+    "unresolved_remainder": "Capture Simon’s full clustering effect tightly enough to determine whether it further reduces the cipher’s security margin."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "simon",
+      "clustering-effect"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Clustering Effect in Simon and Simeck",
+        "locator": "ASIACRYPT 2021, page 26",
+        "doi": "10.1007/978-3-030-92062-3_10",
+        "url": "https://eprint.iacr.org/2021/1198",
+        "eprint": "2021/1198"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports that Simon’s linear-potential bound grows significantly with window size and is less tight than Simeck’s. It calls for further work to capture the full clustering effect and assess any additional reduction in Simon’s security margin.",
+      "citation_labels": [
+        "Gaëtan Leurent et al., Clustering Effect in Simon and Simeck"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

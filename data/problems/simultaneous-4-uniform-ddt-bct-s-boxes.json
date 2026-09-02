@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "simultaneous-4-uniform-ddt-bct-s-boxes",
+  "group_id": "simultaneous-4-uniform-ddt-bct-s-boxes",
+  "title": "Simultaneous 4-Uniform DDT and BCT S-Boxes",
+  "summary": "Four-uniform DDTs are common among differentially strong S-boxes, but whether an S-box can also attain a four-uniform BCT remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Most differentially strong $n$-bit-to-$n$-bit S-boxes are designed to have a 4-uniform DDT, whereas achieving a 4-uniform BCT appears difficult, especially as $n$ increases. Determine whether there exists an $n$-bit-to-$n$-bit S-box whose DDT and BCT are simultaneously 4-uniform, with particular emphasis on the practically common sizes $n\\in\\{4,8\\}$."
+  },
+  "scope": {
+    "domain": "Design of S-boxes with joint differential and boomerang uniformity.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: the common input and output bit width, with particular interest in 4 and 8 bits"
+    ],
+    "unresolved_remainder": "Whether an n-bit-to-n-bit S-box exists whose DDT and BCT are both 4-uniform, especially for n equal to 4 or 8."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "differential-uniformity",
+      "boomerang-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Boomerang Connectivity Table: A New Cryptanalysis Tool",
+        "locator": "EUROCRYPT 2018, page 26",
+        "doi": "10.1007/978-3-319-78375-8_22",
+        "url": "https://eprint.iacr.org/2018/161",
+        "eprint": "2018/161"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks whether 4-uniform DDT and BCT can be achieved simultaneously. It argues that attaining a 4-uniform BCT becomes difficult as S-box size increases but provides neither a construction nor a nonexistence proof.",
+      "citation_labels": [
+        "Carlos Cid et al., Boomerang Connectivity Table: A New Cryptanalysis Tool"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

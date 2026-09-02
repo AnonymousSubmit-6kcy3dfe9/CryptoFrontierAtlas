@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rectangle-80-lower-data-differential-attack",
+  "group_id": "rectangle-80-lower-data-differential-attack",
+  "title": "Lower-Data Differential Attack on RECTANGLE-80",
+  "summary": "A claimed lower-data RECTANGLE-80 attack uses a reportedly better same-round distinguisher but remains unverified; instantiate it and determine its time and memory costs.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Open question. For RECTANGLE-80, determine whether a previously claimed lower-data differential attack, based on a distinguisher reported to achieve better probability without reducing round coverage, can be fully specified and verified using the key-guessing techniques presented in Generic Framework for Key-Guessing Improvements. The claimed attack lacks a description and time-complexity analysis and was not verified because of the large time complexity of its key-guessing phase. If the attack can be instantiated, quantify its time and memory complexity and compare these costs with those of the RECTANGLE-80 attack presented in Generic Framework for Key-Guessing Improvements."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the RECTANGLE-80 block cipher using key-guessing techniques.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Data complexity — the claimed attack's intended improvement",
+      "Distinguisher probability and round coverage — the reported advantage at unchanged coverage",
+      "Time and memory complexity — costs to quantify and compare"
+    ],
+    "unresolved_remainder": "Fully specify and verify the claimed attack using the paper's key-guessing techniques, then quantify and compare its time and memory complexity against the paper's RECTANGLE-80 attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "key-guessing",
+      "rectangle-80"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Framework for Key-Guessing Improvements",
+        "locator": "ASIACRYPT 2021, page 26",
+        "doi": "10.1007/978-3-030-92062-3_16",
+        "url": "https://eprint.iacr.org/2021/1238",
+        "eprint": "2021/1238"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a claimed lower-data differential attack but says that no description or time analysis was given and that verification was blocked by the key-guessing phase's large time complexity. It conjectures that the paper's techniques could make the attack work, while expecting worse time and memory costs than its own attack.",
+      "citation_labels": [
+        "Marek Broll et al., Generic Framework for Key-Guessing Improvements"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

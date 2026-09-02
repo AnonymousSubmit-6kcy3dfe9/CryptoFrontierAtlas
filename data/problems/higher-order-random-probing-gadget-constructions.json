@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-order-random-probing-gadget-constructions",
+  "group_id": "higher-order-random-probing-gadget-constructions",
+  "title": "Higher-Order Random Probing Gadget Constructions",
+  "summary": "The three-halves benchmark favors three-share addition-and-copy gadgets over four-share ISW gadgets in complexity and tolerated leakage; higher-order gadget construction and global comparison remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct gadget families that achieve amplification orders higher than $\\frac{3}{2}$, considering both ISW gadgets with more than four shares and alternative gadgets, and compare the resulting constructions globally. The comparison should evaluate the amplification order, complexity, and tolerated leakage probability of each construction. A motivating benchmark is that, for order $\\frac{3}{2}$, a four-share ISW construction is more complex and tolerates a lower leakage probability than the three-share construction using addition and copy gadgets."
+  },
+  "scope": {
+    "domain": "This problem concerns random probing security and cryptographic gadget construction in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "amplification order, the target amplification level",
+      "number of shares, the share count for a gadget construction",
+      "complexity, a criterion for comparing constructions",
+      "tolerated leakage probability, a criterion for comparing constructions"
+    ],
+    "unresolved_remainder": "Construct gadget families with amplification order higher than 3/2, including ISW gadgets with more than four shares and alternative gadgets, and globally compare their amplification order, complexity, and tolerated leakage probability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "random-probing-security",
+      "gadget-construction",
+      "amplification-order"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Random Probing Security: Verification, Composition, Expansion and New Constructions",
+        "locator": "CRYPTO 2020, page 26",
+        "doi": "10.1007/978-3-030-56784-2_12",
+        "url": "https://eprint.iacr.org/2020/786",
+        "eprint": "2020/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts three-share addition-and-copy gadgets with four-share ISW gadgets at amplification order 3/2, noting differences in complexity and tolerated leakage. It then presents higher-order ISW or alternative gadgets and their global comparison as an open construction problem.",
+      "citation_labels": [
+        "Sonia Belaïd et al., Random Probing Security: Verification, Composition, Expansion and New Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

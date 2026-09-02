@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "concrete-spn-t-wise-independence",
+  "group_id": "concrete-spn-t-wise-independence",
+  "title": "Concrete SPN t-Wise Independence",
+  "summary": "Existing concrete-S-box SPN results address only pairwise independence; the open task is to characterize fixed layers that yield higher t-wise independence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For substitution-permutation networks (SPNs) with $t$-wise independence as the security goal, prior constructions of $t$-wise-independent permutations are far from existing practical designs, and existing results for SPNs instantiated with concrete S-boxes address only pairwise independence. Identify concrete, fixed choices of the nonlinear and linear layers and prove which choices yield $t$-wise independence and which do not, without modeling the S-box as a random permutation oracle; in particular, establish $t$-wise independence for such networks for every $t \\ge 3$. Under the independent-round-keys assumption for SPNs, $t$-wise independence is expected to become $t$-wise pseudorandomness when the key schedule is instantiated appropriately; determine the precise role of the key schedule by characterizing which concrete instantiations support this transition and under what conditions. Prove that multi-round AES with independent round keys is $t$-wise independent for $t>2$. For the AES design, existing bounds make differential probabilities arbitrarily close to the ideal value $2^{-128}$ by first controlling statistical distance; derive a direct bound on these differential probabilities that does not proceed through a statistical-distance bound."
+  },
+  "scope": {
+    "domain": "The design and analysis of symmetric block ciphers, focusing on concrete SPN nonlinear and linear layers and t-wise independence.",
+    "assumptions": [
+      "Independent round keys for SPNs, including the multi-round AES case.",
+      "The S-box is not modeled as a random permutation oracle."
+    ],
+    "parameters": [
+      "t, the order of independence",
+      "The nonlinear and linear layer choices, the concrete SPN components to classify",
+      "The key schedule, whose concrete instantiation determines support for the transition to t-wise pseudorandomness",
+      "AES's 128-bit block size, which sets the ideal differential-probability value"
+    ],
+    "unresolved_remainder": "Determine which concrete fixed nonlinear and linear layers yield or fail to yield t-wise independence for every t >= 3; characterize key-schedule instantiations supporting the transition to t-wise pseudorandomness; prove the multi-round AES claim for t > 2; and derive a direct AES differential-probability bound without an intermediate statistical-distance bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "block-ciphers",
+      "s-boxes",
+      "t-wise-independence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The $t$-wise Independence of Substitution-Permutation Networks",
+        "locator": "CRYPTO 2021, page 4",
+        "doi": "10.1007/978-3-030-84259-8_16",
+        "url": "https://eprint.iacr.org/2021/507",
+        "eprint": "2021/507"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as part of its research program, asking which concrete fixed nonlinear and linear SPN layers work and requiring analysis without modeling the S-box as a random permutation oracle. It contrasts this broader program with concrete results addressing pairwise independence.",
+      "citation_labels": [
+        "Tianren Liu et al., The $t$-wise Independence of Substitution-Permutation Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

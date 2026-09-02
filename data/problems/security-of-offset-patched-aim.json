@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-offset-patched-aim",
+  "group_id": "security-of-offset-patched-aim",
+  "title": "Security of Offset-Patched AIM",
+  "summary": "In the single-pair setting, random S-box offsets mitigate AIM's known simultaneous-linearization attack, but resistance to algebraic and other attacks remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine the security of offset-patched $\\mathrm{AIM}$ in the single-plaintext/ciphertext-pair setting, where a random constant $c_i$ is XORed before each first-layer S-box. The patch prevents simultaneous linearization of the first-layer S-boxes and thereby mitigates the existing attack, while no attacks arising from the extra constants are known. The unresolved task is to establish whether the patched construction resists algebraic and other attacks under this single-pair condition."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the offset-patched AIM construction.",
+    "assumptions": [
+      "Only a single plaintext/ciphertext pair is considered."
+    ],
+    "parameters": [
+      "c_i: a random constant XORed before each first-layer S-box"
+    ],
+    "unresolved_remainder": "Establish whether offset-patched AIM resists algebraic and other attacks under the single-pair condition."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "aim",
+      "s-box"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Attacks on Round-Reduced Rain and Full AIM-III",
+        "locator": "ASIACRYPT 2023, page 18",
+        "doi": "10.1007/978-981-99-8727-6_10",
+        "url": "https://eprint.iacr.org/2023/1397",
+        "eprint": "2023/1397"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents random pre-S-box constants as a patch that prevents simultaneous linearization and mitigates the existing attack. It reports no known attacks arising from these constants in the single-pair setting, leaving resistance to algebraic and other attacks open.",
+      "citation_labels": [
+        "Kaiyi Zhang et al., Algebraic Attacks on Round-Reduced Rain and Full AIM-III"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

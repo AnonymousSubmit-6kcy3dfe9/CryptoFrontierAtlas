@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xocb-multi-user-security",
+  "group_id": "xocb-multi-user-security",
+  "title": "XOCB Multi-User Security",
+  "summary": "Classical single-user security is considered for XOCB, but its security in the multi-user setting remains unanalyzed.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For XOCB, classical single-user security is considered, while multi-user security is left open. The unresolved task is to analyze XOCB in a multi-user security model."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption mode security in classical single-user and multi-user settings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "XOCB, the authenticated-encryption mode under analysis"
+    ],
+    "unresolved_remainder": "Analyze XOCB security in a multi-user security model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "multi-user-security",
+      "security-reduction"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "XOCB: Beyond-Birthday-Bound Secure Authenticated Encryption Mode with Rate-One Computation",
+        "locator": "EUROCRYPT 2023, page 4",
+        "doi": "10.1007/978-3-031-30634-1_18",
+        "url": "https://eprint.iacr.org/2023/253",
+        "eprint": "2023/253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly states that it considers classical single-user security for XOCB and leaves multi-user security open.",
+      "citation_labels": [
+        "Zhenzhen Bao et al., XOCB: Beyond-Birthday-Bound Secure Authenticated Encryption Mode with Rate-One Computation"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

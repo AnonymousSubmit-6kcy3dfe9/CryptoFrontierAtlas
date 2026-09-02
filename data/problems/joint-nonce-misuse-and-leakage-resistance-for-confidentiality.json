@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "joint-nonce-misuse-and-leakage-resistance-for-confidentiality",
+  "group_id": "joint-nonce-misuse-and-leakage-resistance-for-confidentiality",
+  "title": "Joint Nonce-Misuse and Leakage Resistance for Confidentiality",
+  "summary": "Joint nonce-misuse and leakage resistance is possible for integrity but believed impossible for confidentiality; the conjecture remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether authenticated encryption can jointly provide confidentiality with nonce-misuse resistance and leakage resistance under reasonable leakage models."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption confidentiality in symmetric cryptography under nonce misuse and leakage.",
+    "assumptions": [
+      "reasonable leakage models"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether the joint confidentiality guarantee is possible under reasonable leakage models."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "leakage-resistance",
+      "nonce-misuse-resistance"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle",
+        "locator": "CRYPTO 2020, page 7",
+        "doi": "10.1007/978-3-030-56784-2_13",
+        "url": "https://eprint.iacr.org/2020/211",
+        "eprint": "2020/211"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the joint guarantee as possible for integrity but believed impossible for confidentiality. It points to prior work and describes choosing between alternative confidentiality guarantees rather than resolving the conjecture.",
+      "citation_labels": [
+        "Davide Bellizia et al., Mode-Level vs. Implementation-Level Physical Security in Symmetric Cryptography: A Practical Guide Through the Leakage-Resistance Jungle"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

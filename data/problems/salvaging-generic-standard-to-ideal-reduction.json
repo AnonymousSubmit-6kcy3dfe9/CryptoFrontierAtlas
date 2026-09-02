@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "salvaging-generic-standard-to-ideal-reduction",
+  "group_id": "salvaging-generic-standard-to-ideal-reduction",
+  "title": "Salvaging the Generic Standard-to-Ideal Reduction",
+  "summary": "The classical first-step reduction gives a lower bound on an upper bound and cannot achieve optimal security in that role; it remains open whether it can be salvaged for useful, ideally optimal, security bounds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For tweakable blockciphers, determine whether the generic standard-to-ideal reduction can be salvaged for standard-model security proofs so that it yields useful, ideally optimal, security bounds, despite the limitation that this classical first-step reduction gives a lower bound on an upper bound and therefore cannot achieve optimal security when used in that role."
+  },
+  "scope": {
+    "domain": "Security reductions for tweakable blockciphers in standard-model cryptographic proofs.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the generic standard-to-ideal reduction can be salvaged to yield useful, ideally optimal, security bounds for standard-model proofs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-blockciphers",
+      "security-reductions",
+      "standard-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security",
+        "locator": "CRYPTO 2017, page 21",
+        "doi": "10.1007/978-3-319-63715-0_24",
+        "url": "https://eprint.iacr.org/2017/474",
+        "eprint": "2017/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit question about salvaging the generic standard-to-ideal reduction. It notes that Theorem 4 gives a lower bound on an upper bound and that using this classical first step cannot yield optimal security.",
+      "citation_labels": [
+        "Bart Mennink et al., Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

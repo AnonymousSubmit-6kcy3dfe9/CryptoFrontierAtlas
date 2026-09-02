@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "3sdpwou-for-block-ciphers",
+  "group_id": "3sdpwou-for-block-ciphers",
+  "title": "Using 3SDPwoU for Block Ciphers",
+  "summary": "3SDPwoU has been applied to stream ciphers, but whether it can be used for block ciphers remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The three-subset division property without unknown subset ($\\text{3SDPwoU}$) was applied to stream ciphers by splitting the input space into two parts according to whether $s_u=0$ or $s_u=1$; this removes the unknown subset but means that the key can no longer be ignored. The unresolved task is to determine whether $\\text{3SDPwoU}$ can be used for block ciphers."
+  },
+  "scope": {
+    "domain": "Division-property cryptanalysis of stream and block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "s_u: value used to split the input space into the cases 0 and 1"
+    ],
+    "unresolved_remainder": "Whether 3SDPwoU can be used for block ciphers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "division-property",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Lower Bounds on the Degree of Block Ciphers",
+        "locator": "ASIACRYPT 2020, page 6",
+        "doi": "10.1007/978-3-030-64837-4_18",
+        "url": "https://eprint.iacr.org/2020/1051",
+        "eprint": "2020/1051"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents 3SDPwoU as a technique applied to stream ciphers and notes that its possible use for block ciphers was mentioned but left as an open problem.",
+      "citation_labels": [
+        "Phil Hebborn et al., Lower Bounds on the Degree of Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

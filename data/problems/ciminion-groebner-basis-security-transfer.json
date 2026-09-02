@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ciminion-groebner-basis-security-transfer",
+  "group_id": "ciminion-groebner-basis-security-transfer",
+  "title": "Ciminion Gröbner-Basis Security Transfer",
+  "summary": "In the weaker Ciminion variant, differencing two or more texts can remove the final key addition; whether its Gröbner-basis security transfers to final Ciminion remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Ciminion, prove or refute the conjecture that security against Gr?bner-basis attacks of the weaker Ciminion variant with key addition after expansion implies security of the final Ciminion construction. The conjecture is motivated by the fact that, in the weaker variant, differences between two or more texts can remove the final key addition, but the security implication for the final construction remains unresolved."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of Ciminion, comparing a weaker key-after-expansion variant with the final construction.",
+    "assumptions": [
+      "The weaker Ciminion variant with key addition after expansion is secure against Gröbner-basis attacks."
+    ],
+    "parameters": [
+      "Text count — differences between two or more texts can remove the final key addition in the weaker variant"
+    ],
+    "unresolved_remainder": "Prove or refute that Gröbner-basis security of the weaker variant implies security of the final Ciminion construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "ciminion",
+      "algebraic-cryptanalysis",
+      "groebner-basis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields",
+        "locator": "EUROCRYPT 2021, page 21",
+        "doi": "10.1007/978-3-030-77886-6_1",
+        "url": "https://eprint.iacr.org/2021/267",
+        "eprint": "2021/267"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents the security implication from the weaker variant to the final construction as a conjecture rather than a proved result. It motivates the conjecture by observing that differences of multiple texts can remove the weaker variant’s final key addition.",
+      "citation_labels": [
+        "Christoph Dobraunig et al., Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

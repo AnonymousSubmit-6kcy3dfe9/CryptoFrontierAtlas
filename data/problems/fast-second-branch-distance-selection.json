@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fast-second-branch-distance-selection",
+  "group_id": "fast-second-branch-distance-selection",
+  "title": "Selecting FAST’s Second Branch Distance",
+  "summary": "For ell greater than two, FAST chooses w near the square root of ell, but selecting the second branch distance w′ amid diffusion and performance constraints remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine an appropriate $w'$ as a function of $(\\ell,w)$ that preserves security and performance."
+  },
+  "scope": {
+    "domain": "Branch-distance parameter selection for the FAST format-preserving encryption construction.",
+    "assumptions": [
+      "ell is greater than 2"
+    ],
+    "parameters": [
+      "ell: parameter governing the branch-distance setting",
+      "w: parameter chosen near the square root of ell",
+      "w′: second branch distance subject to diffusion and performance tradeoffs"
+    ],
+    "unresolved_remainder": "Determine how to select w′ in relation to ell and w under the competing diffusion and performance considerations."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "format-preserving-encryption",
+      "block-ciphers",
+      "parameter-selection"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "FAST: Secure and High Performance Format-Preserving Encryption and Tokenization",
+        "locator": "ASIACRYPT 2021, page 23",
+        "doi": "10.1007/978-3-030-92078-4_16",
+        "url": "https://eprint.iacr.org/2021/1171",
+        "eprint": "2021/1171"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly asks how to select w′. It places the question amid competing diffusion and performance constraints, with w chosen near the square root of ell when ell is greater than two.",
+      "citation_labels": [
+        "F. Betül Durak et al., FAST: Secure and High Performance Format-Preserving Encryption and Tokenization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

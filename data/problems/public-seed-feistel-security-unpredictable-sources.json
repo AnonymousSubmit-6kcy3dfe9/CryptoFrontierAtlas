@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "public-seed-feistel-security-unpredictable-sources",
+  "group_id": "public-seed-feistel-security-unpredictable-sources",
+  "title": "Public-Seed Feistel Security for Unpredictable Sources",
+  "summary": "The available security result covers reset-secure sources; the open task is to establish the analogous guarantee for unpredictable sources.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove, for a Feistel-based public-seed pseudorandom permutation construction, a theorem establishing CP-sequential indifferentiability or psPRP security for unpredictable sources, analogous to the available result for reset-secure sources. The available result applies only to reset-secure sources, so the unresolved task is to obtain the corresponding security guarantee when the source is unpredictable."
+  },
+  "scope": {
+    "domain": "This concerns design and security analysis of Feistel-based public-seed pseudorandom permutations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Feistel-based public-seed pseudorandom permutation construction (target construction)",
+      "unpredictable sources (target source class)",
+      "reset-secure sources (source class covered by the available result)"
+    ],
+    "unresolved_remainder": "Establish the corresponding CP-sequential indifferentiability or psPRP security guarantee for unpredictable sources, analogous to the available result for reset-secure sources."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "feistel-network",
+      "pseudorandom-permutation",
+      "indifferentiability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Public-Seed Pseudorandom Permutations",
+        "locator": "EUROCRYPT 2017, page 5",
+        "doi": "10.1007/978-3-319-56614-6_14",
+        "url": "https://eprint.iacr.org/2017/539",
+        "eprint": "2017/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that its result handles only reset-secure sources and explicitly leaves a similar result for unpredictable sources open.",
+      "citation_labels": [
+        "Pratik Soni et al., Public-Seed Pseudorandom Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

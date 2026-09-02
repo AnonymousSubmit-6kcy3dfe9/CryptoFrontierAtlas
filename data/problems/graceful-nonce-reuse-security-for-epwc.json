@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "graceful-nonce-reuse-security-for-epwc",
+  "group_id": "graceful-nonce-reuse-security-for-epwc",
+  "title": "Graceful Nonce-Reuse Security for EPWC",
+  "summary": "EPWC falls back to birthday-bound security once any nonce is repeated twice; the open task is to modify it so security degrades gracefully with maximum nonce multiplicity.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a modification of the $\\mathrm{EPWC}$ authentication mode whose security degrades gracefully as a function of the maximum number of repetitions of any nonce. The construction should avoid $\\mathrm{EPWC}$'s current limitation, shared more generally by encrypted Wegman--Carter MACs, that security falls back to the birthday bound as soon as an adversary repeats even one nonce twice."
+  },
+  "scope": {
+    "domain": "EPWC authentication modes and encrypted Wegman–Carter MACs under nonce reuse.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Maximum nonce multiplicity: governs the desired graceful degradation of security"
+    ],
+    "unresolved_remainder": "Construct an EPWC modification whose security degrades gracefully with maximum nonce multiplicity rather than immediately falling back to the birthday bound after a nonce is repeated twice."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "nonce-reuse",
+      "macs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 7",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly presents graceful nonce-repetition security degradation for a modified EPWC mode as a pending question, contrasting it with EPWC's immediate fallback to birthday-bound security upon nonce reuse.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

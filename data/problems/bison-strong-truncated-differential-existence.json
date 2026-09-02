@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bison-strong-truncated-differential-existence",
+  "group_id": "bison-strong-truncated-differential-existence",
+  "title": "Existence of Strong Truncated Differentials for bison",
+  "summary": "Strong differential bounds make strong truncated differentials seem unlikely, but whether bison admits one remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Although bison has strong bounds on differentials, they provide only heuristic evidence that no strong truncated differential exists. Determine whether bison admits a strong truncated differential: either prove that none exists or exhibit one."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of the bison block cipher, focusing on strong truncated differentials.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether bison admits a strong truncated differential by proving that none exists or exhibiting one."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "differential-cryptanalysis",
+      "truncated-differentials",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 24",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents strong differential bounds as heuristic evidence that strong truncated differentials are unlikely. It leaves the question open, requiring either a proof of nonexistence or an exhibited differential.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-fourier-product-state-preparation",
+  "group_id": "quantum-fourier-product-state-preparation",
+  "title": "Quantum Fourier-Product State Preparation",
+  "summary": "With roughly uniform Fourier coefficients, equality filtering needs on the order of two raised to n over two queries; a competitive generic algorithm for the general case remains unknown.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Boolean functions $f,g:\\mathbb{F}_2^n\\to\\{-1,1\\}$, given query access to $g$ and a black box preparing the Fourier-coefficient state $\\sum_x \\widehat{f}(x)\\lvert x\\rangle$, determine whether there is a competitive generic quantum algorithm that prepares a state whose amplitudes are proportional to $\\widehat{g}(x)\\widehat{f}(x)$ for every $x$. A generic equality-filtering method can achieve this with $O(2^{n/2})$ queries when the Fourier coefficients are distributed approximately uniformly, but the unresolved task is to obtain a competitive algorithm for the general setting."
+  },
+  "scope": {
+    "domain": "Quantum state preparation from Fourier coefficients of Boolean functions over binary vector spaces.",
+    "assumptions": [
+      "Query access to g and black-box access to the Fourier-coefficient state of f.",
+      "Approximate uniformity of the Fourier coefficients for the stated equality-filtering bound."
+    ],
+    "parameters": [
+      "n: dimension of the binary input space",
+      "f and g: Boolean functions defining the supplied and target Fourier amplitudes"
+    ],
+    "unresolved_remainder": "Determine whether a competitive generic quantum algorithm can prepare the state with amplitudes proportional to the pointwise product of the two Fourier spectra in the general setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "quantum-query-complexity",
+      "boolean-functions",
+      "fourier-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 29",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source states this as Problem 1, then describes equality filtering as a baseline under approximately uniform Fourier coefficients. It says that no competitive generic algorithm is known more generally.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

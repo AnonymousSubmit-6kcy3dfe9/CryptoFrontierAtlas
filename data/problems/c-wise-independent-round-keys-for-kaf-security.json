@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "c-wise-independent-round-keys-for-kaf-security",
+  "group_id": "c-wise-independent-round-keys-for-kaf-security",
+  "title": "c-Wise Independent Round Keys for KAF Security",
+  "summary": "The paper’s results do not settle whether c-wise independent round keys are desirable or sufficient for KAF security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a $cn$-bit main key, determine whether $c$-wise independent round keys are desirable or sufficient for KAF security."
+  },
+  "scope": {
+    "domain": "This concerns probabilistic key-schedule design for key-alternating Feistel ciphers.",
+    "assumptions": [
+      "c is an integer."
+    ],
+    "parameters": [
+      "c: sets the independence order and, with n, the cn-bit main-key length",
+      "n: contributes to the cn-bit main-key length"
+    ],
+    "unresolved_remainder": "Whether c-wise independent round keys are desirable or sufficient for KAF security with a cn-bit main key."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "key-alternating-feistel",
+      "key-schedules",
+      "c-wise-independence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security",
+        "locator": "ASIACRYPT 2018, page 18",
+        "doi": "10.1007/978-3-030-03326-2_8",
+        "url": "https://eprint.iacr.org/2018/816",
+        "eprint": "2018/816"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures that c-wise independent round keys are desirable for a cn-bit main key. It says the paper’s results do not reveal this and leaves the issue as future work.",
+      "citation_labels": [
+        "Chun Guo et al., Revisiting Key-Alternating Feistel Ciphers for Shorter Keys and Multi-user Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gift-64-present-integral-resistance-gaps",
+  "group_id": "gift-64-present-integral-resistance-gaps",
+  "title": "Closing Integral-Resistance Round Gaps for GIFT-64 and PRESENT",
+  "summary": "Best known integral distinguishers reach 10 rounds for GIFT-64 and 9 for PRESENT, while resistance bounds are 12 and 13, respectively; close both gaps and explain degree extension.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether and how the integral-resistance round bounds for the block ciphers GIFT-64 and PRESENT can be tightened to close the unresolved gaps between their best known integral distinguishers and the corresponding integral-resistance property, and explain what permits the relevant degree to be extended to more rounds.\n\n$$\\tag{S1}$$"
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis and resistance bounds for the GIFT-64 and PRESENT block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count — measures the gap between the best known integral distinguisher and the integral-resistance property for each cipher",
+      "Relevant degree — tracks extension to additional rounds"
+    ],
+    "unresolved_remainder": "Close both cipher-specific round gaps and determine what permits the relevant degree to extend to more rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "integral-cryptanalysis",
+      "block-ciphers",
+      "round-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Strong and Tight Security Guarantees against Integral Distinguishers",
+        "locator": "ASIACRYPT 2021, page 29",
+        "doi": "10.1007/978-3-030-92062-3_13",
+        "url": "https://eprint.iacr.org/2021/1502",
+        "eprint": "2021/1502"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion explicitly presents closing both cipher-specific gaps and gaining an intuitive understanding of degree extension as future research. The paper reports the compared round bounds without resolving the gaps.",
+      "citation_labels": [
+        "Phil Hebborn et al., Strong and Tight Security Guarantees against Integral Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

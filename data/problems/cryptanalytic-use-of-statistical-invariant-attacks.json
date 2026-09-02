@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cryptanalytic-use-of-statistical-invariant-attacks",
+  "group_id": "cryptanalytic-use-of-statistical-invariant-attacks",
+  "title": "Cryptanalytic Use of Statistical Invariant Attacks",
+  "summary": "A probabilistic generalization of invariant attacks is identified, but its cryptanalytic usefulness remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether statistical invariant attacks---generalizations of invariant attacks that work only with a certain probability rather than for all possible plaintexts---can be made cryptanalytically useful."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of statistical invariant attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "the probability that the attack works"
+    ],
+    "unresolved_remainder": "Whether statistical invariant attacks can be made cryptanalytically useful."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "invariant-attacks",
+      "statistical-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Proving Resistance Against Invariant Attacks: How to Choose the Round Constants",
+        "locator": "CRYPTO 2017, page 23",
+        "doi": "10.1007/978-3-319-63715-0_22",
+        "url": "https://eprint.iacr.org/2017/463",
+        "eprint": "2017/463"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as future work and asks whether statistical invariant attacks can be used cryptanalytically. It notes that the question had already been raised previously.",
+      "citation_labels": [
+        "Christof Beierle et al., Proving Resistance Against Invariant Attacks: How to Choose the Round Constants"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "updatable-encryption-symmetric-key-proxy-re-encryption-equivalence",
+  "group_id": "updatable-encryption-symmetric-key-proxy-re-encryption-equivalence",
+  "title": "Equivalence of Updatable Encryption and Symmetric-Key Proxy Re-Encryption",
+  "summary": "Symmetric-key proxy re-encryption yields updatable encryption with desirable security properties; whether the converse holds, potentially under stronger update definitions, remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Any symmetric-key proxy re-encryption (PRE) scheme can be used to construct an updatable-encryption (UE) scheme with desirable security properties. Determine whether the converse is possible under the currently accepted definitions: can a suitably secure UE scheme be transformed into a symmetric-key PRE scheme, despite the apparent incompatibility between the definitions? Updatable encryption and its security are naturally modeled in a sequential-update setting, making it unlikely that a UE scheme in this setting implies symmetric-key PRE with reasonable security guarantees. Formulate strengthened definitions for UE that support out-of-sequence updates, and determine whether UE under these definitions is equivalent to symmetric-key PRE."
+  },
+  "scope": {
+    "domain": "Cryptographic primitive reductions between updatable encryption and symmetric-key proxy re-encryption.",
+    "assumptions": [
+      "The UE scheme considered in the converse direction is suitably secure.",
+      "PRE and UE are interpreted under their currently accepted definitions.",
+      "UE and its security are modeled in a sequential-update setting."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether secure UE implies symmetric-key PRE under current definitions, and whether stronger UE definitions supporting out-of-sequence updates yield equivalence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "updatable-encryption",
+      "symmetric-key-proxy-re-encryption",
+      "primitive-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Primitives with Structured Secrets",
+        "locator": "CRYPTO 2019, page 22",
+        "doi": "10.1007/978-3-030-26948-7_23",
+        "url": "https://eprint.iacr.org/2019/608",
+        "eprint": "2019/608"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source establishes the PRE-to-UE direction and explicitly asks whether the converse is plausible, while observing that current definitions make it unlikely. It calls for stronger UE definitions supporting out-of-sequence updates and asks whether they restore equivalence.",
+      "citation_labels": [
+        "Navid Alamati et al., Symmetric Primitives with Structured Secrets"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

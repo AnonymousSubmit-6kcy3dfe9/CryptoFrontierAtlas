@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "finite-round-bound-s-box-independent-impossible-differentials",
+  "group_id": "finite-round-bound-s-box-independent-impossible-differentials",
+  "title": "Finite Round Bound for S-Box-Independent Impossible Differentials",
+  "summary": "For some keys, impossible differentials can span any number of rounds; it remains open whether the S-box-independent class has a finite round bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a dedicated iterated block cipher, impossible differentials can exist for any number of rounds for some keys. Restrict attention to impossible differentials whose existence is independent of the choices of the cipher's S-boxes. The unresolved question is whether there is a finite integer $R$ such that no impossible differential in this S-box-independent class can cover more than $R$ rounds, so that $R$ serves as an upper bound on the round coverage of such impossible-differential attacks."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of dedicated iterated block ciphers, centered on S-box-independent impossible differentials.",
+    "assumptions": [
+      "The considered impossible differentials have existence independent of the cipher's S-box choices."
+    ],
+    "parameters": [
+      "R: a finite integer proposed as the upper bound on the number of covered rounds"
+    ],
+    "unresolved_remainder": "Whether a finite integer R exists that bounds the round coverage of every impossible differential in the S-box-independent class."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "impossible-differentials",
+      "structural-cryptanalysis",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provable Security Evaluation of Structures Against Impossible Differential and Zero Correlation Linear Cryptanalysis",
+        "locator": "EUROCRYPT 2016, page 3",
+        "doi": "10.1007/978-3-662-49890-3_8",
+        "url": "https://eprint.iacr.org/2016/096",
+        "eprint": "2016/096"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this as an explicit question after observing that some keys can yield impossible differentials for any number of rounds. It asks whether restricting attention to S-box-independent differentials yields a finite upper bound on covered rounds.",
+      "citation_labels": [
+        "Bing Sun et al., Provable Security Evaluation of Structures Against Impossible Differential and Zero Correlation Linear Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

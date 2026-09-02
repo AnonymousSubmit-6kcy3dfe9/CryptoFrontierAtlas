@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rate-one-quantum-secure-tweakable-block-ciphers",
+  "group_id": "rate-one-quantum-secure-tweakable-block-ciphers",
+  "title": "Rate-One Quantum-Secure Tweakable Block Ciphers",
+  "summary": "Classical LRW achieves rate one from a PRP assumption, but a quantum-secure rate-one tweakable block cipher using only a qPRP assumption remains open without related-key security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether a rate-one quantum-secure tweakable block cipher can be constructed from a block cipher under a quantum-secure pseudorandom-permutation assumption alone, without assuming related-key security. Here, rate one means one block-cipher call per tweakable-block-cipher call; the classical LRW approach achieves this rate from a pseudorandom-permutation assumption, whereas the quantum-secure key-tweak-insertion construction requires related-key security and the LRW approach does not appear applicable without it. [S1]"
+  },
+  "scope": {
+    "domain": "Construction of quantum-secure tweakable block ciphers from block ciphers.",
+    "assumptions": [
+      "The underlying block cipher satisfies a quantum-secure pseudorandom-permutation assumption."
+    ],
+    "parameters": [
+      "Rate one: one block-cipher call per tweakable-block-cipher call"
+    ],
+    "unresolved_remainder": "Whether a rate-one quantum-secure tweakable block cipher can be built under only the qPRP assumption, without related-key security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "quantum-security",
+      "related-key-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "QCB: Efficient Quantum-secure Authenticated Encryption",
+        "locator": "ASIACRYPT 2021, page 28",
+        "doi": "10.1007/978-3-030-92062-3_23",
+        "url": "https://eprint.iacr.org/2020/1304",
+        "eprint": "2020/1304"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts classical LRW, which attains rate one from a PRP assumption, with the quantum-secure key-tweak-insertion construction, which requires related-key security. It leaves the qPRP-only case open and notes that LRW does not seem applicable.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., QCB: Efficient Quantum-secure Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

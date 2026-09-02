@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "strong-non-interference-for-mask-refreshing-algorithms",
+  "group_id": "strong-non-interference-for-mask-refreshing-algorithms",
+  "title": "Strong Non-Interference for Mask-Refreshing Algorithms",
+  "summary": "A refreshing-gadget construction is stated to achieve strong non-interference, but a proof for every number of shares remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The mask-refreshing algorithm over $d$ shares obtained from a refreshing gadget is stated to yield a $(d-1)$-strongly non-interfering mask-refreshing algorithm, but a proof that this algorithm satisfies strong non-interference for every $d$ remains unresolved."
+  },
+  "scope": {
+    "domain": "Masking schemes and strong non-interference in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "d, the number of shares in the mask-refreshing algorithm"
+    ],
+    "unresolved_remainder": "Prove that the stated mask-refreshing algorithm satisfies strong non-interference for every d."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "masking-schemes",
+      "mask-refreshing",
+      "strong-non-interference"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 17",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source states a (d-1)-strongly non-interfering guarantee for the d-share construction and explicitly leaves a proof for all d as future work.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

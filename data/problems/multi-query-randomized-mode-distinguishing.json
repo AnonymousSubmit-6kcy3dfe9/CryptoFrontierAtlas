@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-query-randomized-mode-distinguishing",
+  "group_id": "multi-query-randomized-mode-distinguishing",
+  "title": "Multi-Query Distinguishing of Randomized CBC, CFB, and OFB",
+  "summary": "A bound is known for one-query attacks, but for multiple queries it remains open whether to find a distinguishing attack or prove a security theorem.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the memory-bounded, block-at-a-time distinguishing model, let $q$ be the number of queries and consider all-zero messages under randomized $\\mathrm{CBC}\\$$, $\\mathrm{CFB}\\$$, or $\\mathrm{OFB}\\$$ instantiated with a random permutation. Each query begins at an independent uniformly random point and reveals successive permutation iterates. A bound is available for one-query attacks; for $q>1$, determine either an attack distinguishing the resulting streams from random streams or a security theorem bounding such distinguishers."
+  },
+  "scope": {
+    "domain": "Memory-bounded, block-at-a-time cryptanalysis of randomized symmetric-encryption modes.",
+    "assumptions": [
+      "messages are all-zero",
+      "the underlying permutation is random",
+      "each query starts at an independent uniformly random point"
+    ],
+    "parameters": [
+      "q: number of queries"
+    ],
+    "unresolved_remainder": "For q>1, determine either an attack distinguishing the resulting streams from random streams or a security theorem bounding such distinguishers."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "time-memory-tradeoff",
+      "symmetric-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tight Time-Memory Trade-Offs for Symmetric Encryption",
+        "locator": "EUROCRYPT 2019, page 32",
+        "doi": "10.1007/978-3-030-17653-2_16",
+        "url": "https://eprint.iacr.org/2019/258",
+        "eprint": "2019/258"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a bound for one-query attacks and explicitly states that it does not know an attack or security theorem for the multi-query setting.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Tight Time-Memory Trade-Offs for Symmetric Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

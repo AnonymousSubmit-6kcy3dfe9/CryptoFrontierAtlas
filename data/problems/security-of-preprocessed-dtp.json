@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-preprocessed-dtp",
+  "group_id": "security-of-preprocessed-dtp",
+  "title": "Security of Preprocessed DTP",
+  "summary": "The known digit-bias attack covers only unpreprocessed DTP, leaving whether preprocessing withstands strong full-message recovery in the multi-tweak setting unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $\\mathrm{DTP}$ scheme with its permitted key-dependent preprocessing of plaintext enabled, determine whether a strong full-message-recovery attack exists in the multi-tweak setting or whether the variant can be proved secure against such attacks. The existing digit-bias attack achieves full-message recovery in a multi-tweak setting only for $\\mathrm{DTP}$ without preprocessing and does not apply when preprocessing is enabled. The preprocessing has been characterized as sufficient only to deter ``casual attacks'' and as unlikely to be a strong countermeasure, so its protection against strong message recovery remains unresolved."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of format-preserving encryption, focusing on attacks against a preprocessed DTP variant.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "DTP with permitted key-dependent plaintext preprocessing enabled, the target scheme variant",
+      "Multi-tweak setting, the attack setting",
+      "Strong full-message recovery, the attack and security criterion"
+    ],
+    "unresolved_remainder": "Whether a strong full-message-recovery attack exists against preprocessed DTP in the multi-tweak setting or the variant can be proved secure against such attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "format-preserving-encryption",
+      "cryptanalysis",
+      "message-recovery"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Curse of Small Domains: New Attacks on Format-Preserving Encryption",
+        "locator": "CRYPTO 2018, page 6",
+        "doi": "10.1007/978-3-319-96884-1_8",
+        "url": "https://eprint.iacr.org/2018/556",
+        "eprint": "2018/556"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a digit-bias attack for DTP without preprocessing and states that it does not apply when preprocessing is enabled. It leaves the preprocessed variant's protection against strong message-recovery attacks unresolved.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., The Curse of Small Domains: New Attacks on Format-Preserving Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

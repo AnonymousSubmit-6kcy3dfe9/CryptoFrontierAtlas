@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinnyee-tweakable-pseudorandom-permutation",
+  "group_id": "skinnyee-tweakable-pseudorandom-permutation",
+  "title": "SKINNYee Tweakable Pseudorandom Permutation Conjecture",
+  "summary": "SKINNYee is designed for HOMA's stated 128-bit setting, but whether it is a tweakable pseudorandom permutation satisfying HOMA's requirements remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove or refute the conjecture that SKINNYee, a tweakable block cipher designed for HOMA on the basis of SKINNY64, is a tweakable pseudorandom permutation and satisfies HOMA's requirements. For the stated 128-bit security setting $s=128$, those requirements are a $0.5s$-bit plaintext, an $s$-bit key, and a $(2s+3)$-bit tweak."
+  },
+  "scope": {
+    "domain": "Tweakable block-cipher design and pseudorandom-permutation security for SKINNYee in HOMA.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "s: security parameter fixed at 128 for the stated 128-bit setting",
+      "0.5s-bit plaintext: plaintext width required by HOMA",
+      "s-bit key: key width required by HOMA",
+      "(2s+3)-bit tweak: tweak width required by HOMA"
+    ],
+    "unresolved_remainder": "Prove or refute that SKINNYee is a tweakable pseudorandom permutation and satisfies HOMA's requirements."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "pseudorandom-permutations",
+      "skinnyee"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Secret Can Be Public: Low-Memory AEAD Mode for High-Order Masking",
+        "locator": "CRYPTO 2022, page 19",
+        "doi": "10.1007/978-3-031-15982-4_11",
+        "url": "https://eprint.iacr.org/2022/812",
+        "eprint": "2022/812"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly conjectures that SKINNYee is a tweakable pseudorandom permutation satisfying HOMA's requirements. Its primitive analysis is heuristic and attack-specific rather than a proof of the conjecture.",
+      "citation_labels": [
+        "Yusuke Naito et al., Secret Can Be Public: Low-Memory AEAD Mode for High-Order Masking"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

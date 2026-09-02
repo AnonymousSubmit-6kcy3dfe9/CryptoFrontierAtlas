@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ajtai-expander-graph-leakage-bound",
+  "group_id": "ajtai-expander-graph-leakage-bound",
+  "title": "Explicit Leakage Bound for Ajtai et al.'s Expander Constructions",
+  "summary": "The expander-graph constructions tolerate constant leakage, but the corresponding explicit probability value or bound remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine an explicit value or bound for the constant random-probing leakage probability tolerated by the expander-graph construction of Ajtai et al. and its extension. These constructions tolerate a constant leakage probability, but the tolerated probability has not been made explicit."
+  },
+  "scope": {
+    "domain": "Random-probing security and leakage tolerance in expander-graph cryptographic constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "constant random-probing leakage probability: tolerated leakage rate"
+    ],
+    "unresolved_remainder": "An explicit value or bound for the tolerated constant random-probing leakage probability in these constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "random-probing",
+      "leakage-probability",
+      "expander-graphs"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Random Probing Security: Verification, Composition, Expansion and New Constructions",
+        "locator": "CRYPTO 2020, page 2",
+        "doi": "10.1007/978-3-030-56784-2_12",
+        "url": "https://eprint.iacr.org/2020/786",
+        "eprint": "2020/786"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the Ajtai et al. construction and its extension as expander-graph approaches that tolerate a constant leakage probability. It identifies the missing explicit tolerated probability as the unresolved issue.",
+      "citation_labels": [
+        "Sonia Belaïd et al., Random Probing Security: Verification, Composition, Expansion and New Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

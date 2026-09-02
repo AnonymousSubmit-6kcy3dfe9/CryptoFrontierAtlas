@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "receiver-binding-security-kdf-based-encrypt-then-mac-ctr-mode-mac-then-encrypt",
+  "group_id": "receiver-binding-security-kdf-based-encrypt-then-mac-ctr-mode-mac-then-encrypt",
+  "title": "Receiver-Binding Security for KDF-Based Encrypt-then-MAC and CTR-Mode MAC-then-Encrypt",
+  "summary": "Receiver-binding security already follows as a corollary for KDF-derived keys in MAC-then-Encrypt, but tighter bounds, a two-key CTR-mode analysis, and Signal's opening-phase key-exposure security remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For protocols and schemes using key derivation and MAC-then-Encrypt composition, several interrelated receiver-binding security questions remain unresolved. Signal's Encrypt-then-MAC protocol uses HKDF to derive keys for CTR-mode encryption and HMAC authentication; add a ciphertext-opening phase that uses these derived keys, and prove security of the resulting protocol when opening a ciphertext exposes the corresponding encryption and authentication keys. For MAC-then-Encrypt, receiver-binding security when the keys are derived via a key-derivation function already follows as a corollary, but the resulting bounds may be loose; derive tighter receiver-binding security bounds for this KDF-derived-key setting, accounting for the ideal-cipher and random-oracle queries made both by the adversary and by the security game during verification. Additionally, provide a detailed receiver-binding security analysis of MAC-then-Encrypt when instantiated with CTR mode instead of CBC mode, explicitly covering the two-key setting; the existing proof for CBC-mode MtE is stated to extend to CTR mode with modifications, but the change requires additional care, and two-key CTR-mode MtE appears to resist the attack applicable to two-key Encrypt-then-MAC, so the unresolved task is to complete the r-BIND security treatment for this CTR-mode construction."
+  },
+  "scope": {
+    "domain": "Receiver-binding security for authenticated-encryption compositions that derive keys, including Signal's Encrypt-then-MAC and CTR-mode MAC-then-Encrypt.",
+    "assumptions": [
+      "Encryption and authentication keys are derived via a key-derivation function.",
+      "Ciphertext opening exposes the corresponding encryption and authentication keys."
+    ],
+    "parameters": [
+      "HKDF-derived encryption and authentication keys: key derivation in Signal's CTR-mode Encrypt-then-MAC",
+      "KDF-derived keys: the MAC-then-Encrypt setting",
+      "Ideal-cipher and random-oracle queries: resources from the adversary and the verification game",
+      "Two keys and CTR mode: the MAC-then-Encrypt instantiation"
+    ],
+    "unresolved_remainder": "Add and analyze Signal's ciphertext-opening phase under exposure of the derived encryption and authentication keys; derive tighter receiver-binding bounds for KDF-derived MAC-then-Encrypt while accounting for ideal-cipher and random-oracle queries from both the adversary and verification game; and complete the r-BIND security analysis of two-key CTR-mode MAC-then-Encrypt, with the needed care in extending the CBC proof."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "receiver-binding",
+      "key-derivation",
+      "key-exposure"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Message Franking via Committing Authenticated Encryption",
+        "locator": "CRYPTO 2017, page 18",
+        "doi": "10.1007/978-3-319-63697-9_3",
+        "url": "https://eprint.iacr.org/2017/664",
+        "eprint": "2017/664"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves the Signal opening-phase analysis as an interesting open problem for future work because exposing keys through an opening may require a new security analysis. The row groups this with potentially loose KDF-based bounds and the unfinished two-key CTR-mode r-BIND treatment.",
+      "citation_labels": [
+        "Paul Grubbs et al., Message Franking via Committing Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

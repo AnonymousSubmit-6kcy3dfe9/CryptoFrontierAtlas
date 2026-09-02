@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "minimum-feistel-rounds-for-indifferentiability",
+  "group_id": "minimum-feistel-rounds-for-indifferentiability",
+  "title": "Minimum Rounds for Feistel Indifferentiability",
+  "summary": "Five rounds are insufficient and ten rounds suffice, but the minimum number of rounds required for indifferentiability remains unresolved, including whether fewer than ten suffice.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a Feistel network whose round functions are independent and random, 5 rounds are insufficient for indifferentiability from a random permutation, while 14 rounds are sufficient. The unresolved task is to determine the minimum number of rounds $r$ that suffices for this indifferentiability, in particular whether fewer than 10 rounds suffice, given that a 10-round network is known to suffice."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography studying indifferentiability of Feistel networks from random permutations.",
+    "assumptions": [
+      "The round functions are independent and random."
+    ],
+    "parameters": [
+      "The round count $r$, whose minimum sufficient value for indifferentiability is sought"
+    ],
+    "unresolved_remainder": "Determine the minimum number of rounds sufficient for indifferentiability, in particular whether fewer than 10 rounds suffice."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "feistel-networks",
+      "block-ciphers",
+      "indifferentiability"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "10-Round Feistel is Indifferentiable from an Ideal Cipher",
+        "locator": "EUROCRYPT 2016, page 2",
+        "doi": "10.1007/978-3-662-49896-5_23",
+        "url": "https://eprint.iacr.org/2015/876",
+        "eprint": "2015/876"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the issue as an efficiency question, with prior work showing that 5 rounds are insufficient and 14 are sufficient. This work establishes sufficiency for 10 rounds but leaves the optimal round count unresolved.",
+      "citation_labels": [
+        "Dana Dachman-Soled et al., 10-Round Feistel is Indifferentiable from an Ideal Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

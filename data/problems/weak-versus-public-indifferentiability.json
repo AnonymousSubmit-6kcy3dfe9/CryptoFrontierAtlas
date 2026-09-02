@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "weak-versus-public-indifferentiability",
+  "group_id": "weak-versus-public-indifferentiability",
+  "title": "Weak versus Public Indifferentiability",
+  "summary": "Public indifferentiability implies its weak variant; whether the converse holds for every scheme or the notions can be separated remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether, for every scheme $\\Pi$, $\\Pi$ satisfying weak public indifferentiability implies that $\\Pi$ satisfies public indifferentiability. Either prove this implication or construct a scheme $\\Pi$ that satisfies weak public indifferentiability but not public indifferentiability. The implication appears difficult to prove, and no such separating scheme is currently known."
+  },
+  "scope": {
+    "domain": "Structural comparison of public and weak public indifferentiability for cryptographic schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Π: an arbitrary scheme whose two indifferentiability properties are compared"
+    ],
+    "unresolved_remainder": "Prove that weak public indifferentiability implies public indifferentiability for every scheme, or construct a scheme separating the two notions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "public-indifferentiability",
+      "weak-public-indifferentiability",
+      "separation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 22",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper establishes the implication from public to weak public indifferentiability, then notes that the reverse appears difficult to prove and that no separating example is known.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

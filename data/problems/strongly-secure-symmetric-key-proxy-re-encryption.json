@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "strongly-secure-symmetric-key-proxy-re-encryption",
+  "group_id": "strongly-secure-symmetric-key-proxy-re-encryption",
+  "title": "Strongly Secure Symmetric-Key Proxy Re-Encryption from Symmetric-Key Encryption",
+  "summary": "The source identifies a public-key consequence for any such construction, but whether it can be built from symmetric-key encryption remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can strongly secure symmetric-key proxy re-encryption be constructed from symmetric-key encryption?"
+  },
+  "scope": {
+    "domain": "Design of symmetric-key cryptographic primitives, specifically proxy re-encryption and its security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether symmetric-key encryption can yield symmetric-key proxy re-encryption satisfying the stronger indistinguishability-based security definitions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "proxy-re-encryption",
+      "symmetric-key",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Primitives with Structured Secrets",
+        "locator": "CRYPTO 2019, page 3",
+        "doi": "10.1007/978-3-030-26948-7_23",
+        "url": "https://eprint.iacr.org/2019/608",
+        "eprint": "2019/608"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The paper poses this question after discussing stronger security definitions for symmetric-key proxy re-encryption. It presents a consequence through ciphertext-independent updatable encryption and public-key encryption, but the supplied evidence gives neither a construction nor an impossibility theorem.",
+      "citation_labels": [
+        "Navid Alamati et al., Symmetric Primitives with Structured Secrets"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

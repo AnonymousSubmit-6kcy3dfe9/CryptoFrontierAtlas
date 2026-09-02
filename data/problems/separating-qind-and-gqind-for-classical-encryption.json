@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "separating-qind-and-gqind-for-classical-encryption",
+  "group_id": "separating-qind-and-gqind-for-classical-encryption",
+  "title": "Separating qIND and gqIND for Classical Encryption",
+  "summary": "For classical symmetric-key encryption, gqIND security implies qIND security, while whether the converse fails for any scheme remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For classical symmetric-key encryption schemes, $\\mathrm{gqIND}$ security implies $\\mathrm{qIND}$ security, but it is unknown whether the two notions can be separated. Construct a classical symmetric-key encryption scheme that is $\\mathrm{qIND}$-secure but not $\\mathrm{gqIND}$-secure, or prove that no such scheme exists."
+  },
+  "scope": {
+    "domain": "This concerns quantum indistinguishability notions for classical symmetric-key encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Determine whether qIND and gqIND can be separated by constructing a qIND-secure but not gqIND-secure classical symmetric-key encryption scheme, or prove that none exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-key-encryption",
+      "quantum-indistinguishability",
+      "security-separation"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Semantic Security and Indistinguishability in the Quantum World",
+        "locator": "CRYPTO 2016, page 16",
+        "doi": "10.1007/978-3-662-53015-3_3",
+        "url": "https://eprint.iacr.org/2015/355",
+        "eprint": "2015/355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source states the established implication from gqIND security to qIND security and explicitly leaves their separation within classical encryption schemes as an open question.",
+      "citation_labels": [
+        "Tommaso Gagliardoni et al., Semantic Security and Indistinguishability in the Quantum World"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

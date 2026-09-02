@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "low-degree-representations-of-alternating-moduli-outputs",
+  "group_id": "low-degree-representations-of-alternating-moduli-outputs",
+  "title": "Low-Degree Representations of Alternating-Moduli Outputs",
+  "summary": "For alternating-moduli outputs, the low-degree obstruction is proved only over fields of order a power of three; exact representation or accurate approximation over arbitrary fixed polynomial rings remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the outputs of the $(2,3)$ one-way-function and pseudorandom-function constructions, whose coordinates are sums modulo $3$ of values that are themselves sums modulo $2$ of secret-input bits, can be represented exactly or approximated sufficiently accurately by low-degree polynomials over any fixed polynomial ring. Existing rigorous analysis covers the shared modulus-switching map $\\{0,1\\}^{\\ell}\\to\\mathbb{Z}_3$, given by $x\\mapsto\\sum_i x_i\\bmod 3$, only for polynomials over $\\mathrm{GF}(3^r)$, for every $r\\ge 1$. Prove the analogous impossibility for arbitrary polynomial rings or refute it by constructing such a representation or approximation, and determine the resulting applicability of linearization-based algebraic attacks."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the (2,3) alternating-moduli one-way-function and pseudorandom-function constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "ℓ: number of input bits for the shared modulus-switching map",
+      "r ≥ 1: extension degree in the known field family GF(3^r)",
+      "fixed polynomial ring: ambient setting for the sought low-degree representation or approximation"
+    ],
+    "unresolved_remainder": "Prove the analogous impossibility over arbitrary polynomial rings or construct an exact representation or sufficiently accurate low-degree approximation, and determine whether linearization-based algebraic attacks apply."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "low-degree-polynomials",
+      "alternating-moduli"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "MPC-Friendly Symmetric Cryptography from Alternating Moduli: Candidates, Protocols, and Applications",
+        "locator": "CRYPTO 2021, page 46",
+        "doi": "10.1007/978-3-030-84259-8_18",
+        "url": "https://eprint.iacr.org/2021/885",
+        "eprint": "2021/885"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures that the outputs cannot be represented or well approximated by low-degree polynomials over any fixed polynomial ring. It reports rigorous coverage only over GF(3^r) for every r at least one and links the unresolved extension to linearization attacks.",
+      "citation_labels": [
+        "Itai Dinur et al., MPC-Friendly Symmetric Cryptography from Alternating Moduli: Candidates, Protocols, and Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

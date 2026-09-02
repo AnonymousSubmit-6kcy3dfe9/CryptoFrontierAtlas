@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dual-ewcdm-prf-security-bound",
+  "group_id": "dual-ewcdm-prf-security-bound",
+  "title": "Rigorous PRF Security for the Dual EWCDM Candidate",
+  "summary": "The candidate is close to a sum of random permutations, but establishing an explicit PRF-security bound remains open because the analysis depends on Patarin's interpolation claim or conjecture.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish a rigorous quantitative PRF-security bound for the proposed dual EWCDM candidate $F(\\nu,m)=\\pi_2(\\pi_1(\\nu)\\oplus H(m))\\oplus\\pi_1(\\nu)$, where $\\nu$ is a nonce, $m$ is a message, $\\pi_1$ and $\\pi_2$ are random permutations, and $H$ is the message hash. The proof must account for $H(m)$: although the construction is close to a sum of random permutations, its analysis appears to require Patarin's claim or conjecture about the interpolation probability of such sums. The construction also cannot be expressed as a composition function with $n$-bit outputs. The unresolved task is to prove an explicit PRF-security bound while either avoiding that interpolation claim or replacing it with a rigorously established result sufficient for the analysis."
+  },
+  "scope": {
+    "domain": "PRF security analysis for a dual EWCDM construction using random permutations and a message hash.",
+    "assumptions": [
+      "pi_1 and pi_2 are random permutations"
+    ],
+    "parameters": [
+      "nu: nonce",
+      "m: message",
+      "pi_1 and pi_2: random permutations",
+      "H: message hash",
+      "n: output bit length"
+    ],
+    "unresolved_remainder": "Prove an explicit quantitative PRF-security bound while either avoiding Patarin's interpolation claim or conjecture, or replacing that claim or conjecture with a rigorously established result sufficient for the analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ewcdm",
+      "prf-security",
+      "random-permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21",
+        "locator": "EUROCRYPT 2020, page 16",
+        "doi": "10.1007/978-3-030-45721-1_8",
+        "url": "https://eprint.iacr.org/2020/236",
+        "eprint": "2020/236"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "In its open-problems section, the source proposes the dual variant as a potential EWCDM candidate. It says the message hash makes a proof difficult, appearing to require Patarin's claim or conjecture on the interpolation probability of sums of random permutations, and notes that the construction is not an n-bit-output composition.",
+      "citation_labels": [
+        "Mridul Nandi et al., Mind the Composition: Birthday Bound Attacks on EWCDMD and SoKAC21"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-adaptation-six-round-grostl-256-output-transformation",
+  "group_id": "quantum-adaptation-six-round-grostl-256-output-transformation",
+  "title": "Quantum Adaptation of the Six-Round Grøstl-256 Output-Transformation Approach",
+  "summary": "The existing six-round Grøstl-256 approach faces precomputation beyond the Grover-search budget; adapting it into a quantum attack without that cost remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the existing six-round Grøstl-256 output-transformation approach can be adapted into a quantum attack without a $2^{128}$-time precomputation. The approach requires memory of size $2^{128}$, and in the quantum setting a precomputation of that duration already exceeds the time limit set by Grover search."
+  },
+  "scope": {
+    "domain": "Quantum meet-in-the-middle cryptanalysis of the six-round Grøstl-256 output transformation.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Six rounds: scope of the targeted Grøstl-256 output transformation",
+      "2^128: required memory size and prohibitive precomputation time"
+    ],
+    "unresolved_remainder": "Whether the existing approach can be adapted into a quantum attack without a 2^128-time precomputation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [],
+    "tags": [
+      "quantum-cryptanalysis",
+      "meet-in-the-middle",
+      "grostl-256"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Simplified MITM Modeling for Permutations: New (Quantum) Attacks",
+        "locator": "CRYPTO 2022, page 24",
+        "doi": "10.1007/978-3-031-15982-4_24",
+        "url": "https://eprint.iacr.org/2022/189",
+        "eprint": "2022/189"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly states that it is unknown whether the existing approach can lead to a quantum attack. It identifies the 2^128 memory requirement and unaffordable 2^128-time precomputation relative to Grover search as the barrier.",
+      "citation_labels": [
+        "André Schrottenloher et al., Simplified MITM Modeling for Permutations: New (Quantum) Attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

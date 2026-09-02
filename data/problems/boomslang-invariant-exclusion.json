@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "boomslang-invariant-exclusion",
+  "group_id": "boomslang-invariant-exclusion",
+  "title": "Invariant Exclusion for Boomslang",
+  "summary": "An affine-layer argument gives a 0.99-probability exclusion at 24 rounds, while small-round guarantees and coverage of generalized or closed-loop invariants remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Boomslang with uniformly chosen random round constants, an existing affine-layer argument shows with probability at least $0.99$ that $24$ rounds suffice to rule out the joint invariants covered by that argument. Determine what invariant-exclusion guarantees can be proved when only a small number of rounds is considered, and extend the analysis to generalized and closed-loop invariants."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of invariants in the Boomslang symmetric cipher.",
+    "assumptions": [
+      "Round constants are chosen uniformly at random."
+    ],
+    "parameters": [
+      "Round count, distinguishing the established 24-round result from the unresolved small-round case",
+      "Invariant type, distinguishing the covered joint invariants from generalized and closed-loop invariants"
+    ],
+    "unresolved_remainder": "Prove invariant-exclusion guarantees for a small number of rounds and extend the analysis to generalized and closed-loop invariants."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "structural-cryptanalysis",
+      "invariant-attacks",
+      "boomslang"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Constructing and Deconstructing Intentional Weaknesses in Symmetric Ciphers",
+        "locator": "CRYPTO 2022, page 26",
+        "doi": "10.1007/978-3-031-15982-4_25",
+        "url": "https://eprint.iacr.org/2021/829",
+        "eprint": "2021/829"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a high-probability 24-round exclusion argument for the covered joint invariants and explicitly identifies its lack of coverage for small round counts and generalized or closed-loop invariants.",
+      "citation_labels": [
+        "Christof Beierle et al., Constructing and Deconstructing Intentional Weaknesses in Symmetric Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

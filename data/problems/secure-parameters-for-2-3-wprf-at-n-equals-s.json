@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "secure-parameters-for-2-3-wprf-at-n-equals-s",
+  "group_id": "secure-parameters-for-2-3-wprf-at-n-equals-s",
+  "title": "Secure Parameters for the (2,3)-wPRF When n Equals s",
+  "summary": "For the (2,3)-wPRF when n equals s, a subset-sum attack forces m far above twice s; finding concrete secure m values and resulting protocol efficiency remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the $(2,3)$-wPRF, analyze the alternative parameter regime $n=s$: a subset-sum attack resembling the attack on the $(2,3)$-OWF gives a lower bound on $m$ and indicates that $m$ must be much larger than $2s$, reducing protocol efficiency. Determine concrete secure values of $m$ and the resulting protocol efficiency while accounting for possible optimized subset-sum attacks that exploit the additional available data."
+  },
+  "scope": {
+    "domain": "Cryptanalysis and parameter selection for the (2,3)-wPRF under subset-sum attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: input-length parameter fixed equal to s in the alternative regime",
+      "s: security parameter and reference scale for n and m",
+      "m: construction parameter constrained by the subset-sum lower bound and protocol-efficiency tradeoff"
+    ],
+    "unresolved_remainder": "Determine concrete secure values of m and the resulting protocol efficiency when n equals s, accounting for optimized subset-sum attacks that exploit additional data."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "weak-pseudorandom-functions",
+      "subset-sum-attacks",
+      "parameter-selection"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "MPC-Friendly Symmetric Cryptography from Alternating Moduli: Candidates, Protocols, and Applications",
+        "locator": "CRYPTO 2021, page 6",
+        "doi": "10.1007/978-3-030-84259-8_18",
+        "url": "https://eprint.iacr.org/2021/885",
+        "eprint": "2021/885"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives a subset-sum-based lower bound indicating that m must be much larger than twice s in the n-equals-s regime, reducing efficiency. It leaves the concrete analysis to future work because optimizations exploiting additional data may be possible.",
+      "citation_labels": [
+        "Itai Dinur et al., MPC-Friendly Symmetric Cryptography from Alternating Moduli: Candidates, Protocols, and Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sufficient-conditions-for-sharp-exponential-algebraic-degree-growth",
+  "group_id": "sufficient-conditions-for-sharp-exponential-algebraic-degree-growth",
+  "title": "Sufficient Conditions for Sharp Exponential Algebraic-Degree Growth",
+  "summary": "Necessary conditions are known, but sufficient conditions ensuring sharp exponential algebraic-degree growth despite key-dependent coefficients remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Find sufficient conditions guaranteeing sharp exponential algebraic-degree growth after $r$ rounds."
+  },
+  "scope": {
+    "domain": "Algebraic-degree growth in symmetric cryptography with complex affine layers.",
+    "assumptions": [
+      "Assignments to (f1, ..., f2r) satisfy the distinctness and inner conditions from Theorem 3."
+    ],
+    "parameters": [
+      "r — number of rounds",
+      "(h1, ..., hw) — affine-layer parameter tuple",
+      "(f1, ..., f2r) — valid assignments considered in the analysis",
+      "Concrete secret key — determines polynomial coefficients and may affect the maximum degree"
+    ],
+    "unresolved_remainder": "Determine sufficient conditions on the affine-layer parameters, valid assignments, and key-dependent coefficients that guarantee sharp exponential algebraic-degree growth after r rounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "algebraic-degree",
+      "affine-layers",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping for Complex Affine Layers",
+        "locator": "CRYPTO 2023, page 22",
+        "doi": "10.1007/978-3-031-38548-3_18",
+        "url": "https://eprint.iacr.org/2023/782",
+        "eprint": "2023/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper derives necessary conditions, but Remark 4 presents finding a sufficient condition as substantially harder. Secret-key-dependent polynomial coefficients may cause the maximum degree to vary across keys.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping for Complex Affine Layers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

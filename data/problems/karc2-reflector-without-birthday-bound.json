@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "karc2-reflector-without-birthday-bound",
+  "group_id": "karc2-reflector-without-birthday-bound",
+  "title": "Finding a KARC2 Reflector Without the Birthday Bound",
+  "summary": "A mirror-slide attack suggests that an appropriate KARC2 reflector could improve security, but finding the choice and proving the improvement remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a choice of reflector for $\\mathrm{KARC2}$ under which the birthday-bound term $q^2/2^n$ can be removed from its security bound, and prove the resulting improved security guarantee."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography focused on block-cipher design and security bounds for reflection ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The reflector choice: the KARC2 construction component whose selection may affect the security bound",
+      "q and n: quantities appearing in the birthday-bound term"
+    ],
+    "unresolved_remainder": "Find a reflector for KARC2 that removes the birthday-bound term from its security bound and prove the resulting improved security guarantee."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "security-bounds",
+      "reflection-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Provably Secure Reflection Ciphers",
+        "locator": "CRYPTO 2022, page 6",
+        "doi": "10.1007/978-3-031-15985-5_9",
+        "url": "https://eprint.iacr.org/2022/818",
+        "eprint": "2022/818"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a challenging problem. It says the mirror slide attack suggests that a good reflector may avoid the birthday-bound term, while proving this appears difficult with state-of-the-art techniques.",
+      "citation_labels": [
+        "Tim Beyne et al., Provably Secure Reflection Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

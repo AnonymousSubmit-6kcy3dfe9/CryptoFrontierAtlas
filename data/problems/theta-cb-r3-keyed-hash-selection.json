@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "theta-cb-r3-keyed-hash-selection",
+  "group_id": "theta-cb-r3-keyed-hash-selection",
+  "title": "Efficient Keyed-Hash Selection for ΘCB-R3",
+  "summary": "The source proposes a keyed-hash efficiency reduction for ΘCB-R3 while preserving its protections, but leaves the required selection and attainability result unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "An unresolved construction-existence question for the authenticated-encryption construction $\\Theta$CB-R3 is whether its keyed hash function $h_k$ can be selected so that one authenticated-encryption evaluation uses approximately $\\ell_a+\\ell_m+2$ evaluations of $h_k$, while retaining $\\Theta$CB-R3's security and side-channel protection properties. The stated efficiency observation proposes achieving this reduction through a smart selection of $h_k$ but provides neither a selection method nor a result establishing that the target cost is attainable under those conditions."
+  },
+  "scope": {
+    "domain": "This concerns authenticated-encryption construction design and keyed-hash evaluation efficiency in ΘCB-R3.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "h_k: the keyed hash function being selected",
+      "ell_a and ell_m: terms in the target evaluation-cost expression"
+    ],
+    "unresolved_remainder": "Establish whether a selection of h_k can attain the proposed evaluation cost while preserving ΘCB-R3's security and side-channel protection properties, including providing a selection method or an attainability result."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "keyed-hash",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption",
+        "locator": "ASIACRYPT 2020, page 36",
+        "doi": "10.1007/978-3-030-64837-4_21",
+        "url": "https://eprint.iacr.org/2020/1082",
+        "eprint": "2020/1082"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a possible efficiency improvement from smart selection of h_k in ΘCB-R3. It gives the approximate evaluation-cost target but no selection method or result establishing attainability while retaining the stated protections.",
+      "citation_labels": [
+        "Bart Mennink et al., Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

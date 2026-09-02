@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "stronger-characteristic-searches-for-fly-and-pipo",
+  "group_id": "stronger-characteristic-searches-for-fly-and-pipo",
+  "title": "Stronger Characteristic Searches for Fly and Pipo",
+  "summary": "Restricted-mask searches found useful 8-round Fly and 5-round Pipo approximations but no useful longer ones; whether stronger searches can improve both estimates remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can stronger characteristic searches improve the reported linear-approximation estimates for Fly and Pipo?"
+  },
+  "scope": {
+    "domain": "Automated linear cryptanalysis of the Fly and Pipo block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Round count—the number of cipher rounds covered by a searched linear approximation"
+    ],
+    "unresolved_remainder": "Whether stronger characteristic-search methods can improve the reported linear-approximation estimates for both Fly and Pipo."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "linear-cryptanalysis",
+      "automated-cryptanalysis",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 23",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports useful approximations for 8 rounds of Fly and 5 rounds of Pipo from a restricted-mask search, but none useful at greater lengths. A reported 6-round branch-and-bound characteristic motivates the conjecture that stronger searches could improve both estimates.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

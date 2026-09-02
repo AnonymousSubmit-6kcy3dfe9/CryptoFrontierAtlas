@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "modified-hfc-encryptment-security",
+  "group_id": "modified-hfc-encryptment-security",
+  "title": "Security of Modified HFC' Encryptment",
+  "summary": "The proposed modified HFC' uses injective padding under HFC's SCU security, but formal confidentiality and integrity proofs, especially for otCTXT, remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the modified HFC' encryptment scheme, which uses a second key and an authentication tag derived from the binding tag, formalize and prove confidentiality and integrity properties, in particular $\\mathrm{otCTXT}$ security, when the padding is injective rather than prefix-free, relying on the underlying HFC scheme's SCU security. This remains unresolved: the intuition that successful forgery requires guessing a random authentication tag or breaking the underlying SCU security has not been formalized or proved for the modified scheme."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption security analysis for the modified HFC' encryptment scheme.",
+    "assumptions": [
+      "The padding is injective rather than prefix-free.",
+      "The underlying HFC scheme satisfies SCU security."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Formalize and prove the modified scheme's confidentiality and integrity properties, particularly otCTXT security, from the stated forgery intuition and underlying SCU security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [
+      "design.hash-functions"
+    ],
+    "tags": [
+      "authenticated-encryption",
+      "ciphertext-integrity",
+      "security-proof"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fast Message Franking: From Invisible Salamanders to Encryptment",
+        "locator": "CRYPTO 2018, page 24",
+        "doi": "10.1007/978-3-319-96884-1_6",
+        "url": "https://eprint.iacr.org/2019/016",
+        "eprint": "2019/016"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source gives the intuition that a successful forgery must guess a random authentication tag or break the underlying HFC scheme's SCU security. It explicitly leaves formalizing this intuition and proving the modified scheme's properties open.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Fast Message Franking: From Invisible Salamanders to Encryptment"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

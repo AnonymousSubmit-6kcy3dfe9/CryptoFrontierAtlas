@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-ind-qcpa-to-qind-qcpa-transformation",
+  "group_id": "generic-ind-qcpa-to-qind-qcpa-transformation",
+  "title": "Generic IND-qCPA to qIND-qCPA Transformation",
+  "summary": "Block ciphers can be turned into qIND-qCPA-secure schemes, but whether every IND-qCPA-secure encryption scheme admits a generic upgrade remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A construction is known that turns block ciphers into $\\mathrm{qIND\\text{-}qCPA}$-secure schemes. Determine whether there is a general patch that transforms any $\\mathrm{IND\\text{-}qCPA}$-secure encryption scheme into a $\\mathrm{qIND\\text{-}qCPA}$-secure encryption scheme, either by constructing such a patch or by establishing that none exists."
+  },
+  "scope": {
+    "domain": "Generic security transformations for quantum-secure encryption schemes.",
+    "assumptions": [
+      "The input encryption scheme is IND-qCPA-secure."
+    ],
+    "parameters": [
+      "IND-qCPA-secure encryption scheme: arbitrary input to the proposed patch",
+      "qIND-qCPA security: required security guarantee for the transformed scheme"
+    ],
+    "unresolved_remainder": "Construct a general patch transforming any IND-qCPA-secure encryption scheme into a qIND-qCPA-secure scheme, or establish that no such patch exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "quantum-security",
+      "symmetric-encryption",
+      "security-transformations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Semantic Security and Indistinguishability in the Quantum World",
+        "locator": "CRYPTO 2016, page 29",
+        "doi": "10.1007/978-3-662-53015-3_3",
+        "url": "https://eprint.iacr.org/2015/355",
+        "eprint": "2015/355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a construction for turning block ciphers into qIND-qCPA-secure schemes and explicitly presents the existence of a general transformation for arbitrary IND-qCPA-secure schemes as a research question.",
+      "citation_labels": [
+        "Tommaso Gagliardoni et al., Semantic Security and Indistinguishability in the Quantum World"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

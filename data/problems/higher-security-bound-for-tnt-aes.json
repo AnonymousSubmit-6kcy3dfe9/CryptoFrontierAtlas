@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "higher-security-bound-for-tnt-aes",
+  "group_id": "higher-security-bound-for-tnt-aes",
+  "title": "Higher Security Bound for TNT-AES",
+  "summary": "TNT-AES is proved secure up to 22n/3 queries, while determining a bound that reaches or settles its designers' higher conjectured bound remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "TNT-AES is a construction that uses 6-round AES as its building block. Its designers proved security up to $22n/3$ queries and conjectured a higher security bound. The unresolved task is to determine a security bound for TNT-AES that reaches or settles that higher conjectured bound, using a query complexity exceeding the proved $22n/3$-query bound."
+  },
+  "scope": {
+    "domain": "Query-security analysis of TNT-AES, a construction using 6-round AES as its building block.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: variable appearing in the proved 22n/3-query bound",
+      "Query complexity: the number of queries used to measure the security bound"
+    ],
+    "unresolved_remainder": "Determine a TNT-AES security bound beyond 22n/3 queries that reaches or settles the higher conjectured bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "tnt-aes",
+      "query-security",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Truncated Boomerang Attacks and Application to AES-based Ciphers",
+        "locator": "EUROCRYPT 2023, page 23",
+        "doi": "10.1007/978-3-031-30634-1_1",
+        "url": "https://eprint.iacr.org/2022/701",
+        "eprint": "2022/701"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a proved 22n/3-query security bound for TNT-AES and records the designers' conjecture of a higher bound without presenting it as resolved.",
+      "citation_labels": [
+        "Augustin Bariant et al., Truncated Boomerang Attacks and Application to AES-based Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

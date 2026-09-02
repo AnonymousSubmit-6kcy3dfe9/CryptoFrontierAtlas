@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "algebraic-degree-bound-tightness-affine-layers",
+  "group_id": "algebraic-degree-bound-tightness-affine-layers",
+  "title": "Tightness of Algebraic-Degree Bounds for Affine Layers",
+  "summary": "Experiments find the algebraic-degree upper bound for arbitrary affine layers tight for the first three rounds but loose later; characterize exactly when it is tight.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Characterize when the upper bound on $\\delta_r$ for arbitrary $B(x)$ is tight."
+  },
+  "scope": {
+    "domain": "Algebraic-degree analysis of symmetric constructions with arbitrary affine layers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "B(x): arbitrary affine layer covered by the upper bound",
+      "r: round index of the algebraic-degree quantity δ_r"
+    ],
+    "unresolved_remainder": "Characterize when the algebraic-degree upper bound is tight for arbitrary affine layers B(x)."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "algebraic-degree",
+      "affine-layers",
+      "bound-tightness"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coefficient Grouping for Complex Affine Layers",
+        "locator": "CRYPTO 2023, page 31",
+        "doi": "10.1007/978-3-031-38548-3_18",
+        "url": "https://eprint.iacr.org/2023/782",
+        "eprint": "2023/782"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source obtains the bound using relaxed constraints and reports experimental tightness for the first three rounds but looseness later, leaving a general tightness characterization open.",
+      "citation_labels": [
+        "Fukang Liu et al., Coefficient Grouping for Complex Affine Layers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

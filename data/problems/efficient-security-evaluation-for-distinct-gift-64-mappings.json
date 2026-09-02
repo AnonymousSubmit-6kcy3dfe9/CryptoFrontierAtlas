@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-security-evaluation-for-distinct-gift-64-mappings",
+  "group_id": "efficient-security-evaluation-for-distinct-gift-64-mappings",
+  "title": "Efficient Security Evaluation for Distinct GIFT-64 Mappings",
+  "summary": "The construction uses one common mapping across state columns, while efficient evaluation of differential and linear security for distinct column mappings remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For GIFT-64-like ciphers, whose construction applies one identical 16-bit group mapping to every state column, develop an efficient method for evaluating differential and linear security when distinct 16-bit group mappings are applied to different state columns."
+  },
+  "scope": {
+    "domain": "Symmetric block-cipher design and differential and linear cryptanalysis of GIFT-64-like constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "16-bit group mappings: mappings applied to state columns",
+      "state columns: positions to which the mappings are applied"
+    ],
+    "unresolved_remainder": "Develop an efficient method for evaluating differential and linear security when distinct 16-bit group mappings are applied to different state columns."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "block-ciphers",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Greater GIFT: Strengthening GIFT against Statistical Cryptanalysis",
+        "locator": "EUROCRYPT 2022, page 27",
+        "doi": "10.1007/978-3-031-07082-2_5",
+        "url": "https://eprint.iacr.org/2022/243",
+        "eprint": "2022/243"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper describes a GIFT-64-like construction using the same 16-bit group mapping for every state column. It explicitly identifies efficient evaluation with distinct mappings across columns as an open problem.",
+      "citation_labels": [
+        "Ling Sun et al., A Greater GIFT: Strengthening GIFT against Statistical Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

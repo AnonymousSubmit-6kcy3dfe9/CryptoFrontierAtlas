@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fast-active-related-key-security",
+  "group_id": "fast-active-related-key-security",
+  "title": "Active Related-Key Security of FAST",
+  "summary": "FAST has proven multi-target security, but proving security when active related-key adversaries force relations between target keys remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove FAST secure against active related-key attacks allowing a relation such as $K_2=K_1+1$."
+  },
+  "scope": {
+    "domain": "Format-preserving encryption security for FAST under active related-key attacks.",
+    "assumptions": [
+      "The PRF used by FAST resists related-key attacks."
+    ],
+    "parameters": [
+      "K1 and K2: target keys whose relation may be forced, with K2 equal to K1 plus one as the example"
+    ],
+    "unresolved_remainder": "Prove FAST secure against active related-key attacks that permit forced relations between target keys."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "format-preserving-encryption",
+      "related-key-security",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "FAST: Secure and High Performance Format-Preserving Encryption and Tokenization",
+        "locator": "ASIACRYPT 2021, page 17",
+        "doi": "10.1007/978-3-030-92078-4_16",
+        "url": "https://eprint.iacr.org/2021/1171",
+        "eprint": "2021/1171"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "After proving multi-target security and discussing passive related-key attacks via a PRF assumption, the paper identifies active related-key security as a further direction. It says a related-key-resistant PRF would yield security, but does not prove the result for FAST.",
+      "citation_labels": [
+        "F. Betül Durak et al., FAST: Secure and High Performance Format-Preserving Encryption and Tokenization"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

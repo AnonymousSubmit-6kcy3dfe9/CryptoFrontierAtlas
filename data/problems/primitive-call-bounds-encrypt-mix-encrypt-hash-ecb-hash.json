@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "primitive-call-bounds-encrypt-mix-encrypt-hash-ecb-hash",
+  "group_id": "primitive-call-bounds-encrypt-mix-encrypt-hash-ecb-hash",
+  "title": "Primitive-Call Lower Bounds for Encrypt-Mix-Encrypt and Hash-ECB-Hash",
+  "summary": "Primitive-call lower bounds are known for some designs targeting n-bit SPRP security, but whether analogous bounds hold for Encrypt-Mix-Encrypt and Hash-ECB-Hash remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For constructions targeting $n$-bit strong pseudorandom permutation (SPRP) security, primitive-call lower-bound results are known for certain design principles. It remains unresolved whether analogous primitive-call lower bounds apply to the Encrypt-Mix-Encrypt and Hash-ECB-Hash construction paradigms, including whether the same bounds or comparable bounds can be established for those paradigms. [S1]"
+  },
+  "scope": {
+    "domain": "Primitive-call complexity of strong pseudorandom permutation constructions based on the Encrypt-Mix-Encrypt and Hash-ECB-Hash paradigms.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: target SPRP security level in bits"
+    ],
+    "unresolved_remainder": "Whether the same or comparable primitive-call lower bounds known for other design principles can be established for Encrypt-Mix-Encrypt and Hash-ECB-Hash constructions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "block-ciphers",
+      "sprp-security",
+      "primitive-call-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls",
+        "locator": "ASIACRYPT 2018, page 3",
+        "doi": "10.1007/978-3-030-03326-2_12",
+        "url": "https://eprint.iacr.org/2018/819",
+        "eprint": "2018/819"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source discusses primitive-call bounds for SPRP constructions under some design principles, then explicitly states that the applicability of similar results to Encrypt-Mix-Encrypt and Hash-ECB-Hash remains unclear.",
+      "citation_labels": [
+        "Ritam Bhaumik et al., ZCZ – Achieving n-bit SPRP Security with a Minimal Number of Tweakable-Block-Cipher Calls"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

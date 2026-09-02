@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "whitened-swap-or-not-linear-cryptanalysis",
+  "group_id": "whitened-swap-or-not-linear-cryptanalysis",
+  "title": "A WSN Instance with Strong Linear-Cryptanalysis Arguments",
+  "summary": "The bison WSN instance has strong differential resistance but only normal linear-resistance arguments; find a similar WSN instance with comparably strong linear-security arguments.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The bison instance of the Whitened Swap-Or-Not (WSN) construction has strong resistance to differential cryptanalysis, but its available resistance arguments for linear cryptanalysis are only normal. Find a similar WSN instance whose resistance to linear cryptanalysis admits security arguments comparably strong to those available for differential cryptanalysis."
+  },
+  "scope": {
+    "domain": "Symmetric block-cipher design using the Whitened Swap-Or-Not (WSN) construction, with resistance evaluated against differential and linear cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "WSN instance: the construction instance whose linear-cryptanalysis resistance is sought"
+    ],
+    "unresolved_remainder": "Find a similar WSN instance for which resistance to linear cryptanalysis admits security arguments comparably strong to those available for differential cryptanalysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "linear-cryptanalysis",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 32",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The authors present bison as a WSN instance with strong resistance to differential cryptanalysis, while stating that their arguments for linear cryptanalysis are only normal. They pose finding a similar instance with comparably strong linear-security arguments as an interesting question.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

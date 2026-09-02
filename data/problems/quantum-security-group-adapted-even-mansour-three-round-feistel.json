@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quantum-security-group-adapted-even-mansour-three-round-feistel",
+  "group_id": "quantum-security-group-adapted-even-mansour-three-round-feistel",
+  "title": "Quantum Security of Group-Adapted Even-Mansour and Three-Round Feistel",
+  "summary": "The source presents quantum-secure pseudorandom-permutation security for the adapted constructions as a conjecture, so proving it remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove that the adaptations of Even--Mansour and three-round Feistel to suitable group families are qPRPs."
+  },
+  "scope": {
+    "domain": "Quantum-secure symmetric-key cryptography for group-adapted block-cipher constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "suitable group families: families to which the constructions are adapted"
+    ],
+    "unresolved_remainder": "A proof that the adaptations of Even--Mansour and three-round Feistel to suitable group families are qPRPs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "quantum-security",
+      "block-ciphers",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts",
+        "locator": "EUROCRYPT 2017, page 7",
+        "doi": "10.1007/978-3-319-56617-7_3",
+        "url": "https://eprint.iacr.org/2016/960",
+        "eprint": "2016/960"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly conjectures that adaptations of the constructions to other group families are qPRPs. The open task is to prove this conjectured security property.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Quantum-Secure Symmetric-Key Cryptography Based on Hidden Shifts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

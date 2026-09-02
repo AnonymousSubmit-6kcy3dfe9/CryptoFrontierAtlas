@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bbb-security-for-nonce-counter-sum-mode",
+  "group_id": "bbb-security-for-nonce-counter-sum-mode",
+  "title": "BBB Security for the Nonce–Counter-Sum Mode",
+  "summary": "Nonce-respecting use still permits easy tweak-input collisions, and whether the proposed mode attains beyond-birthday-bound security remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Consider the authenticated-encryption mode that places the sum of the nonce and counter in the tweak input and the IV in the plaintext input. Determine whether this mode achieves beyond-birthday-bound (BBB) security in the nonce-respecting setting. The unresolved obstacle is that, even when nonces are respected, an adversary can readily induce collisions among tweak inputs, potentially complicating a BBB-security proof."
+  },
+  "scope": {
+    "domain": "Authenticated-encryption mode design using tweakable block ciphers.",
+    "assumptions": [
+      "Nonce-respecting setting."
+    ],
+    "parameters": [
+      "Nonce and counter: their sum is placed in the tweak input",
+      "IV: placed in the plaintext input"
+    ],
+    "unresolved_remainder": "Whether the mode achieves beyond-birthday-bound security in the nonce-respecting setting despite adversarial tweak-input collisions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "tweakable-block-ciphers",
+      "beyond-birthday-bound"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 9",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the mode as potentially meeting its security objectives but leaves beyond-birthday-bound security unsettled. It identifies easily induced tweak-input collisions under respected nonces as a potential proof complication.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

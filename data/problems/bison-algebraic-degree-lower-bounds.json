@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bison-algebraic-degree-lower-bounds",
+  "group_id": "bison-algebraic-degree-lower-bounds",
+  "title": "Provable Lower Bounds for bison's Algebraic-Degree Growth",
+  "summary": "Only upper bounds are established for bison's algebraic-degree growth; proving nontrivial lower bounds as a function of rounds and block length remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Establish provable, nontrivial lower bounds on the growth of bison's algebraic degree as a function of the number of rounds and block length $n$. Existing analysis provides only upper bounds, while evidence for rapid growth---including attainment of the maximum degree in almost every experimentally examined instance by $n+5$ rounds---remains experimental rather than a lower-bound theorem."
+  },
+  "scope": {
+    "domain": "Cryptanalysis of the bison block-cipher construction through algebraic-degree growth across rounds and block lengths.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "number of rounds, the progression variable for algebraic-degree growth",
+      "block length n, the size parameter for the growth question"
+    ],
+    "unresolved_remainder": "A provable, nontrivial lower-bound theorem for bison's algebraic-degree growth as a function of the number of rounds and block length remains to be established; current rapid-growth evidence is experimental."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.integral-higher-order"
+    ],
+    "tags": [
+      "algebraic-cryptanalysis",
+      "block-cipher",
+      "degree-growth"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "bison Instantiating the Whitened Swap-Or-Not Construction",
+        "locator": "EUROCRYPT 2019, page 23",
+        "doi": "10.1007/978-3-030-17659-4_20",
+        "url": "https://eprint.iacr.org/2018/1011",
+        "eprint": "2018/1011"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source contrasts its upper-bound analysis with lower bounds, which it identifies as more relevant for security. It reports experimental growth in concrete cases, including maximum degree in almost every instance by n+5 rounds, rather than a lower-bound theorem.",
+      "citation_labels": [
+        "Anne Canteaut et al., bison Instantiating the Whitened Swap-Or-Not Construction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

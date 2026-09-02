@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "trax-m-impossible-differential-beyond-four-steps",
+  "group_id": "trax-m-impossible-differential-beyond-four-steps",
+  "title": "Impossible Differential Beyond Four Steps for Trax-M",
+  "summary": "Trax-M has a known four-step impossible differential, but it remains unresolved whether any impossible differential can span more than four steps.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Trax-M, Alzette is applied to both branches in each round, so the usual five-round Feistel impossible-differential pattern does not apply. The best identified impossible differential spans four steps: for any nonzero 64-bit differences $\\delta$ and $\\Delta$, $\\Pr[(0,\\delta)\\to(\\Delta,\\Delta)]=0$. Determine whether Trax-M admits an impossible differential spanning more than four steps; either construct one or prove that no such longer impossible differential exists under this round structure."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of the Trax-M block-cipher construction, focusing on impossible differentials in its two-branch Alzette round structure.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Trax-M: target construction and round structure",
+      "four steps: span of the best identified impossible differential",
+      "nonzero 64-bit differences delta and Delta: difference values in the transition"
+    ],
+    "unresolved_remainder": "Determine whether Trax-M admits an impossible differential spanning more than four steps, either by constructing one or proving that no such longer impossible differential exists under this round structure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "impossible-differential",
+      "differential-cryptanalysis",
+      "trax-m"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 25",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a four-step impossible differential as the best one it found after noting that the standard five-round Feistel pattern does not apply because Alzette acts on both branches. It leaves longer impossible differentials unresolved.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tightness-minfs-bound-4-bit-sboxes",
+  "group_id": "tightness-minfs-bound-4-bit-sboxes",
+  "title": "Tightness of the MinFS Bound for 4-Bit S-Boxes",
+  "summary": "An upper bound on MinFS is known for S-boxes without nonzero linear structures, but its tightness and the existence of a 4-bit example with MinFS 3 remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For S-boxes without a nonzero linear structure, the established upper bound is $\\mathrm{MinFS} \\leq \\mathrm{DUS}/2 + 1$. No $4$-bit S-box attaining $\\mathrm{MinFS}=3$ was found. Determine whether the upper bound is tight, in particular whether a $4$-bit S-box without a nonzero linear structure and with $\\mathrm{MinFS}=3$ exists."
+  },
+  "scope": {
+    "domain": "Structural analysis of S-boxes and their resistance to differential fault attacks.",
+    "assumptions": [
+      "The S-box has no nonzero linear structure."
+    ],
+    "parameters": [
+      "MinFS: the S-box invariant bounded above and targeted at value 3",
+      "DUS: the differential-uniformity parameter appearing in the upper bound",
+      "S-box width: fixed to 4 bits in the concrete existence question"
+    ],
+    "unresolved_remainder": "Whether the upper bound is tight, particularly whether a 4-bit S-box with no nonzero linear structure and MinFS equal to 3 exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "differential-fault-analysis",
+      "differential-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 7",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "Corollary 1 establishes the upper bound. Remark 2 reports that no 4-bit S-box with MinFS equal to 3 was found and explicitly leaves tightness open for future research.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

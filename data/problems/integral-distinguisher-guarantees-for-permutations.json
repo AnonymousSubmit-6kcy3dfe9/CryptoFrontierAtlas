@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "integral-distinguisher-guarantees-for-permutations",
+  "group_id": "integral-distinguisher-guarantees-for-permutations",
+  "title": "Integral-Distinguisher Guarantees for Permutations",
+  "summary": "Existing strong non-existence guarantees rely on key addition and do not cover cryptographic permutations; deriving comparable guarantees for permutation-based schemes remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can strong non-existence guarantees against integral distinguishers be derived for cryptographic permutations or permutation-based schemes, despite the stated results being inherently inapplicable to cryptographic permutations because key addition is crucial to the results and to reducing the complexity of the MILP models, while the conditions required for the integral distinguisher cannot be fulfilled?"
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis of cryptographic permutations and permutation-based schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Derive strong non-existence guarantees against integral distinguishers for cryptographic permutations or permutation-based schemes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [],
+    "tags": [
+      "integral-cryptanalysis",
+      "cryptographic-permutations",
+      "symmetric-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Strong and Tight Security Guarantees against Integral Distinguishers",
+        "locator": "ASIACRYPT 2021, page 29",
+        "doi": "10.1007/978-3-030-92062-3_13",
+        "url": "https://eprint.iacr.org/2021/1502",
+        "eprint": "2021/1502"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The conclusion explains that the paper's guarantees do not apply to cryptographic permutations because key addition is essential and the integral-distinguisher conditions cannot be fulfilled. It presents analogous results for permutations or permutation-based schemes as future work.",
+      "citation_labels": [
+        "Phil Hebborn et al., Strong and Tight Security Guarantees against Integral Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

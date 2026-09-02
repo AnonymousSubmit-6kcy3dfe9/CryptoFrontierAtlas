@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "improving-affine-equivalence-algorithms",
+  "group_id": "improving-affine-equivalence-algorithms",
+  "title": "Improving Affine-Equivalence Algorithm Complexity and Applicability",
+  "summary": "An improved affine-equivalence algorithm targets randomly chosen permutations, but reducing its computational complexity and broadening its applicability remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the affine-equivalence problem, an improved algorithm is known that focuses on randomly chosen permutations; the open task is to further improve its computational complexity and broaden its applicability."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis using affine-equivalence algorithms for randomly chosen permutations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Further improve the algorithm’s computational complexity and broaden its applicability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "affine-equivalence",
+      "structural-cryptanalysis",
+      "algorithmic-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "An Improved Affine Equivalence Algorithm for Random Permutations",
+        "locator": "EUROCRYPT 2018, page 29",
+        "doi": "10.1007/978-3-319-78381-9_16",
+        "url": "https://eprint.iacr.org/2018/115",
+        "eprint": "2018/115"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports an improved affine-equivalence algorithm focused on randomly chosen permutations, then explicitly identifies further improvements in complexity and applicability as the main open problem.",
+      "citation_labels": [
+        "Itai Dinur et al., An Improved Affine Equivalence Algorithm for Random Permutations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

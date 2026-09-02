@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "efficient-key-homomorphic-prfs",
+  "group_id": "efficient-key-homomorphic-prfs",
+  "title": "Efficient Key-Homomorphic PRFs",
+  "summary": "Known key-homomorphic PRF constructions are heavyweight and lack AES-comparable realizations; an efficient construction, a fundamental efficiency lower bound, and exact or non-abelian variants remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Known constructions of key-homomorphic pseudorandom functions (PRFs) are seemingly heavyweight for a symmetric-key primitive, and no realization with performance comparable to AES is known. Construct key-homomorphic PRFs with AES-comparable performance, or prove a fundamental lower bound that precludes such efficiency. Additionally, no exact key-homomorphic PRF is currently known in the standard model; construct an exact KHPRF in the standard model from some DDH-like assumption. It also remains open to construct a non-abelian key-homomorphic weak PRF (KHwPRF), or even a non-abelian input-homomorphic weak PRF (IHwPRF), whose security is based on an underlying cryptographic assumption over non-abelian groups."
+  },
+  "scope": {
+    "domain": "Symmetric cryptography focused on key-homomorphic pseudorandom functions and related weak or input-homomorphic variants.",
+    "assumptions": [
+      "Some DDH-like assumption for an exact KHPRF in the standard model",
+      "An underlying cryptographic assumption over non-abelian groups for the weak variants"
+    ],
+    "parameters": [
+      "AES-comparable performance as the efficiency benchmark",
+      "The standard model as the target model for exact KHPRFs",
+      "Non-abelian groups as the algebraic setting for KHwPRFs and IHwPRFs"
+    ],
+    "unresolved_remainder": "Construct key-homomorphic PRFs with AES-comparable performance or prove a fundamental lower bound precluding that efficiency; construct an exact KHPRF in the standard model from some DDH-like assumption; and construct a non-abelian KHwPRF or IHwPRF whose security is based on an underlying cryptographic assumption over non-abelian groups."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "key-homomorphic-prf",
+      "symmetric-cryptography",
+      "construction-existence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Symmetric Primitives with Structured Secrets",
+        "locator": "CRYPTO 2019, page 2",
+        "doi": "10.1007/978-3-030-26948-7_23",
+        "url": "https://eprint.iacr.org/2019/608",
+        "eprint": "2019/608"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The introduction presents efficient construction or a fundamental efficiency lower bound as a natural question, motivated by heavyweight known constructions and the absence of AES-comparable realizations. It also states open targets for exact standard-model and non-abelian variants.",
+      "citation_labels": [
+        "Navid Alamati et al., Symmetric Primitives with Structured Secrets"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

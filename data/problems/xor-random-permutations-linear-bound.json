@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor-random-permutations-linear-bound",
+  "group_id": "xor-random-permutations-linear-bound",
+  "title": "Linear Distinguishing Bound for XORed Random Permutations",
+  "summary": "Earlier results are weaker or asymptotic; it remains to prove a query-linear, inverse-domain-size bound distinguishing two independent random permutations under XOR from a random function.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "$$\\exists C>0\\ \\forall X,q,A:\\quad \\operatorname{Adv}_{\\oplus\\mathrm{2RP},\\mathrm{RF}}(A)\\leq \\frac{Cq}{|X|},$$"
+  },
+  "scope": {
+    "domain": "Finite-set probabilistic indistinguishability for the XOR of two independent random permutations versus a random function on the same set.",
+    "assumptions": [
+      "X is a finite set.",
+      "The two random permutations are independent.",
+      "The adversary makes at most q queries."
+    ],
+    "parameters": [
+      "C: an absolute positive constant independent of X, q, and A",
+      "X: the common domain and codomain of the permutations and random function",
+      "q: the adversary's query budget",
+      "A: an arbitrary distinguishing adversary"
+    ],
+    "unresolved_remainder": "Establish the conjectured advantage bound uniformly over X, q, and A."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "random-permutations",
+      "distinguishing-advantage",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers",
+        "locator": "CRYPTO 2016, page 20",
+        "doi": "10.1007/978-3-662-53018-4_2",
+        "url": "https://eprint.iacr.org/2015/1049",
+        "eprint": "2015/1049"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper labels the bound Conjecture 1 against earlier weaker or asymptotic results. Its PWC, EPWC, and SCT security theorems assume the conjecture.",
+      "citation_labels": [
+        "Thomas Peyrin et al., Counter-in-Tweak: Authenticated Encryption Modes for Tweakable Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

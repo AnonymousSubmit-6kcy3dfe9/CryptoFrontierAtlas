@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "constructing-a-whprp-secure-block-cipher",
+  "group_id": "constructing-a-whprp-secure-block-cipher",
+  "title": "Constructing a whPRP-Secure Block Cipher",
+  "summary": "No block cipher was designed for whPRP security; SPACE-hard ciphers are conjectural candidates, leaving construction or existence of a whPRP-secure block cipher open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct or establish the existence of a block cipher satisfying $\\mathrm{whPRP}$ security. No existing block cipher was designed with $\\mathrm{whPRP}$ as its security goal, although some $\\mathrm{SPACE}$-hard block ciphers are expected to be candidates; this expectation is conjectural and supported by cryptanalytic evidence rather than a proof."
+  },
+  "scope": {
+    "domain": "Design of block ciphers with whPRP security, including SPACE-hard candidate ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Construct a block cipher satisfying whPRP security or establish that one exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "whprp",
+      "primitive-design"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 78",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly asks whether the required whPRP-secure block ciphers exist. It presents SPACE-hard block ciphers only as conjectural candidates supported by cryptanalytic evidence, not by a proof.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

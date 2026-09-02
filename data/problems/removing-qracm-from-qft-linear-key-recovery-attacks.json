@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "removing-qracm-from-qft-linear-key-recovery-attacks",
+  "group_id": "removing-qracm-from-qft-linear-key-recovery-attacks",
+  "title": "Removing QRACM from QFT Linear Key-Recovery Attacks",
+  "summary": "Q1 QFT-based linear key-recovery attacks require large QRACM for efficient correlation-state construction; removing this memory requirement remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the Q1 model of QFT-based linear key-recovery attacks, efficiently constructing the correlation states requires querying attack data in superposition, which requires a large QRACM resource: quantum-accessible classical memory. The unresolved problem is whether this QRACM memory requirement can be removed. The question is motivated by the offline-Simon algorithm, where quantum queries made during each Grover iterate are instead performed once and reused; here, however, the queries are embedded in quantum amplitude amplification, making analogous query reuse more challenging."
+  },
+  "scope": {
+    "domain": "Quantum linear cryptanalysis and the memory complexity of QFT-based key-recovery attacks.",
+    "assumptions": [
+      "The attacks are considered in the Q1 model."
+    ],
+    "parameters": [
+      "QRACM memory — quantum-accessible classical memory enabling superposition queries to attack data"
+    ],
+    "unresolved_remainder": "Determine whether the QRACM memory requirement can be removed from these attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "quantum-cryptanalysis",
+      "qracm"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Linear Key-recovery Attacks Using the QFT",
+        "locator": "CRYPTO 2023, page 29",
+        "doi": "10.1007/978-3-031-38554-4_9",
+        "url": "https://eprint.iacr.org/2023/184",
+        "eprint": "2023/184"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly poses removal of the QRACM requirement as an important question. It cites offline-Simon-style query reuse as motivation while noting that queries embedded in amplitude amplification make an analogous approach more challenging.",
+      "citation_labels": [
+        "André Schrottenloher et al., Quantum Linear Key-recovery Attacks Using the QFT"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

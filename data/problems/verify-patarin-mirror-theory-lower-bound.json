@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "verify-patarin-mirror-theory-lower-bound",
+  "group_id": "verify-patarin-mirror-theory-lower-bound",
+  "title": "Verify Patarin’s Mirror-Theory Lower Bound",
+  "summary": "Patarin’s mirror theory targets lower bounds for collision-free solutions of XOR-equation systems, but the technique remains unverified and requires a rigorous proof.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Rigorously establish Patarin's mirror-theory lower bound on the number of collision-free solutions for systems of $q_m \\ge 1$ equations in $r \\ge q_m$ unknowns, where every equation has the form $v \\oplus y = \\lambda$, $v$ and $y$ are unknowns, and $\\lambda$ is known. Patarin's mirror theory is currently unverified."
+  },
+  "scope": {
+    "domain": "Combinatorial foundations of symmetric cryptography, specifically Patarin’s mirror theory for XOR-equation systems.",
+    "assumptions": [
+      "Every equation relates two unknowns by XOR to a known value."
+    ],
+    "parameters": [
+      "q_m: the number of equations, constrained to be at least 1",
+      "r: the number of unknowns, constrained to be at least q_m"
+    ],
+    "unresolved_remainder": "Rigorously establish Patarin’s lower bound on the number of collision-free solutions for these systems."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [],
+    "tags": [
+      "patarin-mirror-theory",
+      "xor-equations",
+      "collision-free-counting"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Security Analysis of Two-Permutation Constructions",
+        "locator": "ASIACRYPT 2022, page 3",
+        "doi": "10.1007/978-3-031-22963-3_13",
+        "url": "https://eprint.iacr.org/2022/1244",
+        "eprint": "2022/1244"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents Patarin’s mirror theory as a powerful but still-unverified technique for lower-bounding collision-free solutions. The paper’s stated aim is not to repair the traditional proofs.",
+      "citation_labels": [
+        "Yu Long Chen et al., A Modular Approach to the Security Analysis of Two-Permutation Constructions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

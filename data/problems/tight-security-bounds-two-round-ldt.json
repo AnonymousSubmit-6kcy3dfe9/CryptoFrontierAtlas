@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tight-security-bounds-two-round-ldt",
+  "group_id": "tight-security-bounds-two-round-ldt",
+  "title": "Tight Security Bounds for Two-Round LDT",
+  "summary": "Two-round LDT achieves beyond-birthday security for restricted query sizes, but the proven bound is non-tight and its exact security across those sizes remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine tight security bounds for the two-round LDT construction ($2\\text{-LDT}$) over query sizes in $[n,3n/2)$. Existing results establish beyond-birthday security, with $2n/3$-bit security for evaluations of size around $n$ and $n/2$-bit security for evaluations of size around $3n/2$, but explicitly state that the bound is not tight. A birthday-bound attack is known at the parameter value $s=n-1$, indicating that security decreases as $s$ increases. The unresolved task is to derive matching attacks or sharper proofs that characterize the exact security across these input-length regimes."
+  },
+  "scope": {
+    "domain": "Security analysis of the two-round LDT variable-length domain extender in symmetric cryptography.",
+    "assumptions": [
+      "Query sizes are restricted to [n, 3n/2)."
+    ],
+    "parameters": [
+      "n: baseline size defining the query-size range and the reported bit-security levels",
+      "s: parameter whose increase is associated with lower security; a birthday-bound attack is known at s = n − 1"
+    ],
+    "unresolved_remainder": "Derive matching attacks or sharper proofs that determine the exact security throughout the stated input-length regimes."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptography",
+      "domain-extension",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Short Variable Length Domain Extenders with Beyond Birthday Bound Security",
+        "locator": "ASIACRYPT 2018, page 3",
+        "doi": "10.1007/978-3-030-03326-2_9",
+        "url": "https://eprint.iacr.org/2018/783",
+        "eprint": "2018/783"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source proves beyond-birthday security for two-round LDT, reporting two-thirds-n-bit security for evaluations around n and one-half-n-bit security around three-halves n. It calls the bound non-tight and notes a birthday-bound attack at s = n − 1.",
+      "citation_labels": [
+        "Yu Long Chen et al., Short Variable Length Domain Extenders with Beyond Birthday Bound Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "differentially-4-uniform-permutation-nonlinearity",
+  "group_id": "differentially-4-uniform-permutation-nonlinearity",
+  "title": "Improved Nonlinearity for Differentially 4-Uniform Permutations",
+  "summary": "The known nonlinearity benchmark for differentially 4-uniform permutations on 2n bits may not be optimal; whether any such permutation exceeds it remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For differentially $4$-uniform permutations on $2n$ bits, the best known nonlinearity is $2^{2n-1}-2^n$. Determine whether there exists such a permutation $F$ satisfying $\\operatorname{NL}(F)>2^{2n-1}-2^n$."
+  },
+  "scope": {
+    "domain": "Vectorial Boolean functions, specifically the nonlinearity of differentially 4-uniform permutations in even bit dimension.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: determines the bit dimension 2n of the permutation",
+      "F: the candidate differentially 4-uniform permutation whose nonlinearity is compared with the benchmark"
+    ],
+    "unresolved_remainder": "Whether any such permutation has nonlinearity strictly greater than the best-known value."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "differential-uniformity",
+      "nonlinearity",
+      "vectorial-boolean-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of a Theorem: Decomposing the Only Known Solution to the Big APN Problem",
+        "locator": "CRYPTO 2016, page 23",
+        "doi": "10.1007/978-3-662-53008-5_4",
+        "url": "https://eprint.iacr.org/2016/539",
+        "eprint": "2016/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper recalls this as an earlier explicit open problem, describing the stated nonlinearity as the best known and asking whether any function in the target class can improve it.",
+      "citation_labels": [
+        "Léo Perrin et al., Cryptanalysis of a Theorem: Decomposing the Only Known Solution to the Big APN Problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

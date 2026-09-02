@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "naor-reingold-correlation-intractability-nonconstant-arity",
+  "group_id": "naor-reingold-correlation-intractability-nonconstant-arity",
+  "title": "Naor–Reingold Correlation Intractability at Nonconstant Arity",
+  "summary": "Naor–Reingold correlation intractability covers all constant-arity evasive relations but only restricted nonconstant-arity classes; prove it for arbitrary arity or find an attack.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Naor--Reingold construction, correlation intractability for all evasive relations is established only when the arity $k=O(1)$; coverage for nonconstant $k$ requires restrictions on the class of evasive relations. Determine whether the construction is correlation intractable for arbitrary evasive relations of larger or nonconstant arity, or exhibit a counterexample attack. No such attack is known, but the existing proof technique inherently fails beyond the constant-arity regime."
+  },
+  "scope": {
+    "domain": "Correlation intractability of the Naor–Reingold construction against evasive relations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "k: arity of the evasive relation"
+    ],
+    "unresolved_remainder": "Whether correlation intractability holds for arbitrary evasive relations of larger or nonconstant arity, or a counterexample attack exists."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "correlation-intractability",
+      "naor-reingold",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Naor-Reingold Goes Public: The Complexity of Known-Key Security",
+        "locator": "EUROCRYPT 2018, page 5",
+        "doi": "10.1007/978-3-319-78372-7_21",
+        "url": "https://eprint.iacr.org/2018/137",
+        "eprint": "2018/137"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source fully covers evasive relations only at constant arity and gives restricted coverage at nonconstant arity. It reports no known attack for larger arity but notes that the existing proof inherently fails there.",
+      "citation_labels": [
+        "Pratik Soni et al., Naor-Reingold Goes Public: The Complexity of Known-Key Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

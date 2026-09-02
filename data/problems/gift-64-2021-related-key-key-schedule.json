@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gift-64-2021-related-key-key-schedule",
+  "group_id": "gift-64-2021-related-key-key-schedule",
+  "title": "Related-Key-Resistant Key Schedule for GIFT-64[2021]",
+  "summary": "GIFT-64[2021] variants have lower related-key differential active-S-box bounds; whether a redesigned key schedule can improve their resistance remains conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a key schedule for GIFT-64[2021] variants that improves resistance to related-key differential attacks."
+  },
+  "scope": {
+    "domain": "Key-schedule design for related-key differential resistance in GIFT-64[2021] block-cipher variants.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The 24 GIFT-64[2021] variants: target block-cipher instances",
+      "Key schedule: component to redesign for improved related-key differential resistance"
+    ],
+    "unresolved_remainder": "Construct a key schedule that improves the variants' resistance to related-key differential attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "differential-cryptanalysis",
+      "related-key-attacks",
+      "key-schedule"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Greater GIFT: Strengthening GIFT against Statistical Cryptanalysis",
+        "locator": "EUROCRYPT 2022, page 27",
+        "doi": "10.1007/978-3-031-07082-2_5",
+        "url": "https://eprint.iacr.org/2022/243",
+        "eprint": "2022/243"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper reports that the variants use the original GIFT key schedule and have lower related-key differential active-S-box bounds. It conjectures that carefully crafting the key schedule can lift their resistance.",
+      "citation_labels": [
+        "Ling Sun et al., A Greater GIFT: Strengthening GIFT against Statistical Cryptanalysis"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

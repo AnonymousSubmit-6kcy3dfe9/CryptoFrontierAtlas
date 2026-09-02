@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generic-power-map-full-weight-threshold",
+  "group_id": "generic-power-map-full-weight-threshold",
+  "title": "Full-weight threshold for generic power-map S-boxes",
+  "summary": "The cubic case has a proven minimal threshold for full weight, while the corresponding threshold and minimality result for a generic exponent remain conjectural.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For an encryption polynomial $E_k$ using the power-map S-box $S(x)=x^\\alpha$, determine a round threshold after which $E_k$ has full weight $p^t$—meaning that all $p^t$ monomials occur—and prove that this threshold is minimal. For the cubic case $\\alpha=3$, all monomials occur after $\\lceil\\log_3(p-1)\\rceil+\\lceil\\log_3(t)\\rceil$ rounds, and this number of rounds is minimal; the unresolved task is to establish the corresponding result for generic $\\alpha$."
+  },
+  "scope": {
+    "domain": "Algebraic structure of encryption polynomials induced by power-map S-boxes in substitution-permutation networks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "α: exponent of the power-map S-box",
+      "p and t: parameters governing the full weight p^t and the cubic round threshold",
+      "number of rounds: threshold being determined"
+    ],
+    "unresolved_remainder": "Establish the corresponding full-weight round threshold for generic α and prove that it is minimal."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [],
+    "tags": [
+      "algebraic-structures",
+      "block-cipher",
+      "power-map-sbox"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy",
+        "locator": "EUROCRYPT 2020, page 47",
+        "doi": "10.1007/978-3-030-45724-2_23",
+        "url": "https://eprint.iacr.org/2019/1107",
+        "eprint": "2019/1107"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a lemma establishing the full-weight threshold and its minimality for the cubic S-box. It then explicitly conjectures that a similar result holds for the generic power map.",
+      "citation_labels": [
+        "Lorenzo Grassi et al., On a Generalization of Substitution-Permutation Networks: The HADES Design Strategy"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

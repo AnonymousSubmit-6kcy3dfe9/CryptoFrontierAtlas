@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "relation-between-clique-and-relaxed-enumeration-bounds",
+  "group_id": "relation-between-clique-and-relaxed-enumeration-bounds",
+  "title": "Relation Between Clique and Relaxed Enumeration Bounds",
+  "summary": "The paper establishes bounds comparing clique theory with term enumeration, but leaves their general relationship unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the superpoly graph, let $K_i$ denote the set of $i$-cliques, and let $J_i^R$ denote the key-index set used by relaxed term enumeration, whose combinatorial bound is $\\binom{|J_i^R|}{i}$. The unresolved task is to determine whether a general relation or inequality exists between the clique count $|K_i|$ and this relaxed-enumeration bound for the relevant index $i$."
+  },
+  "scope": {
+    "domain": "Superpoly-graph methods for cube attacks in symmetric cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "i, the relevant clique size and enumeration degree"
+    ],
+    "unresolved_remainder": "Whether a general relation or inequality exists between the clique count and the relaxed-enumeration bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.cube",
+    "secondary": [
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "cube-attack",
+      "algebraic-cryptanalysis",
+      "automated-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Division Property Based Cube Attacks Exploiting Algebraic Properties of Superpoly",
+        "locator": "CRYPTO 2018, page 28",
+        "doi": "10.1007/978-3-319-96884-1_10",
+        "url": "https://eprint.iacr.org/2017/1063",
+        "eprint": "2017/1063"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly states that it is unclear whether a specific relation exists between the clique count and the relaxed term-enumeration quantity. It presents this question after comparing clique-theoretic, degree-evaluation, and term-enumeration bounds.",
+      "citation_labels": [
+        "Qingju Wang et al., Improved Division Property Based Cube Attacks Exploiting Algebraic Properties of Superpoly"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

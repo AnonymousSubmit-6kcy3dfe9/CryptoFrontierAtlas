@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "bounded-moment-to-noisy-leakage-security",
+  "group_id": "bounded-moment-to-noisy-leakage-security",
+  "title": "Leakage Classes for Bounded Moment Security",
+  "summary": "Bounded moment security is weaker than probing security and cannot generally imply noisy leakage security; identify leakage-function classes where the implication holds.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Because the bounded moment leakage model is strictly weaker than the probing model and different distributions can have identical moments, characterize the classes of leakage functions for which security in the bounded moment model implies security in the noisy leakage model; in particular, identify restricted leakage-function classes under which this implication holds."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of leakage models for masked implementations.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Leakage-function classes — restricted classes under which the security implication may hold"
+    ],
+    "unresolved_remainder": "Characterize restricted leakage-function classes for which security in the bounded moment model implies security in the noisy leakage model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "leakage-models",
+      "security-reductions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 26",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents bounded moment security as weaker than probing security and notes that identical moments prevent the implication from holding in general. It then explicitly asks whether bounded moment security implies noisy leakage security for certain leakage-function classes.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

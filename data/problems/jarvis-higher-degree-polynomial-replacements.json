@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "jarvis-higher-degree-polynomial-replacements",
+  "group_id": "jarvis-higher-degree-polynomial-replacements",
+  "title": "Higher-Degree Polynomial Replacements in Jarvis",
+  "summary": "The low-degree case is associated with insecurity against Gröbner-basis attacks, while the effect of higher-degree replacements on algebraic properties and attack behavior remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Jarvis construction, whose affine layer is represented as $A=C\\circ B^{-1}$, determine the algebraic structure and security consequences of replacing both polynomials $B$ and $C$ with polynomials of higher degree. The question is motivated by the existing low-degree case, where composing finite-field inversion with two low-degree affine polynomials produces algebraic properties associated with insecurity against Gr?bner-basis attacks; the unresolved task is to characterize how these properties and the resulting attack behavior change as the degrees of $B$ and $C$ increase."
+  },
+  "scope": {
+    "domain": "Algebraic cryptanalysis of the Jarvis construction in symmetric cryptography.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "The degrees of polynomials B and C, varied from the existing low-degree case to higher-degree choices"
+    ],
+    "unresolved_remainder": "Characterize the algebraic structure and security consequences, including the resulting attack behavior, when both B and C are replaced by higher-degree polynomials."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "jarvis",
+      "algebraic-cryptanalysis",
+      "symmetric-cryptography"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Algebraic Cryptanalysis of STARK-Friendly Designs: Application to MARVELlous and MiMC",
+        "locator": "ASIACRYPT 2019, page 23",
+        "doi": "10.1007/978-3-030-34618-8_13",
+        "url": "https://eprint.iacr.org/2019/419",
+        "eprint": "2019/419"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a natural question after demonstrating Gröbner-basis insecurity for Jarvis and Friday in the low-degree setting. It leaves the higher-degree replacement case open as a question about its algebraic and security consequences.",
+      "citation_labels": [
+        "Martin R. Albrecht et al., Algebraic Cryptanalysis of STARK-Friendly Designs: Application to MARVELlous and MiMC"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

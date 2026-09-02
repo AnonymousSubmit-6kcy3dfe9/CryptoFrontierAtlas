@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "hybrid-space-hardness-to-whprp",
+  "group_id": "hybrid-space-hardness-to-whprp",
+  "title": "Hybrid SPACE Hardness and whPRP Security",
+  "summary": "Hybrid SPACE hardness lacks a proof-ready definition; it remains open to formalize the notion and determine whether it implies whPRP security for well-designed SPACE-hard block ciphers.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For well-designed SPACE-hard block ciphers, formalize hybrid SPACE hardness as a security notion suitable for security proofs and determine whether satisfying that notion implies $\\mathrm{whPRP}$ security. Hybrid SPACE hardness is not currently a formal security definition usable in such proofs, although block ciphers satisfying it are expected to fulfill $\\mathrm{whPRP}$."
+  },
+  "scope": {
+    "domain": "Structural security notions connecting hybrid SPACE hardness and whPRP for well-designed SPACE-hard block ciphers.",
+    "assumptions": [
+      "The block cipher satisfies hybrid SPACE hardness.",
+      "In the proposed simulator regime, the lifter-time bound is no greater than the simulator-query bound."
+    ],
+    "parameters": [
+      "t_lif: time bound for the lifter",
+      "q_sim: query bound for the simulator"
+    ],
+    "unresolved_remainder": "Formalize hybrid SPACE hardness for use in security proofs and determine whether it implies whPRP security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "space-hardness",
+      "whprp-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs",
+        "locator": "ASIACRYPT 2022, page 79",
+        "doi": "10.1007/978-3-031-22966-4_20",
+        "url": "https://eprint.iacr.org/2022/1253",
+        "eprint": "2022/1253"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the implication as an expectation rather than a proof because hybrid SPACE hardness is not yet a formal security definition. It supports the expectation with a heuristic table-search simulator when lifter time does not exceed the simulator-query bound.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., A Modular Approach to the Incompressibility of Block-Cipher-Based AEADs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ctr-drbg-full-key-unpredictability-bound",
+  "group_id": "ctr-drbg-full-key-unpredictability-bound",
+  "title": "Full-Key Unpredictability in the CTR-DRBG Bound",
+  "summary": "The analysis uses only prefix unpredictability; whether full-key unpredictability yields a tighter CTR-DRBG bound for AES-192 and AES-256 remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the CTR-DRBG security analysis, the bound contains a term $pq/2^n$ because it uses only the unpredictability of the $n$-bit prefix of each CTR key rather than that of the entire $k$-bit key. Determine whether exploiting unpredictability of the entire key can replace $pq/2^n$ with $pq/2^k$, yielding a better bound when the underlying block cipher is AES-192 or AES-256."
+  },
+  "scope": {
+    "domain": "Provable security analysis of the NIST CTR-DRBG construction using a block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "p and q, quantities appearing in the security bound",
+      "n, length of the considered key prefix",
+      "k, length of the entire CTR key",
+      "AES-192 or AES-256, underlying block-cipher variants"
+    ],
+    "unresolved_remainder": "Determine whether exploiting unpredictability of the entire key can replace the existing term with pq/2^k and yield a better bound for AES-192 or AES-256."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "ctr-drbg",
+      "security-bounds",
+      "block-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 18",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the existing bound term as an artifact of considering only the n-bit prefix and suggests that full-key unpredictability could improve it. The improvement is left open for AES-192 and AES-256.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

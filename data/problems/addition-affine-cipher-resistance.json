@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "addition-affine-cipher-resistance",
+  "group_id": "addition-affine-cipher-resistance",
+  "title": "Addition–Affine Cipher with Provable Differential and Linear Resistance",
+  "summary": "LAX proves single-trail differential bounds, but its linear bound fails; constructing a modular-addition and binary-field-affine cipher with provable resistance to both attacks remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a cipher using only addition modulo $2^n$ and $\\mathrm{GF}(2)$-affine functions, with provable differential and linear resistance."
+  },
+  "scope": {
+    "domain": "Block-cipher design restricted to addition modulo $2^n$ and $\\mathrm{GF}(2)$-affine functions, targeting resistance to differential and linear cryptanalysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "$n$: exponent defining the modulus $2^n$ for addition"
+    ],
+    "unresolved_remainder": "Construct a cipher under this operation restriction with provable differential and linear resistance."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "block-cipher",
+      "modular-addition",
+      "differential-linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Design Strategies for ARX with Provable Bounds: Sparx and LAX",
+        "locator": "ASIACRYPT 2016, page 28",
+        "doi": "10.1007/978-3-662-53887-6_18",
+        "url": "https://eprint.iacr.org/2016/984",
+        "eprint": "2016/984"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents LAX as satisfying only the differential side of the challenge through provable single-trail bounds, while its corresponding linear bound fails. It explicitly states that the full Wallén challenge remains open.",
+      "citation_labels": [
+        "Daniel Dinu et al., Design Strategies for ARX with Provable Bounds: Sparx and LAX"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

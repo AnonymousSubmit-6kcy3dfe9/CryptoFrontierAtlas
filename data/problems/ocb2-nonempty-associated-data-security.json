@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ocb2-nonempty-associated-data-security",
+  "group_id": "ocb2-nonempty-associated-data-security",
+  "title": "Security of OCB2 with Nonempty Associated Data",
+  "summary": "All motivating OCB2 attacks rely on empty-associated-data forgeries; determine whether restricting every operation to nonempty associated data, including fixed-prefix enforcement, makes OCB2 secure or admits a counterexample.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether $\\mathrm{OCB2}$ is secure when every encryption and decryption operation uses associated data $A \\ne \\varepsilon$, including the generic variant that enforces this restriction by prepending a fixed nonempty string—such as $\\texttt{A}$ or $0^n$—to every associated-data input, even an originally empty input. All $\\mathrm{OCB2}$ attacks motivating this question use a forgery with $A=\\varepsilon$ as a key component. Prove security under the restriction $A\\ne\\varepsilon$ or refute it by giving a counterexample attack."
+  },
+  "scope": {
+    "domain": "Symmetric authenticated encryption, focused on the OCB2 construction and nonempty associated-data restrictions.",
+    "assumptions": [
+      "Every encryption and decryption operation uses nonempty associated data."
+    ],
+    "parameters": [
+      "Associated data: the input whose nonemptiness is restricted",
+      "Fixed nonempty prefix: prepended to every associated-data input in the generic enforcement variant, including an originally empty input"
+    ],
+    "unresolved_remainder": "Whether restricted OCB2 is secure or admits a counterexample attack."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "ocb2",
+      "authenticated-encryption",
+      "security-analysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality",
+        "locator": "CRYPTO 2019, page 21",
+        "doi": "10.1007/978-3-030-26948-7_1",
+        "url": "https://eprint.iacr.org/2019/311",
+        "eprint": "2019/311"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2019-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that a forgery with empty associated data is a key component of all its OCB2 attacks. It presents nonempty associated data, optionally enforced by prepending a fixed string, as a possible fix but does not provide the required security proof.",
+      "citation_labels": [
+        "Akiko Inoue et al., Cryptanalysis of OCB2: Attacks on Authenticity and Confidentiality"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

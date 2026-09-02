@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rubato-full-monomial-support-beyond-two-rounds",
+  "group_id": "rubato-full-monomial-support-beyond-two-rounds",
+  "title": "Rubato Full Monomial Support Beyond Two Rounds",
+  "summary": "All possible monomials are computed to appear at the end of the second round; it remains unresolved whether this property holds for every number of rounds greater than two.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "The polynomial representation of Rubato is computed to contain all possible monomials at the end of the second round, and the unresolved task is to determine whether this full monomial-support property holds for every number of rounds greater than two."
+  },
+  "scope": {
+    "domain": "Structural analysis of the Rubato stream cipher's polynomial representation.",
+    "assumptions": [
+      "the independence assumption used in the heuristic analysis"
+    ],
+    "parameters": [
+      "round count: the second round is the computed baseline, and the conjecture concerns every count greater than two"
+    ],
+    "unresolved_remainder": "Whether the polynomial representation contains all possible monomials for every number of rounds greater than two."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [],
+    "tags": [
+      "stream-ciphers",
+      "monomial-support",
+      "rubato"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rubato: Noisy Ciphers for Approximate Homomorphic Encryption",
+        "locator": "EUROCRYPT 2022, page 34",
+        "doi": "10.1007/978-3-031-06944-4_20",
+        "url": "https://eprint.iacr.org/2022/537",
+        "eprint": "2022/537"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source uses an independence assumption heuristically and reports a computation showing all possible monomials at the end of the second round. It then explicitly conjectures that this property holds for more than two rounds.",
+      "citation_labels": [
+        "Jincheol Ha et al., Rubato: Noisy Ciphers for Approximate Homomorphic Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

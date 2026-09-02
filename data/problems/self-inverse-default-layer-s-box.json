@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "self-inverse-default-layer-s-box",
+  "group_id": "self-inverse-default-layer-s-box",
+  "title": "Self-Inverse S-box for DEFAULT-LAYER",
+  "summary": "DEFAULT-LAYER fixes cryptographic criteria for its S-box, while constructing a self-inverse choice that meets them remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct an S-box $S$ satisfying the DEFAULT-LAYER criteria such that $S^{-1}=S$."
+  },
+  "scope": {
+    "domain": "Design of a self-inverse S-box for DEFAULT-LAYER.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "S: the target S-box constrained to be its own inverse"
+    ],
+    "unresolved_remainder": "Construct a self-inverse S-box satisfying the DEFAULT-LAYER criteria."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.sboxes-nonlinear-components",
+    "secondary": [],
+    "tags": [
+      "s-boxes",
+      "involutions",
+      "cryptographic-primitives"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "DEFAULT: Cipher Level Resistance Against Differential Fault Attack",
+        "locator": "ASIACRYPT 2021, page 23",
+        "doi": "10.1007/978-3-030-92075-3_5",
+        "url": "https://eprint.iacr.org/2021/712",
+        "eprint": "2021/712"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper presents this in an explicit list of potential open problems, suggesting a search for a self-inverse S-box that fits its criteria. The stated motivation is lower hardware cost when the layer and its inverse share a circuit.",
+      "citation_labels": [
+        "Anubhab Baksi et al., DEFAULT: Cipher Level Resistance Against Differential Fault Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

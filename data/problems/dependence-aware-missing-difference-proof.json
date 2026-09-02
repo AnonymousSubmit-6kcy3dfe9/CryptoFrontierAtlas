@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "dependence-aware-missing-difference-proof",
+  "group_id": "dependence-aware-missing-difference-proof",
+  "title": "Dependence-Aware Proof for the Missing-Difference Algorithm",
+  "summary": "The paper heuristically derives constant success for the fast-convolution missing-difference algorithm at the claimed complexity; a rigorous proof under fixed-sum counter dependence remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Can one give a rigorous dependence-aware proof that the fast-convolution missing-difference algorithm succeeds with probability $\\Omega(1)$ using $O(n\\cdot 2^{4n/3})$ XORed values, equivalently using two balanced lists of size $O(\\sqrt{n}\\cdot 2^{2n/3})$ each? The proof must account for the fact that the counter variables $X_c$ are not independent but obey a fixed-sum relation, replacing the existing heuristic that this dependence weakens asymptotically and that the induced covariances are negative."
+  },
+  "scope": {
+    "domain": "Symmetric cryptanalysis of the fast-convolution missing-difference algorithm with fixed-sum-dependent counters.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n — asymptotic size parameter governing the XORed-value and balanced-list bounds",
+      "X_c — counters indexed by c whose dependence drives the proof gap"
+    ],
+    "unresolved_remainder": "Give a rigorous dependence-aware proof of constant success at the claimed XORed-value and balanced-list complexities, replacing the asymptotic negative-covariance heuristic."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "symmetric-cryptanalysis",
+      "missing-difference",
+      "dependence-analysis"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Missing Difference Problem, and Its Applications to Counter Mode Encryption",
+        "locator": "EUROCRYPT 2018, page 19",
+        "doi": "10.1007/978-3-319-78375-8_24",
+        "url": "https://eprint.iacr.org/2018/159",
+        "eprint": "2018/159"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source derives the stated bound using an independence approximation, then concedes that the counters are tied by a fixed-sum relation. It offers asymptotic and negative-covariance intuition rather than a rigorous proof.",
+      "citation_labels": [
+        "Gaëtan Leurent et al., The Missing Difference Problem, and Its Applications to Counter Mode Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

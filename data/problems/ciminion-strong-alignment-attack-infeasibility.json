@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "ciminion-strong-alignment-attack-infeasibility",
+  "group_id": "ciminion-strong-alignment-attack-infeasibility",
+  "title": "Infeasibility of Strong-Alignment Attacks on Ciminion",
+  "summary": "Strong alignment exposes Ciminion to additional attack vectors, but whether its field-element size and high round-to-state ratio make them infeasible remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Ciminion is a symmetric cipher over large finite fields that can be considered strongly aligned, so attack vectors exploiting strong alignment exist for it. It is conjectured that these attacks quickly become infeasible because Ciminion's security level is tied to the size of a field element and its round count is very large relative to the number of field elements in its state. The unresolved task is to determine whether strong-alignment attacks are indeed infeasible for Ciminion under the claimed field-size and round-count parameters."
+  },
+  "scope": {
+    "domain": "Structural cryptanalysis of the strongly aligned Ciminion symmetric cipher over large finite fields.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Field-element size: the quantity to which Ciminion's security level is tied",
+      "Round count relative to the number of state field elements: the conjectured source of rapid attack infeasibility"
+    ],
+    "unresolved_remainder": "Whether attacks exploiting strong alignment are indeed infeasible for Ciminion under the claimed field-size and round-count parameters."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.others"
+    ],
+    "tags": [
+      "ciminion",
+      "structural-cryptanalysis",
+      "strong-alignment"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields",
+        "locator": "EUROCRYPT 2021, page 41",
+        "doi": "10.1007/978-3-030-77886-6_1",
+        "url": "https://eprint.iacr.org/2021/267",
+        "eprint": "2021/267"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes attack vectors that exploit strong alignment and explicitly conjectures that they quickly become infeasible for Ciminion because of its field-element size and high round count. The conjecture remains unresolved.",
+      "citation_labels": [
+        "Christoph Dobraunig et al., Ciminion: Symmetric Encryption Based on Toffoli-Gates over Large Finite Fields"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

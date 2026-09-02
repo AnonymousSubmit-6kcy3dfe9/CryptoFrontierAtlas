@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "consistent-permutation-with-existing-mappings",
+  "group_id": "consistent-permutation-with-existing-mappings",
+  "title": "Permutation Construction Consistent with Existing Mappings",
+  "summary": "Easy permutation construction is available on the domain, but extending it while preserving existing table mappings for use on new points remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Given a domain $X$ on which permutations are easy to construct and an existing table of mappings from a preservation set $T \\subseteq X$ to its range $U$, how can one construct a new permutation on $X$ that agrees with every table mapping on $T$, thereby preserving the existing mappings while permitting the new permutation to be used on new points?"
+  },
+  "scope": {
+    "domain": "Combinatorial and structural questions about constructing permutations on special domains in symmetric cryptography.",
+    "assumptions": [
+      "Permutations are easy to construct on the domain X."
+    ],
+    "parameters": [
+      "X, the domain on which the permutation is constructed",
+      "T, the preservation set whose table mappings must be retained",
+      "U, the range of the existing table mappings"
+    ],
+    "unresolved_remainder": "Construct a new permutation on X that agrees with every existing table mapping on T while remaining usable on new points."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [],
+    "tags": [
+      "permutation-construction",
+      "mapping-consistency",
+      "combinatorics-finite-geometry"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cycle Slicer: An Algorithm for Building Permutations on Special Domains",
+        "locator": "ASIACRYPT 2017, page 4",
+        "doi": "10.1007/978-3-319-70700-6_14",
+        "url": "https://eprint.iacr.org/2017/873",
+        "eprint": "2017/873"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as a practical problem and explicitly recasts it as a theoretical question about constructing a permutation consistent with an existing table of mappings.",
+      "citation_labels": [
+        "Sarah Miracle et al., Cycle Slicer: An Algorithm for Building Permutations on Special Domains"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

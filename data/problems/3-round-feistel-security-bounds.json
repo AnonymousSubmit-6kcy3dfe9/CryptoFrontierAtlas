@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.2.0",
+  "id": "3-round-feistel-security-bounds",
+  "group_id": "3-round-feistel-security-bounds",
+  "title": "Security and Simulator-Query Bounds for 3-Round Feistel",
+  "summary": "For the 3-round Feistel construction, the simulator has quadratic query complexity and birthday-type bounds; improving these bounds or proving matching lower bounds remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Improve the security and simulator-query bounds for 3-round Feistel, or prove matching lower bounds."
+  },
+  "scope": {
+    "domain": "Indifferentiability security and query-complexity bounds for the 3-round Feistel construction.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "3-round Feistel construction — target construction",
+      "simulator query complexity — resource bound",
+      "security bound — security measure"
+    ],
+    "unresolved_remainder": "Improve the security and simulator-query bounds, or prove matching lower bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "indifferentiability",
+      "feistel-network",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiable Authenticated Encryption",
+        "locator": "CRYPTO 2018, page 9",
+        "doi": "10.1007/978-3-319-96884-1_7",
+        "url": "https://eprint.iacr.org/2018/547",
+        "eprint": "2018/547"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2018-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that the 3-round Feistel simulator has quadratic query complexity and that the overall bounds are birthday-type. It explicitly states that improving these bounds or proving lower bounds remains open.",
+      "citation_labels": [
+        "Manuel Barbosa et al., Indifferentiable Authenticated Encryption"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

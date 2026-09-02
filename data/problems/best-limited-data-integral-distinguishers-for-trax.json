@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "best-limited-data-integral-distinguishers-for-trax",
+  "group_id": "best-limited-data-integral-distinguishers-for-trax",
+  "title": "Best Limited-Data Integral Distinguishers for Trax",
+  "summary": "The analysis establishes a maximum-data baseline for Trax, while the best limited-data integral distinguishers with the tweak included remain unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Trax structures, determine the best limited-data integral distinguishers obtainable with the bit-based division property when the tweak is included in the analysis. The obstacle is the combinatorial complexity of searching the very large set of possible plaintext-bit activation patterns, which increases when the tweak is incorporated; the existing analysis therefore uses the maximum possible amount of data and activates every plaintext bit except one instead of solving the limited-data optimization problem."
+  },
+  "scope": {
+    "domain": "Integral cryptanalysis of the Trax structures using the bit-based division property and including the tweak in the analysis.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Trax structures: target cipher constructions",
+      "limited data: cryptanalytic data constraint",
+      "tweak: included analysis input",
+      "plaintext-bit activation patterns: search choices"
+    ],
+    "unresolved_remainder": "Determine the best limited-data integral distinguishers obtainable with the bit-based division property for the Trax structures when the tweak is included in the analysis."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.integral-higher-order",
+    "secondary": [
+      "cryptanalysis.automated"
+    ],
+    "tags": [
+      "integral-cryptanalysis",
+      "division-property",
+      "limited-data"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)",
+        "locator": "CRYPTO 2020, page 42",
+        "doi": "10.1007/978-3-030-56877-1_15",
+        "url": "https://eprint.iacr.org/2019/1378",
+        "eprint": "2019/1378"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the limited-data search as difficult because the possible plaintext-bit activation patterns are combinatorially numerous, and says including the tweak makes this worse. The reported approach instead uses the maximum possible data and activates every plaintext bit except one.",
+      "citation_labels": [
+        "Christof Beierle et al., Alzette: a 64-bit ARX-box (feat. CRAX and TRAX)"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

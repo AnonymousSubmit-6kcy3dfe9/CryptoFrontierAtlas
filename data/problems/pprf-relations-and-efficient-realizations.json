@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "pprf-relations-and-efficient-realizations",
+  "group_id": "pprf-relations-and-efficient-realizations",
+  "title": "Relations and Efficient Realizations of New PPRF Notions",
+  "summary": "Only partial relations and possible instantiations are known; fully characterize the new PPRF notions against existing definitions and realize them efficiently.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Fully characterize how the new PPRF notions relate to existing definitions and how they can be realized efficiently."
+  },
+  "scope": {
+    "domain": "Security definitions and efficient constructions for multi-user puncturable pseudorandom functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "fpr-1ro, fpr-ro, and fpr-rro: the new multi-user PPRF security notions being compared and realized"
+    ],
+    "unresolved_remainder": "A full characterization of how the new notions relate to existing PPRF definitions and how they can be realized efficiently."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "puncturable-prfs",
+      "security-definitions",
+      "efficient-constructions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Puncturable Key Wrapping and Its Applications",
+        "locator": "ASIACRYPT 2022, page 31",
+        "doi": "10.1007/978-3-031-22966-4_22",
+        "url": "https://eprint.iacr.org/2022/1209",
+        "eprint": "2022/1209"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper establishes partial implications and comparisons among its new multi-user PPRF notions and discusses possible instantiations. It leaves their full relationship to existing definitions and their efficient realization for future work.",
+      "citation_labels": [
+        "Matilda Backendal et al., Puncturable Key Wrapping and Its Applications"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

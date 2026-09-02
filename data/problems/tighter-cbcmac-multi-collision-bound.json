@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tighter-cbcmac-multi-collision-bound",
+  "group_id": "tighter-cbcmac-multi-collision-bound",
+  "title": "Tighter CBCMAC Multi-Collision Probability Bound",
+  "summary": "The Lemma 3 bound is known to be loose; derive a tighter CBCMAC multi-collision probability bound to improve the corresponding CTR-DRBG security term.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the security analysis of $\\mathrm{NIST\\ CTR\\mbox{-}DRBG}$, a term in the security bound arises from a $\\mathrm{CBCMAC}$ multi-collision probability estimate that is known to be loose. Derive a tighter bound for this $\\mathrm{CBCMAC}$ multi-collision probability and thereby improve the corresponding $\\mathrm{CTR\\mbox{-}DRBG}$ security bound."
+  },
+  "scope": {
+    "domain": "Combinatorial probability and symmetric-cryptographic security analysis of CBCMAC multi-collisions in NIST CTR-DRBG.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "qL, sigma, and n: quantities appearing in the CBCMAC-derived security-bound term",
+      "Four related variable-length messages: inputs to the joint collision probability bounded by Lemma 3"
+    ],
+    "unresolved_remainder": "Derive a tighter bound for the CBCMAC multi-collision probability and improve the corresponding term in the CTR-DRBG security bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "cbc-mac",
+      "collision-probability",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Security Analysis of NIST CTR-DRBG",
+        "locator": "CRYPTO 2020, page 18",
+        "doi": "10.1007/978-3-030-56784-2_8",
+        "url": "https://eprint.iacr.org/2020/619",
+        "eprint": "2020/619"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source identifies the relevant security-bound term as arising from a CBCMAC multi-collision analysis and describes the Lemma 3 bound as rather loose. It explicitly leaves improving that bound as an open problem.",
+      "citation_labels": [
+        "Viet Tung Hoang et al., Security Analysis of NIST CTR-DRBG"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

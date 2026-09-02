@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonce-based-adaptive-compromise-security",
+  "group_id": "nonce-based-adaptive-compromise-security",
+  "title": "Nonce-Based Adaptive-Compromise Security",
+  "summary": "The established analysis covers randomized encryption; extending it with rigorous nonce-based guarantees remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Adaptive-compromise analysis techniques are available for randomized symmetric encryption, and corresponding definitions have been formulated for nonce-based encryption. Extend these techniques to nonce-based encryption and rigorously establish the resulting security guarantees in the nonce-based setting."
+  },
+  "scope": {
+    "domain": "Adaptive-compromise security analysis for symmetric encryption schemes.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Encryption setting: randomized symmetric encryption is the established case, and nonce-based encryption is the target case"
+    ],
+    "unresolved_remainder": "Extend the adaptive-compromise analysis techniques to nonce-based encryption and rigorously establish the resulting security guarantees in that setting."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "adaptive-compromise",
+      "nonce-based-encryption",
+      "symmetric-encryption"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Handling Adaptive Compromise for Practical Encryption Schemes",
+        "locator": "CRYPTO 2020, page 7",
+        "doi": "10.1007/978-3-030-56784-2_1",
+        "url": "https://eprint.iacr.org/2020/765",
+        "eprint": "2020/765"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper focuses on randomized encryption and gives nonce-based analogues of its definitions in Appendix C. It presents extending the analysis and proving the corresponding nonce-based guarantees as an open direction.",
+      "citation_labels": [
+        "Joseph Jaeger et al., Handling Adaptive Compromise for Practical Encryption Schemes"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

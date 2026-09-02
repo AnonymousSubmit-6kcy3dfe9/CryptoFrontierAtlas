@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "absolute-correlation-multiple-linear-masks",
+  "group_id": "absolute-correlation-multiple-linear-masks",
+  "title": "Theoretical Characterization of Absolute Correlation",
+  "summary": "The fixed-mask estimate falls below the experimental absolute correlation, while the theoretical explanation of multiple-mask and modular-addition effects remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Develop a detailed theoretical characterization of absolute correlation in settings where the theoretical estimate fixes the linear masks $\\lambda^{(0)}$ and $\\lambda^{(1)}$, while multiple linear masks may contribute in a manner analogous to the conventional linear-hull effect. In particular, explain how this multiple-mask effect interacts with consecutive modular addition and why substantially higher absolute correlation is expected. This problem is motivated by the partition-based differential-linear attack on Chaskey, where the experimental absolute correlation is $2^{-7.37}$ rather than the fixed-mask theoretical estimate $2^{-7.958}$; account for this observed gap in terms of the multiple-mask and modular-addition effects."
+  },
+  "scope": {
+    "domain": "Differential-linear cryptanalysis of ARX ciphers, focusing on absolute correlation and linear-hull effects.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "linear masks lambda^(0) and lambda^(1), fixed in the theoretical estimate",
+      "multiple linear masks, possible contributors analogous to the conventional linear-hull effect",
+      "consecutive modular addition, the operation associated with substantially higher absolute correlation",
+      "experimental absolute correlation 2 raised to -7.37 and fixed-mask theoretical estimate 2 raised to -7.958, the observed and baseline values"
+    ],
+    "unresolved_remainder": "A detailed theoretical characterization remains unresolved: explain how multiple-mask contributions interact with consecutive modular addition, why substantially higher absolute correlation is expected, and the observed gap between the experimental and fixed-mask estimates."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.others",
+    "secondary": [],
+    "tags": [
+      "differential-linear-cryptanalysis",
+      "absolute-correlation",
+      "linear-hull-effect"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Improved Differential-Linear Attacks with Applications to ARX Ciphers",
+        "locator": "CRYPTO 2020, page 23",
+        "doi": "10.1007/978-3-030-56877-1_12",
+        "url": "https://eprint.iacr.org/2020/775",
+        "eprint": "2020/775"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper notes that its theoretical estimate fixes two masks, while multiple masks may contribute as in the conventional linear-hull effect and consecutive modular addition may increase absolute correlation. It then explicitly leaves the detailed theoretical understanding as an open question.",
+      "citation_labels": [
+        "Christof Beierle et al., Improved Differential-Linear Attacks with Applications to ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

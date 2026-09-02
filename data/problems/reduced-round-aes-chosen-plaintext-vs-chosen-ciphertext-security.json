@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reduced-round-aes-chosen-plaintext-vs-chosen-ciphertext-security",
+  "group_id": "reduced-round-aes-chosen-plaintext-vs-chosen-ciphertext-security",
+  "title": "Chosen-Plaintext vs. Chosen-Ciphertext Security of Reduced-Round AES",
+  "summary": "A nontrivial 5-round AES distinguisher is known only in chosen-ciphertext mode; whether reduced-round AES has different security margins in the two attack settings remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "A nontrivial distinguisher is known for 5-round AES in the secret-key setting, but it can only be constructed in chosen-ciphertext mode. Determine whether the security margin of round-reduced AES, particularly 5-round AES, actually differs between chosen-plaintext and chosen-ciphertext attacks."
+  },
+  "scope": {
+    "domain": "Secret-key cryptanalysis of round-reduced AES using distinguishing attacks.",
+    "assumptions": [
+      "Secret-key setting"
+    ],
+    "parameters": [
+      "AES round count: identifies the round-reduced variant, particularly 5 rounds",
+      "Attack setting: chosen-plaintext or chosen-ciphertext"
+    ],
+    "unresolved_remainder": "Whether the security margin of round-reduced AES, particularly 5-round AES, actually differs between chosen-plaintext and chosen-ciphertext attacks."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.others",
+    "secondary": [],
+    "tags": [
+      "reduced-round-aes",
+      "distinguishing-attacks",
+      "attack-models"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "New Insights on AES-Like SPN Ciphers",
+        "locator": "CRYPTO 2016, page 1",
+        "doi": "10.1007/978-3-662-53018-4_22",
+        "url": "https://eprint.iacr.org/2016/533",
+        "eprint": "2016/533"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports a nontrivial 5-round AES distinguisher in the secret-key, chosen-ciphertext setting. Because the property applies only there, it suggests—but does not settle—that the two attack settings may have different security margins.",
+      "citation_labels": [
+        "Bing Sun et al., New Insights on AES-Like SPN Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

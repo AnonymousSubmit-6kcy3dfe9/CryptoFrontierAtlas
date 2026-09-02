@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "security-of-nrs-construction-n4",
+  "group_id": "security-of-nrs-construction-n4",
+  "title": "Security of the NRS Construction N4",
+  "summary": "The NRS schemes N1–N3 were found secure, while determining whether N4 is secure remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the NRS construction N4 is secure."
+  },
+  "scope": {
+    "domain": "Security analysis of the NRS authenticated-encryption construction N4.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Whether the NRS construction N4 is secure."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "nrs-n4"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Authenticated Encryption in the Face of Protocol and Side Channel Leakage",
+        "locator": "ASIACRYPT 2017, page 9",
+        "doi": "10.1007/978-3-319-70694-8_24",
+        "url": "https://eprint.iacr.org/2017/068",
+        "eprint": "2017/068"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source reports that N1–N3 were found secure but that the security of N4 remained unresolved.",
+      "citation_labels": [
+        "Guy Barwell et al., Authenticated Encryption in the Face of Protocol and Side Channel Leakage"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

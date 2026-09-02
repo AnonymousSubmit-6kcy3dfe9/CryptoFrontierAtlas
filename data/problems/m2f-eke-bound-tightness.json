@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "m2f-eke-bound-tightness",
+  "group_id": "m2f-eke-bound-tightness",
+  "title": "Tightness of the m2F EKE Bound",
+  "summary": "The collision bound is tight for the abstract Half-Ideal Cipher model, but its tightness for concrete m2F-based EKE remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Is the $(q_{\\mathrm{IC}})^2/|R|$ term tight for EKE instantiated with m2F, or can the concrete bound be improved?"
+  },
+  "scope": {
+    "domain": "Concrete security analysis of EKE instantiated with the modified 2-Feistel Half-Ideal Cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "q_IC: ideal-cipher query count",
+      "|R|: size of R"
+    ],
+    "unresolved_remainder": "Determine whether the bound is tight for the concrete m2F instantiation, either by constructing an explicit EKE attack or by improving the concrete bound."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "foundations.others"
+    ],
+    "tags": [
+      "security-bounds",
+      "half-ideal-cipher",
+      "eke"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Randomized Half-Ideal Cipher on Groups with applications to UC (a)PAKE",
+        "locator": "EUROCRYPT 2023, page 24",
+        "doi": "10.1007/978-3-031-30589-4_5",
+        "url": "https://eprint.iacr.org/2023/295",
+        "eprint": "2023/295"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source states that the bound is tight when encryption is modeled as an abstract Half-Ideal Cipher. It leaves tightness for the specific modified 2-Feistel instantiation unresolved because no explicit attack is known.",
+      "citation_labels": [
+        "Stanislaw Jarecki et al., Randomized Half-Ideal Cipher on Groups with applications to UC (a)PAKE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

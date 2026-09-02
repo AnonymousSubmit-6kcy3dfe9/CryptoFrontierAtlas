@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multidimensional-linear-distinguishers-for-random-functions",
+  "group_id": "multidimensional-linear-distinguishers-for-random-functions",
+  "title": "Multidimensional Linear Distinguishers for Random Functions",
+  "summary": "Multidimensional linear distinguishers address block ciphers versus random permutations; their extension to keyed versus random functions at unchanged asymptotic complexity remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Multidimensional linear distinguishers are considered for distinguishing block ciphers from random permutations. Determine whether these distinguishers also apply to distinguishing keyed functions from random functions on $n$-bit inputs without changing their asymptotic complexity, thereby turning the stated expectation into a general result."
+  },
+  "scope": {
+    "domain": "Multidimensional linear cryptanalysis of block ciphers and keyed functions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "n: bit length of inputs in the keyed-function versus random-function setting"
+    ],
+    "unresolved_remainder": "Determine whether the distinguishers extend to keyed functions versus random functions on n-bit inputs without changing their asymptotic complexity."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [],
+    "tags": [
+      "linear-cryptanalysis",
+      "multidimensional-distinguishers",
+      "random-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers",
+        "locator": "ASIACRYPT 2023, page 18",
+        "doi": "10.1007/978-981-99-8727-6_11",
+        "url": "https://eprint.iacr.org/2022/1558",
+        "eprint": "2022/1558"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source first treats block ciphers against random permutations, then states an expectation that the distinguishers also handle keyed functions against random functions with unchanged asymptotic complexity. Its application examples do not establish the general extension.",
+      "citation_labels": [
+        "Akinori Hosoyamada et al., Quantum Speed-Up for Multidimensional (Zero Correlation) Linear Distinguishers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

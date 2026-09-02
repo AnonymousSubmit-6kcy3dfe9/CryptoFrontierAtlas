@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "conditioned-tail-lengths-random-function-components",
+  "group_id": "conditioned-tail-lengths-random-function-components",
+  "title": "Conditioned Tail Lengths in Random-Function Components",
+  "summary": "The attack analysis treats conditioned and unconditioned tail-length distributions as alike, with only small-scale experimental support; rigorous bounds and the impact of discrepancies remain open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the random-function model underlying the duplex-based AEAD attack, compare the tail-length distribution of a random point conditioned on belonging to an $(s,\\nu)$-component with the tail-length distribution of an unconditioned random point. The existing success analysis assumes that these distributions are the same to obtain a lower bound $p_{\\ell}s$ on the probability that $P_{\\beta}^{\\ell-1}(x_0)$ belongs to the cycle, where $s$ is the component parameter and $p_{\\ell}$ is the corresponding reach-the-cycle probability; small-scale experiments support this assumption, but do not establish it. The unresolved task is to characterize or rigorously bound the conditioned tail-length distribution and quantify how any difference changes the attack's success probability."
+  },
+  "scope": {
+    "domain": "Random-function component and tail-length statistics in duplex-based AEAD cryptanalysis.",
+    "assumptions": [
+      "A random point conditioned on belonging to an (s, ν)-component has the same tail-length distribution as an unconditioned random point."
+    ],
+    "parameters": [
+      "s — component parameter and multiplicative factor in the success lower bound",
+      "ν — second descriptor of the conditioned component",
+      "ℓ — iteration index associated with the cycle-reaching event",
+      "pℓ — corresponding reach-the-cycle probability"
+    ],
+    "unresolved_remainder": "Characterize or rigorously bound the conditioned tail-length distribution and quantify how deviations from the unconditioned distribution affect the attack's success probability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "random-functions",
+      "duplex-aead",
+      "probability-statistics"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Generic Attack on Duplex-Based AEAD Modes using Random Function Statistics",
+        "locator": "EUROCRYPT 2023, page 18",
+        "doi": "10.1007/978-3-031-30634-1_12",
+        "url": "https://eprint.iacr.org/2023/262",
+        "eprint": "2023/262"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The paper bases its success lower bound on an unproved equality of tail-length distributions while noting that strict equality is unlikely. Small-scale experiments support sufficient closeness, but no rigorous characterization or bound is established.",
+      "citation_labels": [
+        "Henri Gilbert et al., Generic Attack on Duplex-Based AEAD Modes using Random Function Statistics"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

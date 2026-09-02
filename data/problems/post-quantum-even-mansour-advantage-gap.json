@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "post-quantum-even-mansour-advantage-gap",
+  "group_id": "post-quantum-even-mansour-advantage-gap",
+  "title": "Closing the Post-Quantum Even-Mansour Advantage Gap",
+  "summary": "The known bound is tight in query complexity but looser than the advantages of the BHT and offline Simon attacks; it remains open whether the bound can be tightened to match them.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the post-quantum Even--Mansour cipher, the known distinguishing-advantage upper bound is $O(2^{-n/2}(q_E\\sqrt{q_P}+q_P\\sqrt{q_E}))$; when $q_E \\ll q_P$, this becomes $O(q_P\\sqrt{q_E}2^{-n/2})$, whereas the BHT and offline Simon attacks achieve advantage $\\Theta(q_P^2q_E2^{-n})$. The unresolved task is to determine whether the upper bound can be tightened to match this attack advantage, rather than only matching the attacks' query-complexity threshold."
+  },
+  "scope": {
+    "domain": "Post-quantum security and distinguishing-advantage bounds for the Even-Mansour cipher.",
+    "assumptions": [
+      "post-quantum setting",
+      "the simplified bound is considered when q_E is much smaller than q_P"
+    ],
+    "parameters": [
+      "n, parameter appearing in the advantage bounds",
+      "q_E and q_P, query-complexity parameters"
+    ],
+    "unresolved_remainder": "Determine whether the upper bound can be tightened to match the BHT and offline Simon attacks' advantage, rather than only matching the attacks' query-complexity threshold."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [],
+    "tags": [
+      "post-quantum",
+      "even-mansour",
+      "security-bounds"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Post-Quantum Security of the Even-Mansour Cipher",
+        "locator": "EUROCRYPT 2022, page 3",
+        "doi": "10.1007/978-3-031-07082-2_17",
+        "url": "https://eprint.iacr.org/2021/1601",
+        "eprint": "2021/1601"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents the bound as tight in query complexity but loose in attacker advantage relative to the BHT and offline Simon attacks. It explicitly identifies reducing this gap as an open question.",
+      "citation_labels": [
+        "Gorjan Alagic et al., Post-Quantum Security of the Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "additional-correlations-retracing-boomerang-attacks",
+  "group_id": "additional-correlations-retracing-boomerang-attacks",
+  "title": "Additional Correlations in Retracing Boomerang Attacks",
+  "summary": "Retracing boomerang attacks use known correlations to increase the combined differential probability; the open task is to find further correlation types that increase it.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Within retracing boomerang attacks, find types of correlations beyond those currently known that further increase the probability of the combined differential property."
+  },
+  "scope": {
+    "domain": "Differential cryptanalysis of retracing boomerang attacks.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Correlation types: mechanisms affecting the combined differential probability"
+    ],
+    "unresolved_remainder": "Find correlation types beyond those currently known that further increase the probability of the combined differential property."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [],
+    "tags": [
+      "cryptanalysis",
+      "differential-cryptanalysis",
+      "boomerang-attacks"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The Retracing Boomerang Attack",
+        "locator": "EUROCRYPT 2020, page 29",
+        "doi": "10.1007/978-3-030-45721-1_11",
+        "url": "https://eprint.iacr.org/2019/1154",
+        "eprint": "2019/1154"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source lists this as one of the most interesting problems left open in its Summary and Open Problems section. It asks for other correlation types that can further increase the probability of the combined differential property.",
+      "citation_labels": [
+        "Orr Dunkelman et al., The Retracing Boomerang Attack"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

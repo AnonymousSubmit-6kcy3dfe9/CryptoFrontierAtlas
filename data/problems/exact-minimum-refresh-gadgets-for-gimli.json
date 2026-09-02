@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "exact-minimum-refresh-gadgets-for-gimli",
+  "group_id": "exact-minimum-refresh-gadgets-for-gimli",
+  "title": "Exact Minimum Refresh-Gadget Count for Gimli",
+  "summary": "A secure construction gives an upper bound of 120 gadgets and a multiple-of-6 constraint, but whether this bound is optimal remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Gimli implementation under the register-probing attack model, determine the exact minimum number of refresh gadgets required for security. The implementation consists of six consecutive identical subcircuits, and using 20 refresh gadgets per subcircuit gives a secure construction, hence an upper bound of 120 gadgets; the optimum is known to be a multiple of 6, but its optimality cannot be established without an exhaustive search."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masked bitsliced implementations under register-probing attacks.",
+    "assumptions": [
+      "Security is evaluated under the register-probing attack model."
+    ],
+    "parameters": [
+      "Refresh-gadget count, the quantity to minimize",
+      "Six consecutive identical subcircuits, determining the multiple-of-6 constraint",
+      "Twenty refresh gadgets per subcircuit, yielding the secure construction"
+    ],
+    "unresolved_remainder": "Determine the exact minimum number of refresh gadgets required for security and establish whether the upper bound of 120 is optimal; the source indicates that this requires an exhaustive search."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masked-implementations",
+      "register-probing"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tornado: Automatic Generation of Probing-Secure Masked Bitsliced Implementations",
+        "locator": "EUROCRYPT 2020, page 19",
+        "doi": "10.1007/978-3-030-45727-3_11",
+        "url": "https://eprint.iacr.org/2020/506",
+        "eprint": "2020/506"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents a secure construction with 20 refresh gadgets for each of six identical subcircuits, giving an upper bound of 120 and a multiple-of-6 constraint. It states that the current method cannot establish optimality without exhaustive search.",
+      "citation_labels": [
+        "Sonia Belaïd et al., Tornado: Automatic Generation of Probing-Secure Masked Bitsliced Implementations"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

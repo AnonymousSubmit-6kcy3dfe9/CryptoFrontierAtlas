@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "indifferentiability-under-non-independent-s-boxes",
+  "group_id": "indifferentiability-under-non-independent-s-boxes",
+  "title": "Indifferentiability Under Non-Independent S-Boxes",
+  "summary": "Existing indifferentiability guarantees assume independent random S-boxes; it remains unresolved whether comparable guarantees extend to dependent S-boxes.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the indifferentiability guarantees for confusion-diffusion networks established under independent random S-boxes can be extended to models in which the S-boxes are non-independent within a round, within a zone, or throughout the network, and derive corresponding or comparable indifferentiability bounds for each dependence scope. [S1]"
+  },
+  "scope": {
+    "domain": "This concerns symmetric-cryptographic indifferentiability analysis of confusion-diffusion networks.",
+    "assumptions": [
+      "Independent random S-boxes underpin the established indifferentiability guarantees."
+    ],
+    "parameters": [
+      "S-box dependence scope: within a round, within a zone, or throughout the network"
+    ],
+    "unresolved_remainder": "Determine whether the indifferentiability guarantees extend to non-independent S-boxes at each stated scope, together with corresponding or comparable bounds for each scope."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "indifferentiability",
+      "s-box-dependence",
+      "confusion-diffusion"
+    ]
+  },
+  "source": {
+    "kind": "open_challenge",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Indifferentiability of Confusion-Diffusion Networks",
+        "locator": "EUROCRYPT 2016, page 32",
+        "doi": "10.1007/978-3-662-49896-5_24",
+        "url": "https://eprint.iacr.org/2015/680",
+        "eprint": "2015/680"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents extending Theorem 1 or Theorem 2 to non-independent S-boxes as a potential research direction. It identifies dependence within a round, within a zone, or throughout the network as progressively broader scopes.",
+      "citation_labels": [
+        "Yevgeniy Dodis et al., Indifferentiability of Confusion-Diffusion Networks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

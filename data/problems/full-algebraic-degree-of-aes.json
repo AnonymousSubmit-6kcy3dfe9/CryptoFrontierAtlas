@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-algebraic-degree-of-aes",
+  "group_id": "full-algebraic-degree-of-aes",
+  "title": "Full Algebraic Degree of AES",
+  "summary": "The source reports only non-trivial lower bounds for reduced-round AES, while the corresponding full-degree result remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Prove the full algebraic degree of AES."
+  },
+  "scope": {
+    "domain": "Structural analysis of algebraic degree in AES and block ciphers.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "AES, the target block cipher"
+    ],
+    "unresolved_remainder": "Prove the full algebraic degree of AES."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [],
+    "tags": [
+      "block-ciphers",
+      "boolean-functions",
+      "algebraic-degree"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Lower Bounds on the Degree of Block Ciphers",
+        "locator": "ASIACRYPT 2020, page 28",
+        "doi": "10.1007/978-3-030-64837-4_18",
+        "url": "https://eprint.iacr.org/2020/1051",
+        "eprint": "2020/1051"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The paper lists this as one of several open questions in its AES application after obtaining only non-trivial lower bounds for reduced-round AES.",
+      "citation_labels": [
+        "Phil Hebborn et al., Lower Bounds on the Degree of Block Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

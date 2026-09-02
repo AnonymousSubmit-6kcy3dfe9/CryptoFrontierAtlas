@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "secmultilr2-t-sni-r-security",
+  "group_id": "secmultilr2-t-sni-r-security",
+  "title": "t-SNI-R Security of SecMultILR2",
+  "summary": "SecMultILR2 has a known but complex t-SNI proof, while its strengthened t-SNI-R security remains unresolved; prove the property or give a counterexample.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the $\\mathrm{SecMultILR2}$ multiplication gadget satisfies $\\mathrm{t\\text{-}SNI\\text{-}R}$, the strengthened probing-security property that permits an adversary to obtain a designated subset of gadget randomness with a single probe. A $\\mathrm{t\\text{-}SNI}$ security proof for $\\mathrm{SecMultILR2}$ is known but is already complex, and its $\\mathrm{t\\text{-}SNI\\text{-}R}$ security was left unproved. Prove that $\\mathrm{SecMultILR2}$ satisfies $\\mathrm{t\\text{-}SNI\\text{-}R}$, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masked multiplication gadgets and probing-security properties.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "SecMultILR2, the target multiplication gadget",
+      "t-SNI-R, the strengthened probing-security property"
+    ],
+    "unresolved_remainder": "Whether SecMultILR2 satisfies t-SNI-R; the task is to prove the property or give a counterexample."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "probing-security",
+      "masked-multiplication"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Side-channel Masking with Pseudo-Random Generator",
+        "locator": "EUROCRYPT 2020, page 18",
+        "doi": "10.1007/978-3-030-45727-3_12",
+        "url": "https://eprint.iacr.org/2019/1106",
+        "eprint": "2019/1106"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The source says the existing t-SNI security proof for SecMultILR2 is already complex and therefore does not attempt to prove t-SNI-R. It consequently uses the multiple-PRG approach only for SecMultFLR and SecMultILR.",
+      "citation_labels": [
+        "Jean-Sébastien Coron et al., Side-channel Masking with Pseudo-Random Generator"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

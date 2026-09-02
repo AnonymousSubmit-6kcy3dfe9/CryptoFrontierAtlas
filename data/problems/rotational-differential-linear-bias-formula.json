@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "rotational-differential-linear-bias-formula",
+  "group_id": "rotational-differential-linear-bias-formula",
+  "title": "Closed Bias Formula for Rotational Differential-Linear Distinguishers",
+  "summary": "The ordinary differential-linear closed-form approach does not transfer directly to rotational-XOR differences; derive a closed bias formula assuming independent differential and linear parts.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine a closed formula for the bias of a rotational differential-linear distinguisher under the sole assumption that its rotational-XOR differential part and linear part are independent. The unresolved task arises because the ordinary differential-linear closed-form approach does not carry over directly: for rotational-XOR differentials, an input RX-difference $\\operatorname{rot}(x) \\oplus x_0 = 0$ does not necessarily produce a zero output RX-difference. The desired formula must therefore characterize the distinguisher's bias under the stated independence assumption without relying on that ordinary-differential behavior."
+  },
+  "scope": {
+    "domain": "Rotational and differential-linear cryptanalysis of symmetric primitives, focused on distinguisher bias.",
+    "assumptions": [
+      "The rotational-XOR differential part and linear part are independent."
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Derive a closed formula for the rotational differential-linear distinguisher's bias under the independence assumption."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.rotational-arx",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "rotational-cryptanalysis",
+      "differential-linear-cryptanalysis",
+      "distinguisher-bias"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Rotational Cryptanalysis From a Differential-Linear Perspective - Practical Distinguishers for Round-reduced FRIET, Xoodoo, and Alzette",
+        "locator": "EUROCRYPT 2021, page 11",
+        "doi": "10.1007/978-3-030-77870-5_26",
+        "url": "https://eprint.iacr.org/2021/189",
+        "eprint": "2021/189"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2021-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly leaves the closed-form bias derivation as an open problem. It identifies the fact that a zero input RX-difference need not produce a zero output RX-difference as the obstacle.",
+      "citation_labels": [
+        "Yunwen Liu et al., Rotational Cryptanalysis From a Differential-Linear Perspective - Practical Distinguishers for Round-reduced FRIET, Xoodoo, and Alzette"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "lattice-based-ss-nizk-standard-model",
+  "group_id": "lattice-based-ss-nizk-standard-model",
+  "title": "Constructing a Lattice-Based SS-NIZK in the Standard Model",
+  "summary": "Some standard-model PAKEs use SS-NIZKs, while a lattice-based construction in that model remains an open question.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Some standard-model PAKEs use a simulation-sound non-interactive zero-knowledge proof (SS-NIZK) approach, but constructing a lattice-based SS-NIZK in the standard model is identified as still an open question."
+  },
+  "scope": {
+    "domain": "This concerns lattice-based zero-knowledge proof constructions for standard-model PAKEs.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "SS-NIZK, the target proof primitive",
+      "lattice-based setting, the required construction setting",
+      "standard model, the required security model"
+    ],
+    "unresolved_remainder": "Constructing a lattice-based SS-NIZK in the standard model remains an open question."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [],
+    "tags": [
+      "ss-nizk",
+      "lattice-based-cryptography",
+      "standard-model"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Randomized Half-Ideal Cipher on Groups with applications to UC (a)PAKE",
+        "locator": "EUROCRYPT 2023, page 60",
+        "doi": "10.1007/978-3-031-30589-4_5",
+        "url": "https://eprint.iacr.org/2023/295",
+        "eprint": "2023/295"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2023-01-01",
+      "kind": "source_statement",
+      "summary": "The source notes that some standard-model PAKEs use an SS-NIZK approach. It then identifies construction of a lattice-based SS-NIZK in the standard model as still an open question.",
+      "citation_labels": [
+        "Stanislaw Jarecki et al., Randomized Half-Ideal Cipher on Groups with applications to UC (a)PAKE"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

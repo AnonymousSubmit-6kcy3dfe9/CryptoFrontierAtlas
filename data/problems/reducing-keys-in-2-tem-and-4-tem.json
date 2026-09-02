@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.2.0",
+  "id": "reducing-keys-in-2-tem-and-4-tem",
+  "group_id": "reducing-keys-in-2-tem-and-4-tem",
+  "title": "Reducing Keys in 2-TEM and 4-TEM",
+  "summary": "The source reports no key-count reduction for either construction, and it remains open whether fewer independent keys can preserve security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the 2-TEM and 4-TEM tweakable Even-Mansour constructions, where 2-TEM uses two independent hash keys and 4-TEM uses two independent $n$-bit keys, determine whether the number of independent keys in either construction can be reduced while preserving its security. The unresolved task is to give such reduced-key constructions, or to establish that no such reduction is possible without degrading security."
+  },
+  "scope": {
+    "domain": "Symmetric cryptographic design focused on tweakable Even-Mansour block-cipher constructions.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "2-TEM: two independent hash keys, whose count is the reduction target",
+      "4-TEM: two independent n-bit keys, whose count is the reduction target"
+    ],
+    "unresolved_remainder": "Provide a reduced-key version of either construction that preserves security, or establish that no such reduction is possible without degrading security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "design.others"
+    ],
+    "tags": [
+      "tweakable-even-mansour",
+      "block-ciphers",
+      "key-reduction"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Minimizing the Two-Round Tweakable Even-Mansour Cipher",
+        "locator": "ASIACRYPT 2020, page 5",
+        "doi": "10.1007/978-3-030-64837-4_20",
+        "url": "https://eprint.iacr.org/2020/1076",
+        "eprint": "2020/1076"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2020-01-01",
+      "kind": "source_statement",
+      "summary": "The authors state that their 2-TEM construction requires two independent hash keys and their 4-TEM construction requires two independent n-bit keys. They present reducing the number of keys without degrading security as a natural open problem.",
+      "citation_labels": [
+        "Avijit Dutta et al., Minimizing the Two-Round Tweakable Even-Mansour Cipher"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

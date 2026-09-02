@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.2.0",
+  "id": "sni-security-parallel-multiplication-single-refreshing",
+  "group_id": "sni-security-parallel-multiplication-single-refreshing",
+  "title": "SNI Security of Parallel Multiplication with One Refreshing",
+  "summary": "The proposed parallel multiplication algorithm with one refreshing operation is conjectured to be SNI for every masking parameter d, but this remains unresolved.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Determine whether the proposed parallel multiplication algorithm composed with a single refreshing operation satisfies SNI security for every masking parameter $d$; equivalently, prove or refute the conjecture that this composition is SNI for any $d$."
+  },
+  "scope": {
+    "domain": "Side-channel cryptanalysis of masking schemes and their SNI security.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "d, the masking parameter"
+    ],
+    "unresolved_remainder": "Prove or refute that the proposed parallel multiplication algorithm composed with a single refreshing operation is SNI for every d."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [],
+    "tags": [
+      "side-channel-cryptanalysis",
+      "masking-schemes",
+      "sni-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model",
+        "locator": "EUROCRYPT 2017, page 18",
+        "doi": "10.1007/978-3-319-56620-7_19",
+        "url": "https://eprint.iacr.org/2016/912",
+        "eprint": "2016/912"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents an explicit conjecture that its multiplication algorithm combined with a single refreshing is SNI for any d. The open task is to prove or refute it.",
+      "citation_labels": [
+        "Gilles Barthe et al., Parallel Implementations of Masking Schemes and the Bounded Moment Leakage Model"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "quadratic-input-encoding-attack-cost",
+  "group_id": "quadratic-input-encoding-attack-cost",
+  "title": "Attack Cost for Quadratic Input Encodings",
+  "summary": "After the paper’s generic attack could not break an affine-encoded implicit implementation, the cost of handling quadratic input encodings remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For implicit implementations using quadratic input encodings, determine the computational cost of an attack capable of handling those encodings."
+  },
+  "scope": {
+    "domain": "Structural and algebraic cryptanalysis of implicit white-box implementations with quadratic input encodings.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "Computational attack cost — the unknown attack-complexity quantity"
+    ],
+    "unresolved_remainder": "Determine the computational cost of an attack capable of handling quadratic input encodings."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.algebraic",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "white-box-cryptography",
+      "attack-complexity",
+      "quadratic-input-encodings"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Implicit White-Box Implementations: White-Boxing ARX Ciphers",
+        "locator": "CRYPTO 2022, page 26",
+        "doi": "10.1007/978-3-031-15802-5_2",
+        "url": "https://eprint.iacr.org/2022/428",
+        "eprint": "2022/428"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2022-01-01",
+      "kind": "source_statement",
+      "summary": "The paper explicitly lists the cost of an attack dealing with quadratic input encodings among several open problems.",
+      "citation_labels": [
+        "Adrián Ranea et al., Implicit White-Box Implementations: White-Boxing ARX Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

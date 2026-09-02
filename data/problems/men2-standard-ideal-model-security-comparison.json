@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2.0",
+  "id": "men2-standard-ideal-model-security-comparison",
+  "group_id": "men2-standard-ideal-model-security-comparison",
+  "title": "Comparing Men2's Standard- and Ideal-Model Security",
+  "summary": "The ideal-cipher estimate may be over-optimistic and the standard-model estimate is too loose; it remains unresolved which is tighter and whether the standard-model bound reflects Men2's actual security.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For Men2, determine how its standard-model and ideal-model security results compare and what security implications follow from both estimates. The standard-model derivation contains an extremely loose replacement step involving the related-key security of $E$, and an attacker maximizing that related-key advantage cannot be transformed into an attacker against Men2; standard-model derivations therefore cannot confirm the resulting estimate. The ideal-cipher-model result is likely to be over-optimistic, while the standard-model result is too loose, so determine which estimate is tighter and whether the loose standard-model bound reflects Men2's actual security."
+  },
+  "scope": {
+    "domain": "This concerns security analysis of the tweak-rekeyable tweakable blockcipher Men2 under standard-model and ideal-cipher-model analyses.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "E, whose related-key security appears in the standard-model replacement",
+      "The standard model and ideal-cipher model, the two security-analysis settings"
+    ],
+    "unresolved_remainder": "Determine how the two estimates compare, which is tighter, what security implications follow from both, and whether the loose standard-model bound reflects Men2's actual security."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-ciphers",
+      "security-models",
+      "security-reductions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security",
+        "locator": "CRYPTO 2017, page 20",
+        "doi": "10.1007/978-3-319-63715-0_24",
+        "url": "https://eprint.iacr.org/2017/474",
+        "eprint": "2017/474"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-02"
+  },
+  "progress": [
+    {
+      "date": "2017-01-01",
+      "kind": "source_statement",
+      "summary": "The source presents this as an explicit Discussion question and says it is not easy to answer. It identifies the standard-model replacement involving E's related-key security as extremely loose and the ideal-cipher result as potentially over-optimistic, leaving the comparison unresolved.",
+      "citation_labels": [
+        "Bart Mennink et al., Insuperability of the Standard Versus Ideal Model Gap for Tweakable Blockcipher Security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

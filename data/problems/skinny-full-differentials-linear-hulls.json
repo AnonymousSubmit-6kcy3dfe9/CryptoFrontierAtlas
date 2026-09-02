@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2.0",
+  "id": "skinny-full-differentials-linear-hulls",
+  "group_id": "skinny-full-differentials-linear-hulls",
+  "title": "Full Differentials and Linear Hulls for SKINNY",
+  "summary": "SKINNY's existing differential and linear bounds cover single characteristics; extending them to full differentials and linear hulls remains open.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\mathrm{SKINNY}$, extend the existing differential and linear bounds beyond single characteristics by analyzing full differentials and linear hulls, including the aggregate probability or correlation arising from multiple contributing characteristics."
+  },
+  "scope": {
+    "domain": "Differential and linear cryptanalysis of the SKINNY block cipher.",
+    "assumptions": [
+      "None"
+    ],
+    "parameters": [
+      "None"
+    ],
+    "unresolved_remainder": "Extend the single-characteristic bounds to full differentials and linear hulls, accounting for aggregate probability or correlation from multiple contributing characteristics."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "skinny",
+      "differential-cryptanalysis",
+      "linear-cryptanalysis"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS",
+        "locator": "CRYPTO 2016, page 19",
+        "doi": "10.1007/978-3-662-53008-5_5",
+        "url": "https://eprint.iacr.org/2016/660",
+        "eprint": "2016/660"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "not_submitted",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-01"
+  },
+  "progress": [
+    {
+      "date": "2016-01-01",
+      "kind": "source_statement",
+      "summary": "The paper gives differential and linear bounds for individual characteristics, then identifies analysis of differentials and linear hulls as a complex task left for future work.",
+      "citation_labels": [
+        "Christof Beierle et al., The SKINNY Family of Block Ciphers and Its Low-Latency Variant MANTIS"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
