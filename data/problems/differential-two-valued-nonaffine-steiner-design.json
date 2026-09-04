@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "differential-two-valued-nonaffine-steiner-design",
+  "group_id": "tang-ding-xiong-differential-code-designs",
+  "title": "A non-affine Steiner design from a differential-spectrum {0,4} function",
+  "summary": "Determine whether a differentially two-valued {0,4} function can produce a weight-four design inequivalent to the affine-geometry Steiner system.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F$ be a binary vectorial function with differential spectrum $\\{0,4\\}$, and form the source-defined binary code $C(F)$ and incidence structure $(P(C(F)^\\perp),B_4(C(F)^\\perp))$. Construct an admissible $F$ for which this incidence structure is not equivalent to the Steiner system arising from affine geometry, or prove that every such $F$ yields an equivalent Steiner system."
+  },
+  "scope": {
+    "domain": "Differentially two-valued binary functions and the weight-four incidence structures of their associated codes",
+    "assumptions": [
+      "$F$ has differential spectrum $\\{0,4\\}$",
+      "$C(F)$, $P(C(F)^\\perp)$, and $B_4(C(F)^\\perp)$ use the source definitions",
+      "Design equivalence uses the source incidence-structure convention"
+    ],
+    "parameters": [
+      "$n$: extension dimension",
+      "$F$: vectorial function",
+      "$C(F)$: associated binary code"
+    ],
+    "unresolved_remainder": "No inspected construction produces a provably inequivalent weight-four Steiner design from this differential-spectrum class, and no theorem proves affine-geometry equivalence for every admissible function."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial",
+      "foundations.coding-theory",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "differential-spectrum",
+      "steiner-designs",
+      "incidence-structures",
+      "linear-codes",
+      "finite-geometry"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Tang--Ding--Xiong, differential functions and designs",
+        "locator": "Section VI, journal p. 3701",
+        "doi": "10.1109/TIT.2019.2959764"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-06-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether a differential-spectrum {0,4} function can yield a Steiner design outside the affine-geometry equivalence class.",
+      "citation_labels": [
+        "Tang--Ding--Xiong, differential functions and designs"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

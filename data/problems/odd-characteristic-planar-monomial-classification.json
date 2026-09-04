@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "id": "odd-characteristic-planar-monomial-classification",
+  "group_id": "ellingsen-felke-riera-stanica-tkachenko-c-differentials",
+  "title": "Classification of planar monomials in odd characteristic",
+  "summary": "Determine whether the known Dembowski-Ostrom and characteristic-three Coulter-Matthews families exhaust all planar monomials up to graph equivalence.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every odd prime $p$, positive integer $n$, and exponent $d$, suppose $x\\mapsto x^d$ is perfect nonlinear, equivalently planar, on $\\mathbb F_{p^n}$. Prove that it is graph-equivalent to a known Dembowski-Ostrom planar monomial or, when $p=3$, to a Coulter-Matthews monomial, or exhibit a planar monomial outside these graph-equivalence classes."
+  },
+  "scope": {
+    "domain": "Perfect nonlinear power functions over finite fields of odd characteristic",
+    "assumptions": [
+      "$p$ is an odd prime",
+      "$n$ is positive",
+      "The function is the monomial $x^d$ on $\\mathbb F_{p^n}$",
+      "Classification is taken up to graph equivalence"
+    ],
+    "parameters": [
+      "$p$: field characteristic",
+      "$n$: extension degree",
+      "$d$: monomial exponent"
+    ],
+    "unresolved_remainder": "The conjecture has been computationally verified for fields of order at most 2^30, and the p>5 cases with extension degree n a power of two are classified. The complete all-characteristic, all-extension-degree classification remains open outside the known strict subranges."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.algebraic-structures",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "planar-monomials",
+      "perfect-nonlinearity",
+      "finite-fields",
+      "graph-equivalence",
+      "classification"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "Zieve's 2013 primary text calls the full classification a folk conjecture, so neither it nor the 2020 TIT restatement establishes the original proposer."
+    },
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Ellingsen--Felke--Riera--Stanica--Tkachenko, PN power-function conjecture",
+        "locator": "Section IV, journal p. 5785",
+        "doi": "10.1109/TIT.2020.2971988"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Zieve, planar monomial folk conjecture",
+        "locator": "Introduction and large-field classification theorem",
+        "doi": "10.1007/s10623-013-9890-8",
+        "url": "https://doi.org/10.1007/s10623-013-9890-8"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Beierle--Felke, small-order planar monomial classification",
+        "locator": "Abstract and Conjecture 1",
+        "eprint": "arXiv:2202.11032",
+        "url": "https://arxiv.org/abs/2202.11032"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Beierle--Beyne, degree bound for planar functions",
+        "locator": "Theorem 1.4",
+        "doi": "10.5070/C65365565",
+        "eprint": "arXiv:2407.04570",
+        "url": "https://arxiv.org/abs/2407.04570"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2013-12-12",
+      "kind": "prior_result",
+      "summary": "Zieve describes the exhaustion of the known planar monomial families as a folk conjecture and proves a large-field fixed-degree result.",
+      "citation_labels": [
+        "Zieve, planar monomial folk conjecture"
+      ]
+    },
+    {
+      "date": "2020-09-01",
+      "kind": "restatement",
+      "summary": "The TIT source restates the conjecture that the listed families exhaust the perfect-nonlinear power functions.",
+      "citation_labels": [
+        "Ellingsen--Felke--Riera--Stanica--Tkachenko, PN power-function conjecture"
+      ]
+    },
+    {
+      "date": "2022-02-22",
+      "kind": "public_result",
+      "summary": "A public preprint computationally verifies the classification for every finite field of order at most 2^30.",
+      "citation_labels": [
+        "Beierle--Felke, small-order planar monomial classification"
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "kind": "public_result",
+      "summary": "A published degree-bound result completes the classification for p>5 when the extension degree is a power of two and leaves the general classification open.",
+      "citation_labels": [
+        "Beierle--Beyne, degree bound for planar functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

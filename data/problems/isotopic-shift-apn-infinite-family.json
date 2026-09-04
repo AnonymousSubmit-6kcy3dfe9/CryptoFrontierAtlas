@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "isotopic-shift-apn-infinite-family",
+  "group_id": "budaghyan-calderini-carlet-coulter-villa-isotopic-shifts",
+  "title": "Infinitude of the Theorem VI.3 isotopic-shift APN family",
+  "summary": "Determine whether the source's isotopic-shift conditions produce APN functions for infinitely many admissible finite-field parameters.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the maps $G_{i,L}$ and admissibility conditions defined in Theorem VI.3 of the source, prove that infinitely many APN functions satisfy every theorem condition, or prove that only finitely many APN functions arise from this exact construction."
+  },
+  "scope": {
+    "domain": "APN functions produced by the source's Theorem VI.3 isotopic-shift construction",
+    "assumptions": [
+      "The finite-field and linear-shift parameters satisfy every condition in source Theorem VI.3",
+      "APN means differential uniformity two",
+      "The question concerns the exact source construction, not later generalized shift frameworks"
+    ],
+    "parameters": [
+      "finite-field dimension",
+      "construction index $i$",
+      "linear shift $L$",
+      "subfield parameters"
+    ],
+    "unresolved_remainder": "Later generalized isotopic-shift work supplies additional finite-dimensional constructions but does not prove that the exact Theorem VI.3 family is infinite or finite."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.algebraic-structures",
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "isotopic-shifts",
+      "infinite-families",
+      "finite-fields",
+      "differential-uniformity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Budaghyan--Calderini--Carlet--Coulter--Villa, isotopic shifts",
+        "locator": "Conjecture VII.2, journal p. 5308",
+        "doi": "10.1109/TIT.2020.2974471"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-08-01",
+      "kind": "source_statement",
+      "summary": "Conjecture VII.2 asks whether the exact Theorem VI.3 construction yields infinitely many APN functions.",
+      "citation_labels": [
+        "Budaghyan--Calderini--Carlet--Coulter--Villa, isotopic shifts"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

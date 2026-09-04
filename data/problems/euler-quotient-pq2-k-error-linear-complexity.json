@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "euler-quotient-pq2-k-error-linear-complexity",
+  "group_id": "zhang-gao-zhao-euler-quotient-sequences",
+  "title": "k-error linear complexity of an Euler-quotient pq-squared sequence",
+  "summary": "Determine the complete k-error linear-complexity profile of the source-defined binary sequence derived from Euler quotients modulo pq.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ and $q$ be distinct odd primes with $p\\mid(q-1)$ and $2^{q-1}\\not\\equiv1\\pmod{q^2}$, and let $s$ be the source-defined binary threshold sequence of period $pq^2$ derived from Euler quotients modulo $pq$. Determine $L_k(s)$ exactly for every admissible $(p,q,k)$, including whether $L_1(s)=L(s)$ throughout the full parameter family."
+  },
+  "scope": {
+    "domain": "Binary pq-squared-periodic threshold sequences derived from Euler quotients",
+    "assumptions": [
+      "$p$ and $q$ are distinct odd primes",
+      "$p\\mid(q-1)$",
+      "$2^{q-1}\\not\\equiv1\\pmod{q^2}$",
+      "$s$ is the exact source-defined binary threshold sequence"
+    ],
+    "parameters": [
+      "$p,q$: prime parameters",
+      "$k$: number of altered terms per period",
+      "$L_k(s)$: k-error linear complexity"
+    ],
+    "unresolved_remainder": "The exact k-error profile remains unknown for the full admissible (p,q,k) family, including the experimentally emphasized k=1 stability claim. Results for other Euler-quotient sequence families do not cover this source sequence."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "binary-sequences",
+      "euler-quotients",
+      "linear-complexity",
+      "error-linear-complexity",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang--Gao--Zhao, Euler-quotient pq-squared sequences",
+        "locator": "Concluding Remarks, journal p. 5779; k=1 experiment, journal p. 5775",
+        "doi": "10.1109/TIT.2020.2979838"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-09-01",
+      "kind": "source_statement",
+      "summary": "The source explicitly leaves the full k-error linear complexity open and reports experiments suggesting stability at k=1.",
+      "citation_labels": [
+        "Zhang--Gao--Zhao, Euler-quotient pq-squared sequences"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "euler-quotient-pq2-autocorrelation"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

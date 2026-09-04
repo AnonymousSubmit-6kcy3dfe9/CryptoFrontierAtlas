@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.2.0",
+  "id": "perfect-binary-sequence-beyond-period-four",
+  "group_id": "zhang-zhang-yang-feng-two-adic-complexity",
+  "title": "Perfect periodic binary sequences beyond period four",
+  "summary": "Determine whether any periodic binary sequence of period greater than four has zero autocorrelation at every nonzero shift.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For a binary sequence $S=(s_i)$ of least period $N\\equiv0\\pmod 4$, define $A_S(\\tau)=\\sum_{i=0}^{N-1}(-1)^{s_{i+\\tau}-s_i}$. Prove that $A_S(\\tau)=0$ for every $1\\le\\tau<N$ is impossible whenever $N>4$, or construct one such perfect sequence. Equivalently, settle the nonexistence of circulant Hadamard matrices of order greater than four."
+  },
+  "scope": {
+    "domain": "Periodic binary sequences with perfect periodic autocorrelation, equivalently circulant Hadamard matrices",
+    "assumptions": [
+      "$S$ is binary and has least period $N$",
+      "$N\\equiv0\\pmod 4$",
+      "Perfect autocorrelation means $A_S(\\tau)=0$ for every nonzero shift modulo $N$"
+    ],
+    "parameters": [
+      "$N$: sequence period",
+      "$S$: periodic binary sequence",
+      "$\\tau$: cyclic shift"
+    ],
+    "unresolved_remainder": "A 2023 preprint claims a proof of nonexistence for every N>4, but the complete claim has not received peer-reviewed confirmation and the conjecture continues to be treated as open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "design.stream-ciphers"
+    ],
+    "tags": [
+      "binary-sequences",
+      "autocorrelation",
+      "circulant-hadamard",
+      "difference-sets",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The TIT paper restates a historical conjecture without identifying its original source. Its N>4 existence form is equivalent to Ryser's circulant Hadamard conjecture, but this bounded audit did not confirm the first formulation."
+    },
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Zhang--Zhang--Yang--Feng, perfect binary sequence conjecture",
+        "locator": "Introduction, journal p. 4613",
+        "doi": "10.1109/TIT.2020.2964171"
+      },
+      {
+        "role": "resolution",
+        "label": "Morris, claimed proof of Ryser's circulant Hadamard conjecture",
+        "locator": "Abstract and concluding argument, pp. 1-4",
+        "eprint": "arXiv:2302.08346",
+        "url": "https://arxiv.org/abs/2302.08346"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-01-08",
+      "kind": "restatement",
+      "summary": "The TIT paper restates the conjecture that no perfect periodic binary sequence exists beyond the period-four case.",
+      "citation_labels": [
+        "Zhang--Zhang--Yang--Feng, perfect binary sequence conjecture"
+      ]
+    },
+    {
+      "date": "2023-02-16",
+      "kind": "public_result",
+      "summary": "A public preprint claims a complete proof of the equivalent circulant Hadamard conjecture; peer-reviewed confirmation remains absent.",
+      "citation_labels": [
+        "Morris, claimed proof of Ryser's circulant Hadamard conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

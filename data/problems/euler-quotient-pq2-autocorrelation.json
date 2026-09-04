@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "euler-quotient-pq2-autocorrelation",
+  "group_id": "zhang-gao-zhao-euler-quotient-sequences",
+  "title": "Autocorrelation of an Euler-quotient pq-squared sequence",
+  "summary": "Determine the complete periodic autocorrelation distribution of the source-defined binary sequence derived from Euler quotients modulo pq.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $p$ and $q$ be distinct odd primes with $p\\mid(q-1)$ and $2^{q-1}\\not\\equiv1\\pmod{q^2}$, and let $s$ be the source-defined binary threshold sequence of period $pq^2$ derived from Euler quotients modulo $pq$. Determine $A_s(\\tau)$ exactly for every nonzero periodic shift $\\tau$, equivalently give the complete autocorrelation value distribution for every admissible pair $(p,q)$."
+  },
+  "scope": {
+    "domain": "Binary pq-squared-periodic threshold sequences derived from Euler quotients",
+    "assumptions": [
+      "$p$ and $q$ are distinct odd primes",
+      "$p\\mid(q-1)$",
+      "$2^{q-1}\\not\\equiv1\\pmod{q^2}$",
+      "$s$ is the exact source-defined binary threshold sequence"
+    ],
+    "parameters": [
+      "$p,q$: prime parameters",
+      "$\\tau$: nonzero periodic shift",
+      "$A_s(\\tau)$: periodic autocorrelation"
+    ],
+    "unresolved_remainder": "No inspected later work gives the exact second-order periodic autocorrelation for all admissible p,q and shifts. A later fourth-order correlation-measure result concerns a different statistic."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.stream-ciphers",
+    "secondary": [
+      "foundations.algebraic-structures"
+    ],
+    "tags": [
+      "binary-sequences",
+      "euler-quotients",
+      "autocorrelation",
+      "periodic-sequences",
+      "stream-ciphers"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Zhang--Gao--Zhao, Euler-quotient pq-squared sequences",
+        "locator": "Concluding Remarks, journal pp. 5779-5780",
+        "doi": "10.1109/TIT.2020.2979838"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-09-01",
+      "kind": "source_statement",
+      "summary": "The source lists the exact autocorrelation of its pq-squared-periodic binary sequence as an unsolved problem.",
+      "citation_labels": [
+        "Zhang--Gao--Zhao, Euler-quotient pq-squared sequences"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "euler-quotient-pq2-k-error-linear-complexity"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

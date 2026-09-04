@@ -171,6 +171,15 @@ import recordApnCorollary3WalshCondition from '../data/problems/apn-corollary3-w
 import recordApnFullAlgebraicDegree from '../data/problems/apn-full-algebraic-degree.json';
 import recordApnGammaLinearStructures from '../data/problems/apn-gamma-linear-structures.json';
 import recordCorrelationImmunityWeight2mBound from '../data/problems/correlation-immunity-weight-2m-bound.json';
+import recordDifferentialTwoValuedNonaffineSteinerDesign from '../data/problems/differential-two-valued-nonaffine-steiner-design.json';
+import recordEulerQuotientPq2Autocorrelation from '../data/problems/euler-quotient-pq2-autocorrelation.json';
+import recordEulerQuotientPq2KErrorLinearComplexity from '../data/problems/euler-quotient-pq2-k-error-linear-complexity.json';
+import recordFuzzyExtractorConditionalTestingImpossibility from '../data/problems/fuzzy-extractor-conditional-testing-impossibility.json';
+import recordGoldApnDistanceBoundTightness from '../data/problems/gold-apn-distance-bound-tightness.json';
+import recordIsotopicShiftApnInfiniteFamily from '../data/problems/isotopic-shift-apn-infinite-family.json';
+import recordNonMalleableExtractorLinearTEntropyLowerBound from '../data/problems/non-malleable-extractor-linear-t-entropy-lower-bound.json';
+import recordOddCharacteristicPlanarMonomialClassification from '../data/problems/odd-characteristic-planar-monomial-classification.json';
+import recordPerfectBinarySequenceBeyondPeriodFour from '../data/problems/perfect-binary-sequence-beyond-period-four.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -415,6 +424,15 @@ export const problems = [
   recordApnFullAlgebraicDegree,
   recordApnGammaLinearStructures,
   recordCorrelationImmunityWeight2mBound,
+  recordDifferentialTwoValuedNonaffineSteinerDesign,
+  recordEulerQuotientPq2Autocorrelation,
+  recordEulerQuotientPq2KErrorLinearComplexity,
+  recordFuzzyExtractorConditionalTestingImpossibility,
+  recordGoldApnDistanceBoundTightness,
+  recordIsotopicShiftApnInfiniteFamily,
+  recordNonMalleableExtractorLinearTEntropyLowerBound,
+  recordOddCharacteristicPlanarMonomialClassification,
+  recordPerfectBinarySequenceBeyondPeriodFour,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

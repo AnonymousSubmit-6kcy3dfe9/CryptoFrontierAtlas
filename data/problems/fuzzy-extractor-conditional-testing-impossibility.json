@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "fuzzy-extractor-conditional-testing-impossibility",
+  "group_id": "fuller-reyzin-smith-fuzzy-extractor-open-questions",
+  "title": "Conditional-testing derivation of fuzzy-extractor impossibility bounds",
+  "summary": "Determine whether conditional independence testing can recover the unknown-distribution fuzzy-extractor impossibility guarantees of two source theorems.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the unknown-distribution fuzzy-extractor model and the source-defined joint variables $(W,W',Z)$, use the cited conditional independence testing upper-bound framework to derive analogues of the impossibility guarantees in Theorems 5.1 and 6.1 throughout their parameter regimes, or prove an obstruction showing that this framework cannot establish those guarantees."
+  },
+  "scope": {
+    "domain": "Unknown-distribution fuzzy extractors and conditional independence testing bounds",
+    "assumptions": [
+      "The fuzzy-extractor model and joint distributions are those of the source",
+      "The target guarantees are the impossibility regimes of source Theorems 5.1 and 6.1",
+      "Theorem 5.1 uses the source's perfect-correctness regime with $\\delta=0$ and $\\kappa\\ge 3$",
+      "Theorem 6.1 uses the source's error-tolerant regime with $\\delta\\le 1/25$ and $\\kappa>0$",
+      "The derivation must use the cited conditional independence testing framework"
+    ],
+    "parameters": [
+      "theorem regime",
+      "source entropy and noise parameters",
+      "correctness error $\\delta$",
+      "extracted key length $\\kappa$"
+    ],
+    "unresolved_remainder": "Later fuzzy-extractor impossibility results establish different distributional-advice bounds, but no inspected work derives both source theorem regimes through conditional independence testing or proves that such a derivation is impossible."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "fuzzy-extractors",
+      "key-derivation",
+      "conditional-independence-testing",
+      "impossibility-bounds",
+      "unknown-distributions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Fuller--Reyzin--Smith, fuzzy extractor possibility",
+        "locator": "Section I-B, journal p. 5285",
+        "doi": "10.1109/TIT.2020.2984751"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-08-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether conditional independence testing can reproduce its two unknown-distribution impossibility theorems.",
+      "citation_labels": [
+        "Fuller--Reyzin--Smith, fuzzy extractor possibility"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

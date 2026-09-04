@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "gold-apn-distance-bound-tightness",
+  "group_id": "budaghyan-carlet-helleseth-kaleyski-apn-distance",
+  "title": "Tightness of the Gold-to-APN distance lower bound beyond dimension five",
+  "summary": "Determine whether the source lower bound on the Hamming distance from the Gold function to another APN function is attained in any dimension greater than five.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the Gold function $F(x)=x^3$ on $\\mathbb F_{2^n}$, define the source Eq. (11) bound $B(n)$ by $B(n)=(2^{n-1}+2)/3$ when $n$ is odd, $B(n)=(2^{n-1}-2^{n/2-1}+2)/3$ when $n$ is even and $n/2$ is odd, and $B(n)=(2^{n-1}-2^{n/2}+2)/3$ when $n$ is even and $n/2$ is even. Determine whether there exist $n>5$ and an APN function $G\\ne F$ such that $d(x^3,G)=B(n)$; equivalently, exhibit one attaining pair or prove strict inequality for every $n>5$."
+  },
+  "scope": {
+    "domain": "Hamming distances between the Gold function and APN functions over binary finite fields",
+    "assumptions": [
+      "$n>5$",
+      "$G:\\mathbb F_{2^n}\\to\\mathbb F_{2^n}$ is APN and differs from $x^3$",
+      "$B(n)$ is the exact three-branch bound in source Eq. (11)"
+    ],
+    "parameters": [
+      "$n$: field dimension",
+      "$G$: APN function",
+      "$d(x^3,G)$: Hamming distance",
+      "$B(n)$: source Eq. (11) lower bound"
+    ],
+    "unresolved_remainder": "No inspected later result constructs an attaining APN function for any n>5 or proves that the source Gold-function bound is always strict in this range. Later general distance bounds do not decide this equality question."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "apn-functions",
+      "gold-functions",
+      "hamming-distance",
+      "lower-bound-tightness",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Budaghyan--Carlet--Helleseth--Kaleyski, APN distances",
+        "locator": "Table I discussion, journal p. 5751",
+        "doi": "10.1109/TIT.2020.2983684"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-09-01",
+      "kind": "source_statement",
+      "summary": "After proving and computing the Gold-function bound, the source asks whether it is attained in any dimension greater than five.",
+      "citation_labels": [
+        "Budaghyan--Carlet--Helleseth--Kaleyski, APN distances"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

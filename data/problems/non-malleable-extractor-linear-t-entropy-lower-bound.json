@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "non-malleable-extractor-linear-t-entropy-lower-bound",
+  "group_id": "gur-shinkar-non-malleable-extractor-lower-bounds",
+  "title": "Linear-t min-entropy lower bound for non-malleable extractors",
+  "summary": "Determine whether security against t related seeds forces the conjectured min-entropy lower bound for every one-bit non-malleable extractor.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $\\mathrm{nmExt}:\\{0,1\\}^n\\times\\{0,1\\}^d\\to\\{0,1\\}$ be a $(k,\\varepsilon)$-$t$-non-malleable extractor in the source model, with $\\varepsilon$ in the stated small-error regime. Prove that every such extractor satisfies $k\\ge \\log d+2\\log(1/\\varepsilon)+t-O(1)$, where the additive constant is absolute, or construct an admissible infinite family that violates the linear dependence on $t$."
+  },
+  "scope": {
+    "domain": "One-bit non-malleable extractors secure against t adversarially related seeds",
+    "assumptions": [
+      "$\\varepsilon$ lies in the source's small-error regime",
+      "The extractor output is one bit",
+      "The lower bound is interpreted up to an absolute additive constant"
+    ],
+    "parameters": [
+      "$n$: source length",
+      "$d$: seed length",
+      "$k$: source min-entropy",
+      "$\\varepsilon$: statistical error",
+      "$t$: number of tampered seeds"
+    ],
+    "unresolved_remainder": "No inspected later work proves the full lower bound with its linear t term for every admissible one-bit t-non-malleable extractor or supplies a counterexample family."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "non-malleable-extractors",
+      "randomness-extraction",
+      "min-entropy",
+      "lower-bounds",
+      "privacy-amplification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Gur--Shinkar, entropy lower bound for non-malleable extractors",
+        "locator": "Section I-B(2), journal p. 2905",
+        "doi": "10.1109/TIT.2019.2946896"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-05-01",
+      "kind": "source_statement",
+      "summary": "The source conjectures the displayed min-entropy lower bound and explicitly leaves its linear dependence on the tampering count open.",
+      "citation_labels": [
+        "Gur--Shinkar, entropy lower bound for non-malleable extractors"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
