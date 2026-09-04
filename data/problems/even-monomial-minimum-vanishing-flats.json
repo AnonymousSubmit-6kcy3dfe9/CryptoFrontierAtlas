@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "even-monomial-minimum-vanishing-flats",
+  "group_id": "li-meidl-vanishing-flat-extremal-questions",
+  "title": "Non-inverse monomials with the minimum even-dimensional vanishing-flat count",
+  "summary": "Determine whether an even-dimensional non-APN monomial outside the inverse family can attain the sharp lower bound on its number of vanishing flats.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $n$ be even and let $F_d(x)=x^d$ be a non-APN monomial on $\\mathbb F_{2^n}$. Exclude the inverse function's Frobenius equivalence orbit, namely exponents $d\\equiv-2^i\\pmod{2^n-1}$ for $0\\le i<n$, as prescribed by Remark II.2 and the source's Table II convention. Determine whether some remaining exponent satisfies $$|\\operatorname{VB}_{n,d}|=\\frac{2^n-1}{3}.$$ A positive answer requires one verified exponent outside that orbit; a negative answer must prove that every attaining monomial in every even dimension belongs to the inverse orbit."
+  },
+  "scope": {
+    "domain": "Vanishing flats of monomial functions over binary finite fields",
+    "assumptions": [
+      "$n$ is even",
+      "$F_d(x)=x^d$ is non-APN on $\\mathbb F_{2^n}$",
+      "Frobenius variants of the inverse function are treated as one source-stated equivalence family"
+    ],
+    "parameters": [
+      "$n$: even extension degree",
+      "$d$: exponent modulo $2^n-1$"
+    ],
+    "unresolved_remainder": "No inspected later result constructs an attaining monomial outside the inverse Frobenius orbit or proves that the inverse orbit contains every attaining monomial in all even dimensions."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry",
+      "cryptanalysis.differential"
+    ],
+    "tags": [
+      "vanishing-flats",
+      "power-functions",
+      "non-apn-functions",
+      "lower-bound-tightness",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Meidl--Polujan--Pott--Riera--Stanica, even-dimensional vanishing-flat question",
+        "locator": "Concluding remarks, item (1), journal p. 7110; Remark II.2 and the Table II convention",
+        "doi": "10.1109/TIT.2020.3002993",
+        "url": "https://doi.org/10.1109/TIT.2020.3002993"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-06-17",
+      "kind": "source_statement",
+      "summary": "After proving the even-dimensional lower bound sharp for the inverse function, the source asks whether any other monomial attains it; its equivalence conventions exclude trivial Frobenius variants.",
+      "citation_labels": [
+        "Li--Meidl--Polujan--Pott--Riera--Stanica, even-dimensional vanishing-flat question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

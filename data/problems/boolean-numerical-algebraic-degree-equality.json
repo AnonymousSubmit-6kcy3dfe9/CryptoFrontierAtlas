@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "boolean-numerical-algebraic-degree-equality",
+  "group_id": "carlet-graph-indicator-degree-questions",
+  "title": "Boolean functions with equal numerical and algebraic degree",
+  "summary": "Classify all Boolean functions whose integer numerical-normal-form degree equals their algebraic-normal-form degree over the binary field.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every positive integer $n$ and Boolean function $f:\\mathbb F_2^n\\to\\mathbb F_2$, let $d_{\\mathrm{num}}(f)$ be the degree of the unique multilinear numerical normal form over $\\mathbb Z$, and let $d_{\\mathrm{alg}}(f)$ be the degree of the algebraic normal form over $\\mathbb F_2$. Give necessary and sufficient conditions for $$d_{\\mathrm{num}}(f)=d_{\\mathrm{alg}}(f),$$ thereby classifying every equality case in every dimension."
+  },
+  "scope": {
+    "domain": "Numerical and algebraic normal forms of Boolean functions",
+    "assumptions": [
+      "$f:\\mathbb F_2^n\\to\\mathbb F_2$ is an arbitrary Boolean function",
+      "$d_{\\mathrm{num}}$ and $d_{\\mathrm{alg}}$ use the source's NNF and ANF definitions"
+    ],
+    "parameters": [
+      "$n$: positive input dimension",
+      "$f$: Boolean function"
+    ],
+    "unresolved_remainder": "No inspected later work gives necessary and sufficient conditions for equality for every Boolean function and every dimension."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "boolean-functions",
+      "numerical-normal-form",
+      "algebraic-normal-form",
+      "algebraic-degree",
+      "classification"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, numerical-degree equality problem",
+        "locator": "Section II, journal p. 7705",
+        "doi": "10.1109/TIT.2020.3017494",
+        "url": "https://doi.org/10.1109/TIT.2020.3017494"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-08-18",
+      "kind": "source_statement",
+      "summary": "The source notes that numerical degree always bounds algebraic degree from below and asks for a complete classification of the equality cases.",
+      "citation_labels": [
+        "Carlet, numerical-degree equality problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "carlet-composition-degree-bound-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

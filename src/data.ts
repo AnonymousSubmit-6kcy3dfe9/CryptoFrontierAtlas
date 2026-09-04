@@ -180,6 +180,9 @@ import recordIsotopicShiftApnInfiniteFamily from '../data/problems/isotopic-shif
 import recordNonMalleableExtractorLinearTEntropyLowerBound from '../data/problems/non-malleable-extractor-linear-t-entropy-lower-bound.json';
 import recordOddCharacteristicPlanarMonomialClassification from '../data/problems/odd-characteristic-planar-monomial-classification.json';
 import recordPerfectBinarySequenceBeyondPeriodFour from '../data/problems/perfect-binary-sequence-beyond-period-four.json';
+import recordBooleanNumericalAlgebraicDegreeEquality from '../data/problems/boolean-numerical-algebraic-degree-equality.json';
+import recordCarletCompositionDegreeBoundEquality from '../data/problems/carlet-composition-degree-bound-equality.json';
+import recordEvenMonomialMinimumVanishingFlats from '../data/problems/even-monomial-minimum-vanishing-flats.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -433,6 +436,9 @@ export const problems = [
   recordNonMalleableExtractorLinearTEntropyLowerBound,
   recordOddCharacteristicPlanarMonomialClassification,
   recordPerfectBinarySequenceBeyondPeriodFour,
+  recordBooleanNumericalAlgebraicDegreeEquality,
+  recordCarletCompositionDegreeBoundEquality,
+  recordEvenMonomialMinimumVanishingFlats,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

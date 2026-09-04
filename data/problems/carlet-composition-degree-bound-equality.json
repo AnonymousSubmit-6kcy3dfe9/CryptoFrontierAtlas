@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.2.0",
+  "id": "carlet-composition-degree-bound-equality",
+  "group_id": "carlet-graph-indicator-degree-questions",
+  "title": "Equality cases in Carlet's composition-degree bound",
+  "summary": "Classify all permutation-function pairs that attain Carlet's upper bound on the algebraic degree of a vectorial-function composition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $F:\\mathbb F_2^n\\to\\mathbb F_2^n$ be a permutation and let $G:\\mathbb F_2^n\\to\\mathbb F_2^r$ be a vectorial function. Give necessary and sufficient conditions on $(F,G)$ for equality in Corollary 5: $$d_{\\mathrm{alg}}(G\\circ F)=n-\\left\\lceil\\frac{n-d_{\\mathrm{alg}}(G)}{d_{\\mathrm{alg}}(F^{-1})}\\right\\rceil.$$ The classification must cover every admissible $n$, $r$, $F$, and $G$, including but not limited to the source's known equality cases where $F$ is affine or $G\\circ F$ has maximal algebraic degree $n$."
+  },
+  "scope": {
+    "domain": "Algebraic degree of compositions of vectorial Boolean functions",
+    "assumptions": [
+      "$F$ is a permutation of $\\mathbb F_2^n$",
+      "$G:\\mathbb F_2^n\\to\\mathbb F_2^r$ is an arbitrary vectorial function",
+      "Algebraic degrees use the source convention"
+    ],
+    "parameters": [
+      "$n$: input dimension",
+      "$r$: output dimension of $G$",
+      "$F$: permutation",
+      "$G$: vectorial function"
+    ],
+    "unresolved_remainder": "The affine-F and maximal-degree-composition examples establish two equality subclasses, but no inspected result gives necessary and sufficient conditions for all admissible pairs."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.algebraic"
+    ],
+    "tags": [
+      "vectorial-functions",
+      "function-composition",
+      "algebraic-degree",
+      "upper-bound-equality",
+      "permutations"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Carlet, composition-degree equality problem",
+        "locator": "Remark after Corollary 5, journal pp. 7711-7712",
+        "doi": "10.1109/TIT.2020.3017494",
+        "url": "https://doi.org/10.1109/TIT.2020.3017494"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-04"
+  },
+  "progress": [
+    {
+      "date": "2020-08-18",
+      "kind": "source_statement",
+      "summary": "After identifying affine permutations and maximal-degree compositions as equality cases, the source asks for a classification of all pairs attaining Corollary 5.",
+      "citation_labels": [
+        "Carlet, composition-degree equality problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "boolean-numerical-algebraic-degree-equality"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
