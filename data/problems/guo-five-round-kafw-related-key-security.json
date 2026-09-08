@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "guo-five-round-kafw-related-key-security",
+  "group_id": "guo-kafw-related-key-security",
+  "title": "XOR-related-key security of five-round affine KAFw",
+  "summary": "Determine whether every five-round key-alternating Feistel cipher with whitening is XOR-related-key secure under the source affine key-schedule condition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let a five-round key-alternating Feistel cipher with whitening (KAFw) use the affine whitening and round-key maps defined in the source. In the source XOR-induced related-key strong-PRP experiment, is the construction secure for every such schedule satisfying $M_1\\Delta \\ne M_5\\Delta$ for every nonzero $\\Delta$ (equivalently, $\\ker(M_1-M_5)=\\{0\\}$)? A compatible attack would refute the conjecture."
+  },
+  "scope": {
+    "domain": "Five-round key-alternating Feistel ciphers with whitening in the ideal-function or ideal-permutation model",
+    "assumptions": [
+      "The KAFw construction and XOR-induced related-key strong-PRP experiment are those defined by the source",
+      "Whitening-key and round-key transformations are affine over the n-bit XOR vector space",
+      "For every nonzero key difference Delta, M1 Delta is not equal to M5 Delta",
+      "The adversary has the source encryption/decryption and ideal-round-primitive interfaces"
+    ],
+    "parameters": [
+      "Feistel branch length n",
+      "Affine whitening maps",
+      "Affine round-key maps",
+      "Construction-query count",
+      "Primitive-query count"
+    ],
+    "unresolved_remainder": "Whether the source XOR-related-key strong-PRP security claim holds for every five-round KAFw schedule satisfying ker(M1-M5)={0}; a proof or a compatible attack for the complete stated family is still absent."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "key-alternating-feistel",
+      "related-key",
+      "affine-key-schedule",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chun Guo, Understanding the Related-Key Security of Feistel Ciphers From a Provable Perspective",
+        "locator": "Section IV-A.2, journal p. 5272",
+        "doi": "10.1109/TIT.2019.2903796",
+        "url": "https://doi.org/10.1109/TIT.2019.2903796"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-08"
+  },
+  "progress": [
+    {
+      "date": "2019-03-08",
+      "kind": "source_statement",
+      "summary": "The source conjectures security in the five-round collision-free case and explicitly leaves its proof for future work.",
+      "citation_labels": [
+        "Chun Guo, Understanding the Related-Key Security of Feistel Ciphers From a Provable Perspective"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -183,6 +183,10 @@ import recordPerfectBinarySequenceBeyondPeriodFour from '../data/problems/perfec
 import recordBooleanNumericalAlgebraicDegreeEquality from '../data/problems/boolean-numerical-algebraic-degree-equality.json';
 import recordCarletCompositionDegreeBoundEquality from '../data/problems/carlet-composition-degree-bound-equality.json';
 import recordEvenMonomialMinimumVanishingFlats from '../data/problems/even-monomial-minimum-vanishing-flats.json';
+import recordGuoFiveRoundKafwRelatedKeySecurity from '../data/problems/guo-five-round-kafw-related-key-security.json';
+import recordDerivativeImbalanceNbfThreshold from '../data/problems/derivative-imbalance-nbf-threshold.json';
+import recordOddDimensionalBooleanMaximumNonlinearity from '../data/problems/odd-dimensional-boolean-maximum-nonlinearity.json';
+import recordPartialDisjointSpectraPlateauedExtension from '../data/problems/partial-disjoint-spectra-plateaued-extension.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -439,6 +443,10 @@ export const problems = [
   recordBooleanNumericalAlgebraicDegreeEquality,
   recordCarletCompositionDegreeBoundEquality,
   recordEvenMonomialMinimumVanishingFlats,
+  recordGuoFiveRoundKafwRelatedKeySecurity,
+  recordDerivativeImbalanceNbfThreshold,
+  recordOddDimensionalBooleanMaximumNonlinearity,
+  recordPartialDisjointSpectraPlateauedExtension,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "partial-disjoint-spectra-plateaued-extension",
+  "group_id": "disjoint-spectra-plateaued-extension",
+  "title": "Extension of partial disjoint-spectra plateaued families",
+  "summary": "Determine whether every partial pairwise-disjoint family of nontrivial s-plateaued Boolean spectra can be completed to a family of size 2^s.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $f_1,...,f_r$ be nontrivial $s$-plateaued Boolean functions on $F_2^n$ with pairwise disjoint Walsh spectra and $r<2^s$. Must there always exist $s$-plateaued functions $f_{r+1},...,f_{2^s}$ such that the full family has pairwise disjoint spectra? Prove this for every admissible partial family or exhibit one admissible nonextendable family."
+  },
+  "scope": {
+    "domain": "Plateaued Boolean functions, Walsh spectra, and disjoint-spectrum family extension",
+    "assumptions": [
+      "The initial functions are nontrivial s-plateaued Boolean functions on F_2^n",
+      "Their Walsh spectra are pairwise disjoint",
+      "The initial family has r<2^s members"
+    ],
+    "parameters": [
+      "n",
+      "s",
+      "r",
+      "initial partial family"
+    ],
+    "unresolved_remainder": "No inspected later paper proves extension for every admissible partial family or gives a counterexample; constructions of selected complete families do not settle arbitrary extendability."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "foundations.combinatorics-finite-geometry"
+    ],
+    "tags": [
+      "plateaued-functions",
+      "walsh-spectrum",
+      "disjoint-spectra",
+      "family-extension",
+      "bent-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Hodzic--Pasalic, Designing Plateaued Boolean Functions in Spectral Domain and Their Classification",
+        "locator": "Open Problem 3, Section IV-C, journal pp. 5875-5876",
+        "doi": "10.1109/TIT.2019.2909910",
+        "url": "https://doi.org/10.1109/TIT.2019.2909910"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-08"
+  },
+  "progress": [
+    {
+      "date": "2019-09-01",
+      "kind": "source_statement",
+      "summary": "The TIT source asks whether every partial family of pairwise-disjoint spectra can be extended to 2^s functions.",
+      "citation_labels": [
+        "Hodzic--Pasalic, Designing Plateaued Boolean Functions in Spectral Domain and Their Classification"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

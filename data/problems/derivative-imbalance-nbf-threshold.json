@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.2.0",
+  "id": "derivative-imbalance-nbf-threshold",
+  "group_id": "derivative-imbalance-ambiguity",
+  "title": "Derivative-imbalance threshold for vectorial Boolean maps",
+  "summary": "Determine whether the source derivative-imbalance threshold holds for every admissible vectorial Boolean map, which would improve the covering-radius nonlinearity bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every source-admissible pair $(n,m)$ and every vectorial Boolean map $F:F_2^n -> F_2^m$, prove or refute $N_B^F > 2^{n-m+2}(2^{n/2}+1)(2^m-1)$, where $N_B^F$ is the derivative-imbalance invariant defined in the source. The source ranges are odd $n$ with $m<n$, or even $n$ with $n/2<m<n$."
+  },
+  "scope": {
+    "domain": "Derivative imbalance and nonlinearity of vectorial Boolean functions",
+    "assumptions": [
+      "n is odd with m<n, or n is even with n/2<m<n",
+      "N_B^F is the source-defined derivative-imbalance invariant",
+      "F maps F_2^n to F_2^m"
+    ],
+    "parameters": [
+      "input dimension n",
+      "output dimension m",
+      "vectorial Boolean map F"
+    ],
+    "unresolved_remainder": "No later result inspected through 2026-09-08 proves or refutes the strict N_B^F threshold throughout the complete source parameter domain."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "cryptanalysis.differential",
+      "cryptanalysis.linear"
+    ],
+    "tags": [
+      "derivative-imbalance",
+      "vectorial-functions",
+      "nonlinearity",
+      "walsh-spectrum",
+      "covering-radius"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The source cites earlier open-problem literature, but the bounded reverse trace did not text-confirm an antecedent with identical quantifiers and threshold."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Fu--Feng--Wang--Carlet, On the Derivative Imbalance and Ambiguity of Functions",
+        "locator": "Section V, journal p. 5845",
+        "doi": "10.1109/TIT.2019.2912196",
+        "url": "https://doi.org/10.1109/TIT.2019.2912196"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-08"
+  },
+  "progress": [
+    {
+      "date": "2019-09-01",
+      "kind": "restatement",
+      "summary": "The TIT source calls the displayed derivative-imbalance inequality a well-known open problem needed to improve the covering-radius bound.",
+      "citation_labels": [
+        "Fu--Feng--Wang--Carlet, On the Derivative Imbalance and Ambiguity of Functions"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

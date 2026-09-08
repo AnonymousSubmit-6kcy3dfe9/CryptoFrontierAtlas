@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.2.0",
+  "id": "odd-dimensional-boolean-maximum-nonlinearity",
+  "group_id": "odd-dimensional-boolean-nonlinearity",
+  "title": "Maximum nonlinearity of Boolean functions in odd dimensions",
+  "summary": "Determine the exact maximum nonlinearity of an n-variable Boolean function for every odd n at least 9; later resilient constructions improve lower bounds but do not settle the unrestricted extremal value.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every odd integer $n >= 9$, determine $max_{f:F_2^n -> F_2} NL(f)$, where $NL(f)$ is the Hamming distance from the first-order Reed--Muller code. A complete answer requires matching upper bounds and attaining functions for every such $n$."
+  },
+  "scope": {
+    "domain": "Boolean-function nonlinearity and first-order Reed--Muller covering radius",
+    "assumptions": [
+      "n is odd and n>=9",
+      "Nonlinearity is distance from affine Boolean functions"
+    ],
+    "parameters": [
+      "odd input dimension n",
+      "Boolean function f"
+    ],
+    "unresolved_remainder": "The exact unrestricted maximum and an attaining function remain unknown for the full family of odd dimensions n>=9; later results inspect only resilient or otherwise restricted subclasses and improve attainable lower bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.boolean-vectorial",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "boolean-functions",
+      "nonlinearity",
+      "odd-dimensions",
+      "covering-radius",
+      "resilient-functions"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wang--Liu--Zhang--Zeng, High-Meets-Low: Construction of Strictly Almost Optimal Resilient Boolean Functions via Fragmentary Walsh Spectra",
+        "locator": "Introduction, journal p. 5856",
+        "doi": "10.1109/TIT.2019.2899397",
+        "url": "https://doi.org/10.1109/TIT.2019.2899397"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Sun et al., Improving High-Meets-Low technique to generate odd-variable resilient Boolean functions with currently best nonlinearity",
+        "locator": "Abstract and construction results",
+        "doi": "10.1016/j.disc.2020.112203",
+        "url": "https://doi.org/10.1016/j.disc.2020.112203"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Constructions of 2-resilient rotation symmetric Boolean functions with odd number of variables",
+        "locator": "Construction results for a rotation-symmetric resilient subclass",
+        "doi": "10.1016/j.tcs.2024.114429",
+        "url": "https://doi.org/10.1016/j.tcs.2024.114429"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-08"
+  },
+  "progress": [
+    {
+      "date": "2019-09-01",
+      "kind": "source_statement",
+      "summary": "The TIT source states that the maximum nonlinearity of n-variable Boolean functions for odd n at least 9 is unknown.",
+      "citation_labels": [
+        "Wang--Liu--Zhang--Zeng, High-Meets-Low: Construction of Strictly Almost Optimal Resilient Boolean Functions via Fragmentary Walsh Spectra"
+      ]
+    },
+    {
+      "date": "2020-11-16",
+      "kind": "public_result",
+      "summary": "Sun et al. improve attainable nonlinearity and resiliency tradeoffs using High-Meets-Low constructions, providing lower-bound progress for resilient subclasses without an unrestricted exact maximum.",
+      "citation_labels": [
+        "Sun et al., Improving High-Meets-Low technique to generate odd-variable resilient Boolean functions with currently best nonlinearity"
+      ]
+    },
+    {
+      "date": "2024-01-01",
+      "kind": "public_result",
+      "summary": "A later rotation-symmetric 2-resilient construction improves a restricted odd-variable subclass but does not provide matching bounds for all Boolean functions.",
+      "citation_labels": [
+        "Constructions of 2-resilient rotation symmetric Boolean functions with odd number of variables"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
