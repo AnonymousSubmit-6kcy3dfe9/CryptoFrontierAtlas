@@ -187,6 +187,7 @@ import recordGuoFiveRoundKafwRelatedKeySecurity from '../data/problems/guo-five-
 import recordDerivativeImbalanceNbfThreshold from '../data/problems/derivative-imbalance-nbf-threshold.json';
 import recordOddDimensionalBooleanMaximumNonlinearity from '../data/problems/odd-dimensional-boolean-maximum-nonlinearity.json';
 import recordPartialDisjointSpectraPlateauedExtension from '../data/problems/partial-disjoint-spectra-plateaued-extension.json';
+import recordBoomerangFourPermutationFourDivisibleDimension from '../data/problems/boomerang-four-permutation-four-divisible-dimension.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -447,6 +448,7 @@ export const problems = [
   recordDerivativeImbalanceNbfThreshold,
   recordOddDimensionalBooleanMaximumNonlinearity,
   recordPartialDisjointSpectraPlateauedExtension,
+  recordBoomerangFourPermutationFourDivisibleDimension,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

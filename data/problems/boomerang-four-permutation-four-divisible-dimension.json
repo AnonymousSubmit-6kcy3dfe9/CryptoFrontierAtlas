@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "boomerang-four-permutation-four-divisible-dimension",
+  "group_id": "li-qu-sun-boomerang-permutations",
+  "title": "Boomerang-uniformity-four permutations in dimensions divisible by four",
+  "summary": "Determine whether any binary dimension divisible by four admits a permutation with global boomerang uniformity exactly four.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Does there exist a positive integer $n$ with $n\\equiv0\\pmod 4$ and a permutation $f:\\mathbb F_2^n\\to\\mathbb F_2^n$ whose global boomerang uniformity is $\\beta(f)=4$? Construct one such pair $(n,f)$, or prove that none exists for any positive dimension divisible by four."
+  },
+  "scope": {
+    "domain": "Permutation S-boxes over binary vector spaces in dimensions divisible by four",
+    "assumptions": [
+      "$n$ is a positive integer divisible by four",
+      "$f$ is a permutation of $\\mathbb F_2^n$",
+      "$\\beta(f)$ is the maximum nontrivial entry of the standard boomerang connectivity table"
+    ],
+    "parameters": [
+      "binary dimension $n$",
+      "permutation $f$"
+    ],
+    "unresolved_remainder": "No inspected later result constructs a permutation with global boomerang uniformity four in any dimension divisible by four, and no inspected result proves nonexistence throughout that congruence class. Constructions with exact value four remain in dimensions congruent to two modulo four; target-dimensional near results are non-permutations or have a different global value."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components",
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "boomerang-uniformity",
+      "bct",
+      "permutations",
+      "sboxes",
+      "binary-fields"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Li--Qu--Sun--Li, boomerang-uniformity-four permutation question",
+        "locator": "Conclusion, journal p. 7550",
+        "doi": "10.1109/TIT.2019.2918531",
+        "eprint": "arXiv:1901.10999",
+        "url": "https://arxiv.org/abs/1901.10999"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-08"
+  },
+  "progress": [
+    {
+      "date": "2019-05-23",
+      "kind": "source_statement",
+      "summary": "The source reports that no permutation with boomerang uniformity four was known in a dimension divisible by four and identifies finding one as its next goal.",
+      "citation_labels": [
+        "Li--Qu--Sun--Li, boomerang-uniformity-four permutation question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

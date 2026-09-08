@@ -3,7 +3,7 @@
   "taxonomy_version": "0.2.0",
   "language": "en",
   "disclosure_policy": "problem_statements_and_public_progress_only",
-  "record_count": 189,
+  "record_count": 190,
   "records": [
     "aes-full-round-fixed-target-key-collision",
     "almost-mm-four-to-one-mappings",
@@ -37,6 +37,7 @@
     "bogdanov-dcufn-dplus1-active-sboxes",
     "boolean-numerical-algebraic-degree-equality",
     "boolean-two-bent-summand-classification",
+    "boomerang-four-permutation-four-divisible-dimension",
     "bounded-storage-privacy-amplification-security-exponent",
     "bourgain-two-source-extractor-qma-security",
     "carlet-13-3-14-affine-derivatives",
