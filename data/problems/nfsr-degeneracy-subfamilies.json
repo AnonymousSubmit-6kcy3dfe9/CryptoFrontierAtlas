@@ -39,9 +39,21 @@
   },
   "source": {
     "kind": "explicit_open_problem",
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2025 TIT paper explicitly cites Zhang et al. (2019) in its affine-subfamily antecedent chain. The 2019 paper is the earliest text-confirmed source in that chain to leave arbitrary nonlinear NFSR subfamilies open."
+    },
     "citations": [
       {
         "role": "original_source",
+        "label": "Zhang--Tian--Qi--Zheng, affine sub-families of NFSR sequences",
+        "locator": "Conclusion, journal p. 1257",
+        "doi": "10.1109/TIT.2018.2858769",
+        "url": "https://doi.org/10.1109/TIT.2018.2858769"
+      },
+      {
+        "role": "restatement",
         "label": "The Decomposition of Cascade Connections of NFSRs: Old and New Results",
         "locator": "Introduction, journal p. 8030",
         "doi": "10.1109/tit.2025.3592293",
@@ -58,9 +70,17 @@
   },
   "progress": [
     {
-      "date": "2025-10-01",
+      "date": "2018-07-23",
       "kind": "source_statement",
-      "summary": "The source defines degeneracy and nonlinear subfamilies, notes affine progress, and leaves the general problem open.",
+      "summary": "After solving the affine case, the source leaves the problem of arbitrary nonlinear NFSR subfamilies open.",
+      "citation_labels": [
+        "Zhang--Tian--Qi--Zheng, affine sub-families of NFSR sequences"
+      ]
+    },
+    {
+      "date": "2025-07-24",
+      "kind": "restatement",
+      "summary": "The later TIT paper restates nonlinear subfamily inclusion as the general NFSR degeneracy problem and records only restricted progress.",
       "citation_labels": [
         "The Decomposition of Cascade Connections of NFSRs: Old and New Results"
       ]
