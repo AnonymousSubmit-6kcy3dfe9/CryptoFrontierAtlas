@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-medp-bound-universal-attainability",
+  "group_id": "affine-sbox-two-round-extrema",
+  "title": "Universal attainability of the two-round MEDP bound",
+  "summary": "Decide whether every admissible S-box and width admits a field-linear MDS diffusion layer attaining the source upper bound on two-round MEDP.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every permutation $S$ of $\\mathbb F_{2^m}$ and every admissible width $t$, does there exist an $\\mathbb F_{2^m}$-linear MDS matrix $M$ such that $\\operatorname{MEDP}_2(S,M)=2^{-m(t+1)}\\max_{\\mu} B(\\mu)$, with $B$ as defined in the source? Construct such an $M$ for every pair $(S,t)$, characterize all admitting pairs, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Two-round expected differential probability of AES-like substitution-permutation networks.",
+    "assumptions": [
+      "$S$ is a permutation of $\\mathbb F_{2^m}$.",
+      "$M$ is $\\mathbb F_{2^m}$-linear and MDS.",
+      "The source Theorem 2 differential definitions apply."
+    ],
+    "parameters": [
+      "$m$",
+      "$t$",
+      "$S$",
+      "$M$"
+    ],
+    "unresolved_remainder": "Bound attainment is proved for strict subclasses, including APN S-boxes over $\\mathbb F_8$, but universal attainability or a complete characterization is open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "medp",
+      "sbox",
+      "mds-matrix"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Canteaut--Roue, affine-equivalent S-box behavior",
+        "locator": "Section 3.2, printed pp. 10-12; Conclusion, printed p. 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "eprint": "2015/085",
+        "url": "https://eprint.iacr.org/2015/085"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Canteaut--Roue, Differential Attacks Against SPN",
+        "locator": "Proposition 3 and the APN-over-F_8 case",
+        "doi": "10.1007/978-3-319-18681-8_4",
+        "url": "https://doi.org/10.1007/978-3-319-18681-8_4"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether an MDS diffusion layer can attain its two-round MEDP upper bound for every admissible S-box and width.",
+      "citation_labels": [
+        "Canteaut--Roue, affine-equivalent S-box behavior"
+      ]
+    },
+    {
+      "date": "2015-07-01",
+      "kind": "public_result",
+      "summary": "A later analysis proves bound attainment for a strict APN-over-$\\mathbb F_8$ subclass and related sufficient families.",
+      "citation_labels": [
+        "Canteaut--Roue, Differential Attacks Against SPN"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "two-round-melp-bound-universal-attainability"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

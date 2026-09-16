@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.2.0",
+  "id": "tweaked-sr-concurrent-multi-domain-security",
+  "group_id": "morris-rogaway-sometimes-recurse",
+  "title": "Concurrent multi-domain security of tweaked-SR",
+  "summary": "Prove concurrent security of tweaked-SR when its round constants do not encode the initial domain.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let the initial domain size $N_0$ range over arbitrary positive integers. In tweaked-SR, allow the round functions to remain domain-separated by $N_0$, but choose each round constant $K(i,N)$ using only the round index $i$ and current recursive domain size $N$, independently of $N_0$. Prove that the resulting family is secure in the source multi-slice PRP game against every finite adversary making concurrent queries across arbitrary initial domains, or give a compatible adversary that refutes this claim."
+  },
+  "scope": {
+    "domain": "The tweaked Sometimes-Recurse format-preserving permutation family over arbitrary finite initial domains",
+    "assumptions": [
+      "Round functions may remain separated by the initial domain N0",
+      "Round constants depend only on the current recursive size N and round index i",
+      "The adversary may query several initial domains concurrently",
+      "Security is measured in the source multi-slice PRP experiment"
+    ],
+    "parameters": [
+      "initial domain size N0",
+      "current recursive domain size N",
+      "round index i",
+      "per-domain and total query counts"
+    ],
+    "unresolved_remainder": "No inspected later result proves or refutes concurrent multi-domain security for tweaked-SR under the exact restriction that round constants omit N0 while round functions may retain domain separation."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.others",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "format-preserving-encryption",
+      "sometimes-recurse",
+      "multi-domain-security",
+      "tweakable-permutations",
+      "prf-to-prp"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The first archived ePrint version dated September 4, 2013 already contains the conjecture. The cited 2009 multi-slice PRP definition supplies the security game but does not state the tweaked-SR question."
+    },
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Morris--Rogaway, Sometimes-Recurse multi-domain conjecture",
+        "locator": "First archived ePrint version, final discussion, 'Multiple concurrent domains'; revised version, p. 14",
+        "doi": "10.1007/978-3-642-55220-5_18",
+        "eprint": "2013/560",
+        "url": "https://eprint.iacr.org/archive/2013/560/1378304633.pdf"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2013-09-04",
+      "kind": "source_statement",
+      "summary": "The first archived ePrint version conjectures that tweaked-SR remains concurrently secure across arbitrary initial domains when round constants omit the initial domain identifier.",
+      "citation_labels": [
+        "Morris--Rogaway, Sometimes-Recurse multi-domain conjecture"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "full-security-worst-case-logarithmic-oblivious-shuffle"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

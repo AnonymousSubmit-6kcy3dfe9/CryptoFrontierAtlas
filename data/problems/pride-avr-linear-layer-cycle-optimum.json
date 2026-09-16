@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.2.0",
+  "id": "pride-avr-linear-layer-cycle-optimum",
+  "group_id": "pride-linear-layer-open-problems",
+  "title": "Optimal AVR cycle count for a PRIDE linear layer",
+  "summary": "Decide whether a PRIDE-compatible 64-bit linear layer can beat the source's 36-cycle AVR implementation benchmark.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "In the Section 5.1 AVR instruction and register model of the PRIDE source, consider every 64-bit binary linear layer satisfying the source's linear- and differential-branch-number-four and full-dependency requirements. Determine the exact minimum cycle count. In particular, construct a conforming implementation using at most 35 cycles, or prove that every conforming implementation requires at least 36 cycles; the source's restricted interleaving construction supplies a 36-cycle implementation."
+  },
+  "scope": {
+    "domain": "Software implementation optimization of symmetric block-cipher linear layers in the source-defined AVR model",
+    "assumptions": [
+      "The target instruction set, register semantics, and scalar cycle costs are those fixed in Section 5.1.",
+      "The complete linear layer acts on 64 bits and has the source's branch number four and full-dependency properties.",
+      "The comparison class includes layers outside the interleaving construction used for the source benchmark."
+    ],
+    "parameters": [
+      "64-bit linear layer",
+      "branch number 4",
+      "full dependency",
+      "AVR cycle count"
+    ],
+    "unresolved_remainder": "It is unknown whether any admissible 64-bit layer outside the source's interleaving search space has an implementation below 36 AVR cycles, or whether 36 is a global optimum in the fixed model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "pride",
+      "linear-layer",
+      "avr",
+      "implementation",
+      "branch-number"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The exact benchmark and the question about the reduced search space are stated in the CRYPTO 2014 source."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Albrecht--Driessen--Kavun--Leander--Paar--Yalcin, PRIDE AVR linear-layer optimum",
+        "locator": "CRYPTO 2014, Sections 5.1-5.2 and Section 6, pp. 12-13 and 17-18",
+        "doi": "10.1007/978-3-662-44371-2_4",
+        "eprint": "2014/453",
+        "url": "https://eprint.iacr.org/2014/453"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-08-17",
+      "kind": "source_statement",
+      "summary": "The source reports a 36-cycle PRIDE linear-layer benchmark and asks whether restricting the search to its interleaving construction excludes a better solution.",
+      "citation_labels": [
+        "Albrecht--Driessen--Kavun--Leander--Paar--Yalcin, PRIDE AVR linear-layer optimum"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "cryptographic-linear-code-distance-eight-instances"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

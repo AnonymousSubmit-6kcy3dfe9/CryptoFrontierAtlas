@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor3-nae-decryption-query-loss",
+  "group_id": "namprempre-rogaway-shrimpton-generic-composition",
+  "title": "Decryption-query loss in the XOR3 nAE reduction",
+  "summary": "Determine whether the multiplicative decryption-query loss in the XOR3-based nAE security reduction is removable or necessary.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source favored ivE-plus-vector-MAC compositions whose MAC is instantiated by $\\mathrm{XOR3}[f]$, let $q_d$ be the number of decryption queries in the arbitrary-query nAE game. The source obtains security from its one-decryption-query characterization with a multiplicative $q_d$ degradation. Prove a bound under the same games and primitive assumptions that avoids this multiplicative factor, or exhibit a source-admissible composition and adversary family showing that a matching dependence on $q_d$ is unavoidable."
+  },
+  "scope": {
+    "domain": "The source favored ivE-plus-vector-MAC generic compositions instantiated with the XOR3 construction",
+    "assumptions": [
+      "The XOR3 construction and its at-most-two-repeats condition are those of the source",
+      "The one-decryption-query and arbitrary-decryption-query nAE games are those used by the source",
+      "The underlying ivE and PRF assumptions are unchanged"
+    ],
+    "parameters": [
+      "number of decryption queries q_d",
+      "tag length tau",
+      "favored A-scheme",
+      "encryption and decryption query lengths"
+    ],
+    "unresolved_remainder": "No inspected later result removes the $q_d$ factor for the source XOR3-instantiated favored compositions or proves a matching lower bound showing that this exact dependence is necessary."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.macs-authenticated-encryption",
+    "secondary": [],
+    "tags": [
+      "authenticated-encryption",
+      "generic-composition",
+      "xor3",
+      "security-reduction",
+      "decryption-queries"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The inspected 2014 ePrint text contains the explicit unresolved quantitative question. Its cited one-query characterization supplies the baseline reduction but does not state the XOR3-specific question."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Namprempre--Rogaway--Shrimpton, XOR3 decryption-query loss question",
+        "locator": "IACR ePrint 2014/206, Section 4, p. 12",
+        "doi": "10.1007/978-3-642-55220-5_15",
+        "eprint": "2014/206",
+        "url": "https://eprint.iacr.org/2014/206"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2014-03-20",
+      "kind": "source_statement",
+      "summary": "The source states that transferring its one-decryption-query characterization to arbitrary-query nAE security incurs a factor $q_d$ and leaves open whether this loss is artifactual or necessary.",
+      "citation_labels": [
+        "Namprempre--Rogaway--Shrimpton, XOR3 decryption-query loss question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

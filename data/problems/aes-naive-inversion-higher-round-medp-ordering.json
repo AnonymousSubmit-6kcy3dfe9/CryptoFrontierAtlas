@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.2.0",
+  "id": "aes-naive-inversion-higher-round-medp-ordering",
+  "group_id": "affine-sbox-two-round-extrema",
+  "title": "Higher-round AES versus naive-inversion MEDP ordering",
+  "summary": "Decide whether AES has lower maximum expected differential probability than the corresponding naive-inversion construction at every round count above two.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every integer $r>2$, is $\\operatorname{MEDP}_r(\\text{AES S-box})<\\operatorname{MEDP}_r(\\text{naive inversion})$ for the otherwise corresponding AES-like construction under the source-defined key-averaged MEDP model? Prove the inequality for all $r>2$ or refute it by one exact compatible comparison."
+  },
+  "scope": {
+    "domain": "Multi-round maximum expected differential probability of AES and its naive-inversion S-box variant.",
+    "assumptions": [
+      "The construction and key-averaged MEDP definition are those used by the inspected 2015 source.",
+      "The compared constructions differ only by the stated affine representative of inversion."
+    ],
+    "parameters": [
+      "integer round count $r>2$",
+      "standard AES S-box",
+      "naive inversion S-box"
+    ],
+    "unresolved_remainder": "No proof of the strict comparison for every $r>2$ and no exact reversing comparison for any such round was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.differential",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "aes",
+      "medp",
+      "sbox"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Canteaut--Roue, affine-equivalent S-box behavior",
+        "locator": "Conclusion, printed p. 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "eprint": "2015/085",
+        "url": "https://eprint.iacr.org/2015/085"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether the two-round AES-versus-naive-inversion MEDP ordering persists for every higher round count.",
+      "citation_labels": [
+        "Canteaut--Roue, affine-equivalent S-box behavior"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

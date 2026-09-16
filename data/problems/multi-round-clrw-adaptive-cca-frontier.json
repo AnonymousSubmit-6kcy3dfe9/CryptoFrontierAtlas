@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-round-clrw-adaptive-cca-frontier",
+  "group_id": "tweakable-cipher-cca-frontiers",
+  "title": "Tight adaptive CCA frontier for multi-round CLRW",
+  "summary": "Determine the tight adaptive CCA exponent of chained LRW for every round count above two, including the conjectured round-dependent bound.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every fixed integer $r>2$, determine the tight adaptive bidirectional CCA query-security frontier of the $r$-round chained LRW construction with independent round block-cipher and AXU-hash keys; in particular, prove or refute the conjectured exponent $rn/(r+1)$ by matching security and attack bounds."
+  },
+  "scope": {
+    "domain": "Multi-round cascades of LRW tweakable-block-cipher constructions under adaptive CCA.",
+    "assumptions": [
+      "Each round uses independent block-cipher and AXU-hash keys.",
+      "The adversary has adaptive chosen-plaintext and chosen-ciphertext access."
+    ],
+    "parameters": [
+      "$n$",
+      "integer $r>2$",
+      "adaptive query budget"
+    ],
+    "unresolved_remainder": "A later result gives roughly $2^{3n/4}$ security for the relevant cascaded LRW family, but the conjectured $2^{rn/(r+1)}$ frontier is not matched for every $r>2$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-cipher",
+      "clrw",
+      "cca-security"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The 2015 paper explicitly attributes the conjecture to Lampe and Seurin; the FSE proceedings text contains the same Open Problems statement."
+    },
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Lampe--Seurin, asymptotically optimal tweakable block ciphers",
+        "locator": "Open Problems, printed p. 136 (PDF p. 4)",
+        "doi": "10.1007/978-3-662-43933-3_8",
+        "url": "https://doi.org/10.1007/978-3-662-43933-3_8"
+      },
+      {
+        "role": "restatement",
+        "label": "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers",
+        "locator": "Introduction and Related Work and Perspectives, printed pp. 2 and 7",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "eprint": "2015/539",
+        "url": "https://eprint.iacr.org/2015/539"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Jha--Khairallah--Nandi--Saha, Tight Security of TNT and Beyond",
+        "locator": "Cascaded LRW security results, including 4-LRW1 and the LRW+ framework",
+        "doi": "10.1007/978-3-031-58716-0_9",
+        "url": "https://doi.org/10.1007/978-3-031-58716-0_9"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-01-01",
+      "kind": "source_statement",
+      "summary": "The FSE proceedings paper conjectures that the $r$-round chained LRW construction reaches the $rn/(r+1)$ adaptive CCA exponent.",
+      "citation_labels": [
+        "Lampe--Seurin, asymptotically optimal tweakable block ciphers"
+      ]
+    },
+    {
+      "date": "2015-06-02",
+      "kind": "restatement",
+      "summary": "The TEM paper recalls tight multi-round CLRW analysis as the natural antecedent to its own conjecture.",
+      "citation_labels": [
+        "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers"
+      ]
+    },
+    {
+      "date": "2024-01-01",
+      "kind": "public_result",
+      "summary": "A cascaded-LRW analysis proves a roughly $2^{3n/4}$ security level for the relevant family while leaving the general round-dependent exponent unmatched.",
+      "citation_labels": [
+        "Jha--Khairallah--Nandi--Saha, Tight Security of TNT and Beyond"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "multi-round-tem-adaptive-cca-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

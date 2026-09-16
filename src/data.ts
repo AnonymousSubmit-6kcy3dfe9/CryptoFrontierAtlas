@@ -188,6 +188,32 @@ import recordDerivativeImbalanceNbfThreshold from '../data/problems/derivative-i
 import recordOddDimensionalBooleanMaximumNonlinearity from '../data/problems/odd-dimensional-boolean-maximum-nonlinearity.json';
 import recordPartialDisjointSpectraPlateauedExtension from '../data/problems/partial-disjoint-spectra-plateaued-extension.json';
 import recordBoomerangFourPermutationFourDivisibleDimension from '../data/problems/boomerang-four-permutation-four-divisible-dimension.json';
+import recordFullSecurityWorstCaseLogarithmicObliviousShuffle from '../data/problems/full-security-worst-case-logarithmic-oblivious-shuffle.json';
+import recordTweakedSrConcurrentMultiDomainSecurity from '../data/problems/tweaked-sr-concurrent-multi-domain-security.json';
+import recordXor3NaeDecryptionQueryLoss from '../data/problems/xor3-nae-decryption-query-loss.json';
+import recordFourRoundEvenMansourMemoryTradeoff from '../data/problems/four-round-even-mansour-memory-tradeoff.json';
+import recordThreeRoundAlternatingEvenMansourAttack from '../data/problems/three-round-alternating-even-mansour-attack.json';
+import recordXorCombinationEvenMansourScheduleAttack from '../data/problems/xor-combination-even-mansour-schedule-attack.json';
+import recordMixedKeyNonkeyAdaptiveProbingShares from '../data/problems/mixed-key-nonkey-adaptive-probing-shares.json';
+import recordIdenticalKeyIndependentPermutationEvenMansourSecurity from '../data/problems/identical-key-independent-permutation-even-mansour-security.json';
+import recordNonlinearBijectionSumCaptureExtension from '../data/problems/nonlinear-bijection-sum-capture-extension.json';
+import recordSinglePermutationEvenMansourOneKeyScheduleSecurity from '../data/problems/single-permutation-even-mansour-one-key-schedule-security.json';
+import recordTwoRoundSinglePermutationEvenMansourQueryFrontier from '../data/problems/two-round-single-permutation-even-mansour-query-frontier.json';
+import recordCryptographicLinearCodeDistanceEightInstances from '../data/problems/cryptographic-linear-code-distance-eight-instances.json';
+import recordPrideAvrLinearLayerCycleOptimum from '../data/problems/pride-avr-linear-layer-cycle-optimum.json';
+import recordAesNaiveInversionHigherRoundMedpOrdering from '../data/problems/aes-naive-inversion-higher-round-medp-ordering.json';
+import recordInvolutionAffineClassWorstTwoRoundMedp from '../data/problems/involution-affine-class-worst-two-round-medp.json';
+import recordInvolutionAffineClassWorstTwoRoundMelp from '../data/problems/involution-affine-class-worst-two-round-melp.json';
+import recordLinearSimulatorSequentialIdealCipherIndifferentiability from '../data/problems/linear-simulator-sequential-ideal-cipher-indifferentiability.json';
+import recordLongKeyFullXorRelatedKeyIemSecurity from '../data/problems/long-key-full-xor-related-key-iem-security.json';
+import recordMultiRoundClrwAdaptiveCcaFrontier from '../data/problems/multi-round-clrw-adaptive-cca-frontier.json';
+import recordMultiRoundTemAdaptiveCcaFrontier from '../data/problems/multi-round-tem-adaptive-cca-frontier.json';
+import recordOneRoundNonlinearScheduleEmXrkaFrontier from '../data/problems/one-round-nonlinear-schedule-em-xrka-frontier.json';
+import recordSixRoundLinearIemFullXrkaLowerBound from '../data/problems/six-round-linear-iem-full-xrka-lower-bound.json';
+import recordThreeRoundTrivialScheduleIemXrkaFrontier from '../data/problems/three-round-trivial-schedule-iem-xrka-frontier.json';
+import recordTwoRoundMedpBoundUniversalAttainability from '../data/problems/two-round-medp-bound-universal-attainability.json';
+import recordTwoRoundMelpBoundUniversalAttainability from '../data/problems/two-round-melp-bound-universal-attainability.json';
+import recordTwoRoundNonlinearIemFullXrkaLowerBound from '../data/problems/two-round-nonlinear-iem-full-xrka-lower-bound.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -449,6 +475,32 @@ export const problems = [
   recordOddDimensionalBooleanMaximumNonlinearity,
   recordPartialDisjointSpectraPlateauedExtension,
   recordBoomerangFourPermutationFourDivisibleDimension,
+  recordFullSecurityWorstCaseLogarithmicObliviousShuffle,
+  recordTweakedSrConcurrentMultiDomainSecurity,
+  recordXor3NaeDecryptionQueryLoss,
+  recordFourRoundEvenMansourMemoryTradeoff,
+  recordThreeRoundAlternatingEvenMansourAttack,
+  recordXorCombinationEvenMansourScheduleAttack,
+  recordMixedKeyNonkeyAdaptiveProbingShares,
+  recordIdenticalKeyIndependentPermutationEvenMansourSecurity,
+  recordNonlinearBijectionSumCaptureExtension,
+  recordSinglePermutationEvenMansourOneKeyScheduleSecurity,
+  recordTwoRoundSinglePermutationEvenMansourQueryFrontier,
+  recordCryptographicLinearCodeDistanceEightInstances,
+  recordPrideAvrLinearLayerCycleOptimum,
+  recordAesNaiveInversionHigherRoundMedpOrdering,
+  recordInvolutionAffineClassWorstTwoRoundMedp,
+  recordInvolutionAffineClassWorstTwoRoundMelp,
+  recordLinearSimulatorSequentialIdealCipherIndifferentiability,
+  recordLongKeyFullXorRelatedKeyIemSecurity,
+  recordMultiRoundClrwAdaptiveCcaFrontier,
+  recordMultiRoundTemAdaptiveCcaFrontier,
+  recordOneRoundNonlinearScheduleEmXrkaFrontier,
+  recordSixRoundLinearIemFullXrkaLowerBound,
+  recordThreeRoundTrivialScheduleIemXrkaFrontier,
+  recordTwoRoundMedpBoundUniversalAttainability,
+  recordTwoRoundMelpBoundUniversalAttainability,
+  recordTwoRoundNonlinearIemFullXrkaLowerBound,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

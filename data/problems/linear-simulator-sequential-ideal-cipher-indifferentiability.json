@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.2.0",
+  "id": "linear-simulator-sequential-ideal-cipher-indifferentiability",
+  "group_id": "iem-xrka-2015",
+  "title": "Linear-simulator sequential indifferentiability from an ideal cipher",
+  "summary": "Construct an ideal-primitive block cipher whose sequential ideal-cipher simulator uses only linear queries and incurs essentially linear-over-domain distinguishing error.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Construct a block cipher from a fixed ideal primitive, together with a simulator, that is sequentially indifferentiable from an ideal cipher with simulator-query complexity $\\sigma=O(q)$ and distinguishing error $\\varepsilon=O(q/2^n)$ for a $q$-query distinguisher, or prove the target impossible for the stated ideal-primitive domain."
+  },
+  "scope": {
+    "domain": "Ideal-primitive block-cipher constructions under sequential indifferentiability from an ideal cipher.",
+    "assumptions": [
+      "The construction uses a source-defined ideal primitive such as a random oracle or a fixed finite tuple of public random permutations.",
+      "The distinguisher follows the source sequential query order.",
+      "Simulator cost is measured in queries to the ideal cipher."
+    ],
+    "parameters": [
+      "$n$",
+      "distinguisher queries $q$",
+      "simulator queries $\\sigma$",
+      "error $\\varepsilon$"
+    ],
+    "unresolved_remainder": "Known IEM constructions reduce the round count and attain polynomial simulator costs, including $O(q^2)$ with an $O(q^4/2^n)$-scale error, but the simultaneous $O(q)$ and $O(q/2^n)$ targets remain open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "indifferentiability",
+      "ideal-cipher",
+      "even-mansour"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Seurin, IEM under related-key and chosen-key attacks",
+        "locator": "Open Problems, printed p. 6; Figure 4 and surrounding text, printed pp. 11-15",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "eprint": "2015/069",
+        "url": "https://eprint.iacr.org/2015/069"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Dai--Seurin--Steinberger--Thiruvengadam, five-round IEM indifferentiability",
+        "locator": "Main five-round theorem; full version dated 2017-06-09",
+        "eprint": "2015/1069",
+        "url": "https://eprint.iacr.org/2015/1069"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Lee, minimizing IEM for sequential indifferentiability",
+        "locator": "Simulator analysis and concluding bounds, pp. 135-143",
+        "doi": "10.1007/978-3-031-22912-1_6",
+        "url": "https://doi.org/10.1007/978-3-031-22912-1_6"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-05-26",
+      "kind": "source_statement",
+      "summary": "The source asks for sequential ideal-cipher indifferentiability with both linear simulator-query complexity and $O(q/2^n)$ error.",
+      "citation_labels": [
+        "Cogliati--Seurin, IEM under related-key and chosen-key attacks"
+      ]
+    },
+    {
+      "date": "2017-06-09",
+      "kind": "public_result",
+      "summary": "A five-round non-idealized-key-schedule IEM is proved indifferentiable, but with substantially larger polynomial simulator and error losses.",
+      "citation_labels": [
+        "Dai--Seurin--Steinberger--Thiruvengadam, five-round IEM indifferentiability"
+      ]
+    },
+    {
+      "date": "2022-01-01",
+      "kind": "public_result",
+      "summary": "A four-round two-permutation construction attains sequential indifferentiability with $O(q^2)$ simulator complexity and an $O(q^4/2^n)$-scale error.",
+      "citation_labels": [
+        "Lee, minimizing IEM for sequential indifferentiability"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

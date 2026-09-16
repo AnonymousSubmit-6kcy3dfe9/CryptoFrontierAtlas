@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-round-trivial-schedule-iem-xrka-frontier",
+  "group_id": "iem-xrka-2015",
+  "title": "Three-round trivial-schedule IEM full-XRKA query frontier",
+  "summary": "Close the unknown two-query-budget region between the proved security bound and the generic attack on three-round IEM with one repeated key.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\operatorname{EM}[n,3,I]$ with three independent public random permutations and the same uniformly random $n$-bit key at every key addition, determine the adaptive bidirectional XOR-related-key security frontier throughout the gap between $\\operatorname{Adv}\\le 6q_e q_p/2^n+4q_e^2/2^n$ and the generic attack boundary $q_e q_p\\approx 2^n$, by giving matching security and attack bounds."
+  },
+  "scope": {
+    "domain": "Three-round iterated Even--Mansour with a trivial key schedule under adaptive bidirectional XOR-related-key attacks.",
+    "assumptions": [
+      "One uniformly random $n$-bit master key is reused in all round-key additions.",
+      "The three public random permutations are independent.",
+      "Both construction and primitive access are adaptive and bidirectional."
+    ],
+    "parameters": [
+      "$n$",
+      "related-key construction queries $q_e$",
+      "queries $q_p$ to each permutation"
+    ],
+    "unresolved_remainder": "The complete Figure 4 region between the source theorem and the generic $q_e q_p\\approx2^n$ attack remains without matching bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Seurin, IEM under related-key and chosen-key attacks",
+        "locator": "Open Problems, printed p. 6; Figure 4 and surrounding text, printed pp. 11-15",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "eprint": "2015/069",
+        "url": "https://eprint.iacr.org/2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-05-26",
+      "kind": "source_statement",
+      "summary": "The source identifies the remaining query-complexity region for three-round trivial-schedule IEM in its Figure 4.",
+      "citation_labels": [
+        "Cogliati--Seurin, IEM under related-key and chosen-key attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "one-round-nonlinear-schedule-em-xrka-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

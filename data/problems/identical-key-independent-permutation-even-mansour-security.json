@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "identical-key-independent-permutation-even-mansour-security",
+  "group_id": "chen-minimal-two-round-even-mansour",
+  "title": "Multi-round Even--Mansour security with one identical key",
+  "summary": "Determine the optimal query-security frontier for multi-round Even--Mansour with independent round permutations and the same key at every addition.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every fixed integer $r>2$, consider the $r$-round Even--Mansour cipher with $r$ independent public random $n$-bit permutations and one uniformly random $n$-bit key reused in all $r+1$ key additions. Does the construction attain strong-PRP security up to $\\widetilde O(2^{rn/(r+1)})$ adaptive two-sided queries? Prove the bound for every $r>2$, or give a compatible distinguishing attack that establishes a lower frontier. In particular, settle the source-emphasized $r=3$ threshold $2^{3n/4}$."
+  },
+  "scope": {
+    "domain": "Information-theoretic strong-PRP security of multi-round Even--Mansour with correlated subkeys",
+    "assumptions": [
+      "The r public random n-bit permutations are independent",
+      "The same uniformly random n-bit key is reused in all r+1 key additions",
+      "The adversary may query the cipher and public permutations adaptively in both directions"
+    ],
+    "parameters": [
+      "fixed round count r>2",
+      "block length n",
+      "adaptive query count",
+      "source-emphasized instance r=3"
+    ],
+    "unresolved_remainder": "A later result proves that the natural two-constraint sum-capture proof route overcounts by $\\Omega(q^3/N)$ for $r=3$, but explicitly does not provide a distinguisher. The $2^{3n/4}$ threshold and the full family for every $r>2$ remain unsettled."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "cryptanalysis.structural",
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "even-mansour",
+      "identical-round-key",
+      "correlated-subkeys",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chen--Lampe--Lee--Seurin--Steinberger, multi-round identical-key question",
+        "locator": "Revised full version dated 2014-12-18, Open Questions on p. 10",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "eprint": "2014/443",
+        "url": "https://eprint.iacr.org/2014/443"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Tessaro--Zhang, correlated-subkey sum-capture obstruction",
+        "locator": "Proposition 6 and the following discussion",
+        "doi": "10.1007/978-3-030-92078-4_15",
+        "eprint": "2021/1571",
+        "url": "https://eprint.iacr.org/2021/1571"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-12-18",
+      "kind": "source_statement",
+      "summary": "The source asks for the optimal exponent with independent round permutations and one identical round key, highlighting three rounds as the first unresolved case.",
+      "citation_labels": [
+        "Chen--Lampe--Lee--Seurin--Steinberger, multi-round identical-key question"
+      ]
+    },
+    {
+      "date": "2021-01-01",
+      "kind": "public_result",
+      "summary": "A lower-bound construction shows that the anticipated two-constraint sum-capture proof route overcounts for three rounds, while explicitly leaving the cipher's security unresolved.",
+      "citation_labels": [
+        "Tessaro--Zhang, correlated-subkey sum-capture obstruction"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "nonlinear-bijection-sum-capture-extension",
+      "single-permutation-even-mansour-one-key-schedule-security",
+      "two-round-single-permutation-even-mansour-query-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

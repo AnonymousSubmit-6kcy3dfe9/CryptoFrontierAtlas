@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.2.0",
+  "id": "four-round-even-mansour-memory-tradeoff",
+  "group_id": "dinur-two-key-even-mansour",
+  "title": "Memory minimum for the four-round Even--Mansour tradeoff curve",
+  "summary": "Determine the least memory that can retain the source four-round two-key Even--Mansour attack curve, including the highlighted low-memory EC9 regime.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $N=2^n$ and consider the non-weak four-round two-key iterated Even--Mansour schedule classes analyzed by the source in the known-plaintext model. Determine the minimum asymptotic memory $M(D)$ for a key-recovery attack that retains total time $T=N^2/D$ (up to the source's ignored polynomial factors) for each admissible data size $D\\le N$. In particular, for EC9 with round-key sequence $[K_0,K_1,K_0,K_0,K_1]$ and $N^{1/2}<D\\le N$, decide whether an attack with $M<N$ and $T=N^2/D$ exists, or prove a matching lower bound on $M$."
+  },
+  "scope": {
+    "domain": "Known-plaintext key-recovery attacks on source-defined four-round two-key iterated Even--Mansour schedule classes",
+    "assumptions": [
+      "The public round permutations, key schedules and non-weak schedule classes are those defined by the source",
+      "Only known plaintext--ciphertext pairs are available",
+      "Preprocessing and online work count toward total time",
+      "Multiplicative polynomial factors in n are ignored as in the source",
+      "The EC9 instance uses round-key sequence [K0,K1,K0,K0,K1]"
+    ],
+    "parameters": [
+      "N=2^n",
+      "data D",
+      "time T",
+      "memory M",
+      "four-round schedule class"
+    ],
+    "unresolved_remainder": "The complete minimum-memory function for the source schedule classes remains unknown. The explicitly emphasized remainder is EC9 with N^(1/2)<D<=N: whether M<N is possible at unchanged T=N^2/D, or whether a matching lower bound rules it out."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "even-mansour",
+      "multibridge",
+      "time-memory-tradeoff",
+      "known-plaintext",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The first archived ePrint version received 2013-10-24 contains the EC9 memory question and the corresponding general memory-minimization direction."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Dinur--Dunkelman--Keller--Shamir, two-key iterated Even--Mansour memory question",
+        "locator": "First archived ePrint version of 2013-10-24, Section 5.2 and Conclusions item 6, PDF pp. 15-17",
+        "doi": "10.1007/978-3-662-45611-8_23",
+        "eprint": "2013/674",
+        "url": "https://eprint.iacr.org/2013/674"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2013-10-24",
+      "kind": "source_statement",
+      "summary": "The first archived ePrint version asks whether EC9 can use less than N memory for D>N^(1/2) without increasing its T=N^2/D attack time and asks for the general minimum-memory tradeoff.",
+      "citation_labels": [
+        "Dinur--Dunkelman--Keller--Shamir, two-key iterated Even--Mansour memory question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "three-round-alternating-even-mansour-attack",
+      "xor-combination-even-mansour-schedule-attack"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

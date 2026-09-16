@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "multi-round-tem-adaptive-cca-frontier",
+  "group_id": "tweakable-cipher-cca-frontiers",
+  "title": "Tight adaptive CCA frontier for multi-round TEM",
+  "summary": "Determine whether every multi-round tweakable Even--Mansour construction in the source family reaches the conjectured round-dependent adaptive CCA exponent.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every fixed integer $r>2$, prove that $\\operatorname{TEM}[n,r,H]$ with independent public random permutations and independently keyed uniform $\\varepsilon$-AXU masks has adaptive bidirectional CCA security up to approximately $2^{rn/(r+1)}$ queries, or give a compatible attack that refutes this frontier for some $r$."
+  },
+  "scope": {
+    "domain": "Multi-round tweakable Even--Mansour ciphers in the random-permutation model under adaptive CCA.",
+    "assumptions": [
+      "$H$ is uniform and $\\varepsilon$-AXU, with $\\varepsilon\\approx2^{-n}$ for the displayed exponent.",
+      "Round permutations and hash-function keys are independent.",
+      "Construction and inner-permutation queries are adaptive and bidirectional."
+    ],
+    "parameters": [
+      "$n$",
+      "integer $r>2$",
+      "$q_c$",
+      "$q_p$",
+      "$\\varepsilon$"
+    ],
+    "unresolved_remainder": "No matching adaptive CCA security and attack bounds at exponent $rn/(r+1)$ are known for every fixed $r>2$."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "tweakable-block-cipher",
+      "even-mansour",
+      "cca-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers",
+        "locator": "Introduction and Related Work and Perspectives, printed pp. 5 and 7",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "eprint": "2015/539",
+        "url": "https://eprint.iacr.org/2015/539"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-06-02",
+      "kind": "source_statement",
+      "summary": "The source conjectures the $rn/(r+1)$ adaptive CCA exponent for every fixed TEM round count greater than two.",
+      "citation_labels": [
+        "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "multi-round-clrw-adaptive-cca-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

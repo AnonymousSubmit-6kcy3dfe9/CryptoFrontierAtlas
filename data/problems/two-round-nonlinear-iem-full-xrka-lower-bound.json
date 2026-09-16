@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-nonlinear-iem-full-xrka-lower-bound",
+  "group_id": "iem-xrka-2015",
+  "title": "Two-round lower bound for nonlinear-schedule IEM under full XRKA",
+  "summary": "Decide whether one round can ever beat the birthday bound with nonlinear round-key derivation from a two-block master key under full XOR-related-key attacks.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let a one-round IEM use a public random $n$-bit permutation and derive its whitening keys nonlinearly from a uniformly random $2n$-bit master key. Prove that no such construction achieves beyond-birthday security in the adaptive bidirectional full-$\\Phi_{\\mathrm{XOR}}$ related-key experiment, or give a one-round construction and proof that refute this claim."
+  },
+  "scope": {
+    "domain": "Nonlinear-key-schedule iterated Even--Mansour ciphers under full XOR-induced related-key attacks.",
+    "assumptions": [
+      "$2n$-bit master key.",
+      "Nonlinear round-key derivation.",
+      "Full master-key XOR offsets and adaptive bidirectional construction and primitive queries."
+    ],
+    "parameters": [
+      "$n$",
+      "one round",
+      "nonlinear key schedule",
+      "query budgets"
+    ],
+    "unresolved_remainder": "Neither the one-round impossibility nor a beyond-birthday-secure one-round counterexample is known in the full-XRKA model."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key",
+      "round-lower-bound"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Seurin, IEM under related-key and chosen-key attacks",
+        "locator": "Open Problems, printed p. 6; Figure 4 and surrounding text, printed pp. 11-15",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "eprint": "2015/069",
+        "url": "https://eprint.iacr.org/2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-05-26",
+      "kind": "source_statement",
+      "summary": "The source conjectures that nonlinear key derivation from a $2n$-bit master key still requires at least two IEM rounds for beyond-birthday full-XRKA security.",
+      "citation_labels": [
+        "Cogliati--Seurin, IEM under related-key and chosen-key attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "six-round-linear-iem-full-xrka-lower-bound"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

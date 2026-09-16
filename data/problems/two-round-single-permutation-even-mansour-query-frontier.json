@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-single-permutation-even-mansour-query-frontier",
+  "group_id": "chen-minimal-two-round-even-mansour",
+  "title": "Query frontier for two-round single-permutation Even--Mansour",
+  "summary": "Determine the tight outer-versus-inner query-security boundary for two-round single-permutation Even--Mansour with a good one-master-key schedule.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $N=2^n$ and let $\\operatorname{EMSP}[n,2,\\gamma]$ be the source construction: one public random $n$-bit permutation is reused in both rounds, and the three round keys are derived from one $n$-bit master key by a good schedule $\\gamma$ in the sense of Definition 2. For a computationally unbounded adversary making $q_e$ adaptive two-sided cipher queries and $q_p$ adaptive two-sided permutation queries, determine the asymptotically tight boundary between negligible and non-negligible strong-PRP advantage throughout the still-open region of Figure 2, up to the source's polylogarithmic convention."
+  },
+  "scope": {
+    "domain": "Information-theoretic strong-PRP security of two-round single-permutation Even--Mansour",
+    "assumptions": [
+      "One public random n-bit permutation is reused in both rounds",
+      "All three round keys are derived from one n-bit master key by a Definition 2 good schedule",
+      "The adversary is computationally unbounded and may query the cipher and public permutation adaptively in both directions"
+    ],
+    "parameters": [
+      "block length n and N=2^n",
+      "outer-cipher query count q_e",
+      "public-permutation query count q_p",
+      "Definition 2 good key schedule gamma"
+    ],
+    "unresolved_remainder": "The 2019 attacks improve the attainable low-data and low-memory tradeoffs but explicitly leave a gap. Every remaining $(q_e,q_p)$ regime between the proved security bound and known attacks for the exact single-permutation, one-master-key construction still needs matching bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "design.block-ciphers",
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "even-mansour",
+      "single-permutation",
+      "provable-security",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chen--Lampe--Lee--Seurin--Steinberger, two-round EMSP query-frontier question",
+        "locator": "Revised full version dated 2014-12-18, Figure 2 on p. 6 and Section 6.1 on p. 34",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "eprint": "2014/443",
+        "url": "https://eprint.iacr.org/2014/443"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Leurent--Sibleyras, low-memory two-round Even--Mansour attacks",
+        "locator": "Section 4.5 and its remaining-gap discussion",
+        "doi": "10.1007/978-3-030-26951-7_8",
+        "eprint": "2019/938",
+        "url": "https://eprint.iacr.org/2019/938"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-12-18",
+      "kind": "source_statement",
+      "summary": "The revised full version marks the single-permutation Figure 2 query regimes beyond its proved bound as open.",
+      "citation_labels": [
+        "Chen--Lampe--Lee--Seurin--Steinberger, two-round EMSP query-frontier question"
+      ]
+    },
+    {
+      "date": "2019-01-01",
+      "kind": "public_result",
+      "summary": "A 3-XOR reduction yields new low-data and low-memory attacks and a faster asymptotic attack, while the paper explicitly retains a gap to the security proof.",
+      "citation_labels": [
+        "Leurent--Sibleyras, low-memory two-round Even--Mansour attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "identical-key-independent-permutation-even-mansour-security",
+      "nonlinear-bijection-sum-capture-extension",
+      "single-permutation-even-mansour-one-key-schedule-security"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

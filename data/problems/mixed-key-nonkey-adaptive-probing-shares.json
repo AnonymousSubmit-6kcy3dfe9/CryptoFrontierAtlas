@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "id": "mixed-key-nonkey-adaptive-probing-shares",
+  "group_id": "coron-higher-order-masking-lookup-tables",
+  "title": "Adaptive probing with mixed key and non-key share counts",
+  "summary": "Determine whether adaptive stateful masking can use 2t+1 key shares but only t+1 shares for every non-key variable.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For the source's randomized table-recomputation implementation of a full block cipher, let the adversary place at most $t$ probes in each execution and move probe positions adaptively between executions. Is perfect simulation security achievable with $2t+1$ shares for the persistent secret-key variables and $t+1$ shares for all non-key variables, including lookup-table inputs, outputs, encoding, decoding, and refresh state, for every masking order $t$? A complete result must either construct and prove this exact mixed-share interface secure or exhibit a compatible adaptive probing attack."
+  },
+  "scope": {
+    "domain": "Adaptive and stateful probing security of higher-order masked lookup-table implementations in symmetric block ciphers",
+    "assumptions": [
+      "The lookup-table countermeasure and randomized refresh operations are those defined by Coron's source construction",
+      "Persistent secret-key variables use 2t+1 randomized Boolean shares",
+      "All non-key and transient variables use t+1 shares",
+      "The adversary may place at most t probes in each execution and change probe locations adaptively between executions",
+      "Security is perfect simulation security in the full stateful probing model"
+    ],
+    "parameters": [
+      "masking order t",
+      "2t+1 key shares",
+      "t+1 non-key shares",
+      "adaptive probes per execution",
+      "number of executions and state transitions"
+    ],
+    "unresolved_remainder": "TCHES 2018 proves t-SNI for the table-recomputation gadget and enables t+1 shares for that gadget, while CCS 2016 gives a robust stateful composition with 2t+2-share region boundaries. No inspected result proves or refutes the exact 2t+1 persistent-key and t+1 non-key interface under adaptive cross-execution probing."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.side-channel",
+    "secondary": [
+      "design.block-ciphers",
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "higher-order-masking",
+      "adaptive-probing",
+      "stateful-probing",
+      "lookup-tables",
+      "mixed-share-count"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Coron, Higher Order Masking of Look-up Tables, mixed-share conjecture",
+        "locator": "Introduction footnote 6, PDF p. 6",
+        "doi": "10.1007/978-3-642-55220-5_25",
+        "eprint": "2013/700",
+        "url": "https://eprint.iacr.org/2013/700"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Barthe et al., Strong Non-Interference and Type-Directed Higher-Order Masking",
+        "locator": "Section 9 and Appendix D, robust stateful composition",
+        "doi": "10.1145/2976749.2978427",
+        "eprint": "2015/506",
+        "url": "https://eprint.iacr.org/2015/506"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Coron--Rondepierre--Zeitoun, High Order Masking of Look-up Tables with Common Shares",
+        "locator": "Section 4, Theorem 2, pp. 46--49",
+        "doi": "10.46586/tches.v2018.i1.40-72",
+        "url": "https://doi.org/10.46586/tches.v2018.i1.40-72"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Coron et al., Side-Channel Masking with Common Shares",
+        "locator": "Theorem 2 and compositional security sections",
+        "doi": "10.46586/tches.v2022.i3.290-329",
+        "url": "https://doi.org/10.46586/tches.v2022.i3.290-329"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2014-02-05",
+      "kind": "source_statement",
+      "summary": "The source asks whether non-key variables can use $t+1$ shares in the full adaptive probing model while secret-key variables retain $2t+1$ shares.",
+      "citation_labels": [
+        "Coron, Higher Order Masking of Look-up Tables, mixed-share conjecture"
+      ]
+    },
+    {
+      "date": "2016-01-01",
+      "kind": "prior_result",
+      "summary": "Robust composition gives t+1-share internal gadgets with 2t+2-share region boundaries, providing stateful progress but not the exact 2t+1 key boundary.",
+      "citation_labels": [
+        "Barthe et al., Strong Non-Interference and Type-Directed Higher-Order Masking"
+      ]
+    },
+    {
+      "date": "2018-02-14",
+      "kind": "prior_result",
+      "summary": "Theorem 2 proves the source table-recomputation gadget is t-SNI and supports t+1 shares for the gadget, without establishing the exact adaptive mixed-share stateful interface.",
+      "citation_labels": [
+        "Coron--Rondepierre--Zeitoun, High Order Masking of Look-up Tables with Common Shares"
+      ]
+    },
+    {
+      "date": "2022-01-01",
+      "kind": "prior_result",
+      "summary": "A common-share RNI composition theorem strengthens compositional masking analysis, but its gadget model does not settle the source's 2t+1-key and t+1-non-key boundary.",
+      "citation_labels": [
+        "Coron et al., Side-Channel Masking with Common Shares"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

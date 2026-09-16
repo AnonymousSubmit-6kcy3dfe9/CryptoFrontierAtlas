@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.2.0",
+  "id": "xor-combination-even-mansour-schedule-attack",
+  "group_id": "dinur-two-key-even-mansour",
+  "title": "Attack threshold for a XOR-combination Even--Mansour schedule",
+  "summary": "Determine whether the fixed four-round Even--Mansour schedule ending in K0 xor K1 can be attacked at total complexity 2^n.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $N=2^n$ and consider four-round iterated Even--Mansour with independent n-bit keys $K_0,K_1$, independent public round permutations, and fixed round-key sequence $[K_0,K_1,K_0,K_1,K_0\\mathbin{\\oplus}K_1]$. In the source classical known-plaintext model, does there exist a generic key-recovery attack with total time, data and memory complexity at most $N$ up to polynomial factors in $n$? If not, prove a security lower bound that excludes this $N=2^n$ threshold."
+  },
+  "scope": {
+    "domain": "Generic classical cryptanalysis of a fixed four-round two-key iterated Even--Mansour key schedule",
+    "assumptions": [
+      "The round-key sequence is exactly [K0,K1,K0,K1,K0 xor K1]",
+      "K0 and K1 are independent uniform n-bit keys",
+      "The public round permutations are independent random permutations",
+      "The source known-plaintext model counts time, data, memory and preprocessing",
+      "Multiplicative polynomial factors in n are ignored"
+    ],
+    "parameters": [
+      "block/key length n",
+      "total attack complexity",
+      "known-plaintext data",
+      "memory"
+    ],
+    "unresolved_remainder": "No inspected classical result gives an attack of total complexity N=2^n or a lower bound excluding that threshold for the exact final-whitening schedule [K0,K1,K0,K1,K0 xor K1]. Quantum attacks on the strictly alternating schedule and attacks on other primitives do not cover this remainder."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [
+      "cryptanalysis.meet-in-the-middle"
+    ],
+    "tags": [
+      "even-mansour",
+      "complex-key-schedule",
+      "xor-key-combination",
+      "known-plaintext",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The exact XOR-combination schedule is first stated as an unresolved example in the 2014-09-08 ePrint revision; it is not present in the first 2013-10-24 version."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Dinur--Dunkelman--Keller--Shamir, XOR-combination key-schedule question",
+        "locator": "2014-09-08 ePrint revision, Conclusions item 5, PDF p. 18",
+        "doi": "10.1007/978-3-662-45611-8_23",
+        "eprint": "2013/674",
+        "url": "https://eprint.iacr.org/2013/674"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2014-09-08",
+      "kind": "source_statement",
+      "summary": "A revised ePrint version fixes the schedule [K0,K1,K0,K1,K0 xor K1] and states that no attack of complexity 2^n was known, leaving an attack or a lower bound open.",
+      "citation_labels": [
+        "Dinur--Dunkelman--Keller--Shamir, XOR-combination key-schedule question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "four-round-even-mansour-memory-tradeoff",
+      "three-round-alternating-even-mansour-attack"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

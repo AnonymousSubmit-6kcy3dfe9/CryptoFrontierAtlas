@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.2.0",
+  "id": "one-round-nonlinear-schedule-em-xrka-frontier",
+  "group_id": "iem-xrka-2015",
+  "title": "One-round nonlinear-schedule Even-Mansour full-XRKA frontier",
+  "summary": "Close the query-complexity gap for one-round Even--Mansour with low-differential-uniformity nonlinear key derivation under full XOR-related-key attacks.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $\\operatorname{EM}[n,1,\\gamma]$ with one public random permutation and key-derivation permutations $\\gamma_0,\\gamma_1$ of bounded differential uniformity, determine the adaptive bidirectional XOR-related-key security frontier throughout the unresolved Figure 4 region between Theorem 3 and the source-cited single-key attack, by proving matching security and attack bounds."
+  },
+  "scope": {
+    "domain": "One-round Even--Mansour with nonlinear key derivation under adaptive bidirectional XOR-related-key attacks.",
+    "assumptions": [
+      "One uniformly random $n$-bit master key.",
+      "$\\gamma_0$ and $\\gamma_1$ are permutations with bounded differential uniformity.",
+      "Construction and public-permutation queries are adaptive and bidirectional."
+    ],
+    "parameters": [
+      "$n$",
+      "$q_e$",
+      "$q_p$",
+      "$\\delta(\\gamma_0)$",
+      "$\\delta(\\gamma_1)$"
+    ],
+    "unresolved_remainder": "The full query region between Theorem 3 and the compatible single-key attack is not characterized by matching bounds."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.structural",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key",
+      "query-complexity"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Seurin, IEM under related-key and chosen-key attacks",
+        "locator": "Open Problems, printed p. 6; Figure 4 and surrounding text, printed pp. 11-15",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "eprint": "2015/069",
+        "url": "https://eprint.iacr.org/2015/069"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-05-26",
+      "kind": "source_statement",
+      "summary": "The source identifies the second unresolved Figure 4 region for one-round nonlinear-schedule Even--Mansour.",
+      "citation_labels": [
+        "Cogliati--Seurin, IEM under related-key and chosen-key attacks"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "three-round-trivial-schedule-iem-xrka-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

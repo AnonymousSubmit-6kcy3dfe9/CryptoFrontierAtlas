@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.2.0",
+  "id": "nonlinear-bijection-sum-capture-extension",
+  "group_id": "chen-minimal-two-round-even-mansour",
+  "title": "Nonlinear-bijection extension of the sum-capture theorem",
+  "summary": "Determine whether the adaptive sum-capture inequality proved for linear automorphisms extends to every fixed nonlinear bijection.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $N=2^n$, $9n\\le q\\le N/2$, $P$ be a uniformly random permutation of $\\{0,1\\}^n$, and $Q$ be the transcript of a probabilistic algorithm making exactly $q$ adaptive two-sided queries to $P$. For a fixed bijection $\\Gamma:\\{0,1\\}^n\\to\\{0,1\\}^n$, define $\\mu(Q,U,V)=|\\{((x,y),u,v)\\in Q\\times U\\times V:x\\oplus u=\\Gamma(y\\oplus v)\\}|$. Does the source Theorem 1 bound $\\Pr[\\exists U,V:\\mu(Q,U,V)\\ge q|U||V|/N+2q^2\\sqrt{|U||V|}/N+3\\sqrt{nq|U||V|}]\\le 2/N$ hold for every fixed, not necessarily linear, $\\Gamma$? Prove it or give a compatible counterexample."
+  },
+  "scope": {
+    "domain": "Adaptive sum-capture bounds for random-permutation transcripts over the n-bit XOR space",
+    "assumptions": [
+      "The random permutation is queried adaptively in both directions exactly q times",
+      "The query range satisfies 9n<=q<=2^(n-1)",
+      "Gamma is a fixed bijection independent of the random permutation and the algorithm's random coins",
+      "The probability is over the random permutation and the algorithm's coins and the bound is uniform over all subsets U and V"
+    ],
+    "parameters": [
+      "dimension n and N=2^n",
+      "query count q",
+      "fixed bijection Gamma",
+      "subsets U and V",
+      "sum-capture count mu(Q,U,V)"
+    ],
+    "unresolved_remainder": "The exact high-probability inequality is proved for linear automorphisms. Later sharpened sum-capture results still assume linear Gamma, so the extension to every fixed nonlinear bijection, or a counterexample to it, remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.probability-statistics",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "sum-capture",
+      "random-permutation",
+      "adaptive-queries",
+      "nonlinear-bijection"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chen--Lampe--Lee--Seurin--Steinberger, nonlinear sum-capture question",
+        "locator": "Revised full version dated 2014-12-18, Open Questions on p. 10 and Theorem 1 on p. 16",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "eprint": "2014/443",
+        "url": "https://eprint.iacr.org/2014/443"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-12-18",
+      "kind": "source_statement",
+      "summary": "The source asks whether its exact adaptive sum-capture theorem extends from linear automorphisms to nonlinear bijections.",
+      "citation_labels": [
+        "Chen--Lampe--Lee--Seurin--Steinberger, nonlinear sum-capture question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "identical-key-independent-permutation-even-mansour-security",
+      "single-permutation-even-mansour-one-key-schedule-security",
+      "two-round-single-permutation-even-mansour-query-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

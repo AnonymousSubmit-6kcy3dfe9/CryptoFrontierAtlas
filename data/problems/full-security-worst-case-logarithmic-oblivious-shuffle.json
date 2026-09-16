@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.2.0",
+  "id": "full-security-worst-case-logarithmic-oblivious-shuffle",
+  "group_id": "morris-rogaway-sometimes-recurse",
+  "title": "Full-security oblivious shuffling in worst-case logarithmic time",
+  "summary": "Construct a full-domain secure oblivious shuffle whose every card trajectory uses only logarithmically many one-bit PRF calls in the worst case.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every domain size $N$ and fixed target statistical distance $\\varepsilon\\in(0,1)$, construct an oblivious shuffle on $[N]$, equivalently an information-theoretic PRF-to-PRP conversion, that remains indistinguishable from a uniform permutation when the adversary queries all $q=N$ points and for which every card trajectory uses $\\Theta(\\log N)$ calls to a constant-output-length PRF in the worst case, or prove that no such construction exists in this model."
+  },
+  "scope": {
+    "domain": "Oblivious shuffles and information-theoretic PRF-to-PRP conversions on arbitrary finite domains",
+    "assumptions": [
+      "A card can be evaluated without tracking the other cards",
+      "The adversary may query all N domain points",
+      "The primitive is a constant-output-length PRF, including a one-bit-output PRF",
+      "The logarithmic evaluation bound holds for every card trajectory, not only in expectation",
+      "Security is measured at a fixed target statistical distance"
+    ],
+    "parameters": [
+      "domain size N",
+      "query count q=N",
+      "target statistical distance epsilon",
+      "worst-case number of primitive calls per card"
+    ],
+    "unresolved_remainder": "Later work obtains logarithmic depth below the full-domain endpoint, full-domain depth $O(\\log^2 N)$, sharper strict-query Swap-or-Not bounds, or worst-case logarithmically many calls to a stronger larger-domain permutation. No inspected construction simultaneously achieves $q=N$ security and worst-case $\\Theta(\\log N)$ total calls to a constant-output-length PRF."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "oblivious-shuffle",
+      "format-preserving-encryption",
+      "prf-to-prp",
+      "full-domain-security",
+      "worst-case-complexity"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The first archived ePrint version dated September 4, 2013 contains the explicit open question. Earlier cited shuffle results define prior bounds but do not state this complete worst-case target."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Morris--Rogaway, worst-case logarithmic oblivious-shuffle question",
+        "locator": "First archived ePrint version, final discussion, 'Open question'; revised version, p. 14",
+        "doi": "10.1007/978-3-642-55220-5_18",
+        "eprint": "2013/560",
+        "url": "https://eprint.iacr.org/archive/2013/560/1378304633.pdf"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Czumaj, logarithmic switching networks below full-domain security",
+        "locator": "Abstract, Theorem 1.1, and Section 4",
+        "doi": "10.1145/2746539.2746629",
+        "url": "https://doi.org/10.1145/2746539.2746629"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Tessaro, near-full-security Whitened Swap-or-Not",
+        "locator": "Sections 1.1 and 3.1, especially pp. 439-446",
+        "doi": "10.1007/978-3-662-48800-3_18",
+        "url": "https://doi.org/10.1007/978-3-662-48800-3_18"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Miracle--Yilek, Reverse Cycle Walking",
+        "locator": "Introduction, Sections 5-6, and Theorem 4",
+        "doi": "10.1007/978-3-662-53887-6_25",
+        "url": "https://doi.org/10.1007/978-3-662-53887-6_25"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Dai--Hoang--Tessaro, tighter Swap-or-Not bounds",
+        "locator": "Section 6, Lemma 5, and Theorem 3",
+        "doi": "10.1007/978-3-319-63697-9_17",
+        "url": "https://doi.org/10.1007/978-3-319-63697-9_17"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Miracle--Yilek, Cycle Slicer",
+        "locator": "Sections 3-5, Theorems 1-2, and Corollary 2",
+        "doi": "10.1007/978-3-319-70700-6_14",
+        "url": "https://doi.org/10.1007/978-3-319-70700-6_14"
+      },
+      {
+        "role": "restatement",
+        "label": "Morris--Rogaway--Stegers, expanded Thorp-shuffle analysis",
+        "locator": "Sections 1.4 and 1.6, pp. 523-525",
+        "doi": "10.1007/s00145-017-9262-z",
+        "url": "https://doi.org/10.1007/s00145-017-9262-z"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Miracle--Yilek, full-security Mix-Swap-Unmix",
+        "locator": "Introduction, Section 4, and Theorem 2",
+        "doi": "10.1007/978-3-030-10970-7_1",
+        "url": "https://doi.org/10.1007/978-3-030-10970-7_1"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2013-09-04",
+      "kind": "source_statement",
+      "summary": "The first archived ePrint version asks for full-domain security together with worst-case logarithmic single-card evaluation from a constant-output-length PRF.",
+      "citation_labels": [
+        "Morris--Rogaway, worst-case logarithmic oblivious-shuffle question"
+      ]
+    },
+    {
+      "date": "2015-01-01",
+      "kind": "public_result",
+      "summary": "Switching networks achieve logarithmic depth for any fixed $(1-\\varepsilon)N$ tracked elements and $O(\\log^2 N)$ depth for all $N$ elements; Whitened Swap-or-Not gives logarithmic-round near-full security in a related ideal-component model.",
+      "citation_labels": [
+        "Czumaj, logarithmic switching networks below full-domain security",
+        "Tessaro, near-full-security Whitened Swap-or-Not"
+      ]
+    },
+    {
+      "date": "2016-01-01",
+      "kind": "public_result",
+      "summary": "Reverse cycle walking attains full-domain security with worst-case logarithmically many calls to a partially secure larger-domain cipher, but those calls are not constant-output PRF calls.",
+      "citation_labels": [
+        "Miracle--Yilek, Reverse Cycle Walking"
+      ]
+    },
+    {
+      "date": "2017-01-01",
+      "kind": "public_result",
+      "summary": "Sharper Swap-or-Not bounds and Cycle Slicer improve strict-query security and domain targeting, respectively, without reaching the complete full-domain logarithmic-call target.",
+      "citation_labels": [
+        "Dai--Hoang--Tessaro, tighter Swap-or-Not bounds",
+        "Miracle--Yilek, Cycle Slicer"
+      ]
+    },
+    {
+      "date": "2017-08-25",
+      "kind": "restatement",
+      "summary": "The expanded Thorp-shuffle article still identifies full-domain constant-pass mixing as open and describes Sometimes-Recurse as logarithmic only in expected time.",
+      "citation_labels": [
+        "Morris--Rogaway--Stegers, expanded Thorp-shuffle analysis"
+      ]
+    },
+    {
+      "date": "2019-01-01",
+      "kind": "public_result",
+      "summary": "Mix-Swap-Unmix achieves full security using one-bit Swap-or-Not components, but its logarithmic outer and inner round counts yield a quadratic-logarithmic primitive-call cost.",
+      "citation_labels": [
+        "Miracle--Yilek, full-security Mix-Swap-Unmix"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "tweaked-sr-concurrent-multi-domain-security"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

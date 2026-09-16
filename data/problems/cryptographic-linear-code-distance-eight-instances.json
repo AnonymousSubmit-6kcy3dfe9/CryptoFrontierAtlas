@@ -1,0 +1,86 @@
+{
+  "schema_version": "0.2.0",
+  "id": "cryptographic-linear-code-distance-eight-instances",
+  "group_id": "pride-linear-layer-open-problems",
+  "title": "Exact distances of eight PRIDE linear-layer code instances",
+  "summary": "Determine the exact maximum minimum distance for eight linear-code instances used to bound PRIDE branch numbers.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For each of the eight pairs $(b,n)\\in\\{(2,11),(2,16),(3,11),(3,12),(3,13),(3,14),(3,15),(3,16)\\}$, determine the exact maximum Hamming minimum distance $d_{\\max}([2n,n]_{\\mathbb F_{2^b}})$. Equivalently, collapse the source intervals $8\\text{--}9$, $11\\text{--}12$, $9\\text{--}10$, $10\\text{--}11$, $10\\text{--}12$, $11\\text{--}13$, $11\\text{--}14$, and $12\\text{--}15$ to their exact integer optima by giving matching constructions and upper bounds. These distances determine attainable linear and differential branch-number bounds for the corresponding SPN linear layers."
+  },
+  "scope": {
+    "domain": "Linear [2n,n] codes over $\\mathbb F_{2^b}$ used as the coding-theoretic model for symmetric block-cipher linear layers",
+    "assumptions": [
+      "Codes are linear over $\\mathbb F_{2^b}$.",
+      "Code length is $2n$ and dimension is $n$.",
+      "The objective is Hamming minimum distance, identified by the source with the branch-number objective for its linear layers.",
+      "The eight finite parameter instances are audited pointwise."
+    ],
+    "parameters": [
+      "b in {2,3}",
+      "n in {11,12,13,14,15,16}",
+      "maximum minimum distance"
+    ],
+    "unresolved_remainder": "All eight instances remain interval-valued in the inspected Grassl code tables: F_4,[22,11] has 8-9; F_4,[32,16] has 11-12; F_8,[22,11] has 9-10; F_8,[24,12] has 10-11; F_8,[26,13] has 10-12; F_8,[28,14] has 11-13; F_8,[30,15] has 11-14; and F_8,[32,16] has 12-15."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.coding-theory",
+    "secondary": [
+      "design.block-ciphers"
+    ],
+    "tags": [
+      "linear-codes",
+      "branch-number",
+      "pride",
+      "finite-fields"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "unresolved",
+      "method": "undetermined",
+      "note": "The CRYPTO 2014 paper cites Grassl's online code tables for the intervals, but the earliest text-confirmed formulation of this exact cryptographic family has not been established."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "restatement",
+        "label": "Albrecht--Driessen--Kavun--Leander--Paar--Yalcin, PRIDE linear-layer code-distance table",
+        "locator": "CRYPTO 2014, Appendix E, p. 30",
+        "doi": "10.1007/978-3-662-44371-2_4",
+        "eprint": "2014/453",
+        "url": "https://eprint.iacr.org/2014/453"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-08-17",
+      "kind": "restatement",
+      "summary": "The CRYPTO 2014 source records eight F_4 and F_8 linear-code instances whose best-known minimum-distance bounds are not exact and ties the distance to PRIDE branch-number design.",
+      "citation_labels": [
+        "Albrecht--Driessen--Kavun--Leander--Paar--Yalcin, PRIDE linear-layer code-distance table"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "pride-avr-linear-layer-cycle-optimum"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

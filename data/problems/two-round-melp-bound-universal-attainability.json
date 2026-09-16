@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "id": "two-round-melp-bound-universal-attainability",
+  "group_id": "affine-sbox-two-round-extrema",
+  "title": "Universal attainability of the two-round MELP bound",
+  "summary": "Decide whether every admissible S-box and width admits a field-linear MDS diffusion layer attaining the source upper bound on two-round MELP.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every permutation $S$ of $\\mathbb F_{2^m}$ and every admissible width $t$, does there exist an $\\mathbb F_{2^m}$-linear MDS matrix $M$ such that $\\operatorname{MELP}_2(S,M)=2^{-2m(t+1)}\\max_{\\mu} B^{\\perp}(\\mu)$, with $B^{\\perp}$ as defined in the source? Construct such an $M$ for every pair $(S,t)$, characterize all admitting pairs, or give a counterexample."
+  },
+  "scope": {
+    "domain": "Two-round expected linear potential of AES-like substitution-permutation networks.",
+    "assumptions": [
+      "$S$ is a permutation of $\\mathbb F_{2^m}$.",
+      "$M$ is $\\mathbb F_{2^m}$-linear and MDS.",
+      "The source Theorem 2 linear definitions apply."
+    ],
+    "parameters": [
+      "$m$",
+      "$t$",
+      "$S$",
+      "$M$"
+    ],
+    "unresolved_remainder": "No universal construction, complete characterization, or counterexample for attainability of the MELP bound was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "melp",
+      "sbox",
+      "mds-matrix"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Canteaut--Roue, affine-equivalent S-box behavior",
+        "locator": "Section 3.2, printed pp. 10-12; Conclusion, printed p. 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "eprint": "2015/085",
+        "url": "https://eprint.iacr.org/2015/085"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether an MDS diffusion layer can attain its two-round MELP upper bound for every admissible S-box and width.",
+      "citation_labels": [
+        "Canteaut--Roue, affine-equivalent S-box behavior"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "two-round-medp-bound-universal-attainability"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

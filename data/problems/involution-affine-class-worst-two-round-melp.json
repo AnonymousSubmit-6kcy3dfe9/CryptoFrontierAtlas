@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.2.0",
+  "id": "involution-affine-class-worst-two-round-melp",
+  "group_id": "affine-sbox-two-round-extrema",
+  "title": "Worst affine-class representative under two-round MELP",
+  "summary": "Decide whether an involutional S-box is always the worst representative of its affine-equivalence class for two-round linear potential.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every involutional S-box $S$, every affine-equivalent representative $S^{\\prime}$, and every admissible $\\mathbb F_{2^m}$-linear MDS layer $M$, is $\\operatorname{MELP}_2(S,M)\\geq\\operatorname{MELP}_2(S^{\\prime},M)$? Prove the universal ordering or give a concrete triple $(S,S^{\\prime},M)$ that reverses it."
+  },
+  "scope": {
+    "domain": "Affine-equivalent S-box representatives in two-round AES-like SPNs under linear cryptanalysis.",
+    "assumptions": [
+      "$S$ is involutional.",
+      "$S$ and $S^{\\prime}$ are affine equivalent.",
+      "$M$ is an admissible field-linear MDS layer."
+    ],
+    "parameters": [
+      "$m$",
+      "$t$",
+      "$S$",
+      "$S^{\\prime}$",
+      "$M$"
+    ],
+    "unresolved_remainder": "No proof of the universal MELP ordering and no reversing affine-equivalent counterexample was found."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.linear",
+    "secondary": [
+      "design.sboxes-nonlinear-components"
+    ],
+    "tags": [
+      "melp",
+      "sbox",
+      "affine-equivalence"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Canteaut--Roue, affine-equivalent S-box behavior",
+        "locator": "Section 3.2, printed pp. 10-12; Conclusion, printed p. 20",
+        "doi": "10.1007/978-3-662-46800-5_3",
+        "eprint": "2015/085",
+        "url": "https://eprint.iacr.org/2015/085"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-01-01",
+      "kind": "source_statement",
+      "summary": "The source asks whether involutional S-boxes are universally worst within their affine-equivalence classes under two-round MELP.",
+      "citation_labels": [
+        "Canteaut--Roue, affine-equivalent S-box behavior"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "involution-affine-class-worst-two-round-medp"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

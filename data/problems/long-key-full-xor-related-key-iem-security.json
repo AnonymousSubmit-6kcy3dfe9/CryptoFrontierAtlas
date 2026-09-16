@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.2.0",
+  "id": "long-key-full-xor-related-key-iem-security",
+  "group_id": "iem-xrka-2015",
+  "title": "Long-key IEM security under full XOR-related keys",
+  "summary": "Construct an iterated Even--Mansour cipher with a master key longer than its block that beats the birthday bound against arbitrary XOR offsets of the full key.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For $n$-bit public random permutations and a master-key length $\\kappa>n$, construct an iterated Even--Mansour family that is secure beyond $2^{n/2}$ queries in the adaptive bidirectional $\\Phi_{\\mathrm{XOR}}$ related-key experiment, where arbitrary XOR offsets act on the complete master key, or prove that no such construction exists in the stated model."
+  },
+  "scope": {
+    "domain": "Iterated Even--Mansour block ciphers in the random-permutation model under full XOR-induced related-key attacks.",
+    "assumptions": [
+      "The block size is $n$ and the master-key length is $\\kappa>n$.",
+      "The adversary may apply arbitrary XOR offsets to the complete master key.",
+      "Construction and primitive queries are adaptive and bidirectional."
+    ],
+    "parameters": [
+      "$n$",
+      "$\\kappa>n$",
+      "round count and key schedule",
+      "construction and primitive query budgets"
+    ],
+    "unresolved_remainder": "Restricted two-offset constructions achieve beyond-birthday security, including a four-round construction with a $2n$-bit key, but security under the full $\\Phi_{\\mathrm{XOR}}$ family remains open."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [],
+    "tags": [
+      "even-mansour",
+      "related-key",
+      "beyond-birthday"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The CRYPTO 2015 TEM paper explicitly identifies the EUROCRYPT 2015 IEM question and states that its restricted two-offset result only partially solves the full-XOR challenge."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Cogliati--Seurin, IEM under related-key and chosen-key attacks",
+        "locator": "Open Problems, printed p. 6; Figure 4 and surrounding text, printed pp. 11-15",
+        "doi": "10.1007/978-3-662-46800-5_23",
+        "eprint": "2015/069",
+        "url": "https://eprint.iacr.org/2015/069"
+      },
+      {
+        "role": "restatement",
+        "label": "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers",
+        "locator": "Application to Related-Key Security, printed p. 6",
+        "doi": "10.1007/978-3-662-47989-6_9",
+        "eprint": "2015/539",
+        "url": "https://eprint.iacr.org/2015/539"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Cogliati--Seurin, linear tweak and key mixing",
+        "locator": "Introduction and open-problem discussion, full version dated 2015-09-07",
+        "doi": "10.1007/978-3-662-48800-3_6",
+        "eprint": "2015/363",
+        "url": "https://eprint.iacr.org/2015/363"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2015-05-26",
+      "kind": "source_statement",
+      "summary": "The source asks for beyond-birthday IEM security with a master key longer than the block under arbitrary XOR offsets of the complete key.",
+      "citation_labels": [
+        "Cogliati--Seurin, IEM under related-key and chosen-key attacks"
+      ]
+    },
+    {
+      "date": "2015-06-02",
+      "kind": "restatement",
+      "summary": "The TEM paper restates the full-XOR challenge and explains that its restricted two-offset construction only partially addresses it.",
+      "citation_labels": [
+        "Cogliati--Lampe--Seurin, Tweaking Even-Mansour Ciphers"
+      ]
+    },
+    {
+      "date": "2015-09-07",
+      "kind": "public_result",
+      "summary": "A four-round, $2n$-bit-key construction reaches roughly $2^{2n/3}$ security for a restricted two-offset related-key family, while explicitly retaining full XOR offsets as open.",
+      "citation_labels": [
+        "Cogliati--Seurin, linear tweak and key mixing"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

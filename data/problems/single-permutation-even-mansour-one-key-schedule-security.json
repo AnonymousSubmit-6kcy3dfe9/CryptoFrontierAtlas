@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.2.0",
+  "id": "single-permutation-even-mansour-one-key-schedule-security",
+  "group_id": "chen-minimal-two-round-even-mansour",
+  "title": "One-key schedules for multi-round single-permutation Even--Mansour",
+  "summary": "For every round count above two, find one-master-key schedules that give single-permutation Even--Mansour the optimal query-security exponent.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "For every fixed integer $r>2$, let an $r$-round Even--Mansour cipher reuse one public random $n$-bit permutation in every round and derive all $r+1$ round keys deterministically from one uniformly random $n$-bit master key. Find explicit nondegenerate conditions on the key schedule, together with schedules satisfying them, under which the cipher is strong-PRP secure against $\\widetilde O(2^{rn/(r+1)})$ adaptive two-sided cipher and permutation queries, or prove that this target is impossible for some $r$ under the same one-key and one-permutation restrictions."
+  },
+  "scope": {
+    "domain": "Provable strong-PRP security of multi-round single-permutation Even--Mansour with minimal key material",
+    "assumptions": [
+      "One public random n-bit permutation is reused in every round",
+      "All r+1 round keys are deterministic functions of one uniformly random n-bit master key",
+      "The adversary may query the cipher and public permutation adaptively in both directions"
+    ],
+    "parameters": [
+      "fixed round count r>2",
+      "block length n",
+      "one-master-key schedule gamma",
+      "adaptive query count"
+    ],
+    "unresolved_remainder": "Later proofs attain the target for three rounds and then arbitrary rounds with one reused permutation but independent random round keys. Conditions deriving every round key from a single n-bit master key while retaining the target for every r>2 remain unknown."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "design.block-ciphers",
+    "secondary": [
+      "cryptanalysis.structural",
+      "foundations.probability-statistics"
+    ],
+    "tags": [
+      "even-mansour",
+      "single-permutation",
+      "key-schedule",
+      "provable-security"
+    ]
+  },
+  "source": {
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Chen--Lampe--Lee--Seurin--Steinberger, multi-round one-key schedule question",
+        "locator": "Revised full version dated 2014-12-18, Open Questions on p. 10",
+        "doi": "10.1007/978-3-662-44371-2_3",
+        "eprint": "2014/443",
+        "url": "https://eprint.iacr.org/2014/443"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Wu--Yu--Cao--Dong, tight three-round single-permutation KAC security",
+        "locator": "Abstract and Theorem 1",
+        "doi": "10.1007/978-3-030-64837-4_22",
+        "eprint": "2020/1073",
+        "url": "https://eprint.iacr.org/2020/1073"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Yu--Wu--Yu--Cao--Dong, arbitrary-round non-independent-permutation KAC security",
+        "locator": "Scope discussion and Theorem 11",
+        "doi": "10.1007/978-3-031-48615-9_9",
+        "eprint": "2023/1355",
+        "url": "https://eprint.iacr.org/2023/1355"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "published",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-14"
+  },
+  "progress": [
+    {
+      "date": "2014-12-18",
+      "kind": "source_statement",
+      "summary": "The source asks for sufficient one-master-key schedule conditions attaining the optimal exponent for every round count above two while reusing one permutation.",
+      "citation_labels": [
+        "Chen--Lampe--Lee--Seurin--Steinberger, multi-round one-key schedule question"
+      ]
+    },
+    {
+      "date": "2020-01-01",
+      "kind": "public_result",
+      "summary": "The three-round target is proved for a single reused permutation under independent random round keys, relaxing the source's one-master-key restriction.",
+      "citation_labels": [
+        "Wu--Yu--Cao--Dong, tight three-round single-permutation KAC security"
+      ]
+    },
+    {
+      "date": "2023-01-01",
+      "kind": "public_result",
+      "summary": "The optimal arbitrary-round exponent is proved with a single reused permutation, but the proof still assumes independent random round keys.",
+      "citation_labels": [
+        "Yu--Wu--Yu--Cao--Dong, arbitrary-round non-independent-permutation KAC security"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "identical-key-independent-permutation-even-mansour-security",
+      "nonlinear-bijection-sum-capture-extension",
+      "two-round-single-permutation-even-mansour-query-frontier"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.2.0",
+  "id": "three-round-alternating-even-mansour-attack",
+  "group_id": "dinur-two-key-even-mansour",
+  "title": "Attack optimality for three-round alternating two-key Even--Mansour",
+  "summary": "Decide whether the three-round alternating two-key Even--Mansour construction admits an attack below the four-round data--time curve.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $N=2^n$ and let a three-round iterated Even--Mansour construction use two independent keys alternately, with round-key sequence $[K_0,K_1,K_0,K_1]$ and independent public permutations. In the source known-plaintext model, where preprocessing and online work are counted, does there exist an admissible asymptotic data regime $D\\le N$ with a key-recovery attack of time strictly below $T(D)=N^2/D$ at equal data, up to polynomial factors in $n$? Alternatively, prove that $T(D)=N^2/D$ is a lower bound for this construction across the source data range."
+  },
+  "scope": {
+    "domain": "Known-plaintext key-recovery attacks on three-round alternating two-key iterated Even--Mansour",
+    "assumptions": [
+      "The round-key sequence is [K0,K1,K0,K1]",
+      "K0 and K1 are independent n-bit keys",
+      "The public round permutations are independent random permutations as in the source model",
+      "Preprocessing and online work count toward total time",
+      "Multiplicative polynomial factors in n are ignored"
+    ],
+    "parameters": [
+      "N=2^n",
+      "known-plaintext data D",
+      "time T",
+      "memory M"
+    ],
+    "unresolved_remainder": "No inspected later work supplies a classical known-plaintext attack strictly below the source T(D)=N^2/D comparator for any admissible asymptotic data regime, nor a lower bound proving that comparator optimal for the full three-round alternating construction."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "cryptanalysis.meet-in-the-middle",
+    "secondary": [
+      "cryptanalysis.structural"
+    ],
+    "tags": [
+      "even-mansour",
+      "alternating-keys",
+      "known-plaintext",
+      "data-time-tradeoff",
+      "key-recovery"
+    ]
+  },
+  "source": {
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "The first archived ePrint version received 2013-10-24 contains the fixed three-round alternating-key question and its four-round comparator."
+    },
+    "kind": "explicit_open_problem",
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Dinur--Dunkelman--Keller--Shamir, three-round alternating Even--Mansour question",
+        "locator": "First archived ePrint version of 2013-10-24, Conclusions item 2, PDF pp. 16-17",
+        "doi": "10.1007/978-3-662-45611-8_23",
+        "eprint": "2013/674",
+        "url": "https://eprint.iacr.org/2013/674"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "open",
+    "public_verification_status": "none",
+    "peer_review_status": "published",
+    "disclosure": "problem_only",
+    "last_reviewed": "2026-09-12"
+  },
+  "progress": [
+    {
+      "date": "2013-10-24",
+      "kind": "source_statement",
+      "summary": "The first archived ePrint version asks whether three-round alternating two-key Even--Mansour has an attack better than the four-round alternating-key attack curve.",
+      "citation_labels": [
+        "Dinur--Dunkelman--Keller--Shamir, three-round alternating Even--Mansour question"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "four-round-even-mansour-memory-tradeoff",
+      "xor-combination-even-mansour-schedule-attack"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
