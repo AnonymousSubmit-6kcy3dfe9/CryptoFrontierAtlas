@@ -214,6 +214,7 @@ import recordThreeRoundTrivialScheduleIemXrkaFrontier from '../data/problems/thr
 import recordTwoRoundMedpBoundUniversalAttainability from '../data/problems/two-round-medp-bound-universal-attainability.json';
 import recordTwoRoundMelpBoundUniversalAttainability from '../data/problems/two-round-melp-bound-universal-attainability.json';
 import recordTwoRoundNonlinearIemFullXrkaLowerBound from '../data/problems/two-round-nonlinear-iem-full-xrka-lower-bound.json';
+import recordGeneralizedTuDengConjecture from '../data/problems/generalized-tu-deng-conjecture.json';
 import manifest from '../data/manifest.json';
 import taxonomy from '../data/taxonomy.json';
 
@@ -501,6 +502,7 @@ export const problems = [
   recordTwoRoundMedpBoundUniversalAttainability,
   recordTwoRoundMelpBoundUniversalAttainability,
   recordTwoRoundNonlinearIemFullXrkaLowerBound,
+  recordGeneralizedTuDengConjecture,
 ] as unknown as Problem[];
 
 export const datasetVersion = manifest.dataset_version;

@@ -62,5 +62,5 @@
     "source_tree_sha256": "6fa133882ac427489eb5d6d8c873937096622edc902b4dff4ce07562920c77f9",
     "source_tree_file_count": 61
   },
-  "relations": {"related": ["carlet-13-7-7-layer-algebraic-immunity"], "supersedes": [], "superseded_by": []}
+  "relations": {"related": ["carlet-13-7-7-layer-algebraic-immunity", "generalized-tu-deng-conjecture"], "supersedes": [], "superseded_by": []}
 }

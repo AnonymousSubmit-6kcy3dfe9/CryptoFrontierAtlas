@@ -3,7 +3,7 @@
   "taxonomy_version": "0.2.0",
   "language": "en",
   "disclosure_policy": "problem_statements_and_public_progress_only",
-  "record_count": 216,
+  "record_count": 217,
   "records": [
     "aes-full-round-fixed-target-key-collision",
     "aes-naive-inversion-higher-round-medp-ordering",
@@ -94,6 +94,7 @@
     "generalized-butterfly-approx-l-orbit-coverage",
     "generalized-butterfly-ccz-orbit-coverage",
     "generalized-desarguesian-small-k-alternative-lifting",
+    "generalized-tu-deng-conjecture",
     "gold-apn-distance-bound-tightness",
     "goldreich-gad-gadec-asymptotic-complexity",
     "gorodilova-ortho-derivative-degree",

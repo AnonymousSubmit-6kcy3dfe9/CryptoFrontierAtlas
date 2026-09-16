@@ -1,0 +1,156 @@
+{
+  "schema_version": "0.2.0",
+  "id": "generalized-tu-deng-conjecture",
+  "group_id": "wu-jin-liu-lin-additive-decompositions",
+  "title": "The generalized Tu--Deng conjecture for unequal word lengths",
+  "summary": "Determine whether the uniform low-weight pair bound holds for words of lengths $rm$ and $m$ under $ua+b\\equiv t\\pmod{2^m-1}$, as conjectured by Wu, Jin, Liu and Lin.",
+  "formal_statement": {
+    "format": "markdown-latex",
+    "body": "Let $r\\ge1$ be odd, $m\\ge3$, $n=(r+1)m$, and $M=2^m-1$. Let $u\\in\\mathbb Z$ satisfy $\\gcd(u,M)=1$. For $0\\le x<2^\\ell$, let $\\operatorname{HW}_\\ell(x)$ denote the number of ones in its ordinary $\\ell$-bit expansion, without modular reduction; in particular, $\\operatorname{HW}_m(M)=m$.\n\nFor every $0\\le t<M$, define $S_{r,m,u}(t)$ to be the set of integer pairs $(a,b)$ satisfying $0\\le a\\le2^{rm}-2$, $0\\le b\\le M$, $ua+b\\equiv t\\pmod M$, and $\\operatorname{HW}_{rm}(a)+\\operatorname{HW}_m(b)\\le n/2-1$. The conjecture asserts $|S_{r,m,u}(t)|\\le2^{rm-1}$ for all such parameters.\n\nEditorial normalization: the source's Section II.A defines a modular-weight convention that would assign weight zero to $b=M$. This entry instead makes explicit the fixed-length exponent-weight interpretation supported by Remark 2 and Theorems 1 and 5. The all-ones endpoint $b=M$ is retained, with weight $m$; it is not identified with $b=0$."
+  },
+  "scope": {
+    "domain": "Binary-weight counting and Boolean functions with optimal algebraic immunity",
+    "assumptions": [
+      "$r$ is a positive odd integer and $m\\ge3$.",
+      "$u$ is a unit modulo $2^m-1$; every residue $t$, including zero, is quantified.",
+      "Ordinary fixed-length binary weights are used, including weight $m$ for the all-ones $m$-bit word.",
+      "The statement is the 2014 unequal-length extension, not just the older equal-length multiplier conjecture."
+    ],
+    "parameters": [
+      "$r$: odd length ratio",
+      "$m$: short word length",
+      "$u$: multiplier modulo $2^m-1$",
+      "$t$: target residue modulo $2^m-1$"
+    ],
+    "unresolved_remainder": "The cited public results do not establish the full statement for arbitrary odd $r$ and units $u$. The 2026 proof statements directly cover $r=1,u=1$ for nonzero $t$. Liu and Wu (2019, Section 5) also assert equivalence between the $u=1$ family and the original conjecture, but their displayed Conjecture 5.1 uses a different numerical bound and separately proposes the tighter bound needed here. Transfer to the unequal-length $u=1$ statement is not verified in this record; this is an evidence boundary, not a claim that no such implication exists. The general-multiplier family remains outside the cited complete-proof statements. The source's earlier negative-power-of-two multiplier cases and finite checks do not settle that family. No Lean formalization of this full generalized statement is supplied here."
+  },
+  "classification": {
+    "taxonomy_version": "0.2.0",
+    "primary": "foundations.combinatorics-finite-geometry",
+    "secondary": [
+      "foundations.boolean-vectorial"
+    ],
+    "tags": [
+      "algebraic-immunity",
+      "cyclic-addition",
+      "hamming-weight",
+      "finite-fields",
+      "generalized-tu-deng"
+    ]
+  },
+  "source": {
+    "kind": "explicit_conjecture",
+    "provenance": {
+      "origin_status": "confirmed",
+      "method": "explicit_cited_antecedent",
+      "note": "Liu and Wu's 2019 Conjecture 3.4 cites the 2014 construction. Its unequal-length statement is confirmed in the 2014 arXiv full version, Conjecture 2. The earlier equal-length multiplier conjecture has a narrower parameter domain."
+    },
+    "citations": [
+      {
+        "role": "original_source",
+        "label": "Wu--Jin--Liu--Lin, Constructing Boolean Functions With Potential Optimal Algebraic Immunity Based on Additive Decompositions of Finite Fields",
+        "locator": "arXiv:1401.6604v1 (2014-01-26), Section III, Conjecture 2 and Remark 2, p. 4; Section II.A, p. 2; Theorems 1 and 5, pp. 5 and 7. DOI identifies the associated ISIT 2014 extended abstract, pp. 1361--1365.",
+        "doi": "10.1109/ISIT.2014.6875055",
+        "eprint": "arXiv:1401.6604v1",
+        "url": "https://arxiv.org/abs/1401.6604v1"
+      },
+      {
+        "role": "restatement",
+        "label": "Liu--Wu, Recent Results on Constructing Boolean Functions with (Potentially) Optimal Algebraic Immunity Based on Decompositions of Finite Fields",
+        "locator": "Section 3.3, Conjecture 3.4, p. 366; Section 5, pp. 370--371, asserts equivalences and distinguishes two numerical bounds.",
+        "doi": "10.1007/s11424-019-8346-2",
+        "url": "https://doi.org/10.1007/s11424-019-8346-2"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Liu--Luo--Xie, A Complete Proof for Tu-Deng Conjecture",
+        "locator": "arXiv:2608.05187v2 (2026-08-12), Theorem 1.1, p. 1; original equal-length case only.",
+        "eprint": "arXiv:2608.05187v2",
+        "url": "https://arxiv.org/abs/2608.05187v2"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Cusick, Proof of the Tu--Deng Conjecture",
+        "locator": "arXiv:2608.14821v1, Conjecture 1.1, p. 1, and Theorem 8.4, pp. 14--15; original equal-length case only.",
+        "eprint": "arXiv:2608.14821v1",
+        "url": "https://arxiv.org/abs/2608.14821v1"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Yuan--Hu--Zhang--Zhang--Wu, Theoretical Open Problems in Symmetric Cryptography: Verifiable LLM-Guided Analysis",
+        "locator": "Public ePrint version, Section 3.1, Theorem 3.1.1; original equal-length inequality.",
+        "eprint": "2026/1687",
+        "url": "https://eprint.iacr.org/2026/1687"
+      },
+      {
+        "role": "prior_progress",
+        "label": "Cheng, Deficit bounds and equality cases in the Tu--Deng problem",
+        "locator": "arXiv:2608.22451v2 (2026-09-15), Section 1 and Theorem 1.1, pp. 1--2; equality and deficit results for the original count.",
+        "eprint": "arXiv:2608.22451v2",
+        "url": "https://arxiv.org/abs/2608.22451v2"
+      }
+    ]
+  },
+  "status": {
+    "public_mathematical_status": "partial_progress",
+    "public_verification_status": "externally_claimed",
+    "peer_review_status": "preprint",
+    "disclosure": "public_progress",
+    "last_reviewed": "2026-09-16"
+  },
+  "progress": [
+    {
+      "date": "2014-01-26",
+      "kind": "source_statement",
+      "summary": "Conjecture 2 proposes the unequal-length pair bound. Theorem 5 derives optimal algebraic immunity conditionally on that conjecture; the reported finite checks are not a proof for all parameters.",
+      "citation_labels": [
+        "Wu--Jin--Liu--Lin, Constructing Boolean Functions With Potential Optimal Algebraic Immunity Based on Additive Decompositions of Finite Fields"
+      ]
+    },
+    {
+      "date": "2019-02-14",
+      "kind": "restatement",
+      "summary": "Conjecture 3.4 retains the unequal-length question. Section 5 asserts equivalence of its $u=1$ case with the original conjecture, while distinguishing a displayed weaker bound from a proposed tighter one. This record does not certify the transfer between those bounds.",
+      "citation_labels": [
+        "Liu--Wu, Recent Results on Constructing Boolean Functions with (Potentially) Optimal Algebraic Immunity Based on Decompositions of Finite Fields"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "kind": "prior_result",
+      "summary": "The inspected second version claims a complete proof of the original Tu--Deng inequality. It supplies a public proof claim for the $r=1,u=1$, nonzero-$t$ slice, not the full generalized conjecture.",
+      "citation_labels": [
+        "Liu--Luo--Xie, A Complete Proof for Tu-Deng Conjecture"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "kind": "prior_result",
+      "summary": "Cusick's Theorem 8.4 and the public ePrint of Yuan and coauthors, Theorem 3.1.1, give further proof claims for the original inequality. Neither displayed theorem quantifies over unequal lengths or arbitrary multipliers.",
+      "citation_labels": [
+        "Cusick, Proof of the Tu--Deng Conjecture",
+        "Yuan--Hu--Zhang--Zhang--Wu, Theoretical Open Problems in Symmetric Cryptography: Verifiable LLM-Guided Analysis"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "kind": "prior_result",
+      "summary": "Cheng's revised preprint studies equality cases and deficits for the original count. These refinements concern the same equal-length, unit-multiplier slice, not a resolution of the full generalized statement.",
+      "citation_labels": [
+        "Cheng, Deficit bounds and equality cases in the Tu--Deng problem"
+      ]
+    }
+  ],
+  "artifacts": [],
+  "lean": {
+    "status": "none",
+    "available_in_repo": false
+  },
+  "relations": {
+    "related": [
+      "tu-deng-conjecture"
+    ],
+    "supersedes": [],
+    "superseded_by": []
+  }
+}
