@@ -1,16 +1,14 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import type { ReactNode } from 'react';
+import type { MouseEvent, ReactNode } from 'react';
 import katex from 'katex';
 import {
   ArrowLeft,
   ArrowUpRight,
   Binary,
   BookOpen,
-  Check,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
-  CircleAlert,
   Code2,
   ExternalLink,
   FileCheck2,
@@ -21,7 +19,6 @@ import {
   Search,
   ShieldCheck,
   SlidersHorizontal,
-  Sparkles,
   X,
 } from 'lucide-react';
 import { areaLabels, areaOf, datasetVersion, domainOf, problems, researchTopicCategories, taxonomyPath } from './data';
@@ -54,6 +51,7 @@ const progressLabels: Record<string, string> = {
   public_result: 'Public result',
   independent_result: 'Independent result',
   audit: 'Audit',
+  machine_checked_formalization: 'Machine-checked formalization',
 };
 
 const sourceKindLabels: Record<Problem['source']['kind'], string> = {
@@ -200,9 +198,11 @@ function App() {
   const [selectedId, setSelectedId] = useState<string | null>(() => readHash());
   const [sort, setSort] = useState<'alphabetical' | 'reviewed'>('alphabetical');
   const [currentPage, setCurrentPage] = useState(1);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const listReturnRef = useRef<{ scrollY: number; recordId: string } | null>(null);
   const restoreListRef = useRef(false);
   const detailOpenRef = useRef(Boolean(selectedId));
+  const [navigationSession] = useState(() => `${Date.now()}-${Math.random()}`);
 
   useEffect(() => {
     const previousScrollRestoration = window.history.scrollRestoration;
@@ -210,44 +210,42 @@ function App() {
 
     const handleHash = () => {
       const nextId = readHash();
-      if (!nextId && detailOpenRef.current && listReturnRef.current) {
+      if (!nextId && detailOpenRef.current) {
         restoreListRef.current = true;
       }
       detailOpenRef.current = Boolean(nextId);
       setSelectedId(nextId);
     };
     window.addEventListener('hashchange', handleHash);
+    window.addEventListener('popstate', handleHash);
     return () => {
       window.history.scrollRestoration = previousScrollRestoration;
       window.removeEventListener('hashchange', handleHash);
+      window.removeEventListener('popstate', handleHash);
     };
   }, []);
 
   useLayoutEffect(() => {
-    if (selectedId || !restoreListRef.current || !listReturnRef.current) return;
+    if (selectedId) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      document.querySelector<HTMLElement>('.detail-heading h1')?.focus({ preventScroll: true });
+      return;
+    }
+    if (!restoreListRef.current) return;
 
-    const { scrollY, recordId } = listReturnRef.current;
+    const { scrollY, recordId } = listReturnRef.current ?? { scrollY: 0, recordId: '' };
     restoreListRef.current = false;
     const restoreListPosition = () => {
-      const root = document.documentElement;
-      const previousScrollBehavior = root.style.scrollBehavior;
-      root.style.scrollBehavior = 'auto';
-      window.scrollTo({ top: scrollY, left: 0, behavior: 'auto' });
-      root.style.scrollBehavior = previousScrollBehavior;
-      document.querySelector<HTMLElement>(`[data-record-id="${CSS.escape(recordId)}"]`)?.focus({ preventScroll: true });
+      window.scrollTo({ top: scrollY, left: 0, behavior: 'instant' });
+      const target = recordId
+        ? document.querySelector<HTMLElement>(`[data-record-id="${CSS.escape(recordId)}"]`)
+        : document.querySelector<HTMLElement>('#questions-heading');
+      target?.focus({ preventScroll: true });
     };
 
     restoreListPosition();
     const frame = window.requestAnimationFrame(restoreListPosition);
     return () => window.cancelAnimationFrame(frame);
-  }, [selectedId]);
-
-  useEffect(() => {
-    if (!selectedId) return;
-    window.setTimeout(() => {
-      document.querySelector('.detail-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      document.querySelector<HTMLElement>('.detail-heading h2')?.focus({ preventScroll: true });
-    }, 0);
   }, [selectedId]);
 
   const filtered = useMemo(() => {
@@ -286,18 +284,53 @@ function App() {
 
   const selected = problems.find((problem) => problem.id === selectedId) ?? null;
 
-  function openProblem(id: string) {
-    listReturnRef.current = { scrollY: window.scrollY, recordId: id };
+  useEffect(() => {
+    document.title = selected
+      ? `${selected.title} · CryptoFrontierAtlas`
+      : selectedId ? 'Question not found · CryptoFrontierAtlas' : 'CryptoFrontierAtlas';
+  }, [selected, selectedId]);
+
+  function openProblem(event: MouseEvent<HTMLAnchorElement>, id: string) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (selectedId === id) return;
+    if (!selectedId) listReturnRef.current = { scrollY: window.scrollY, recordId: id };
+    const previous = window.history.state?.atlasNavigation;
+    const depth = !selectedId ? 1 : previous?.session === navigationSession ? previous.depth + 1 : 0;
+    window.history.pushState({ ...window.history.state, atlasNavigation: { session: navigationSession, depth } }, '', `#question/${id}`);
     detailOpenRef.current = true;
-    window.location.hash = `question/${id}`;
     setSelectedId(id);
   }
 
   function closeProblem() {
-    restoreListRef.current = Boolean(listReturnRef.current);
+    if (!selectedId) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return;
+    }
+    const navigation = window.history.state?.atlasNavigation;
+    if (navigation?.session === navigationSession && navigation.depth > 0 && listReturnRef.current) {
+      window.history.go(-navigation.depth);
+      return;
+    }
+    restoreListRef.current = true;
     detailOpenRef.current = false;
-    window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+    window.history.replaceState({ ...window.history.state, atlasNavigation: null }, '', `${window.location.pathname}${window.location.search}`);
     setSelectedId(null);
+  }
+
+  function resetFilters() {
+    setQuery('');
+    setArea('all');
+    setDomain('all');
+    setCategory('all');
+    setExpandedDomain(null);
+    setStatus('all');
+  }
+
+  function changePage(page: number) {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    document.querySelector<HTMLElement>('#questions-heading')?.focus({ preventScroll: true });
   }
 
   function toggleTopicGroup(group: (typeof researchTopicCategories)[number]) {
@@ -325,25 +358,26 @@ function App() {
     id,
     label,
     count: problems.filter((problem) => matchesArea(problem, id)).length,
-  }));
+  })).filter((item) => item.count > 0);
   const domainCounts = researchTopicCategories
     .filter((item) => area === 'all' || item.area === area)
     .map((item) => ({
       ...item,
       count: problems.filter((problem) => matchesDomain(problem, item.id)).length,
-    }));
-  const categoryCount = researchTopicCategories.reduce((count, group) => count + group.children.length, 0);
+    })).filter((item) => item.count > 0);
+  const activeTopic = category !== 'all' ? taxonomyPath(category).leaf
+    : domain !== 'all' ? researchTopicCategories.find((item) => item.id === domain)?.label
+    : area !== 'all' ? areaLabels[area as keyof typeof areaLabels] : null;
+  const hasFilters = Boolean(query || activeTopic || status !== 'all');
 
   return (
     <div className="app-shell">
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="CryptoFrontierAtlas home" onClick={() => closeProblem()}>
+        <a className="brand" href="#" aria-label="CryptoFrontierAtlas home" onClick={(event) => { if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); closeProblem(); } }}>
           <span className="brand-mark"><Binary size={19} strokeWidth={2.4} /></span>
           <span>CryptoFrontierAtlas</span>
         </a>
         <nav className="topnav" aria-label="Primary navigation">
-          <a className="topnav-link active" href="#atlas">Atlas</a>
-          <a className="topnav-link" href="#method">Method</a>
           <a className="topnav-link" href="https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas" target="_blank" rel="noreferrer">
             Repository <ArrowUpRight size={14} />
           </a>
@@ -351,35 +385,54 @@ function App() {
       </header>
 
       <main id="top">
-        <section className="masthead" id="atlas">
-          <div className="masthead-copy">
-            <div className="eyebrow"><span className="eyebrow-dot" /> Cryptography / research index</div>
-            <h1>Crypto<wbr />Frontier<wbr />Atlas: Open Problems in Cryptography</h1>
-            <p className="masthead-lede">A source-aware atlas of open questions, formal statements, and public evidence in cryptography. The current release covers symmetric cryptography.</p>
-          </div>
-          <div className="signal-panel" aria-label="Dataset snapshot">
-            <div className="signal-head"><span>Dataset snapshot</span><span className="signal-live"><span /> v{datasetVersion}</span></div>
-            <div className="signal-number">{problems.length.toString().padStart(2, '0')}</div>
-            <div className="signal-label">public problem records</div>
-            <div className="signal-rule" />
-            <div className="signal-grid">
-              <div><strong>{Object.keys(areaLabels).length.toString().padStart(2, '0')}</strong><span>areas</span></div>
-              <div><strong>{categoryCount.toString().padStart(2, '0')}</strong><span>topic leaves</span></div>
-              <div><strong>{problems.filter((problem) => problem.status.public_mathematical_status === 'partial_progress').length.toString().padStart(2, '0')}</strong><span>partial</span></div>
-            </div>
-          </div>
-        </section>
-
+        {selectedId ? (
+          <section className="detail-panel">
+            {selected ? <Detail key={selected.id} problem={selected} onClose={closeProblem} onNavigate={openProblem} /> : (
+              <div className="detail-inner not-found">
+                <button className="back-button" onClick={closeProblem}><ArrowLeft size={16} /> Back to questions</button>
+                <div className="detail-heading"><h1 tabIndex={-1}>Question not found</h1><p>This question link does not match a record.</p></div>
+              </div>
+            )}
+          </section>
+        ) : (
         <section className="workspace" aria-label="Question atlas">
-          <aside className="sidebar">
-            <div className="sidebar-label"><Filter size={15} /> Cryptography area</div>
+          <div className="results-toolbar">
+            <h1 id="questions-heading" tabIndex={-1}>Questions <span aria-live="polite">· {filtered.length}</span></h1>
+            <div className="toolbar-actions">
+              <div className="search-box">
+                <Search size={17} aria-hidden="true" />
+                <label className="sr-only" htmlFor="question-search">Search questions</label>
+                <input id="question-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search questions…" />
+                {query && <button className="icon-button" aria-label="Clear search" onClick={() => { setQuery(''); document.getElementById('question-search')?.focus(); }}><X size={15} /></button>}
+              </div>
+              <button className={`filter-toggle ${filtersOpen ? 'is-open' : ''}`} aria-expanded={filtersOpen} aria-controls="question-filters" onClick={() => setFiltersOpen(!filtersOpen)}>
+                <Filter size={15} /> Filters{(activeTopic || status !== 'all') && <span className="filter-dot" aria-label="Active filters" />}
+              </button>
+              <label className="sort-wrap">
+                <ListFilter size={15} aria-hidden="true" />
+                <span className="sr-only">Sort records</span>
+                <select value={sort} onChange={(event) => setSort(event.target.value as 'alphabetical' | 'reviewed')}>
+                  <option value="alphabetical">A–Z</option>
+                  <option value="reviewed">Last reviewed</option>
+                </select>
+                <ChevronDown size={14} aria-hidden="true" />
+              </label>
+            </div>
+            {hasFilters && <div className="active-filters">
+              {activeTopic && <button onClick={() => { setArea('all'); setDomain('all'); setCategory('all'); setExpandedDomain(null); }} aria-label={`Clear topic filter: ${activeTopic}`}>{activeTopic}<X size={12} /></button>}
+              {status !== 'all' && <button onClick={() => setStatus('all')} aria-label="Clear status filter">{statusLabels[status]}<X size={12} /></button>}
+              <button className="reset-filters" onClick={resetFilters}>Reset filters</button>
+            </div>}
+          </div>
+          <aside className={`sidebar ${filtersOpen ? 'is-open' : ''}`} id="question-filters" aria-label="Question filters">
+            <div className="sidebar-label"><Filter size={15} /> Area</div>
             <div className="domain-list">
-              <button className={`domain-button ${area === 'all' && domain === 'all' && category === 'all' ? 'selected' : ''}`} onClick={() => { setArea('all'); setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
+              <button className={`domain-button ${area === 'all' && domain === 'all' && category === 'all' ? 'selected' : ''}`} aria-pressed={area === 'all' && domain === 'all' && category === 'all'} onClick={() => { setArea('all'); setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
                 <span className="domain-swatch all-swatch" />
                 <span>All questions</span><strong>{problems.length}</strong>
               </button>
               {areaCounts.map((item) => (
-                <button key={item.id} className={`domain-button ${area === item.id && domain === 'all' && category === 'all' ? 'selected' : ''}`} onClick={() => { setArea(item.id); setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
+                <button key={item.id} className={`domain-button ${area === item.id && domain === 'all' && category === 'all' ? 'selected' : ''}`} aria-pressed={area === item.id && domain === 'all' && category === 'all'} onClick={() => { setArea(item.id); setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
                   <span className={`domain-swatch ${item.id}`} />
                   <span>{item.label}</span><strong>{item.count}</strong>
                 </button>
@@ -387,11 +440,11 @@ function App() {
             </div>
 
             <div className="sidebar-divider compact-divider" />
-            <div className="sidebar-label"><Layers3 size={15} /> Research topic category</div>
+            <div className="sidebar-label"><Layers3 size={15} /> Topics</div>
             <div className="domain-list topic-category-list">
-              <button className={`domain-button ${domain === 'all' && category === 'all' ? 'selected' : ''}`} onClick={() => { setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
+              <button className={`domain-button ${domain === 'all' && category === 'all' ? 'selected' : ''}`} aria-pressed={domain === 'all' && category === 'all'} onClick={() => { setDomain('all'); setCategory('all'); setExpandedDomain(null); }}>
                 <span className="domain-swatch all-domains-swatch" />
-                <span>All topic categories</span><strong>{area === 'all' ? problems.length : problems.filter((problem) => matchesArea(problem, area)).length}</strong>
+                <span>All topics</span><strong>{area === 'all' ? problems.length : problems.filter((problem) => matchesArea(problem, area)).length}</strong>
               </button>
               {domainCounts.map((item) => {
                 const isExpanded = expandedDomain === item.id;
@@ -403,6 +456,7 @@ function App() {
                       className={`domain-button topic-group-button ${isActive && category === 'all' ? 'selected' : ''} ${isActive ? 'active-parent' : ''} ${isExpanded ? 'expanded' : ''}`}
                       type="button"
                       aria-expanded={isExpanded}
+                      aria-pressed={isActive && category === 'all'}
                       aria-controls={childListId}
                       onClick={() => toggleTopicGroup(item)}
                     >
@@ -415,6 +469,7 @@ function App() {
                       <div className="topic-child-list" id={childListId} role="group" aria-label={`${item.label} subcategories`}>
                         {item.children.map((child) => {
                           const childCount = problems.filter((problem) => problem.classification.primary === child.id).length;
+                          if (!childCount) return null;
                           const isSelected = category === child.id;
                           return (
                             <button
@@ -442,103 +497,98 @@ function App() {
               <span className="sr-only">Filter by mathematical status</span>
               <select value={status} onChange={(event) => setStatus(event.target.value as 'all' | Status)}>
                 <option value="all">All statuses</option>
-                <option value="open">Open</option>
-                <option value="partial_progress">Partial progress</option>
-                <option value="resolved">Resolved</option>
-                <option value="refuted">Refuted</option>
+                {Object.entries(statusLabels).map(([value, label]) => <option value={value} key={value}>{label}</option>)}
               </select>
               <ChevronDown size={15} />
             </label>
 
-            <div className="sidebar-note">
-              <Sparkles size={16} />
-              <p>Every record keeps its original scope visible. A partial result is never presented as a complete resolution.</p>
-            </div>
+            <button className="apply-filters" onClick={() => { setFiltersOpen(false); document.querySelector<HTMLElement>('.filter-toggle')?.focus(); }}>Show {filtered.length} questions</button>
           </aside>
 
-          <section className="results-column">
-            <div className="results-toolbar">
-              <div>
-                <div className="section-kicker">Question index</div>
-                <h2>{filtered.length} <span>records in view</span></h2>
-              </div>
-              <div className="toolbar-actions">
-                <label className="search-box">
-                  <Search size={17} />
-                  <span className="sr-only">Search questions</span>
-                  <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search title, topic, or term" />
-                  {query && <button className="icon-button compact" aria-label="Clear search" onClick={() => setQuery('')}><X size={15} /></button>}
-                </label>
-                <label className="sort-wrap">
-                  <ListFilter size={15} />
-                  <span className="sr-only">Sort records</span>
-                  <select value={sort} onChange={(event) => setSort(event.target.value as 'alphabetical' | 'reviewed')}>
-                    <option value="alphabetical">A - Z</option>
-                    <option value="reviewed">Recently reviewed</option>
-                  </select>
-                  <ChevronDown size={14} />
-                </label>
-              </div>
-            </div>
-
+          <section className="results-column" aria-labelledby="questions-heading">
             <div className="record-list">
               {paginated.map((problem, index) => (
-                <button className={`record-row ${selectedId === problem.id ? 'active' : ''}`} data-record-id={problem.id} key={problem.id} onClick={() => openProblem(problem.id)}>
-                  <span className="record-index">{String(pageStart + index + 1).padStart(2, '0')}</span>
+                <a className="record-row" href={`#question/${problem.id}`} data-record-id={problem.id} aria-labelledby={`title-${problem.id}`} key={problem.id} onClick={(event) => openProblem(event, problem.id)}>
+                  <span className="record-index" aria-hidden="true">{String(pageStart + index + 1).padStart(2, '0')}</span>
                   <span className="record-main">
+                    <strong id={`title-${problem.id}`}>{problem.title}</strong>
                     <span className="record-topline">
                       <span className={`status-pill ${statusTone[problem.status.public_mathematical_status]}`}><span />{statusLabels[problem.status.public_mathematical_status]}</span>
-                      <ClassificationPath id={problem.classification.primary} />
+                      <span className="record-category">{taxonomyPath(problem.classification.primary).leaf}</span>
                     </span>
-                    <strong>{problem.title}</strong>
                     <span className="record-summary">{renderMathText(problem.summary)}</span>
-                    <span className="record-tags">{problem.classification.tags.slice(0, 3).map((tag) => <span key={tag}>#{tag}</span>)}</span>
                   </span>
-                  <ArrowUpRight className="record-arrow" size={18} />
-                </button>
+                  <ChevronRight className="record-arrow" size={18} aria-hidden="true" />
+                </a>
               ))}
-              {!filtered.length && <div className="empty-state"><Search size={24} /><strong>No questions match this view.</strong><span>Try a broader term or reset the filters.</span></div>}
+              {!filtered.length && <div className="empty-state"><Search size={24} /><strong>No matching questions</strong><button className="text-button" onClick={resetFilters}>Reset filters</button></div>}
             </div>
             {filtered.length > 0 && (
               <nav className="pagination" aria-label="Question index pagination">
                 <span className="pagination-range">Showing {pageStart + 1}-{Math.min(pageStart + PAGE_SIZE, filtered.length)} of {filtered.length}</span>
                 <div className="pagination-controls">
-                  <button className="pagination-button" type="button" aria-label="Previous page" title="Previous page" disabled={currentPage === 1} onClick={() => setCurrentPage((page) => Math.max(1, page - 1))}><ChevronLeft size={16} /></button>
+                  <button className="pagination-button" type="button" aria-label="Previous page" title="Previous page" disabled={currentPage === 1} onClick={() => changePage(Math.max(1, currentPage - 1))}><ChevronLeft size={16} /></button>
                   <span className="pagination-status" aria-live="polite">Page {currentPage} of {totalPages}</span>
-                  <button className="pagination-button" type="button" aria-label="Next page" title="Next page" disabled={currentPage === totalPages} onClick={() => setCurrentPage((page) => Math.min(totalPages, page + 1))}><ChevronRight size={16} /></button>
+                  <button className="pagination-button" type="button" aria-label="Next page" title="Next page" disabled={currentPage === totalPages} onClick={() => changePage(Math.min(totalPages, currentPage + 1))}><ChevronRight size={16} /></button>
                 </div>
               </nav>
             )}
           </section>
         </section>
-
-        <section className={`detail-panel ${selected ? 'is-open' : ''}`} aria-live="polite">
-          {selected ? <Detail problem={selected} onClose={closeProblem} /> : <EmptyDetail />}
-        </section>
-
-        <section className="method-band" id="method">
-          <div className="method-heading"><div className="section-kicker">Atlas method</div><h2>Trace the question before the claim.</h2></div>
-          <div className="method-grid">
-            <div><span>01</span><strong>Source</strong><p>Every record starts from a public problem, conjecture, or challenge with a citation trail.</p></div>
-            <div><span>02</span><strong>Scope</strong><p>Parameters, assumptions, and unresolved remainder stay attached to the formal statement.</p></div>
-            <div><span>03</span><strong>Evidence</strong><p>Mathematical progress, computation, review, and Lean availability are separate signals.</p></div>
-          </div>
-        </section>
+        )}
       </main>
 
-      <footer className="footer"><span>CryptoFrontierAtlas / cryptography</span><span>Dataset v{datasetVersion} <span className="footer-dot" /> CC BY 4.0 metadata</span></footer>
+      <footer className="footer"><span>Dataset v{datasetVersion}</span><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0 · Metadata <ExternalLink size={11} /></a></footer>
     </div>
   );
 }
 
-function EmptyDetail() {
-  return <div className="detail-empty"><Code2 size={28} /><strong>Select a question to inspect its formal surface.</strong><span>Source, scope, public progress, and evidence appear here.</span></div>;
+function Timeline({ entries, citations }: { entries: Problem['progress']; citations: Problem['source']['citations'] }) {
+  return (
+    <div className="timeline">
+      {entries.map((entry, index) => (
+        <div className="timeline-item" key={`${entry.date}-${entry.kind}-${index}`}>
+          <span className="timeline-date">{entry.date}</span>
+          <div>
+            <strong>{progressLabels[entry.kind] ?? readableEnum(entry.kind)}</strong>
+            <p>{renderMathText(entry.summary)}</p>
+            {entry.citation_labels.length > 0 && <div className="citation-references">{entry.citation_labels.map((label) => {
+              const citationIndex = citations.findIndex((citation) => citation.label === label);
+              return citationIndex < 0 ? <span key={label}>{label}</span> : (
+                <button key={label} className="citation-reference" title={label} aria-label={`Source ${citationIndex + 1}: ${label}`} onClick={() => {
+                  const target = document.getElementById(`citation-${citationIndex}`);
+                  target?.scrollIntoView({ block: 'center', behavior: 'instant' });
+                  target?.focus({ preventScroll: true });
+                }}>[{citationIndex + 1}]</button>
+              );
+            })}</div>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
-function Detail({ problem, onClose }: { problem: Problem; onClose: () => void }) {
-  const sourceCitation = problem.source.citations.find((citation) => citation.role === 'original_source')
-    ?? problem.source.citations.find((citation) => citation.role === 'restatement')
-    ?? problem.source.citations[0];
+function Detail({ problem, onClose, onNavigate }: {
+  problem: Problem;
+  onClose: () => void;
+  onNavigate: (event: MouseEvent<HTMLAnchorElement>, id: string) => void;
+}) {
+  const statementHistory = problem.progress.filter((entry) => entry.kind === 'source_statement' || entry.kind === 'restatement');
+  const progress = problem.progress.filter((entry) => entry.kind !== 'source_statement' && entry.kind !== 'restatement');
+  const hasLean = problem.lean.status !== 'none';
+  const verification = problem.status.public_verification_status;
+  const review = problem.status.peer_review_status;
+  const leanFields = [
+    ['Source path', problem.lean.path],
+    ['Commit', problem.lean.commit],
+    ['Lean version', problem.lean.lean_version],
+    ['Mathlib version', problem.lean.mathlib_version],
+    ['Trusted base', problem.lean.trusted_base],
+    ['Replay command', problem.lean.replay_command],
+    ['Source tree SHA-256', problem.lean.source_tree_sha256],
+    ['Source files', problem.lean.source_tree_file_count?.toString()],
+  ].filter((entry) => entry[1]);
   const relationGroups = [
     { label: 'Related questions', ids: problem.relations.related },
     { label: 'Supersedes', ids: problem.relations.supersedes },
@@ -547,108 +597,126 @@ function Detail({ problem, onClose }: { problem: Problem; onClose: () => void })
 
   return (
     <div className="detail-inner">
-      <div className="detail-topbar"><button className="back-button" onClick={onClose}><ArrowLeft size={16} /> Back to index</button><span className="detail-id">{problem.id}</span></div>
+      <div className="detail-topbar"><button className="back-button" onClick={onClose}><ArrowLeft size={16} /> Back to questions</button><time dateTime={problem.status.last_reviewed}>Reviewed {problem.status.last_reviewed}</time></div>
       <div className="detail-heading">
-        <div className="record-topline"><span className={`status-pill ${statusTone[problem.status.public_mathematical_status]}`}><span />{statusLabels[problem.status.public_mathematical_status]}</span><ClassificationPath id={problem.classification.primary} /></div>
-        <h2 tabIndex={-1}>{problem.title}</h2>
+        <div className="record-topline"><span className={`status-pill ${statusTone[problem.status.public_mathematical_status]}`}><span />{statusLabels[problem.status.public_mathematical_status]}</span><span className="record-category">{taxonomyPath(problem.classification.primary).leaf}</span></div>
+        <h1 tabIndex={-1}>{problem.title}</h1>
         <p>{renderMathText(problem.summary)}</p>
+        {(verification !== 'none' || review !== 'published' || hasLean) && <div className="evidence-badges" aria-label="Evidence summary">
+          {verification !== 'none' && <span><ShieldCheck size={13} />{verificationLabels[verification]}</span>}
+          {(review !== 'published' || verification !== 'none') && <span><BookOpen size={13} />{peerReviewLabels[review]}</span>}
+          {hasLean && <span><Code2 size={13} />Lean {readableEnum(problem.lean.status)}{problem.lean.status === 'complete' && problem.status.public_mathematical_status === 'partial_progress' ? ' · scoped result' : ''}</span>}
+          {hasLean && !problem.lean.available_in_repo && <span>Lean source not in repository</span>}
+        </div>}
       </div>
       <div className="detail-grid">
         <div className="detail-main">
           <section className="detail-section">
-            <div className="section-kicker">Formal statement</div>
+            <h2 className="section-kicker">Formal statement</h2>
             <div className="formula-block">{renderMathText(problem.formal_statement.body)}</div>
+            {problem.scope.assumptions.length > 0 && <div className="conditions">
+              <h3>Conditions</h3>
+              <ul>{problem.scope.assumptions.map((assumption, index) => <li key={index}>{renderMathText(assumption)}</li>)}</ul>
+            </div>}
+            <details className="disclosure scope-details">
+              <summary>Parameters &amp; domain <ChevronDown size={14} aria-hidden="true" /></summary>
+              <dl className="metadata-list">
+                <div><dt>Domain</dt><dd>{renderMathText(problem.scope.domain)}</dd></div>
+                {problem.scope.parameters.length > 0 && <div><dt>Parameters</dt><dd>{renderMathText(problem.scope.parameters.join(' · '))}</dd></div>}
+              </dl>
+            </details>
           </section>
           <section className="detail-section">
-            <div className="section-kicker">Scope and boundary</div>
-            <div className="scope-list">
-              <div><span>Domain</span><strong>{renderMathText(problem.scope.domain)}</strong></div>
-              <div><span>Assumptions</span><strong>{renderMathText(problem.scope.assumptions.join(' · '))}</strong></div>
-              <div><span>Parameters</span><strong>{renderMathText(problem.scope.parameters.join(' · '))}</strong></div>
-              <div><span>Unresolved remainder</span><strong>{renderMathText(problem.scope.unresolved_remainder)}</strong></div>
-            </div>
+            <h2 className="section-kicker">Scope &amp; unresolved questions</h2>
+            <p className="scope-remainder">{renderMathText(problem.scope.unresolved_remainder)}</p>
           </section>
-          <section className="detail-section">
-            <div className="section-kicker">Progress timeline</div>
-            <div className="timeline">
-              {problem.progress.map((entry, index) => <div className="timeline-item" key={`${entry.date}-${entry.kind}-${entry.citation_labels.join('|')}-${index}`}><span className="timeline-date">{entry.date}</span><div><strong>{progressLabels[entry.kind] ?? entry.kind.replaceAll('_', ' ')}</strong><p>{renderMathText(entry.summary)}</p>{entry.citation_labels.length > 0 && <span className="citation-ref">{entry.citation_labels.join(' · ')}</span>}</div></div>)}
-            </div>
-          </section>
+          {progress.length > 0 && <section className="detail-section progress-section">
+            <h2 className="section-kicker">Progress</h2>
+            <Timeline entries={progress} citations={problem.source.citations} />
+          </section>}
         </div>
         <aside className="detail-side">
-          <div className="side-block source-block">
-            <div className="section-kicker">Source</div>
-            <div className="source-kind"><span>Source kind</span><strong>{sourceKindLabels[problem.source.kind] ?? readableEnum(problem.source.kind)}</strong></div>
-            <span className="metadata-label">{sourceCitation.role === 'original_source' ? 'Historical source' : 'Ingested restatement'}</span>
-            <strong>{sourceCitation.label}</strong>
-            {sourceCitation.locator && <span className="source-citation-locator">{sourceCitation.locator}</span>}
-            <CitationLinks citation={sourceCitation} iconSize={13} />
-          </div>
-          <div className="side-block evidence-block">
-            <div className="section-kicker">Evidence</div>
-            <div className="evidence-line"><Check size={15} /><span>Mathematical status</span><strong>{statusLabels[problem.status.public_mathematical_status]}</strong></div>
-            <div className="evidence-line"><ShieldCheck size={15} /><span>Public verification</span><strong>{verificationLabels[problem.status.public_verification_status] ?? readableEnum(problem.status.public_verification_status)}</strong></div>
-            <div className="evidence-line"><BookOpen size={15} /><span>Peer review</span><strong>{peerReviewLabels[problem.status.peer_review_status] ?? readableEnum(problem.status.peer_review_status)}</strong></div>
-            <div className="evidence-line"><CircleAlert size={15} /><span>Disclosure</span><strong>{problem.status.disclosure.replaceAll('_', ' ')}</strong></div>
-            <div className="evidence-line"><Code2 size={15} /><span>Lean status</span><strong>{readableEnum(problem.lean.status)}</strong></div>
-            <div className="evidence-line"><Code2 size={15} /><span>Lean source</span><strong>{problem.lean.available_in_repo ? 'Available' : 'Not publicly available'}</strong></div>
-          </div>
-          <div className="side-block literature-block">
-            <div className="section-kicker"><BookOpen size={14} /> Literature trail</div>
-            {problem.source.citations.map((citation) => (
-              <div className="citation-entry" key={`${citation.role}-${citation.label}`}>
-                <strong>{citation.label}</strong>
-                <span>{citation.role === 'restatement' ? 'restatement' : citation.role.replaceAll('_', ' ')}{citation.locator ? ` · ${citation.locator}` : ''}</span>
-                <CitationLinks citation={citation} />
+          <section className="side-block sources-block">
+            <h2 className="section-kicker"><BookOpen size={14} /> Sources</h2>
+            {problem.source.provenance?.origin_status === 'unresolved' && <p className="source-note">{problem.source.provenance.note ?? 'Original provenance unresolved.'}</p>}
+            {problem.source.citations.map((citation, index) => (
+              <div className="citation-entry" id={`citation-${index}`} tabIndex={-1} key={`${citation.role}-${citation.label}`}>
+                <strong><span className="citation-number">[{index + 1}]</span> {citation.label}</strong>
+                <span className="citation-role">{readableEnum(citation.role)}</span>
+                {citation.locator && <span className="citation-locator">{citation.locator}</span>}
+                <div className="citation-links"><CitationLinks citation={citation} /></div>
               </div>
             ))}
-          </div>
-          <div className="side-block classification-block">
-            <div className="section-kicker"><Layers3 size={14} /> Classification</div>
-            <span className="metadata-label">Primary category</span>
-            <ClassificationPath id={problem.classification.primary} />
-            <span className="metadata-label">Related research topics</span>
-            {problem.classification.secondary.length > 0
-              ? <div className="taxonomy-path-list">{problem.classification.secondary.map((id) => <ClassificationPath id={id} key={id} />)}</div>
-              : <span className="empty-metadata">No related research topics</span>}
-            <span className="metadata-label metadata-label-spaced">Topics</span>
-            <div className="tag-cloud">{problem.classification.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>
-          </div>
-          <div className="side-block artifact-block">
-            <div className="section-kicker"><FileCheck2 size={14} /> Public artifacts</div>
-            {problem.artifacts.length > 0
-              ? problem.artifacts.map((artifact, index) => (
+            {statementHistory.length > 0 && <details className="disclosure statement-history">
+              <summary>Statement history <ChevronDown size={14} aria-hidden="true" /></summary>
+              <Timeline entries={statementHistory} citations={problem.source.citations} />
+            </details>}
+          </section>
+          {problem.artifacts.length > 0 && <section className="side-block artifact-block">
+            <h2 className="section-kicker"><FileCheck2 size={14} /> Proof &amp; code</h2>
+            {problem.artifacts.map((artifact, index) => (
                 <div className="artifact-entry" key={`${artifact.role}-${artifact.url ?? index}`}>
-                  <div className="artifact-head"><strong>{artifactRoleLabels[artifact.role] ?? readableEnum(artifact.role)}</strong><span>{artifactVisibilityLabels[artifact.visibility] ?? readableEnum(artifact.visibility)}</span></div>
-                  {artifact.license && <span>License: {artifact.license}</span>}
-                  {artifact.sha256 && <code>SHA-256 {artifact.sha256}</code>}
-                  {artifact.url && <a href={artifact.url} target="_blank" rel="noreferrer">Open artifact <ExternalLink size={12} /></a>}
+                  {artifact.url
+                    ? <a href={artifact.url} target="_blank" rel="noreferrer">{artifactRoleLabels[artifact.role]} <ExternalLink size={12} /></a>
+                    : <strong>{artifactRoleLabels[artifact.role]}</strong>}
+                  <details className="disclosure artifact-details">
+                    <summary>Artifact details <ChevronDown size={14} aria-hidden="true" /></summary>
+                    <dl className="metadata-list">
+                      <div><dt>Availability</dt><dd>{artifactVisibilityLabels[artifact.visibility]}</dd></div>
+                      {artifact.license && <div><dt>License</dt><dd>{artifact.license}</dd></div>}
+                      {artifact.sha256 && <div><dt>SHA-256</dt><dd><code>{artifact.sha256}</code></dd></div>}
+                    </dl>
+                  </details>
                 </div>
-              ))
-              : <span className="empty-metadata">No public artifacts listed</span>}
-          </div>
-          <div className="side-block relation-block">
-            <div className="section-kicker"><Link2 size={14} /> Question relations</div>
-            {relationGroups.length > 0
-              ? relationGroups.map((group) => (
+              ))}
+          </section>}
+          {relationGroups.length > 0 && <section className="side-block relation-block">
+            <h2 className="section-kicker"><Link2 size={14} /> Related questions</h2>
+            {relationGroups.map((group) => (
                 <div className="relation-group" key={group.label}>
-                  <span>{group.label}</span>
+                  {group.label !== 'Related questions' && <span>{group.label}</span>}
                   {group.ids.map((id) => {
                     const target = problems.find((candidate) => candidate.id === id);
                     return (
-                      <a className="relation-link" href={`#question/${id}`} key={id} aria-label={`Open ${target?.title ?? id}`}>
-                        <span><strong>{target?.title ?? id}</strong><small>{id}</small></span>
+                      <a className="relation-link" href={`#question/${id}`} key={id} onClick={(event) => onNavigate(event, id)}>
+                        <span>{target?.title ?? id}</span>
                         <ArrowUpRight size={13} />
                       </a>
                     );
                   })}
                 </div>
-              ))
-              : <span className="empty-metadata">No question relations listed</span>}
-          </div>
+              ))}
+          </section>}
+          <details className="disclosure record-details">
+            <summary>Record details <ChevronDown size={14} aria-hidden="true" /></summary>
+            <h3>Verification</h3>
+            <dl className="metadata-list">
+              <div><dt>Mathematical status</dt><dd>{statusLabels[problem.status.public_mathematical_status]}</dd></div>
+              <div><dt>Public verification</dt><dd>{verificationLabels[verification]}</dd></div>
+              <div><dt>Peer review</dt><dd>{peerReviewLabels[review]}</dd></div>
+              <div><dt>Disclosure</dt><dd>{readableEnum(problem.status.disclosure)}</dd></div>
+              {hasLean && <>
+                <div><dt>Lean status</dt><dd>{readableEnum(problem.lean.status)}</dd></div>
+                <div><dt>Lean source in repository</dt><dd>{problem.lean.available_in_repo ? 'Available' : 'Unavailable'}</dd></div>
+                {leanFields.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
+              </>}
+            </dl>
+            <h3>Classification</h3>
+            <dl className="metadata-list">
+              <div><dt>Primary</dt><dd><ClassificationPath id={problem.classification.primary} /></dd></div>
+              {problem.classification.secondary.length > 0 && <div><dt>Related topics</dt><dd className="taxonomy-path-list">{problem.classification.secondary.map((id) => <ClassificationPath id={id} key={id} />)}</dd></div>}
+            </dl>
+            {problem.classification.tags.length > 0 && <div className="tag-cloud">{problem.classification.tags.map((tag) => <span key={tag}>#{tag}</span>)}</div>}
+            <h3>Record</h3>
+            <dl className="metadata-list">
+              <div><dt>ID</dt><dd>{problem.id}</dd></div>
+              <div><dt>Group</dt><dd>{problem.group_id}</dd></div>
+              <div><dt>Source kind</dt><dd>{sourceKindLabels[problem.source.kind]}</dd></div>
+              {problem.source.provenance?.origin_status === 'confirmed' && problem.source.provenance.note && <div><dt>Provenance</dt><dd>{problem.source.provenance.note}</dd></div>}
+            </dl>
+          </details>
         </aside>
       </div>
-      <div className="detail-footer"><span className="last-reviewed">Last reviewed {problem.status.last_reviewed}</span><span className="record-group">Record group: {problem.group_id}</span><a href="https://github.com/AnonymousSubmit-6kcy3dfe9/CryptoFrontierAtlas" target="_blank" rel="noreferrer">View repository <ExternalLink size={13} /></a></div>
     </div>
   );
 }
