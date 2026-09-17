@@ -1,63 +1,54 @@
 # CryptoFrontierAtlas
 
-CryptoFrontierAtlas is a public, source-aware atlas of open questions in
-cryptography. Its taxonomy reserves symmetric cryptography, asymmetric
-cryptography, and other cryptographic research as top-level areas; the current
-release populates symmetric cryptography only. It indexes formal problem
-statements, public literature progress, scope boundaries, and evidence status
-in a static site designed for GitHub Pages.
+CryptoFrontierAtlas collects research problems on block ciphers and their
+mathematical foundations. This is the anonymous artifact repository accompanying
+EUROCRYPT submission #81.
 
-The public release contains 49 English problem records and three explicitly
-cleared, scoped Lean applications under data/lean. They completely formalize
-the uniform Tu--Deng inequality, the stated vectorial-nonlinearity bound beyond
-the Nyberg threshold, and the sharp balanced eight-variable maximum of 116.
-Other private solutions and uncleared manuscripts remain out of the repository.
+Deployed web interface:
+[Browse the problem collection](https://anonymoussubmit-6kcy3dfe9.github.io/CryptoFrontierAtlas/).
 
-Anonymous or unpublished internal progress is not represented in the public
-timeline. The public timeline contains source statements and identifiable
-literature or verification events only.
+## Setup
 
-## Local development
-
-The website requires Node.js 20 or newer.
+Requirements: Git, Node.js 20 or later, and npm. Use a clone with the full
+repository history and run the following from its root:
 
 ```bash
-npm install
+npm ci
 npm run check:data
 npm run dev
 ```
 
-The production build is:
+To build and preview the production site locally:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-The data contract is [`data/schema/problem.schema.json`](data/schema/problem.schema.json),
-the release manifest is [`data/manifest.json`](data/manifest.json),
-and the inclusion, disclosure, taxonomy, and release policy is documented in
-[`DESIGN.md`](DESIGN.md).
+## Lean proofs
 
-The Lean artifacts can be replayed independently of the website:
+The three principal formalizations have the following theorem entry points:
 
-    cd data/lean
-    lake build CryptoFrontierAtlas
+| Result | Lean entry point |
+| --- | --- |
+| Tu–Deng inequality | [TuDengComplete.lean](data/lean/CryptoFrontierAtlas/TuDengComplete.lean) |
+| Vectorial nonlinearity bound beyond the Nyberg threshold | [VectorialNonlinearityComplete.lean](data/lean/CryptoFrontierAtlas/VectorialNonlinearityComplete.lean) |
+| Optimal nonlinearity of eight-variable balanced Boolean functions: 116 | [BalancedEightNonlinearityComplete.lean](data/lean/CryptoFrontierAtlas/BalancedEightNonlinearityComplete.lean) |
 
-The project records its Lean toolchain and mathlib lockfile. The complete
-replay and trust-boundary checks are documented in
-[`data/lean/README.md`](data/lean/README.md); finite checks that use
-`native_decide` are documented there with that evaluator's trust boundary.
+Proof implementations are in [`data/lean/LeanCipher/`](data/lean/LeanCipher/).
 
-## Contribution boundary
+To check all three formalizations, install [elan](https://github.com/leanprover/elan#installation)
+and run the following from the repository root:
 
-New records require a public source citation, an auditable scope, status and
-disclosure fields, and license review. Do not add local absolute paths,
-private proof text, answer-bearing filenames, or Lean artifacts that have not
-been explicitly cleared for publication and scoped in the metadata.
+```bash
+cd data/lean
+lake build CryptoFrontierAtlas
+```
 
-## License
+The project uses Lean 4.29.1, fixed by [`lean-toolchain`](data/lean/lean-toolchain),
+with dependencies pinned in [`lake-manifest.json`](data/lean/lake-manifest.json).
+Further replay instructions and verification trust assumptions are documented in
+[`data/lean/README.md`](data/lean/README.md).
 
-Metadata and dataset text are released under CC BY 4.0; the website and
-validation code are released under Apache-2.0. See `LICENSE-DATA.md` and
-`LICENSE`.
+License: [Apache-2.0](LICENSE) for code and Lean proofs;
+[CC BY 4.0](LICENSE-DATA.md) for problem data.
